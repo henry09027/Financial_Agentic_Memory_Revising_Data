@@ -1,0 +1,11 @@
+evidence_id,source,entity,known_at,gold_event,gold_firm,gold_action,gold_from_grade,gold_to_grade,gold_pt_action,gold_prior_pt,gold_current_pt,text,gold_split_ratio,gold_new_name
+E01,broker,AUR,2025-02-03 10:15:00,broker_action,Delta Partners,maintain,Hold,Hold,Maintains,,90.0,"Delta Partners maintained Hold on AUR, with a $90.00 price target.",,
+E02,broker,AUR,2026-01-12 09:40:00,broker_action,Atlas Securities,initiate,,Buy,Announces,,120.0,Atlas Securities initiated coverage of AUR with a Buy rating and a $120.00 price target.,,
+E03,broker,AUR,2026-06-02 06:00:00,split,,,,,,,,Corporate action: AUR completed a 2-for-1 stock split effective before the open on 2026-06-02. Per-share prices from this date are half of pre-split prices.,2.0,
+E04,broker,AUR,2026-06-15 11:20:00,broker_action,Birch Capital,maintain,Outperform,Outperform,Raises,50.0,55.0,"Birch Capital maintained Outperform on AUR, and raised its price target from $50.00 to $55.00.",,
+E05,broker,AUR,2026-07-28 07:05:00,broker_action,Cobalt & Co.,downgrade,Overweight,Neutral,Lowers,60.0,52.0,"Cobalt & Co. downgraded AUR from Overweight to Neutral, and lowered its price target from $60.00 to $52.00.",,
+E06,broker,AUR,2026-07-28 16:40:00,broker_action,Birch Capital,maintain,Outperform,Outperform,Lowers,60.0,56.0,"Birch Capital maintained Outperform on AUR, and lowered its price target from $60.00 to $56.00.",,
+E07,broker,AUR,2026-09-01 09:00:00,rename,Cobalt & Co.,,,,,,,Broker update: Cobalt & Co. now publishes research under the name TD Cobalt after its acquisition. Coverage continues unchanged.,,TD Cobalt
+E08,broker,AUR,2026-09-09 13:00:00,broker_action,Atlas Securities,maintain,Buy,Buy,Raises,60.0,66.0,"Atlas Securities maintained Buy on AUR, and raised its price target from $60.00 to $66.00.",,
+E09,broker,AUR,2026-09-20 12:30:00,broker_action,Atlas Securities,reiterate,Buy,Buy,Maintains,,66.0,"Atlas Securities reiterated Buy on AUR, with a $66.00 price target.",,
+E10,broker,AUR,2026-10-21 08:10:00,broker_action,TD Cobalt,upgrade,Neutral,Overweight,Raises,52.0,64.0,"TD Cobalt upgraded AUR from Neutral to Overweight, and raised its price target from $52.00 to $64.00.",,

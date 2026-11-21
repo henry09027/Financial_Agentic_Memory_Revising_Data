@@ -1,0 +1,9 @@
+log: /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/logs/pipeline_20261120_234759.log
+models: phi-4-mini qwen3.5-4b gemma-4-e4b-it | history cap: 12000 tokens | max input: 32768 | extra method args: none
+
+================================================================ 2026-11-20 23:47:59  setup
+== 1/6 GPU driver
+   driver supports CUDA 12.9; install: pinned
+== 2/6 folders and env.sh  (WORK=/dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8, free: 2.4P)
+== 3/6 virtualenv /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/envs/pit
+   python: /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/envs/pit/bin/python  (Python 3.13.9)

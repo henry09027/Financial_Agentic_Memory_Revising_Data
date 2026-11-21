@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-TSLA-001-Q6-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "edgar",
+ "entity": "TSLA",
+ "qtype": "ttm",
+ "mode": "as_of",
+ "as_of": "2018-11-01 05:37:00",
+ "question": "What is Tesla, Inc.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "13683.906",
+ "peek_answers": "17523.644|103570",
+ "trap_answers": "11758.751",
+ "gold_evidence": "TSLA-00039|TSLA-00042|TSLA-00038|TSLA-00044|TSLA-00048",
+ "answer": "11,758.751",
+ "cited": "TSLA-00042",
+ "json_ok": true,
+ "category": "trap",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.2,
+ "in_tokens": 986,
+ "out_tokens": 27,
+ "seconds": 0.0286,
+ "n_evidence": 5,
+ "n_dropped": 0,
+ "created": "2026-11-21T19:41:05",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2018-11-01 05:37:00\nQuestion: What is Tesla, Inc.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nEvidence:\n[TSLA-00038] 2017-11-02 23:56 | Form 10-Q (FY2017 Q3) filed 2017-11-03: Tesla, Inc. (TSLA) Revenues for 2017-01-01 to 2017-09-30 = $8,470.502M.\n[TSLA-00039] 2017-11-02 23:56 | Form 10-Q (FY2017 Q3) filed 2017-11-03: Tesla, Inc. (TSLA) Revenues for 2017-07-01 to 2017-09-30 = $2,984.675M.\n[TSLA-00042] 2018-02-23 11:07 | Form 10-K (FY2017 FY) filed 2018-02-23: Tesla, Inc. (TSLA) Revenues for 2017-01-01 to 2017-12-31 = $11,758.751M.\n[TSLA-00044] 2018-05-05 01:46 | Form 10-Q (FY2018 Q1) filed 2018-05-07: Tesla, Inc. (TSLA) Revenues for 2018-01-01 to 2018-03-31 = $3,408.751M.\n[TSLA-00048] 2018-08-04 01:56 | Form 10-Q (FY2018 Q2) filed 2018-08-06: Tesla, Inc. (TSLA) Revenues for 2018-04-01 to 2018-06-30 = $4,002.231M."
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 11,758.751, \"evidence_ids\": [\"TSLA-00042\"]}\n```",
+ "raw_output": "```json\n{\"answer\": 11,758.751, \"evidence_ids\": [\"TSLA-00042\"]}\n```"
+}

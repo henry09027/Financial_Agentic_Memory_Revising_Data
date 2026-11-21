@@ -1,0 +1,218 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+NVDA-00807,2025-09-11 09:30:45,NVDA | DA Davidson,price_target_usd,,210.00,2025-09-11 09:30:45,new
+NVDA-00807,2025-09-11 09:30:45,NVDA | DA Davidson,rating,,Buy,2025-09-11 09:30:45,new
+NVDA-00808,2025-09-23 07:21:19,NVDA | Rosenblatt,price_target_usd,,215.00,2025-09-23 07:21:19,new
+NVDA-00809,2025-09-23 08:46:33,NVDA | Evercore ISI Group,price_target_usd,post-split,225.0,2025-09-23 08:46:33,new
+NVDA-00810,2025-09-23 10:29:00,NVDA | Rosenblatt,price_target_usd,post-split,210.00,2025-09-23 08:46:33,event
+NVDA-00811,2025-09-25 10:29:01,NVDA | Rosenblatt,price_target_usd,post-split,240.00,2025-09-25 10:29:01,new
+NVDA-00812,2025-09-29 10:21:45,NVDA | Jefferies,price_target_usd,post-split,220.00,2025-09-29 10:21:45,new
+NVDA-00813,2025-09-30 08:33:15,NVDA | Citigroup,price_target_usd,post-split,210.00,2025-09-30 08:33:15,new
+NVDA-00814,2025-09-30 11:03:37,NVDA | Keybanc,price_target_usd,post-split,250.00,2025-09-30 11:03:37,new
+NVDA-00815,2025-10-03 08:59:29,NVDA | Cantor Fitzgerald,price_target_usd,post-split,240.00,2025-10-03 08:59:29,new
+NVDA-00816,2025-10-09 09:11:32,NVDA | Cantor Fitzgerald,price_target_usd,post-split,300.00,2025-10-09 09:11:32,new
+NVDA-00817,2025-10-13 14:12:15,NVDA | Mizuho,price_target_usd,post-split,225.00,2025-10-13 14:12:15,new
+NVDA-00818,2025-10-15 07:24:42,NVDA | HSBC,price_target_usd,post-split,320.00,2025-10-15 07:24:42,new
+NVDA-00818,2025-10-15 07:24:42,NVDA | HSBC,rating,post-split,Buy,2025-10-15 07:24:42,new
+NVDA-00819,2025-10-29 07:25:24,NVDA | B of A Securities,price_target_usd,post-split,275.00,2025-10-29 07:25:24,new
+NVDA-00820,2025-10-29 09:54:58,NVDA | Cantor Fitzgerald,price_target_usd,post-split,300.00,2025-10-29 09:54:58,new
+NVDA-00821,2025-10-29 11:48:49,NVDA | UBS,price_target_usd,post-split,235.00,2025-10-29 11:48:49,new
+NVDA-00822,2025-10-29 16:08:07,NVDA | DA Davidson,price_target_usd,post-split,250.00,2025-10-29 16:08:07,new
+NVDA-00823,2025-11-03 07:34:13,NVDA | Loop Capital,price_target_usd,post-split,350.00,2025-11-03 07:34:13,new
+NVDA-00824,2025-11-03 07:41:38,NVDA | Rosenblatt,price_target_usd,post-split,240.00,2025-11-03 07:41:38,new
+NVDA-00825,2025-11-03 11:29:33,NVDA | Goldman Sachs,price_target_usd,post-split,240.00,2025-11-03 11:29:33,new
+NVDA-00826,2025-11-10 16:46:56,NVDA | Citigroup,price_target_usd,post-split,220.00,2025-11-10 16:46:56,new
+NVDA-00827,2025-11-13 08:50:59,NVDA | Oppenheimer,price_target_usd,post-split,265.00,2025-11-13 08:50:59,new
+NVDA-00828,2025-11-13 09:31:15,NVDA | Susquehanna,price_target_usd,post-split,230.00,2025-11-13 09:31:15,new
+NVDA-00829,2025-11-14 07:47:03,NVDA | Morgan Stanley,price_target_usd,post-split,220.00,2025-11-14 07:47:03,new
+NVDA-00830,2025-11-14 10:32:23,NVDA | Keybanc,price_target_usd,post-split,250.00,2025-11-14 10:32:23,new
+NVDA-00831,2025-11-14 10:35:34,NVDA | Wells Fargo,price_target_usd,post-split,post-split = 265.00,2025-11-14 10:35:34,new
+NVDA-00832,2025-11-18 07:54:49,NVDA | Stifel,price_target_usd,post-split,250.00,2025-11-18 07:54:49,new
+NVDA-00833,2025-11-20 06:17:04,NVDA | Bernstein,price_target_usd,post-split,275.00,2025-11-20 06:17:04,new
+NVDA-00834,2025-11-20 06:25:53,NVDA | Deutsche Bank,price_target_usd,post-split,215.00,2025-11-20 06:25:53,new
+NVDA-00835,2025-11-20 06:27:28,NVDA | Bernstein,price_target_usd,post-split,250.00,2025-11-20 06:27:28,new
+NVDA-00836,2025-11-20 06:30:39,NVDA | Melius Research,price_target_usd,post-split,320.00,2025-11-20 06:30:39,new
+NVDA-00837,2025-11-20 07:08:35,NVDA | Keybanc,price_target_usd,post-split,275.00,2025-11-20 07:08:35,new
+NVDA-00838,2025-11-20 07:38:51,NVDA | Rosenblatt,price_target_usd,post-split,245.00,2025-11-20 07:38:51,new
+NVDA-00839,2025-11-20 08:39:23,NVDA | Cantor Fitzgerald,price_target_usd,post-split,300.00,2025-11-20 08:39:23,reiteration
+NVDA-00840,2025-11-20 08:58:34,NVDA | Wedbush,price_target_usd,post-split,230.00,2025-11-20 08:58:34,new
+NVDA-00841,2025-11-20 09:14:00,NVDA | DA Davidson,price_target_usd,post-split,250.00,2025-11-20 09:14:00,new
+NVDA-00842,2025-11-20 09:16:58,NVDA | Argus Research,price_target_usd,post-split,220.00,2025-11-20 09:16:58,new
+NVDA-00843,2025-11-20 09:17:27,NVDA | Baird,price_target_usd,post-split,275.00,2025-11-20 09:17:27,new
+NVDA-00844,2025-11-20 10:33:49,NVDA | Morgan Stanley,price_target_usd,post-split,235.00,2025-11-20 10:33:49,new
+NVDA-00845,2025-11-20 11:26:26,NVDA | Mizuho,price_target_usd,post-split,245.00,2025-11-20 11:26:26,new
+NVDA-00846,2025-11-20 11:48:55,NVDA | Truist Securities,price_target_usd,post-split,255.00,2025-11-20 11:48:55,new
+NVDA-00847,2025-11-20 12:02:14,NVDA | Susquehanna,price_target_usd,post-split,250.00,2025-11-20 12:02:14,new
+NVDA-00848,2025-11-20 12:10:48,NVDA | Evercore ISI Group,price_target_usd,post-split,352.00,2025-11-20 12:10:48,new
+NVDA-00849,2025-11-20 12:39:38,NVDA | Oppenheimer,price_target_usd,post-split,265.00,2025-11-20 12:39:38,new
+NVDA-00850,2025-11-20 13:17:09,NVDA | Jefferies,price_target_usd,post-split,250.00,2025-11-20 13:17:09,new
+NVDA-00851,2025-11-20 13:30:37,NVDA | JP Morgan,price_target_usd,post-split,250.00,2025-11-20 13:30:37,new
+NVDA-00852,2025-11-20 14:28:56,NVDA | Barclays,price_target_usd,post-split,275.00,2025-11-20 14:28:56,new
+NVDA-00853,2025-11-20 14:59:55,NVDA | Citigroup,price_target_usd,post-split,270.00,2025-11-20 14:59:55,new
+NVDA-00854,2025-12-01 13:07:24,NVDA | Morgan Stanley,price_target_usd,post-split,250.00,2025-12-01 13:07:24,new
+NVDA-00855,2025-12-18 14:42:20,NVDA | Tigress Financial,price_target_usd,post-split,350.00,2025-12-18 14:42:20,new
+NVDA-00856,2025-12-19 08:02:24,NVDA | Truist Securities,price_target_usd,post-split,275.00,2025-12-19 08:02:24,new
+NVDA-00857,2025-12-26 09:00:39,NVDA | Bernstein,price_target_usd,post-split,275.00,2025-12-26 09:00:39,new
+NVDA-00858,2025-12-26 09:41:55,NVDA | Baird,price_target_usd,post-split,275.00,2025-12-26 09:41:55,new
+NVDA-00859,2025-12-26 09:47:06,NVDA | B of A Securities,price_target_usd,post-split,275.00,2025-12-26 09:47:06,new
+NVDA-00860,2025-12-29 09:28:16,NVDA | Truist Securities,price_target_usd,post-split,275.00,2025-12-29 09:28:16,new
+NVDA-00861,2025-12-29 10:08:46,NVDA | Stifel,price_target_usd,post-split,250.00,2025-12-29 10:08:46,new
+NVDA-00862,2026-01-09 12:56:54,NVDA | Mizuho,price_target_usd,post-split,275.00,2025-11-20 06:30:39,inferred revision
+NVDA-00863,2026-01-15 05:04:38,NVDA | RBC Capital,rating,,Outperform,2026-01-15 05:04:38,new
+NVDA-00863,2026-01-15 05:04:38,NVDA | RBC Capital,price_target_usd,,240.00,2026-01-15 05:04:38,new
+NVDA-00864,2026-01-16 09:35:10,NVDA | Jefferies,price_target_usd,post-split,275.00,2026-01-16 09:35:10,new
+NVDA-00865,2026-02-18 06:38:59,NVDA | Needham,price_target_usd,post-split,240.00,2026-02-18 06:38:59,new
+NVDA-00866,2026-02-23 08:32:52,NVDA | Wedbush,price_target_usd,post-split,230.00,2026-02-23 08:32:52,new
+NVDA-00867,2026-02-23 08:54:36,NVDA | Keybanc,price_target_usd,post-split,275.00,2026-02-23 08:54:36,new
+NVDA-00868,2026-02-23 14:06:19,NVDA | DA Davidson,price_target_usd,post-split,250.00,2026-02-23 14:06:19,new
+NVDA-00869,2026-02-24 13:14:44,NVDA | HSBC,price_target_usd,post-split,310.00,2026-02-24 13:14:44,new
+NVDA-00870,2026-02-26 05:56:59,NVDA | Benchmark,price_target_usd,post-split,250.00,2026-02-26 05:56:59,new
+NVDA-00871,2026-02-26 07:00:05,NVDA | B of A Securities,price_target_usd,post-split,300.00,2026-02-26 07:00:05,new
+NVDA-00872,2026-02-26 07:24:39,NVDA | Needham,price_target_usd,post-split,240.00,2026-02-26 07:24:39,new
+NVDA-00873,2026-02-26 07:56:10,NVDA | Rosenblatt,price_target_usd,post-split,300.00,2026-02-26 07:56:10,new
+NVDA-00874,2026-02-26 09:02:09,NVDA | Truist Securities,price_target_usd,post-split,283.00,2026-02-26 09:02:09,new
+NVDA-00875,2026-02-26 09:20:41,NVDA | Keybanc,price_target_usd,post-split,275.00,2026-02-26 09:20:41,new
+NVDA-00876,2026-02-26 10:13:25,NVDA | Wedbush,price_target_usd,post-split,300.00,2026-02-26 10:13:25,new
+NVDA-00876,2026-02-26 10:13:25,NVDA | Wedbush,rating,post-split,Outperform,2026-02-26 10:13:25,new
+NVDA-00877,2026-02-26 10:44:06,NVDA | RBC Capital,price_target_usd,post-split,250.00,2026-02-26 10:44:06,new
+NVDA-00878,2026-02-26 11:22:57,NVDA | DA Davidson,price_target_usd,post-split,250.00,2026-02-26 11:22:57,new
+NVDA-00879,2026-02-26 12:06:13,NVDA | Oppenheimer,price_target_usd,post-split,265.00,2026-02-26 12:06:13,new
+NVDA-00880,2026-02-26 12:07:26,NVDA | Bernstein,price_target_usd,post-split,300.00,2026-02-26 12:07:26,new
+NVDA-00881,2026-02-26 12:28:39,NVDA | TD Cowen,price_target_usd,post-split,235.00,2026-02-26 12:28:39,new
+NVDA-00882,2026-02-26 13:02:30,NVDA | Morgan Stanley,price_target_usd,post-split,260.00,2026-02-26 13:02:30,new
+NVDA-00883,2026-02-26 15:03:34,NVDA | Citigroup,price_target_usd,post-split,300.00,2026-02-26 15:03:34,new
+NVDA-00884,2026-02-26 16:30:21,NVDA | JP Morgan,price_target_usd,post-split,post-split = 265.00,2026-02-26 16:30:21,new
+NVDA-00885,2026-03-03 09:55:46,NVDA | Wedbush,price_target_usd,post-split,300.00,2026-03-03 09:55:46,new
+NVDA-00886,2026-03-05 16:32:43,NVDA | Tigress Financial,price_target_usd,post-split,360.00,2026-03-05 16:32:43,new
+NVDA-00887,2026-03-12 10:49:12,NVDA | Cantor Fitzgerald,price_target_usd,post-split,300.00,2026-03-12 10:49:12,new
+NVDA-00888,2026-03-17 07:03:58,NVDA | Benchmark,price_target_usd,post-split,250.00,2026-03-17 07:03:58,new
+NVDA-00889,2026-03-17 08:46:23,NVDA | Cantor Fitzgerald,price_target_usd,post-split,300.00,2026-03-17 08:46:23,new
+NVDA-00890,2026-03-17 08:56:28,NVDA | Rosenblatt,price_target_usd,post-split,300.00,2026-03-17 08:56:28,new
+NVDA-00891,2026-03-17 09:33:34,NVDA | Keybanc,price_target_usd,post-split,275.00,2026-03-17 09:33:34,new
+NVDA-00892,2026-03-17 09:53:33,NVDA | RBC Capital,price_target_usd,post-split,250.00,2026-03-17 09:53:33,new
+NVDA-00893,2026-03-17 10:40:29,NVDA | TD Cowen,price_target_usd,post-split,235.00,2026-03-17 10:40:29,new
+NVDA-00894,2026-03-18 06:43:31,NVDA | Needham,price_target_usd,post-split,240.00,2026-03-18 06:43:31,new
+NVDA-00895,2026-03-18 08:06:41,NVDA | Rosenblatt,price_target_usd,post-split,325.00,2026-03-18 08:06:41,new
+NVDA-00896,2026-03-18 12:26:28,NVDA | Truist Securities,price_target_usd,post-split,287.00,2026-03-18 12:26:28,new
+NVDA-00897,2026-03-19 05:51:56,NVDA | Raymond James,price_target_usd,post-split,323.00,2026-03-19 05:51:56,new
+NVDA-00898,2026-03-23 08:47:43,NVDA | Cantor Fitzgerald,price_target_usd,post-split,300.00,2026-03-23 08:47:43,new
+NVDA-00899,2026-03-23 10:28:45,NVDA | Rosenblatt,price_target_usd,post-split,325.00,2026-03-23 10:28:45,new
+NVDA-00900,2026-03-31 01:55:57,NVDA | Benchmark,price_target_usd,,250.00,2026-03-31 01:55:57,new
+NVDA-00901,2026-05-12 09:35:32,NVDA | Wells Fargo,price_target_usd,post-split,315.00,2026-05-12 09:35:32,new
+NVDA-00902,2026-05-14 08:38:36,NVDA | Cantor Fitzgerald,price_target_usd,post-split,350.00,2026-05-14 08:38:36,new
+NVDA-00903,2026-05-14 12:22:25,NVDA | RBC Capital,price_target_usd,post-split,250.00,2026-05-14 12:22:25,new
+NVDA-00904,2026-05-14 16:55:49,NVDA | UBS,price_target_usd,post-split,275.00,2026-05-14 16:55:49,new
+NVDA-00905,2026-05-15 12:52:31,NVDA | TD Cowen,price_target_usd,post-split,275.00,2026-05-15 12:52:31,new
+NVDA-00906,2026-05-18 07:28:06,NVDA | Keybanc,price_target_usd,post-split,300.00,2026-05-18 07:28:06,new
+NVDA-00907,2026-05-18 08:22:58,NVDA | Wedbush,price_target_usd,post-split,300.00,2026-05-18 08:22:58,new
+NVDA-00908,2026-05-18 08:39:06,NVDA | Morgan Stanley,price_target_usd,post-split,285.00,2026-05-18 08:39:06,new
+NVDA-00909,2026-05-18 11:18:45,NVDA | DA Davidson,price_target_usd,post-split,300.00,2026-05-18 11:18:45,new
+NVDA-00910,2026-05-19 10:06:35,NVDA | HSBC,price_target_usd,post-split,325.00,2026-05-19 10:06:35,new
+NVDA-00911,2026-05-21 06:03:01,NVDA | Needham,price_target_usd,post-split,270.00,2026-05-21 06:03:01,new
+NVDA-00912,2026-05-21 07:02:33,NVDA | Baird,price_target_usd,post-split,500.00,2026-05-21 07:02:33,new
+NVDA-00913,2026-05-21 07:07:36,NVDA | B of A Securities,price_target_usd,post-split,350.00,2026-05-21 07:07:36,new
+NVDA-00914,2026-05-21 07:14:05,NVDA | Benchmark,price_target_usd,,335.00,2026-05-21 07:14:05,new
+NVDA-00915,2026-05-21 07:39:16,NVDA | Keybanc,price_target_usd,post-split,310.00,2026-05-21 07:39:16,new
+NVDA-00916,2026-05-21 08:33:01,NVDA | Rosenblatt,price_target_usd,post-split,325.00,2026-05-21 08:33:01,new
+NVDA-00917,2026-05-21 08:46:53,NVDA | Morgan Stanley,price_target_usd,post-split,288.00,2026-05-21 08:46:53,new
+NVDA-00918,2026-05-21 10:11:36,NVDA | Jefferies,price_target_usd,post-split,300.00,2026-05-21 10:11:36,new
+NVDA-00919,2026-05-21 10:32:35,NVDA | JP Morgan,price_target_usd,post-split,280.00,2026-05-21 10:32:35,new
+NVDA-00920,2026-05-21 10:56:09,NVDA | Stifel,price_target_usd,post-split,282.00,2026-05-21 10:56:09,new
+NVDA-00921,2026-05-21 11:03:33,NVDA | Wedbush,price_target_usd,post-split,330.00,2026-05-21 11:03:33,new
+NVDA-00922,2026-05-21 11:12:23,NVDA | Cantor Fitzgerald,price_target_usd,post-split,350.00,2026-05-21 11:12:23,new
+NVDA-00923,2026-05-21 11:55:29,NVDA | RBC Capital,price_target_usd,post-split,270.00,2026-05-21 11:55:29,new
+NVDA-00924,2026-05-21 12:42:36,NVDA | Truist Securities,price_target_usd,post-split,307.00,2026-05-21 12:42:36,new
+NVDA-00925,2026-05-21 12:43:01,NVDA | DA Davidson,price_target_usd,,300.00,2026-05-21 12:43:01,new
+NVDA-00926,2026-05-21 13:52:22,NVDA | Evercore ISI Group,price_target_usd,post-split,413.00,2026-05-21 13:52:22,new
+NVDA-00927,2026-05-21 14:52:04,NVDA | UBS,price_target_usd,post-split,280.00,2026-05-21 14:52:04,new
+NVDA-00928,2026-05-27 10:57:01,NVDA | Tigress Financial,price_target_usd,post-split,425.00,2026-05-27 10:57:01,new
+NVDA-00929,2026-06-01 13:39:58,NVDA | DA Davidson,price_target_usd,,300.00,2026-06-01 13:39:58,new
+NVDA-00930,2026-06-02 12:40:48,NVDA | Needham,price_target_usd,,270.00,2026-06-02 12:40:48,new
+NVDA-00931,2026-06-05 11:32:35,NVDA | China Renaissance,rating,,Buy,2026-06-05 11:32:35,new
+NVDA-00931,2026-06-05 11:32:35,NVDA | China Renaissance,price_target_usd,,319.00,2026-06-05 11:32:35,new
+NVDA-00932,2026-07-14 07:17:59,NVDA | Keybanc,price_target_usd,post-split,330.00,2026-07-14 07:17:59,new
+NVDA-00933,2026-08-11 07:03:13,NVDA | Wells Fargo,price_target_usd,,315.00,2026-08-11 07:03:13,new
+NVDA-00934,2026-08-20 09:31:36,NVDA | RBC Capital,price_target_usd,,300.00,2026-08-20 09:31:36,new
+NVDA-00935,2026-08-21 06:55:03,NVDA | BMO Capital,rating,,Outperform,2026-08-21 06:55:03,new
+NVDA-00935,2026-08-21 06:55:03,NVDA | BMO Capital,price_target_usd,,340.00,2026-08-21 06:55:03,new
+NVDA-00936,2026-08-24 06:35:02,NVDA | Cantor Fitzgerald,price_target_usd,post-split,350.00,2026-08-24 06:35:02,reiterate
+NVDA-00937,2026-08-24 08:37:09,NVDA | Keybanc,price_target_usd,post-split,330.0,2026-08-24 08:37:09,new
+NVDA-00938,2026-08-24 08:53:52,NVDA | Rosenblatt,price_target_usd,post-split,325.0,2026-08-24 08:53:52,new
+NVDA-00939,2026-08-25 06:01:49,NVDA | Raymond James,price_target_usd,,352.00,2026-08-25 06:01:49,new
+NVDA-00940,2026-08-27 07:46:13,NVDA | Raymond James,price_target_usd,,515.00,2026-08-27 07:46:13,new
+NVDA-00941,2026-08-27 07:49:27,NVDA | Needham,price_target_usd,post-split,300.00,2026-08-27 07:49:27,new
+NVDA-00942,2026-08-27 07:55:18,NVDA | Cantor Fitzgerald,price_target_usd,post-split,350.0,2026-08-27 07:55:18,new
+NVDA-00943,2026-08-27 08:37:27,NVDA | Keybanc,price_target_usd,post-split,330.0,2026-08-27 08:37:27,new
+NVDA-00944,2026-08-27 08:39:10,NVDA | Evercore ISI Group,price_target_usd,post-split,465.0,2026-08-27 08:39:10,new
+NVDA-00945,2026-08-27 08:57:45,NVDA | Truist Securities,price_target_usd,post-split,346.0,2026-08-27 08:57:45,new
+NVDA-00946,2026-08-27 09:00:17,NVDA | Benchmark,price_target_usd,,335.00,2026-08-27 09:00:17,new
+NVDA-00947,2026-08-27 09:10:47,NVDA | DA Davidson,price_target_usd,post-split,300.00,2026-08-27 09:10:47,new
+NVDA-00948,2026-08-27 09:11:34,NVDA | Wedbush,price_target_usd,post-split,345.0,2026-08-27 09:11:34,new
+NVDA-00949,2026-08-27 09:19:53,NVDA | Morgan Stanley,price_target_usd,post-split,300.0,2026-08-27 09:19:53,new
+NVDA-00950,2026-08-27 09:26:29,NVDA | Rosenblatt,price_target_usd,post-split,390.00,2026-08-27 09:26:29,new
+NVDA-00951,2026-08-27 10:05:01,NVDA | Oppenheimer,price_target_usd,post-split,315.0,2026-08-27 10:05:01,new
+NVDA-00952,2026-08-27 10:32:00,NVDA | UBS,price_target_usd,post-split,300.0,2026-08-27 10:32:00,new
+NVDA-00953,2026-08-27 10:34:54,NVDA | RBC Capital,price_target_usd,post-split,330.0,2026-08-27 10:34:54,new
+NVDA-00954,2026-08-27 10:59:52,NVDA | Bernstein,price_target_usd,post-split,400.0,2026-08-27 10:59:52,new
+NVDA-00955,2026-08-27 14:08:30,NVDA | JP Morgan,price_target_usd,post-split,320.0,2026-08-27 14:08:30,new
+NVDA-00956,2026-08-27 14:33:14,NVDA | Mizuho,price_target_usd,post-split,315.0,2026-08-27 14:33:14,new
+NVDA-00957,2026-08-27 15:31:05,NVDA | Citigroup,price_target_usd,post-split,315.0,2026-08-27 15:31:05,new
+NVDA-00958,2026-09-04 07:04:59,NVDA | Needham,price_target_usd,post-split,300.00,2026-09-04 07:04:59,new
+NVDA-00959,2026-09-04 07:38:09,NVDA | Rosenblatt,price_target_usd,post-split,390.0,2026-09-04 07:38:09,new
+NVDA-00960,2026-09-10 10:02:40,NVDA | Piper Sandler,rating,,Overweight,2026-09-10 10:02:40,new
+NVDA-00960,2026-09-10 10:02:40,NVDA | Piper Sandler,price_target_usd,,300.00,2026-09-10 10:02:40,new
+NVDA-00961,2026-09-29 08:14:23,NVDA | Rosenblatt,price_target_usd,post-split,390.00,2026-09-29 08:14:23,new
+NVDA-00962,2026-10-01 06:34:36,NVDA | Cantor Fitzgerald,price_target_usd,post-split,350.00,2026-10-01 06:34:36,new
+NVDA-00963,2026-10-22 05:50:43,NVDA | Needham,price_target_usd,post-split,300.00,2026-10-22 05:50:43,new
+NVDA-00964,2026-11-02 07:29:14,NVDA | Melius Research,price_target_usd,post-split,315.00,2026-11-02 07:29:14,new
+NVDA-00965,2026-11-09 06:02:12,NVDA | Goldman Sachs,price_target_usd,post-split,300.00,2026-11-09 06:02:12,new
+NVDA-00966,2026-11-09 08:50:10,NVDA | RBC Capital,price_target_usd,post-split,330.00,2026-11-09 08:50:10,new
+NVDA-00967,2026-11-10 06:27:29,NVDA | Wells Fargo,price_target_usd,,300.00,2026-11-10 06:27:29,new
+NVDA-00968,2026-11-10 13:53:10,NVDA | Citigroup,price_target_usd,post-split,285.00,2026-11-10 13:53:10,new
+NVDA-00969,2026-11-11 07:00:36,NVDA | Baird,price_target_usd,post-split,200.00,2026-11-11 07:00:36,new
+NVDA-00969,2026-11-11 07:00:36,NVDA | Baird,rating,post-split,Neutral,2026-11-11 07:00:36,new
+NVDA-00970,2026-11-11 09:01:44,NVDA | Morgan Stanley,price_target_usd,,300.00,2026-11-11 09:01:44,new
+NVDA-00971,2026-11-12 04:41:37,NVDA | Oppenheimer,rating,,Perform,2026-11-12 04:41:37,new
+NVDA-00972,2026-11-12 06:15:52,NVDA | Evercore ISI Group,rating,,In-Line,2026-11-12 06:15:52,new
+NVDA-00972,2026-11-12 06:15:52,NVDA | Evercore ISI Group,price_target_usd,,186.00,2026-11-12 06:15:52,new
+NVDA-00973,2026-11-12 07:02:59,NVDA | Cantor Fitzgerald,price_target_usd,post-split,250.00,2026-11-12 07:02:59,new
+NVDA-00974,2026-11-12 07:05:47,NVDA | Bernstein,rating,,Market Perform,2026-11-12 07:05:47,new
+NVDA-00974,2026-11-12 07:05:47,NVDA | Bernstein,price_target_usd,,200.00,2026-11-12 07:05:47,new
+NVDA-00975,2026-11-12 07:37:56,NVDA | Bernstein,rating,,Sector Weight,2026-11-12 07:37:56,new
+NVDA-00976,2026-11-12 07:41:49,NVDA | William Blair,rating,,Market Perform,2026-11-12 07:41:49,new
+NVDA-00977,2026-11-12 08:20:52,NVDA | RBC Capital,price_target_usd,,230.00,2026-11-12 08:20:52,new
+NVDA-00978,2026-11-12 09:13:44,NVDA | Stifel,price_target_usd,post-split,205.00,2026-11-12 09:13:44,new
+NVDA-00979,2026-11-12 10:32:20,NVDA | StoneX,rating,,Hold,2026-11-12 10:32:20,new
+NVDA-00980,2026-11-12 10:36:18,NVDA | Needham,price_target_usd,post-split,200.00,2026-11-12 10:36:18,new
+NVDA-00981,2026-11-12 10:56:51,NVDA | Citigroup,price_target_usd,post-split,225.00,2026-11-12 10:56:51,new
+NVDA-00982,2026-11-12 11:47:08,NVDA | Goldman Sachs,price_target_usd,post-split,220.00,2026-11-12 11:47:08,new
+NVDA-00983,2026-11-12 11:51:26,NVDA | Baird,price_target_usd,,200.00,2026-11-12 11:51:26,new
+NVDA-00984,2026-11-12 11:53:12,NVDA | BMO Capital,price_target_usd,post-split,240.00,2026-11-12 11:53:12,new
+NVDA-00985,2026-11-12 12:46:29,NVDA | B of A Securities,price_target_usd,post-split,280.00,2026-11-12 12:46:29,new
+NVDA-00986,2026-11-12 12:52:20,NVDA | Craig-Hallum,price_target_usd,post-split,180.0,2026-11-12 12:52:20,new
+NVDA-00987,2026-11-12 13:13:07,NVDA | DA Davidson,price_target_usd,post-split,200.00,2026-11-12 13:13:07,new
+NVDA-00988,2026-11-12 13:17:25,NVDA | Melius Research,price_target_usd,post-split,185.0,2026-11-12 13:17:25,new
+NVDA-00988,2026-11-12 13:17:25,NVDA | Melius Research,rating,post-split,Hold,2026-11-12 13:17:25,new
+NVDA-00989,2026-11-13 09:34:40,NVDA | Truist Securities,rating,,Hold,2026-11-13 09:34:40,new
+NVDA-00989,2026-11-13 09:34:40,NVDA | Truist Securities,price_target_usd,,174.00,2026-11-13 09:34:40,new
+NVDA-00990,2026-11-13 10:39:40,NVDA | Barclays,price_target_usd,post-split,210.0,2026-11-13 10:39:40,new
+NVDA-00991,2026-11-13 16:32:15,NVDA | Rosenblatt,price_target_usd,post-split,300.00,2026-11-13 16:32:15,new
+NVDA-00992,2026-11-16 07:10:49,NVDA | Mizuho,price_target_usd,post-split,220.00,2026-11-16 07:10:49,new
+NVDA-00993,2026-11-16 07:52:44,NVDA | TD Cowen,price_target_usd,post-split,200.00,2026-11-16 07:52:44,new
+NVDA-00994,2026-11-16 10:23:32,NVDA | Morgan Stanley,price_target_usd,post-split,267.0,2026-11-16 10:23:32,new
+NVDA-00995,2026-11-16 11:20:02,NVDA | UBS,price_target_usd,post-split,240.00,2026-11-16 11:20:02,new
+NVDA-00996,2026-11-18 06:59:10,NVDA | Cantor Fitzgerald,price_target_usd,post-split,250.00,2026-11-18 06:59:10,new
+NVDA-00997,2026-11-18 07:17:23,NVDA | Morgan Stanley,price_target_usd,post-split,260.0,2026-11-18 07:17:23,new
+NVDA-00998,2026-11-18 07:28:21,NVDA | Piper Sandler,price_target_usd,post-split,230.00,2026-11-18 07:28:21,new
+NVDA-00999,2026-11-18 07:28:43,NVDA | Rosenblatt,price_target_usd,post-split,300.00,2026-11-18 07:28:43,new
+NVDA-01000,2026-11-18 07:46:18,NVDA | Needham,price_target_usd,post-split,200.00,2026-11-18 07:46:18,new
+NVDA-01001,2026-11-18 08:20:46,NVDA | RBC Capital,price_target_usd,post-split,230.00,2026-11-18 08:20:46,new
+NVDA-01002,2026-11-18 08:28:01,NVDA | Wedbush,price_target_usd,post-split,293.00,2026-11-18 08:28:01,new
+NVDA-01003,2026-11-18 08:30:22,NVDA | TD Cowen,price_target_usd,post-split,200.00,2026-11-18 08:30:22,new
+NVDA-01005,2026-11-18 08:59:17,NVDA | Evercore ISI Group,price_target_usd,post-split,184.00,2026-11-18 08:59:17,new
+NVDA-01006,2026-11-18 10:08:30,NVDA | Wells Fargo,price_target_usd,post-split,250.00,2026-11-18 10:08:30,new
+NVDA-01007,2026-11-18 10:11:04,NVDA | Argus Research,price_target_usd,post-split,220.00,2026-11-18 10:11:04,new
+NVDA-01008,2026-11-18 10:11:18,NVDA | DA Davidson,price_target_usd,post-split,200.00,2026-11-18 10:11:18,new
+NVDA-01009,2026-11-18 10:39:51,NVDA | UBS,price_target_usd,post-split,220.00,2026-11-18 10:39:51,new
+NVDA-01010,2026-11-18 11:04:53,NVDA | JP Morgan,price_target_usd,post-split,230.00,2026-11-18 11:04:53,new
+NVDA-01011,2026-11-18 13:23:00,NVDA | Jefferies,price_target_usd,post-split,250.00,2026-11-18 13:23:00,new
+NVDA-01012,2026-11-18 14:55:48,NVDA | Freedom Broker,price_target_usd,post-split,230.00,2026-11-18 14:55:48,new

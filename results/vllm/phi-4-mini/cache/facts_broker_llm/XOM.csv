@@ -1,0 +1,226 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+XOM-00062,2019-12-26 18:22:00,XOM | TD Cowen,alias,,TD Cowen,2019-12-26 18:22:00,event
+XOM-00169,2023-01-03 07:29:12,XOM | Barclays,price_target_usd,,129.00,2023-01-03 07:29:12,new
+XOM-00170,2023-01-09 13:26:45,XOM | Mizuho,price_target_usd,,140.00,2023-01-09 13:26:45,new
+XOM-00170,2023-01-09 13:26:45,XOM | Mizuho,rating,,Buy,2023-01-09 13:26:45,new
+XOM-00171,2023-01-10 08:36:34,XOM | Wells Fargo,price_target_usd,,122.00,2023-01-10 08:36:34,new
+XOM-00172,2023-01-18 09:03:12,XOM | Redburn Partners,price_target_usd,-,Sell,2023-01-18 09:03:12,new
+XOM-00174,2023-02-01 08:04:07,XOM | Truist Securities,price_target_usd,,110.00,2023-02-01 08:04:07,new
+XOM-00175,2023-02-01 09:11:24,XOM | Wells Fargo,price_target_usd,,125.00,2023-02-01 09:11:24,new
+XOM-00176,2023-02-01 09:49:54,XOM | B of A Securities,price_target_usd,,140.00,2023-02-01 09:49:54,new
+XOM-00177,2023-02-02 09:16:18,XOM | Argus Research,price_target_usd,,133.00,2023-02-02 09:16:18,new
+XOM-00178,2023-02-02 09:28:38,XOM | Cowen & Co.,price_target_usd,,113.00,2023-02-02 09:28:38,new
+XOM-00179,2023-03-03 08:04:29,XOM | Wells Fargo,price_target_usd,,133.00,2023-03-03 08:04:29,new
+XOM-00180,2023-03-10 13:32:30,XOM | Mizuho,price_target_usd,,147.00,2023-03-10 13:32:30,new
+XOM-00181,2023-04-05 13:35:11,XOM | Mizuho,price_target_usd,,147.00,2023-04-05 13:35:11,new
+XOM-00182,2023-04-11 09:51:09,XOM | Truist Securities,price_target_usd,,116.00,2023-04-11 09:51:09,new
+XOM-00183,2023-04-13 07:14:01,XOM | Scotiabank,price_target_usd,,135.00,2023-04-13 07:14:01,new
+XOM-00183,2023-04-13 07:14:01,XOM | Scotiabank,rating,,Sector Perform,2023-04-13 07:14:01,new
+XOM-00184,2023-04-19 04:47:34,XOM | UBS,price_target_usd,,144.00,2023-04-19 04:47:34,new
+XOM-00184,2023-04-19 04:47:34,XOM | UBS,rating,,Buy,2023-04-19 04:47:34,new
+XOM-00185,2023-04-19 09:21:29,XOM | Morgan Stanley,price_target_usd,,118.00,2023-04-19 09:21:29,new
+XOM-00186,2023-04-20 06:43:24,XOM | Piper Sandler,price_target_usd,,134.00,2023-04-20 06:43:24,new
+XOM-00186,2023-04-20 06:43:24,XOM | Piper Sandler,rating,,Overweight,2023-04-20 06:43:24,new
+XOM-00187,2023-05-01 04:51:38,XOM | Goldman Sachs,price_target_usd,,125.00,2023-05-01 04:51:38,new
+XOM-00187,2023-05-01 04:51:38,XOM | Goldman Sachs,rating,,Neutral,2023-05-01 04:51:38,new
+XOM-00188,2023-05-01 07:50:59,XOM | Morgan Stanley,price_target_usd,,122.00,2023-05-01 07:50:59,new
+XOM-00189,2023-05-01 09:11:14,XOM | Truist Securities,price_target_usd,,118.00,2023-05-01 09:11:14,new
+XOM-00190,2023-05-15 09:17:32,XOM | Jefferies,price_target_usd,,140.00,2023-05-15 09:17:32,new
+XOM-00191,2023-05-18 09:30:35,XOM | Piper Sandler,price_target_usd,,145.00,2023-05-18 09:30:35,new
+XOM-00192,2023-05-19 07:09:12,XOM | Mizuho,price_target_usd,,130.00,2023-05-19 07:09:12,new
+XOM-00193,2023-06-01 05:41:19,XOM | RBC Capital,rating,,Sector Perform,2023-06-01 05:41:19,new
+XOM-00193,2023-06-01 05:41:19,XOM | RBC Capital,price_target_usd,,125.00,2023-06-01 05:41:19,new
+XOM-00194,2023-06-13 12:39:23,XOM | Piper Sandler,price_target_usd,,127.00,2023-06-13 12:39:23,new
+XOM-00195,2023-07-06 09:05:31,XOM | Citigroup,price_target_usd,,110.00,2023-07-06 09:05:31,new
+XOM-00196,2023-07-07 05:59:20,XOM | Wolfe Research,rating,,Peer Perform,2023-07-07 05:59:20,new
+XOM-00197,2023-07-18 10:11:38,XOM | Morgan Stanley,price_target_usd,,121.00,2023-07-18 10:11:38,new
+XOM-00199,2023-07-24 12:12:34,XOM | Truist Securities,price_target_usd,,110.00,2023-07-24 12:12:34,new
+XOM-00200,2023-08-16 07:24:57,XOM | Mizuho,price_target_usd,,131.00,2023-08-16 07:24:57,new
+XOM-00201,2023-08-17 09:44:30,XOM | UBS,price_target_usd,,139.00,2023-08-17 09:44:30,new
+XOM-00202,2023-08-18 09:18:03,XOM | Morgan Stanley,price_target_usd,,124.00,2023-08-18 09:18:03,new
+XOM-00203,2023-08-31 05:22:19,XOM | Redburn Partners,price_target_usd,,105.00,2023-08-31 05:22:19,new
+XOM-00204,2023-09-18 10:45:50,XOM | Mizuho,price_target_usd,,139.00,2023-09-18 10:45:50,new
+XOM-00205,2023-09-21 11:16:57,XOM | RBC Capital,price_target_usd,,120.00,2023-09-21 11:16:57,new
+XOM-00206,2023-09-22 08:11:34,XOM | Morgan Stanley,price_target_usd,,131.00,2023-09-22 08:11:34,new
+XOM-00207,2023-09-22 09:05:58,XOM | Wells Fargo,price_target_usd,,130.00,2023-09-22 09:05:58,new
+XOM-00208,2023-09-25 08:39:26,XOM | Morgan Stanley,price_target_usd,,131.00,2023-09-25 08:39:26,new
+XOM-00208,2023-09-25 08:39:26,XOM | Morgan Stanley,rating,,Overweight,2023-09-25 08:39:26,new
+XOM-00209,2023-09-25 11:37:35,XOM | Mizuho,price_target_usd,,139.00,2023-09-25 11:37:35,new
+XOM-00210,2023-10-02 10:27:11,XOM | Morgan Stanley,price_target_usd,,134.00,2023-10-02 10:27:11,new
+XOM-00211,2023-10-04 11:55:13,XOM | UBS,price_target_usd,,143.00,2023-10-04 11:55:13,new
+XOM-00212,2023-10-12 07:32:58,XOM | Truist Securities,price_target_usd,,131.00,2023-10-12 07:32:58,new
+XOM-00212,2023-10-12 07:32:58,XOM | Truist Securities,rating,,Buy,2023-10-12 07:32:58,new
+XOM-00213,2023-10-12 12:49:03,XOM | RBC Capital,price_target_usd,,120.00,2023-10-12 12:49:03,new
+XOM-00214,2023-10-12 15:21:15,XOM | Jefferies,price_target_usd,,145.00,2023-10-12 15:21:15,new
+XOM-00215,2023-10-17 05:45:04,XOM | Bernstein,rating,,Outperform,2023-10-17 05:45:04,new
+XOM-00215,2023-10-17 05:45:04,XOM | Bernstein,price_target_usd,,140.00,2023-10-17 05:45:04,new
+XOM-00216,2023-10-25 14:51:29,XOM | JP Morgan,price_target_usd,,134.00,2023-10-25 14:51:29,new
+XOM-00216,2023-10-25 14:51:29,XOM | JP Morgan,rating,,Overweight,2023-10-25 14:51:29,new
+XOM-00217,2023-11-02 15:14:14,XOM | UBS,price_target_usd,,142.00,2023-11-02 15:14:14,new
+XOM-00218,2023-11-14 13:38:11,XOM | Mizuho,price_target_usd,,133.00,2023-11-14 13:38:11,new
+XOM-00219,2023-12-07 12:05:40,XOM | RBC Capital,price_target_usd,,120.00,2023-12-07 12:05:40,new
+XOM-00220,2023-12-08 11:32:02,XOM | JP Morgan,price_target_usd,,127.00,2023-12-08 11:32:02,new
+XOM-00220,2023-12-08 11:32:02,XOM | JP Morgan,rating,,Overweight,2023-12-08 11:32:02,new
+XOM-00221,2023-12-14 11:50:55,XOM | UBS,price_target_usd,,133.00,2023-12-14 11:50:55,new
+XOM-00222,2023-12-22 09:25:48,XOM | Erste Group,rating,,Hold,2023-12-22 09:25:48,new
+XOM-00223,2024-01-03 08:40:36,XOM | Mizuho,price_target_usd,,117.00,2024-01-03 08:40:36,new
+XOM-00223,2024-01-03 08:40:36,XOM | Mizuho,rating,,Neutral,2024-01-03 08:40:36,new
+XOM-00224,2024-01-09 05:15:02,XOM | Redburn Atlantic,price_target_usd,,119.00,2024-01-09 05:15:02,new
+XOM-00225,2024-01-23 06:01:06,XOM | TD Cowen,rating,,Outperform,2024-01-23 06:01:06,new
+XOM-00225,2024-01-23 06:01:06,XOM | TD Cowen,price_target_usd,,115.00,2024-01-23 06:01:06,new
+XOM-00226,2024-01-23 11:01:59,XOM | UBS,price_target_usd,,132.00,2024-01-23 11:01:59,new
+XOM-00227,2024-02-05 10:21:47,XOM | RBC Capital,price_target_usd,,120.00,2024-02-05 10:21:47,new
+XOM-00228,2024-03-14 10:22:19,XOM | Piper Sandler,price_target_usd,,130.00,2024-03-14 10:22:19,new
+XOM-00229,2024-03-19 07:02:14,XOM | Mizuho,price_target_usd,,125.00,2024-03-19 07:02:14,new
+XOM-00230,2024-04-01 11:38:45,XOM | TD Cowen,price_target_usd,,120.00,2024-04-01 11:38:45,new
+XOM-00231,2024-04-04 08:30:51,XOM | Mizuho,price_target_usd,,125.00,2024-04-04 08:30:51,new
+XOM-00232,2024-04-04 08:47:45,XOM | Wells Fargo,price_target_usd,,138.00,2024-04-04 08:47:45,new
+XOM-00233,2024-04-05 13:41:35,XOM | Truist Securities,price_target_usd,,146.00,2024-04-05 13:41:35,new
+XOM-00234,2024-04-10 09:49:29,XOM | Barclays,rating,,Overweight,2024-04-10 09:49:29,new
+XOM-00234,2024-04-10 09:49:29,XOM | Barclays,price_target_usd,,147.00,2024-04-10 09:49:29,new
+XOM-00235,2024-04-11 12:04:36,XOM | Scotiabank,price_target_usd,,129.00,2024-04-11 12:04:36,new
+XOM-00236,2024-04-11 14:43:49,XOM | UBS,price_target_usd,,150.00,2024-04-11 14:43:49,new
+XOM-00237,2024-04-18 09:22:28,XOM | Piper Sandler,price_target_usd,,145.00,2024-04-18 09:22:28,new
+XOM-00238,2024-04-30 11:16:12,XOM | Wells Fargo,price_target_usd,,142.00,2024-04-30 11:16:12,new
+XOM-00239,2024-04-30 11:20:58,XOM | TD Cowen,price_target_usd,,135.00,2024-04-30 11:20:58,new
+XOM-00240,2024-04-30 11:44:55,XOM | HSBC,price_target_usd,,120.00,2024-04-30 11:44:55,new
+XOM-00241,2024-05-07 11:49:34,XOM | UBS,price_target_usd,,152.00,2024-05-07 11:49:34,new
+XOM-00242,2024-05-13 11:06:47,XOM | Mizuho,price_target_usd,,128.00,2024-05-13 11:06:47,new
+XOM-00243,2024-06-07 06:42:51,XOM | Truist Securities,price_target_usd,,124.00,2024-06-07 06:42:51,new
+XOM-00243,2024-06-07 06:42:51,XOM | Truist Securities,rating,,Hold,2024-06-07 06:42:51,new
+XOM-00244,2024-06-25 08:46:01,XOM | UBS,price_target_usd,,154.00,2024-06-25 08:46:01,new
+XOM-00245,2024-07-09 08:59:06,XOM | RBC Capital,price_target_usd,,135.00,2024-07-09 08:59:06,new
+XOM-00246,2024-07-09 10:13:18,XOM | Barclays,price_target_usd,,142.00,2024-07-09 10:13:18,new
+XOM-00247,2024-07-17 14:08:38,XOM | Bernstein,price_target_usd,,138.00,2024-07-17 14:08:38,new
+XOM-00248,2024-07-22 12:02:53,XOM | Truist Securities,price_target_usd,,121.00,2024-07-22 12:02:53,new
+XOM-00249,2024-08-05 08:52:16,XOM | Wells Fargo,price_target_usd,,135.00,2024-08-05 08:52:16,new
+XOM-00250,2024-08-20 08:27:46,XOM | UBS,price_target_usd,,157.00,2024-08-20 08:27:46,new
+XOM-00251,2024-09-16 09:28:05,XOM | Mizuho,price_target_usd,,130.00,2024-09-16 09:28:05,new
+XOM-00252,2024-09-16 12:16:08,XOM | Morgan Stanley,price_target_usd,,142.00,2024-09-16 12:16:08,new
+XOM-00253,2024-09-18 11:06:44,XOM | UBS,price_target_usd,,149.00,2024-09-18 11:06:44,new
+XOM-00254,2024-09-24 06:20:27,XOM | Redburn Atlantic,price_target_usd,,120.00,2024-09-24 06:20:27,new
+XOM-00254,2024-09-24 06:20:27,XOM | Redburn Atlantic,rating,,Neutral,2024-09-24 06:20:27,new
+XOM-00255,2024-09-27 11:31:18,XOM | Wells Fargo,price_target_usd,,136.00,2024-09-27 11:31:18,new
+XOM-00256,2024-09-30 10:25:14,XOM | Truist Securities,price_target_usd,,117.00,2024-09-30 10:25:14,new
+XOM-00257,2024-10-03 11:34:38,XOM | Barclays,price_target_usd,,137.00,2024-10-03 11:34:38,new
+XOM-00258,2024-10-04 13:24:22,XOM | BMO Capital,price_target_usd,,130.00,2024-10-04 13:24:22,new
+XOM-00259,2024-10-08 10:06:29,XOM | RBC Capital,price_target_usd,,120.00,2024-10-08 10:06:29,new
+XOM-00260,2024-10-09 13:55:08,XOM | Exane BNP Paribas,rating,,Underperform,2024-10-09 13:55:08,new
+XOM-00260,2024-10-09 13:55:08,XOM | Exane BNP Paribas,price_target_usd,,105.00,2024-10-09 13:55:08,new
+XOM-00261,2024-10-10 08:52:28,XOM | Scotiabank,rating,,Sector Outperform,2024-10-10 08:52:28,new
+XOM-00261,2024-10-10 08:52:28,XOM | Scotiabank,price_target_usd,,145.00,2024-10-10 08:52:28,new
+XOM-00262,2024-11-04 11:11:19,XOM | RBC Capital,price_target_usd,,120.00,2024-11-04 11:11:19,new
+XOM-00263,2024-11-04 11:52:20,XOM | TD Cowen,price_target_usd,,127.00,2024-11-04 11:52:20,new
+XOM-00264,2024-11-19 11:51:13,XOM | TD Cowen,price_target_usd,,132.00,2024-11-19 11:51:13,new
+XOM-00265,2024-11-26 11:16:08,XOM | RBC Capital,price_target_usd,,115.00,2024-11-26 11:16:08,new
+XOM-00266,2024-12-12 11:10:07,XOM | RBC Capital,price_target_usd,,115.00,2024-12-12 11:10:07,new
+XOM-00267,2024-12-12 11:26:24,XOM | UBS,price_target_usd,,147.00,2024-12-12 11:26:24,new
+XOM-00268,2024-12-16 07:25:09,XOM | Mizuho,price_target_usd,,134.00,2024-12-16 07:25:09,new
+XOM-00269,2024-12-16 11:30:02,XOM | JP Morgan,price_target_usd,,125.00,2024-12-16 11:30:02,new
+XOM-00270,2024-12-19 12:47:34,XOM | Piper Sandler,price_target_usd,,127.00,2024-12-19 12:47:34,new
+XOM-00271,2025-01-13 09:44:23,XOM | Truist Securities,price_target_usd,,119.00,2025-01-13 09:44:23,new
+XOM-00272,2025-02-03 10:20:58,XOM | Wells Fargo,price_target_usd,,135.00,2025-02-03 10:20:58,new
+XOM-00273,2025-02-03 11:27:31,XOM | RBC Capital,price_target_usd,,115.00,2025-02-03 11:27:31,new
+XOM-00274,2025-03-18 08:39:34,XOM | Barclays,price_target_usd,,135.00,2025-03-18 08:39:34,new
+XOM-00275,2025-03-27 12:52:28,XOM | Morgan Stanley,price_target_usd,,138.00,2025-03-27 12:52:28,new
+XOM-00276,2025-04-03 10:30:57,XOM | Mizuho,price_target_usd,,129.00,2025-04-03 10:30:57,new
+XOM-00277,2025-04-07 15:19:00,XOM | UBS,price_target_usd,,135.00,2025-04-07 15:19:00,new
+XOM-00278,2025-04-11 17:48:18,XOM | Scotiabank,price_target_usd,,115.00,2025-04-11 17:48:18,new
+XOM-00279,2025-04-14 17:40:13,XOM | UBS,price_target_usd,,131.00,2025-04-14 17:40:13,new
+XOM-00280,2025-04-23 18:26:03,XOM | Barclays,price_target_usd,,130.00,2025-04-23 18:26:03,new
+XOM-00281,2025-05-05 09:20:04,XOM | Barclays,price_target_usd,,127.00,2025-05-05 09:20:04,new
+XOM-00282,2025-05-05 11:32:39,XOM | RBC Capital,price_target_usd,,105.00,2025-05-05 11:32:39,new
+XOM-00283,2025-05-13 10:13:52,XOM | Mizuho,price_target_usd,,124.00,2025-05-13 10:13:52,new
+XOM-00284,2025-05-13 12:08:09,XOM | Piper Sandler,price_target_usd,,125.00,2025-05-13 12:08:09,new
+XOM-00285,2025-06-26 10:25:58,XOM | Wells Fargo,price_target_usd,,127.00,2025-06-26 10:25:58,new
+XOM-00286,2025-07-02 12:58:56,XOM | Piper Sandler,price_target_usd,,131.00,2025-07-02 12:58:56,new
+XOM-00287,2025-07-08 11:53:41,XOM | Piper Sandler,price_target_usd,,134.00,2025-07-08 11:53:41,new
+XOM-00288,2025-07-11 11:27:36,XOM | Scotiabank,price_target_usd,,125.00,2025-07-11 11:27:36,new
+XOM-00289,2025-08-01 06:24:08,XOM | JP Morgan,price_target_usd,,124.00,2025-08-01 06:24:08,new
+XOM-00290,2025-08-04 10:39:50,XOM | Morgan Stanley,price_target_usd,,135.00,2025-08-04 10:39:50,new
+XOM-00291,2025-08-05 06:18:44,XOM | HSBC,price_target_usd,,120.00,2025-08-05 06:18:44,new
+XOM-00292,2025-08-08 06:15:59,XOM | Goldman Sachs,price_target_usd,,117.00,2025-08-08 06:15:59,new
+XOM-00293,2025-08-18 10:59:43,XOM | Piper Sandler,price_target_usd,,145.00,2025-08-18 10:59:43,new
+XOM-00294,2025-08-20 09:28:31,XOM | Melius Research,rating,,Hold,2025-08-20 09:28:31,new
+XOM-00294,2025-08-20 09:28:31,XOM | Melius Research,price_target_usd,,111.00,2025-08-20 09:28:31,new
+XOM-00295,2025-08-20 14:30:21,XOM | UBS,price_target_usd,,143.00,2025-08-20 14:30:21,new
+XOM-00296,2025-09-10 10:20:41,XOM | B of A Securities,price_target_usd,,120.00,2025-09-10 10:20:41,new
+XOM-00297,2025-09-15 11:00:02,XOM | Mizuho,price_target_usd,,123.00,2025-09-15 11:00:02,new
+XOM-00298,2025-10-07 11:29:22,XOM | Barclays,price_target_usd,,126.00,2025-10-07 11:29:22,new
+XOM-00299,2025-10-09 10:50:01,XOM | Scotiabank,price_target_usd,,128.00,2025-10-09 10:50:01,new
+XOM-00300,2025-10-13 10:20:57,XOM | UBS,price_target_usd,,145.00,2025-10-13 10:20:57,new
+XOM-00301,2025-10-17 08:16:46,XOM | Wells Fargo,rating,,Overweight,2025-10-17 08:16:46,new
+XOM-00301,2025-10-17 08:16:46,XOM | Wells Fargo,price_target_usd,,156.00,2025-10-17 08:16:46,new
+XOM-00302,2025-11-03 11:40:51,XOM | Scotiabank,price_target_usd,,155.00,2025-11-03 11:40:51,new
+XOM-00303,2025-11-10 08:06:35,XOM | Piper Sandler,price_target_usd,,144.00,2025-11-10 08:06:35,new
+XOM-00304,2025-12-10 08:51:30,XOM | Morgan Stanley,price_target_usd,,137.00,2025-12-10 08:51:30,new
+XOM-00305,2025-12-10 13:49:42,XOM | Jefferies,price_target_usd,,148.00,2025-12-10 13:49:42,new
+XOM-00306,2025-12-10 14:26:48,XOM | Citigroup,price_target_usd,,118.00,2025-12-10 14:26:48,new
+XOM-00307,2025-12-11 06:58:06,XOM | B of A Securities,price_target_usd,,118.00,2025-12-11 06:58:06,new
+XOM-00308,2025-12-11 12:05:59,XOM | Wells Fargo,price_target_usd,,158.00,2025-12-11 12:05:59,new
+XOM-00309,2025-12-12 07:43:40,XOM | Mizuho,price_target_usd,,132.00,2025-12-12 07:43:40,new
+XOM-00310,2025-12-12 11:41:25,XOM | TD Cowen,price_target_usd,,135.00,2025-12-12 11:41:25,new
+XOM-00311,2026-01-05 08:55:28,XOM | Bernstein,price_target_usd,,137.00,2026-01-05 08:55:28,new
+XOM-00312,2026-01-06 08:11:44,XOM | Freedom Broker,price_target_usd,,123.00,2026-01-06 08:11:44,new
+XOM-00312,2026-01-06 08:11:44,XOM | Freedom Broker,rating,,Sell,2026-01-06 08:11:44,new
+XOM-00313,2026-01-08 09:47:33,XOM | Piper Sandler,price_target_usd,,142.00,2026-01-08 09:47:33,new
+XOM-00314,2026-01-21 13:17:15,XOM | Barclays,price_target_usd,,140.00,2026-01-21 13:17:15,new
+XOM-00315,2026-01-23 12:27:58,XOM | Morgan Stanley,price_target_usd,,134.00,2026-01-23 12:27:58,new
+XOM-00316,2026-01-28 06:39:45,XOM | B of A Securities,price_target_usd,,135.00,2026-01-28 06:39:45,new
+XOM-00317,2026-02-02 10:29:20,XOM | Wells Fargo,price_target_usd,,156.00,2026-02-02 10:29:20,new
+XOM-00318,2026-02-02 11:51:58,XOM | RBC Capital,price_target_usd,,150.00,2026-02-02 11:51:58,new
+XOM-00319,2026-02-03 08:31:07,XOM | Barclays,price_target_usd,,145.00,2026-02-03 08:31:07,new
+XOM-00320,2026-02-03 09:21:59,XOM | TD Cowen,price_target_usd,,145.00,2026-02-03 09:21:59,new
+XOM-00321,2026-02-24 09:37:06,XOM | Wells Fargo,price_target_usd,,183.00,2026-02-24 09:37:06,new
+XOM-00322,2026-03-02 07:49:58,XOM | B of A Securities,price_target_usd,,151.00,2026-03-02 07:49:58,new
+XOM-00323,2026-03-02 13:27:24,XOM | Citigroup,price_target_usd,,150.00,2026-03-02 13:27:24,new
+XOM-00324,2026-03-12 12:28:50,XOM | Piper Sandler,price_target_usd,,186.00,2026-03-12 12:28:50,new
+XOM-00325,2026-03-16 11:15:56,XOM | Barclays,price_target_usd,,163.00,2026-03-16 11:15:56,new
+XOM-00326,2026-03-17 13:25:57,XOM | Mizuho,price_target_usd,,162.00,2026-03-17 13:25:57,new
+XOM-00327,2026-03-20 07:15:14,XOM | HSBC,price_target_usd,,158.00,2026-03-20 07:15:14,new
+XOM-00328,2026-03-27 11:45:35,XOM | Morgan Stanley,price_target_usd,,172.00,2026-03-27 11:45:35,new
+XOM-00329,2026-04-02 11:47:06,XOM | Citigroup,price_target_usd,,175.00,2026-04-02 11:47:06,new
+XOM-00330,2026-04-08 12:53:51,XOM | Wolfe Research,price_target_usd,,153.00,2026-04-08 12:53:51,new
+XOM-00331,2026-04-09 09:04:39,XOM | Wells Fargo,price_target_usd,,185.00,2026-04-09 09:04:39,new
+XOM-00332,2026-04-09 11:21:40,XOM | Jefferies,price_target_usd,,184.00,2026-04-09 11:21:40,new
+XOM-00333,2026-04-09 11:24:06,XOM | RBC Capital,price_target_usd,,180.00,2026-04-09 11:24:06,new
+XOM-00334,2026-04-09 13:34:38,XOM | Piper Sandler,price_target_usd,,182.00,2026-04-09 13:34:38,new
+XOM-00335,2026-04-09 15:04:15,XOM | JP Morgan,price_target_usd,,170.00,2026-04-09 15:04:15,new
+XOM-00336,2026-04-10 11:25:30,XOM | TD Cowen,price_target_usd,,172.00,2026-04-10 11:25:30,new
+XOM-00337,2026-04-17 10:15:17,XOM | Morgan Stanley,price_target_usd,,171.00,2026-04-17 10:15:17,new
+XOM-00338,2026-04-17 13:59:37,XOM | BNP Paribas,rating,,Neutral,2026-04-17 13:59:37,new
+XOM-00338,2026-04-17 13:59:37,XOM | BNP Paribas,price_target_usd,,165.00,2026-04-17 13:59:37,new
+XOM-00339,2026-04-21 10:39:58,XOM | Wolfe Research,rating,,Peer Perform,2026-04-21 10:39:58,new
+XOM-00340,2026-04-22 12:21:44,XOM | Scotiabank,price_target_usd,,163.00,2026-04-22 12:21:44,new
+XOM-00341,2026-05-04 16:31:24,XOM | UBS,price_target_usd,,174.00,2026-05-04 16:31:24,new
+XOM-00342,2026-05-05 10:55:15,XOM | RBC Capital,price_target_usd,,180.00,2026-05-05 10:55:15,new
+XOM-00343,2026-05-11 15:32:22,XOM | Bernstein,price_target_usd,,182.00,2026-05-11 15:32:22,new
+XOM-00344,2026-05-26 15:07:32,XOM | Barclays,price_target_usd,,182.00,2026-05-26 15:07:32,new
+XOM-00345,2026-05-27 09:03:36,XOM | Mizuho,price_target_usd,,175.00,2026-05-27 09:03:36,new
+XOM-00346,2026-06-16 05:10:28,XOM | B of A Securities,rating,,Buy,2026-06-16 05:10:28,new
+XOM-00346,2026-06-16 05:10:28,XOM | B of A Securities,price_target_usd,,154.00,2026-06-16 05:10:28,new
+XOM-00347,2026-06-29 13:21:22,XOM | Morgan Stanley,price_target_usd,,168.00,2026-06-29 13:21:22,new
+XOM-00348,2026-07-02 12:07:03,XOM | TD Cowen,price_target_usd,,155.00,2026-07-02 12:07:03,new
+XOM-00349,2026-07-09 09:28:55,XOM | Mizuho,price_target_usd,,170.00,2026-07-09 09:28:55,new
+XOM-00350,2026-07-28 13:54:40,XOM | B of A Securities,rating,,Neutral,2026-07-28 13:54:40,new
+XOM-00350,2026-07-28 13:54:40,XOM | B of A Securities,price_target_usd,,158.00,2026-07-28 13:54:40,new
+XOM-00351,2026-08-04 12:19:47,XOM | Freedom Broker,rating,,Hold,2026-08-04 12:19:47,new
+XOM-00351,2026-08-04 12:19:47,XOM | Freedom Broker,price_target_usd,,142.00,2026-08-04 12:19:47,new
+XOM-00352,2026-08-07 16:52:43,XOM | TD Cowen,price_target_usd,,168.00,2026-08-07 16:52:43,new
+XOM-00353,2026-08-17 09:41:07,XOM | Barclays,price_target_usd,,177.00,2026-08-17 09:41:07,new
+XOM-00354,2026-08-19 13:34:23,XOM | Morgan Stanley,price_target_usd,,177.00,2026-08-19 13:34:23,new
+XOM-00355,2026-09-03 13:17:57,XOM | Piper Sandler,price_target_usd,,185.00,2026-09-03 13:17:57,new
+XOM-00356,2026-09-28 10:18:28,XOM | TD Cowen,price_target_usd,,180.00,2026-09-28 10:18:28,new
+XOM-00357,2026-10-01 08:27:07,XOM | Wells Fargo,rating,,Equal-Weight,2026-10-01 08:27:07,new
+XOM-00357,2026-10-01 08:27:07,XOM | Wells Fargo,price_target_usd,,182.00,2026-10-01 08:27:07,new
+XOM-00358,2026-10-15 12:35:36,XOM | Morgan Stanley,price_target_usd,,185.00,2026-10-15 12:35:36,new
+XOM-00359,2026-10-19 15:18:54,XOM | Barclays,price_target_usd,,200.00,2026-10-19 15:18:54,new
+XOM-00360,2026-11-02 08:29:58,XOM | Wells Fargo,price_target_usd,,189.00,2026-11-02 08:29:58,new
+XOM-00361,2026-11-02 08:45:01,XOM | Evercore ISI Group,price_target_usd,,200.00,2026-11-02 08:45:01,new
+XOM-00362,2026-11-02 12:34:32,XOM | Morgan Stanley,price_target_usd,,187.00,2026-11-02 12:34:32,new
+XOM-00363,2026-11-02 16:53:24,XOM | UBS,price_target_usd,,213.00,2026-11-02 16:53:24,new
+XOM-00364,2026-11-04 14:16:46,XOM | TD Cowen,price_target_usd,,193.00,2026-11-04 14:16:46,new
+XOM-00365,2026-11-04 16:16:02,XOM | Citigroup,price_target_usd,,175.00,2026-11-04 16:16:02,new
+XOM-00366,2026-11-06 19:13:09,XOM | Freedom Broker,price_target_usd,,162.00,2026-11-06 19:13:09,new
+XOM-00367,2026-11-12 07:41:39,XOM | Bernstein,price_target_usd,,186.00,2026-11-12 07:41:39,new
+XOM-00368,2026-11-13 10:31:02,XOM | Barclays,price_target_usd,,206.00,2026-11-13 10:31:02,new

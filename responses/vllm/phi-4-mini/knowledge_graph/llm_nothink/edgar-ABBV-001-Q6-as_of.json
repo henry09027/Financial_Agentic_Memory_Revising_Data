@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-ABBV-001-Q6-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "ABBV",
+ "qtype": "ttm",
+ "mode": "as_of",
+ "as_of": "2019-08-04 19:40:00",
+ "question": "What is AbbVie Inc.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "32647",
+ "peek_answers": "32624|32867|66014",
+ "trap_answers": "32753",
+ "gold_evidence": "ABBV-00048|ABBV-00052|ABBV-00055|ABBV-00051|ABBV-00057",
+ "answer": "32753",
+ "cited": "ABBV-00055 @2019-02-27 21:45",
+ "json_ok": true,
+ "category": "trap",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1491,
+ "out_tokens": 32,
+ "seconds": 0.2425,
+ "n_facts": 11,
+ "n_dropped": 0,
+ "created": "2026-11-21T20:34:19",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-08-04 19:40:00\nQuestion: What is AbbVie Inc.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nABBV | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 6944 | first 6944 | 2 reports: 6944 [ABBV-00035 @2017-08-07 16:15]; 6944 [ABBV-00046 @2018-08-07 17:14]\nABBV | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 20477 | first 20477 | 2 reports: 20477 [ABBV-00038 @2017-11-07 16:27]; 20477 [ABBV-00046 @2018-08-07 17:14]\nABBV | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 6995 | first 6995 | 3 reports: 6995 [ABBV-00039 @2017-11-07 16:27]; 6995 [ABBV-00046 @2018-08-07 17:14]; 6995 [ABBV-00050 @2018-11-07 17:45]\nABBV | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 7934 | first 7934 | 3 reports: 7934 [ABBV-00044 @2018-05-04 14:56]; 7934 [ABBV-00046 @2018-08-07 17:14]; 7934 [ABBV-00056 @2019-05-03 14:28]\nABBV | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 8278 | first 8060 | 2 reports: 8060 [ABBV-00046 @2018-08-07 17:14]; 8278 [ABBV-00048 @2018-08-07 17:14]\nABBV | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 16212 | first 16212 | 1 reports: 16212 [ABBV-00047 @2018-08-07 17:14]\nABBV | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 24448 | first 16212 | 2 reports: 16212 [ABBV-00049 @2018-11-07 17:45]; 24448 [ABBV-00051 @2018-11-07 17:45]\nABBV | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 8236 | first 8236 | 1 reports: 8236 [ABBV-00052 @2018-11-07 17:45]\nABBV | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 28216 | first 28216 | 1 reports: 28216 [ABBV-00054 @2019-02-27 21:45]\nABBV | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 32753 | first 32753 | 1 reports: 32753 [ABBV-00055 @2019-02-27 21:45]\nABBV | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 7828 | first 7828 | 1 reports: 7828 [ABBV-00057 @2019-05-03 14:28]"
+  }
+ ],
+ "final_text": "{\"answer\": 32753, \"evidence_ids\": [\"ABBV-00055 @2019-02-27 21:45\"]}",
+ "raw_output": "{\"answer\": 32753, \"evidence_ids\": [\"ABBV-00055 @2019-02-27 21:45\"]}"
+}

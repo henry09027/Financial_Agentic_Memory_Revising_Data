@@ -1,0 +1,209 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+DIS-00240,2022-11-09 07:54:47,DIS | Credit Suisse,price_target_usd,,126.00,2022-11-09 07:54:47,new
+DIS-00240,2022-11-09 07:54:47,DIS | Credit Suisse,rating,,Outperform,2022-11-09 07:54:47,new
+DIS-00242,2022-11-09 08:26:11,DIS | JP Morgan,price_target_usd,,135.00,2022-11-09 08:26:11,new
+DIS-00243,2022-11-09 10:07:39,DIS | Goldman Sachs,price_target_usd,,118.00,2022-11-09 10:07:39,new
+DIS-00244,2022-11-21 07:45:12,DIS | MoffettNathanson,price_target_usd,,120.00,2022-11-21 07:45:12,new
+DIS-00245,2022-12-12 10:55:05,DIS | Morgan Stanley,price_target_usd,,115.00,2022-12-12 10:55:05,new
+DIS-00246,2023-01-04 06:51:58,DIS | Macquarie,price_target_usd,,110.00,2023-01-04 06:51:58,new
+DIS-00247,2023-01-17 09:24:01,DIS | Truist Securities,price_target_usd,,120.00,2023-01-17 09:24:01,new
+DIS-00248,2023-01-31 08:39:15,DIS | Macquarie,price_target_usd,,122.00,2023-01-31 08:39:15,new
+DIS-00249,2023-02-09 04:32:52,DIS | KeyBanc,price_target_usd,,130.00,2023-02-09 04:32:52,new
+DIS-00250,2023-02-09 06:48:00,DIS | Wells Fargo,price_target_usd,,141.00,2023-02-09 06:48:00,new
+DIS-00253,2023-02-09 08:09:21,DIS | Loop Capital,price_target_usd,,130.00,2023-02-09 08:09:21,new
+DIS-00254,2023-02-09 08:21:41,DIS | B of A Securities,price_target_usd,,135.00,2023-02-09 08:21:41,new
+DIS-00255,2023-02-09 09:41:09,DIS | Goldman Sachs,price_target_usd,,136.00,2023-02-09 09:41:09,new
+DIS-00256,2023-02-13 07:12:42,DIS | Citigroup,price_target_usd,,130.00,2023-02-13 07:12:42,new
+DIS-00257,2023-04-11 10:20:09,DIS | Guggenheim,price_target_usd,-,130.00,2023-04-11 10:20:09,new
+DIS-00262,2023-05-09 13:31:47,DIS | Truist Securities,price_target_usd,,121.00,2023-05-09 13:31:47,new
+DIS-00264,2023-05-11 10:33:34,DIS | Loop Capital,price_target_usd,,125.00,2023-05-11 10:33:34,new
+DIS-00284,2023-08-21 10:13:48,DIS | Truist Securities,price_target_usd,,105.00,2023-08-21 10:13:48,new
+DIS-00290,2023-09-19 12:02:35,DIS | Truist Securities,price_target_usd,,105.00,2023-09-19 12:02:35,new
+DIS-00295,2023-10-06 08:22:25,DIS | Seaport Global,rating,,Buy,2023-10-06 08:22:25,new
+DIS-00295,2023-10-06 08:22:25,DIS | Seaport Global,price_target_usd,,93.00,2023-10-06 08:22:25,new
+DIS-00296,2023-10-10 12:54:00,DIS | JP Morgan,price_target_usd,,120.00,2023-10-10 12:54:00,new
+DIS-00297,2023-11-09 10:42:57,DIS | Wells Fargo,price_target_usd,,115.00,2023-11-09 10:42:57,new
+DIS-00298,2023-11-10 07:55:45,DIS | Raymond James,price_target_usd,,101.00,2023-11-10 07:55:45,new
+DIS-00298,2023-11-10 07:55:45,DIS | Raymond James,rating,,Outperform,2023-11-10 07:55:45,new
+DIS-00300,2024-02-07 13:35:24,DIS | Needham,price_target_usd,,126.00,2024-02-07 13:35:24,new
+DIS-00301,2024-02-08 05:51:00,DIS | Barclays,price_target_usd,,95.00,2024-02-08 05:51:00,new
+DIS-00302,2024-02-08 06:04:55,DIS | Deutsche Bank,price_target_usd,,125.00,2024-02-08 06:04:55,new
+DIS-00303,2024-02-08 07:19:26,DIS | Needham,price_target_usd,,120.00,2024-02-08 07:19:26,new
+DIS-00303,2024-02-08 07:19:26,DIS | Needham,rating,,Buy,2024-02-08 07:19:26,new
+DIS-00304,2024-02-08 08:14:47,DIS | Wells Fargo,price_target_usd,,128.00,2024-02-08 08:14:47,new
+DIS-00305,2024-02-08 09:15:08,DIS | Macquarie,price_target_usd,,104.00,2024-02-08 09:15:08,new
+DIS-00306,2024-02-21 11:33:29,DIS | Tigress Financial,price_target_usd,,136.00,2024-02-21 11:33:29,new
+DIS-00307,2024-03-04 07:59:24,DIS | Morgan Stanley,price_target_usd,,135.00,2024-03-04 07:59:24,new
+DIS-00307,2024-03-04 07:59:24,DIS | Morgan Stanley,rating,,Overweight,2024-03-04 07:59:24,new
+DIS-00308,2024-03-25 04:49:13,DIS | Barclays,price_target_usd,,135.00,2024-03-25 04:49:13,new
+DIS-00308,2024-03-25 04:49:13,DIS | Barclays,rating,,Overweight,2024-03-25 04:49:13,new
+DIS-00309,2024-03-26 09:03:24,DIS | Raymond James,price_target_usd,,128.00,2024-03-26 09:03:24,new
+DIS-00309,2024-03-26 09:03:24,DIS | Raymond James,rating,,Outperform,2024-03-26 09:03:24,new
+DIS-00310,2024-03-27 14:07:27,DIS | UBS,price_target_usd,,140.00,2024-03-27 14:07:27,new
+DIS-00311,2024-03-28 13:07:16,DIS | Needham,price_target_usd,,145.00,2024-03-28 13:07:16,new
+DIS-00312,2024-04-01 07:15:47,DIS | Daiwa Capital,price_target_usd,,133.00,2024-04-01 07:15:47,new
+DIS-00313,2024-04-01 13:56:55,DIS | B of A Securities,price_target_usd,,145.00,2024-04-01 13:56:55,new
+DIS-00314,2024-04-02 08:57:10,DIS | Needham,price_target_usd,,145.00,2024-04-02 08:57:10,new
+DIS-00315,2024-04-02 15:43:11,DIS | Rosenblatt,price_target_usd,,137.00,2024-04-02 15:43:11,new
+DIS-00316,2024-04-03 10:43:59,DIS | Guggenheim,price_target_usd,,140.00,2024-04-03 10:43:59,new
+DIS-00317,2024-04-08 07:05:11,DIS | Evercore ISI Group,price_target_usd,,130.00,2024-04-08 07:05:11,new
+DIS-00318,2024-04-10 11:23:48,DIS | Argus Research,price_target_usd,,140.00,2024-04-10 11:23:48,new
+DIS-00319,2024-04-23 11:50:49,DIS | Wells Fargo,price_target_usd,,141.00,2024-04-23 11:50:49,new
+DIS-00319,2024-04-23 11:50:49,DIS | Wells Fargo,rating,,Overweight,2024-04-23 11:50:49,new
+DIS-00320,2024-05-06 13:01:17,DIS | Deutsche Bank,price_target_usd,,130.00,2024-05-06 13:01:17,new
+DIS-00321,2024-05-06 13:56:11,DIS | Loop Capital,price_target_usd,,140.00,2024-05-06 13:56:11,new
+DIS-00322,2024-05-07 13:51:06,DIS | Needham,price_target_usd,,145.00,2024-05-07 13:51:06,new
+DIS-00323,2024-05-08 09:24:32,DIS | UBS,price_target_usd,,130.00,2024-05-08 09:24:32,new
+DIS-00324,2024-05-08 11:36:30,DIS | Evercore ISI Group,price_target_usd,,128.00,2024-05-08 11:36:30,new
+DIS-00324,2024-05-08 11:36:30,DIS | Evercore ISI Group,rating,,Outperform,2024-05-08 11:36:30,new
+DIS-00325,2024-05-08 14:25:51,DIS | Barclays,price_target_usd,,130.00,2024-05-08 14:25:51,new
+DIS-00325,2024-05-08 14:25:51,DIS | Barclays,rating,,Overweight,2024-05-08 14:25:51,new
+DIS-00326,2024-05-13 13:21:32,DIS | Macquarie,price_target_usd,,107.00,2024-05-13 13:21:32,new
+DIS-00327,2024-05-21 06:26:49,DIS | Redburn Atlantic,price_target_usd,,100.00,2024-05-21 06:26:49,new
+DIS-00328,2024-06-25 05:05:00,DIS | Goldman Sachs,rating,,Buy,2024-06-25 05:05:00,new
+DIS-00328,2024-06-25 05:05:00,DIS | Goldman Sachs,price_target_usd,,125.00,2024-06-25 05:05:00,new
+DIS-00329,2024-07-02 12:01:50,DIS | MoffettNathanson,price_target_usd,2024-07-02 12:01:50,125.00,2024-07-02 12:01:50,new
+DIS-00330,2024-07-03 13:15:41,DIS | Needham,price_target_usd,,145.00,2024-07-03 13:15:41,new
+DIS-00331,2024-07-30 10:19:08,DIS | Loop Capital,price_target_usd,,130.00,2024-07-30 10:19:08,new
+DIS-00332,2024-08-05 13:03:38,DIS | Morgan Stanley,price_target_usd,,110.00,2024-08-05 13:03:38,new
+DIS-00333,2024-08-08 06:16:51,DIS | Needham,price_target_usd,,110.00,2024-08-08 06:16:51,new
+DIS-00334,2024-08-08 07:07:19,DIS | Seaport Global,rating,,Neutral,2024-08-08 07:07:19,new
+DIS-00335,2024-08-08 08:06:31,DIS | JP Morgan,price_target_usd,,125.00,2024-08-08 08:06:31,new
+DIS-00336,2024-08-08 09:04:40,DIS | Evercore ISI Group,price_target_usd,,105.00,2024-08-08 09:04:40,new
+DIS-00337,2024-08-08 09:16:26,DIS | Wells Fargo,price_target_usd,,116.00,2024-08-08 09:16:26,new
+DIS-00338,2024-08-08 10:05:34,DIS | UBS,price_target_usd,,120.00,2024-08-08 10:05:34,new
+DIS-00339,2024-08-08 11:54:32,DIS | B of A Securities,price_target_usd,,120.00,2024-08-08 11:54:32,new
+DIS-00340,2024-08-08 12:08:19,DIS | Deutsche Bank,price_target_usd,,115.00,2024-08-08 12:08:19,new
+DIS-00341,2024-08-08 12:50:54,DIS | Raymond James,price_target_usd,,101.00,2024-08-08 12:50:54,new
+DIS-00341,2024-08-08 12:50:54,DIS | Raymond James,rating,,Outperform,2024-08-08 12:50:54,new
+DIS-00342,2024-08-08 14:14:46,DIS | Barclays,price_target_usd,,105.00,2024-08-08 14:14:46,new
+DIS-00342,2024-08-08 14:14:46,DIS | Barclays,rating,,Overweight,2024-08-08 14:14:46,new
+DIS-00343,2024-08-12 17:50:03,DIS | Macquarie,price_target_usd,,94.00,2024-08-12 17:50:03,new
+DIS-00344,2024-09-19 11:33:57,DIS | Macquarie,price_target_usd,,91.00,2024-09-19 11:33:57,new
+DIS-00345,2024-09-26 06:28:19,DIS | Needham,price_target_usd,,110.00,2024-09-26 06:28:19,new
+DIS-00346,2024-09-30 09:52:54,DIS | Seaport Global,price_target_usd,2024-09-30,108.00,2024-09-30 09:52:54,new
+DIS-00346,2024-09-30 09:52:54,DIS | Seaport Global,rating,2024-09-30,Buy,2024-09-30 09:52:54,new
+DIS-00347,2024-10-01 10:25:03,DIS | Raymond James,rating,2024-10-01,Market Perform,2024-10-01 10:25:03,new
+DIS-00348,2024-10-16 05:13:37,DIS | Piper Sandler,rating,,Neutral,2024-10-16 05:13:37,new
+DIS-00348,2024-10-16 05:13:37,DIS | Piper Sandler,price_target_usd,,95.00,2024-10-16 05:13:37,new
+DIS-00349,2024-10-23 06:33:18,DIS | Needham,price_target_usd,,110.00,2024-10-23 06:33:18,new
+DIS-00350,2024-11-12 09:10:04,DIS | Evercore ISI Group,price_target_usd,,128.00,2024-11-12 09:10:04,new
+DIS-00351,2024-11-15 06:40:27,DIS | Deutsche Bank,price_target_usd,,131.00,2024-11-15 06:40:27,new
+DIS-00352,2024-11-15 08:15:56,DIS | B of A Securities,price_target_usd,,140.00,2024-11-15 08:15:56,new
+DIS-00353,2024-11-15 08:18:06,DIS | Bernstein,price_target_usd,,120.00,2024-11-15 08:18:06,new
+DIS-00353,2024-11-15 08:18:06,DIS | Bernstein,rating,,Outperform,2024-11-15 08:18:06,new
+DIS-00354,2024-11-15 08:20:30,DIS | Wells Fargo,price_target_usd,,138.00,2024-11-15 08:20:30,new
+DIS-00355,2024-11-15 09:00:19,DIS | Macquarie,price_target_usd,,110.00,2024-11-15 09:00:19,new
+DIS-00356,2024-11-15 12:15:53,DIS | Morgan Stanley,price_target_usd,,125.00,2024-11-15 12:15:53,new
+DIS-00357,2024-11-15 12:49:07,DIS | Loop Capital,price_target_usd,,125.00,2024-11-15 12:49:07,new
+DIS-00358,2024-11-15 13:40:26,DIS | TD Cowen,price_target_usd,,123.00,2024-11-15 13:40:26,new
+DIS-00359,2024-11-15 14:03:46,DIS | Guggenheim,price_target_usd,2024-11-15,130.00,2024-11-15 14:03:46,new
+DIS-00360,2024-11-15 14:40:17,DIS | Needham,price_target_usd,,130.00,2024-11-15 14:40:17,new
+DIS-00361,2024-11-18 10:18:26,DIS | Evercore ISI Group,price_target_usd,,134.00,2024-11-18 10:18:26,new
+DIS-00362,2024-11-20 06:20:41,DIS | Needham,price_target_usd,,130.00,2024-11-20 06:20:41,new
+DIS-00363,2024-12-04 05:56:34,DIS | Jefferies,rating,,Hold,2024-12-04 05:56:34,new
+DIS-00363,2024-12-04 05:56:34,DIS | Jefferies,price_target_usd,,120.00,2024-12-04 05:56:34,new
+DIS-00364,2024-12-16 07:43:52,DIS | Rosenblatt,price_target_usd,,135.00,2024-12-16 07:43:52,new
+DIS-00365,2025-01-06 16:14:22,DIS | Macquarie,price_target_usd,,110.00,2025-01-06 16:14:22,new
+DIS-00366,2025-01-07 11:43:44,DIS | Redburn Atlantic,price_target_usd,,147.00,2025-01-07 11:43:44,new
+DIS-00366,2025-01-07 11:43:44,DIS | Redburn Atlantic,rating,,Buy,2025-01-07 11:43:44,new
+DIS-00367,2025-02-05 06:11:25,DIS | Needham,price_target_usd,,130.00,2025-02-05 06:11:25,new
+DIS-00368,2025-02-06 09:53:15,DIS | Morgan Stanley,price_target_usd,,130.00,2025-02-06 09:53:15,new
+DIS-00368,2025-02-06 09:53:15,DIS | Morgan Stanley,rating,,Overweight,2025-02-06 09:53:15,new
+DIS-00369,2025-02-10 17:28:42,DIS | Rosenblatt,price_target_usd,,135.00,2025-02-10 17:28:42,new
+DIS-00370,2025-03-04 18:01:45,DIS | Loop Capital,price_target_usd,,130.00,2025-03-04 18:01:45,new
+DIS-00371,2025-04-08 15:56:24,DIS | Barclays,price_target_usd,,115.00,2025-04-08 15:56:24,new
+DIS-00372,2025-04-15 11:44:42,DIS | UBS,price_target_usd,,105.00,2025-04-15 11:44:42,new
+DIS-00373,2025-04-21 13:46:48,DIS | Wolfe Research,price_target_usd,,112.00,2025-04-21 13:46:48,new
+DIS-00373,2025-04-21 13:46:48,DIS | Wolfe Research,rating,,Outperform,2025-04-21 13:46:48,new
+DIS-00374,2025-04-22 10:34:54,DIS | Needham,price_target_usd,,125.00,2025-04-22 10:34:54,new
+DIS-00375,2025-05-08 06:23:46,DIS | Needham,price_target_usd,,125.00,2025-05-08 06:23:46,new
+DIS-00376,2025-05-08 10:23:54,DIS | Guggenheim,price_target_usd,,120.00,2025-05-08 10:23:54,new
+DIS-00377,2025-05-08 11:34:20,DIS | Morgan Stanley,price_target_usd,,120.00,2025-05-08 11:34:20,new
+DIS-00378,2025-05-08 13:18:20,DIS | Barclays,price_target_usd,,120.00,2025-05-08 13:18:20,new
+DIS-00379,2025-05-08 13:38:36,DIS | Loop Capital,price_target_usd,,125.00,2025-05-08 13:38:36,new
+DIS-00380,2025-05-08 14:10:59,DIS | UBS,price_target_usd,,120.00,2025-05-08 14:10:59,new
+DIS-00381,2025-06-03 07:19:53,DIS | Rosenblatt,price_target_usd,,140.00,2025-06-03 07:19:53,new
+DIS-00382,2025-06-10 08:53:58,DIS | Loop Capital,price_target_usd,,130.00,2025-06-10 08:53:58,new
+DIS-00383,2025-06-10 14:28:50,DIS | JP Morgan,price_target_usd,,130.00,2025-06-10 14:28:50,new
+DIS-00384,2025-06-27 09:24:15,DIS | Guggenheim,price_target_usd,,140.00,2025-06-27 09:24:15,new
+DIS-00385,2025-06-30 08:32:36,DIS | Jefferies,rating,,Buy,2025-06-30 08:32:36,new
+DIS-00385,2025-06-30 08:32:36,DIS | Jefferies,price_target_usd,,144.00,2025-06-30 08:32:36,new
+DIS-00386,2025-06-30 08:45:46,DIS | Guggenheim,price_target_usd,,140.00,2025-06-30 08:45:46,new
+DIS-00387,2025-06-30 14:40:06,DIS | Seaport Global,price_target_usd,,130.00,2025-06-30 14:40:06,new
+DIS-00388,2025-07-09 12:01:48,DIS | Barclays,price_target_usd,,140.00,2025-07-09 12:01:48,new
+DIS-00389,2025-07-09 15:17:44,DIS | Citigroup,price_target_usd,,140.00,2025-07-09 15:17:44,new
+DIS-00390,2025-07-16 11:14:23,DIS | UBS,price_target_usd,,138.00,2025-07-16 11:14:23,new
+DIS-00391,2025-07-29 11:57:42,DIS | JP Morgan,price_target_usd,,138.00,2025-07-29 11:57:42,new
+DIS-00391,2025-07-29 11:57:42,DIS | JP Morgan,rating,,Overweight,2025-07-29 11:57:42,new
+DIS-00392,2025-08-04 10:57:04,DIS | Morgan Stanley,price_target_usd,,140.00,2025-08-04 10:57:04,new
+DIS-00392,2025-08-04 10:57:04,DIS | Morgan Stanley,rating,,Overweight,2025-08-04 10:57:04,new
+DIS-00393,2025-08-04 11:05:47,DIS | Evercore ISI Group,price_target_usd,,140.00,2025-08-04 11:05:47,new
+DIS-00393,2025-08-04 11:05:47,DIS | Evercore ISI Group,rating,,Outperform,2025-08-04 11:05:47,new
+DIS-00394,2025-08-07 07:39:04,DIS | Needham,price_target_usd,,125.00,2025-08-07 07:39:04,new
+DIS-00395,2025-08-11 07:59:25,DIS | Rosenblatt,price_target_usd,,141.00,2025-08-11 07:59:25,new
+DIS-00396,2025-09-04 06:30:43,DIS | Needham,price_target_usd,,125.00,2025-09-04 06:30:43,new
+DIS-00397,2025-09-23 07:18:34,DIS | Needham,price_target_usd,,125.00,2025-09-23 07:18:34,new
+DIS-00398,2025-10-06 14:51:00,DIS | Wells Fargo,price_target_usd,,159.00,2025-10-06 14:51:00,new
+DIS-00398,2025-10-06 14:51:00,DIS | Wells Fargo,rating,,Overweight,2025-10-06 14:51:00,new
+DIS-00399,2025-10-17 07:30:15,DIS | Rosenblatt,price_target_usd,,141.00,2025-10-17 07:30:15,new
+DIS-00400,2025-11-13 04:50:04,DIS | Needham,price_target_usd,,125.00,2025-11-13 04:50:04,new
+DIS-00401,2025-11-14 09:17:12,DIS | Evercore ISI Group,price_target_usd,,142.00,2025-11-14 09:17:12,new
+DIS-00402,2025-11-14 09:20:48,DIS | Guggenheim,price_target_usd,,140.00,2025-11-14 09:20:48,new
+DIS-00403,2025-11-14 10:27:45,DIS | Wells Fargo,price_target_usd,,152.00,2025-11-14 10:27:45,new
+DIS-00404,2025-11-14 13:40:43,DIS | Jefferies,price_target_usd,,136.00,2025-11-14 13:40:43,new
+DIS-00405,2026-01-16 13:29:33,DIS | Citigroup,price_target_usd,,140.00,2026-01-16 13:29:33,new
+DIS-00405,2026-01-16 13:29:33,DIS | Citigroup,price_target_usd,,145.00,2026-01-16 13:29:33,missed-revision
+DIS-00406,2026-02-02 12:54:08,DIS | Needham,price_target_usd,,125.00,2026-02-02 12:54:08,new
+DIS-00407,2026-02-03 07:44:59,DIS | Jefferies,price_target_usd,,132.00,2026-02-03 07:44:59,new
+DIS-00408,2026-02-03 08:51:38,DIS | Wells Fargo,price_target_usd,,150.00,2026-02-03 08:51:38,new
+DIS-00409,2026-02-03 09:42:16,DIS | TD Cowen,price_target_usd,,123.00,2026-02-03 09:42:16,new
+DIS-00410,2026-02-03 11:40:23,DIS | Guggenheim,price_target_usd,,140.00,2026-02-03 11:40:23,new
+DIS-00411,2026-02-03 16:11:18,DIS | Guggenheim,price_target_usd,,130.00,2026-02-03 16:11:18,new
+DIS-00412,2026-03-18 09:05:52,DIS | Guggenheim,price_target_usd,,115.00,2026-03-18 09:05:52,new
+DIS-00413,2026-03-27 08:55:21,DIS | Wells Fargo,price_target_usd,,148.00,2026-03-27 08:55:21,new
+DIS-00414,2026-03-31 06:47:04,DIS | Needham,price_target_usd,,125.00,2026-03-31 06:47:04,new
+DIS-00415,2026-04-01 10:08:42,DIS | Raymond James,rating,,Outperform,2026-04-01 10:08:42,new
+DIS-00415,2026-04-01 10:08:42,DIS | Raymond James,price_target_usd,,115.00,2026-04-01 10:08:42,new
+DIS-00416,2026-04-08 13:00:47,DIS | Barclays,price_target_usd,,130.00,2026-04-08 13:00:47,new
+DIS-00417,2026-05-07 11:21:34,DIS | Wells Fargo,price_target_usd,,146.00,2026-05-07 11:21:34,new
+DIS-00418,2026-05-07 11:32:41,DIS | Guggenheim,price_target_usd,,120.00,2026-05-07 11:32:41,new
+DIS-00419,2026-05-07 14:09:33,DIS | Barclays,price_target_usd,,135.00,2026-05-07 14:09:33,new
+DIS-00420,2026-05-07 15:03:26,DIS | JP Morgan,price_target_usd,,139.00,2026-05-07 15:03:26,new
+DIS-00421,2026-05-08 16:14:27,DIS | Citigroup,price_target_usd,,145.00,2026-05-08 16:14:27,new
+DIS-00422,2026-05-23 09:50:09,DIS | Raymond James,price_target_usd,,119.00,2026-05-23 09:50:09,new
+DIS-00423,2026-06-05 10:39:33,DIS | Rosenblatt,price_target_usd,,126.00,2026-06-05 10:39:33,new
+DIS-00424,2026-06-12 08:01:50,DIS | Needham,price_target_usd,,125.00,2026-06-12 08:01:50,new
+DIS-00425,2026-06-30 11:37:00,DIS | JP Morgan,price_target_usd,,140.00,2026-06-30 11:37:00,new
+DIS-00425,2026-06-30 11:37:00,DIS | JP Morgan,rating,,Overweight,2026-06-30 11:37:00,new
+DIS-00426,2026-07-02 09:52:28,DIS | Raymond James,price_target_usd,,111.00,2026-07-02 09:52:28,new
+DIS-00426,2026-07-02 09:52:28,DIS | Raymond James,rating,,Outperform,2026-07-02 09:52:28,new
+DIS-00427,2026-07-07 07:05:20,DIS | Rosenblatt,price_target_usd,,126.00,2026-07-07 07:05:20,new
+DIS-00428,2026-07-13 08:01:41,DIS | Wells Fargo,price_target_usd,,125.00,2026-07-13 08:01:41,new
+DIS-00428,2026-07-13 08:01:41,DIS | Wells Fargo,rating,,Overweight,2026-07-13 08:01:41,new
+DIS-00429,2026-07-13 08:53:06,DIS | Raymond James,rating,,Buy,2026-07-13 08:53:06,new
+DIS-00429,2026-07-13 08:53:06,DIS | Raymond James,price_target_usd,,115.00,2026-07-13 08:53:06,new
+DIS-00430,2026-07-14 07:30:26,DIS | Barclays,price_target_usd,,110.00,2026-07-14 07:30:26,new
+DIS-00431,2026-07-20 07:55:40,DIS | UBS,price_target_usd,,133.00,2026-07-20 07:55:40,new
+DIS-00432,2026-07-29 09:31:32,DIS | Citigroup,price_target_usd,,135.00,2026-07-29 09:31:32,new
+DIS-00433,2026-08-06 08:16:56,DIS | Rosenblatt,price_target_usd,,126.00,2026-08-06 08:16:56,new
+DIS-00434,2026-08-06 10:15:58,DIS | Guggenheim,price_target_usd,,120.00,2026-08-06 10:15:58,new
+DIS-00435,2026-08-06 10:54:56,DIS | Barclays,price_target_usd,,115.00,2026-08-06 10:54:56,new
+DIS-00436,2026-08-06 11:00:26,DIS | Guggenheim,price_target_usd,,115.00,2026-08-06 11:00:26,new
+DIS-00437,2026-08-06 12:12:25,DIS | Argus Research,price_target_usd,,134.00,2026-08-06 12:12:25,new
+DIS-00438,2026-08-06 13:22:38,DIS | Wells Fargo,price_target_usd,,132.00,2026-08-06 13:22:38,new
+DIS-00439,2026-09-28 08:25:53,DIS | Guggenheim,price_target_usd,,120.00,2026-09-28 08:25:53,new
+DIS-00440,2026-10-05 13:26:23,DIS | Raymond James,price_target_usd,,119.00,2026-10-05 13:26:23,new
+DIS-00441,2026-10-09 07:36:40,DIS | Needham,price_target_usd,,125.00,2026-10-09 07:36:40,new
+DIS-00442,2026-10-16 16:35:59,DIS | Citigroup,price_target_usd,,140.00,2026-10-16 16:35:59,new
+DIS-00443,2026-11-18 07:01:02,DIS | Needham,price_target_usd,,135.00,2026-11-18 07:01:02,new
+DIS-00444,2026-11-18 07:31:32,DIS | Rosenblatt,price_target_usd,,141.00,2026-11-18 07:31:32,new
+DIS-00445,2026-11-18 08:25:08,DIS | Guggenheim,price_target_usd,,135.00,2026-11-18 08:25:08,new
+DIS-00446,2026-11-18 09:22:30,DIS | Barclays,price_target_usd,,135.00,2026-11-18 09:22:30,new
+DIS-00447,2026-11-18 10:07:26,DIS | Wells Fargo,price_target_usd,,140.00,2026-11-18 10:07:26,new
+DIS-00447,2026-11-18 10:07:26,DIS | Wells Fargo,rating,,Overweight,2026-11-18 10:07:26,new
+DIS-00448,2026-11-18 11:00:07,DIS | JP Morgan,price_target_usd,,140.00,2026-11-18 11:00:07,new
+DIS-00448,2026-11-18 11:00:07,DIS | JP Morgan,rating,,Overweight,2026-11-18 11:00:07,new
+DIS-00449,2026-11-18 11:45:15,DIS | B of A Securities,price_target_usd,,135.00,2026-11-18 11:45:15,new
+DIS-00450,2026-11-19 12:24:17,DIS | Morgan Stanley,price_target_usd,,138.00,2026-11-19 12:24:17,new
+DIS-00450,2026-11-19 12:24:17,DIS | Morgan Stanley,rating,,Overweight,2026-11-19 12:24:17,new

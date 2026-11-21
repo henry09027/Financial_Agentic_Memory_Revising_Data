@@ -1,0 +1,16 @@
+evidence_id,source,entity,known_at,text,gold_concept,gold_form,gold_fy,gold_fp,gold_start,gold_end,gold_value_musd
+S01,edgar,BRLS,2025-05-08 16:05:00,Form 10-Q (FY2025 Q1) filed 2025-05-08: Borealis Corp (BRLS) Revenues for 2025-01-01 to 2025-03-31 = $980M.,Revenues,10-Q,2025,Q1,2025-01-01,2025-03-31,980
+S02,edgar,BRLS,2025-08-07 16:05:00,"Form 10-Q (FY2025 Q2) filed 2025-08-07: Borealis Corp (BRLS) Revenues for 2025-04-01 to 2025-06-30 = $1,020M.",Revenues,10-Q,2025,Q2,2025-04-01,2025-06-30,1020
+S03,edgar,BRLS,2025-08-07 16:05:00,"Form 10-Q (FY2025 Q2) filed 2025-08-07: Borealis Corp (BRLS) Revenues for 2025-01-01 to 2025-06-30 = $2,000M.",Revenues,10-Q,2025,Q2,2025-01-01,2025-06-30,2000
+S04,edgar,BRLS,2025-11-06 16:05:00,"Form 10-Q (FY2025 Q3) filed 2025-11-06: Borealis Corp (BRLS) Revenues for 2025-07-01 to 2025-09-30 = $1,050M.",Revenues,10-Q,2025,Q3,2025-07-01,2025-09-30,1050
+S05,edgar,BRLS,2025-11-06 16:05:00,"Form 10-Q (FY2025 Q3) filed 2025-11-06: Borealis Corp (BRLS) Revenues for 2025-01-01 to 2025-09-30 = $3,050M.",Revenues,10-Q,2025,Q3,2025-01-01,2025-09-30,3050
+S06,edgar,BRLS,2026-02-26 16:05:00,"Form 10-K (FY2025 FY) filed 2026-02-26: Borealis Corp (BRLS) Revenues for 2025-01-01 to 2025-12-31 = $4,120M.",Revenues,10-K,2025,FY,2025-01-01,2025-12-31,4120
+S07,edgar,BRLS,2026-05-07 16:05:00,"Form 10-Q (FY2026 Q1) filed 2026-05-07: Borealis Corp (BRLS) Revenues for 2026-01-01 to 2026-03-31 = $1,060M.",Revenues,10-Q,2026,Q1,2026-01-01,2026-03-31,1060
+S08,edgar,BRLS,2026-05-07 16:05:00,Form 10-Q (FY2026 Q1) filed 2026-05-07: Borealis Corp (BRLS) Revenues for 2025-01-01 to 2025-03-31 = $980M (prior-year comparative).,Revenues,10-Q,2026,Q1,2025-01-01,2025-03-31,980
+S09,edgar,BRLS,2026-06-18 16:30:00,"Form 10-K/A (FY2025 FY) filed 2026-06-18: Borealis Corp (BRLS) Revenues for 2025-01-01 to 2025-12-31 = $4,060M (restated to correct a revenue-recognition error in Q4 2025; nine-month figures unchanged).",Revenues,10-K/A,2025,FY,2025-01-01,2025-12-31,4060
+S10,edgar,BRLS,2026-08-06 16:05:00,"Form 10-Q (FY2026 Q2) filed 2026-08-06: Borealis Corp (BRLS) Revenues for 2026-04-01 to 2026-06-30 = $1,110M.",Revenues,10-Q,2026,Q2,2026-04-01,2026-06-30,1110
+S11,edgar,BRLS,2026-08-06 16:05:00,"Form 10-Q (FY2026 Q2) filed 2026-08-06: Borealis Corp (BRLS) Revenues for 2026-01-01 to 2026-06-30 = $2,170M.",Revenues,10-Q,2026,Q2,2026-01-01,2026-06-30,2170
+S12,edgar,BRLS,2026-08-06 16:05:00,"Form 10-Q (FY2026 Q2) filed 2026-08-06: Borealis Corp (BRLS) Revenues for 2025-04-01 to 2025-06-30 = $1,020M (prior-year comparative).",Revenues,10-Q,2026,Q2,2025-04-01,2025-06-30,1020
+S13,edgar,BRLS,2026-11-05 16:05:00,"Form 10-Q (FY2026 Q3) filed 2026-11-05: Borealis Corp (BRLS) Revenues for 2026-07-01 to 2026-09-30 = $1,130M.",Revenues,10-Q,2026,Q3,2026-07-01,2026-09-30,1130
+S14,edgar,BRLS,2026-11-05 16:05:00,"Form 10-Q (FY2026 Q3) filed 2026-11-05: Borealis Corp (BRLS) Revenues for 2026-01-01 to 2026-09-30 = $3,300M.",Revenues,10-Q,2026,Q3,2026-01-01,2026-09-30,3300
+S15,edgar,BRLS,2026-11-05 16:05:00,"Form 10-Q (FY2026 Q3) filed 2026-11-05: Borealis Corp (BRLS) Revenues for 2025-07-01 to 2025-09-30 = $1,050M (prior-year comparative).",Revenues,10-Q,2026,Q3,2025-07-01,2025-09-30,1050

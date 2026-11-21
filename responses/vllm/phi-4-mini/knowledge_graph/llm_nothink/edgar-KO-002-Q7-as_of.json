@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-KO-002-Q7-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "KO",
+ "qtype": "not_yet_published",
+ "mode": "as_of",
+ "as_of": "2020-04-24 03:16:00",
+ "question": "What was COCA COLA CO's revenue for the three months ended 27 March 2020, in $ millions?",
+ "gold": "CANNOT_ANSWER",
+ "peek_answers": "8601",
+ "trap_answers": "",
+ "gold_evidence": "",
+ "answer": "9702",
+ "cited": "KO-00045 @2018-07-26 18:40",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": null,
+ "in_tokens": 2390,
+ "out_tokens": 31,
+ "seconds": 0.2459,
+ "n_facts": 24,
+ "n_dropped": 0,
+ "created": "2026-11-21T20:37:40",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2020-04-24 03:16:00\nQuestion: What was COCA COLA CO's revenue for the three months ended 27 March 2020, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nKO | Revenues | value_usd_m | 2017-01-01..2017-06-30: latest 18820 | first 18820 | 3 reports: 18820 [KO-00034 @2017-07-27 19:22]; 18820 [KO-00045 @2018-07-26 18:40]; 18820 [KO-00045 @2018-07-26 18:40]\nKO | Revenues | value_usd_m | 2017-07-27..2017-09-30: latest 9702 | first 9702 | 1 reports: 9702 [KO-00035 @2017-07-27 19:22]\nKO | Revenues | value_usd_m | 2017-01-01..2017-09-29: latest 27898 | first 27898 | 3 reports: 27898 [KO-00038 @2017-10-26 19:51]; 27898 [KO-00045 @2018-07-26 18:40]; 27898 [KO-00049 @2018-10-30 17:25]\nKO | Revenues | value_usd_m | 2017-07-01..2017-09-29: latest 9080 | first 9078 | 4 reports: 9078 [KO-00039 @2017-10-26 19:51]; 9078 [KO-00045 @2018-07-26 18:40]; 9702 [KO-00049 @2018-10-30 17:25]; 9080 [KO-00050 @2018-10-30 17:25]\nKO | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 36212 | first 35410 | 4 reports: 35410 [KO-00042 @2018-02-23 16:20]; 35410 [KO-00045 @2018-07-26 18:40]; 35410 [KO-00054 @2019-02-21 21:55]; 36212 [KO-00066 @2020-02-24 21:08]\nKO | Revenues | value_usd_m | 2018-01-01..2018-03-30: latest 7626 | first 7626 | 2 reports: 7626 [KO-00044 @2018-05-01 19:30]; 7626 [KO-00045 @2018-07-26 18:40]\nKO | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 9702 | first 9702 | 1 reports: 9702 [KO-00045 @2018-07-26 18:40]\nKO | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 9702 | first 9702 | 2 reports: 9702 [KO-00046 @2018-07-26 18:40]; 9702 [KO-00049 @2018-10-30 17:25]\nKO | Revenues | value_usd_m | 2018-01-01..2018-06-29: latest 16553 | first 16553 | 2 reports: 16553 [KO-00047 @2018-07-26 18:40]; 16553 [KO-00049 @2018-10-30 17:25]\nKO | Revenues | value_usd_m | 2018-03-31..2018-06-29: latest 8927 | first 8927 | 2 reports: 8927 [KO-00048 @2018-07-26 18:40]; 8927 [KO-00049 @2018-10-30 17:25]\nKO | Revenues | value_usd_m | 2018-01-01..2018-09-28: latest 26494 | first 24798 | 2 reports: 24798 [KO-00051 @2018-10-30 17:25]; 26494 [KO-00062 @2019-10-24 19:19]\nKO | Revenues | value_usd_m | 2018-06-30..2018-09-28: latest 8245 | first 8245 | 1 reports: 8245 [KO-00052 @2018-10-30 17:25]\nKO | Revenues | value_usd_m | 2019-02-21..2019-02-21: latest 35410 | first 35410 | 1 reports: 35410 [KO-00054 @2019-02-21 21:55]\nKO | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 34300 | first 31856 | 2 reports: 31856 [KO-00055 @2019-02-21 21:55]; 34300 [KO-00067 @2020-02-24 21:08]\nKO | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 7626 | first 7626 | 1 reports: 7626 [KO-00056 @2019-04-25 19:09]\nKO | Revenues | value_usd_m | 2019-01-01..2019-03-29: latest 8020 | first 8020 | 1 reports: 8020 [KO-00057 @2019-04-25 19:09]\nKO | Revenues | value_usd_m | 2019-01-01..2019-06-29: latest 17719 | first 17719 | 1 reports: 17719 [KO-00058 @2019-07-25 20:09]\nKO | Revenues | value_usd_m | 2019-03-31..2018-06-29: latest 9421 | first 9421 | 1 reports: 9421 [KO-00059 @2019-07-25 20:09]\nKO | Revenues | value_usd_m | 2019-01-01..2019-06-28: latest 18691 | first 18691 | 1 reports: 18691 [KO-00060 @2019-07-25 20:09]\nKO | Revenues | value_usd_m | 2019-03-30..2019-06-28: latest 9997 | first 9997 | 1 reports: 9997 [KO-00061 @2019-07-25 20:09]\nKO | Revenues | value_usd_m | 2019-06-30..2019-09-28: latest 8775 | first 8775 | 1 reports: 8775 [KO-00063 @2019-10-24 19:19]\nKO | Revenues | value_usd_m | 2019-01-01..2019-09-27: latest 28180 | first 28180 | 1 reports: 28180 [KO-00064 @2019-10-24 19:19]\nKO | Revenues | value_usd_m | 2019-06-29..2019-09-27: latest 9507 | first 9507 | 1 reports: 9507 [KO-00065 @2019-10-24 19:19]\nKO | Revenues | value_usd_m | 2019-01-01..2019-12-31: latest 37266 | first 37266 | 1 reports: 37266 [KO-00068 @2020-02-24 21:08]"
+  }
+ ],
+ "final_text": "{\"answer\": 9702, \"evidence_ids\": [\"KO-00045 @2018-07-26 18:40\"]}",
+ "raw_output": "{\"answer\": 9702, \"evidence_ids\": [\"KO-00045 @2018-07-26 18:40\"]}"
+}

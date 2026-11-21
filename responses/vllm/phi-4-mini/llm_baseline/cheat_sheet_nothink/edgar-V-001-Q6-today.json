@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-V-001-Q6-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "edgar",
+ "entity": "V",
+ "qtype": "ttm",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "What is VISA INC.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "44488",
+ "peek_answers": "",
+ "trap_answers": "45903",
+ "gold_evidence": "V-00155|V-00150|V-00145|V-00149|V-00153",
+ "answer": "40,000",
+ "cited": "V-00155",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.2,
+ "in_tokens": 963,
+ "out_tokens": 24,
+ "seconds": 0.0286,
+ "n_evidence": 5,
+ "n_dropped": 0,
+ "created": "2026-11-21T19:41:05",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: What is VISA INC.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nEvidence:\n[V-00145] 2026-01-29 23:08 | Form 10-Q (FY2026 Q1) filed 2026-01-30: VISA INC. (V) Revenues for 2025-10-01 to 2025-12-31 = $10,901M.\n[V-00149] 2026-04-28 22:11 | Form 10-Q (FY2026 Q2) filed 2026-04-29: VISA INC. (V) Revenues for 2026-01-01 to 2026-03-31 = $11,230M.\n[V-00150] 2026-07-28 22:08 | Form 10-Q (FY2026 Q3) filed 2026-07-29: VISA INC. (V) Revenues for 2024-10-01 to 2025-06-30 = $29,276M (prior-year comparative).\n[V-00153] 2026-07-28 22:08 | Form 10-Q (FY2026 Q3) filed 2026-07-29: VISA INC. (V) Revenues for 2026-04-01 to 2026-06-30 = $11,633M.\n[V-00155] 2026-11-05 21:07 | Form 10-K (FY2026 FY) filed 2026-11-05: VISA INC. (V) Revenues for 2024-10-01 to 2025-09-30 = $40,000M (prior-year comparative)."
+  }
+ ],
+ "final_text": "{\n  \"answer\": 40,000,\n  \"evidence_ids\": [\"V-00155\"]\n}",
+ "raw_output": "{\n  \"answer\": 40,000,\n  \"evidence_ids\": [\"V-00155\"]\n}"
+}

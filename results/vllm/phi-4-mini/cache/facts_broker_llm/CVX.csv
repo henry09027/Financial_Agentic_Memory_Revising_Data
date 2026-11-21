@@ -1,0 +1,225 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+CVX-00075,2019-12-26 18:22:00,CVX | TD Cowen,alias,,TD Cowen,2019-12-26 18:22:00,event
+CVX-00192,2022-09-06 07:44:54,CVX | Morgan Stanley,price_target_usd,,193.00,2022-09-06 07:44:54,new
+CVX-00193,2022-09-12 07:24:52,CVX | Piper Sandler,price_target_usd,,190.00,2022-09-12 07:24:52,new
+CVX-00194,2022-10-19 10:04:35,CVX | Morgan Stanley,price_target_usd,,196.00,2022-10-19 10:04:35,new
+CVX-00195,2022-10-20 09:29:55,CVX | Raymond James,price_target_usd,,188.00,2022-10-20 09:29:55,new
+CVX-00197,2022-10-31 06:11:50,CVX | Raymond James,price_target_usd,,215.00,2022-10-31 06:11:50,new
+CVX-00198,2022-10-31 09:38:21,CVX | Cowen & Co.,price_target_usd,post-split,185.0,2022-10-31 09:38:21,new
+CVX-00199,2022-11-11 06:24:29,CVX | Piper Sandler,price_target_usd,,206.00,2022-11-11 06:24:29,new
+CVX-00200,2022-12-14 14:58:25,CVX | Exane BNP Paribas,rating,,Underperform,2022-12-14 14:58:25,new
+CVX-00201,2022-12-19 06:50:59,CVX | Piper Sandler,price_target_usd,post-split,199.00,2022-12-19 06:50:59,new
+CVX-00202,2023-01-03 07:35:42,CVX | Barclays,price_target_usd,post-split,212.00,2023-01-03 07:35:42,new
+CVX-00203,2023-01-10 05:38:26,CVX | Mizuho,price_target_usd,post-split,200.00,2023-01-10 05:38:26,new
+CVX-00204,2023-01-10 08:35:16,CVX | Wells Fargo,price_target_usd,post-split,202.00,2023-01-10 08:35:16,new
+CVX-00205,2023-01-24 08:36:17,CVX | Morgan Stanley,price_target_usd,,197.00,2023-01-24 08:36:17,new
+CVX-00206,2023-01-30 07:39:38,CVX | Raymond James,price_target_usd,post-split,212.00,2023-01-30 07:39:38,new
+CVX-00207,2023-01-30 08:46:49,CVX | Morgan Stanley,price_target_usd,post-split,195.00,2023-01-30 08:46:49,new
+CVX-00208,2023-01-31 07:22:20,CVX | Truist Securities,price_target_usd,post-split,179.00,2023-01-31 07:22:20,new
+CVX-00209,2023-02-24 09:15:44,CVX | Cowen & Co.,price_target_usd,post-split,170.00,2023-02-24 09:15:44,new
+CVX-00211,2023-03-17 09:15:08,CVX | Mizuho,price_target_usd,post-split,206.00,2023-03-17 09:15:08,new
+CVX-00213,2023-04-04 04:42:36,CVX | Exane BNP Paribas,rating,,Neutral,2023-04-04 04:42:36,new
+CVX-00213,2023-04-04 04:42:36,CVX | Exane BNP Paribas,price_target_usd,,200.00,2023-04-04 04:42:36,new
+CVX-00214,2023-04-11 09:38:26,CVX | Truist Securities,price_target_usd,post-split,193.00,2023-04-11 09:38:26,new
+CVX-00215,2023-04-11 09:43:54,CVX | Mizuho,price_target_usd,post-split,206.00,2023-04-11 09:43:54,new
+CVX-00216,2023-04-13 07:17:53,CVX | Scotiabank,rating,,Sector Outperform,2023-04-13 07:17:53,new
+CVX-00216,2023-04-13 07:17:53,CVX | Scotiabank,price_target_usd,,200.00,2023-04-13 07:17:53,new
+CVX-00217,2023-04-14 07:19:05,CVX | Raymond James,price_target_usd,post-split,208.00,2023-04-14 07:19:05,new
+CVX-00218,2023-05-01 09:07:38,CVX | Truist Securities,price_target_usd,post-split,190.00,2023-05-01 09:07:38,new
+CVX-00219,2023-05-19 07:10:03,CVX | Mizuho,price_target_usd,post-split,196.00,2023-05-19 07:10:03,new
+CVX-00220,2023-05-23 06:20:44,CVX | HSBC,rating,,Buy,2023-05-23 06:20:44,new
+CVX-00220,2023-05-23 06:20:44,CVX | HSBC,price_target_usd,,189.00,2023-05-23 06:20:44,new
+CVX-00221,2023-05-23 07:43:34,CVX | Morgan Stanley,price_target_usd,post-split,198.0,2023-05-23 07:43:34,new
+CVX-00222,2023-05-24 07:31:49,CVX | Mizuho,price_target_usd,post-split,202.00,2023-05-24 07:31:49,new
+CVX-00223,2023-05-31 04:56:31,CVX | JP Morgan,rating,,Neutral,2023-05-31 04:56:31,new
+CVX-00223,2023-05-31 04:56:31,CVX | JP Morgan,price_target_usd,,170.00,2023-05-31 04:56:31,new
+CVX-00224,2023-06-01 05:35:15,CVX | RBC Capital,rating,,Outperform,2023-06-01 05:35:15,new
+CVX-00224,2023-06-01 05:35:15,CVX | RBC Capital,price_target_usd,,180.00,2023-06-01 05:35:15,new
+CVX-00225,2023-06-13 12:35:39,CVX | Piper Sandler,price_target_usd,post-split,188.00,2023-06-13 12:35:39,new
+CVX-00226,2023-07-11 06:52:36,CVX | Citigroup,price_target_usd,post-split,170.00,2023-07-11 06:52:36,new
+CVX-00227,2023-07-11 07:14:03,CVX | Mizuho,price_target_usd,post-split,205.00,2023-07-11 07:14:03,new
+CVX-00228,2023-07-13 07:19:03,CVX | Raymond James,price_target_usd,post-split,200.00,2023-07-13 07:19:03,new
+CVX-00229,2023-07-18 09:53:28,CVX | Morgan Stanley,price_target_usd,post-split,197.00,2023-07-18 09:53:28,new
+CVX-00230,2023-07-20 05:42:33,CVX | UBS,price_target_usd,post-split,202.00,2023-07-20 05:42:33,new
+CVX-00231,2023-07-25 08:21:08,CVX | Morgan Stanley,price_target_usd,post-split,197.00,2023-07-25 08:21:08,new
+CVX-00232,2023-07-31 04:56:49,CVX | Goldman Sachs,rating,,Buy,2023-07-31 04:56:49,new
+CVX-00232,2023-07-31 04:56:49,CVX | Goldman Sachs,price_target_usd,,187.00,2023-07-31 04:56:49,new
+CVX-00233,2023-07-31 10:53:11,CVX | Truist Securities,price_target_usd,post-split,165.00,2023-07-31 10:53:11,new
+CVX-00234,2023-08-01 08:33:58,CVX | Goldman Sachs,price_target_usd,post-split,187.00,2023-08-01 08:33:58,new
+CVX-00235,2023-08-16 05:35:42,CVX | Mizuho,rating,,Buy,2023-08-16 05:35:42,new
+CVX-00236,2023-08-17 08:42:38,CVX | UBS,price_target_usd,post-split,209.00,2023-08-17 08:42:38,new
+CVX-00237,2023-08-18 09:03:01,CVX | Morgan Stanley,price_target_usd,post-split,198.0,2023-08-18 09:03:01,new
+CVX-00238,2023-09-18 10:17:32,CVX | Mizuho,value,post-split,215.00,2023-09-18 10:17:32,new
+CVX-00239,2023-10-02 09:50:02,CVX | Morgan Stanley,price_target_usd,post-split,203.0,2023-10-02 09:50:02,new
+CVX-00240,2023-10-04 11:00:49,CVX | UBS,price_target_usd,post-split,210.00,2023-10-04 11:00:49,new
+CVX-00241,2023-10-17 05:47:58,CVX | Bernstein,rating,,Market Perform,2023-10-17 05:47:58,new
+CVX-00241,2023-10-17 05:47:58,CVX | Bernstein,price_target_usd,,184.00,2023-10-17 05:47:58,new
+CVX-00242,2023-10-17 10:05:56,CVX | Morgan Stanley,price_target_usd,post-split,201.00,2023-10-17 10:05:56,new
+CVX-00243,2023-10-24 11:51:33,CVX | RBC Capital,price_target_usd,post-split,180.00,2023-10-24 11:51:33,new
+CVX-00244,2023-10-24 12:35:13,CVX | Truist Securities,price_target_usd,post-split,169.00,2023-10-24 12:35:13,new
+CVX-00245,2023-10-30 04:49:42,CVX | Raymond James,price_target_usd,post-split,175.0,2023-10-30 04:49:42,new
+CVX-00246,2023-10-30 09:02:34,CVX | B of A Securities,rating,,Buy,2023-10-30 09:02:34,new
+CVX-00246,2023-10-30 09:02:34,CVX | B of A Securities,price_target_usd,,200.00,2023-10-30 09:02:34,new
+CVX-00247,2023-11-02 04:58:28,CVX | Bernstein,rating,,Outperform,2023-11-02 04:58:28,new
+CVX-00247,2023-11-02 04:58:28,CVX | Bernstein,price_target_usd,,182.00,2023-11-02 04:58:28,new
+CVX-00248,2023-11-14 13:40:26,CVX | Mizuho,price_target_usd,post-split,195.00,2023-11-14 13:40:26,new
+CVX-00249,2023-12-14 11:27:44,CVX | UBS,price_target_usd,post-split,185.00,2023-12-14 11:27:44,new
+CVX-00250,2024-01-08 09:08:07,CVX | Jefferies,rating,,Buy,2024-01-08 09:08:07,new
+CVX-00250,2024-01-08 09:08:07,CVX | Jefferies,price_target_usd,,184.00,2024-01-08 09:08:07,new
+CVX-00251,2024-01-16 14:54:23,CVX | Scotiabank,rating,,Sector Perform,2024-01-16 14:54:23,new
+CVX-00251,2024-01-16 14:54:23,CVX | Scotiabank,price_target_usd,,170.00,2024-01-16 14:54:23,new
+CVX-00252,2024-01-23 06:38:30,CVX | TD Cowen,rating,,Market Perform,2024-01-23 06:38:30,new
+CVX-00252,2024-01-23 06:38:30,CVX | TD Cowen,price_target_usd,,150.00,2024-01-23 06:38:30,new
+CVX-00253,2024-02-05 10:12:57,CVX | RBC Capital,price_target_usd,post-split,190.00,2024-02-05 10:12:57,new
+CVX-00254,2024-02-06 08:12:04,CVX | DZ Bank,rating,,Hold,2024-02-06 08:12:04,new
+CVX-00254,2024-02-06 08:12:04,CVX | DZ Bank,price_target_usd,,160.00,2024-02-06 08:12:04,new
+CVX-00255,2024-03-14 09:16:03,CVX | Piper Sandler,price_target_usd,post-split,180.0,2024-03-14 09:16:03,new
+CVX-00256,2024-03-20 07:17:39,CVX | Mizuho,price_target_usd,post-split,200.00,2024-03-20 07:17:39,new
+CVX-00258,2024-04-04 08:46:10,CVX | Wells Fargo,price_target_usd,post-split,198.0,2024-04-04 08:46:10,new
+CVX-00259,2024-04-05 13:40:45,CVX | Truist Securities,price_target_usd,post-split,156.00,2024-04-05 13:40:45,new
+CVX-00260,2024-04-09 12:03:18,CVX | UBS,price_target_usd,post-split,197.0,2024-04-09 12:03:18,new
+CVX-00261,2024-04-10 09:26:32,CVX | Barclays,rating,,Overweight,2024-04-10 09:26:32,new
+CVX-00261,2024-04-10 09:26:32,CVX | Barclays,price_target_usd,,203.00,2024-04-10 09:26:32,new
+CVX-00262,2024-04-11 11:08:10,CVX | Scotiabank,rating,,Sector Outperform,2024-04-11 11:08:10,new
+CVX-00262,2024-04-11 11:08:10,CVX | Scotiabank,price_target_usd,,post-split = 195.00,2024-04-11 11:08:10,new
+CVX-00263,2024-04-15 13:14:35,CVX | Raymond James,price_target_usd,post-split,174.0,2024-04-15 13:14:35,new
+CVX-00264,2024-04-18 09:23:45,CVX | Piper Sandler,price_target_usd,,204.00,2024-04-18 09:23:45,new
+CVX-00265,2024-04-29 09:34:39,CVX | TD Cowen,price_target_usd,,160.00,2024-04-29 09:34:39,new
+CVX-00266,2024-04-30 11:18:35,CVX | Wells Fargo,price_target_usd,post-split,206.0,2024-04-30 11:18:35,new
+CVX-00267,2024-04-30 11:43:27,CVX | HSBC,price_target_usd,,178.00,2024-04-30 11:43:27,new
+CVX-00268,2024-05-10 13:16:38,CVX | Truist Securities,price_target_usd,post-split,166.00,2024-05-10 13:16:38,new
+CVX-00269,2024-05-13 10:56:20,CVX | Mizuho,price_target_usd,post-split,205.00,2024-05-13 10:56:20,new
+CVX-00270,2024-07-12 16:22:46,CVX | Scotiabank,price_target_usd,post-split,180.0,2024-07-12 16:22:46,new
+CVX-00271,2024-07-17 06:41:18,CVX | Bernstein,rating,,Market Perform,2024-07-17 06:41:18,new
+CVX-00271,2024-07-17 06:41:18,CVX | Bernstein,price_target_usd,,167.00,2024-07-17 06:41:18,new
+CVX-00272,2024-07-22 11:18:49,CVX | Truist Securities,price_target_usd,post-split,156.00,2024-07-22 11:18:49,new
+CVX-00273,2024-08-05 09:44:38,CVX | Truist Securities,price_target_usd,post-split,154.00,2024-08-05 09:44:38,new
+CVX-00274,2024-08-05 10:59:07,CVX | RBC Capital,price_target_usd,post-split,180.00,2024-08-05 10:59:07,new
+CVX-00275,2024-08-06 09:13:27,CVX | Barclays,price_target_usd,,185.00,2024-08-06 09:13:27,new
+CVX-00276,2024-09-16 09:20:05,CVX | Mizuho,price_target_usd,post-split,189.00,2024-09-16 09:20:05,new
+CVX-00277,2024-09-18 10:13:26,CVX | UBS,price_target_usd,post-split,189.00,2024-09-18 10:13:26,new
+CVX-00278,2024-09-27 11:29:43,CVX | Wells Fargo,price_target_usd,post-split,169.00,2024-09-27 11:29:43,new
+CVX-00279,2024-09-30 09:52:21,CVX | Truist Securities,price_target_usd,post-split,150.00,2024-09-30 09:52:21,new
+CVX-00280,2024-10-03 11:25:58,CVX | Barclays,price_target_usd,post-split,168.00,2024-10-03 11:25:58,new
+CVX-00281,2024-10-08 10:14:47,CVX | RBC Capital,price_target_usd,post-split,170.00,2024-10-08 10:14:47,new
+CVX-00282,2024-10-08 11:59:38,CVX | UBS,price_target_usd,post-split,192.00,2024-10-08 11:59:38,new
+CVX-00283,2024-10-10 13:07:10,CVX | Scotiabank,price_target_usd,post-split,163.0,2024-10-10 13:07:10,new
+CVX-00284,2024-11-04 07:54:18,CVX | Barclays,price_target_usd,post-split,174.0,2024-11-04 07:54:18,new
+CVX-00285,2024-11-04 10:25:58,CVX | Truist Securities,price_target_usd,post-split,155.00,2024-11-04 10:25:58,new
+CVX-00286,2024-11-04 10:32:57,CVX | RBC Capital,price_target_usd,post-split,175.0,2024-11-04 10:32:57,new
+CVX-00287,2024-11-04 10:45:13,CVX | UBS,price_target_usd,post-split,194.00,2024-11-04 10:45:13,new
+CVX-00288,2024-11-26 09:59:33,CVX | Citigroup,rating,,Buy,2024-11-26 09:59:33,new
+CVX-00288,2024-11-26 09:59:33,CVX | Citigroup,price_target_usd,,185.00,2024-11-26 09:59:33,new
+CVX-00289,2024-12-03 09:10:27,CVX | UBS,price_target_usd,post-split,195.0,2024-12-03 09:10:27,new
+CVX-00290,2024-12-06 08:50:38,CVX | Truist Securities,price_target_usd,post-split,160.0,2024-12-06 08:50:38,new
+CVX-00291,2024-12-09 10:05:39,CVX | Wells Fargo,price_target_usd,post-split,188.0,2024-12-09 10:05:39,new
+CVX-00292,2024-12-19 12:43:02,CVX | Piper Sandler,price_target_usd,post-split,173.0,2024-12-19 12:43:02,new
+CVX-00293,2025-01-13 09:09:25,CVX | Truist Securities,price_target_usd,post-split,164.0,2025-01-13 09:09:25,new
+CVX-00294,2025-01-17 11:50:24,CVX | Raymond James,price_target_usd,post-split,180.0,2025-01-17 11:50:24,new
+CVX-00295,2025-02-03 09:09:56,CVX | Raymond James,price_target_usd,post-split,175.0,2025-02-03 09:09:56,new
+CVX-00296,2025-02-03 10:19:24,CVX | Wells Fargo,price_target_usd,post-split,184.0,2025-02-03 10:19:24,new
+CVX-00297,2025-02-03 11:10:00,CVX | RBC Capital,price_target_usd,post-split,175.0,2025-02-03 11:10:00,new
+CVX-00298,2025-02-03 12:23:50,CVX | UBS,price_target_usd,post-split,194.00,2025-02-03 12:23:50,new
+CVX-00299,2025-02-04 12:01:39,CVX | Truist Securities,price_target_usd,post-split,160.0,2025-02-04 12:01:39,new
+CVX-00300,2025-02-05 07:40:13,CVX | Barclays,price_target_usd,post-split,171.0,2025-02-05 07:40:13,new
+CVX-00301,2025-04-07 14:50:58,CVX | UBS,price_target_usd,post-split,185.0,2025-04-07 14:50:58,new
+CVX-00302,2025-04-11 08:49:38,CVX | Scotiabank,rating,,Sector Perform,2025-04-11 08:49:38,new
+CVX-00302,2025-04-11 08:49:38,CVX | Scotiabank,price_target_usd,,post-split = 143.00,2025-04-11 08:49:38,new
+CVX-00303,2025-04-15 07:03:29,CVX | Mizuho,price_target_usd,post-split,188.0,2025-04-15 07:03:29,new
+CVX-00304,2025-04-15 10:29:11,CVX | Wells Fargo,price_target_usd,post-split,173.0,2025-04-15 10:29:11,new
+CVX-00305,2025-04-23 07:03:38,CVX | Barclays,rating,,Equal-Weight,2025-04-23 07:03:38,event
+CVX-00305,2025-04-23 07:03:38,CVX | Barclays,price_target_usd,post-split,152.00,2025-04-23 07:03:38,new
+CVX-00306,2025-04-23 07:37:12,CVX | Redburn Atlantic,price_target_usd,post-split,124.0,2025-04-23 07:37:12,new
+CVX-00307,2025-05-05 08:30:06,CVX | Wells Fargo,price_target_usd,post-split,164.0,2025-05-05 08:30:06,new
+CVX-00308,2025-05-13 09:56:28,CVX | Mizuho,price_target_usd,post-split,186.0,2025-05-13 09:56:28,new
+CVX-00309,2025-05-13 11:03:31,CVX | HSBC,rating,,Hold,2025-05-13 11:03:31,new
+CVX-00309,2025-05-13 11:03:31,CVX | HSBC,price_target_usd,,158.00,2025-05-13 11:03:31,new
+CVX-00310,2025-05-13 12:04:36,CVX | Piper Sandler,price_target_usd,post-split,162.0,2025-05-13 12:04:36,new
+CVX-00311,2025-06-26 10:24:45,CVX | Wells Fargo,price_target_usd,post-split,165.0,2025-06-26 10:24:45,new
+CVX-00312,2025-07-02 12:53:14,CVX | Piper Sandler,price_target_usd,post-split,164.0,2025-07-02 12:53:14,new
+CVX-00313,2025-07-07 14:04:25,CVX | Barclays,price_target_usd,post-split,156.0,2025-07-07 14:04:25,new
+CVX-00314,2025-07-11 11:17:51,CVX | Scotiabank,price_target_usd,post-split,160.0,2025-07-11 11:17:51,new
+CVX-00315,2025-07-23 09:32:08,CVX | Wells Fargo,price_target_usd,post-split,178.0,2025-07-23 09:32:08,new
+CVX-00316,2025-08-04 09:24:47,CVX | UBS,price_target_usd,post-split,186.0,2025-08-04 09:24:47,new
+CVX-00317,2025-08-13 07:01:18,CVX | Mizuho,price_target_usd,post-split,192.0,2025-08-13 07:01:18,new
+CVX-00318,2025-08-18 10:57:10,CVX | Piper Sandler,price_target_usd,post-split,168.0,2025-08-18 10:57:10,new
+CVX-00319,2025-08-20 09:27:19,CVX | Melius Research,rating,,Hold,2025-08-20 09:27:19,new
+CVX-00319,2025-08-20 09:27:19,CVX | Melius Research,price_target_usd,,155.00,2025-08-20 09:27:19,new
+CVX-00320,2025-08-20 14:10:05,CVX | UBS,price_target_usd,post-split,197.0,2025-08-20 14:10:05,new
+CVX-00321,2025-09-10 10:18:42,CVX | B of A Securities,price_target_usd,post-split,185.0,2025-09-10 10:18:42,new
+CVX-00322,2025-09-15 10:52:40,CVX | Mizuho,price_target_usd,post-split,191.0,2025-09-15 10:52:40,new
+CVX-00323,2025-10-07 08:37:59,CVX | Barclays,price_target_usd,post-split,158.0,2025-10-07 08:37:59,new
+CVX-00324,2025-10-09 10:36:54,CVX | Scotiabank,price_target_usd,post-split,165.0,2025-10-09 10:36:54,new
+CVX-00325,2025-10-17 08:15:04,CVX | Wells Fargo,rating,,Overweight,2025-10-17 08:15:04,new
+CVX-00325,2025-10-17 08:15:04,CVX | Wells Fargo,price_target_usd,,190.00,2025-10-17 08:15:04,new
+CVX-00326,2025-10-17 12:45:56,CVX | Raymond James,price_target_usd,post-split,160.00,2025-10-17 12:45:56,new
+CVX-00327,2025-11-03 12:54:08,CVX | Morgan Stanley,price_target_usd,post-split,177.0,2025-11-03 12:54:08,new
+CVX-00328,2025-11-10 07:44:15,CVX | Piper Sandler,price_target_usd,post-split,169.0,2025-11-10 07:44:15,new
+CVX-00329,2025-11-13 08:05:27,CVX | Morgan Stanley,price_target_usd,post-split,180.0,2025-11-13 08:05:27,new
+CVX-00330,2025-11-13 08:28:25,CVX | Mizuho,price_target_usd,post-split,204.0,2025-11-13 08:28:25,new
+CVX-00331,2025-11-13 09:49:50,CVX | Piper Sandler,price_target_usd,post-split,168.0,2025-11-13 09:49:50,new
+CVX-00332,2025-11-14 10:04:27,CVX | Wells Fargo,price_target_usd,post-split,196.0,2025-11-14 10:04:27,new
+CVX-00333,2025-12-01 07:52:50,CVX | HSBC,rating,,Buy,2025-12-01 07:52:50,new
+CVX-00333,2025-12-01 07:52:50,CVX | HSBC,price_target_usd,,169.00,2025-12-01 07:52:50,new
+CVX-00334,2025-12-11 06:59:22,CVX | B of A Securities,price_target_usd,post-split,180.0,2025-12-11 06:59:22,new
+CVX-00335,2025-12-12 07:39:06,CVX | Mizuho,price_target_usd,post-split,206.0,2025-12-12 07:39:06,new
+CVX-00336,2026-01-05 08:57:34,CVX | Bernstein,price_target_usd,post-split,172.0,2026-01-05 08:57:34,new
+CVX-00337,2026-01-05 10:13:13,CVX | Citigroup,price_target_usd,post-split,179.0,2026-01-05 10:13:13,new
+CVX-00338,2026-01-06 08:00:27,CVX | Freedom Broker,rating,,Sell,2026-01-06 08:00:27,new
+CVX-00338,2026-01-06 08:00:27,CVX | Freedom Broker,price_target_usd,,165.00,2026-01-06 08:00:27,new
+CVX-00339,2026-01-06 10:40:22,CVX | Freedom Capital Markets,rating,,Sell,2026-01-06 10:40:22,new
+CVX-00339,2026-01-06 10:40:22,CVX | Freedom Capital Markets,price_target_usd,,165.00,2026-01-06 10:40:22,new
+CVX-00340,2026-01-08 09:49:02,CVX | Piper Sandler,price_target_usd,,174.00,2026-01-08 09:49:02,new
+CVX-00341,2026-01-14 15:30:47,CVX | Jefferies,price_target_usd,,189.00,2026-01-14 15:30:47,new
+CVX-00342,2026-01-21 13:01:35,CVX | Barclays,price_target_usd,,166.00,2026-01-21 13:01:35,new
+CVX-00343,2026-01-23 12:03:53,CVX | Morgan Stanley,price_target_usd,,174.00,2026-01-23 12:03:53,new
+CVX-00344,2026-02-02 10:27:43,CVX | Wells Fargo,price_target_usd,,204.00,2026-02-02 10:27:43,new
+CVX-00345,2026-03-02 07:44:45,CVX | B of A Securities,price_target_usd,,206.00,2026-03-02 07:44:45,new
+CVX-00346,2026-03-02 13:24:37,CVX | Citigroup,price_target_usd,post-split,210.00,2026-03-02 13:24:37,new
+CVX-00347,2026-03-12 12:25:12,CVX | Piper Sandler,rating,,Overweight,2026-03-12 12:25:12,new
+CVX-00347,2026-03-12 12:25:12,CVX | Piper Sandler,price_target_usd,,242.00,2026-03-12 12:25:12,new
+CVX-00348,2026-03-16 10:46:21,CVX | Barclays,price_target_usd,post-split,180.00,2026-03-16 10:46:21,new
+CVX-00349,2026-03-17 13:14:33,CVX | Mizuho,price_target_usd,post-split,217.0,2026-03-17 13:14:33,new
+CVX-00350,2026-03-27 11:41:28,CVX | Morgan Stanley,price_target_usd,post-split,212.0,2026-03-27 11:41:28,new
+CVX-00351,2026-04-02 11:42:45,CVX | Citigroup,price_target_usd,post-split,235.0,2026-04-02 11:42:45,new
+CVX-00352,2026-04-09 09:03:18,CVX | Wells Fargo,price_target_usd,post-split,222.00,2026-04-09 09:03:18,new
+CVX-00353,2026-04-13 10:12:01,CVX | RBC Capital,price_target_usd,post-split,220.00,2026-04-13 10:12:01,new
+CVX-00354,2026-04-17 14:01:09,CVX | BNP Paribas,rating,,Outperform,2026-04-17 14:01:09,new
+CVX-00354,2026-04-17 14:01:09,CVX | BNP Paribas,price_target_usd,,174.00,2026-04-17 14:01:09,new
+CVX-00355,2026-04-22 11:43:14,CVX | Scotiabank,price_target_usd,post-split,187.00,2026-04-22 11:43:14,new
+CVX-00356,2026-05-04 10:27:48,CVX | Barclays,price_target_usd,,192.00,2026-05-04 10:27:48,new
+CVX-00357,2026-05-04 16:24:42,CVX | UBS,price_target_usd,post-split,220.0,2026-05-04 16:24:42,new
+CVX-00358,2026-05-05 10:50:26,CVX | RBC Capital,rating,,Outperform,2026-05-05 10:50:26,new
+CVX-00358,2026-05-05 10:50:26,CVX | RBC Capital,price_target_usd,,220.00,2026-05-05 10:50:26,new
+CVX-00359,2026-05-11 15:33:26,CVX | Bernstein,price_target_usd,post-split,204.00,2026-05-11 15:33:26,new
+CVX-00360,2026-05-22 09:27:06,CVX | Morgan Stanley,price_target_usd,,214.00,2026-05-22 09:27:06,new
+CVX-00361,2026-05-26 14:37:04,CVX | Barclays,price_target_usd,,213.00,2026-05-26 14:37:04,new
+CVX-00362,2026-05-27 08:25:59,CVX | Mizuho,price_target_usd,post-split,230.00,2026-05-27 08:25:59,new
+CVX-00363,2026-06-29 12:47:00,CVX | Morgan Stanley,price_target_usd,,210.00,2026-06-29 12:47:00,new
+CVX-00364,2026-07-02 08:16:09,CVX | Wolfe Research,rating,,Outperform,2026-07-02 08:16:09,new
+CVX-00364,2026-07-02 08:16:09,CVX | Wolfe Research,price_target_usd,,210.00,2026-07-02 08:16:09,new
+CVX-00365,2026-07-22 13:38:59,CVX | TD Cowen,price_target_usd,post-split,200.00,2026-07-22 13:38:59,new
+CVX-00366,2026-07-28 13:56:09,CVX | B of A Securities,price_target_usd,post-split,227.0,2026-07-28 13:56:09,new
+CVX-00367,2026-08-03 07:21:32,CVX | Barclays,price_target_usd,post-split,216.0,2026-08-03 07:21:32,new
+CVX-00368,2026-08-03 10:33:21,CVX | Bernstein,price_target_usd,post-split,209.0,2026-08-03 10:33:21,new
+CVX-00369,2026-08-05 15:58:08,CVX | TD Cowen,price_target_usd,post-split,205.0,2026-08-05 15:58:08,new
+CVX-00370,2026-08-17 09:25:32,CVX | Barclays,price_target_usd,post-split,208.0,2026-08-17 09:25:32,new
+CVX-00371,2026-08-19 13:32:50,CVX | Morgan Stanley,price_target_usd,post-split,218.0,2026-08-19 13:32:50,new
+CVX-00372,2026-09-03 09:50:58,CVX | Wells Fargo,price_target_usd,post-split,230.0,2026-09-03 09:50:58,new
+CVX-00373,2026-09-03 13:12:04,CVX | Piper Sandler,price_target_usd,post-split,243.0,2026-09-03 13:12:04,new
+CVX-00374,2026-09-03 14:03:12,CVX | BMO Capital,price_target_usd,post-split,235.0,2026-09-03 14:03:12,new
+CVX-00375,2026-09-25 09:22:31,CVX | HSBC,price_target_usd,post-split,250.0,2026-09-25 09:22:31,new
+CVX-00376,2026-09-28 10:12:16,CVX | TD Cowen,price_target_usd,post-split,215.0,2026-09-28 10:12:16,new
+CVX-00377,2026-10-08 12:00:46,CVX | UBS,price_target_usd,post-split,235.0,2026-10-08 12:00:46,new
+CVX-00378,2026-10-12 10:47:27,CVX | TD Cowen,price_target_usd,post-split,225.0,2026-10-12 10:47:27,new
+CVX-00379,2026-10-15 12:12:13,CVX | Morgan Stanley,price_target_usd,post-split,226.0,2026-10-15 12:12:13,new
+CVX-00380,2026-11-02 08:28:55,CVX | Wells Fargo,price_target_usd,post-split,268.0,2026-11-02 08:28:55,new
+CVX-00381,2026-11-02 08:34:16,CVX | Evercore ISI Group,rating,,Outperform,2026-11-02 08:34:16,new
+CVX-00381,2026-11-02 08:34:16,CVX | Evercore ISI Group,price_target_usd,,250.00,2026-11-02 08:34:16,new
+CVX-00382,2026-11-02 12:29:05,CVX | Morgan Stanley,price_target_usd,post-split,230.0,2026-11-02 12:29:05,new
+CVX-00383,2026-11-02 15:31:52,CVX | Barclays,price_target_usd,post-split,244.0,2026-11-02 15:31:52,new
+CVX-00384,2026-11-02 16:40:10,CVX | UBS,price_target_usd,post-split,265.0,2026-11-02 16:40:10,new
+CVX-00385,2026-11-05 21:12:47,CVX | Freedom Broker,rating,,Hold,2026-11-05 21:12:47,new
+CVX-00385,2026-11-05 21:12:47,CVX | Freedom Broker,price_target_usd,,218.00,2026-11-05 21:12:47,new
+CVX-00386,2026-11-12 07:44:16,CVX | Bernstein,price_target_usd,post-split,233.00,2026-11-12 07:44:16,new
+CVX-00387,2026-11-13 10:17:10,CVX | Barclays,price_target_usd,post-split,248.0,2026-11-13 10:17:10,new

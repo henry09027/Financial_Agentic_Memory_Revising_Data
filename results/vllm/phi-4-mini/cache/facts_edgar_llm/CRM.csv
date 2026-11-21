@@ -1,0 +1,4 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+CRM-00028,2017-05-22 20:06:44,CRM | Revenues,value_usd_m,2017-02-01..2017-04-30,2387.579,2017-05-22 20:06:44,new
+CRM-00031,2017-08-25 20:19:47,CRM | Revenues,value_usd_m,2017-02-01..2017-07-31,4949.168,2017-08-25 20:19:47,revision
+CRM-00032,2017-08-25 20:19:47,CRM | Revenues,value_usd_m,2017-05-01..2017-07-31,2561.589,2017-08-25 20:19:47,corroborate

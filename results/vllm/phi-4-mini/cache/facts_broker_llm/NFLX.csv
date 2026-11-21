@@ -1,0 +1,215 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+NFLX-00687,2025-01-22 06:14:44,NFLX | Pivotal Research,price_target_usd,,1250.00,2025-01-22 06:14:44,new
+NFLX-00688,2025-01-22 06:47:20,NFLX | B of A Securities,price_target_usd,,1175.00,2025-01-22 06:47:20,new
+NFLX-00689,2025-01-22 06:54:40,NFLX | Morgan Stanley,price_target_usd,,1150.00,2025-01-22 06:54:40,inferred
+NFLX-00690,2025-01-22 07:00:20,NFLX | JP Morgan,price_target_usd,,1150.00,2025-01-22 07:00:20,new
+NFLX-00691,2025-01-22 07:45:26,NFLX | Macquarie,price_target_usd,,1150.00,2025-01-22 07:45:26,new
+NFLX-00692,2025-01-22 07:58:44,NFLX | Baird,price_target_usd,,1200.00,2025-01-22 07:58:44,new
+NFLX-00693,2025-01-22 08:00:25,NFLX | Rosenblatt,price_target_usd,,1494.00,2025-01-22 08:00:25,new
+NFLX-00694,2025-01-22 08:01:28,NFLX | BMO Capital,price_target_usd,,1175.00,2025-01-22 08:01:28,new
+NFLX-00694,2025-01-22 08:01:28,NFLX | BMO Capital,rating,,Outperform,2025-01-22 08:01:28,new
+NFLX-00695,2025-01-22 09:10:14,NFLX | Evercore ISI Group,price_target_usd,,1100.00,2025-01-22 09:10:14,new
+NFLX-00696,2025-01-22 09:13:26,NFLX | Loop Capital,price_target_usd,,1000.00,2025-01-22 09:13:26,new
+NFLX-00697,2025-01-22 09:17:40,NFLX | Oppenheimer,price_target_usd,,1150.00,2025-01-22 09:17:40,new
+NFLX-00698,2025-01-22 09:25:57,NFLX | Keybanc,price_target_usd,,1100.00,2025-01-22 09:25:57,new
+NFLX-00699,2025-01-22 11:54:12,NFLX | Piper Sandler,price_target_usd,,1100.00,2025-01-22 11:54:12,new
+NFLX-00700,2025-01-22 12:39:18,NFLX | Goldman Sachs,price_target_usd,,960.00,2025-01-22 12:39:18,new
+NFLX-00701,2025-01-22 17:55:15,NFLX | UBS,price_target_usd,,1150.00,2025-01-22 17:55:15,new
+NFLX-00702,2025-01-23 08:28:34,NFLX | Wolfe Research,price_target_usd,,1100.00,2025-01-23 08:28:34,new
+NFLX-00703,2025-02-07 07:03:03,NFLX | Citigroup,price_target_usd,,1020.00,2025-02-07 07:03:03,new
+NFLX-00704,2025-03-17 07:31:45,NFLX | MoffettNathanson,price_target_usd,,1100.00,2025-03-17 07:31:45,new
+NFLX-00704,2025-03-17 07:31:45,NFLX | MoffettNathanson,rating,,Buy,2025-03-17 07:31:45,new
+NFLX-00705,2025-04-03 10:12:13,NFLX | Guggenheim,price_target_usd,,1100.00,2025-04-03 10:12:13,new
+NFLX-00706,2025-04-08 11:37:12,NFLX | JP Morgan,price_target_usd,,1025.00,2025-04-08 11:37:12,new
+NFLX-00707,2025-04-09 10:03:20,NFLX | Keybanc,price_target_usd,,1000.00,2025-04-09 10:03:20,new
+NFLX-00708,2025-04-11 10:02:25,NFLX | Wedbush,price_target_usd,,1150.00,2025-04-11 10:02:25,new
+NFLX-00709,2025-04-15 11:39:32,NFLX | UBS,price_target_usd,,1140.00,2025-04-15 11:39:32,new
+NFLX-00710,2025-04-17 07:09:06,NFLX | MoffettNathanson,price_target_usd,,1126.00,2025-04-17 07:09:06,new
+NFLX-00711,2025-04-18 05:58:26,NFLX | Oppenheimer,price_target_usd,,1200.00,2025-04-18 05:58:26,new
+NFLX-00712,2025-04-18 09:00:16,NFLX | UBS,price_target_usd,,1150.00,2025-04-18 09:00:16,new
+NFLX-00713,2025-04-21 05:41:35,NFLX | Pivotal Research,price_target_usd,,1350.00,2025-04-21 05:41:35,new
+NFLX-00714,2025-04-21 06:10:44,NFLX | Barclays,price_target_usd,,1000.00,2025-04-21 06:10:44,new
+NFLX-00715,2025-04-21 06:58:35,NFLX | Morgan Stanley,price_target_usd,,1200.00,2025-04-21 06:58:35,new
+NFLX-00716,2025-04-21 07:03:05,NFLX | Canaccord Genuity,price_target_usd,,1200.00,2025-04-21 07:03:05,new
+NFLX-00717,2025-04-21 07:35:28,NFLX | Piper Sandler,price_target_usd,,1150.00,2025-04-21 07:35:28,new
+NFLX-00718,2025-04-21 07:51:05,NFLX | Rosenblatt,price_target_usd,,1514.00,2025-04-21 07:51:05,new
+NFLX-00719,2025-04-21 08:01:16,NFLX | Needham,price_target_usd,,1126.00,2025-04-21 08:01:16,new
+NFLX-00720,2025-04-21 08:55:30,NFLX | JP Morgan,price_target_usd,,1150.00,2025-04-21 08:55:30,new
+NFLX-00722,2025-04-21 10:18:55,NFLX | Wells Fargo,price_target_usd,,1220.00,2025-04-21 10:18:55,new
+NFLX-00723,2025-04-21 10:57:31,NFLX | Keybanc,price_target_usd,,1070.00,2025-04-21 10:57:31,new
+NFLX-00724,2025-04-21 11:07:08,NFLX | BMO Capital,price_target_usd,,1200.00,2025-04-21 11:07:08,new
+NFLX-00725,2025-04-21 11:35:41,NFLX | Wedbush,price_target_usd,,1200.00,2025-04-21 11:35:41,new
+NFLX-00726,2025-04-21 13:36:58,NFLX | Macquarie,price_target_usd,,1200.00,2025-04-21 13:36:58,new
+NFLX-00727,2025-04-21 13:43:52,NFLX | Evercore ISI Group,price_target_usd,,1150.00,2025-04-21 13:43:52,new
+NFLX-00728,2025-05-16 08:46:46,NFLX | Canaccord Genuity,price_target_usd,,1380.00,2025-05-16 08:46:46,new
+NFLX-00729,2025-05-16 10:34:50,NFLX | Baird,price_target_usd,,1300.00,2025-05-16 10:34:50,new
+NFLX-00730,2025-05-19 07:17:04,NFLX | JP Morgan,price_target_usd,,1220.00,2025-05-19 07:17:04,new
+NFLX-00730,2025-05-19 07:17:04,NFLX | JP Morgan,rating,,Neutral,2025-05-19 07:17:04,new
+NFLX-00731,2025-05-29 13:10:39,NFLX | Citigroup,price_target_usd,,1250.00,2025-05-29 13:10:39,new
+NFLX-00732,2025-06-04 10:04:48,NFLX | UBS,price_target_usd,,1450.00,2025-06-04 10:04:48,new
+NFLX-00733,2025-06-12 13:55:14,NFLX | Oppenheimer,price_target_usd,,1425.00,2025-06-12 13:55:14,new
+NFLX-00734,2025-06-20 08:40:40,NFLX | Wells Fargo,price_target_usd,,1500.00,2025-06-20 08:40:40,new
+NFLX-00735,2025-06-20 10:53:13,NFLX | Pivotal Research,price_target_usd,,1600.00,2025-06-20 10:53:13,new
+NFLX-00736,2025-07-02 11:27:11,NFLX | Canaccord Genuity,price_target_usd,,1525.00,2025-07-02 11:27:11,new
+NFLX-00737,2025-07-02 13:33:47,NFLX | Goldman Sachs,price_target_usd,,1140.00,2025-07-02 13:33:47,new
+NFLX-00738,2025-07-07 17:15:58,NFLX | Seaport Global,rating,,Neutral,2025-07-07 17:15:58,new
+NFLX-00739,2025-07-09 11:39:41,NFLX | Barclays,price_target_usd,,1100.00,2025-07-09 11:39:41,new
+NFLX-00740,2025-07-10 08:33:11,NFLX | Keybanc,price_target_usd,,1390.00,2025-07-10 08:33:11,new
+NFLX-00741,2025-07-11 05:54:36,NFLX | Needham,price_target_usd,,1500.00,2025-07-11 05:54:36,new
+NFLX-00742,2025-07-11 13:51:30,NFLX | JP Morgan,price_target_usd,,1230.00,2025-07-11 13:51:30,new
+NFLX-00743,2025-07-11 13:59:54,NFLX | Piper Sandler,price_target_usd,,1400.00,2025-07-11 13:59:54,new
+NFLX-00744,2025-07-14 08:55:12,NFLX | Wedbush,price_target_usd,,1400.00,2025-07-14 08:55:12,new
+NFLX-00745,2025-07-15 07:23:14,NFLX | Loop Capital,price_target_usd,,1150.00,2025-07-15 07:23:14,new
+NFLX-00746,2025-07-15 13:12:57,NFLX | BMO Capital,price_target_usd,,1425.00,2025-07-15 13:12:57,new
+NFLX-00747,2025-07-17 08:07:52,NFLX | Bernstein,price_target_usd,,1390.00,2025-07-17 08:07:52,new
+NFLX-00748,2025-07-18 05:18:31,NFLX | Needham,price_target_usd,,1500.00,2025-07-18 05:18:31,new
+NFLX-00749,2025-07-18 07:29:08,NFLX | Morgan Stanley,price_target_usd,,1500.00,2025-07-18 07:29:08,new
+NFLX-00750,2025-07-18 08:17:45,NFLX | Piper Sandler,price_target_usd,,1500.00,2025-07-18 08:17:45,new
+NFLX-00751,2025-07-18 08:18:11,NFLX | Rosenblatt,price_target_usd,,1515.00,2025-07-18 08:18:11,new
+NFLX-00752,2025-07-18 08:41:52,NFLX | TD Cowen,price_target_usd,,1450.00,2025-07-18 08:41:52,new
+NFLX-00753,2025-07-18 11:02:01,NFLX | JP Morgan,price_target_usd,,1300.00,2025-07-18 11:02:01,new
+NFLX-00754,2025-07-18 14:09:07,NFLX | UBS,price_target_usd,,1495.00,2025-07-18 14:09:07,new
+NFLX-00755,2025-07-18 14:50:07,NFLX | Wells Fargo,price_target_usd,,1560.00,2025-07-18 14:50:07,new
+NFLX-00756,2025-07-21 07:29:06,NFLX | Baird,price_target_usd,,1500.00,2025-07-21 07:29:06,new
+NFLX-00757,2025-09-10 06:45:24,NFLX | Needham,price_target_usd,,1500.00,2025-09-10 06:45:24,new
+NFLX-00758,2025-09-17 07:26:12,NFLX | Loop Capital,price_target_usd,,1350.00,2025-09-17 07:26:12,new
+NFLX-00759,2025-10-03 10:58:41,NFLX | Citigroup,price_target_usd,,1295.00,2025-10-03 10:58:41,new
+NFLX-00760,2025-10-07 05:58:30,NFLX | Seaport Global,price_target_usd,,1385.00,2025-10-07 05:58:30,new
+NFLX-00761,2025-10-07 07:45:34,NFLX | Itau BBA,rating,,Outperform,2025-10-07 07:45:34,new
+NFLX-00761,2025-10-07 07:45:34,NFLX | Itau BBA,price_target_usd,,1514.00,2025-10-07 07:45:34,new
+NFLX-00762,2025-10-22 06:48:34,NFLX | Needham,price_target_usd,,1500.00,2025-10-22 06:48:34,reiterate
+NFLX-00763,2025-10-22 08:13:04,NFLX | Wedbush,price_target_usd,-,1400.00,2025-10-22 08:13:04,new
+NFLX-00763,2025-10-22 08:13:04,NFLX | Wedbush,price_target_usd,-,1400.00,2025-10-22 08:13:04,inferred
+NFLX-00764,2025-10-22 08:52:13,NFLX | Benchmark reiterated Hold,price_target_usd,,Hold,2025-10-22 08:52:13,new
+NFLX-00765,2025-10-22 09:10:40,NFLX | Guggenheim,price_target_usd,,1450.00,2025-10-22 09:10:40,new
+NFLX-00766,2025-10-22 09:34:45,NFLX | Wells Fargo,price_target_usd,,1510.00,2025-10-22 09:34:45,new
+NFLX-00767,2025-10-22 09:55:57,NFLX | Canaccord Genuity,price_target_usd,,1525.00,2025-10-22 09:55:57,new
+NFLX-00768,2025-10-22 10:14:16,NFLX | Rosenblatt,price_target_usd,,1530.00,2025-10-22 10:14:16,new
+NFLX-00769,2025-10-22 11:28:27,NFLX | Piper Sandler,price_target_usd,,1400.00,2025-10-22 11:28:27,new
+NFLX-00770,2025-10-22 12:12:53,NFLX | JP Morgan,price_target_usd,,1275.00,2025-10-22 12:12:53,new
+NFLX-00771,2025-11-03 07:12:19,NFLX | KGI Securities,price_target_usd,,1350.00,2025-11-03 07:12:19,new
+NFLX-00772,2025-11-17 06:00:00,NFLX | TD Cowen,price_target_usd,post-split,1350.00 / 135.00,2025-11-17 00:00:00,event
+NFLX-00773,2025-11-18 10:53:01,NFLX | JP Morgan,price_target_usd,post-split,1350.00 / 135.00,2025-11-17 00:00:00,new
+NFLX-00773,2025-11-18 10:53:01,NFLX | JP Morgan,price_target_usd,post-split,124.00 / 124.00,2025-11-18 10:53:01,new
+NFLX-00774,2025-11-18 12:58:37,NFLX | Barclays,price_target_usd,post-split,110.00,2025-11-18 12:58:37,new
+NFLX-00775,2025-11-28 08:13:22,NFLX | Rosenblatt,price_target_usd,,152.00,2025-11-28 08:13:22,new
+NFLX-00776,2025-12-08 07:40:44,NFLX | Rosenblatt,price_target_usd,,105.00,2025-12-08 07:40:44,new
+NFLX-00776,2025-12-08 07:40:44,NFLX | Rosenblatt,rating,,Neutral,2025-12-08 07:40:44,new
+NFLX-00777,2025-12-08 08:53:05,NFLX | Pivotal Research,price_target_usd,,105.00,2025-12-08 08:53:05,new
+NFLX-00777,2025-12-08 08:53:05,NFLX | Pivotal Research,rating,,Hold,2025-12-08 08:53:05,new
+NFLX-00778,2025-12-08 12:56:49,NFLX | Canaccord Genuity,price_target_usd,post-split,152.50,2025-12-08 12:56:49,new
+NFLX-00779,2025-12-09 06:25:29,NFLX | Needham,price_target_usd,,150.00,2025-12-09 06:25:29,new
+NFLX-00780,2025-12-11 15:19:09,NFLX | Jefferies,price_target_usd,post-split,134.00,2025-12-11 15:19:09,new
+NFLX-00781,2026-01-05 09:10:52,NFLX | CFRA,price_target_usd,,100.00,2026-01-05 09:10:52,new
+NFLX-00782,2026-01-12 07:31:24,NFLX | HSBC,rating,,Buy,2026-01-12 07:31:24,new
+NFLX-00782,2026-01-12 07:31:24,NFLX | HSBC,price_target_usd,,107.00,2026-01-12 07:31:24,new
+NFLX-00783,2026-01-13 13:53:39,NFLX | TD Cowen,price_target_usd,post-split,115.00,2026-01-13 13:53:39,new
+NFLX-00784,2026-01-15 09:19:29,NFLX | Wedbush,price_target_usd,,115.00,2026-01-15 09:19:29,new
+NFLX-00785,2026-01-16 07:10:38,NFLX | Rosenblatt,price_target_usd,,105.00,2026-01-16 07:10:38,new
+NFLX-00786,2026-01-16 10:05:55,NFLX | Keybanc,price_target_usd,post-split,110.00,2026-01-16 10:05:55,new
+NFLX-00787,2026-01-21 05:52:47,NFLX | Pivotal Research,price_target_usd,,95.00,2026-01-21 05:52:47,new
+NFLX-00788,2026-01-21 06:31:15,NFLX | Goldman Sachs,price_target_usd,,100.00,2026-01-21 06:31:15,new
+NFLX-00789,2026-01-21 07:12:13,NFLX | Needham,price_target_usd,,120.00,2026-01-21 07:12:13,new
+NFLX-00790,2026-01-21 07:33:40,NFLX | Rosenblatt,price_target_usd,,94.00,2026-01-21 07:33:40,new
+NFLX-00791,2026-01-21 07:43:01,NFLX | Guggenheim,price_target_usd,,130.00,2026-01-21 07:43:01,new
+NFLX-00792,2026-01-21 08:15:04,NFLX | Morgan Stanley,price_target_usd,,110.00,2026-01-21 08:15:04,new
+NFLX-00793,2026-01-21 08:17:37,NFLX | BMO Capital,price_target_usd,,135.00,2026-01-21 08:17:37,new
+NFLX-00794,2026-01-21 08:18:14,NFLX | Canaccord Genuity,price_target_usd,,125.00,2026-01-21 08:18:14,new
+NFLX-00795,2026-01-21 08:25:43,NFLX | Keybanc,price_target_usd,,108.00,2026-01-21 08:25:43,new
+NFLX-00796,2026-01-21 08:55:24,NFLX | Wedbush,price_target_usd,,115.00,2026-01-21 08:55:24,new
+NFLX-00797,2026-01-21 09:18:54,NFLX | UBS,price_target_usd,,130.00,2026-01-21 09:18:54,new
+NFLX-00798,2026-01-21 11:20:27,NFLX | Wolfe Research,price_target_usd,,95.00,2026-01-21 11:20:27,new
+NFLX-00799,2026-01-21 12:40:02,NFLX | Piper Sandler,price_target_usd,,103.00,2026-01-21 12:40:02,new
+NFLX-00800,2026-01-21 12:47:46,NFLX | TD Cowen,price_target_usd,,112.00,2026-01-21 12:47:46,new
+NFLX-00801,2026-01-21 12:48:55,NFLX | Deutsche Bank,price_target_usd,,98.00,2026-01-21 12:48:55,new
+NFLX-00802,2026-01-21 13:00:35,NFLX | Oppenheimer,price_target_usd,,125.00,2026-01-21 13:00:35,new
+NFLX-00803,2026-01-22 09:20:08,NFLX | Argus Research,price_target_usd,,110.00,2026-01-22 09:20:08,new
+NFLX-00804,2026-01-27 13:08:14,NFLX | Freedom Broker,price_target_usd,,104.00,2026-01-27 13:08:14,new
+NFLX-00804,2026-01-27 13:08:14,NFLX | Freedom Broker,rating,,Buy,2026-01-27 13:08:14,new
+NFLX-00805,2026-02-20 08:08:09,NFLX | Wedbush,price_target_usd,,115.00,2026-02-20 08:08:09,new
+NFLX-00806,2026-02-27 15:15:00,NFLX | Rosenblatt,price_target_usd,,95.00,2026-02-27 15:15:00,new
+NFLX-00807,2026-03-02 08:30:58,NFLX | JP Morgan,rating,,Overweight,2026-03-02 08:30:58,new
+NFLX-00807,2026-03-02 08:30:58,NFLX | JP Morgan,price_target_usd,,120.00,2026-03-02 08:30:58,new
+NFLX-00808,2026-03-06 07:05:27,NFLX | B of A Securities,price_target_usd,,125.00,2026-03-06 07:05:27,new
+NFLX-00809,2026-03-06 07:15:04,NFLX | CFRA,price_target_usd,,115.00,2026-03-06 07:15:04,new
+NFLX-00810,2026-03-27 08:35:01,NFLX | Oppenheimer,price_target_usd,,135.00,2026-03-27 08:35:01,new
+NFLX-00811,2026-03-30 07:07:01,NFLX | Citizens,rating,,Market Perform,2026-03-30 07:07:01,new
+NFLX-00812,2026-04-06 05:25:59,NFLX | Goldman Sachs,rating,,Buy,2026-04-06 05:25:59,new
+NFLX-00812,2026-04-06 05:25:59,NFLX | Goldman Sachs,price_target_usd,,120.00,2026-04-06 05:25:59,new
+NFLX-00813,2026-04-06 14:43:58,NFLX | Rosenblatt,price_target_usd,,96.00,2026-04-06 14:43:58,new
+NFLX-00814,2026-04-13 08:28:42,NFLX | Wedbush,price_target_usd,,118.00,2026-04-13 08:28:42,new
+NFLX-00815,2026-04-14 08:15:49,NFLX | Keybanc,price_target_usd,post-split,115.00,2026-04-14 08:15:49,new
+NFLX-00816,2026-04-14 09:18:02,NFLX | Guggenheim,price_target_usd,,130.00,2026-04-14 09:18:02,new
+NFLX-00818,2026-04-17 08:24:24,NFLX | Guggenheim,price_target_usd,post-split,120.00,2026-04-17 08:24:24,new
+NFLX-00819,2026-04-17 08:35:20,NFLX | Rosenblatt,price_target_usd,,95.00,2026-04-17 08:35:20,new
+NFLX-00820,2026-04-17 09:04:39,NFLX | Wedbush,price_target_usd,,118.00,2026-04-17 09:04:39,new
+NFLX-00821,2026-04-17 09:07:14,NFLX | Keybanc,price_target_usd,post-split,115.00,2026-04-17 09:07:14,new
+NFLX-00823,2026-04-17 10:10:18,NFLX | Barclays,price_target_usd,post-split,110.00,2026-04-17 10:10:18,new
+NFLX-00824,2026-04-17 11:35:51,NFLX | Oppenheimer,price_target_usd,post-split,120.00,2026-04-17 11:35:51,new
+NFLX-00824,2026-04-17 11:35:51,NFLX | Oppenheimer,rating,post-split,Outperform,2026-04-17 11:35:51,new
+NFLX-00825,2026-04-17 13:42:43,NFLX | Piper Sandler,price_target_usd,post-split,115.00,2026-04-17 13:42:43,new
+NFLX-00825,2026-04-17 13:42:43,NFLX | Piper Sandler,rating,post-split,Overweight,2026-04-17 13:42:43,new
+NFLX-00826,2026-05-15 08:55:41,NFLX | Guggenheim,price_target_usd,,120.00,2026-05-15 08:55:41,new
+NFLX-00827,2026-05-18 13:16:54,NFLX | B of A Securities,price_target_usd,,125.00,2026-05-18 13:16:54,new
+NFLX-00828,2026-07-08 10:05:15,NFLX | Bernstein,price_target_usd,,100.00,2026-07-08 10:05:15,new
+NFLX-00829,2026-07-09 06:49:44,NFLX | Citigroup,price_target_usd,,100.00,2026-07-09 06:49:44,new
+NFLX-00830,2026-07-13 07:48:58,NFLX | Keybanc,price_target_usd,post-split,92.00,2026-07-13 07:48:58,new
+NFLX-00831,2026-07-13 10:37:33,NFLX | Oppenheimer,price_target_usd,post-split,100.00,2026-07-13 10:37:33,new
+NFLX-00832,2026-07-14 07:28:56,NFLX | Barclays,price_target_usd,,85.00,2026-07-14 07:28:56,new
+NFLX-00833,2026-07-14 07:53:15,NFLX | Rosenblatt,price_target_usd,,95.00,2026-07-14 07:53:15,new
+NFLX-00834,2026-07-14 07:56:21,NFLX | Morgan Stanley,price_target_usd,,90.00,2026-07-14 07:56:21,new
+NFLX-00835,2026-07-15 11:01:14,NFLX | Guggenheim,price_target_usd,,120.00,2026-07-15 11:01:14,new
+NFLX-00836,2026-07-17 07:39:55,NFLX | Pivotal Research,price_target_usd,,70.00,2026-07-17 07:39:55,new
+NFLX-00837,2026-07-17 07:55:58,NFLX | Bernstein,price_target_usd,,95.00,2026-07-17 07:55:58,new
+NFLX-00838,2026-07-17 07:59:51,NFLX | TD Cowen,price_target_usd,post-split,100.00,2026-07-17 07:59:51,new
+NFLX-00839,2026-07-17 08:12:39,NFLX | Barclays,price_target_usd,,80.00,2026-07-17 08:12:39,new
+NFLX-00840,2026-07-17 08:30:31,NFLX | Guggenheim,price_target_usd,,75.00,2026-07-17 08:30:31,new
+NFLX-00841,2026-07-17 08:49:05,NFLX | Wedbush,price_target_usd,post-split,105.00,2026-07-17 08:49:05,new
+NFLX-00842,2026-07-17 08:52:29,NFLX | UBS,price_target_usd,,115.00,2026-07-17 08:52:29,new
+NFLX-00843,2026-07-17 09:43:10,NFLX | Evercore ISI Group,price_target_usd,post-split,100.00,2026-07-17 09:43:10,new
+NFLX-00844,2026-07-17 10:38:31,NFLX | Wells Fargo,price_target_usd,,80.00,2026-07-17 10:38:31,new
+NFLX-00845,2026-07-17 10:41:15,NFLX | Rosenblatt,price_target_usd,,75.00,2026-07-17 10:41:15,new
+NFLX-00846,2026-07-17 11:23:47,NFLX | Oppenheimer,price_target_usd,,85.00,2026-07-17 11:23:47,new
+NFLX-00847,2026-07-17 12:32:10,NFLX | KGI Securities,price_target_usd,,75.00,2026-07-17 12:32:10,new
+NFLX-00848,2026-07-17 13:21:17,NFLX | Morgan Stanley,price_target_usd,,83.00,2026-07-17 13:21:17,new
+NFLX-00849,2026-07-17 14:03:47,NFLX | JP Morgan,price_target_usd,,85.00,2026-07-17 14:03:47,new
+NFLX-00850,2026-07-17 14:11:34,NFLX | Piper Sandler,price_target_usd,,85.00,2026-07-17 14:11:34,new
+NFLX-00851,2026-07-17 14:16:10,NFLX | Goldman Sachs,price_target_usd,,94.00,2026-07-17 14:16:10,new
+NFLX-00852,2026-07-22 13:44:20,NFLX | Baird,price_target_usd,,90.00,2026-07-22 13:44:20,new
+NFLX-00853,2026-08-25 11:27:53,NFLX | Wolfe Research,price_target_usd,,95.00,2026-08-25 11:27:53,new
+NFLX-00853,2026-08-25 11:27:53,NFLX | Wolfe Research,price_target_usd,,84.00,2026-08-25 11:27:53,inferred revision
+NFLX-00854,2026-09-14 09:31:35,NFLX | Evercore ISI Group,price_target_usd,,110.00,2026-09-14 09:31:35,new
+NFLX-00855,2026-09-18 07:28:40,NFLX | Wells Fargo,price_target_usd,,57.00,2026-09-18 07:28:40,new
+NFLX-00855,2026-09-18 07:28:40,NFLX | Wells Fargo,rating,,Underweight,2026-09-18 07:28:40,new
+NFLX-00856,2026-09-22 13:18:48,NFLX | HSBC,rating,,Hold,2026-09-22 13:18:48,new
+NFLX-00856,2026-09-22 13:18:48,NFLX | HSBC,price_target_usd,,76.00,2026-09-22 13:18:48,new
+NFLX-00857,2026-09-29 06:22:51,NFLX | Deutsche Bank,rating,,Buy,2026-09-29 06:22:51,new
+NFLX-00857,2026-09-29 06:22:51,NFLX | Deutsche Bank,price_target_usd,,95.00,2026-09-29 06:22:51,new
+NFLX-00858,2026-10-01 10:10:47,NFLX | Guggenheim,price_target_usd,post-split,80.00,2026-10-01 10:10:47,new
+NFLX-00859,2026-10-05 12:03:05,NFLX | TD Cowen,price_target_usd,,100.00,2026-10-05 12:03:05,new
+NFLX-00860,2026-10-07 11:08:40,NFLX | Barclays,price_target_usd,,70.00,2026-10-07 11:08:40,new
+NFLX-00861,2026-10-08 06:38:34,NFLX | Morgan Stanley,price_target_usd,,80.00,2026-10-08 06:38:34,new
+NFLX-00862,2026-10-13 08:27:58,NFLX | Keybanc,price_target_usd,post-split,85.00,2026-10-13 08:27:58,new
+NFLX-00863,2026-10-16 07:46:08,NFLX | Rosenblatt,price_target_usd,,75.00,2026-10-16 07:46:08,new
+NFLX-00864,2026-10-16 08:24:13,NFLX | Wedbush,price_target_usd,,90.00,2026-10-16 08:24:13,new
+NFLX-00865,2026-10-16 13:35:47,NFLX | BMO Capital,price_target_usd,,125.00,2026-10-16 13:35:47,new
+NFLX-00866,2026-10-21 07:05:47,NFLX | B of A Securities,price_target_usd,,90.00,2026-10-21 07:05:47,new
+NFLX-00867,2026-10-21 07:15:28,NFLX | Needham,rating,,Hold,2026-10-21 07:15:28,new
+NFLX-00868,2026-10-21 07:47:02,NFLX | Rosenblatt,price_target_usd,,71.00,2026-10-21 07:47:02,new
+NFLX-00869,2026-10-21 08:16:26,NFLX | Bernstein,price_target_usd,,80.00,2026-10-21 08:16:26,new
+NFLX-00869,2026-10-21 08:16:26,NFLX | Bernstein,rating,,Outperform,2026-10-21 08:16:26,new
+NFLX-00870,2026-10-21 08:24:57,NFLX | Wedbush,price_target_usd,post-split,80.00,2026-10-21 08:24:57,new
+NFLX-00871,2026-10-21 08:28:03,NFLX | Citizens,rating,,Market Perform,2026-10-21 08:28:03,new
+NFLX-00872,2026-10-21 08:30:11,NFLX | Guggenheim,price_target_usd,post-split,78.00,2026-10-21 08:30:11,new
+NFLX-00873,2026-10-21 09:02:53,NFLX | Barclays,price_target_usd,,65.00,2026-10-21 09:02:53,new
+NFLX-00874,2026-10-21 10:26:09,NFLX | Evercore ISI Group,price_target_usd,post-split,90.00,2026-10-21 10:26:09,new
+NFLX-00875,2026-10-21 10:47:57,NFLX | Piper Sandler,price_target_usd,post-split,78.00,2026-10-21 10:47:57,new
+NFLX-00876,2026-10-21 11:04:56,NFLX | TD Cowen,price_target_usd,,100.00,2026-10-21 11:04:56,new
+NFLX-00877,2026-10-21 11:23:24,NFLX | JP Morgan,price_target_usd,post-split,81.00,2026-10-21 11:23:24,inferred revision
+NFLX-00878,2026-10-21 12:33:21,NFLX | Morgan Stanley,price_target_usd,post-split,77.00,2026-10-21 12:33:21,new
+NFLX-00879,2026-10-21 13:05:38,NFLX | Oppenheimer,price_target_usd,post-split,80.00,2026-10-21 13:05:38,new
+NFLX-00880,2026-10-21 15:02:45,NFLX | Citigroup,price_target_usd,post-split,85.00,2026-10-21 15:02:45,new
+NFLX-00881,2026-10-21 15:35:39,NFLX | UBS,price_target_usd,post-split,100.00,2026-10-21 15:35:39,new
+NFLX-00882,2026-10-22 06:10:21,NFLX | Pivotal Research,price_target_usd,post-split,65.00,2026-10-22 06:10:21,new
+NFLX-00883,2026-10-22 10:45:06,NFLX | Argus Research,price_target_usd,,95.00,2026-10-22 10:45:06,new
+NFLX-00884,2026-10-22 13:06:06,NFLX | Wolfe Research,rating,,Peer Perform,2026-10-22 13:06:06,new

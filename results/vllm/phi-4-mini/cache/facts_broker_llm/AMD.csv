@@ -1,0 +1,242 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+AMD-00513,2025-07-16 08:12:53,AMD | Mizuho,price_target_usd,2025-07-16,175.00,2025-07-16 08:12:53,new
+AMD-00513,2025-07-16 08:12:53,AMD | Mizuho,rating,2025-07-16,Outperform,2025-07-16 08:12:53,new
+AMD-00514,2025-07-16 12:18:09,AMD | Wells Fargo,price_target_usd,2025-07-16,185.0,2025-07-16 12:18:09,new
+AMD-00515,2025-07-18 12:36:09,AMD | Citigroup,price_target_usd,,165.00,2025-07-18 12:36:09,new
+AMD-00516,2025-07-21 08:56:15,AMD | Bernstein,price_target_usd,,140.00,2025-07-21 08:56:15,new
+AMD-00516,2025-07-21 08:56:15,AMD | Bernstein,rating,,Market Perform,2025-07-21 08:56:15,new
+AMD-00517,2025-07-28 18:13:10,AMD | UBS,price_target_usd,,210.00,2025-07-28 18:13:10,new
+AMD-00518,2025-07-29 11:06:00,AMD | B of A Securities,price_target_usd,,200.00,2025-07-29 11:06:00,new
+AMD-00519,2025-07-30 07:33:56,AMD | Morgan Stanley,price_target_usd,,185.00,2025-07-30 07:33:56,new
+AMD-00520,2025-07-30 08:03:11,AMD | Susquehanna,price_target_usd,2025-07-30,210.00,2025-07-30 08:03:11,new
+AMD-00521,2025-08-06 06:04:34,AMD | Mizuho,price_target_usd,,183.00,2025-08-06 06:04:34,new
+AMD-00522,2025-08-06 07:30:32,AMD | Raymond James,price_target_usd,2025-08-06,200.00,2025-08-06 07:30:32,new
+AMD-00522,2025-08-06 07:30:32,AMD | Raymond James,rating,2025-08-06,Outperform,2025-08-06 07:30:32,new
+AMD-00523,2025-08-06 07:33:06,AMD | Raymond James,price_target_usd,,190.00,2025-08-06 07:33:06,new
+AMD-00524,2025-08-06 07:51:52,AMD | Morgan Stanley,price_target_usd,,168.00,2025-08-06 07:51:52,new
+AMD-00525,2025-08-06 07:56:57,AMD | Raymond James,price_target_usd,,210.00,2025-08-06 07:56:57,new
+AMD-00526,2025-08-06 08:34:46,AMD | Truist Securities,price_target_usd,,173.00,2025-08-06 08:34:46,new
+AMD-00527,2025-08-06 09:20:57,AMD | Evercore ISI Group,price_target_usd,2025-08-06,188.00,2025-08-06 09:20:57,new
+AMD-00528,2025-08-06 10:13:10,AMD | Cantor Fitzgerald,price_target_usd,,200.00,2025-08-06 10:13:10,new
+AMD-00529,2025-08-06 11:50:11,AMD | Piper Sandler,price_target_usd,2025-08-06,190.00,2025-08-06 11:50:11,new
+AMD-00530,2025-08-06 11:52:07,AMD | Wedbush,price_target_usd,2025-08-06,190.00,2025-08-06 11:52:07,new
+AMD-00531,2025-08-06 14:58:31,AMD | Barclays,price_target_usd,,200.00,2025-08-06 14:58:31,new
+AMD-00532,2025-08-06 18:44:32,AMD | JP Morgan,price_target_usd,,180.00,2025-08-06 18:44:32,new
+AMD-00533,2025-08-14 07:28:53,AMD | Mizuho,price_target_usd,,205.00,2025-08-14 07:28:53,new
+AMD-00534,2025-08-26 09:23:58,AMD | Truist Securities,price_target_usd,,213.00,2025-08-26 09:23:58,new
+AMD-00534,2025-08-26 09:23:58,AMD | Truist Securities,rating,,Buy,2025-08-26 09:23:58,new
+AMD-00535,2025-09-04 08:49:54,AMD | Seaport Global,rating,,Neutral,2025-09-04 08:49:54,new
+AMD-00536,2025-09-09 06:41:02,AMD | HSBC,price_target_usd,2025-09-09,185.00,2025-09-09 06:41:02,new
+AMD-00537,2025-10-06 10:43:29,AMD | Cantor Fitzgerald,price_target_usd,2025-10-06,275.00,2025-10-06 10:43:29,new
+AMD-00538,2025-10-06 11:49:42,AMD | Barclays,price_target_usd,2025-10-06,300.00,2025-10-06 11:49:42,new
+AMD-00539,2025-10-06 11:59:47,AMD | Cantor Fitzgerald,price_target_usd,2025-10-06,270.00,2025-10-06 11:59:47,new
+AMD-00540,2025-10-07 05:40:57,AMD | Jefferies,price_target_usd,2025-10-07,300.00,2025-10-07 05:40:57,new
+AMD-00540,2025-10-07 05:40:57,AMD | Jefferies,rating,2025-10-07,Buy,2025-10-07 05:40:57,new
+AMD-00541,2025-10-07 05:48:33,AMD | Morgan Stanley,price_target_usd,,246.00,2025-10-07 05:48:33,new
+AMD-00542,2025-10-07 09:07:20,AMD | Rosenblatt,price_target_usd,2025-10-07,250.00,2025-10-07 09:07:20,new
+AMD-00543,2025-10-07 09:25:45,AMD | Benchmark,price_target_usd,,270.00,2025-10-07 09:25:45,new
+AMD-00543,2025-10-07 09:25:45,AMD | Benchmark,rating,,Buy,2025-10-07 09:25:45,new
+AMD-00544,2025-10-07 10:03:35,AMD | Truist Securities,price_target_usd,,273.00,2025-10-07 10:03:35,new
+AMD-00545,2025-10-07 10:20:47,AMD | Wells Fargo,price_target_usd,2025-10-07,275.00,2025-10-07 10:20:47,new
+AMD-00546,2025-10-07 12:08:05,AMD | Evercore ISI Group,price_target_usd,2025-10-07,240.00,2025-10-07 12:08:05,new
+AMD-00547,2025-10-07 12:18:49,AMD | UBS,price_target_usd,2025-10-07,265.00,2025-10-07 12:18:49,new
+AMD-00548,2025-10-07 13:52:29,AMD | Citigroup,price_target_usd,2025-10-07,215.00,2025-10-07 13:52:29,new
+AMD-00549,2025-10-08 14:06:43,AMD | Goldman Sachs,price_target_usd,2025-10-08,210.00,2025-10-08 14:06:43,new
+AMD-00549,2025-10-08 14:06:43,AMD | Goldman Sachs,rating,2025-10-08,Neutral,2025-10-08 14:06:43,new
+AMD-00550,2025-10-13 14:11:01,AMD | Mizuho,price_target_usd,,275.00,2025-10-13 14:11:01,new
+AMD-00550,2025-10-13 14:11:01,AMD | Mizuho,rating,,Outperform,2025-10-13 14:11:01,new
+AMD-00551,2025-10-14 08:12:09,AMD | Wolfe Research,price_target_usd,,300.00,2025-10-14 08:12:09,new
+AMD-00551,2025-10-14 08:12:09,AMD | Wolfe Research,rating,,Outperform,2025-10-14 08:12:09,new
+AMD-00552,2025-10-15 06:48:19,AMD | Wedbush,price_target_usd,,270.00,2025-10-15 06:48:19,new
+AMD-00552,2025-10-15 06:48:19,AMD | Wedbush,rating,,Outperform,2025-10-15 06:48:19,new
+AMD-00553,2025-10-15 07:21:48,AMD | HSBC,price_target_usd,,310.00,2025-10-15 07:21:48,new
+AMD-00554,2025-10-17 06:51:44,AMD | B of A Securities,price_target_usd,2025-10-17,300.00,2025-10-17 06:51:44,new
+AMD-00555,2025-10-30 11:18:14,AMD | Wells Fargo,price_target_usd,2025-10-30,300.00,2025-10-30 11:18:14,new
+AMD-00556,2025-11-05 05:35:52,AMD | Piper Sandler,price_target_usd,,280.00,2025-11-05 05:35:52,new
+AMD-00557,2025-11-05 06:53:27,AMD | Morgan Stanley,price_target_usd,,260.00,2025-11-05 06:53:27,new
+AMD-00558,2025-11-05 07:50:13,AMD | Stifel,price_target_usd,,280.00,2025-11-05 07:50:13,new
+AMD-00559,2025-11-05 07:58:49,AMD | Rosenblatt,price_target_usd,,300.00,2025-11-05 07:58:49,new
+AMD-00560,2025-11-05 08:51:15,AMD | Benchmark,price_target_usd,,325.00,2025-11-05 08:51:15,new
+AMD-00561,2025-11-05 08:58:13,AMD | Evercore ISI Group,price_target_usd,,270.00,2025-11-05 08:58:13,new
+AMD-00562,2025-11-05 09:19:34,AMD | Wedbush,price_target_usd,,290.00,2025-11-05 09:19:34,new
+AMD-00562,2025-11-05 09:19:34,AMD | Wedbush,rating,,Outperform,2025-11-05 09:19:34,new
+AMD-00563,2025-11-05 11:08:10,AMD | Truist Securities,price_target_usd,,279.00,2025-11-05 11:08:10,new
+AMD-00564,2025-11-05 12:37:22,AMD | Roth Capital,price_target_usd,,300.00,2025-11-05 12:37:22,new
+AMD-00565,2025-11-05 13:14:52,AMD | TD Cowen,price_target_usd,,290.00,2025-11-05 13:14:52,new
+AMD-00566,2025-11-05 14:26:07,AMD | JP Morgan,price_target_usd,,270.00,2025-11-05 14:26:07,new
+AMD-00567,2025-11-05 15:32:22,AMD | Citigroup,price_target_usd,,260.00,2025-11-05 15:32:22,new
+AMD-00568,2025-11-05 17:59:18,AMD | UBS,price_target_usd,,300.00,2025-11-05 17:59:18,new
+AMD-00569,2025-11-07 07:02:37,AMD | CICC,rating,,Outperform,2025-11-07 07:02:37,new
+AMD-00569,2025-11-07 07:02:37,AMD | CICC,price_target_usd,,265.00,2025-11-07 07:02:37,new
+AMD-00570,2025-11-10 08:26:18,AMD | Wedbush,price_target_usd,,290.00,2025-11-10 08:26:18,new
+AMD-00571,2025-11-12 07:05:19,AMD | Evercore ISI Group,price_target_usd,,283.00,2025-11-12 07:05:19,new
+AMD-00572,2025-11-12 07:08:48,AMD | Morgan Stanley,price_target_usd,,260.00,2025-11-12 07:08:48,new
+AMD-00573,2025-11-12 07:11:13,AMD | Mizuho,price_target_usd,,285.00,2025-11-12 07:11:13,new
+AMD-00574,2025-11-12 07:18:41,AMD | Rosenblatt,price_target_usd,,300.00,2025-11-12 07:18:41,new
+AMD-00575,2025-11-12 08:33:43,AMD | Wedbush,price_target_usd,,290.00,2025-11-12 08:33:43,new
+AMD-00576,2025-11-12 09:05:45,AMD | B of A Securities,price_target_usd,-,300.00,2025-11-12 09:05:45,new
+AMD-00577,2025-11-12 10:23:36,AMD | Wells Fargo,price_target_usd,,345.00,2025-11-12 10:23:36,new
+AMD-00578,2025-11-12 12:06:27,AMD | Piper Sandler,price_target_usd,,280.00,2025-11-12 12:06:27,new
+AMD-00579,2025-11-12 12:39:26,AMD | Roth Capital,price_target_usd,,300.00,2025-11-12 12:39:26,new
+AMD-00580,2025-12-16 06:17:06,AMD | B of A Securities,price_target_usd,,260.00,2025-12-16 06:17:06,new
+AMD-00581,2025-12-16 10:41:37,AMD | Cantor Fitzgerald,price_target_usd,,300.00,2025-12-16 10:41:37,new
+AMD-00582,2025-12-19 08:04:24,AMD | Truist Securities,price_target_usd,,277.00,2025-12-19 08:04:24,new
+AMD-00583,2026-01-13 06:39:48,AMD | Keybanc,rating,,Overweight,2026-01-13 06:39:48,new
+AMD-00583,2026-01-13 06:39:48,AMD | Keybanc,price_target_usd,,270.00,2026-01-13 06:39:48,new
+AMD-00584,2026-01-13 07:45:55,AMD | China Renaissance,rating,,Buy,2026-01-13 07:45:55,new
+AMD-00584,2026-01-13 07:45:55,AMD | China Renaissance,price_target_usd,,291.00,2026-01-13 07:45:55,new
+AMD-00585,2026-01-15 05:59:52,AMD | RBC Capital,rating,,Sector Perform,2026-01-15 05:59:52,new
+AMD-00585,2026-01-15 05:59:52,AMD | RBC Capital,price_target_usd,,230.00,2026-01-15 05:59:52,new
+AMD-00586,2026-01-21 10:30:56,AMD | Bernstein,price_target_usd,,225.00,2026-01-21 10:30:56,new
+AMD-00586,2026-01-21 10:30:56,AMD | Bernstein,rating,,Market Perform,2026-01-21 10:30:56,new
+AMD-00587,2026-01-26 08:21:33,AMD | Piper Sandler,price_target_usd,,300.00,2026-01-26 08:21:33,new
+AMD-00587,2026-01-26 08:21:33,AMD | Piper Sandler,rating,,Overweight,2026-01-26 08:21:33,new
+AMD-00588,2026-01-26 12:45:34,AMD | UBS,price_target_usd,,330.00,2026-01-26 12:45:34,new
+AMD-00589,2026-01-30 10:42:40,AMD | Wells Fargo,price_target_usd,,345.00,2026-01-30 10:42:40,new
+AMD-00590,2026-02-04 06:19:21,AMD | B of A Securities,price_target_usd,,280.00,2026-02-04 06:19:21,new
+AMD-00591,2026-02-04 07:30:47,AMD | Benchmark,price_target_usd,,325.00,2026-02-04 07:30:47,new
+AMD-00592,2026-02-04 07:50:50,AMD | Rosenblatt,price_target_usd,,300.00,2026-02-04 07:50:50,new
+AMD-00593,2026-02-04 08:47:31,AMD | Keybanc,price_target_usd,,300.00,2026-02-04 08:47:31,new
+AMD-00594,2026-02-04 09:29:57,AMD | Evercore ISI Group,price_target_usd,,328.00,2026-02-04 09:29:57,new
+AMD-00595,2026-02-04 09:31:20,AMD | Wedbush,price_target_usd,,290.00,2026-02-04 09:31:20,new
+AMD-00596,2026-02-04 12:10:16,AMD | Morgan Stanley,price_target_usd,,255.00,2026-02-04 12:10:16,new
+AMD-00597,2026-02-13 08:52:05,AMD | DA Davidson,rating,,Neutral,2026-02-13 08:52:05,new
+AMD-00597,2026-02-13 08:52:05,AMD | DA Davidson,price_target_usd,,220.00,2026-02-13 08:52:05,new
+AMD-00598,2026-02-25 06:56:30,AMD | Benchmark,price_target_usd,,325.00,2026-02-25 06:56:30,new
+AMD-00599,2026-02-25 07:46:29,AMD | Mizuho,price_target_usd,,280.00,2026-02-25 07:46:29,new
+AMD-00600,2026-02-25 09:10:24,AMD | Evercore ISI Group,price_target_usd,,358.00,2026-02-25 09:10:24,new
+AMD-00601,2026-02-25 10:04:08,AMD | RBC Capital,price_target_usd,,230.00,2026-02-25 10:04:08,new
+AMD-00602,2026-02-25 11:21:46,AMD | Goldman Sachs,price_target_usd,,240.00,2026-02-25 11:21:46,new
+AMD-00603,2026-03-16 10:44:57,AMD | RBC Capital,price_target_usd,,230.00,2026-03-16 10:44:57,new
+AMD-00604,2026-04-06 14:45:52,AMD | Citigroup,price_target_usd,,248.00,2026-04-06 14:45:52,new
+AMD-00605,2026-04-16 08:02:04,AMD | Bernstein,price_target_usd,,265.00,2026-04-16 08:02:04,new
+AMD-00605,2026-04-16 08:02:04,AMD | Bernstein,price_target_usd,,235.00,2026-04-16 08:02:04,inferred
+AMD-00606,2026-04-17 06:22:46,AMD | B of A Securities,price_target_usd,,310.00,2026-04-17 06:22:46,new
+AMD-00607,2026-04-20 08:49:26,AMD | Stifel,price_target_usd,,320.00,2026-04-20 08:49:26,new
+AMD-00608,2026-04-24 08:49:21,AMD | DA Davidson,rating,,Buy,2026-04-24 08:49:21,new
+AMD-00608,2026-04-24 08:49:21,AMD | DA Davidson,price_target_usd,,375.00,2026-04-24 08:49:21,new
+AMD-00609,2026-04-27 06:54:00,AMD | Northland Capital Markets,rating,,Market Perform,2026-04-27 06:54:00,new
+AMD-00609,2026-04-27 06:54:00,AMD | Northland Capital Markets,price_target_usd,,260.00,2026-04-27 06:54:00,new
+AMD-00610,2026-04-29 09:37:46,AMD | Susquehanna,price_target_usd,,375.00,2026-04-29 09:37:46,new
+AMD-00611,2026-05-01 12:03:30,AMD | RBC Capital,price_target_usd,,325.00,2026-05-01 12:03:30,new
+AMD-00611,2026-05-01 12:03:30,AMD | RBC Capital,rating,,Sector Perform,2026-05-01 12:03:30,new
+AMD-00612,2026-05-04 06:20:31,AMD | Morgan Stanley,price_target_usd,,360.00,2026-05-04 06:20:31,new
+AMD-00612,2026-05-04 06:20:31,AMD | Morgan Stanley,price_target_usd,,255.00,2026-05-04 06:20:31,inferred
+AMD-00613,2026-05-04 08:30:24,AMD | Wedbush,price_target_usd,,400.00,2026-05-04 08:30:24,new
+AMD-00614,2026-05-04 13:04:41,AMD | HSBC,price_target_usd,,340.00,2026-05-04 13:04:41,new
+AMD-00614,2026-05-04 13:04:41,AMD | HSBC,rating,,Buy to Hold,2026-05-04 13:04:41,new
+AMD-00615,2026-05-06 05:34:25,AMD | Goldman Sachs,rating,,Buy,2026-05-06 05:34:25,new
+AMD-00615,2026-05-06 05:34:25,AMD | Goldman Sachs,price_target_usd,,450.00,2026-05-06 05:34:25,new
+AMD-00616,2026-05-06 05:59:18,AMD | Truist Securities,price_target_usd,,478.00,2026-05-06 05:59:18,new
+AMD-00617,2026-05-06 06:03:47,AMD | Raymond James,price_target_usd,,455.00,2026-05-06 06:03:47,new
+AMD-00617,2026-05-06 06:03:47,AMD | Raymond James,rating,,Outperform,2026-05-06 06:03:47,new
+AMD-00618,2026-05-06 06:04:16,AMD | Northland Capital Markets,price_target_usd,-,320.00,2026-05-06 06:04:16,new
+AMD-00619,2026-05-06 06:12:12,AMD | Baird,price_target_usd,,625.00,2026-05-06 06:12:12,new
+AMD-00620,2026-05-06 06:14:44,AMD | Jefferies,price_target_usd,,415.00,2026-05-06 06:14:44,new
+AMD-00621,2026-05-06 06:21:22,AMD | Roth Capital,price_target_usd,,500.00,2026-05-06 06:21:22,new
+AMD-00622,2026-05-06 06:24:52,AMD | B of A Securities,price_target_usd,,450.00,2026-05-06 06:24:52,new
+AMD-00623,2026-05-06 06:25:18,AMD | Deutsche Bank,price_target_usd,,365.00,2026-05-06 06:25:18,new
+AMD-00624,2026-05-06 06:32:20,AMD | Melius Research,price_target_usd,,500.00,2026-05-06 06:32:20,new
+AMD-00625,2026-05-06 07:09:22,AMD | Morgan Stanley,price_target_usd,,410.00,2026-05-06 07:09:22,new
+AMD-00626,2026-05-06 07:38:19,AMD | Stifel,price_target_usd,,450.00,2026-05-06 07:38:19,new
+AMD-00627,2026-05-06 08:25:56,AMD | Seaport Global,price_target_usd,,430.00,2026-05-06 08:25:56,new
+AMD-00628,2026-05-06 08:28:53,AMD | DA Davidson,price_target_usd,,425.00,2026-05-06 08:28:53,new
+AMD-00629,2026-05-06 08:37:08,AMD | Wedbush,price_target_usd,,450.00,2026-05-06 08:37:08,new
+AMD-00630,2026-05-06 08:40:48,AMD | Rosenblatt,price_target_usd,,490.00,2026-05-06 08:40:48,new
+AMD-00631,2026-05-06 08:42:16,AMD | Mizuho,price_target_usd,,415.00,2026-05-06 08:42:16,new
+AMD-00632,2026-05-06 08:57:39,AMD | Keybanc,price_target_usd,,530.00,2026-05-06 08:57:39,new
+AMD-00633,2026-05-06 09:59:33,AMD | Benchmark,price_target_usd,,485.00,2026-05-06 09:59:33,new
+AMD-00634,2026-05-06 10:11:18,AMD | Susquehanna,price_target_usd,,450.00,2026-05-06 10:11:18,new
+AMD-00635,2026-05-06 10:31:43,AMD | Wells Fargo,price_target_usd,,505.00,2026-05-06 10:31:43,new
+AMD-00636,2026-05-06 10:37:40,AMD | Barclays,price_target_usd,,500.00,2026-05-06 10:37:40,new
+AMD-00637,2026-05-06 11:00:19,AMD | RBC Capital,price_target_usd,,400.00,2026-05-06 11:00:19,new
+AMD-00638,2026-05-06 12:31:37,AMD | Cantor Fitzgerald,price_target_usd,,500.00,2026-05-06 12:31:37,new
+AMD-00639,2026-05-06 13:11:37,AMD | Bernstein,rating,,Outperform,2026-05-06 13:11:37,new
+AMD-00639,2026-05-06 13:11:37,AMD | Bernstein,price_target_usd,,525.00,2026-05-06 13:11:37,new
+AMD-00640,2026-05-06 14:23:36,AMD | TD Cowen,price_target_usd,,500.00,2026-05-06 14:23:36,new
+AMD-00641,2026-05-06 16:10:05,AMD | JP Morgan,price_target_usd,,385.00,2026-05-06 16:10:05,new
+AMD-00642,2026-05-07 17:11:58,AMD | Citigroup,price_target_usd,,358.00,2026-05-07 17:11:58,new
+AMD-00643,2026-05-12 08:21:11,AMD | Mizuho,price_target_usd,,515.00,2026-05-12 08:21:11,new
+AMD-00644,2026-05-13 06:26:22,AMD | B of A Securities,price_target_usd,,500.00,2026-05-13 06:26:22,new
+AMD-00645,2026-05-13 14:25:34,AMD | Daiwa Capital,rating,,Outperform,2026-05-13 14:25:34,new
+AMD-00645,2026-05-13 14:25:34,AMD | Daiwa Capital,price_target_usd,,500.00,2026-05-13 14:25:34,new
+AMD-00646,2026-05-18 05:45:03,AMD | Melius Research,price_target_usd,,540.00,2026-05-18 05:45:03,new
+AMD-00647,2026-05-18 13:46:59,AMD | Citigroup,price_target_usd,,460.00,2026-05-18 13:46:59,new
+AMD-00648,2026-05-19 06:58:46,AMD | Evercore ISI Group,price_target_usd,2026-05-19,579.00,2026-05-19 06:58:46,new
+AMD-00649,2026-06-01 07:37:52,AMD | Mizuho,price_target_usd,2026-05-19,615.00,2026-05-19 06:58:46,new
+AMD-00650,2026-06-01 10:40:49,AMD | TD Cowen,price_target_usd,,600.00,2026-06-01 10:40:49,new
+AMD-00651,2026-06-01 14:28:28,AMD | Barclays,price_target_usd,,665.00,2026-06-01 14:28:28,new
+AMD-00652,2026-06-11 08:00:58,AMD | B of A Securities,price_target_usd,2026-06-11,560.00,2026-06-11 08:00:58,new
+AMD-00653,2026-06-12 12:52:39,AMD | Citigroup,rating,,Buy,2026-06-12 12:52:39,new
+AMD-00653,2026-06-12 12:52:39,AMD | Citigroup,price_target_usd,,575.00,2026-06-12 12:52:39,new
+AMD-00654,2026-06-17 05:31:43,AMD | Bernstein,price_target_usd,,600.00,2026-06-17 05:31:43,new
+AMD-00655,2026-06-24 08:53:13,AMD | UBS,price_target_usd,,455.00,2026-06-24 08:53:13,new
+AMD-00655,2026-06-24 08:53:13,AMD | UBS,price_target_usd,,670.00,2026-06-24 08:53:13,new
+AMD-00656,2026-06-29 10:17:05,AMD | Cantor Fitzgerald,price_target_usd,,700.00,2026-06-29 10:17:05,new
+AMD-00657,2026-06-30 11:19:52,AMD | Wells Fargo,price_target_usd,,615.00,2026-06-30 11:19:52,new
+AMD-00658,2026-07-06 10:59:21,AMD | Goldman Sachs,price_target_usd,,640.00,2026-07-06 10:59:21,new
+AMD-00659,2026-07-10 08:58:42,AMD | Stifel,price_target_usd,,635.00,2026-07-10 08:58:42,new
+AMD-00660,2026-07-13 14:02:21,AMD | TD Cowen,price_target_usd,,675.00,2026-07-13 14:02:21,new
+AMD-00661,2026-07-14 07:15:24,AMD | Keybanc,price_target_usd,2026-07-14,725.00,2026-07-14 07:15:24,new
+AMD-00662,2026-07-14 09:51:46,AMD | B of A Securities,price_target_usd,2026-07-14,620.00,2026-07-14 09:51:46,new
+AMD-00663,2026-07-23 10:31:37,AMD | Benchmark,price_target_usd,2026-07-23,685.00,2026-07-23 10:31:37,new
+AMD-00664,2026-07-24 08:19:42,AMD | Rosenblatt,price_target_usd,2026-07-24,665.00,2026-07-24 08:19:42,new
+AMD-00665,2026-07-24 08:29:42,AMD | Cantor Fitzgerald,price_target_usd,2026-07-24,700.00,2026-07-24 08:29:42,new
+AMD-00666,2026-07-24 09:59:33,AMD | RBC Capital,price_target_usd,2026-07-24,540.00,2026-07-24 09:59:33,reiterate
+AMD-00667,2026-07-24 13:45:22,AMD | Roth Capital,price_target_usd,,650.00,2026-07-24 13:45:22,new
+AMD-00668,2026-07-24 20:53:19,AMD | Jefferies,price_target_usd,,640.00,2026-07-24 08:29:42,new
+AMD-00669,2026-07-24 21:20:12,AMD | UBS,price_target_usd,,730.00,2026-07-24 21:20:12,new
+AMD-00670,2026-07-27 09:05:20,AMD | Wedbush,price_target_usd,,600.00,2026-07-27 09:05:20,new
+AMD-00671,2026-07-27 13:52:28,AMD | Mizuho,price_target_usd,2026-07-27,625.00,2026-07-27 13:52:28,new
+AMD-00672,2026-07-30 14:27:09,AMD | Susquehanna,price_target_usd,,500.00,2026-07-30 14:27:09,new
+AMD-00674,2026-08-05 07:41:34,AMD | Keybanc,rating,,Overweight,2026-08-05 07:41:34,new
+AMD-00674,2026-08-05 07:41:34,AMD | Keybanc,price_target_usd,,725.00,2026-08-05 07:41:34,new
+AMD-00675,2026-08-05 07:47:22,AMD | Keybanc,price_target_usd,,665.00,2026-08-05 07:47:22,new
+AMD-00676,2026-08-05 08:01:54,AMD | Evercore ISI Group,price_target_usd,2026-08-05,579.00,2026-08-05 08:01:54,new
+AMD-00677,2026-08-05 09:10:48,AMD | Cantor Fitzgerald,price_target_usd,,700.00,2026-08-05 09:10:48,new
+AMD-00678,2026-08-05 09:35:30,AMD | Wedbush,price_target_usd,,600.00,2026-08-05 09:35:30,new
+AMD-00679,2026-08-05 11:31:07,AMD | RBC Capital,price_target_usd,,540.00,2026-08-05 11:31:07,new
+AMD-00680,2026-08-05 11:40:00,AMD | Wells Fargo,price_target_usd,,700.00,2026-08-05 11:40:00,new
+AMD-00681,2026-08-05 13:56:30,AMD | Truist Securities,price_target_usd,,594.00,2026-08-05 13:56:30,new
+AMD-00682,2026-08-05 14:05:21,AMD | JP Morgan,price_target_usd,,550.00,2026-08-05 14:05:21,new
+AMD-00683,2026-08-05 14:34:18,AMD | Morgan Stanley,price_target_usd,,465.00,2026-08-05 14:34:18,new
+AMD-00684,2026-08-05 18:07:57,AMD | DA Davidson,price_target_usd,,550.00,2026-08-05 18:07:57,new
+AMD-00685,2026-08-06 07:50:17,AMD | Rosenblatt,price_target_usd,,700.00,2026-08-06 07:50:17,new
+AMD-00686,2026-08-06 12:15:05,AMD | Argus Research,price_target_usd,,625.00,2026-08-06 12:15:05,new
+AMD-00687,2026-08-21 05:52:16,AMD | BMO Capital,rating,,Outperform,2026-08-21 05:52:16,new
+AMD-00687,2026-08-21 05:52:16,AMD | BMO Capital,price_target_usd,,550.00,2026-08-21 05:52:16,new
+AMD-00688,2026-08-25 05:53:23,AMD | Raymond James,rating,,Strong Buy,2026-08-25 05:53:23,new
+AMD-00688,2026-08-25 05:53:23,AMD | Raymond James,price_target_usd,,641.00,2026-08-25 05:53:23,new
+AMD-00689,2026-09-10 10:10:53,AMD | Piper Sandler,rating,,Overweight,2026-09-10 10:10:53,new
+AMD-00689,2026-09-10 10:10:53,AMD | Piper Sandler,price_target_usd,,600.00,2026-09-10 10:10:53,new
+AMD-00690,2026-09-25 07:40:30,AMD | B of A Securities,price_target_usd,,720.00,2026-09-25 07:40:30,new
+AMD-00691,2026-09-29 08:16:19,AMD | Rosenblatt,price_target_usd,,700.00,2026-09-29 08:16:19,new
+AMD-00692,2026-09-29 09:37:31,AMD | StoneX,price_target_usd,,685.00,2026-09-29 09:37:31,new
+AMD-00693,2026-10-05 07:05:28,AMD | Stifel,price_target_usd,,700.00,2026-10-05 07:05:28,new
+AMD-00694,2026-10-06 08:51:20,AMD | Mizuho,price_target_usd,,705.00,2026-10-06 08:51:20,new
+AMD-00695,2026-10-06 14:00:15,AMD | Citigroup,price_target_usd,,800.00,2026-10-06 14:00:15,new
+AMD-00696,2026-10-20 08:36:25,AMD | Wedbush,price_target_usd,,600.00,2026-10-20 08:36:25,new
+AMD-00697,2026-10-21 08:41:06,AMD | Susquehanna,price_target_usd,,620.00,2026-10-21 08:41:06,new
+AMD-00698,2026-10-28 08:19:01,AMD | Susquehanna,price_target_usd,,650.00,2026-10-28 08:19:01,new
+AMD-00699,2026-11-02 12:26:20,AMD | Morgan Stanley,price_target_usd,,510.00,2026-11-02 12:26:20,new
+AMD-00700,2026-11-04 06:28:13,AMD | B of A Securities,price_target_usd,,650.00,2026-11-04 06:28:13,new
+AMD-00701,2026-11-04 06:51:08,AMD | Stifel,price_target_usd,,725.00,2026-11-04 06:51:08,new
+AMD-00702,2026-11-04 06:58:28,AMD | Cantor Fitzgerald,price_target_usd,,700.00,2026-11-04 06:58:28,new
+AMD-00703,2026-11-04 07:26:36,AMD | Mizuho,price_target_usd,,610.00,2026-11-04 07:26:36,new
+AMD-00704,2026-11-04 07:41:56,AMD | Rosenblatt,price_target_usd,,700.00,2026-11-04 07:41:56,new
+AMD-00705,2026-11-04 08:19:08,AMD | Keybanc,price_target_usd,,725.00,2026-11-04 08:19:08,new
+AMD-00706,2026-11-04 08:28:59,AMD | DA Davidson,price_target_usd,,600.00,2026-11-04 08:28:59,new
+AMD-00707,2026-11-04 09:18:38,AMD | StoneX,price_target_usd,,685.00,2026-11-04 09:18:38,new
+AMD-00708,2026-11-04 09:33:59,AMD | Wedbush,price_target_usd,,600.00,2026-11-04 09:33:59,new
+AMD-00709,2026-11-04 10:44:26,AMD | Truist Securities,price_target_usd,,605.00,2026-11-04 10:44:26,new
+AMD-00710,2026-11-04 11:02:01,AMD | RBC Capital,price_target_usd,,540.00,2026-11-04 11:02:01,new
+AMD-00711,2026-11-04 11:44:49,AMD | Wells Fargo,price_target_usd,,650.00,2026-11-04 11:44:49,new
+AMD-00712,2026-11-04 12:06:25,AMD | Piper Sandler,price_target_usd,,650.00,2026-11-04 12:06:25,new
+AMD-00713,2026-11-04 12:29:57,AMD | Morgan Stanley,price_target_usd,,550.00,2026-11-04 12:29:57,new
+AMD-00714,2026-11-04 14:22:37,AMD | JP Morgan,price_target_usd,,575.00,2026-11-04 14:22:37,new
+AMD-00715,2026-11-04 17:46:32,AMD | UBS,price_target_usd,,700.00,2026-11-04 17:46:32,new
+AMD-00716,2026-11-09 05:17:51,AMD | Oppenheimer,rating,,Outperform,2026-11-09 05:17:51,new
+AMD-00716,2026-11-09 05:17:51,AMD | Oppenheimer,price_target_usd,,600.00,2026-11-09 05:17:51,new
+AMD-00717,2026-11-12 07:24:23,AMD | William Blair,rating,,Outperform,2026-11-12 07:24:23,new
+AMD-00718,2026-11-12 09:52:04,AMD | RBC Capital,price_target_usd,,540.00,2026-11-12 09:52:04,new
+AMD-00719,2026-11-12 12:41:04,AMD | B of A Securities,price_target_usd,,700.00,2026-11-12 12:41:04,new

@@ -1,0 +1,50 @@
+log: /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/logs/pipeline_20261121_114555.log
+models: phi-4-mini qwen3.5-4b gemma-4-e4b-it | history cap: 12000 tokens | max input: 32768 | extra method args: none
+
+================================================================ 2026-11-21 11:45:55  setup
+== 1/6 GPU driver
+   driver supports CUDA 12.9; install: pinned
+== 2/6 folders and env.sh  (WORK=/tmp/pit_work, free: 225G)
+== 3/6 virtualenv /tmp/pit_work/envs/pit
+   python: /tmp/pit_work/envs/pit/bin/python  (Python 3.13.9)
+== 4/6 packages (pinned)
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu129
+Collecting vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl (559.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 559.4/559.4 MB 31.9 MB/s  0:00:17
+Collecting transformers==5.19.0 (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 9))
+  Downloading transformers-5.19.0-py3-none-any.whl.metadata (32 kB)
+Collecting accelerate (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 10))
+  Downloading accelerate-1.16.0-py3-none-any.whl.metadata (19 kB)
+Collecting pandas (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 11))
+  Downloading pandas-3.1.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+Collecting scikit-learn (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 12))
+  Downloading scikit_learn-1.9.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting requests (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 13))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting yfinance>=0.2.54 (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 14))
+  Downloading yfinance-1.8.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting regex (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading regex-2026.11.19-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting cachetools (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading cachetools-8.0.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting psutil (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting sentencepiece (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading sentencepiece-0.2.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (34 kB)
+Collecting numpy (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading numpy-2.5.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting tqdm (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting blake3 (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading blake3-1.0.11-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting py-cpuinfo (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading py_cpuinfo-9.0.0-py3-none-any.whl.metadata (794 bytes)
+Collecting huggingface_hub>=1.31.0 (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading huggingface_hub-2.4.0-py3-none-any.whl.metadata (16 kB)
+Collecting tokenizers>=0.23.2 (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)
+Collecting safetensors>=0.6.2 (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Collecting protobuf!=6.30.*,!=6.31.*,!=6.32.*,!=6.33.0.*,!=6.33.1.*,!=6.33.2.*,!=6.33.3.*,!=6.33.4.*,>=5.29.6 (from vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl->-r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)

@@ -1,0 +1,12 @@
+log: /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/logs/pipeline_20261121_135241.log
+models: phi-4-mini qwen3.5-4b gemma-4-e4b-it | history cap: 12000 tokens | max input: 32768 | extra method args: none
+python: /tmp/pit_work/envs/pit/bin/python
+
+================================================================ 2026-11-21 13:52:42  smoke: 4 methods x [phi-4-mini qwen3.5-4b gemma-4-e4b-it] on 6 questions per source (entities: KO JNJ US_GDP)
+NVIDIA A100-SXM4-80GB, 81920 MiB, 575.51.03
+
+================================================================ 2026-11-21 13:52:50  phi-4-mini  1_rule_based  (/dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/results_smoke)
+[engine] backend=vllm  results -> /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/results_smoke/vllm
+[load] microsoft/Phi-4-mini-instruct  (vllm 0.32.0)
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+(MainProcess pid=28821) INFO 11-21 13:52:59 [api_utils.py:286] non-default args: {'dtype': 'bfloat16', 'max_model_len': 36316, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.88, 'disable_log_stats': True, 'model': 'microsoft/Phi-4-mini-instruct'}

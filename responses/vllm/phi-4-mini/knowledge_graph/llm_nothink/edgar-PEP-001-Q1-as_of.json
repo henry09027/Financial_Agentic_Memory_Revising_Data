@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-PEP-001-Q1-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "PEP",
+ "qtype": "latest_value",
+ "mode": "as_of",
+ "as_of": "2018-01-02 06:36:00",
+ "question": "What is PEPSICO INC's latest reported total revenue for fiscal year 2016 (ended 31 December 2016), in $ millions?",
+ "gold": "62799",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "PEP-00025",
+ "answer": "627990",
+ "cited": "PEP-00025|PEP-00026",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 1732,
+ "out_tokens": 31,
+ "seconds": 0.2344,
+ "n_facts": 13,
+ "n_dropped": 0,
+ "created": "2026-11-21T20:39:57",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2018-01-02 06:36:00\nQuestion: What is PEPSICO INC's latest reported total revenue for fiscal year 2016 (ended 31 December 2016), in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nPEP | Revenues | value_usd_m | 2013-12-29..2014-09-06: latest 46735 | first 46735 | 1 reports: 46735 [PEP-00008 @2015-10-06 20:17]\nPEP | Revenues | value_usd_m | 2015-06-14..2015-09-05: latest 16331 | first 16331 | 2 reports: 16331 [PEP-00011 @2015-10-06 20:17]; 16331 [PEP-00020 @2016-09-29 20:20]\nPEP | Revenues | value_usd_m | 2014-12-28..2015-12-26: latest 63056000 | first 6056 | 2 reports: 6056 [PEP-00014 @2016-02-11 21:40]; 63056000 [PEP-00024 @2017-02-15 21:35]\nPEP | Revenues | value_usd_m | 2015-12-27..2016-03-19: latest 11862000 | first 11862000 | 3 reports: 11862000 [PEP-00016 @2016-04-18 20:09]; 11862000 [PEP-00026 @2017-04-26 20:24]; 11862000 [PEP-00026 @2017-04-26 20:24]\nPEP | Revenues | value_usd_m | 2016-03-20..2016-06-11: latest 15395 | first 15395 | 3 reports: 15395 [PEP-00018 @2016-07-07 20:20]; 15395 [PEP-00026 @2017-04-26 20:24]; 15395 [PEP-00028 @2017-07-11 20:19]\nPEP | Revenues | value_usd_m | 2015-12-27..2016-09-03: latest 43284000 | first 43284000 | 4 reports: 43284000 [PEP-00021 @2016-09-29 20:20]; 43284000 [PEP-00026 @2017-04-26 20:24]; 43284000 [PEP-00030 @2017-10-04 20:26]; 43284000 [PEP-00030 @2017-10-04 20:26]\nPEP | Revenues | value_usd_m | 2016-06-12..2016-09-03: latest 16027000 | first 16027000 | 3 reports: 16027000 [PEP-00022 @2016-09-29 20:20]; 16027000 [PEP-00026 @2017-04-26 20:24]; 16027000 [PEP-00031 @2017-10-04 20:26]\nPEP | Revenues | value_usd_m | 2015-12-27..2016-12-31: latest 62799000 | first 62799000 | 2 reports: 62799000 [PEP-00025 @2017-02-15 21:35]; 62799000 [PEP-00026 @2017-04-26 20:24]\nPEP | Revenues | value_usd_m | 2017-01-01..2017-03-25: latest 12049000 | first 12049000 | 1 reports: 12049000 [PEP-00027 @2017-04-26 20:24]\nPEP | Revenues | value_usd_m | 2017-03-26..2017-06-17: latest 15710 | first 15710 | 1 reports: 15710 [PEP-00029 @2017-07-11 20:19]\nPEP | Revenues | value_usd_m | 2017-06-26..2017-09-03: latest 16027000 | first 16027000 | 1 reports: 16027000 [PEP-00031 @2017-10-04 20:26]\nPEP | Revenues | value_usd_m | 2017-01-01..2017-09-09: latest 43999 | first 43999 | 1 reports: 43999 [PEP-00032 @2017-10-04 20:26]\nPEP | Revenues | value_usd_m | 2017-06-18..2017-09-09: latest 16240 | first 16240 | 1 reports: 16240 [PEP-00033 @2017-10-04 20:26]"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": \"627990\", \"evidence_ids\": [\"PEP-00025\", \"PEP-00026\"]}\n```",
+ "raw_output": "```json\n{\"answer\": \"627990\", \"evidence_ids\": [\"PEP-00025\", \"PEP-00026\"]}\n```"
+}

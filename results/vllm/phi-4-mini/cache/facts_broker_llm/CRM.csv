@@ -1,0 +1,222 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+CRM-00667,2025-04-22 09:09:31,CRM | Wells Fargo,price_target_usd,,255.00,2025-04-22 09:09:31,new
+CRM-00667,2025-04-22 09:09:31,CRM | Wells Fargo,rating,,Equal-Weight,2025-04-22 09:09:31,new
+CRM-00668,2025-04-23 11:47:54,CRM | Piper Sandler,price_target_usd,,315.00,2025-04-23 11:47:54,new
+CRM-00669,2025-04-24 11:08:22,CRM | Goldman Sachs,price_target_usd,-,340.00,2025-04-24 11:08:22,new
+CRM-00670,2025-04-25 08:01:46,CRM | Needham,price_target_usd,,400.00,2025-04-25 08:01:46,new
+CRM-00671,2025-04-30 05:50:48,CRM | WestPark Capital,price_target_usd,,320.00,2025-04-30 05:50:48,new
+CRM-00672,2025-05-15 11:07:44,CRM | Mizuho,price_target_usd,2025-05-15 11:07:44,380.00,2025-05-15 11:07:44,new
+CRM-00673,2025-05-21 10:40:30,CRM | UBS,price_target_usd,2025-05-21 10:40:30,320.00,2025-05-21 10:40:30,new
+CRM-00674,2025-05-23 11:17:09,CRM | Citigroup,price_target_usd,2025-05-23 11:17:09,320.00,2025-05-23 11:17:09,new
+CRM-00675,2025-05-27 11:06:48,CRM | Goldman Sachs,price_target_usd,,340.00,2025-05-27 11:06:48,new
+CRM-00676,2025-05-27 11:16:45,CRM | BMO Capital,price_target_usd,2025-05-27,350.00,2025-05-27 11:16:45,new
+CRM-00677,2025-05-27 12:58:21,CRM | UBS,price_target_usd,2025-05-27,300.00,2025-05-27 12:58:21,new
+CRM-00678,2025-05-28 05:47:17,CRM | Needham,price_target_usd,,400.00,2025-05-28 05:47:17,new
+CRM-00679,2025-05-28 05:58:17,CRM | WestPark Capital,price_target_usd,,320.00,2025-05-28 05:58:17,new
+CRM-00680,2025-05-28 08:43:22,CRM | Canaccord Genuity,price_target_usd,2025-05-28,350.00,2025-05-28 08:43:22,new
+CRM-00681,2025-05-28 10:29:30,CRM | DA Davidson,price_target_usd,,200.00,2025-05-28 10:29:30,new
+CRM-00683,2025-05-29 07:17:26,CRM | WestPark Capital,price_target_usd,,320.00,2025-05-29 07:17:26,new
+CRM-00684,2025-05-29 07:56:06,CRM | RBC Capital,rating,,Sector Perform,2025-05-29 07:56:06,new
+CRM-00684,2025-05-29 07:56:06,CRM | RBC Capital,price_target_usd,,275.00,2025-05-29 07:56:06,new
+CRM-00685,2025-05-29 08:28:47,CRM | Bernstein,price_target_usd,2025-05-29 08:28:47,255.00,2025-05-29 08:28:47,new
+CRM-00685,2025-05-29 08:28:47,CRM | Bernstein,rating,2025-05-29 08:28:47,Underperform,2025-05-29 08:28:47,new
+CRM-00686,2025-05-29 09:40:05,CRM | Goldman Sachs,price_target_usd,,385.00,2025-05-29 09:40:05,new
+CRM-00687,2025-05-29 10:09:50,CRM | DA Davidson,price_target_usd,2025-05-29 10:09:50,225.00,2025-05-29 10:09:50,new
+CRM-00687,2025-05-29 10:09:50,CRM | DA Davidson,rating,2025-05-29 10:09:50,Underperform,2025-05-29 10:09:50,new
+CRM-00688,2025-05-29 11:07:52,CRM | Barclays,price_target_usd,,347.00,2025-05-29 11:07:52,new
+CRM-00689,2025-05-29 11:57:29,CRM | Morgan Stanley,price_target_usd,,404.00,2025-05-29 11:57:29,new
+CRM-00689,2025-05-29 11:57:29,CRM | Morgan Stanley,rating,,Overweight,2025-05-29 11:57:29,new
+CRM-00690,2025-05-29 12:28:11,CRM | Northland Capital Markets,price_target_usd,2025-05-29 12:28:11,396.00,2025-05-29 12:28:11,new
+CRM-00691,2025-05-29 12:33:00,CRM | Oppenheimer,price_target_usd,2025-05-29 12:33:00,370.00,2025-05-29 12:33:00,new
+CRM-00692,2025-05-29 13:03:55,CRM | Piper Sandler,price_target_usd,,335.00,2025-05-29 13:03:55,new
+CRM-00693,2025-05-29 13:48:49,CRM | Wells Fargo,price_target_usd,,275.00,2025-05-29 13:48:49,new
+CRM-00694,2025-05-30 10:07:18,CRM | Stephens & Co.,price_target_usd,2025-05-30 10:07:18,309.00,2025-05-30 10:07:18,new
+CRM-00695,2025-05-30 14:12:53,CRM | Citigroup,price_target_usd,2025-05-30,295.00,2025-05-30 14:12:53,new
+CRM-00696,2025-06-03 08:53:48,CRM | Cantor Fitzgerald,rating,,Overweight,2025-06-03 08:53:48,new
+CRM-00696,2025-06-03 08:53:48,CRM | Cantor Fitzgerald,price_target_usd,,325.00,2025-06-03 08:53:48,new
+CRM-00697,2025-06-10 10:19:52,CRM | Oppenheimer,price_target_usd,,370.00,2025-06-10 10:19:52,new
+CRM-00698,2025-06-20 09:15:39,CRM | Cantor Fitzgerald,price_target_usd,,325.00,2025-06-20 09:15:39,new
+CRM-00699,2025-06-26 09:37:50,CRM | Cantor Fitzgerald,price_target_usd,,325.00,2025-06-26 09:37:50,new
+CRM-00700,2025-07-10 13:55:10,CRM | BMO Capital,price_target_usd,- = 335.00,335.00,2025-07-10 13:55:10,new
+CRM-00701,2025-07-11 08:40:11,CRM | JMP Securities,price_target_usd,,430.00,2025-07-11 08:40:11,new
+CRM-00702,2025-07-14 10:09:26,CRM | RBC Capital,price_target_usd,-,275.00,2025-07-14 10:09:26,new
+CRM-00703,2025-07-16 10:30:19,CRM | JMP Securities,price_target_usd,,430.00,2025-07-16 10:30:19,new
+CRM-00704,2025-08-13 07:37:51,CRM | Stifel,price_target_usd,2025-08-13,325.00,2025-08-13 07:37:51,new
+CRM-00705,2025-08-14 11:48:14,CRM | Mizuho,price_target_usd,2025-08-14,350.00,2025-08-14 11:48:14,new
+CRM-00706,2025-08-15 06:50:46,CRM | DA Davidson,price_target_usd,,225.00,2025-08-15 06:50:46,new
+CRM-00707,2025-08-18 09:41:55,CRM | Barclays,price_target_usd,,316.00,2025-08-18 09:41:55,new
+CRM-00708,2025-08-18 11:11:39,CRM | RBC Capital,price_target_usd,,275.00,2025-08-18 11:11:39,new
+CRM-00709,2025-08-18 12:07:51,CRM | UBS,price_target_usd,,260.00,2025-08-18 12:07:51,new
+CRM-00710,2025-08-26 11:25:45,CRM | B of A Securities,price_target_usd,,325.00,2025-08-26 11:25:45,new
+CRM-00711,2025-08-26 11:40:52,CRM | Oppenheimer,price_target_usd,,370.00,2025-08-26 11:40:52,new
+CRM-00712,2025-08-28 08:53:18,CRM | Cantor Fitzgerald,price_target_usd,,325.00,2025-08-28 08:53:18,new
+CRM-00713,2025-09-02 09:24:33,CRM | Morgan Stanley,price_target_usd,,405.00,2025-09-02 09:24:33,new
+CRM-00714,2025-09-02 09:50:40,CRM | JMP Securities,price_target_usd,,430.00,2025-09-02 09:50:40,new
+CRM-00715,2025-09-04 05:09:02,CRM | Piper Sandler,price_target_usd,,315.00,2025-09-04 05:09:02,new
+CRM-00716,2025-09-04 05:58:44,CRM | Needham,price_target_usd,,400.00,2025-09-04 05:58:44,new
+CRM-00717,2025-09-04 06:07:22,CRM | JP Morgan,price_target_usd,,365.00,2025-09-04 06:07:22,new
+CRM-00718,2025-09-04 07:52:35,CRM | Canaccord Genuity,price_target_usd,,300.00,2025-09-04 07:52:35,new
+CRM-00719,2025-09-04 08:03:37,CRM | Keybanc,price_target_usd,,400.00,2025-09-04 08:03:37,new
+CRM-00720,2025-09-04 08:59:25,CRM | Cantor Fitzgerald,price_target_usd,,325.00,2025-09-04 08:59:25,new
+CRM-00721,2025-09-04 09:15:48,CRM | Wells Fargo,price_target_usd,,265.00,2025-09-04 09:15:48,new
+CRM-00722,2025-09-04 09:17:47,CRM | RBC Capital,price_target_usd,,250.00,2025-09-04 09:17:47,new
+CRM-00723,2025-09-04 09:35:56,CRM | Macquarie,price_target_usd,,290.00,2025-09-04 09:35:56,new
+CRM-00724,2025-09-04 10:18:15,CRM | BMO Capital,price_target_usd,,280.00,2025-09-04 10:18:15,new
+CRM-00725,2025-09-04 10:31:47,CRM | Deutsche Bank,price_target_usd,,340.00,2025-09-04 10:31:47,new
+CRM-00726,2025-09-04 11:36:35,CRM | Baird,price_target_usd,-,325.00,2025-09-04 11:36:35,new
+CRM-00727,2025-09-04 12:16:33,CRM | Bernstein,price_target_usd,,221.00,2025-09-04 12:16:33,new
+CRM-00728,2025-09-05 14:13:20,CRM | Macquarie,price_target_usd,-,250.00,2025-09-05 14:13:20,new
+CRM-00729,2025-09-09 10:40:24,CRM | Citigroup,price_target_usd,,276.00,2025-09-09 10:40:24,new
+CRM-00730,2025-10-09 11:38:14,CRM | Stifel,price_target_usd,,300.00,2025-10-09 11:38:14,new
+CRM-00731,2025-10-16 05:18:17,CRM | Piper Sandler,price_target_usd,,315.00,2025-10-16 05:18:17,new
+CRM-00732,2025-10-16 08:16:05,CRM | Needham,price_target_usd,,400.00,2025-10-16 08:16:05,new
+CRM-00733,2025-10-16 09:13:50,CRM | Wedbush,price_target_usd,,375.00,2025-10-16 09:13:50,new
+CRM-00734,2025-10-16 09:20:13,CRM | Cantor Fitzgerald,price_target_usd,,325.00,2025-10-16 09:20:13,new
+CRM-00735,2025-10-16 10:40:04,CRM | DA Davidson,price_target_usd,,225.00,2025-10-16 10:40:04,new
+CRM-00736,2025-10-16 15:24:25,CRM | Macquarie,price_target_usd,,250.00,2025-10-16 15:24:25,new
+CRM-00737,2025-10-17 09:14:59,CRM | JMP Securities,price_target_usd,,430.00,2025-10-17 09:14:59,new
+CRM-00738,2025-11-17 08:19:21,CRM | Mizuho,price_target_usd,,340.00,2025-11-17 08:19:21,new
+CRM-00739,2025-11-17 09:18:30,CRM | B of A Securities,price_target_usd,,305.00,2025-11-17 09:18:30,new
+CRM-00740,2025-11-25 09:16:15,CRM | Cantor Fitzgerald,price_target_usd,,325.00,2025-11-25 09:16:15,new
+CRM-00741,2025-11-26 13:56:24,CRM | Citigroup,price_target_usd,,253.00,2025-11-26 13:56:24,new
+CRM-00742,2025-12-01 08:55:30,CRM | Oppenheimer,price_target_usd,,300.00,2025-12-01 08:55:30,new
+CRM-00743,2025-12-02 08:49:02,CRM | Citizens,price_target_usd,,430.00,2025-12-02 08:49:02,new
+CRM-00744,2025-12-04 05:01:37,CRM | Needham,price_target_usd,,400.00,2025-12-04 05:01:37,new
+CRM-00745,2025-12-04 07:21:39,CRM | Citizens,price_target_usd,,405.00,2025-12-04 07:21:39,new
+CRM-00746,2025-12-04 08:50:02,CRM | Baird,price_target_usd,,315.00,2025-12-04 08:50:02,new
+CRM-00747,2025-12-04 08:55:01,CRM | Guggenheim,rating,,Neutral,2025-12-04 08:55:01,new
+CRM-00748,2025-12-04 09:00:14,CRM | Wedbush,price_target_usd,,375.00,2025-12-04 09:00:14,new
+CRM-00749,2025-12-04 09:18:17,CRM | BMO Capital,price_target_usd,,275.00,2025-12-04 09:18:17,new
+CRM-00750,2025-12-04 10:33:36,CRM | Canaccord Genuity,price_target_usd,,300.00,2025-12-04 10:33:36,new
+CRM-00751,2025-12-04 10:59:25,CRM | Barclays,price_target_usd,,330.00,2025-12-04 10:59:25,new
+CRM-00752,2025-12-04 12:02:46,CRM | Evercore ISI Group,price_target_usd,,340.00,2025-12-04 12:02:46,new
+CRM-00753,2025-12-04 12:56:42,CRM | Deutsche Bank,price_target_usd,,360.00,2025-12-04 12:56:42,new
+CRM-00754,2025-12-04 13:06:26,CRM | Northland Capital Markets,price_target_usd,,267.00,2025-12-04 13:06:26,new
+CRM-00755,2025-12-04 13:09:23,CRM | Macquarie,price_target_usd,,265.00,2025-12-04 13:09:23,new
+CRM-00756,2025-12-04 13:13:28,CRM | Truist Securities,price_target_usd,,380.00,2025-12-04 13:13:28,new
+CRM-00757,2025-12-05 14:46:43,CRM | DA Davidson,price_target_usd,,235.00,2025-12-05 14:46:43,new
+CRM-00758,2025-12-08 15:00:23,CRM | Citigroup,price_target_usd,,257.00,2025-12-08 15:00:23,new
+CRM-00759,2025-12-09 12:22:35,CRM | Morgan Stanley,price_target_usd,,398.00,2025-12-09 12:22:35,new
+CRM-00760,2025-12-17 06:11:45,CRM | BTIG,rating,,Buy,2025-12-17 06:11:45,new
+CRM-00760,2025-12-17 06:11:45,CRM | BTIG,price_target_usd,,335.00,2025-12-17 06:11:45,new
+CRM-00761,2026-01-05 09:45:59,CRM | RBC Capital,price_target_usd,,290.00,2026-01-05 09:45:59,new
+CRM-00762,2026-01-12 15:12:16,CRM | Barclays,price_target_usd,,338.00,2026-01-12 15:12:16,new
+CRM-00763,2026-02-03 06:02:08,CRM | Piper Sandler,price_target_usd,,280.00,2026-02-03 06:02:08,new
+CRM-00764,2026-02-17 08:14:31,CRM | Oppenheimer,price_target_usd,,275.00,2026-02-17 08:14:31,new
+CRM-00765,2026-02-17 08:59:19,CRM | Mizuho,price_target_usd,,280.00,2026-02-17 08:59:19,new
+CRM-00766,2026-02-17 15:27:18,CRM | UBS,price_target_usd,,200.00,2026-02-17 15:27:18,new
+CRM-00767,2026-02-18 07:21:41,CRM | BTIG,price_target_usd,,260.00,2026-02-18 07:21:41,new
+CRM-00768,2026-02-18 09:33:57,CRM | Wells Fargo,price_target_usd,,235.00,2026-02-18 09:33:57,new
+CRM-00769,2026-02-18 13:30:10,CRM | Citigroup,price_target_usd,,197.00,2026-02-18 13:30:10,new
+CRM-00770,2026-02-23 09:30:23,CRM | Evercore ISI Group,price_target_usd,,260.00,2026-02-23 09:30:23,new
+CRM-00771,2026-02-23 11:18:54,CRM | Morgan Stanley,price_target_usd,,287.00,2026-02-23 11:18:54,new
+CRM-00772,2026-02-23 14:38:30,CRM | Jefferies,price_target_usd,,250.00,2026-02-23 14:38:30,new
+CRM-00773,2026-02-24 08:59:31,CRM | Wedbush,price_target_usd,,375.00,2026-02-24 08:59:31,new
+CRM-00774,2026-02-24 09:06:15,CRM | Keybanc,price_target_usd,,300.00,2026-02-24 09:06:15,new
+CRM-00775,2026-02-26 04:09:10,CRM | Piper Sandler,price_target_usd,,250.00,2026-02-26 04:09:10,new
+CRM-00776,2026-02-26 08:31:15,CRM | Needham,price_target_usd,,400.00,2026-02-26 08:31:15,new
+CRM-00777,2026-02-26 09:06:55,CRM | BTIG,price_target_usd,,255.00,2026-02-26 09:06:55,new
+CRM-00778,2026-02-26 09:36:08,CRM | Stifel,price_target_usd,,250.00,2026-02-26 09:36:08,new
+CRM-00779,2026-02-26 09:57:38,CRM | Wedbush,price_target_usd,,325.00,2026-02-26 09:57:38,new
+CRM-00780,2026-02-26 10:17:16,CRM | Barclays,price_target_usd,,252.00,2026-02-26 10:17:16,new
+CRM-00781,2026-02-26 10:47:22,CRM | RBC Capital,price_target_usd,,210.00,2026-02-26 10:47:22,new
+CRM-00782,2026-02-26 11:17:09,CRM | Wells Fargo,price_target_usd,,210.00,2026-02-26 11:17:09,new
+CRM-00783,2026-02-26 12:15:42,CRM | Oppenheimer,price_target_usd,,250.00,2026-02-26 12:15:42,new
+CRM-00784,2026-02-26 12:18:53,CRM | Bernstein,price_target_usd,,194.00,2026-02-26 12:18:53,new
+CRM-00785,2026-02-26 12:30:40,CRM | Roth Capital,price_target_usd,,325.00,2026-02-26 12:30:40,new
+CRM-00786,2026-02-26 12:48:12,CRM | BMO Capital,price_target_usd,,225.00,2026-02-26 12:48:12,new
+CRM-00787,2026-02-26 13:06:16,CRM | Mizuho,price_target_usd,,265.00,2026-02-26 13:06:16,new
+CRM-00788,2026-02-26 13:24:06,CRM | TD Cowen,price_target_usd,,250.00,2026-02-26 13:24:06,new
+CRM-00789,2026-02-26 16:37:02,CRM | JP Morgan,price_target_usd,,320.00,2026-02-26 16:37:02,new
+CRM-00790,2026-02-26 17:11:11,CRM | Macquarie,price_target_usd,,200.00,2026-02-26 17:11:11,new
+CRM-00791,2026-02-27 14:47:41,CRM | DA Davidson,price_target_usd,,200.00,2026-02-27 14:47:41,new
+CRM-00792,2026-03-02 13:34:37,CRM | Citigroup,price_target_usd,,200.00,2026-03-02 13:34:37,new
+CRM-00793,2026-03-10 12:00:12,CRM | Northland Capital Markets,price_target_usd,,229.00,2026-03-10 12:00:12,new
+CRM-00794,2026-04-01 07:19:48,CRM | BTIG,price_target_usd,,255.00,2026-04-01 07:19:48,new
+CRM-00795,2026-04-14 05:38:30,CRM | Piper Sandler,price_target_usd,,215.00,2026-04-14 05:38:30,new
+CRM-00796,2026-04-17 06:26:00,CRM | BTIG,price_target_usd,,255.00,2026-04-17 06:26:00,new
+CRM-00797,2026-05-12 14:16:27,CRM | Citigroup,price_target_usd,,188.00,2026-05-12 14:16:27,new
+CRM-00798,2026-05-21 16:37:50,CRM | UBS,price_target_usd,,185.00,2026-05-21 16:37:50,new
+CRM-00799,2026-05-26 06:10:00,CRM | BTIG,price_target_usd,,255.00,2026-05-26 06:10:00,new
+CRM-00800,2026-05-28 05:30:55,CRM | Piper Sandler,price_target_usd,,215.00,2026-05-28 05:30:55,new
+CRM-00801,2026-05-28 06:43:18,CRM | BTIG,price_target_usd,,255.00,2026-05-28 06:43:18,new
+CRM-00802,2026-05-28 09:13:57,CRM | Wedbush,price_target_usd,,325.00,2026-05-28 09:13:57,new
+CRM-00803,2026-05-28 09:40:15,CRM | BMO Capital,price_target_usd,,215.00,2026-05-28 09:40:15,new
+CRM-00804,2026-05-28 09:46:20,CRM | B. Riley Securities,price_target_usd,,240.00,2026-05-28 09:46:20,new
+CRM-00805,2026-05-28 09:55:38,CRM | Cantor Fitzgerald,price_target_usd,,250.00,2026-05-28 09:55:38,new
+CRM-00806,2026-05-28 10:02:57,CRM | DA Davidson,price_target_usd,,175.00,2026-05-28 10:02:57,new
+CRM-00807,2026-05-28 10:14:14,CRM | Keybanc,price_target_usd,,290.00,2026-05-28 10:14:14,new
+CRM-00808,2026-05-28 10:35:34,CRM | Citizens,price_target_usd,,315.00,2026-05-28 10:35:34,new
+CRM-00809,2026-05-28 10:36:02,CRM | Wells Fargo,price_target_usd,,200.00,2026-05-28 10:36:02,new
+CRM-00810,2026-05-28 10:55:09,CRM | Barclays,price_target_usd,,236.00,2026-05-28 10:55:09,new
+CRM-00811,2026-05-28 11:48:40,CRM | Macquarie,price_target_usd,,190.00,2026-05-28 11:48:40,new
+CRM-00812,2026-05-28 11:54:56,CRM | TD Cowen,price_target_usd,,240.00,2026-05-28 11:54:56,new
+CRM-00813,2026-05-28 12:59:33,CRM | Bernstein,price_target_usd,,173.00,2026-05-28 12:59:33,new
+CRM-00814,2026-05-28 14:09:33,CRM | Canaccord Genuity,price_target_usd,,225.00,2026-05-28 14:09:33,new
+CRM-00815,2026-05-28 16:05:17,CRM | Freedom Broker,price_target_usd,,230.00,2026-05-28 16:05:17,new
+CRM-00816,2026-05-28 16:12:38,CRM | Citigroup,price_target_usd,,187.00,2026-05-28 16:12:38,new
+CRM-00817,2026-06-16 11:46:54,CRM | Canaccord Genuity,price_target_usd,,225.00,2026-06-16 11:46:54,new
+CRM-00818,2026-06-16 12:05:58,CRM | Needham,price_target_usd,,400.00,2026-06-16 12:05:58,new
+CRM-00819,2026-07-01 08:39:58,CRM | Guggenheim,rating,,Buy,2026-07-01 08:39:58,new
+CRM-00819,2026-07-01 08:39:58,CRM | Guggenheim,price_target_usd,,228.00,2026-07-01 08:39:58,new
+CRM-00820,2026-07-09 06:04:02,CRM | Keybanc,rating,,Sector Weight,2026-07-09 06:04:02,new
+CRM-00821,2026-07-14 08:46:33,CRM | Evercore ISI Group,price_target_usd,,250.00,2026-07-14 08:46:33,new
+CRM-00822,2026-07-20 07:05:30,CRM | CLSA,rating,,Hold,2026-07-20 07:05:30,new
+CRM-00822,2026-07-20 07:05:30,CRM | CLSA,price_target_usd,,165.00,2026-07-20 07:05:30,new
+CRM-00823,2026-07-21 07:47:19,CRM | Morgan Stanley,rating,,Equal-Weight,2026-07-21 07:47:19,new
+CRM-00823,2026-07-21 07:47:19,CRM | Morgan Stanley,price_target_usd,,185.00,2026-07-21 07:47:19,new
+CRM-00824,2026-08-12 08:28:10,CRM | Wells Fargo,price_target_usd,,205.00,2026-08-12 08:28:10,new
+CRM-00825,2026-08-12 09:16:52,CRM | UBS,price_target_usd,,210.00,2026-08-12 09:16:52,new
+CRM-00826,2026-08-18 11:53:16,CRM | Citigroup,price_target_usd,,204.00,2026-08-18 11:53:16,new
+CRM-00827,2026-08-20 07:01:13,CRM | Cantor Fitzgerald,price_target_usd,,250.00,2026-08-20 07:01:13,new
+CRM-00828,2026-08-20 09:23:27,CRM | Guggenheim,price_target_usd,,228.00,2026-08-20 09:23:27,new
+CRM-00829,2026-08-20 13:19:23,CRM | BMO Capital,price_target_usd,,230.00,2026-08-20 13:19:23,new
+CRM-00830,2026-08-24 06:22:47,CRM | BTIG,price_target_usd,,255.00,2026-08-24 06:22:47,new
+CRM-00831,2026-08-25 09:01:46,CRM | Canaccord Genuity,price_target_usd,,225.00,2026-08-25 09:01:46,new
+CRM-00832,2026-08-25 09:06:21,CRM | Citizens,price_target_usd,,315.00,2026-08-25 09:06:21,new
+CRM-00833,2026-08-27 07:20:09,CRM | Cantor Fitzgerald,price_target_usd,,250.00,2026-08-27 07:20:09,new
+CRM-00834,2026-08-27 08:04:18,CRM | Needham,price_target_usd,,400.00,2026-08-27 08:04:18,new
+CRM-00835,2026-08-27 08:11:33,CRM | BTIG,price_target_usd,,300.00,2026-08-27 08:11:33,new
+CRM-00836,2026-08-27 08:32:58,CRM | Evercore ISI Group,price_target_usd,,290.00,2026-08-27 08:32:58,new
+CRM-00837,2026-08-27 09:03:23,CRM | Truist Securities,price_target_usd,,300.00,2026-08-27 09:03:23,new
+CRM-00838,2026-08-27 09:07:49,CRM | DA Davidson,price_target_usd,,200.00,2026-08-27 09:07:49,new
+CRM-00839,2026-08-27 09:22:36,CRM | Morgan Stanley,price_target_usd,,235.00,2026-08-27 09:22:36,new
+CRM-00840,2026-08-27 09:29:44,CRM | Guggenheim,price_target_usd,,270.00,2026-08-27 09:29:44,new
+CRM-00841,2026-08-27 09:49:43,CRM | Wells Fargo,price_target_usd,,230.00,2026-08-27 09:49:43,new
+CRM-00842,2026-08-27 09:56:12,CRM | Citizens,price_target_usd,,315.00,2026-08-27 09:56:12,new
+CRM-00843,2026-08-27 09:59:53,CRM | UBS,price_target_usd,,240.00,2026-08-27 09:59:53,new
+CRM-00844,2026-08-27 10:39:43,CRM | RBC Capital,price_target_usd,,250.00,2026-08-27 10:39:43,new
+CRM-00845,2026-08-27 10:45:04,CRM | Oppenheimer,price_target_usd,,275.00,2026-08-27 10:45:04,new
+CRM-00846,2026-08-27 11:05:51,CRM | Bernstein,price_target_usd,,195.00,2026-08-27 11:05:51,new
+CRM-00847,2026-08-27 11:29:05,CRM | TD Cowen,price_target_usd,,280.00,2026-08-27 11:29:05,new
+CRM-00848,2026-08-27 11:29:33,CRM | Barclays,price_target_usd,,276.00,2026-08-27 11:29:33,new
+CRM-00849,2026-08-27 12:02:32,CRM | Macquarie,price_target_usd,,225.00,2026-08-27 12:02:32,new
+CRM-00850,2026-08-27 12:08:38,CRM | Canaccord Genuity,price_target_usd,,270.00,2026-08-27 12:08:38,new
+CRM-00851,2026-08-27 13:53:43,CRM | Jefferies,price_target_usd,,300.00,2026-08-27 13:53:43,new
+CRM-00852,2026-08-27 14:12:34,CRM | BMO Capital,price_target_usd,,260.00,2026-08-27 14:12:34,new
+CRM-00853,2026-08-27 14:34:55,CRM | Mizuho,price_target_usd,,265.00,2026-08-27 14:34:55,new
+CRM-00854,2026-08-27 14:57:52,CRM | JP Morgan,price_target_usd,,265.00,2026-08-27 14:57:52,new
+CRM-00855,2026-08-27 15:29:38,CRM | Citigroup,price_target_usd,,233.00,2026-08-27 15:29:38,new
+CRM-00856,2026-08-31 08:32:29,CRM | Argus Research,price_target_usd,,300.00,2026-08-31 08:32:29,new
+CRM-00857,2026-09-01 09:41:44,CRM | TD Cowen,price_target_usd,,300.00,2026-09-01 09:41:44,new
+CRM-00858,2026-09-02 06:06:47,CRM | BTIG,price_target_usd,,300.00,2026-09-02 06:06:47,new
+CRM-00859,2026-09-02 07:05:39,CRM | Cantor Fitzgerald,price_target_usd,,300.00,2026-09-02 07:05:39,new
+CRM-00860,2026-09-02 13:23:11,CRM | Cantor Fitzgerald,price_target_usd,,400.00,2026-09-02 13:23:11,new
+CRM-00861,2026-09-16 12:34:24,CRM | Mizuho,price_target_usd,,280.00,2026-09-16 12:34:24,new
+CRM-00862,2026-09-16 12:36:12,CRM | Stifel,price_target_usd,,275.00,2026-09-16 12:36:12,new
+CRM-00863,2026-09-17 07:07:36,CRM | Cantor Fitzgerald,price_target_usd,,300.00,2026-09-17 07:07:36,new
+CRM-00864,2026-09-17 07:54:24,CRM | Canaccord Genuity,price_target_usd,,300.00,2026-09-17 07:54:24,new
+CRM-00865,2026-09-17 08:15:10,CRM | Guggenheim,price_target_usd,,300.00,2026-09-17 08:15:10,new
+CRM-00866,2026-09-17 08:16:51,CRM | BMO Capital,price_target_usd,,285.00,2026-09-17 08:16:51,new
+CRM-00867,2026-09-17 09:28:10,CRM | RBC Capital,price_target_usd,,250.00,2026-09-17 09:28:10,new
+CRM-00868,2026-09-17 09:32:01,CRM | Citigroup,price_target_usd,,263.00,2026-09-17 09:32:01,new
+CRM-00869,2026-09-17 09:54:10,CRM | Stifel,price_target_usd,,300.00,2026-09-17 09:54:10,new
+CRM-00870,2026-09-17 13:35:40,CRM | Freedom Broker,price_target_usd,,295.00,2026-09-17 13:35:40,new
+CRM-00871,2026-09-18 08:28:58,CRM | Wells Fargo,price_target_usd,,250.00,2026-09-18 08:28:58,new
+CRM-00872,2026-09-18 08:52:57,CRM | Stephens & Co.,price_target_usd,,289.00,2026-09-18 08:52:57,new
+CRM-00873,2026-09-18 09:15:00,CRM | Citizens,price_target_usd,,315.00,2026-09-18 09:15:00,new
+CRM-00874,2026-10-12 06:39:26,CRM | B of A Securities,rating,,Buy,2026-10-12 06:39:26,new
+CRM-00874,2026-10-12 06:39:26,CRM | B of A Securities,price_target_usd,,285.00,2026-10-12 06:39:26,new
+CRM-00875,2026-10-21 06:46:32,CRM | Cantor Fitzgerald,price_target_usd,,300.00,2026-10-21 06:46:32,new
+CRM-00876,2026-10-21 12:11:24,CRM | DA Davidson,price_target_usd,,250.00,2026-10-21 12:11:24,new
+CRM-00877,2026-11-18 07:22:31,CRM | BTIG,price_target_usd,,250.00,2026-11-18 07:22:31,new

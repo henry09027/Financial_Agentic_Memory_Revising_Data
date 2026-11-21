@@ -1,0 +1,15 @@
+qid,source,entity,qtype,mode,as_of,question,answer_type,tol,gold,peek_answers,trap_answers,gold_evidence
+edgar-Q1-today,edgar,BRLS,latest_value,today,2026-11-14 23:59:59,"What is Borealis Corp's latest reported total revenue for fiscal year 2025, in $ millions?",number,0.5,4060,,4120,S09
+edgar-Q1-as_of,edgar,BRLS,latest_value,as_of,2026-06-01 12:00:00,"What is Borealis Corp's latest reported total revenue for fiscal year 2025, in $ millions?",number,0.5,4120,4060,,S06
+edgar-Q2-today,edgar,BRLS,first_print,today,2026-11-14 23:59:59,"What fiscal-year 2025 total revenue did Borealis Corp originally report, in $ millions?",number,0.5,4120,,4060,S06
+edgar-Q2-as_of,edgar,BRLS,first_print,as_of,2026-06-01 12:00:00,"What fiscal-year 2025 total revenue did Borealis Corp originally report, in $ millions?",number,0.5,4120,,,S06
+edgar-Q3-today,edgar,BRLS,derived_quarter,today,2026-11-14 23:59:59,"What was Borealis Corp's revenue for the three months ended 31 December 2025 (Q4 2025), in $ millions?",number,0.5,1010,,1070|CANNOT_ANSWER,S05|S09
+edgar-Q3-as_of,edgar,BRLS,derived_quarter,as_of,2026-06-01 12:00:00,"What was Borealis Corp's revenue for the three months ended 31 December 2025 (Q4 2025), in $ millions?",number,0.5,1070,1010,CANNOT_ANSWER|4120,S05|S06
+edgar-Q4-today,edgar,BRLS,yoy_growth,today,2026-11-14 23:59:59,What was the year-over-year revenue growth (percent) of Borealis Corp's most recently reported fiscal quarter (three-month figures)?,number,0.05,7.619,,8.197,S13|S15
+edgar-Q4-as_of,edgar,BRLS,yoy_growth,as_of,2026-06-01 12:00:00,What was the year-over-year revenue growth (percent) of Borealis Corp's most recently reported fiscal quarter (three-month figures)?,number,0.05,8.163,8.824|7.619,,S07|S08
+edgar-Q5-today,edgar,BRLS,count_reports,today,2026-11-14 23:59:59,How many filings have reported a fiscal-year 2025 total revenue figure for Borealis Corp?,number,0.0,2,,1|3,S06|S09
+edgar-Q5-as_of,edgar,BRLS,count_reports,as_of,2026-06-01 12:00:00,How many filings have reported a fiscal-year 2025 total revenue figure for Borealis Corp?,number,0.0,1,2,,S06
+edgar-Q6-today,edgar,BRLS,ttm,today,2026-11-14 23:59:59,"What is Borealis Corp's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",number,0.5,4310,,4370,S05|S07|S09|S10|S13
+edgar-Q6-as_of,edgar,BRLS,ttm,as_of,2026-06-01 12:00:00,"What is Borealis Corp's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",number,0.5,4200,4140|4310,,S02|S04|S05|S06|S07
+edgar-Q7-today,edgar,BRLS,not_yet_published,today,2026-11-14 23:59:59,"What was Borealis Corp's revenue for the three months ended 30 June 2026, in $ millions?",number,0.5,1110,,2170,S10
+edgar-Q7-as_of,edgar,BRLS,not_yet_published,as_of,2026-06-01 12:00:00,"What was Borealis Corp's revenue for the three months ended 30 June 2026, in $ millions?",number,0.5,CANNOT_ANSWER,1110,2170,

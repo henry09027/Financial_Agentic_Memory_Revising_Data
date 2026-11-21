@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-INTC-002-Q5-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "edgar",
+ "entity": "INTC",
+ "qtype": "count_reports",
+ "mode": "as_of",
+ "as_of": "2021-07-21 22:36:00",
+ "question": "How many filings have reported a fiscal year 2020 (ended 26 December 2020) total revenue figure for Intel Corporation?",
+ "gold": "1",
+ "peek_answers": "3",
+ "trap_answers": "",
+ "gold_evidence": "INTC-00081",
+ "answer": "2",
+ "cited": "INTC-00081|INTC-00082",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 834,
+ "out_tokens": 30,
+ "seconds": 0.0314,
+ "retrieved": "INTC-00078|INTC-00081|INTC-00082",
+ "n_dropped": 0,
+ "created": "2026-11-21T17:22:46",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2021-07-21 22:36:00\nQuestion: How many filings have reported a fiscal year 2020 (ended 26 December 2020) total revenue figure for Intel Corporation?\n\nEvidence:\n[INTC-00078] 2020-10-22 22:42 | Form 10-Q (FY2020 Q3) filed 2020-10-23: Intel Corporation (INTC) Revenues for 2020-06-28 to 2020-09-26 = $18,333M.\n[INTC-00081] 2021-01-22 00:06 | Form 10-K (FY2020 FY) filed 2021-01-22: Intel Corporation (INTC) Revenues for 2019-12-29 to 2020-12-26 = $77,867M.\n[INTC-00082] 2021-04-22 22:19 | Form 10-Q (FY2021 Q1) filed 2021-04-23: Intel Corporation (INTC) Revenues for 2019-12-29 to 2020-03-28 = $19,828M (prior-year comparative)."
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 2, \"evidence_ids\": [\"INTC-00081\", \"INTC-00082\"]}\n```",
+ "raw_output": "```json\n{\"answer\": 2, \"evidence_ids\": [\"INTC-00081\", \"INTC-00082\"]}\n```"
+}

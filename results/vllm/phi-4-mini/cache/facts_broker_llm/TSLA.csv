@@ -1,0 +1,198 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+TSLA-00781,2025-02-25 10:22:36,TSLA | Guggenheim,price_target_usd,,Sell,2025-02-25 10:22:36,new
+TSLA-00782,2025-03-04 09:59:58,TSLA | B of A Securities,price_target_usd,,380.00,2025-03-04 09:59:58,new
+TSLA-00783,2025-03-06 08:06:43,TSLA | Baird,price_target_usd,,370.00,2025-03-06 08:06:43,new
+TSLA-00784,2025-03-07 08:37:27,TSLA | Wedbush,price_target_usd,,550.00,2025-03-07 08:37:27,new
+TSLA-00785,2025-03-10 14:10:06,TSLA | UBS,price_target_usd,,225.00,2025-03-10 14:10:06,new
+TSLA-00786,2025-03-11 09:01:20,TSLA | Canaccord Genuity,price_target_usd,,404.00,2025-03-11 09:01:20,new
+TSLA-00787,2025-03-11 10:02:31,TSLA | Wedbush,price_target_usd,,550.00,2025-03-11 10:02:31,new
+TSLA-00788,2025-03-12 09:44:56,TSLA | Guggenheim,price_target_usd,,170.00,2025-03-12 09:44:56,new
+TSLA-00789,2025-03-12 12:28:25,TSLA | JP Morgan,price_target_usd,,120.00,2025-03-12 12:28:25,new
+TSLA-00790,2025-03-14 10:00:12,TSLA | Wells Fargo,price_target_usd,-,130.00,2025-03-14 10:00:12,new
+TSLA-00791,2025-03-17 06:04:22,TSLA | Mizuho,price_target_usd,,430.00,2025-03-17 06:04:22,new
+TSLA-00793,2025-03-18 09:56:51,TSLA | RBC Capital,price_target_usd,,320.00,2025-03-18 09:56:51,new
+TSLA-00794,2025-03-19 07:19:17,TSLA | Cantor Fitzgerald,price_target_usd,-,425.00,2025-03-19 07:19:17,new
+TSLA-00795,2025-03-20 05:58:48,TSLA | Piper Sandler,price_target_usd,-,450.00,2025-03-20 05:58:48,new
+TSLA-00796,2025-03-20 11:03:21,TSLA | Wedbush,price_target_usd,,550.00,2025-03-20 11:03:21,new
+TSLA-00797,2025-03-21 07:16:48,TSLA | Morgan Stanley,price_target_usd,-,410.00,2025-03-21 07:16:48,new
+TSLA-00798,2025-03-21 10:35:18,TSLA | Wedbush,price_target_usd,,550.00,2025-03-21 10:35:18,new
+TSLA-00799,2025-03-27 10:01:31,TSLA | Wedbush,price_target_usd,,550.00,2025-03-27 10:01:31,new
+TSLA-00800,2025-03-28 08:15:11,TSLA | Deutsche Bank,price_target_usd,,345.00,2025-03-28 08:15:11,new
+TSLA-00801,2025-03-31 06:49:42,TSLA | Stifel,price_target_usd,,455.00,2025-03-31 06:49:42,new
+TSLA-00802,2025-04-03 10:44:13,TSLA | Cantor Fitzgerald,price_target_usd,,425.00,2025-04-03 10:44:13,reiterate
+TSLA-00803,2025-04-03 12:17:20,TSLA | Truist Securities,price_target_usd,,280.00,2025-04-03 12:17:20,new
+TSLA-00804,2025-04-03 13:53:04,TSLA | Goldman Sachs,price_target_usd,,275.00,2025-04-03 13:53:04,new
+TSLA-00805,2025-04-07 09:14:32,TSLA | Wedbush,price_target_usd,,315.00,2025-04-07 09:14:32,new
+TSLA-00806,2025-04-09 11:21:07,TSLA | Benchmark,price_target_usd,,350.00,2025-04-09 11:21:07,new
+TSLA-00807,2025-04-10 07:42:01,TSLA | Mizuho,price_target_usd,,375.00,2025-04-10 07:42:01,new
+TSLA-00808,2025-04-10 13:57:25,TSLA | UBS,price_target_usd,,190.00,2025-04-10 13:57:25,new
+TSLA-00809,2025-04-16 10:27:45,TSLA | Piper Sandler,price_target_usd,,400.00,2025-04-16 10:27:45,new
+TSLA-00810,2025-04-17 07:44:54,TSLA | Barclays,price_target_usd,,275.00,2025-04-17 07:44:54,new
+TSLA-00811,2025-04-22 05:18:44,TSLA | B of A Securities,price_target_usd,,305.00,2025-04-22 05:18:44,new
+TSLA-00812,2025-04-23 07:02:31,TSLA | Needham,price_target_usd,,170.00,2025-04-23 07:02:31,new
+TSLA-00813,2025-04-23 07:54:21,TSLA | GLJ Research,price_target_usd,,19.05,2025-04-23 07:54:21,new
+TSLA-00814,2025-04-23 08:19:04,TSLA | Baird,price_target_usd,,320.00,2025-04-23 08:19:04,new
+TSLA-00815,2025-04-23 08:37:09,TSLA | Canaccord Genuity,price_target_usd,post-split,303.00,2025-04-23 08:37:09,note
+TSLA-00816,2025-04-23 10:13:20,TSLA | Benchmark,price_target_usd,,350.00,2025-04-23 10:13:20,new
+TSLA-00817,2025-04-23 10:36:57,TSLA | Wedbush,price_target_usd,post-split,350.00,2025-04-23 10:36:57,new
+TSLA-00818,2025-04-23 10:48:57,TSLA | Cantor Fitzgerald,price_target_usd,post-split,355.00,2025-04-23 10:48:57,new
+TSLA-00819,2025-04-23 11:37:59,TSLA | JP Morgan,price_target_usd,,115.00,2025-04-23 11:37:59,inferred
+TSLA-00820,2025-04-23 13:24:44,TSLA | RBC Capital,price_target_usd,post-split,307.00,2025-04-23 13:24:44,note
+TSLA-00821,2025-04-23 13:49:21,TSLA | Roth MKM,price_target_usd,post-split,395.00,2025-04-23 13:49:21,new
+TSLA-00822,2025-04-23 13:52:24,TSLA | Mizuho,price_target_usd,post-split,325.00,2025-04-23 13:52:24,new
+TSLA-00823,2025-04-24 07:42:35,TSLA | Stifel,price_target_usd,post-split,450.00,2025-04-23 13:49:21,inferred revision
+TSLA-00824,2025-04-24 13:11:55,TSLA | Guggenheim,price_target_usd,,170.00,2025-04-24 13:11:55,reiterate
+TSLA-00825,2025-05-01 10:12:53,TSLA | Wedbush,price_target_usd,post-split,350.0,2025-05-01 10:12:53,new
+TSLA-00826,2025-05-06 02:36:17,TSLA | Goldman Sachs,price_target_usd,post-split,235.00,2025-05-06 02:36:17,new
+TSLA-00827,2025-05-16 14:05:59,TSLA | Mizuho,price_target_usd,post-split,390.00,2025-05-16 14:05:59,new
+TSLA-00828,2025-05-23 06:22:38,TSLA | Wedbush,price_target_usd,post-split,500.00,2025-05-23 06:22:38,new
+TSLA-00829,2025-06-06 11:11:17,TSLA | Goldman Sachs,price_target_usd,post-split,285.00,2025-06-06 11:11:17,new
+TSLA-00830,2025-06-09 07:02:44,TSLA | Baird,price_target_usd,post-split,320.00,2025-06-09 07:02:44,new
+TSLA-00831,2025-06-09 08:31:00,TSLA | Baird,rating,,Hold,2025-06-09 08:31:00,new
+TSLA-00832,2025-06-09 12:29:15,TSLA | Morgan Stanley,price_target_usd,post-split,410.0,2025-06-09 12:29:15,new
+TSLA-00833,2025-06-11 13:42:20,TSLA | Piper Sandler,price_target_usd,post-split,400.00,2025-06-11 13:42:20,new
+TSLA-00834,2025-06-20 08:45:58,TSLA | Wedbush,price_target_usd,post-split,500.00,2025-06-20 08:45:58,new
+TSLA-00835,2025-06-23 09:14:23,TSLA | Wedbush,price_target_usd,post-split,500.00,2025-06-23 09:14:23,new
+TSLA-00836,2025-06-23 10:33:00,TSLA | UBS,price_target_usd,post-split,215.00,2025-06-23 10:33:00,new
+TSLA-00837,2025-06-23 10:35:42,TSLA | Guggenheim,price_target_usd,,175.00,2025-06-23 10:35:42,new
+TSLA-00838,2025-06-26 08:54:17,TSLA | Benchmark,price_target_usd,,475.00,2025-06-26 08:54:17,new
+TSLA-00839,2025-06-30 10:27:48,TSLA | Canaccord Genuity,price_target_usd,post-split,303.00,2025-06-30 10:27:48,new
+TSLA-00840,2025-07-01 08:53:48,TSLA | Wedbush,price_target_usd,post-split,500.00,2025-07-01 08:53:48,new
+TSLA-00841,2025-07-03 10:09:04,TSLA | HSBC,price_target_usd,,120.00,2025-07-03 10:09:04,new
+TSLA-00842,2025-07-03 13:07:51,TSLA | Goldman Sachs,price_target_usd,post-split,315.00,2025-07-03 13:07:51,new
+TSLA-00843,2025-07-07 10:24:58,TSLA | William Blair,rating,,Market Perform,2025-07-07 10:24:58,new
+TSLA-00844,2025-07-08 08:57:25,TSLA | Wedbush,price_target_usd,post-split,500.00,2025-07-01 08:53:48,new
+TSLA-00845,2025-07-08 09:56:44,TSLA | Guggenheim,price_target_usd,,175.00,2025-07-08 09:56:44,new
+TSLA-00846,2025-07-08 10:19:24,TSLA | Mizuho,price_target_usd,post-split,375.0,2025-07-08 10:19:24,new
+TSLA-00847,2025-07-11 11:12:22,TSLA | Goldman Sachs,price_target_usd,,285.00,2025-07-11 11:12:22,new
+TSLA-00848,2025-07-21 09:35:26,TSLA | B of A Securities,price_target_usd,,341.00,2025-07-21 09:35:26,new
+TSLA-00849,2025-07-22 08:51:11,TSLA | Wedbush,price_target_usd,,500.00,2025-07-22 08:51:11,new
+TSLA-00850,2025-07-23 08:59:15,TSLA | Guggenheim,price_target_usd,,175.00,2025-07-23 08:59:15,reiterate
+TSLA-00852,2025-07-24 09:31:43,TSLA | Cantor Fitzgerald,price_target_usd,post-split,355.00,2025-07-24 09:31:43,new
+TSLA-00853,2025-07-24 10:01:28,TSLA | Wedbush,price_target_usd,post-split,500.00,2025-07-24 09:31:43,new
+TSLA-00855,2025-07-25 08:00:20,TSLA | China Renaissance,price_target_usd,,349.00,2025-07-25 08:00:20,new
+TSLA-00856,2025-07-29 09:35:37,TSLA | RBC Capital,price_target_usd,,325.00,2025-07-29 09:35:37,new
+TSLA-00857,2025-08-04 09:06:30,TSLA | Wedbush,price_target_usd,,500.00,2025-08-04 09:06:30,new
+TSLA-00858,2025-09-15 09:14:22,TSLA | Wedbush,price_target_usd,,500.00,2025-09-15 09:14:22,new
+TSLA-00859,2025-09-18 12:50:53,TSLA | Goldman Sachs,price_target_usd,post-split,395.0,2025-09-18 12:50:53,new
+TSLA-00860,2025-09-19 06:13:25,TSLA | Baird,price_target_usd,,548.00,2025-09-19 06:13:25,new
+TSLA-00861,2025-09-22 06:52:12,TSLA | Piper Sandler,price_target_usd,,500.00,2025-09-22 06:52:12,new
+TSLA-00862,2025-09-23 09:18:37,TSLA | Mizuho,price_target_usd,post-split,450.0,2025-09-23 09:18:37,new
+TSLA-00863,2025-09-26 07:24:06,TSLA | Wedbush,price_target_usd,,600.00,2025-09-26 07:24:06,new
+TSLA-00864,2025-09-26 07:38:40,TSLA | Deutsche Bank,price_target_usd,,435.00,2025-09-26 07:38:40,new
+TSLA-00865,2025-09-30 07:24:13,TSLA | Canaccord Genuity,price_target_usd,post-split,490.0,2025-09-30 07:24:13,new
+TSLA-00866,2025-10-02 14:28:03,TSLA | Morgan Stanley,price_target_usd,,410.00,2025-10-02 14:28:03,new
+TSLA-00867,2025-10-03 09:15:18,TSLA | Cantor Fitzgerald,price_target_usd,,355.00,2025-10-03 09:15:18,new
+TSLA-00868,2025-10-03 10:04:20,TSLA | Canaccord Genuity,price_target_usd,post-split,490.00,2025-10-03 10:04:20,new
+TSLA-00869,2025-10-06 12:49:53,TSLA | UBS,price_target_usd,post-split,247.00,2025-10-06 12:49:53,new
+TSLA-00870,2025-10-08 13:26:19,TSLA | Stifel,price_target_usd,post-split,483.00,2025-10-08 13:26:19,new
+TSLA-00871,2025-10-13 08:48:18,TSLA | Evercore ISI Group,price_target_usd,post-split,300.00,2025-10-13 08:48:18,new
+TSLA-00872,2025-10-13 14:03:11,TSLA | Melius Research,rating,,Buy,2025-10-13 14:03:11,new
+TSLA-00872,2025-10-13 14:03:11,TSLA | Melius Research,price_target_usd,,520.00,2025-10-13 14:03:11,new
+TSLA-00873,2025-10-16 11:45:49,TSLA | Barclays,price_target_usd,,350.00,2025-10-16 11:45:49,new
+TSLA-00874,2025-10-17 09:26:24,TSLA | Barclays,price_target_usd,,350.00,2025-10-17 09:26:24,new
+TSLA-00875,2025-10-20 09:19:04,TSLA | Wedbush,price_target_usd,,600.00,2025-10-20 09:19:04,new
+TSLA-00876,2025-10-21 09:18:28,TSLA | Cantor Fitzgerald,price_target_usd,,355.00,2025-10-21 09:18:28,new
+TSLA-00877,2025-10-22 10:49:25,TSLA | GLJ Research,price_target_usd,,19.05,2025-10-22 10:49:25,new
+TSLA-00879,2025-10-23 07:39:26,TSLA | Canaccord Genuity,price_target_usd,post-split,482.00,2025-10-23 07:39:26,new
+TSLA-00880,2025-10-23 08:13:02,TSLA | Cantor Fitzgerald,price_target_usd,,510.00,2025-10-23 08:13:02,new
+TSLA-00881,2025-10-23 09:34:33,TSLA | Truist Securities,price_target_usd,,406.00,2025-10-23 09:34:33,new
+TSLA-00882,2025-10-23 09:41:34,TSLA | RBC Capital,price_target_usd,,500.00,2025-10-23 09:41:34,new
+TSLA-00883,2025-10-24 16:25:21,TSLA | Freedom Broker,price_target_usd,,406.00,2025-10-24 16:25:21,new
+TSLA-00884,2025-10-29 07:31:35,TSLA | B of A Securities,price_target_usd,post-split,471.00,2025-10-29 07:31:35,new
+TSLA-00885,2025-11-05 09:35:34,TSLA | Wedbush,price_target_usd,post-split,600.0,2025-11-05 09:35:34,new
+TSLA-00886,2025-11-07 10:13:58,TSLA | Wedbush,price_target_usd,post-split,600.00,2025-11-07 10:13:58,new
+TSLA-00887,2025-11-17 06:47:36,TSLA | Stifel,price_target_usd,post-split,508.00,2025-11-17 06:47:36,new
+TSLA-00888,2025-11-25 12:56:41,TSLA | Mizuho,price_target_usd,post-split,475.0,2025-11-25 12:56:41,new
+TSLA-00889,2025-12-08 10:42:50,TSLA | Morgan Stanley,price_target_usd,post-split,425.0,2025-12-08 10:42:50,new
+TSLA-00889,2025-12-08 10:42:50,TSLA | Morgan Stanley,rating,post-split,Equal-Weight,2025-12-08 10:42:50,new
+TSLA-00890,2025-12-09 13:11:58,TSLA | Piper Sandler,price_target_usd,,500.00,2025-12-09 13:11:58,new
+TSLA-00891,2025-12-15 08:39:22,TSLA | Wedbush,price_target_usd,,600.00,2025-12-15 08:39:22,new
+TSLA-00892,2025-12-19 08:07:10,TSLA | Truist Securities,price_target_usd,,444.00,2025-12-19 08:07:10,new
+TSLA-00893,2025-12-19 12:31:47,TSLA | Deutsche Bank,price_target_usd,,500.00,2025-12-19 12:31:47,new
+TSLA-00894,2025-12-23 10:30:06,TSLA | Canaccord Genuity,price_target_usd,post-split,551.00,2025-12-23 10:30:06,new
+TSLA-00895,2025-12-30 11:52:44,TSLA | Baird,price_target_usd,,548.00,2025-12-30 11:52:44,new
+TSLA-00896,2026-01-02 12:30:40,TSLA | Truist Securities,price_target_usd,,439.00,2026-01-02 12:30:40,new
+TSLA-00897,2026-01-07 09:25:24,TSLA | GLJ Research,price_target_usd,,25.28,2026-01-07 09:25:24,new
+TSLA-00898,2026-01-12 11:17:23,TSLA | Wells Fargo,price_target_usd,,130.00,2026-01-12 11:17:23,new
+TSLA-00899,2026-01-14 13:16:27,TSLA | UBS,price_target_usd,,307.00,2026-01-14 13:16:27,new
+TSLA-00900,2026-01-23 08:40:49,TSLA | Barclays,price_target_usd,,360.00,2026-01-23 08:40:49,new
+TSLA-00901,2026-01-29 06:22:25,TSLA | Freedom Broker,price_target_usd,,440.00,2026-01-29 06:22:25,new
+TSLA-00903,2026-01-29 07:43:23,TSLA | Truist Securities,price_target_usd,,438.00,2026-01-29 07:43:23,new
+TSLA-00904,2026-01-29 07:44:48,TSLA | Mizuho,price_target_usd,post-split,540.00,2026-01-29 07:44:48,new
+TSLA-00905,2026-01-29 08:20:01,TSLA | GLJ Research,price_target_usd,,25.28,2026-01-29 08:20:01,new
+TSLA-00906,2026-01-29 09:12:20,TSLA | Wells Fargo,price_target_usd,,125.00,2026-01-29 09:12:20,new
+TSLA-00907,2026-01-29 09:12:33,TSLA | Cantor Fitzgerald,price_target_usd,,510.00,2026-01-29 09:12:33,new
+TSLA-00908,2026-01-29 10:02:53,TSLA | Wedbush,price_target_usd,,600.00,2026-01-29 10:02:53,new
+TSLA-00909,2026-01-29 11:12:25,TSLA | RBC Capital,price_target_usd,,500.00,2026-01-29 11:12:25,new
+TSLA-00910,2026-01-29 13:01:44,TSLA | Morgan Stanley,price_target_usd,,415.00,2026-01-29 13:01:44,new
+TSLA-00911,2026-01-30 16:47:47,TSLA | JP Morgan,price_target_usd,,145.00,2026-01-30 16:47:47,new
+TSLA-00912,2026-02-19 09:37:57,TSLA | GLJ Research,price_target_usd,,25.28,2026-02-19 09:37:57,new
+TSLA-00913,2026-03-12 05:39:39,TSLA | GLJ Research,price_target_usd,,25.28,2026-03-12 05:39:39,new
+TSLA-00914,2026-03-27 08:38:19,TSLA | Wedbush,price_target_usd,,600.00,2026-03-27 08:38:19,new
+TSLA-00915,2026-03-30 09:03:03,TSLA | GLJ Research,price_target_usd,,24.86,2026-03-30 09:03:03,new
+TSLA-00916,2026-03-31 08:56:52,TSLA | Canaccord Genuity,price_target_usd,post-split,420.00,2026-03-31 08:56:52,new
+TSLA-00917,2026-04-06 09:27:00,TSLA | Baird,price_target_usd,,538.00,2026-04-06 09:27:00,new
+TSLA-00918,2026-04-06 11:17:13,TSLA | Canaccord Genuity,price_target_usd,post-split,420.00,2026-04-06 11:17:13,new
+TSLA-00919,2026-04-14 07:12:30,TSLA | UBS,price_target_usd,,352.00,2026-04-14 07:12:30,new
+TSLA-00920,2026-04-15 11:26:34,TSLA | TD Cowen,price_target_usd,,490.00,2026-04-15 11:26:34,new
+TSLA-00921,2026-04-21 09:25:28,TSLA | Wedbush,price_target_usd,,600.00,2026-04-21 09:25:28,new
+TSLA-00922,2026-04-22 09:37:52,TSLA | Cantor Fitzgerald,price_target_usd,,510.00,2026-04-22 09:37:52,new
+TSLA-00924,2026-04-23 10:17:45,TSLA | Mizuho,price_target_usd,,480.00,2026-04-23 10:17:45,new
+TSLA-00925,2026-04-23 10:53:03,TSLA | Wedbush,price_target_usd,,600.00,2026-04-23 10:53:03,new
+TSLA-00926,2026-04-23 12:06:12,TSLA | Cantor Fitzgerald,price_target_usd,,510.00,2026-04-23 12:06:12,new
+TSLA-00927,2026-04-23 12:20:55,TSLA | TD Cowen,price_target_usd,,490.00,2026-04-23 12:20:55,new
+TSLA-00928,2026-04-23 13:32:07,TSLA | RBC Capital,price_target_usd,,475.00,2026-04-23 13:32:07,new
+TSLA-00929,2026-04-23 13:34:29,TSLA | Canaccord Genuity,price_target_usd,post-split,450.00,2026-04-23 13:34:29,new
+TSLA-00930,2026-04-23 15:56:55,TSLA | UBS,price_target_usd,,364.00,2026-04-23 15:56:55,new
+TSLA-00931,2026-06-04 10:30:54,TSLA | TD Cowen,price_target_usd,,490.00,2026-06-04 10:30:54,new
+TSLA-00932,2026-06-05 08:44:11,TSLA | JP Morgan,price_target_usd,,475.00,2026-06-05 08:44:11,new
+TSLA-00934,2026-07-02 11:43:10,TSLA | Truist Securities,price_target_usd,,430.00,2026-07-02 11:43:10,new
+TSLA-00935,2026-07-02 13:07:29,TSLA | Morgan Stanley,price_target_usd,,415.00,2026-07-02 13:07:29,new
+TSLA-00936,2026-07-02 14:22:25,TSLA | Freedom Broker,price_target_usd,,420.00,2026-07-02 14:22:25,new
+TSLA-00937,2026-07-07 07:27:33,TSLA | RBC Capital,price_target_usd,,500.00,2026-07-07 07:27:33,new
+TSLA-00938,2026-07-09 10:01:14,TSLA | Citizens,rating,,Market Perform,2026-07-09 10:01:14,new
+TSLA-00939,2026-07-09 15:14:56,TSLA | UBS,price_target_usd,,442.00,2026-07-09 15:14:56,new
+TSLA-00940,2026-07-13 14:35:21,TSLA | Jefferies,price_target_usd,,400.00,2026-07-13 14:35:21,new
+TSLA-00941,2026-07-14 07:30:39,TSLA | Wells Fargo,price_target_usd,,130.00,2026-07-14 07:30:39,new
+TSLA-00942,2026-07-14 07:44:59,TSLA | Barclays,price_target_usd,,370.00,2026-07-14 07:44:59,new
+TSLA-00943,2026-07-14 07:54:34,TSLA | Morgan Stanley,price_target_usd,,417.00,2026-07-14 07:54:34,new
+TSLA-00946,2026-07-23 09:39:07,TSLA | Cantor Fitzgerald,price_target_usd,,485.00,2026-07-23 09:39:07,new
+TSLA-00947,2026-07-23 11:04:08,TSLA | Roth Capital,price_target_usd,,505.00,2026-07-23 11:04:08,new
+TSLA-00948,2026-07-23 12:11:31,TSLA | RBC Capital,price_target_usd,,500.00,2026-07-23 12:11:31,new
+TSLA-00949,2026-07-23 12:57:32,TSLA | Canaccord Genuity,price_target_usd,,410.00,2026-07-23 12:57:32,new
+TSLA-00950,2026-07-23 13:08:04,TSLA | TD Cowen,price_target_usd,,460.00,2026-07-23 13:08:04,new
+TSLA-00951,2026-07-23 13:15:30,TSLA | Mizuho,price_target_usd,post-split,450.00,2026-07-23 13:15:30,new
+TSLA-00952,2026-07-23 13:31:15,TSLA | Truist Securities,price_target_usd,,370.00,2026-07-23 13:31:15,new
+TSLA-00953,2026-07-23 13:48:17,TSLA | Morgan Stanley,price_target_usd,,400.00,2026-07-23 13:48:17,new
+TSLA-00954,2026-07-23 14:25:44,TSLA | JP Morgan,price_target_usd,,445.00,2026-07-23 14:25:44,new
+TSLA-00955,2026-07-23 15:49:52,TSLA | UBS,price_target_usd,,385.00,2026-07-23 15:49:52,new
+TSLA-00956,2026-07-24 12:47:27,TSLA | Piper Sandler,price_target_usd,,450.00,2026-07-24 12:47:27,new
+TSLA-00957,2026-08-03 08:20:15,TSLA | Stifel,price_target_usd,,491.00,2026-08-03 08:20:15,new
+TSLA-00959,2026-09-03 10:48:26,TSLA | StoneX,price_target_usd,,475.00,2026-09-03 10:48:26,new
+TSLA-00961,2026-09-16 09:50:15,TSLA | Goldman Sachs,price_target_usd,,360.00,2026-09-16 09:50:15,new
+TSLA-00962,2026-09-25 08:20:14,TSLA | StoneX,price_target_usd,,475.00,2026-09-25 08:20:14,new
+TSLA-00963,2026-09-28 10:13:20,TSLA | JP Morgan,price_target_usd,,415.00,2026-09-28 10:13:20,new
+TSLA-00964,2026-10-07 17:00:36,TSLA | UBS,price_target_usd,,391.00,2026-10-07 17:00:36,new
+TSLA-00965,2026-10-08 17:43:44,TSLA | Tigress Financial,price_target_usd,,550.00,2026-10-08 17:43:44,new
+TSLA-00966,2026-10-12 14:39:29,TSLA | Jefferies,price_target_usd,,400.00,2026-10-12 14:39:29,new
+TSLA-00968,2026-10-20 06:52:52,TSLA | Cantor Fitzgerald,price_target_usd,,485.00,2026-10-20 06:52:52,new
+TSLA-00970,2026-10-22 06:44:00,TSLA | Cantor Fitzgerald,price_target_usd,,485.00,2026-10-22 06:44:00,new
+TSLA-00971,2026-10-22 08:08:56,TSLA | Mizuho,price_target_usd,,460.00,2026-10-22 08:08:56,new
+TSLA-00973,2026-10-22 09:08:45,TSLA | StoneX,price_target_usd,,475.00,2026-10-22 09:08:45,new
+TSLA-00974,2026-10-22 09:16:43,TSLA | Piper Sandler,price_target_usd,,475.00,2026-10-22 09:16:43,new
+TSLA-00975,2026-10-22 09:35:58,TSLA | TD Cowen,price_target_usd,,460.00,2026-10-22 09:35:58,new
+TSLA-00976,2026-10-22 09:53:04,TSLA | JP Morgan,price_target_usd,,430.00,2026-10-22 09:53:04,new
+TSLA-00977,2026-10-22 12:08:49,TSLA | RBC Capital,price_target_usd,,480.00,2026-10-22 12:08:49,new
+TSLA-00978,2026-10-22 12:43:01,TSLA | BNP Paribas,price_target_usd,,420.00,2026-10-22 12:43:01,new
+TSLA-00979,2026-10-22 13:39:08,TSLA | Morgan Stanley,price_target_usd,,410.00,2026-10-22 13:39:08,new
+TSLA-00980,2026-10-22 14:08:28,TSLA | Canaccord Genuity,price_target_usd,,442.00,2026-10-22 14:08:28,new
+TSLA-00981,2026-10-22 14:41:45,TSLA | CLSA,price_target_usd,,400.00,2026-10-22 14:41:45,new
+TSLA-00981,2026-10-22 14:41:45,TSLA | CLSA,rating,,Hold,2026-10-22 14:41:45,new
+TSLA-00982,2026-10-22 15:42:25,TSLA | UBS,price_target_usd,,425.00,2026-10-22 15:42:25,new
+TSLA-00983,2026-10-26 09:05:56,TSLA | Barclays,price_target_usd,,450.00,2026-10-26 09:05:56,new
+TSLA-00983,2026-10-26 09:05:56,TSLA | Barclays,rating,,Overweight,2026-10-26 09:05:56,new
+TSLA-00984,2026-11-05 16:25:25,TSLA | GLJ Research,price_target_usd,,24.86,2026-11-05 16:25:25,reiterate
+TSLA-00985,2026-11-13 07:29:23,TSLA | GLJ Research,price_target_usd,,24.86,2026-11-13 07:29:23,reiterate
+TSLA-00986,2026-11-20 07:38:51,TSLA | HSBC,rating,,Hold,2026-11-20 07:38:51,new
+TSLA-00986,2026-11-20 07:38:51,TSLA | HSBC,price_target_usd,,359.00,2026-11-20 07:38:51,new

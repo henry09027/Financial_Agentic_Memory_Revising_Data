@@ -1,0 +1,43 @@
+{
+ "qid": "broker-ADBE-002-Q5-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "ADBE",
+ "qtype": "count_buy",
+ "mode": "as_of",
+ "as_of": "2025-11-16 09:07:00",
+ "question": "How many active brokers currently rate ADBE Buy or an equivalent rating?",
+ "gold": "14",
+ "peek_answers": "5",
+ "trap_answers": "4",
+ "gold_evidence": "ADBE-00568|ADBE-00556|ADBE-00569|ADBE-00570|ADBE-00509|ADBE-00579|ADBE-00575|ADBE-00574|ADBE-00558|ADBE-00572|ADBE-00578|ADBE-00566|ADBE-00514|ADBE-00539|ADBE-00571|ADBE-00576|ADBE-00553|ADBE-00559|ADBE-00538|ADBE-00573|ADBE-00537|ADBE-00533|ADBE-00563|ADBE-00577",
+ "answer": "1",
+ "cited": "ADBE-00576",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.041666666666666664,
+ "in_tokens": 867,
+ "out_tokens": 23,
+ "seconds": 0.034,
+ "retrieved": "ADBE-00574|ADBE-00576|ADBE-00579",
+ "n_dropped": 0,
+ "created": "2026-11-21T17:21:12",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2025-11-16 09:07:00\nQuestion: How many active brokers currently rate ADBE Buy or an equivalent rating?\n\nEvidence:\n[ADBE-00574] 2025-09-12 09:11 | JMP Securities reiterated Market Perform on ADBE.\n[ADBE-00576] 2025-09-12 09:47 | DA Davidson maintained Buy on ADBE, with a $500.00 price target.\n[ADBE-00579] 2025-09-24 09:11 | Morgan Stanley downgraded ADBE from Overweight to Equal-Weight, and lowered its price target from $520.00 to $450.00."
+  }
+ ],
+ "final_text": "{\n  \"answer\": 1,\n  \"evidence_ids\": [\"ADBE-00576\"]\n}",
+ "raw_output": "{\n  \"answer\": 1,\n  \"evidence_ids\": [\"ADBE-00576\"]\n}"
+}

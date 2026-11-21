@@ -1,0 +1,15 @@
+qid,source,entity,qtype,mode,as_of,question,answer_type,tol,gold,peek_answers,trap_answers,gold_evidence
+broker-Q1-today,broker,AUR,consensus,today,2026-11-14 23:59:59,"What is the consensus (median) price target for AUR across active brokers, in US dollars?",number,0.01,64.0,,60|65,E06|E07|E09|E10
+broker-Q1-as_of,broker,AUR,consensus,as_of,2026-07-28 12:00:00,"What is the consensus (median) price target for AUR across active brokers, in US dollars?",number,0.01,55.0,56|60,53.5|72.5,E02|E03|E04|E05
+broker-Q2-today,broker,AUR,latest_action,today,2026-11-14 23:59:59,"Which broker made the most recent rating or price-target action on AUR, and what is that broker's price target now (USD)? Answer as 'Broker; target'.",label,0.0,TD Cobalt; 64,,,E07|E10
+broker-Q2-as_of,broker,AUR,latest_action,as_of,2026-07-28 12:00:00,"Which broker made the most recent rating or price-target action on AUR, and what is that broker's price target now (USD)? Answer as 'Broker; target'.",label,0.0,Cobalt & Co.; 52,Birch Capital; 56,,E05
+broker-Q3-today,broker,AUR,change_since_initiation,today,2026-11-14 23:59:59,"By what percent has Atlas Securities' AUR price target changed since it initiated coverage? (split-adjusted, in percent)",number,0.1,10.0,,-45,E02|E03|E09
+broker-Q3-as_of,broker,AUR,change_since_initiation,as_of,2026-07-28 12:00:00,"By what percent has Atlas Securities' AUR price target changed since it initiated coverage? (split-adjusted, in percent)",number,0.1,0.0,10,-50,E02|E03
+broker-Q4-today,broker,AUR,value_on_date,today,2026-11-14 23:59:59,"What was Birch Capital's AUR price target on 27 July 2026, in US dollars?",number,0.01,60.0,,55|56,E04|E06
+broker-Q4-as_of,broker,AUR,value_on_date,as_of,2026-07-28 12:00:00,"What was Birch Capital's AUR price target on 27 July 2026, in US dollars?",number,0.01,55.0,60,,E04
+broker-Q5-today,broker,AUR,count_changes,today,2026-11-14 23:59:59,How many times did brokers raise or lower their AUR price target between 1 June 2026 and the as-of time?,number,0.0,5,,6|7,E04|E05|E06|E08|E10
+broker-Q5-as_of,broker,AUR,count_changes,as_of,2026-07-28 12:00:00,How many times did brokers raise or lower their AUR price target between 1 June 2026 and the as-of time?,number,0.0,2,3,,E04|E05
+broker-Q6-today,broker,AUR,count_buy,today,2026-11-14 23:59:59,How many active brokers currently rate AUR Buy or an equivalent rating?,number,0.0,3,,1|4,E06|E07|E09|E10
+broker-Q6-as_of,broker,AUR,count_buy,as_of,2026-07-28 12:00:00,How many active brokers currently rate AUR Buy or an equivalent rating?,number,0.0,2,,1,E02|E04|E05
+broker-Q7-today,broker,AUR,event_lookup,today,2026-11-14 23:59:59,"In October 2026, what rating did TD Cobalt move AUR to, and what was its new price target (USD)? Answer as 'Rating; target'.",label,0.0,Overweight; 64,,,E07|E10
+broker-Q7-as_of,broker,AUR,event_lookup,as_of,2026-07-28 12:00:00,"In October 2026, what rating did TD Cobalt move AUR to, and what was its new price target (USD)? Answer as 'Rating; target'.",label,0.0,CANNOT_ANSWER,Overweight; 64,,

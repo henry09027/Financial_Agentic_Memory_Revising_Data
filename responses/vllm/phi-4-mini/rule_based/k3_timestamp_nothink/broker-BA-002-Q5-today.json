@@ -1,0 +1,43 @@
+{
+ "qid": "broker-BA-002-Q5-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "BA",
+ "qtype": "count_changes",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many times did brokers raise or lower their BA price target between 1 September 2024 and the as-of time?",
+ "gold": "101",
+ "peek_answers": "",
+ "trap_answers": "118|135",
+ "gold_evidence": "BA-00287|BA-00293|BA-00309|BA-00325|BA-00334|BA-00335|BA-00341|BA-00353|BA-00385|BA-00289|BA-00294|BA-00302|BA-00319|BA-00326|BA-00339|BA-00368|BA-00382|BA-00383|BA-00284|BA-00301|BA-00311|BA-00337|BA-00342|BA-00351|BA-00355|BA-00362|BA-00372|BA-00391|BA-00277|BA-00281|BA-00283|BA-00291|BA-00300|BA-00307|BA-00314|BA-00315|BA-00317|BA-00388|BA-00286|BA-00305|BA-00312|BA-00320|BA-00336|BA-00356|BA-00360|BA-00367|BA-00370|BA-00278|BA-00313|BA-00329|BA-00363|BA-00377|BA-00393|BA-00330|BA-00338|BA-00361|BA-00371|BA-00381|BA-00279|BA-00288|BA-00298|BA-00323|BA-00327|BA-00349|BA-00357|BA-00380|BA-00394|BA-00306|BA-00328|BA-00345|BA-00280|BA-00285|BA-00379|BA-00387|BA-00282|BA-00297|BA-00303|BA-00295|BA-00308|BA-00321|BA-00324|BA-00343|BA-00350|BA-00359|BA-00392|BA-00304|BA-00340|BA-00389|BA-00316|BA-00290|BA-00384|BA-00333|BA-00346|BA-00352|BA-00358|BA-00364|BA-00365|BA-00369|BA-00374|BA-00373|BA-00390",
+ "answer": "1",
+ "cited": "BA-00389",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.009900990099009901,
+ "in_tokens": 874,
+ "out_tokens": 22,
+ "seconds": 0.0338,
+ "retrieved": "BA-00376|BA-00378|BA-00389",
+ "n_dropped": 0,
+ "created": "2026-11-21T17:21:21",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many times did brokers raise or lower their BA price target between 1 September 2024 and the as-of time?\n\nEvidence:\n[BA-00376] 2026-09-18 14:01 | B of A Securities reiterated Buy on BA, with a $270.00 price target.\n[BA-00378] 2026-10-09 09:40 | Barclays initiated coverage of BA with a Overweight rating and a $300.00 price target.\n[BA-00389] 2026-10-28 12:00 | Barclays maintained Overweight on BA, and lowered its price target from $300.00 to $250.00."
+  }
+ ],
+ "final_text": "{\n  \"answer\": 1,\n  \"evidence_ids\": [\"BA-00389\"]\n}",
+ "raw_output": "{\n  \"answer\": 1,\n  \"evidence_ids\": [\"BA-00389\"]\n}"
+}

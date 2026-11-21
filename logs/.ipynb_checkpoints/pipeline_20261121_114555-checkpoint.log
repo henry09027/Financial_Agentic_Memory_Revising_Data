@@ -1,0 +1,13 @@
+log: /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/logs/pipeline_20261121_114555.log
+models: phi-4-mini qwen3.5-4b gemma-4-e4b-it | history cap: 12000 tokens | max input: 32768 | extra method args: none
+
+================================================================ 2026-11-21 11:45:55  setup
+== 1/6 GPU driver
+   driver supports CUDA 12.9; install: pinned
+== 2/6 folders and env.sh  (WORK=/tmp/pit_work, free: 225G)
+== 3/6 virtualenv /tmp/pit_work/envs/pit
+   python: /tmp/pit_work/envs/pit/bin/python  (Python 3.13.9)
+== 4/6 packages (pinned)
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu129
+Collecting vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl (from -r /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/requirements.txt (line 8))
+  Downloading vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl (559.4 MB)

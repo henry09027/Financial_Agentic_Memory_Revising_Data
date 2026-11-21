@@ -1,0 +1,13 @@
+evidence_id,source,entity,known_at,text,gold_series,gold_period,gold_release,gold_value
+A01,alfred,ZETA_GDP,2026-01-29 08:30:00,Advance estimate: Zeta real GDP increased at an annual rate of 2.5% in 2025Q4.,"ZETA real GDP growth, % SAAR",2025Q4,advance,2.5
+A02,alfred,ZETA_GDP,2026-02-26 08:30:00,Second estimate: Zeta real GDP growth for 2025Q4 is now estimated at an annual rate of 2.4%.,"ZETA real GDP growth, % SAAR",2025Q4,second,2.4
+A03,alfred,ZETA_GDP,2026-03-26 08:30:00,Third estimate: Zeta real GDP growth for 2025Q4 is now estimated at an annual rate of 2.0%.,"ZETA real GDP growth, % SAAR",2025Q4,third,2.0
+A04,alfred,ZETA_GDP,2026-04-29 08:30:00,Advance estimate: Zeta real GDP increased at an annual rate of 1.8% in 2026Q1.,"ZETA real GDP growth, % SAAR",2026Q1,advance,1.8
+A05,alfred,ZETA_GDP,2026-05-28 08:30:00,Second estimate: Zeta real GDP growth for 2026Q1 is now estimated at an annual rate of 1.6%.,"ZETA real GDP growth, % SAAR",2026Q1,second,1.6
+A06,alfred,ZETA_GDP,2026-06-25 08:30:00,Third estimate: Zeta real GDP growth for 2026Q1 is now estimated at an annual rate of 1.5%.,"ZETA real GDP growth, % SAAR",2026Q1,third,1.5
+A07,alfred,ZETA_GDP,2026-07-30 08:30:00,Advance estimate: Zeta real GDP increased at an annual rate of 2.4% in 2026Q2.,"ZETA real GDP growth, % SAAR",2026Q2,advance,2.4
+A08,alfred,ZETA_GDP,2026-08-27 08:30:00,Second estimate: Zeta real GDP growth for 2026Q2 is now estimated at an annual rate of 2.6%.,"ZETA real GDP growth, % SAAR",2026Q2,second,2.6
+A09,alfred,ZETA_GDP,2026-09-24 08:30:00,Annual update: Zeta real GDP growth for 2025Q4 is now estimated at an annual rate of 2.3%.,"ZETA real GDP growth, % SAAR",2025Q4,annual update,2.3
+A10,alfred,ZETA_GDP,2026-09-24 08:30:00,Annual update: Zeta real GDP growth for 2026Q1 is now estimated at an annual rate of 1.9%.,"ZETA real GDP growth, % SAAR",2026Q1,annual update,1.9
+A11,alfred,ZETA_GDP,2026-09-24 08:30:00,Third estimate: Zeta real GDP growth for 2026Q2 is now estimated at an annual rate of 2.1%.,"ZETA real GDP growth, % SAAR",2026Q2,third,2.1
+A12,alfred,ZETA_GDP,2026-10-29 08:30:00,Advance estimate: Zeta real GDP increased at an annual rate of 1.2% in 2026Q3.,"ZETA real GDP growth, % SAAR",2026Q3,advance,1.2

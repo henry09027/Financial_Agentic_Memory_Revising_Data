@@ -1,0 +1,17 @@
+# Tested stack: A100 80GB, NVIDIA driver supporting CUDA 12.9, Python 3.13 (miniconda base python, used only to create the venv).
+# Installed by setup_env.sh into WORK/envs/pit (never into ~/.local or conda base).
+#
+# vLLM 0.33+ ships CUDA 13 builds only (needs driver >= 580). 0.32.0 is the last release with a CUDA 12.9 build,
+# so it is pinned here; torch 2.13.0+cu129 comes from the PyTorch cu129 index below.
+# To use the newest vLLM on a driver >= 580 instead: VLLM_SPEC=latest bash setup_env.sh
+--extra-index-url https://download.pytorch.org/whl/cu129
+vllm @ https://github.com/vllm-project/vllm/releases/download/v0.32.0/vllm-0.32.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl
+transformers==5.19.0          # vllm 0.32 requires >=5.16.1,<5.20 (supports Qwen3.5 and Gemma 4)
+accelerate                    # only for --backend hf
+pandas
+scikit-learn
+requests                      # data download (FRED / ALFRED, SEC EDGAR)
+yfinance>=0.2.54              # data download (Yahoo analyst actions, splits)
+# torchcodec: replaced by setup_env.sh with the CPU build (torchcodec==0.16.*, --no-deps). vLLM imports it at startup
+# for audio; the default PyPI build is CUDA 13 and fails on a CUDA 12 driver (libnvrtc.so.13). Text-only runs never use it.
+# optional: bitsandbytes (only for --load-4bit)

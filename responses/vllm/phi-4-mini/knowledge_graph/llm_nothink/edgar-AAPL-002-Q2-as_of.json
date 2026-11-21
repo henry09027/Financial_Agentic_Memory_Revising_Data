@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-AAPL-002-Q2-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "AAPL",
+ "qtype": "first_print",
+ "mode": "as_of",
+ "as_of": "2019-10-29 22:59:00",
+ "question": "What fiscal year 2018 (ended 29 September 2018) total revenue did Apple Inc. originally report, in $ millions?",
+ "gold": "265595",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "AAPL-00052",
+ "answer": "229234",
+ "cited": "AAPL-00039 @2017-11-03 12:01|AAPL-00051 @2018-11-05 13:01",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1908,
+ "out_tokens": 50,
+ "seconds": 0.2425,
+ "n_facts": 18,
+ "n_dropped": 0,
+ "created": "2026-11-21T20:34:19",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-10-29 22:59:00\nQuestion: What fiscal year 2018 (ended 29 September 2018) total revenue did Apple Inc. originally report, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nAAPL | Revenues | value_usd_m | 2016-09-25..2017-04-01: latest 131247 | first 131247 | 1 reports: 131247 [AAPL-00031 @2017-05-03 20:32]\nAAPL | Revenues | value_usd_m | 2016-09-25..2017-07-01: latest 176655 | first 176655 | 1 reports: 176655 [AAPL-00035 @2017-08-02 20:31]\nAAPL | Revenues | value_usd_m | 2017-04-02..2017-07-01: latest 45408 | first 45408 | 2 reports: 45408 [AAPL-00036 @2017-08-02 20:31]; 45408 [AAPL-00047 @2018-08-01 20:31]\nAAPL | Revenues | value_usd_m | 2016-09-25..2017-09-30: latest 229234 | first 229234 | 2 reports: 229234 [AAPL-00039 @2017-11-03 12:01]; 229234 [AAPL-00051 @2018-11-05 13:01]\nAAPL | Revenues | value_usd_m | 2017-10-01..2017-12-30: latest 88293 | first 88293 | 3 reports: 88293 [AAPL-00041 @2018-02-02 13:01]; 88293 [AAPL-00053 @2019-01-30 21:31]; 88293 [AAPL-00053 @2019-01-30 21:31]\nAAPL | Revenues | value_usd_m | 2017-10-01..2018-03-31: latest 149430 | first 149430 | 2 reports: 149430 [AAPL-00044 @2018-05-02 20:32]; 149430 [AAPL-00055 @2019-05-01 20:32]\nAAPL | Revenues | value_usd_m | 2017-12-31..2018-03-31: latest 61137 | first 61137 | 2 reports: 61137 [AAPL-00045 @2018-05-02 20:32]; 61137 [AAPL-00056 @2019-05-01 20:32]\nAAPL | Revenues | value_usd_m | 2017-07-01..2018-08-01: latest 176655 | first 176655 | 1 reports: 176655 [AAPL-00046 @2018-08-01 20:31]\nAAPL | Revenues | value_usd_m | 2017-10-01..2018-06-30: latest 202695 | first 202695 | 1 reports: 202695 [AAPL-00048 @2018-08-01 20:31]\nAAPL | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 53265 | first 53265 | 2 reports: 53265 [AAPL-00049 @2018-08-01 20:31]; 53265 [AAPL-00060 @2019-07-31 20:31]\nAAPL | Revenues | value_usd_m | 2017-10-01..2018-09-29: latest 265595 | first 265595 | 1 reports: 265595 [AAPL-00052 @2018-11-05 13:01]\nAAPL | Revenues | value_usd_m | 2018-09-30..2018-12-29: latest 84310 | first 84310 | 1 reports: 84310 [AAPL-00054 @2019-01-30 21:31]\nAAPL | Revenues | value_usd_m | 2019-05-01..2019-07-01: latest 61137 | first 61137 | 1 reports: 61137 [AAPL-00056 @2019-05-01 20:32]\nAAPL | Revenues | value_usd_m | 2018-09-30..2019-03-30: latest 142325 | first 142325 | 1 reports: 142325 [AAPL-00057 @2019-05-01 20:32]\nAAPL | Revenues | value_usd_m | 2018-12-30..2019-03-30: latest 58015 | first 58015 | 1 reports: 58015 [AAPL-00058 @2019-05-01 20:32]\nAAPL | Revenues | value_usd_m | 2019-07-01..2019-09-30: latest 202695 | first 202695 | 1 reports: 202695 [AAPL-00059 @2019-07-31 20:31]\nAAPL | Revenues | value_usd_m | 2018-09-30..2019-06-29: latest 196134 | first 196134 | 1 reports: 196134 [AAPL-00061 @2019-07-31 20:31]\nAAPL | Revenues | value_usd_m | 2019-03-31..2019-06-29: latest 5380900000 | first 5380900000 | 1 reports: 5380900000 [AAPL-00062 @2019-07-31 20:31]"
+  }
+ ],
+ "final_text": "{\"answer\": 229234, \"evidence_ids\": [\"AAPL-00039 @2017-11-03 12:01\", \"AAPL-00051 @2018-11-05 13:01\"]}",
+ "raw_output": "{\"answer\": 229234, \"evidence_ids\": [\"AAPL-00039 @2017-11-03 12:01\", \"AAPL-00051 @2018-11-05 13:01\"]}"
+}

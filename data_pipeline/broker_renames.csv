@@ -1,0 +1,6 @@
+# Broker renames: same broker, new name (broker rule 3). Yahoo has no rename feed, so this list is curated.
+# announced_at is optional; if empty, the rename becomes known 1 second before the first note under the new name.
+# Check exact spellings against your data with:  python download_broker.py ... --suggest-renames
+old_name,new_name,announced_at
+Cowen & Co.,TD Cowen,
+SunTrust Robinson Humphrey,Truist Securities,

@@ -1,0 +1,837 @@
+{
+ "max_tokens": 12000,
+ "counted_with": [
+  "microsoft/Phi-4-mini-instruct",
+  "Qwen/Qwen3.5-4B",
+  "google/gemma-4-E4B-it"
+ ],
+ "sources": {
+  "broker": {
+   "AAPL": {
+    "lines_before": 972,
+    "lines_after": 207,
+    "tokens_before": 55170,
+    "tokens_after": 11605,
+    "start_before": "2019-01-30 07:45:26",
+    "start_after": "2025-04-08 10:55:30",
+    "end": "2026-11-11 08:02:36",
+    "span_days_after": 581
+   },
+   "ABBV": {
+    "lines_before": 384,
+    "lines_after": 196,
+    "tokens_before": 22395,
+    "tokens_after": 11581,
+    "start_before": "2016-01-14 13:57:18",
+    "start_after": "2022-12-08 09:25:00",
+    "end": "2026-11-16 09:59:18",
+    "span_days_after": 1439
+   },
+   "ADBE": {
+    "lines_before": 671,
+    "lines_after": 198,
+    "tokens_before": 39456,
+    "tokens_after": 11588,
+    "start_before": "2016-01-06 08:24:01",
+    "start_after": "2024-09-04 10:04:23",
+    "end": "2026-11-11 09:50:22",
+    "span_days_after": 797
+   },
+   "AMD": {
+    "lines_before": 715,
+    "lines_after": 207,
+    "tokens_before": 39361,
+    "tokens_after": 11585,
+    "start_before": "2016-03-21 14:00:49",
+    "start_after": "2025-07-16 08:12:53",
+    "end": "2026-11-12 12:41:04",
+    "span_days_after": 484
+   },
+   "AMZN": {
+    "lines_before": 992,
+    "lines_after": 201,
+    "tokens_before": 58056,
+    "tokens_after": 11640,
+    "start_before": "2019-12-26 18:22:00",
+    "start_after": "2025-08-01 06:11:42",
+    "end": "2026-11-20 08:46:44",
+    "span_days_after": 476
+   },
+   "AVGO": {
+    "lines_before": 562,
+    "lines_after": 199,
+    "tokens_before": 32804,
+    "tokens_after": 11582,
+    "start_before": "2016-01-14 05:58:43",
+    "start_after": "2024-09-06 07:11:57",
+    "end": "2026-11-13 08:05:40",
+    "span_days_after": 798
+   },
+   "BA": {
+    "lines_before": 386,
+    "lines_after": 208,
+    "tokens_before": 21287,
+    "tokens_after": 11597,
+    "start_before": "2016-01-14 13:27:47",
+    "start_after": "2022-12-14 11:00:04",
+    "end": "2026-10-29 17:53:18",
+    "span_days_after": 1415
+   },
+   "CAT": {
+    "lines_before": 291,
+    "lines_after": 205,
+    "tokens_before": 16106,
+    "tokens_after": 11689,
+    "start_before": "2016-01-19 12:49:32",
+    "start_after": "2019-10-24 12:12:43",
+    "end": "2026-11-18 15:35:47",
+    "span_days_after": 2582
+   },
+   "COST": {
+    "lines_before": 572,
+    "lines_after": 204,
+    "tokens_before": 32155,
+    "tokens_after": 11637,
+    "start_before": "2016-02-05 12:34:14",
+    "start_after": "2024-05-31 13:30:24",
+    "end": "2026-11-17 10:26:14",
+    "span_days_after": 899
+   },
+   "CRM": {
+    "lines_before": 876,
+    "lines_after": 211,
+    "tokens_before": 48924,
+    "tokens_after": 11622,
+    "start_before": "2016-01-12 16:35:54",
+    "start_after": "2025-04-22 09:09:31",
+    "end": "2026-11-18 07:22:31",
+    "span_days_after": 574
+   },
+   "CSCO": {
+    "lines_before": 391,
+    "lines_after": 206,
+    "tokens_before": 21836,
+    "tokens_after": 11634,
+    "start_before": "2016-01-13 09:19:43",
+    "start_after": "2022-05-19 07:44:02",
+    "end": "2026-11-20 14:45:33",
+    "span_days_after": 1646
+   },
+   "CVX": {
+    "lines_before": 382,
+    "lines_after": 197,
+    "tokens_before": 21887,
+    "tokens_after": 11661,
+    "start_before": "2016-01-07 09:31:49",
+    "start_after": "2019-12-26 18:22:00",
+    "end": "2026-11-13 10:17:10",
+    "span_days_after": 1529
+   },
+   "DIS": {
+    "lines_before": 442,
+    "lines_after": 211,
+    "tokens_before": 24302,
+    "tokens_after": 11586,
+    "start_before": "2016-01-05 06:56:35",
+    "start_after": "2022-11-09 07:54:47",
+    "end": "2026-11-19 12:24:17",
+    "span_days_after": 1471
+   },
+   "GE": {
+    "lines_before": 185,
+    "lines_after": 185,
+    "tokens_before": 10503,
+    "tokens_after": 10503,
+    "start_before": "2021-10-08 05:39:12",
+    "start_after": "2021-10-08 05:39:12",
+    "end": "2026-10-21 15:17:34",
+    "span_days_after": 1839
+   },
+   "GOOGL": {
+    "lines_before": 982,
+    "lines_after": 192,
+    "tokens_before": 60355,
+    "tokens_after": 11636,
+    "start_before": "2018-07-24 07:28:38",
+    "start_after": "2025-09-03 07:42:32",
+    "end": "2026-11-02 09:40:07",
+    "span_days_after": 425
+   },
+   "HD": {
+    "lines_before": 492,
+    "lines_after": 208,
+    "tokens_before": 27367,
+    "tokens_after": 11604,
+    "start_before": "2016-01-25 06:36:59",
+    "start_after": "2024-02-26 10:53:48",
+    "end": "2026-11-18 15:13:40",
+    "span_days_after": 996
+   },
+   "IBM": {
+    "lines_before": 293,
+    "lines_after": 207,
+    "tokens_before": 16373,
+    "tokens_after": 11723,
+    "start_before": "2016-01-20 03:51:06",
+    "start_after": "2020-10-09 08:15:32",
+    "end": "2026-10-22 16:29:33",
+    "span_days_after": 2204
+   },
+   "INTC": {
+    "lines_before": 648,
+    "lines_after": 208,
+    "tokens_before": 35631,
+    "tokens_after": 11584,
+    "start_before": "2016-01-04 08:22:52",
+    "start_after": "2024-08-02 10:22:39",
+    "end": "2026-11-12 12:26:02",
+    "span_days_after": 832
+   },
+   "JNJ": {
+    "lines_before": 327,
+    "lines_after": 205,
+    "tokens_before": 18482,
+    "tokens_after": 11603,
+    "start_before": "2016-01-14 14:08:59",
+    "start_after": "2022-11-18 04:58:50",
+    "end": "2026-11-20 12:36:16",
+    "span_days_after": 1463
+   },
+   "JPM": {
+    "lines_before": 364,
+    "lines_after": 197,
+    "tokens_before": 20904,
+    "tokens_after": 11606,
+    "start_before": "2016-01-11 06:27:13",
+    "start_after": "2022-07-18 04:45:12",
+    "end": "2026-11-02 16:58:18",
+    "span_days_after": 1568
+   },
+   "KO": {
+    "lines_before": 266,
+    "lines_after": 214,
+    "tokens_before": 14317,
+    "tokens_after": 11720,
+    "start_before": "2016-01-12 06:27:28",
+    "start_after": "2019-04-24 11:18:53",
+    "end": "2026-11-18 05:17:28",
+    "span_days_after": 2764
+   },
+   "LLY": {
+    "lines_before": 381,
+    "lines_after": 196,
+    "tokens_before": 22098,
+    "tokens_after": 11600,
+    "start_before": "2016-03-15 13:27:03",
+    "start_after": "2023-08-09 04:56:23",
+    "end": "2026-11-17 09:29:38",
+    "span_days_after": 1196
+   },
+   "MA": {
+    "lines_before": 449,
+    "lines_after": 203,
+    "tokens_before": 25502,
+    "tokens_after": 11593,
+    "start_before": "2016-02-01 11:43:30",
+    "start_after": "2023-06-30 09:49:54",
+    "end": "2026-11-11 12:32:20",
+    "span_days_after": 1230
+   },
+   "MCD": {
+    "lines_before": 594,
+    "lines_after": 202,
+    "tokens_before": 33752,
+    "tokens_after": 11613,
+    "start_before": "2016-01-04 08:03:34",
+    "start_after": "2024-06-13 07:03:02",
+    "end": "2026-11-06 11:42:45",
+    "span_days_after": 876
+   },
+   "META": {
+    "lines_before": 527,
+    "lines_after": 211,
+    "tokens_before": 29473,
+    "tokens_after": 11621,
+    "start_before": "2019-12-26 18:22:00",
+    "start_after": "2024-02-05 09:25:51",
+    "end": "2026-10-22 15:40:01",
+    "span_days_after": 990
+   },
+   "MRK": {
+    "lines_before": 307,
+    "lines_after": 202,
+    "tokens_before": 17518,
+    "tokens_after": 11691,
+    "start_before": "2016-01-14 14:08:59",
+    "start_after": "2019-12-26 18:22:00",
+    "end": "2026-11-02 18:09:22",
+    "span_days_after": 1791
+   },
+   "MSFT": {
+    "lines_before": 852,
+    "lines_after": 200,
+    "tokens_before": 49309,
+    "tokens_after": 11588,
+    "start_before": "2016-01-06 05:35:18",
+    "start_after": "2025-05-01 10:12:53",
+    "end": "2026-11-20 09:58:27",
+    "span_days_after": 567
+   },
+   "NFLX": {
+    "lines_before": 882,
+    "lines_after": 198,
+    "tokens_before": 51384,
+    "tokens_after": 11669,
+    "start_before": "2016-01-04 04:12:56",
+    "start_after": "2025-01-22 06:14:44",
+    "end": "2026-10-22 13:06:06",
+    "span_days_after": 638
+   },
+   "NKE": {
+    "lines_before": 777,
+    "lines_after": 207,
+    "tokens_before": 43974,
+    "tokens_after": 11608,
+    "start_before": "2016-01-04 08:22:51",
+    "start_after": "2024-12-20 07:43:56",
+    "end": "2026-11-20 06:33:10",
+    "span_days_after": 699
+   },
+   "NVDA": {
+    "lines_before": 1008,
+    "lines_after": 206,
+    "tokens_before": 58544,
+    "tokens_after": 11586,
+    "start_before": "2018-08-15 07:19:06",
+    "start_after": "2025-09-11 09:30:45",
+    "end": "2026-11-18 14:55:48",
+    "span_days_after": 433
+   },
+   "ORCL": {
+    "lines_before": 559,
+    "lines_after": 199,
+    "tokens_before": 31747,
+    "tokens_after": 11600,
+    "start_before": "2016-01-06 06:22:53",
+    "start_after": "2025-03-31 09:53:02",
+    "end": "2026-11-02 08:26:51",
+    "span_days_after": 580
+   },
+   "PEP": {
+    "lines_before": 298,
+    "lines_after": 198,
+    "tokens_before": 17233,
+    "tokens_after": 11604,
+    "start_before": "2016-01-28 12:44:22",
+    "start_after": "2022-02-11 08:02:57",
+    "end": "2026-11-18 05:15:31",
+    "span_days_after": 1740
+   },
+   "PG": {
+    "lines_before": 307,
+    "lines_after": 205,
+    "tokens_before": 16987,
+    "tokens_after": 11614,
+    "start_before": "2016-01-06 07:48:05",
+    "start_after": "2021-08-02 10:35:27",
+    "end": "2026-11-20 14:24:35",
+    "span_days_after": 1936
+   },
+   "QCOM": {
+    "lines_before": 477,
+    "lines_after": 200,
+    "tokens_before": 27154,
+    "tokens_after": 11588,
+    "start_before": "2016-01-13 07:34:53",
+    "start_after": "2023-08-09 05:20:44",
+    "end": "2026-11-18 08:27:04",
+    "span_days_after": 1197
+   },
+   "TSLA": {
+    "lines_before": 986,
+    "lines_after": 206,
+    "tokens_before": 56324,
+    "tokens_after": 11596,
+    "start_before": "2019-12-26 18:22:00",
+    "start_after": "2025-02-25 10:22:36",
+    "end": "2026-11-20 07:38:51",
+    "span_days_after": 632
+   },
+   "TXN": {
+    "lines_before": 565,
+    "lines_after": 198,
+    "tokens_before": 32367,
+    "tokens_after": 11625,
+    "start_before": "2016-01-28 03:30:45",
+    "start_after": "2024-04-24 07:54:21",
+    "end": "2026-10-22 16:28:07",
+    "span_days_after": 911
+   },
+   "UNH": {
+    "lines_before": 492,
+    "lines_after": 197,
+    "tokens_before": 28619,
+    "tokens_after": 11616,
+    "start_before": "2016-01-08 09:44:27",
+    "start_after": "2024-02-29 13:06:06",
+    "end": "2026-11-20 09:17:38",
+    "span_days_after": 994
+   },
+   "V": {
+    "lines_before": 520,
+    "lines_after": 207,
+    "tokens_before": 29030,
+    "tokens_after": 11595,
+    "start_before": "2016-01-05 09:50:18",
+    "start_after": "2023-04-26 13:37:53",
+    "end": "2026-11-11 12:27:51",
+    "span_days_after": 1294
+   },
+   "WMT": {
+    "lines_before": 706,
+    "lines_after": 201,
+    "tokens_before": 40455,
+    "tokens_after": 11621,
+    "start_before": "2016-03-30 16:33:03",
+    "start_after": "2024-11-20 10:49:14",
+    "end": "2026-11-20 14:36:34",
+    "span_days_after": 730
+   },
+   "XOM": {
+    "lines_before": 363,
+    "lines_after": 201,
+    "tokens_before": 20472,
+    "tokens_after": 11679,
+    "start_before": "2016-01-26 10:59:23",
+    "start_after": "2019-12-26 18:22:00",
+    "end": "2026-11-13 10:31:02",
+    "span_days_after": 1410
+   }
+  },
+  "alfred": {
+   "US_GDP": {
+    "lines_before": 565,
+    "lines_after": 208,
+    "tokens_before": 32502,
+    "tokens_after": 11970,
+    "start_before": "2014-09-26 08:30:00",
+    "start_after": "2018-07-27 08:30:00",
+    "end": "2026-10-29 08:30:00",
+    "span_days_after": 3016
+   },
+   "US_PAYROLLS": {
+    "lines_before": 2969,
+    "lines_after": 188,
+    "tokens_before": 186254,
+    "tokens_after": 11712,
+    "start_before": "2005-02-04 08:30:00",
+    "start_after": "2023-04-07 08:30:00",
+    "end": "2026-11-06 08:30:00",
+    "span_days_after": 1309
+   }
+  },
+  "edgar": {
+   "AAPL": {
+    "lines_before": 156,
+    "lines_after": 118,
+    "tokens_before": 15841,
+    "tokens_after": 11973,
+    "start_before": "2015-01-28 21:39:32",
+    "start_after": "2017-05-03 20:32:23",
+    "end": "2026-11-03 13:05:15",
+    "span_days_after": 3470
+   },
+   "ABBV": {
+    "lines_before": 156,
+    "lines_after": 115,
+    "tokens_before": 16020,
+    "tokens_after": 11805,
+    "start_before": "2015-02-20 20:18:31",
+    "start_after": "2017-08-07 16:15:57",
+    "end": "2026-11-03 18:43:40",
+    "span_days_after": 3375
+   },
+   "ADBE": {
+    "lines_before": 156,
+    "lines_after": 115,
+    "tokens_before": 16277,
+    "tokens_after": 11901,
+    "start_before": "2015-01-20 11:42:30",
+    "start_after": "2017-06-28 20:04:35",
+    "end": "2026-09-22 20:04:02",
+    "span_days_after": 3372
+   },
+   "AMD": {
+    "lines_before": 156,
+    "lines_after": 117,
+    "tokens_before": 15925,
+    "tokens_after": 11947,
+    "start_before": "2015-02-19 22:08:48",
+    "start_after": "2017-08-03 20:43:29",
+    "end": "2026-11-03 23:00:17",
+    "span_days_after": 3379
+   },
+   "AMZN": {
+    "lines_before": 156,
+    "lines_after": 113,
+    "tokens_before": 16551,
+    "tokens_after": 11993,
+    "start_before": "2015-01-30 00:38:08",
+    "start_after": "2017-10-26 23:41:02",
+    "end": "2026-10-29 22:20:46",
+    "span_days_after": 3289
+   },
+   "AVGO": {
+    "lines_before": 112,
+    "lines_after": 112,
+    "tokens_before": 11438,
+    "tokens_after": 11438,
+    "start_before": "2018-06-14 20:44:41",
+    "start_after": "2018-06-14 20:44:41",
+    "end": "2026-09-09 21:56:42",
+    "span_days_after": 3009
+   },
+   "BA": {
+    "lines_before": 156,
+    "lines_after": 117,
+    "tokens_before": 15831,
+    "tokens_after": 11857,
+    "start_before": "2015-02-12 20:32:40",
+    "start_after": "2017-07-26 16:36:18",
+    "end": "2026-10-27 17:51:22",
+    "span_days_after": 3380
+   },
+   "CAT": {
+    "lines_before": 156,
+    "lines_after": 117,
+    "tokens_before": 15890,
+    "tokens_after": 11908,
+    "start_before": "2015-02-17 22:15:52",
+    "start_after": "2017-08-02 15:47:06",
+    "end": "2026-11-04 15:49:09",
+    "span_days_after": 3381
+   },
+   "COST": {
+    "lines_before": 130,
+    "lines_after": 110,
+    "tokens_before": 13952,
+    "tokens_after": 11796,
+    "start_before": "2015-03-11 21:23:47",
+    "start_after": "2016-06-01 20:12:33",
+    "end": "2026-10-07 01:13:15",
+    "span_days_after": 3779
+   },
+   "CRM": {
+    "lines_before": 153,
+    "lines_after": 119,
+    "tokens_before": 15432,
+    "tokens_after": 11906,
+    "start_before": "2015-03-05 23:19:38",
+    "start_after": "2017-05-22 20:06:44",
+    "end": "2026-08-26 22:54:46",
+    "span_days_after": 3383
+   },
+   "CSCO": {
+    "lines_before": 156,
+    "lines_after": 114,
+    "tokens_before": 16296,
+    "tokens_after": 11891,
+    "start_before": "2015-02-18 22:14:00",
+    "start_after": "2017-09-07 21:18:41",
+    "end": "2026-11-17 21:36:56",
+    "span_days_after": 3358
+   },
+   "CVX": {
+    "lines_before": 158,
+    "lines_after": 119,
+    "tokens_before": 15943,
+    "tokens_after": 11992,
+    "start_before": "2015-02-20 16:36:43",
+    "start_after": "2017-08-03 15:15:53",
+    "end": "2026-11-05 16:20:55",
+    "span_days_after": 3381
+   },
+   "DIS": {
+    "lines_before": 102,
+    "lines_after": 102,
+    "tokens_before": 10387,
+    "tokens_after": 10387,
+    "start_before": "2019-05-08 21:31:44",
+    "start_after": "2019-05-08 21:31:44",
+    "end": "2026-11-17 11:32:32",
+    "span_days_after": 2749
+   },
+   "GE": {
+    "lines_before": 166,
+    "lines_after": 119,
+    "tokens_before": 16635,
+    "tokens_after": 11872,
+    "start_before": "2015-02-27 21:25:56",
+    "start_after": "2017-05-05 21:29:10",
+    "end": "2026-10-20 10:33:36",
+    "span_days_after": 3454
+   },
+   "GOOGL": {
+    "lines_before": 147,
+    "lines_after": 115,
+    "tokens_before": 15264,
+    "tokens_after": 11936,
+    "start_before": "2015-10-29 20:05:33",
+    "start_after": "2017-07-24 22:23:27",
+    "end": "2026-10-29 00:29:06",
+    "span_days_after": 3383
+   },
+   "HD": {
+    "lines_before": 156,
+    "lines_after": 113,
+    "tokens_before": 16331,
+    "tokens_after": 11822,
+    "start_before": "2015-03-26 20:03:43",
+    "start_after": "2017-11-20 23:13:00",
+    "end": "2026-11-20 21:21:23",
+    "span_days_after": 3286
+   },
+   "IBM": {
+    "lines_before": 156,
+    "lines_after": 115,
+    "tokens_before": 16057,
+    "tokens_after": 11823,
+    "start_before": "2015-02-24 19:08:09",
+    "start_after": "2017-07-25 20:15:58",
+    "end": "2026-10-21 22:15:58",
+    "span_days_after": 3375
+   },
+   "INTC": {
+    "lines_before": 157,
+    "lines_after": 118,
+    "tokens_before": 15775,
+    "tokens_after": 11840,
+    "start_before": "2015-02-13 14:11:52",
+    "start_after": "2017-07-27 20:36:53",
+    "end": "2026-10-29 22:50:31",
+    "span_days_after": 3381
+   },
+   "JNJ": {
+    "lines_before": 156,
+    "lines_after": 117,
+    "tokens_before": 15828,
+    "tokens_after": 11854,
+    "start_before": "2015-02-24 00:11:03",
+    "start_after": "2017-08-03 20:30:16",
+    "end": "2026-10-21 20:18:47",
+    "span_days_after": 3365
+   },
+   "JPM": {
+    "lines_before": 156,
+    "lines_after": 113,
+    "tokens_before": 16483,
+    "tokens_after": 11931,
+    "start_before": "2015-02-24 21:04:18",
+    "start_after": "2017-11-01 20:36:54",
+    "end": "2026-11-03 21:17:12",
+    "span_days_after": 3289
+   },
+   "KO": {
+    "lines_before": 156,
+    "lines_after": 117,
+    "tokens_before": 15802,
+    "tokens_after": 11830,
+    "start_before": "2015-02-25 20:11:06",
+    "start_after": "2017-07-27 19:22:31",
+    "end": "2026-10-28 18:22:38",
+    "span_days_after": 3379
+   },
+   "LLY": {
+    "lines_before": 156,
+    "lines_after": 113,
+    "tokens_before": 16562,
+    "tokens_after": 11973,
+    "start_before": "2015-02-19 21:02:25",
+    "start_after": "2017-10-27 15:53:10",
+    "end": "2026-10-29 15:35:46",
+    "span_days_after": 3288
+   },
+   "MA": {
+    "lines_before": 153,
+    "lines_after": 121,
+    "tokens_before": 14967,
+    "tokens_after": 11827,
+    "start_before": "2015-02-13 15:23:56",
+    "start_after": "2016-10-28 14:27:22",
+    "end": "2026-10-29 14:19:30",
+    "span_days_after": 3652
+   },
+   "MCD": {
+    "lines_before": 156,
+    "lines_after": 113,
+    "tokens_before": 16352,
+    "tokens_after": 11821,
+    "start_before": "2015-02-24 19:40:58",
+    "start_after": "2017-11-02 16:45:45",
+    "end": "2026-11-06 17:07:09",
+    "span_days_after": 3291
+   },
+   "META": {
+    "lines_before": 156,
+    "lines_after": 117,
+    "tokens_before": 15820,
+    "tokens_after": 11870,
+    "start_before": "2015-01-29 21:35:58",
+    "start_after": "2017-07-27 20:25:55",
+    "end": "2026-10-22 00:00:08",
+    "span_days_after": 3373
+   },
+   "MRK": {
+    "lines_before": 156,
+    "lines_after": 111,
+    "tokens_before": 16595,
+    "tokens_after": 11799,
+    "start_before": "2015-02-27 19:02:50",
+    "start_after": "2017-11-07 21:38:23",
+    "end": "2026-11-04 21:14:20",
+    "span_days_after": 3283
+   },
+   "MSFT": {
+    "lines_before": 156,
+    "lines_after": 116,
+    "tokens_before": 16100,
+    "tokens_after": 11969,
+    "start_before": "2015-01-26 21:13:49",
+    "start_after": "2017-04-27 20:16:04",
+    "end": "2026-10-28 20:07:39",
+    "span_days_after": 3470
+   },
+   "NFLX": {
+    "lines_before": 159,
+    "lines_after": 112,
+    "tokens_before": 16835,
+    "tokens_after": 11846,
+    "start_before": "2015-01-29 18:55:40",
+    "start_after": "2017-10-18 20:27:55",
+    "end": "2026-10-21 20:01:46",
+    "span_days_after": 3289
+   },
+   "NKE": {
+    "lines_before": 153,
+    "lines_after": 117,
+    "tokens_before": 15640,
+    "tokens_after": 11949,
+    "start_before": "2015-01-07 21:56:03",
+    "start_after": "2017-01-05 21:21:57",
+    "end": "2026-10-02 20:15:53",
+    "span_days_after": 3556
+   },
+   "NVDA": {
+    "lines_before": 152,
+    "lines_after": 118,
+    "tokens_before": 15265,
+    "tokens_after": 11842,
+    "start_before": "2015-03-11 23:48:05",
+    "start_after": "2017-03-01 22:30:49",
+    "end": "2026-08-26 20:36:00",
+    "span_days_after": 3464
+   },
+   "ORCL": {
+    "lines_before": 152,
+    "lines_after": 118,
+    "tokens_before": 15451,
+    "tokens_after": 11987,
+    "start_before": "2015-03-19 20:31:53",
+    "start_after": "2017-03-17 20:07:09",
+    "end": "2026-09-11 20:10:12",
+    "span_days_after": 3465
+   },
+   "PEP": {
+    "lines_before": 132,
+    "lines_after": 117,
+    "tokens_before": 13452,
+    "tokens_after": 11914,
+    "start_before": "2015-02-12 22:01:46",
+    "start_after": "2015-10-06 20:17:55",
+    "end": "2026-10-07 21:52:53",
+    "span_days_after": 4019
+   },
+   "PG": {
+    "lines_before": 159,
+    "lines_after": 114,
+    "tokens_before": 16470,
+    "tokens_after": 11797,
+    "start_before": "2015-01-27 21:04:25",
+    "start_after": "2017-10-20 20:05:29",
+    "end": "2026-10-22 20:10:33",
+    "span_days_after": 3289
+   },
+   "QCOM": {
+    "lines_before": 161,
+    "lines_after": 116,
+    "tokens_before": 16605,
+    "tokens_after": 11951,
+    "start_before": "2015-01-28 21:18:31",
+    "start_after": "2017-11-01 20:10:14",
+    "end": "2026-11-04 21:04:51",
+    "span_days_after": 3290
+   },
+   "TSLA": {
+    "lines_before": 156,
+    "lines_after": 115,
+    "tokens_before": 16208,
+    "tokens_after": 11876,
+    "start_before": "2015-02-26 22:13:26",
+    "start_after": "2017-08-04 21:15:55",
+    "end": "2026-10-22 00:12:41",
+    "span_days_after": 3365
+   },
+   "TXN": {
+    "lines_before": 156,
+    "lines_after": 115,
+    "tokens_before": 16114,
+    "tokens_after": 11869,
+    "start_before": "2015-02-24 21:24:05",
+    "start_after": "2017-08-03 13:58:34",
+    "end": "2026-10-23 17:03:12",
+    "span_days_after": 3368
+   },
+   "UNH": {
+    "lines_before": 156,
+    "lines_after": 115,
+    "tokens_before": 16071,
+    "tokens_after": 11837,
+    "start_before": "2015-02-10 21:45:11",
+    "start_after": "2017-08-04 20:54:46",
+    "end": "2026-11-03 21:04:13",
+    "span_days_after": 3378
+   },
+   "V": {
+    "lines_before": 156,
+    "lines_after": 120,
+    "tokens_before": 15439,
+    "tokens_after": 11864,
+    "start_before": "2015-01-29 21:17:49",
+    "start_after": "2017-04-21 12:25:29",
+    "end": "2026-11-05 21:07:24",
+    "span_days_after": 3485
+   },
+   "WMT": {
+    "lines_before": 152,
+    "lines_after": 115,
+    "tokens_before": 15574,
+    "tokens_after": 11766,
+    "start_before": "2015-04-01 20:44:17",
+    "start_after": "2017-06-02 20:33:46",
+    "end": "2026-08-28 20:11:28",
+    "span_days_after": 3373
+   },
+   "XOM": {
+    "lines_before": 8,
+    "lines_after": 8,
+    "tokens_before": 826,
+    "tokens_after": 826,
+    "start_before": "2026-08-03 18:55:38",
+    "start_after": "2026-08-03 18:55:38",
+    "end": "2026-11-02 17:41:17",
+    "span_days_after": 90,
+    "dropped_entity": true
+   }
+  }
+ }
+}

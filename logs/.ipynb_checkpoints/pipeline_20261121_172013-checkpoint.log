@@ -1,0 +1,8 @@
+log: /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/logs/pipeline_20261121_172013.log
+models: phi-4-mini qwen3.5-4b gemma-4-e4b-it | history cap: 12000 tokens | max input: 32768 | extra method args: none
+python: /tmp/pit_work/envs/pit/bin/python
+
+================================================================ 2026-11-21 17:20:13  full: 4 methods x [phi-4-mini qwen3.5-4b gemma-4-e4b-it] on all questions
+
+================================================================ 2026-11-21 17:20:13  phi-4-mini  1_rule_based  (/dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/results)
+[engine] backend=vllm  results -> /dicos_ui_home/henry09027/sharedfs/work/IDLAB/henry/AgenticMemoryFinance/V8/pit_pipeline/results/vllm

@@ -1,0 +1,15 @@
+qid,source,entity,qtype,mode,as_of,question,answer_type,tol,gold,peek_answers,trap_answers,gold_evidence
+alfred-Q1-today,alfred,ZETA_GDP,latest_value,today,2026-11-14 23:59:59,"What is the latest estimate of Zeta's 2026Q2 real GDP growth (percent, annual rate)?",number,0.01,2.1,,2.6|2.4,A11
+alfred-Q1-as_of,alfred,ZETA_GDP,latest_value,as_of,2026-08-15 12:00:00,"What is the latest estimate of Zeta's 2026Q2 real GDP growth (percent, annual rate)?",number,0.01,2.4,2.6|2.1,,A07
+alfred-Q2-today,alfred,ZETA_GDP,first_print,today,2026-11-14 23:59:59,"What was the advance (first) estimate of Zeta's 2026Q1 real GDP growth (percent, annual rate)?",number,0.01,1.8,,1.9|1.5,A04
+alfred-Q2-as_of,alfred,ZETA_GDP,first_print,as_of,2026-08-15 12:00:00,"What was the advance (first) estimate of Zeta's 2026Q1 real GDP growth (percent, annual rate)?",number,0.01,1.8,,1.5,A04
+alfred-Q3-today,alfred,ZETA_GDP,total_revision,today,2026-11-14 23:59:59,By how many percentage points has Zeta's 2026Q1 growth estimate been revised in total since the advance estimate?,number,0.01,0.1,,-0.3,A04|A10
+alfred-Q3-as_of,alfred,ZETA_GDP,total_revision,as_of,2026-08-15 12:00:00,By how many percentage points has Zeta's 2026Q1 growth estimate been revised in total since the advance estimate?,number,0.01,-0.3,0.1,,A04|A06
+alfred-Q4-today,alfred,ZETA_GDP,aggregate,today,2026-11-14 23:59:59,"What is the average real GDP growth (percent, annual rate) of Zeta's three most recent published quarters, using the latest estimate for each?",number,0.015,1.7333,,1.8|1.7667,A10|A11|A12
+alfred-Q4-as_of,alfred,ZETA_GDP,aggregate,as_of,2026-08-15 12:00:00,"What is the average real GDP growth (percent, annual rate) of Zeta's three most recent published quarters, using the latest estimate for each?",number,0.015,1.9667,2.1|2.0333|1.7333,,A03|A06|A07
+alfred-Q5-today,alfred,ZETA_GDP,count_revisions,today,2026-11-14 23:59:59,How many times has Zeta's 2026Q1 GDP growth estimate been revised after the advance estimate?,number,0.0,3,,4|2,A05|A06|A10
+alfred-Q5-as_of,alfred,ZETA_GDP,count_revisions,as_of,2026-08-15 12:00:00,How many times has Zeta's 2026Q1 GDP growth estimate been revised after the advance estimate?,number,0.0,2,3,,A05|A06
+alfred-Q6-today,alfred,ZETA_GDP,old_period_latest,today,2026-11-14 23:59:59,"What is the latest estimate of Zeta's 2025Q4 real GDP growth (percent, annual rate)?",number,0.01,2.3,,2.0|2.5,A09
+alfred-Q6-as_of,alfred,ZETA_GDP,old_period_latest,as_of,2026-08-15 12:00:00,"What is the latest estimate of Zeta's 2025Q4 real GDP growth (percent, annual rate)?",number,0.01,2.0,2.3,2.5,A03
+alfred-Q7-today,alfred,ZETA_GDP,not_yet_published,today,2026-11-14 23:59:59,"What was Zeta's real GDP growth in 2026Q3 (percent, annual rate)?",number,0.01,1.2,,,A12
+alfred-Q7-as_of,alfred,ZETA_GDP,not_yet_published,as_of,2026-08-15 12:00:00,"What was Zeta's real GDP growth in 2026Q3 (percent, annual rate)?",number,0.01,CANNOT_ANSWER,1.2,,

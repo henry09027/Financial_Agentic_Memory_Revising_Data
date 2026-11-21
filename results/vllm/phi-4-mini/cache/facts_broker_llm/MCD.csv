@@ -1,0 +1,226 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+MCD-00402,2024-06-13 07:03:02,MCD | Goldman Sachs,price_target_usd,,288.00,2024-06-13T07:03:02,new
+MCD-00402,2024-06-13 07:03:02,MCD | Goldman Sachs,rating,,Neutral,2024-06-13T07:03:02,new
+MCD-00403,2024-06-13 13:48:51,MCD | TD Cowen,price_target_usd,,305.00,2024-06-13T13:48:51,new
+MCD-00404,2024-07-02 12:13:00,MCD | Guggenheim,price_target_usd,2024-07-02T12:13:00,280.00,2024-07-02T12:13:00,new
+MCD-00405,2024-07-09 09:55:18,MCD | Truist Securities,price_target_usd,2024-07-09,300.00,2024-07-09T09:55:18,new
+MCD-00406,2024-07-10 12:52:06,MCD | JP Morgan,price_target_usd,2024-07-10,290.00,2024-07-10T12:52:06,new
+MCD-00407,2024-07-11 12:52:26,MCD | Morgan Stanley,price_target_usd,,300.00,2024-07-11T12:52:26,new
+MCD-00408,2024-07-16 11:22:46,MCD | Evercore ISI Group,price_target_usd,2024-07-16,300.00,2024-07-16T11:22:46,new
+MCD-00409,2024-07-16 12:03:08,MCD | Deutsche Bank,price_target_usd,,295.00,2024-07-16T12:03:08,new
+MCD-00410,2024-07-16 12:08:55,MCD | Citigroup,price_target_usd,2024-07-16,280.00,2024-07-16T12:08:55,new
+MCD-00411,2024-07-17 14:26:45,MCD | TD Cowen,price_target_usd,2024-07-17,285.00,2024-07-17T14:26:45,new
+MCD-00412,2024-07-19 10:49:28,MCD | Wedbush,price_target_usd,,295.00,2024-07-19T10:49:28,new
+MCD-00413,2024-07-22 08:26:22,MCD | Stifel,price_target_usd,-,265.00,2024-07-22T08:26:22,new
+MCD-00414,2024-07-29 07:28:39,MCD | Wedbush,price_target_usd,,295.00,2024-07-29T07:28:39,new
+MCD-00415,2024-07-29 13:41:28,MCD | TD Cowen,price_target_usd,,285.00,2024-07-29T07:28:39,new
+MCD-00416,2024-07-29 17:11:59,MCD | Jefferies,price_target_usd,,310.00,2024-07-29T17:11:59,new
+MCD-00417,2024-07-30 07:14:13,MCD | JP Morgan,price_target_usd,2024-07-30,270.00,2024-07-30T07:14:13,new
+MCD-00418,2024-07-30 07:39:48,MCD | BMO Capital,price_target_usd,2024-07-30,315.00,2024-07-30T07:39:48,new
+MCD-00418,2024-07-30 07:39:48,MCD | BMO Capital,rating,2024-07-30,Outperform,2024-07-30T07:39:48,new
+MCD-00419,2024-07-30 07:45:04,MCD | Barclays,price_target_usd,,300.00,2024-07-30T07:45:04,new
+MCD-00420,2024-07-30 08:21:16,MCD | Truist Securities,price_target_usd,,295.00,2024-07-30T08:21:16,new
+MCD-00421,2024-07-30 10:17:21,MCD | Loop Capital,price_target_usd,,342.00,2024-07-30T10:17:21,new
+MCD-00422,2024-07-30 10:38:32,MCD | Citigroup,price_target_usd,,275.00,2024-07-30T10:38:32,new
+MCD-00423,2024-07-30 11:59:59,MCD | B of A Securities,price_target_usd,,278.00,2024-07-30T11:59:59,new
+MCD-00424,2024-07-30 12:55:22,MCD | Deutsche Bank,price_target_usd,,290.00,2024-07-30T12:55:22,new
+MCD-00425,2024-07-30 13:03:11,MCD | Keybanc,price_target_usd,2024-07-30,305.00,2024-07-30T13:03:11,new
+MCD-00426,2024-07-31 15:57:39,MCD | TD Cowen,price_target_usd,2024-07-31,280.00,2024-07-31T15:57:39,new
+MCD-00427,2024-08-02 15:20:12,MCD | Guggenheim,price_target_usd,2024-08-02,290.00,2024-08-02T15:20:12,new
+MCD-00428,2024-08-19 10:08:05,MCD | Evercore ISI Group,price_target_usd,2024-08-19,320.00,2024-08-19T10:08:05,new
+MCD-00429,2024-09-03 18:19:25,MCD | Tigress Financial,price_target_usd,,360.00,2024-09-03T18:19:25,new
+MCD-00430,2024-09-09 12:39:05,MCD | Jefferies,price_target_usd,,330.00,2024-09-09T12:39:05,new
+MCD-00431,2024-09-10 08:42:52,MCD | Loop Capital,price_target_usd,,342.00,2024-09-10T08:42:52,new
+MCD-00432,2024-09-13 16:08:22,MCD | Citigroup,price_target_usd,,301.00,2024-09-13T16:08:22,new
+MCD-00433,2024-09-16 11:14:54,MCD | JP Morgan,price_target_usd,,290.00,2024-09-16T11:14:54,new
+MCD-00434,2024-09-23 06:06:28,MCD | TD Cowen,price_target_usd,,280.00,2024-09-23T06:06:28,new
+MCD-00435,2024-09-24 10:35:11,MCD | Goldman Sachs,price_target_usd,,325.00,2024-09-24T10:35:11,new
+MCD-00436,2024-09-26 07:14:20,MCD | Baird,price_target_usd,,320.00,2024-09-26T07:14:20,new
+MCD-00437,2024-10-02 14:53:39,MCD | Citigroup,price_target_usd,,317.00,2024-10-02T14:53:39,new
+MCD-00438,2024-10-07 14:02:15,MCD | Keybanc,price_target_usd,,330.00,2024-10-07T14:02:15,new
+MCD-00439,2024-10-08 11:02:38,MCD | Argus Research,rating,,Buy,2024-10-08T11:02:38,new
+MCD-00440,2024-10-09 17:56:07,MCD | UBS,price_target_usd,,345.00,2024-10-09T17:56:07,new
+MCD-00441,2024-10-15 08:29:38,MCD | Morgan Stanley,price_target_usd,,340.00,2024-10-15T08:29:38,new
+MCD-00442,2024-10-15 09:01:37,MCD | Truist Securities,price_target_usd,,350.00,2024-10-15T09:01:37,new
+MCD-00443,2024-10-15 09:21:31,MCD | Evercore ISI Group,price_target_usd,,340.00,2024-10-15T09:21:31,new
+MCD-00444,2024-10-16 14:17:38,MCD | TD Cowen,price_target_usd,2024-10-16,300.00,2024-10-16T14:17:38,new
+MCD-00445,2024-10-21 11:04:26,MCD | Wells Fargo,price_target_usd,,350.00,2024-10-21T11:04:26,new
+MCD-00446,2024-10-21 12:58:50,MCD | B of A Securities,price_target_usd,,322.00,2024-10-21T12:58:50,new
+MCD-00447,2024-10-22 12:26:44,MCD | Barclays,price_target_usd,,325.00,2024-10-22T12:26:44,new
+MCD-00447,2024-10-22 12:26:44,MCD | Barclays,rating,,Overweight,2024-10-22T12:26:44,new
+MCD-00448,2024-10-22 13:58:57,MCD | B of A Securities,price_target_usd,,321.00,2024-10-22T13:58:57,new
+MCD-00449,2024-10-23 06:04:53,MCD | TD Cowen,price_target_usd,,300.00,2024-10-23T06:04:53,new
+MCD-00450,2024-10-23 06:13:31,MCD | Wedbush,price_target_usd,,295.00,2024-10-23T06:13:31,new
+MCD-00451,2024-10-23 07:10:04,MCD | Baird,rating,,Neutral,2024-10-23T07:10:04,new
+MCD-00451,2024-10-23 07:10:04,MCD | Baird,price_target_usd,,290.00,2024-10-23T07:10:04,new
+MCD-00452,2024-10-23 07:58:59,MCD | Guggenheim,price_target_usd,,285.00,2024-10-23T07:58:59,new
+MCD-00452,2024-10-23 07:58:59,MCD | Guggenheim,rating,,Neutral,2024-10-23T07:58:59,new
+MCD-00453,2024-10-29 13:34:59,MCD | TD Cowen,price_target_usd,,300.00,2024-10-29T13:34:59,new
+MCD-00454,2024-10-30 10:02:17,MCD | BMO Capital,price_target_usd,,335.00,2024-10-30T10:02:17,new
+MCD-00455,2024-10-30 11:30:31,MCD | Truist Securities,price_target_usd,,342.00,2024-10-30T11:30:31,new
+MCD-00456,2024-10-30 13:56:38,MCD | B of A Securities,price_target_usd,,324.00,2024-10-30T13:56:38,new
+MCD-00457,2025-01-03 12:41:43,MCD | Loop Capital,price_target_usd,,342.00,2025-01-03T12:41:43,new
+MCD-00458,2025-01-10 06:41:38,MCD | Citigroup,rating,,Buy,2025-01-10T06:41:38,new
+MCD-00458,2025-01-10 06:41:38,MCD | Citigroup,price_target_usd,,334.00,2025-01-10T06:41:38,new
+MCD-00459,2025-01-21 07:18:46,MCD | Morgan Stanley,price_target_usd,,336.00,2025-01-21T07:18:46,new
+MCD-00460,2025-01-24 12:29:54,MCD | Keybanc,price_target_usd,,320.00,2025-01-24T12:29:54,new
+MCD-00461,2025-01-28 07:10:28,MCD | Citigroup,price_target_usd,,336.00,2025-01-28T07:10:28,new
+MCD-00462,2025-02-04 08:24:47,MCD | Piper Sandler,price_target_usd,,290.00,2025-02-04T08:24:47,new
+MCD-00462,2025-02-04 08:24:47,MCD | Piper Sandler,price_target_usd,,297.00,2025-02-04T08:24:47,inferred
+MCD-00463,2025-02-10 08:22:48,MCD | TD Securities,price_target_usd,,300.00,2025-02-10T08:22:48,new
+MCD-00464,2025-02-10 16:44:42,MCD | Barclays,price_target_usd,,350.00,2025-02-10T16:44:42,new
+MCD-00464,2025-02-10 16:44:42,MCD | Barclays,rating,,Overweight,2025-02-10T16:44:42,new
+MCD-00465,2025-02-11 03:39:59,MCD | TD Securities,price_target_usd,,305.00,2025-02-11T03:39:59,new
+MCD-00466,2025-02-11 06:41:29,MCD | Wedbush,price_target_usd,,330.00,2025-02-11T06:41:29,new
+MCD-00467,2025-02-11 07:13:31,MCD | Citigroup,price_target_usd,,360.00,2025-02-11T07:13:31,new
+MCD-00468,2025-02-11 07:48:22,MCD | Loop Capital,price_target_usd,,346.00,2025-02-11T07:48:22,new
+MCD-00469,2025-02-11 08:17:43,MCD | Baird,price_target_usd,,310.00,2025-02-11T08:17:43,new
+MCD-00470,2025-02-11 09:03:08,MCD | JP Morgan,price_target_usd,,300.00,2025-02-11T09:03:08,new
+MCD-00471,2025-02-11 09:14:57,MCD | Keybanc,price_target_usd,,335.00,2025-02-11T09:14:57,new
+MCD-00472,2025-02-11 09:32:43,MCD | B of A Securities,price_target_usd,,316.00,2025-02-11T09:32:43,new
+MCD-00473,2025-02-11 11:11:43,MCD | BMO Capital,price_target_usd,,340.00,2025-02-11T11:11:43,new
+MCD-00474,2025-02-11 12:01:04,MCD | Morgan Stanley,price_target_usd,,340.00,2025-02-11T12:01:04,new
+MCD-00475,2025-02-11 12:25:21,MCD | Truist Securities,price_target_usd,,340.00,2025-02-11T12:25:21,new
+MCD-00476,2025-03-17 12:42:41,MCD | Morgan Stanley,price_target_usd,,335.00,2025-03-17T12:42:41,new
+MCD-00477,2025-04-03 09:16:04,MCD | Citigroup,price_target_usd,,353.00,2025-04-03T09:16:04,new
+MCD-00478,2025-04-07 08:49:05,MCD | Baird,price_target_usd,,300.00,2025-04-07T08:49:05,new
+MCD-00479,2025-04-14 07:29:25,MCD | Morgan Stanley,price_target_usd,,330.00,2025-04-14T07:29:25,new
+MCD-00480,2025-04-22 13:13:54,MCD | Barclays,price_target_usd,,347.00,2025-04-22T13:13:54,new
+MCD-00481,2025-05-02 08:20:58,MCD | Baird,price_target_usd,,315.00,2025-05-02T08:20:58,new
+MCD-00481,2025-05-02 08:20:58,MCD | Baird,rating,,Neutral,2025-05-02T08:20:58,new
+MCD-00482,2025-05-02 11:07:19,MCD | Piper Sandler,price_target_usd,,314.00,2025-05-02T11:07:19,new
+MCD-00482,2025-05-02 11:07:19,MCD | Piper Sandler,rating,,Neutral,2025-05-02T11:07:19,new
+MCD-00483,2025-05-02 17:21:45,MCD | Barclays,price_target_usd,,355.00,2025-05-02 17:21:45,new
+MCD-00483,2025-05-02 17:21:45,MCD | Barclays,rating,,Overweight,2025-05-02 17:21:45,new
+MCD-00484,2025-05-02 18:05:05,MCD | Citigroup,price_target_usd,,364.00,2025-05-02 18:05:05,new
+MCD-00485,2025-05-05 09:03:09,MCD | BMO Capital,price_target_usd,,345.00,2025-05-05T09:03:09,new
+MCD-00486,2025-06-05 06:58:27,MCD | TD Securities,price_target_usd,,305.00,2025-06-05T06:58:27,new
+MCD-00487,2025-06-06 09:10:33,MCD | Loop Capital,price_target_usd,-,315.00,2025-06-06T09:10:33,new
+MCD-00487,2025-06-06 09:10:33,MCD | Loop Capital,rating,-,Hold,2025-06-06T09:10:33,new
+MCD-00488,2025-06-09 12:37:04,MCD | Morgan Stanley,rating,,Equal-Weight,2025-06-09T12:37:04,new
+MCD-00488,2025-06-09 12:37:04,MCD | Morgan Stanley,price_target_usd,,324.00,2025-06-09T12:37:04,new
+MCD-00489,2025-06-10 07:59:36,MCD | Redburn Atlantic,price_target_usd,,260.00,2025-06-10T07:59:36,new
+MCD-00489,2025-06-10 07:59:36,MCD | Redburn Atlantic,rating,,Sell,2025-06-10T07:59:36,new
+MCD-00490,2025-06-13 09:14:03,MCD | Argus Research,rating,,Hold,2025-06-13T09:14:03,new
+MCD-00491,2025-06-30 09:17:56,MCD | Keybanc,price_target_usd,,325.00,2025-06-30T09:17:56,new
+MCD-00492,2025-07-09 10:14:44,MCD | Truist Securities,price_target_usd,,356.00,2025-07-09T10:14:44,new
+MCD-00493,2025-07-09 15:19:38,MCD | Citigroup,price_target_usd,,365.00,2025-07-09T15:19:38,new
+MCD-00494,2025-07-10 07:28:06,MCD | Goldman Sachs,price_target_usd,,345.00,2025-07-10T07:28:06,new
+MCD-00495,2025-07-14 09:37:01,MCD | Morgan Stanley,price_target_usd,,326.00,2025-07-14T09:37:01,new
+MCD-00495,2025-07-14 09:37:01,MCD | Morgan Stanley,rating,,Equal-Weight,2025-07-14T09:37:01,new
+MCD-00496,2025-07-18 09:54:39,MCD | B of A Securities,price_target_usd,,322.00,2025-07-18T09:54:39,new
+MCD-00497,2025-08-06 05:40:25,MCD | TD Cowen,price_target_usd,,315.00,2025-08-06T05:40:25,new
+MCD-00498,2025-08-07 08:27:03,MCD | BMO Capital,price_target_usd,,350.00,2025-08-07T08:27:03,new
+MCD-00499,2025-08-07 09:33:54,MCD | Barclays,price_target_usd,,360.00,2025-08-07T09:33:54,new
+MCD-00499,2025-08-07 09:33:54,MCD | Barclays,rating,,Overweight,2025-08-07T09:33:54,new
+MCD-00500,2025-08-07 09:55:43,MCD | Piper Sandler,price_target_usd,,325.00,2025-08-07T09:55:43,new
+MCD-00501,2025-08-07 09:56:13,MCD | Keybanc,price_target_usd,,335.00,2025-08-07T09:56:13,new
+MCD-00502,2025-08-07 10:25:20,MCD | Truist Securities,price_target_usd,,360.00,2025-08-07T10:25:20,new
+MCD-00503,2025-08-07 15:18:57,MCD | JP Morgan,price_target_usd,,310.00,2025-08-07T15:18:57,new
+MCD-00504,2025-08-08 08:35:08,MCD | Evercore ISI Group,price_target_usd,,360.00,2025-08-08T08:35:08,new
+MCD-00505,2025-08-22 08:55:08,MCD | Stifel,price_target_usd,,315.00,2025-08-22T08:55:08,new
+MCD-00506,2025-09-04 07:54:22,MCD | BMO Capital,price_target_usd,,360.00,2025-09-04T07:54:22,new
+MCD-00507,2025-09-17 10:22:27,MCD | Citigroup,price_target_usd,,381.00,2025-09-17T10:22:27,new
+MCD-00508,2025-10-09 08:03:36,MCD | RBC Capital,rating,,Sector Perform,2025-10-09T08:03:36,new
+MCD-00508,2025-10-09 08:03:36,MCD | RBC Capital,price_target_usd,,320.00,2025-10-09T08:03:36,new
+MCD-00509,2025-10-10 08:36:30,MCD | Guggenheim,price_target_usd,,295.00,2025-10-10T08:36:30,new
+MCD-00510,2025-10-14 14:07:24,MCD | Truist Securities,price_target_usd,,350.00,2025-10-14T14:07:24,new
+MCD-00511,2025-10-16 09:15:05,MCD | Wells Fargo,price_target_usd,,340.00,2025-10-16T09:15:05,new
+MCD-00512,2025-10-21 11:44:25,MCD | Citigroup,price_target_usd,,375.00,2025-10-21T11:44:25,new
+MCD-00513,2025-10-22 12:31:41,MCD | Barclays,price_target_usd,,362.00,2025-10-22T12:31:41,new
+MCD-00515,2025-10-28 06:09:41,MCD | Mizuho,rating,,Neutral,2025-10-28T06:09:41,new
+MCD-00515,2025-10-28 06:09:41,MCD | Mizuho,price_target_usd,,300.00,2025-10-28T06:09:41,new
+MCD-00516,2025-11-06 09:52:14,MCD | Barclays,price_target_usd,,358.00,2025-11-06T09:52:14,new
+MCD-00517,2025-11-06 10:30:11,MCD | Wells Fargo,price_target_usd,,345.00,2025-11-06T10:30:11,new
+MCD-00518,2025-11-06 12:24:44,MCD | Baird,price_target_usd,,325.00,2025-11-06T12:24:44,new
+MCD-00519,2025-11-19 07:56:05,MCD | Guggenheim,price_target_usd,,310.00,2025-11-19T07:56:05,new
+MCD-00519,2025-11-19 07:56:05,MCD | Guggenheim,rating,,Neutral,2025-11-19T07:56:05,new
+MCD-00520,2026-01-06 04:21:33,MCD | Oppenheimer,price_target_usd,,355.00,2026-01-06T04:21:33,new
+MCD-00520,2026-01-06 04:21:33,MCD | Oppenheimer,rating,,Outperform,2026-01-06T04:21:33,new
+MCD-00521,2026-01-07 13:13:37,MCD | Barclays,price_target_usd,,372.00,2026-01-07T13:13:37,new
+MCD-00522,2026-01-08 08:07:19,MCD | TD Cowen,price_target_usd,,320.00,2026-01-08T08:07:19,new
+MCD-00523,2026-01-08 12:20:33,MCD | Truist Securities,price_target_usd,,356.00,2026-01-08T12:20:33,new
+MCD-00524,2026-01-09 11:51:45,MCD | Keybanc,price_target_usd,,340.00,2026-01-09T11:51:45,new
+MCD-00525,2026-02-02 06:13:22,MCD | BTIG,rating,,Buy,2026-02-02T06:13:22,new
+MCD-00525,2026-02-02 06:13:22,MCD | BTIG,price_target_usd,,360.00,2026-02-02T06:13:22,new
+MCD-00526,2026-02-03 11:37:43,MCD | Guggenheim,price_target_usd,,325.00,2026-02-03T11:37:43,new
+MCD-00527,2026-02-06 09:02:43,MCD | Mizuho,price_target_usd,,325.00,2026-02-06T09:02:43,new
+MCD-00528,2026-02-12 04:51:27,MCD | TD Cowen,price_target_usd,,320.00,2026-02-12T04:51:27,new
+MCD-00529,2026-02-12 06:43:24,MCD | BTIG,price_target_usd,,370.00,2026-02-12T06:43:24,new
+MCD-00530,2026-02-12 09:09:39,MCD | Wells Fargo,price_target_usd,,355.00,2026-02-12T09:09:39,new
+MCD-00531,2026-02-12 09:24:26,MCD | Truist Securities,price_target_usd,,370.00,2026-02-12T09:24:26,new
+MCD-00532,2026-02-12 10:03:58,MCD | Barclays,price_target_usd,,380.00,2026-02-12T10:03:58,new
+MCD-00533,2026-02-12 10:18:31,MCD | Piper Sandler,price_target_usd,,325.00,2026-02-12T10:18:31,new
+MCD-00534,2026-02-12 12:43:22,MCD | RBC Capital,price_target_usd,,330.00,2026-02-12T12:43:22,new
+MCD-00535,2026-02-12 12:55:02,MCD | UBS,price_target_usd,,365.00,2026-02-12T12:55:02,new
+MCD-00536,2026-02-12 13:48:53,MCD | Citigroup,price_target_usd,,375.00,2026-02-12T13:48:53,new
+MCD-00537,2026-02-12 15:32:49,MCD | Jefferies,price_target_usd,,375.00,2026-02-12T15:32:49,new
+MCD-00538,2026-02-13 07:55:02,MCD | Guggenheim,price_target_usd,,320.00,2026-02-13T07:55:02,new
+MCD-00539,2026-02-13 08:26:28,MCD | Argus Research,price_target_usd,,380.00,2026-02-13T08:26:28,new
+MCD-00540,2026-02-24 14:28:06,MCD | JP Morgan,price_target_usd,,325.00,2026-02-24T14:28:06,new
+MCD-00541,2026-03-03 08:47:54,MCD | Keybanc,price_target_usd,,354.00,2026-03-03T08:47:54,new
+MCD-00542,2026-03-06 13:51:48,MCD | Tigress Financial,price_target_usd,,385.00,2026-03-06T13:51:48,new
+MCD-00543,2026-04-20 08:16:37,MCD | Keybanc,price_target_usd,,345.00,2026-04-20T08:16:37,inferred revision
+MCD-00544,2026-04-21 11:55:46,MCD | Morgan Stanley,price_target_usd,,334.00,2026-04-21T11:55:46,new
+MCD-00545,2026-04-23 14:47:52,MCD | Rothschild & Co,price_target_usd,,306.00,2026-04-23T14:47:52,new
+MCD-00545,2026-04-23 14:47:52,MCD | Rothschild & Co,rating,,Neutral,2026-04-23T14:47:52,new
+MCD-00546,2026-04-28 06:32:02,MCD | BTIG,price_target_usd,,370.00,2026-04-28T06:32:02,new
+MCD-00547,2026-05-07 06:03:15,MCD | BTIG,price_target_usd,,370.00,2026-05-07T06:03:15,new
+MCD-00548,2026-05-07 16:03:10,MCD | TD Cowen,price_target_usd,,300.00,2026-05-07T16:03:10,new
+MCD-00549,2026-05-08 08:25:21,MCD | Keybanc,price_target_usd,,330.00,2026-05-08T08:25:21,new
+MCD-00550,2026-05-08 08:57:47,MCD | Wells Fargo,price_target_usd,,320.00,2026-05-08T08:57:47,new
+MCD-00551,2026-05-08 09:53:14,MCD | Evercore ISI Group,price_target_usd,,350.00,2026-05-08T09:53:14,new
+MCD-00552,2026-05-08 11:28:42,MCD | Barclays,price_target_usd,,350.00,2026-05-08T11:28:42,new
+MCD-00553,2026-05-08 13:11:08,MCD | RBC Capital,price_target_usd,,305.00,2026-05-08T13:11:08,new
+MCD-00554,2026-05-11 11:18:35,MCD | JP Morgan,price_target_usd,,305.00,2026-05-11T11:18:35,new
+MCD-00555,2026-06-29 08:49:20,MCD | Keybanc,price_target_usd,,315.00,2026-06-29T08:49:20,new
+MCD-00556,2026-07-15 11:25:13,MCD | Citigroup,price_target_usd,,335.00,2026-07-15T11:25:13,new
+MCD-00557,2026-07-16 09:30:34,MCD | Morgan Stanley,price_target_usd,,322.00,2026-07-16T09:30:34,new
+MCD-00557,2026-07-16 09:30:34,MCD | Morgan Stanley,rating,,Equal-Weight,2026-07-16T09:30:34,new
+MCD-00558,2026-07-16 10:21:58,MCD | Wells Fargo,price_target_usd,,300.00,2026-07-16T10:21:58,new
+MCD-00559,2026-07-17 13:50:22,MCD | Tigress Financial,price_target_usd,,390.00,2026-07-17T13:50:22,new
+MCD-00560,2026-07-23 09:02:59,MCD | Evercore ISI Group,price_target_usd,,320.00,2026-07-23T09:02:59,new
+MCD-00561,2026-07-24 06:16:28,MCD | BTIG,price_target_usd,,350.00,2026-07-24T06:16:28,new
+MCD-00562,2026-07-27 13:59:18,MCD | UBS,price_target_usd,,340.00,2026-07-27T13:59:18,new
+MCD-00563,2026-07-31 13:52:12,MCD | Mizuho,price_target_usd,,290.00,2026-07-31T13:52:12,new
+MCD-00564,2026-08-05 06:18:34,MCD | BTIG,price_target_usd,,350.00,2026-08-05T06:18:34,new
+MCD-00565,2026-08-05 08:16:47,MCD | Keybanc,price_target_usd,,305.00,2026-08-05T08:16:47,new
+MCD-00566,2026-08-05 12:44:21,MCD | RBC Capital,price_target_usd,,295.00,2026-08-05T12:44:21,new
+MCD-00567,2026-08-05 15:27:40,MCD | Citigroup,price_target_usd,,345.00,2026-08-05T15:27:40,new
+MCD-00568,2026-08-06 10:11:08,MCD | Guggenheim,price_target_usd,,290.00,2026-08-06T10:11:08,new
+MCD-00569,2026-08-26 09:25:03,MCD | Argus Research,price_target_usd,,310.00,2026-08-26T09:25:03,new
+MCD-00570,2026-09-11 06:13:45,MCD | TD Cowen,price_target_usd,,282.00,2026-09-11T06:13:45,new
+MCD-00571,2026-09-14 11:09:44,MCD | Morgan Stanley,price_target_usd,,308.00,2026-09-14T11:09:44,new
+MCD-00572,2026-09-14 13:52:51,MCD | Deutsche Bank,price_target_usd,,300.00,2026-09-14T13:52:51,new
+MCD-00573,2026-09-15 10:37:08,MCD | RBC Capital,price_target_usd,,290.00,2026-09-15T10:37:08,new
+MCD-00575,2026-09-16 06:01:57,MCD | BTIG,price_target_usd,,350.00,2026-09-16T06:01:57,new
+MCD-00576,2026-09-17 09:36:50,MCD | Citigroup,price_target_usd,,310.00,2026-09-17T09:36:50,new
+MCD-00577,2026-09-21 09:25:37,MCD | UBS,price_target_usd,,320.00,2026-09-21T09:25:37,new
+MCD-00578,2026-09-24 05:30:22,MCD | TD Cowen,price_target_usd,,270.00,2026-09-24T05:30:22,new
+MCD-00579,2026-09-24 06:04:02,MCD | BTIG,price_target_usd,,295.00,2026-09-24T06:04:02,inferred
+MCD-00580,2026-09-24 09:34:04,MCD | RBC Capital,price_target_usd,,285.00,2026-09-24T09:34:04,new
+MCD-00581,2026-09-24 10:18:01,MCD | Evercore ISI Group,price_target_usd,,300.00,2026-09-24T10:18:01,new
+MCD-00582,2026-09-24 11:13:21,MCD | JP Morgan,price_target_usd,,260.00,2026-09-24T11:13:21,new
+MCD-00583,2026-09-24 13:47:44,MCD | BMO Capital,price_target_usd,,310.00,2026-09-24T13:47:44,new
+MCD-00584,2026-09-28 10:02:32,MCD | Morgan Stanley,price_target_usd,,297.00,2026-09-28T10:02:32,new
+MCD-00585,2026-09-28 13:46:01,MCD | Melius Research,price_target_usd,,230.00,2026-09-28T13:46:01,new
+MCD-00586,2026-09-29 09:57:18,MCD | JP Morgan,price_target_usd,,250.00,2026-09-29T09:57:18,new
+MCD-00587,2026-10-05 08:56:13,MCD | Guggenheim,price_target_usd,,250.00,2026-10-05T08:56:13,new
+MCD-00588,2026-10-05 10:05:41,MCD | Wells Fargo,price_target_usd,,270.00,2026-10-05T10:05:41,new
+MCD-00589,2026-10-06 08:46:29,MCD | Keybanc,price_target_usd,,280.00,2026-10-06T08:46:29,new
+MCD-00590,2026-10-08 08:39:54,MCD | Bernstein,price_target_usd,,250.00,2026-10-08T08:39:54,new
+MCD-00591,2026-10-20 14:59:02,MCD | Citigroup,price_target_usd,,295.00,2026-10-20T14:59:02,new
+MCD-00592,2026-10-26 06:12:11,MCD | BTIG,price_target_usd,,295.00,2026-10-26T06:12:11,new
+MCD-00593,2026-10-30 07:40:05,MCD | Mizuho,price_target_usd,,260.00,2026-10-30T07:40:05,new
+MCD-00594,2026-11-04 15:48:46,MCD | TD Cowen,price_target_usd,,285.00,2026-11-04T15:48:46,new
+MCD-00595,2026-11-05 04:36:31,MCD | BTIG,price_target_usd,,305.00,2026-11-05T04:36:31,new
+MCD-00596,2026-11-05 09:12:07,MCD | Wells Fargo,price_target_usd,,300.00,2026-11-05T09:12:07,new
+MCD-00597,2026-11-05 10:19:33,MCD | Keybanc,price_target_usd,,307.00,2026-11-05T10:19:33,new
+MCD-00598,2026-11-05 12:17:44,MCD | Bernstein,price_target_usd,,280.00,2026-11-05T12:17:44,new
+MCD-00598,2026-11-05 12:17:44,MCD | Bernstein,rating,,Market Perform,2026-11-05T12:17:44,new
+MCD-00599,2026-11-05 14:33:51,MCD | RBC Capital,price_target_usd,,300.00,2026-11-05T14:33:51,new
+MCD-00600,2026-11-05 16:27:04,MCD | Citigroup,price_target_usd,,315.00,2026-11-05T16:27:04,new
+MCD-00601,2026-11-05 17:45:23,MCD | JP Morgan,price_target_usd,,270.00,2026-11-05T17:45:23,new
+MCD-00602,2026-11-05 21:13:52,MCD | Freedom Broker,price_target_usd,,298.00,2026-11-05T21:13:52,new
+MCD-00602,2026-11-05 21:13:52,MCD | Freedom Broker,rating,,Hold,2026-11-05T21:13:52,new
+MCD-00603,2026-11-06 11:42:45,MCD | Argus Research,price_target_usd,,320.00,2026-11-06T11:42:45,new

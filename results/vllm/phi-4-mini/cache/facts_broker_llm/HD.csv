@@ -1,0 +1,214 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+HD-00298,2024-02-26 10:53:48,HD | RBC Capital,price_target_usd,,377.00,2024-02-26 10:53:48,new
+HD-00299,2024-03-04 08:21:31,HD | TD Cowen,price_target_usd,,440.00,2024-03-04 08:21:31,new
+HD-00300,2024-03-19 07:58:55,HD | Mizuho,rating,,Buy,2024-03-19 07:58:55,new
+HD-00300,2024-03-19 07:58:55,HD | Mizuho,price_target_usd,,415.00,2024-03-19 07:58:55,new
+HD-00301,2024-03-26 11:41:51,HD | Evercore ISI Group,price_target_usd,,420.00,2024-03-26 11:41:51,new
+HD-00302,2024-04-01 06:12:22,HD | B of A Securities,price_target_usd,,425.00,2024-04-01 06:12:22,new
+HD-00303,2024-04-01 08:01:12,HD | Wedbush,price_target_usd,,410.00,2024-04-01 08:01:12,new
+HD-00304,2024-04-01 08:31:43,HD | Telsey Advisory Group,price_target_usd,,360.00,2024-04-01 08:31:43,new
+HD-00305,2024-04-01 08:42:47,HD | Truist Securities,price_target_usd,,417.00,2024-04-01 08:42:47,new
+HD-00306,2024-04-01 09:27:15,HD | DA Davidson,price_target_usd,,370.00,2024-04-01 09:27:15,new
+HD-00307,2024-04-02 10:34:59,HD | Evercore ISI Group,price_target_usd,,425.00,2024-04-02 10:34:59,new
+HD-00309,2024-04-03 11:42:54,HD | HSBC,price_target_usd,,323.00,2024-04-03 11:42:54,new
+HD-00310,2024-04-05 10:12:39,HD | Guggenheim,price_target_usd,,390.00,2024-04-05 10:12:39,new
+HD-00311,2024-04-16 10:52:12,HD | Evercore ISI Group,price_target_usd,,415.00,2024-04-16 10:52:12,new
+HD-00313,2024-05-07 09:13:48,HD | Telsey Advisory Group,price_target_usd,,360.00,2024-05-07 09:13:48,new
+HD-00314,2024-05-07 13:57:34,HD | Citigroup,price_target_usd,-,395.00,2024-05-07 13:57:34,new
+HD-00315,2024-05-09 11:51:01,HD | Wells Fargo,price_target_usd,-,400.00,2024-05-09 11:51:01,new
+HD-00316,2024-05-10 10:04:35,HD | Wedbush,price_target_usd,,410.00,2024-05-10 10:04:35,new
+HD-00317,2024-05-14 08:01:23,HD | Telsey Advisory Group,price_target_usd,,360.00,2024-05-14 08:01:23,new
+HD-00318,2024-05-14 08:55:07,HD | Evercore ISI Group,price_target_usd,,420.00,2024-05-14 08:55:07,new
+HD-00320,2024-05-15 09:57:22,HD | Truist Securities,price_target_usd,-,406.00,2024-05-15 09:57:22,new
+HD-00321,2024-05-15 10:12:13,HD | UBS,price_target_usd,,400.00,2024-05-15 10:12:13,new
+HD-00322,2024-05-15 12:40:29,HD | Raymond James,rating,,Market Perform,2024-05-15 12:40:29,new
+HD-00323,2024-05-15 13:07:41,HD | TD Cowen,price_target_usd,,420.00,2024-05-15 13:07:41,new
+HD-00324,2024-05-15 13:24:43,HD | HSBC,price_target_usd,,318.00,2024-05-15 13:24:43,new
+HD-00325,2024-06-26 08:29:01,HD | DA Davidson,price_target_usd,,395.00,2024-06-26 08:29:01,new
+HD-00326,2024-07-15 09:48:07,HD | Stifel,price_target_usd,,380.00,2024-07-15 09:48:07,new
+HD-00327,2024-08-01 09:44:23,HD | Truist Securities,price_target_usd,,396.00,2024-08-01 09:44:23,new
+HD-00328,2024-08-05 07:32:41,HD | JP Morgan,price_target_usd,,400.00,2024-08-05 07:32:41,new
+HD-00329,2024-08-07 06:54:34,HD | Telsey Advisory Group,price_target_usd,,360.00,2024-08-07 06:54:34,new
+HD-00330,2024-08-13 09:53:45,HD | Telsey Advisory Group,price_target_usd,,360.00,2024-08-13 09:53:45,new
+HD-00331,2024-08-14 08:05:57,HD | Stifel,price_target_usd,,375.00,2024-08-14 08:05:57,new
+HD-00332,2024-08-14 08:19:38,HD | Evercore ISI Group,price_target_usd,,400.00,2024-08-14 08:19:38,new
+HD-00333,2024-08-14 09:05:02,HD | UBS,price_target_usd,,425.00,2024-08-14 09:05:02,new
+HD-00334,2024-08-14 10:14:56,HD | Truist Securities,price_target_usd,-,395.00,2024-08-14 10:14:56,new
+HD-00335,2024-08-14 11:21:55,HD | Loop Capital,price_target_usd,,330.00,2024-08-14 11:21:55,new
+HD-00336,2024-08-14 12:13:35,HD | RBC Capital,price_target_usd,,363.00,2024-08-14 12:13:35,new
+HD-00337,2024-09-03 10:05:55,HD | DA Davidson,price_target_usd,,430.00,2024-09-03 10:05:55,new
+HD-00338,2024-09-12 08:17:06,HD | Telsey Advisory Group,price_target_usd,,360.00,2024-09-12 08:17:06,new
+HD-00339,2024-09-17 08:57:49,HD | Loop Capital,price_target_usd,,360.00,2024-09-17 08:57:49,new
+HD-00340,2024-09-23 13:47:00,HD | Melius Research,rating,,Buy,2024-09-23 13:47:00,new
+HD-00340,2024-09-23 13:47:00,HD | Melius Research,price_target_usd,,420.00,2024-09-23 13:47:00,new
+HD-00341,2024-09-24 08:43:44,HD | Oppenheimer,price_target_usd,,400.00,2024-09-24 08:43:44,new
+HD-00341,2024-09-24 08:43:44,HD | Oppenheimer,rating,,Perform,2024-09-24 08:43:44,new
+HD-00342,2024-09-30 09:19:39,HD | Piper Sandler,price_target_usd,,455.00,2024-09-30 09:19:39,new
+HD-00343,2024-10-02 06:53:28,HD | Gordon Haskett,price_target_usd,,450.00,2024-10-02 06:53:28,new
+HD-00344,2024-10-04 13:06:38,HD | Guggenheim,price_target_usd,,450.00,2024-10-04 13:06:38,new
+HD-00345,2024-10-09 07:34:29,HD | Loop Capital,rating,,Buy,2024-10-09 07:34:29,new
+HD-00345,2024-10-09 07:34:29,HD | Loop Capital,price_target_usd,,460.00,2024-10-09 07:34:29,new
+HD-00346,2024-10-14 10:28:23,HD | Truist Securities,price_target_usd,,455.00,2024-10-14 10:28:23,new
+HD-00347,2024-10-21 13:22:55,HD | Morgan Stanley,price_target_usd,,450.00,2024-10-21 13:22:55,new
+HD-00348,2024-10-22 06:00:04,HD | Bernstein,rating,,Market Perform,2024-10-22 06:00:04,new
+HD-00348,2024-10-22 06:00:04,HD | Bernstein,price_target_usd,,451.00,2024-10-22 06:00:04,new
+HD-00349,2024-10-25 13:16:55,HD | DA Davidson,price_target_usd,,466.00,2024-10-25 13:16:55,new
+HD-00350,2024-10-28 08:34:53,HD | TD Cowen,price_target_usd,,460.00,2024-10-28 08:34:53,new
+HD-00351,2024-11-05 09:07:52,HD | Barclays,price_target_usd,,420.00,2024-11-05 09:07:52,new
+HD-00352,2024-11-06 10:02:13,HD | Wells Fargo,price_target_usd,,430.00,2024-11-06 10:02:13,new
+HD-00353,2024-11-07 09:33:12,HD | Truist Securities,price_target_usd,,459.00,2024-11-07 09:33:12,new
+HD-00354,2024-11-08 07:52:43,HD | Telsey Advisory Group,rating,,Outperform,2024-11-08 07:52:43,new
+HD-00354,2024-11-08 07:52:43,HD | Telsey Advisory Group,price_target_usd,,455.00,2024-11-08 07:52:43,new
+HD-00355,2024-11-11 11:12:50,HD | Stifel,price_target_usd,,400.00,2024-11-11 11:12:50,new
+HD-00356,2024-11-11 11:37:02,HD | RBC Capital,price_target_usd,,413.00,2024-11-11 11:37:02,new
+HD-00357,2024-11-12 12:06:46,HD | Telsey Advisory Group,price_target_usd,,455.00,2024-11-12 12:06:46,new
+HD-00358,2024-11-13 07:05:36,HD | Mizuho,price_target_usd,,440.00,2024-11-13 07:05:36,new
+HD-00359,2024-11-13 08:16:16,HD | B of A Securities,price_target_usd,,450.00,2024-11-13 08:16:16,new
+HD-00360,2024-11-13 11:37:02,HD | Evercore ISI Group,price_target_usd,,430.00,2024-11-13 11:37:02,new
+HD-00361,2024-11-13 12:05:17,HD | Truist Securities,price_target_usd,,465.00,2024-11-13 12:05:17,new
+HD-00362,2024-11-13 18:48:02,HD | Telsey Advisory Group,price_target_usd,,455.00,2024-11-13 18:48:02,new
+HD-00363,2024-11-14 09:27:53,HD | Stifel,price_target_usd,,405.00,2024-11-14 09:27:53,new
+HD-00364,2025-02-10 06:55:45,HD | JP Morgan,price_target_usd,,475.00,2025-02-10 06:55:45,new
+HD-00365,2025-02-11 12:28:56,HD | Truist Securities,price_target_usd,,467.00,2025-02-11 12:28:56,new
+HD-00366,2025-02-13 10:08:27,HD | Wells Fargo,price_target_usd,,450.00,2025-02-13 10:08:27,new
+HD-00367,2025-02-14 05:10:49,HD | Mizuho,price_target_usd,,450.00,2025-02-14 05:10:49,new
+HD-00368,2025-02-19 11:24:09,HD | Bernstein,price_target_usd,,422.00,2025-02-19 11:24:09,new
+HD-00369,2025-02-20 06:15:03,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-02-20 06:15:03,new
+HD-00370,2025-02-25 08:42:30,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-02-25 08:42:30,new
+HD-00371,2025-02-26 05:22:22,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-02-26 05:22:22,new
+HD-00372,2025-02-26 06:54:26,HD | Loop Capital,price_target_usd,,430.00,2025-02-26 06:54:26,new
+HD-00373,2025-02-26 08:55:17,HD | Truist Securities,price_target_usd,,437.00,2025-02-26 08:55:17,new
+HD-00374,2025-02-26 10:48:46,HD | Wedbush,price_target_usd,,440.00,2025-02-26 10:48:46,new
+HD-00375,2025-02-26 11:05:47,HD | Guggenheim,price_target_usd,,450.00,2025-02-26 11:05:47,new
+HD-00376,2025-02-26 12:10:10,HD | RBC Capital,price_target_usd,,424.00,2025-02-26 12:10:10,new
+HD-00377,2025-02-26 12:46:06,HD | Piper Sandler,price_target_usd,,435.00,2025-02-26 12:46:06,new
+HD-00378,2025-02-26 13:06:13,HD | Baird,price_target_usd,,430.00,2025-02-26 13:06:13,new
+HD-00378,2025-02-26 13:06:13,HD | Baird,rating,,Outperform,2025-02-26 13:06:13,new
+HD-00379,2025-02-27 11:18:12,HD | Bernstein,price_target_usd,,421.00,2025-02-27 11:18:12,new
+HD-00380,2025-03-24 07:56:35,HD | Piper Sandler,price_target_usd,,418.00,2025-03-24 07:56:35,note
+HD-00381,2025-04-08 10:36:31,HD | Truist Securities,price_target_usd,,391.00,2025-04-08 10:36:31,new
+HD-00382,2025-05-05 10:24:28,HD | Morgan Stanley,price_target_usd,,410.00,2025-05-05 10:24:28,new
+HD-00383,2025-05-05 11:09:14,HD | Bernstein,price_target_usd,,380.00,2025-05-05 11:09:14,new
+HD-00384,2025-05-06 10:29:15,HD | JP Morgan,price_target_usd,2025-05-06 10:29:15,410.00,2025-05-06 10:29:15,new
+HD-00385,2025-05-06 13:53:05,HD | Truist Securities,price_target_usd,2025-05-06 13:53:05,393.00,2025-05-06 13:53:05,new
+HD-00386,2025-05-08 09:04:18,HD | Wells Fargo,price_target_usd,2025-05-08 09:04:18,420.00,2025-05-08 09:04:18,new
+HD-00387,2025-05-20 05:34:36,HD | Morgan Stanley,price_target_usd,2025-05-20 05:34:36,415.00,2025-05-20 05:34:36,new
+HD-00388,2025-05-20 07:57:15,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-05-20 07:57:15,new
+HD-00389,2025-05-21 07:39:36,HD | Bernstein,price_target_usd,,398.00,2025-05-21 07:39:36,new
+HD-00390,2025-05-21 08:38:23,HD | Guggenheim,price_target_usd,,450.00,2025-05-21 08:38:23,new
+HD-00391,2025-05-21 09:08:18,HD | TD Securities,price_target_usd,,470.00,2025-05-21 09:08:18,new
+HD-00392,2025-05-21 10:05:58,HD | Baird,price_target_usd,,425.00,2025-05-21 10:05:58,new
+HD-00393,2025-05-21 11:09:14,HD | Truist Securities,price_target_usd,,417.00,2025-05-21 11:09:14,new
+HD-00394,2025-05-21 11:15:11,HD | Mizuho,price_target_usd,,435.00,2025-05-21 11:15:11,new
+HD-00395,2025-05-21 12:22:41,HD | Stifel,price_target_usd,,425.00,2025-05-21 12:22:41,new
+HD-00395,2025-05-21 12:22:41,HD | Stifel,rating,,Buy,2025-05-21 12:22:41,new
+HD-00396,2025-05-21 13:12:48,HD | JP Morgan,price_target_usd,,418.00,2025-05-21 13:12:48,new
+HD-00397,2025-06-20 16:14:48,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-06-20 16:14:48,new
+HD-00398,2025-06-30 14:14:29,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-06-30 14:14:29,new
+HD-00399,2025-07-01 17:43:38,HD | DA Davidson,price_target_usd,,450.00,2025-07-01 17:43:38,new
+HD-00400,2025-08-13 09:42:31,HD | Truist Securities,price_target_usd,,433.00,2025-08-13 09:42:31,new
+HD-00401,2025-08-13 17:42:45,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-08-13 17:42:45,new
+HD-00402,2025-08-18 12:44:49,HD | Stifel,price_target_usd,,432.00,2025-08-18 12:44:49,new
+HD-00403,2025-08-19 07:55:27,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-08-19 07:55:27,new
+HD-00404,2025-08-19 09:18:38,HD | DA Davidson,price_target_usd,,450.00,2025-08-19 09:18:38,new
+HD-00405,2025-08-20 07:50:23,HD | Baird,price_target_usd,,450.00,2025-08-20 07:50:23,new
+HD-00406,2025-08-20 10:23:43,HD | DA Davidson,price_target_usd,,475.00,2025-08-20 10:23:43,new
+HD-00407,2025-08-20 10:54:21,HD | JP Morgan,price_target_usd,,452.00,2025-08-20 10:54:21,new
+HD-00408,2025-08-20 12:11:13,HD | Morgan Stanley,price_target_usd,,430.00,2025-08-20 12:11:13,new
+HD-00409,2025-08-20 13:40:35,HD | Mizuho,price_target_usd,,450.00,2025-08-20 13:40:35,new
+HD-00410,2025-08-20 14:39:37,HD | Wells Fargo,price_target_usd,,450.00,2025-08-20 14:39:37,new
+HD-00411,2025-11-07 11:19:48,HD | Bernstein,price_target_usd,,406.00,2025-11-07 11:19:48,new
+HD-00412,2025-11-07 12:05:43,HD | Truist Securities,price_target_usd,,421.00,2025-11-07 12:05:43,new
+HD-00413,2025-11-10 12:45:22,HD | JP Morgan,price_target_usd,,444.00,2025-11-10 12:45:22,new
+HD-00414,2025-11-11 09:15:14,HD | Wells Fargo,price_target_usd,,435.00,2025-11-11 09:15:14,new
+HD-00415,2025-11-13 09:16:00,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-11-13 09:16:00,new
+HD-00416,2025-11-14 06:13:12,HD | Stifel,price_target_usd,,370.00,2025-11-14 06:13:12,new
+HD-00416,2025-11-14 06:13:12,HD | Stifel,rating,,Hold,2025-11-14 06:13:12,new
+HD-00417,2025-11-18 08:02:48,HD | Telsey Advisory Group,price_target_usd,,455.00,2025-11-18 08:02:48,new
+HD-00418,2025-11-18 14:45:20,HD | DA Davidson,price_target_usd,,475.00,2025-11-18 14:45:20,new
+HD-00419,2025-11-19 06:36:14,HD | B of A Securities,price_target_usd,,430.00,2025-11-19 06:36:14,new
+HD-00420,2025-11-19 07:24:36,HD | Baird,price_target_usd,,415.00,2025-11-19 07:24:36,new
+HD-00421,2025-11-19 07:38:42,HD | Morgan Stanley,price_target_usd,,395.00,2025-11-19 07:38:42,new
+HD-00422,2025-11-19 07:48:40,HD | Telsey Advisory Group,price_target_usd,,430.00,2025-11-19 07:48:40,new
+HD-00423,2025-11-19 08:24:38,HD | Goldman Sachs,price_target_usd,,406.00,2025-11-19 08:24:38,new
+HD-00424,2025-11-19 09:00:30,HD | Wells Fargo,price_target_usd,,400.00,2025-11-19 09:00:30,new
+HD-00425,2025-11-19 09:28:00,HD | DA Davidson,price_target_usd,,430.00,2025-11-19 09:28:00,new
+HD-00426,2025-11-19 10:11:09,HD | UBS,price_target_usd,,445.00,2025-11-19 10:11:09,new
+HD-00427,2025-11-19 10:35:50,HD | Evercore ISI Group,price_target_usd,,425.00,2025-11-19 10:35:50,new
+HD-00428,2025-11-19 11:07:52,HD | RBC Capital,price_target_usd,,376.00,2025-11-19 11:07:52,new
+HD-00429,2025-11-21 14:55:06,HD | Citigroup,price_target_usd,,407.00,2025-11-21 14:55:06,new
+HD-00430,2025-12-01 11:14:32,HD | Stifel,price_target_usd,,350.00,2025-12-01 11:14:32,new
+HD-00431,2025-12-05 12:48:21,HD | Oppenheimer,price_target_usd,,405.00,2025-12-05 12:48:21,new
+HD-00432,2025-12-10 07:23:07,HD | Piper Sandler,price_target_usd,,441.00,2025-12-10 07:23:07,new
+HD-00433,2025-12-10 07:35:32,HD | Telsey Advisory Group,price_target_usd,,410.00,2025-12-10 07:35:32,new
+HD-00434,2025-12-10 09:27:57,HD | RBC Capital,price_target_usd,,366.00,2025-12-10 09:27:57,new
+HD-00435,2025-12-10 11:30:13,HD | UBS,price_target_usd,,430.00,2025-12-10 11:30:13,new
+HD-00436,2025-12-10 14:54:09,HD | Wells Fargo,price_target_usd,,395.00,2025-12-10 14:54:09,new
+HD-00437,2025-12-10 15:28:31,HD | DA Davidson,price_target_usd,,407.00,2025-12-10 15:28:31,new
+HD-00438,2026-01-15 12:32:05,HD | Morgan Stanley,price_target_usd,,412.00,2026-01-15 12:32:05,new
+HD-00439,2026-01-20 13:01:54,HD | TD Cowen,price_target_usd,,450.00,2026-01-20 13:01:54,new
+HD-00440,2026-02-12 14:26:12,HD | Citigroup,price_target_usd,,450.00,2026-02-12 14:26:12,new
+HD-00441,2026-02-18 07:12:39,HD | Telsey Advisory Group,price_target_usd,,410.00,2026-02-18 07:12:39,new
+HD-00442,2026-02-18 13:55:20,HD | Bernstein,price_target_usd,,381.00,2026-02-18 13:55:20,new
+HD-00443,2026-02-19 10:52:52,HD | RBC Capital,price_target_usd,,363.00,2026-02-19 10:52:52,new
+HD-00444,2026-02-23 07:19:22,HD | Piper Sandler,price_target_usd,,422.00,2026-02-23 07:19:22,new
+HD-00445,2026-02-24 15:10:14,HD | DA Davidson,price_target_usd,,445.00,2026-02-24 15:10:14,new
+HD-00446,2026-02-24 15:12:04,HD | Jefferies,price_target_usd,,454.00,2026-02-24 15:12:04,new
+HD-00447,2026-02-25 08:01:46,HD | Telsey Advisory Group,price_target_usd,,435.00,2026-02-25 08:01:46,new
+HD-00448,2026-02-25 09:06:56,HD | Wells Fargo,price_target_usd,,420.00,2026-02-25 09:06:56,new
+HD-00449,2026-02-25 09:15:23,HD | Guggenheim,price_target_usd,,425.00,2026-02-25 09:15:23,new
+HD-00450,2026-02-25 10:40:15,HD | Morgan Stanley,price_target_usd,,420.00,2026-02-25 10:40:15,new
+HD-00451,2026-02-25 11:05:22,HD | RBC Capital,price_target_usd,,377.00,2026-02-25 11:05:22,new
+HD-00452,2026-02-25 11:52:47,HD | Bernstein,price_target_usd,,390.00,2026-02-25 11:52:47,new
+HD-00453,2026-02-25 15:13:43,HD | UBS,price_target_usd,,450.00,2026-02-25 15:13:43,new
+HD-00454,2026-03-24 13:50:56,HD | BNP Paribas,price_target_usd,,348.00,2026-03-24 13:50:56,new
+HD-00455,2026-03-25 10:58:07,HD | Telsey Advisory Group,price_target_usd,,435.00,2026-03-25 10:58:07,new
+HD-00456,2026-05-12 14:05:03,HD | Citigroup,price_target_usd,,400.00,2026-05-12 14:05:03,new
+HD-00457,2026-05-13 11:20:06,HD | Truist Securities,price_target_usd,,394.00,2026-05-13 11:20:06,new
+HD-00458,2026-05-14 07:44:51,HD | Bernstein,price_target_usd,,365.00,2026-05-14 07:44:51,new
+HD-00459,2026-05-14 10:06:26,HD | Wells Fargo,price_target_usd,,375.00,2026-05-14 10:06:26,new
+HD-00460,2026-05-15 10:57:57,HD | Piper Sandler,price_target_usd,,421.00,2026-05-15 10:57:57,new
+HD-00461,2026-05-18 09:15:06,HD | Oppenheimer,price_target_usd,,310.00,2026-05-18 09:15:06,new
+HD-00462,2026-05-18 12:37:48,HD | Stifel,price_target_usd,,320.00,2026-05-18 12:37:48,new
+HD-00463,2026-05-19 11:10:47,HD | DA Davidson,price_target_usd,,445.00,2026-05-19 11:10:47,new
+HD-00464,2026-05-19 13:35:26,HD | Jefferies,price_target_usd,,361.00,2026-05-19 13:35:26,new
+HD-00465,2026-05-19 14:40:40,HD | BNP Paribas,price_target_usd,,325.00,2026-05-19 14:40:40,new
+HD-00466,2026-05-20 07:21:24,HD | Mizuho,price_target_usd,,385.00,2026-05-20 07:21:24,new
+HD-00467,2026-05-20 08:13:13,HD | Baird,price_target_usd,,380.00,2026-05-20 08:13:13,new
+HD-00468,2026-05-20 09:25:58,HD | Wells Fargo,price_target_usd,,360.00,2026-05-20 09:25:58,new
+HD-00469,2026-05-20 10:17:15,HD | Morgan Stanley,price_target_usd,,400.00,2026-05-20 10:17:15,new
+HD-00470,2026-05-20 10:51:50,HD | Guggenheim,price_target_usd,,425.00,2026-05-20 10:51:50,new
+HD-00471,2026-05-20 11:10:47,HD | DA Davidson,price_target_usd,,445.00,2026-05-20 11:10:47,new
+HD-00472,2026-05-20 11:18:42,HD | DA Davidson,price_target_usd,,377.00,2026-05-20 11:18:42,new
+HD-00473,2026-05-20 11:33:27,HD | RBC Capital,price_target_usd,,340.00,2026-05-20 11:33:27,new
+HD-00474,2026-05-20 12:29:24,HD | TD Cowen,price_target_usd,,375.00,2026-05-20 12:29:24,new
+HD-00475,2026-05-20 12:37:48,HD | UBS,price_target_usd,,430.00,2026-05-20 12:37:48,new
+HD-00476,2026-05-20 13:06:44,HD | Truist Securities,price_target_usd,,369.00,2026-05-20 13:06:44,new
+HD-00477,2026-05-20 13:24:23,HD | Piper Sandler,price_target_usd,,378.00,2026-05-20 13:24:23,new
+HD-00478,2026-06-23 12:54:38,HD | Wolfe Research,rating,,Peer Perform,2026-06-23 12:54:38,new
+HD-00479,2026-07-20 08:52:16,HD | Guggenheim,price_target_usd,,425.00,2026-07-20 08:52:16,new
+HD-00481,2026-08-11 08:54:04,HD | Wells Fargo,price_target_usd,,400.00,2026-08-11 08:54:04,new
+HD-00482,2026-08-12 09:54:25,HD | RBC Capital,price_target_usd,,343.00,2026-08-12 09:54:25,new
+HD-00483,2026-08-17 07:47:41,HD | Stifel,price_target_usd,,340.00,2026-08-17 07:47:41,new
+HD-00484,2026-08-19 09:34:00,HD | Guggenheim,price_target_usd,,425.00,2026-08-19 09:34:00,new
+HD-00485,2026-08-19 09:56:32,HD | RBC Capital,price_target_usd,,342.00,2026-08-19 09:56:32,new
+HD-00486,2026-08-19 10:16:29,HD | Argus Research,price_target_usd,,400.00,2026-08-19 10:16:29,new
+HD-00487,2026-08-19 10:25:05,HD | Keybanc,price_target_usd,,425.00,2026-08-19 10:25:05,new
+HD-00488,2026-08-19 10:45:13,HD | Truist Securities,price_target_usd,,373.00,2026-08-19 10:45:13,new
+HD-00489,2026-08-19 11:12:59,HD | UBS,price_target_usd,,420.00,2026-08-19 11:12:59,new
+HD-00490,2026-08-19 11:50:44,HD | DA Davidson,price_target_usd,,377.00,2026-08-19 11:50:44,new
+HD-00491,2026-08-19 13:57:48,HD | Mizuho,price_target_usd,,390.00,2026-08-19 13:57:48,new
+HD-00492,2026-09-09 09:58:05,HD | Bernstein,price_target_usd,,344.00,2026-09-09 09:58:05,new
+HD-00493,2026-10-26 12:27:58,HD | Stifel,price_target_usd,,322.00,2026-10-26 12:27:58,new
+HD-00494,2026-11-09 15:33:21,HD | JP Morgan,price_target_usd,,400.00,2026-11-09 15:33:21,new
+HD-00495,2026-11-10 09:36:57,HD | Bernstein,price_target_usd,,357.00,2026-11-10 09:36:57,new
+HD-00496,2026-11-16 08:01:46,HD | Zelman & Assoc,rating,,Underperform,2026-11-16 08:01:46,new
+HD-00497,2026-11-18 07:57:47,HD | Bernstein,price_target_usd,,360.00,2026-11-18 07:57:47,new
+HD-00498,2026-11-18 08:22:52,HD | RBC Capital,price_target_usd,,334.00,2026-11-18 08:22:52,new
+HD-00499,2026-11-18 08:32:43,HD | TD Cowen,price_target_usd,,410.00,2026-11-18 08:32:43,new
+HD-00500,2026-11-18 08:41:12,HD | Truist Securities,price_target_usd,,376.00,2026-11-18 08:41:12,new
+HD-00501,2026-11-18 08:55:32,HD | Evercore ISI Group,price_target_usd,,385.00,2026-11-18 08:55:32,new
+HD-00502,2026-11-18 10:30:42,HD | Mizuho,price_target_usd,,385.00,2026-11-18 10:30:42,new
+HD-00503,2026-11-18 10:37:14,HD | UBS,price_target_usd,,417.00,2026-11-18 10:37:14,new
+HD-00504,2026-11-18 13:05:34,HD | DA Davidson,price_target_usd,,390.00,2026-11-18 13:05:34,new
+HD-00505,2026-11-18 15:13:40,HD | Telsey Advisory Group,price_target_usd,,400.00,2026-11-18 15:13:40,new

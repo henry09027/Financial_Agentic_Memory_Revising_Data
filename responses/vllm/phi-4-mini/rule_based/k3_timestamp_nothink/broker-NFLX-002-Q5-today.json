@@ -1,0 +1,43 @@
+{
+ "qid": "broker-NFLX-002-Q5-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "NFLX",
+ "qtype": "count_changes",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many times did brokers raise or lower their NFLX price target between 1 December 2025 and the as-of time?",
+ "gold": "84",
+ "peek_answers": "",
+ "trap_answers": "103|93|112",
+ "gold_evidence": "NFLX-00777|NFLX-00787|NFLX-00836|NFLX-00882|NFLX-00808|NFLX-00866|NFLX-00792|NFLX-00834|NFLX-00848|NFLX-00861|NFLX-00878|NFLX-00807|NFLX-00849|NFLX-00877|NFLX-00852|NFLX-00776|NFLX-00790|NFLX-00806|NFLX-00813|NFLX-00819|NFLX-00845|NFLX-00868|NFLX-00793|NFLX-00865|NFLX-00843|NFLX-00854|NFLX-00874|NFLX-00802|NFLX-00810|NFLX-00824|NFLX-00831|NFLX-00846|NFLX-00879|NFLX-00786|NFLX-00795|NFLX-00815|NFLX-00830|NFLX-00862|NFLX-00799|NFLX-00825|NFLX-00850|NFLX-00875|NFLX-00788|NFLX-00812|NFLX-00851|NFLX-00797|NFLX-00842|NFLX-00881|NFLX-00798|NFLX-00853|NFLX-00829|NFLX-00880|NFLX-00791|NFLX-00818|NFLX-00840|NFLX-00858|NFLX-00872|NFLX-00784|NFLX-00814|NFLX-00841|NFLX-00864|NFLX-00870|NFLX-00789|NFLX-00823|NFLX-00832|NFLX-00839|NFLX-00860|NFLX-00873|NFLX-00794|NFLX-00844|NFLX-00855|NFLX-00828|NFLX-00837|NFLX-00869|NFLX-00783|NFLX-00800|NFLX-00838|NFLX-00780|NFLX-00856|NFLX-00801|NFLX-00857|NFLX-00803|NFLX-00883|NFLX-00804",
+ "answer": "2",
+ "cited": "NFLX-00866|NFLX-00884",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.011904761904761904,
+ "in_tokens": 870,
+ "out_tokens": 32,
+ "seconds": 0.0342,
+ "retrieved": "NFLX-00866|NFLX-00867|NFLX-00884",
+ "n_dropped": 0,
+ "created": "2026-11-21T17:21:51",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many times did brokers raise or lower their NFLX price target between 1 December 2025 and the as-of time?\n\nEvidence:\n[NFLX-00866] 2026-10-21 07:05 | B of A Securities maintained Buy on NFLX, and lowered its price target from $105.00 to $90.00.\n[NFLX-00867] 2026-10-21 07:15 | Needham downgraded NFLX from Buy to Hold.\n[NFLX-00884] 2026-10-22 13:06 | Wolfe Research downgraded NFLX from Outperform to Peer Perform."
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 2, \"evidence_ids\": [\"NFLX-00866\", \"NFLX-00884\"]}\n```",
+ "raw_output": "```json\n{\"answer\": 2, \"evidence_ids\": [\"NFLX-00866\", \"NFLX-00884\"]}\n```"
+}

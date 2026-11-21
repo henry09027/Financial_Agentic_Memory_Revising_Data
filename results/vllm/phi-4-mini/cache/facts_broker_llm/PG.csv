@@ -1,0 +1,232 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+PG-00109,2021-08-02 10:35:27,PG | Truist Securities,price_target_usd,,145.00,2021-08-02 10:35:27,new
+PG-00110,2021-09-07 08:18:12,PG | Morgan Stanley,price_target_usd,,161.00,2021-09-07 08:18:12,new
+PG-00111,2021-10-04 08:39:47,PG | Deutsche Bank,price_target_usd,,163.00,2021-10-04 08:39:47,new
+PG-00116,2022-03-22 07:24:32,PG | Truist Securities,price_target_usd,,175.00,2022-03-22 07:24:32,new
+PG-00117,2022-03-30 06:19:09,PG | JP Morgan,price_target_usd,,165.00,2022-03-30 06:19:09,new
+PG-00117,2022-03-30 06:19:09,PG | JP Morgan,rating,,Neutral,2022-03-30 06:19:09,new
+PG-00118,2022-04-01 08:17:37,PG | Barclays,price_target_usd,,167.00,2022-04-01 08:17:37,new
+PG-00119,2022-04-08 04:46:44,PG | Raymond James,rating,,Outperform,2022-04-08 04:46:44,new
+PG-00119,2022-04-08 04:46:44,PG | Raymond James,price_target_usd,,175.00,2022-04-08 04:46:44,new
+PG-00120,2022-04-21 07:17:45,PG | Credit Suisse,price_target_usd,,150.00,2022-04-21 07:17:45,new
+PG-00121,2022-04-21 07:21:29,PG | Raymond James,price_target_usd,,180.00,2022-04-21 07:21:29,new
+PG-00122,2022-04-21 08:28:52,PG | Deutsche Bank,price_target_usd,,177.00,2022-04-21 08:28:52,new
+PG-00123,2022-04-22 09:12:42,PG | Barclays,price_target_usd,,176.00,2022-04-22 09:12:42,new
+PG-00124,2022-05-23 07:00:25,PG | Barclays,price_target_usd,,157.00,2022-05-23 07:00:25,new
+PG-00125,2022-06-01 06:56:22,PG | Wells Fargo,price_target_usd,,170.00,2022-06-01 06:56:22,new
+PG-00127,2022-06-21 09:41:46,PG | Deutsche Bank,price_target_usd,,157.00,2022-06-21 09:41:46,new
+PG-00128,2022-07-21 09:53:00,PG | JP Morgan,price_target_usd,,156.00,2022-07-21 09:53:00,new
+PG-00129,2022-07-25 07:48:27,PG | Raymond James,price_target_usd,,175.00,2022-07-25 07:48:27,new
+PG-00130,2022-08-01 10:28:47,PG | Truist Securities,price_target_usd,,160.00,2022-08-01 10:28:47,new
+PG-00131,2022-08-02 08:13:31,PG | Barclays,price_target_usd,,154.00,2022-08-02 08:13:31,new
+PG-00132,2022-10-03 07:41:52,PG | Wells Fargo,price_target_usd,,150.00,2022-10-03 07:41:52,new
+PG-00133,2022-10-04 09:49:19,PG | Morgan Stanley,price_target_usd,,160.00,2022-10-04 09:49:19,new
+PG-00134,2022-10-10 08:06:52,PG | Goldman Sachs,rating,,Neutral,2022-10-10 08:06:52,new
+PG-00136,2022-10-12 07:45:33,PG | Raymond James,price_target_usd,,155.00,2022-10-12 07:45:33,new
+PG-00137,2022-10-13 10:30:10,PG | JP Morgan,price_target_usd,,140.00,2022-10-13 10:30:10,new
+PG-00138,2022-10-14 07:49:18,PG | Credit Suisse,price_target_usd,,140.00,2022-10-14 07:49:18,new
+PG-00140,2022-10-20 10:33:24,PG | Barclays,price_target_usd,,145.00,2022-10-20 10:33:24,new
+PG-00141,2022-11-15 08:10:37,PG | Credit Suisse,price_target_usd,,130.00,2022-11-15 08:10:37,new
+PG-00142,2022-11-16 07:28:44,PG | Wells Fargo,price_target_usd,,155.00,2022-11-16 07:28:44,new
+PG-00143,2022-11-21 05:09:59,PG | Raymond James,price_target_usd,,165.00,2022-11-21 05:09:59,new
+PG-00144,2022-11-22 05:13:52,PG | Wolfe Research,rating,,Outperform,2022-11-22 05:13:52,new
+PG-00144,2022-11-22 05:13:52,PG | Wolfe Research,price_target_usd,,156.00,2022-11-22 05:13:52,new
+PG-00145,2022-12-06 09:48:21,PG | Deutsche Bank,price_target_usd,,162.00,2022-12-06 09:48:21,new
+PG-00146,2023-01-03 08:51:59,PG | Wells Fargo,price_target_usd,,168.00,2023-01-03 08:51:59,new
+PG-00147,2023-01-13 07:26:18,PG | Raymond James,price_target_usd,,170.00,2023-01-13 07:26:18,new
+PG-00148,2023-01-13 08:37:18,PG | JP Morgan,price_target_usd,,150.00,2023-01-13 08:37:18,new
+PG-00149,2023-01-20 07:17:07,PG | Wells Fargo,price_target_usd,,162.00,2023-01-20 07:17:07,new
+PG-00150,2023-01-20 07:43:52,PG | Stifel,price_target_usd,,147.00,2023-01-20 07:43:52,new
+PG-00151,2023-01-23 07:50:38,PG | Barclays,price_target_usd,,158.00,2023-01-23 07:50:38,new
+PG-00152,2023-02-17 05:24:19,PG | Citigroup,rating,,Buy,2023-02-17 05:24:19,new
+PG-00152,2023-02-17 05:24:19,PG | Citigroup,price_target_usd,,160.00,2023-02-17 05:24:19,new
+PG-00153,2023-03-01 09:13:39,PG | UBS,rating,,Buy,2023-03-01 09:13:39,new
+PG-00153,2023-03-01 09:13:39,PG | UBS,price_target_usd,,163.00,2023-03-01 09:13:39,new
+PG-00154,2023-03-03 05:24:14,PG | JP Morgan,rating,,Overweight,2023-03-03 05:24:14,new
+PG-00154,2023-03-03 05:24:14,PG | JP Morgan,price_target_usd,,155.00,2023-03-03 05:24:14,new
+PG-00155,2023-03-20 12:58:06,PG | Deutsche Bank,price_target_usd,,156.00,2023-03-20 12:58:06,new
+PG-00156,2023-04-06 09:20:37,PG | UBS,price_target_usd,,170.00,2023-04-06 09:20:37,new
+PG-00157,2023-04-14 06:05:18,PG | Barclays,price_target_usd,,160.00,2023-04-14 06:05:18,new
+PG-00157,2023-04-14 06:05:18,PG | Barclays,rating,,Overweight,2023-04-14 06:05:18,new
+PG-00158,2023-04-24 07:48:05,PG | UBS,price_target_usd,,180.00,2023-04-24 07:48:05,new
+PG-00159,2023-04-24 08:08:55,PG | Morgan Stanley,price_target_usd,,174.00,2023-04-24 08:08:55,new
+PG-00159,2023-04-24 08:08:55,PG | Morgan Stanley,rating,,Overweight,2023-04-24 08:08:55,new
+PG-00160,2023-04-24 08:10:34,PG | RBC Capital,price_target_usd,,165.00,2023-04-24 08:10:34,new
+PG-00161,2023-04-24 08:17:59,PG | Raymond James,price_target_usd,,175.00,2023-04-24 08:17:59,new
+PG-00162,2023-04-24 08:43:40,PG | Jefferies,price_target_usd,,175.00,2023-04-24 08:43:40,new
+PG-00163,2023-04-24 08:45:38,PG | Evercore ISI Group,price_target_usd,,170.00,2023-04-24 08:45:38,new
+PG-00164,2023-04-24 13:26:04,PG | Citigroup,price_target_usd,,177.00,2023-04-24 13:26:04,new
+PG-00165,2023-04-26 06:20:03,PG | Barclays,price_target_usd,,167.00,2023-04-26 06:20:03,new
+PG-00166,2023-05-18 06:20:46,PG | Truist Securities,price_target_usd,,155.00,2023-05-18 06:20:46,new
+PG-00166,2023-05-18 06:20:46,PG | Truist Securities,rating,,Hold,2023-05-18 06:20:46,new
+PG-00167,2023-07-11 10:40:12,PG | Citigroup,price_target_usd,,177.00,2023-07-11 10:40:12,new
+PG-00168,2023-07-20 07:27:16,PG | Barclays,price_target_usd,,160.00,2023-07-20 07:27:16,new
+PG-00169,2023-07-25 08:44:19,PG | Morgan Stanley,price_target_usd,,174.00,2023-07-25 08:44:19,reiterate
+PG-00170,2023-07-31 05:58:46,PG | Deutsche Bank,price_target_usd,,173.00,2023-07-31 05:58:46,new
+PG-00171,2023-07-31 07:11:03,PG | Wells Fargo,price_target_usd,,170.00,2023-07-31 07:11:03,new
+PG-00172,2023-07-31 10:31:53,PG | RBC Capital,price_target_usd,,167.00,2023-07-31 10:31:53,new
+PG-00173,2023-08-01 06:35:10,PG | Barclays,price_target_usd,,166.00,2023-08-01 06:35:10,new
+PG-00174,2023-08-01 08:26:03,PG | B of A Securities,price_target_usd,,175.00,2023-08-01 08:26:03,new
+PG-00175,2023-08-01 11:48:47,PG | Morgan Stanley,price_target_usd,,174.00,2023-08-01 11:48:47,reiterate
+PG-00176,2023-09-08 08:16:18,PG | William Blair,rating,,Market Perform,2023-09-08 08:16:18,new
+PG-00177,2023-09-22 07:15:35,PG | HSBC,rating,,Buy,2023-09-22 07:15:35,new
+PG-00177,2023-09-22 07:15:35,PG | HSBC,price_target_usd,,179.00,2023-09-22 07:15:35,new
+PG-00178,2023-10-12 06:56:03,PG | Bernstein,price_target_usd,,153.00,2023-10-12 06:56:03,new
+PG-00179,2023-10-12 12:15:32,PG | JP Morgan,price_target_usd,,169.00,2023-10-12 12:15:32,new
+PG-00180,2023-10-12 15:08:39,PG | Barclays,price_target_usd,,154.00,2023-10-12 15:08:39,new
+PG-00181,2023-10-16 14:57:51,PG | Stifel,price_target_usd,,151.00,2023-10-16 14:57:51,new
+PG-00182,2023-10-19 08:56:31,PG | Stifel,price_target_usd,,155.00,2023-10-19 08:56:31,new
+PG-00183,2023-10-19 09:34:18,PG | Wells Fargo,price_target_usd,,162.00,2023-10-19 09:34:18,new
+PG-00184,2023-10-20 13:16:45,PG | DZ Bank,price_target_usd,,155.00,2023-10-20 13:16:45,new
+PG-00185,2023-11-13 06:16:08,PG | Jefferies,rating,,Buy,2023-11-13 06:16:08,new
+PG-00185,2023-11-13 06:16:08,PG | Jefferies,price_target_usd,,177.00,2023-11-13 06:16:08,new
+PG-00186,2024-01-16 12:49:36,PG | Barclays,price_target_usd,,160.00,2024-01-16 12:49:36,new
+PG-00187,2024-01-18 14:39:59,PG | JP Morgan,price_target_usd,,162.00,2024-01-18 14:39:59,new
+PG-00188,2024-01-24 07:29:59,PG | Raymond James,price_target_usd,,175.00,2024-01-24 07:29:59,new
+PG-00189,2024-01-24 09:52:39,PG | Wells Fargo,price_target_usd,,170.00,2024-01-24 09:52:39,new
+PG-00190,2024-01-24 10:17:27,PG | UBS,price_target_usd,,178.00,2024-01-24 10:17:27,new
+PG-00191,2024-01-24 10:52:42,PG | Stifel,price_target_usd,,157.00,2024-01-24 10:52:42,new
+PG-00192,2024-01-24 11:28:31,PG | RBC Capital,price_target_usd,,157.00,2024-01-24 11:28:31,new
+PG-00193,2024-01-25 09:52:49,PG | Barclays,price_target_usd,,165.00,2024-01-25 09:52:49,new
+PG-00194,2024-01-31 14:43:46,PG | Truist Securities,price_target_usd,,160.00,2024-01-31 14:43:46,new
+PG-00195,2024-03-11 08:05:56,PG | Truist Securities,rating,,Buy,2024-03-11 08:05:56,new
+PG-00195,2024-03-11 08:05:56,PG | Truist Securities,price_target_usd,,175.00,2024-03-11 08:05:56,new
+PG-00196,2024-04-03 13:18:13,PG | Deutsche Bank,price_target_usd,,172.00,2024-04-03 13:18:13,new
+PG-00197,2024-04-12 10:30:46,PG | Barclays,price_target_usd,,168.00,2024-04-12 10:30:46,new
+PG-00198,2024-04-22 08:13:04,PG | Jefferies,price_target_usd,,182.00,2024-04-22 08:13:04,new
+PG-00199,2024-04-22 11:37:51,PG | Deutsche Bank,price_target_usd,,171.00,2024-04-22 11:37:51,new
+PG-00200,2024-04-23 11:15:58,PG | Barclays,price_target_usd,,170.00,2024-04-23 11:15:58,new
+PG-00201,2024-04-25 12:02:35,PG | Argus Research,price_target_usd,,185.00,2024-04-25 12:02:35,new
+PG-00202,2024-06-24 06:12:33,PG | Exane BNP Paribas,rating,,Outperform,2024-06-24 06:12:33,new
+PG-00202,2024-06-24 06:12:33,PG | Exane BNP Paribas,price_target_usd,,187.00,2024-06-24 06:12:33,new
+PG-00203,2024-07-10 21:43:42,PG | Citigroup,price_target_usd,,190.00,2024-07-10 21:43:42,new
+PG-00204,2024-07-17 10:55:32,PG | Deutsche Bank,price_target_usd,,176.00,2024-07-17 10:55:32,new
+PG-00205,2024-07-18 09:54:54,PG | Evercore ISI Group,price_target_usd,,183.00,2024-07-18 09:54:54,new
+PG-00206,2024-07-19 14:14:59,PG | Barclays,price_target_usd,,174.00,2024-07-19 14:14:59,new
+PG-00207,2024-07-22 08:07:23,PG | Stifel,price_target_usd,,161.00,2024-07-22 08:07:23,new
+PG-00208,2024-07-22 11:44:23,PG | JP Morgan,price_target_usd,,181.00,2024-07-22 11:44:23,new
+PG-00209,2024-07-23 05:55:31,PG | TD Cowen,rating,,Buy,2024-07-23 05:55:31,new
+PG-00209,2024-07-23 05:55:31,PG | TD Cowen,price_target_usd,,189.00,2024-07-23 05:55:31,new
+PG-00210,2024-07-24 06:55:14,PG | Jefferies,rating,,Buy,2023-11-13 06:16:08,new
+PG-00210,2024-07-24 06:55:14,PG | Jefferies,price_target_usd,,175.00,2024-07-24 06:55:14,new
+PG-00211,2024-07-31 11:28:02,PG | RBC Capital,price_target_usd,,164.00,2024-07-31 11:28:02,new
+PG-00212,2024-07-31 14:43:32,PG | JP Morgan,price_target_usd,,179.00,2024-07-31 14:43:32,new
+PG-00213,2024-08-01 12:39:48,PG | Barclays,price_target_usd,,163.00,2024-08-01 12:39:48,new
+PG-00214,2024-08-29 13:04:21,PG | DZ Bank,rating,,Buy,2024-08-29 13:04:21,new
+PG-00214,2024-08-29 13:04:21,PG | DZ Bank,price_target_usd,,190.00,2024-08-29 13:04:21,new
+PG-00215,2024-09-19 11:08:27,PG | JP Morgan,price_target_usd,,186.00,2024-09-19 11:08:27,new
+PG-00216,2024-09-24 08:31:32,PG | Piper Sandler,rating,,Neutral,2024-09-24 08:31:32,new
+PG-00216,2024-09-24 08:31:32,PG | Piper Sandler,price_target_usd,,174.00,2024-09-24 08:31:32,new
+PG-00217,2024-09-30 09:33:26,PG | Barclays,rating,,Equal-Weight,2024-09-30 09:33:26,new
+PG-00217,2024-09-30 09:33:26,PG | Barclays,price_target_usd,,163.00,2024-09-30 09:33:26,new
+PG-00218,2024-10-09 18:13:25,PG | DA Davidson,rating,,Neutral,2024-10-09 18:13:25,new
+PG-00218,2024-10-09 18:13:25,PG | DA Davidson,price_target_usd,,159.00,2024-10-09 18:13:25,new
+PG-00219,2024-10-15 11:17:41,PG | DA Davidson,price_target_usd,,159.00,2024-10-15 11:17:41,new
+PG-00220,2024-10-21 07:42:28,PG | DA Davidson,price_target_usd,,160.00,2024-10-21 07:42:28,new
+PG-00221,2024-10-21 09:54:20,PG | RBC Capital,price_target_usd,,164.00,2024-10-21 09:54:20,reiterate
+PG-00222,2024-10-21 10:08:14,PG | Evercore ISI Group,price_target_usd,,183.00,2024-10-21 10:08:14,new
+PG-00223,2024-10-21 13:20:32,PG | Morgan Stanley,price_target_usd,,191.00,2024-10-21 13:20:32,new
+PG-00224,2024-11-20 12:20:15,PG | DA Davidson,price_target_usd,,160.00,2024-11-20 12:20:15,new
+PG-00225,2024-11-22 09:29:15,PG | Wells Fargo,price_target_usd,,190.00,2024-11-22 09:29:15,new
+PG-00226,2024-11-25 06:22:39,PG | DA Davidson,rating,,Buy,2024-11-25 06:22:39,new
+PG-00226,2024-11-25 06:22:39,PG | DA Davidson,price_target_usd,,209.00,2024-11-25 06:22:39,new
+PG-00227,2024-12-27 06:04:42,PG | DA Davidson,price_target_usd,,209.00,2024-12-27 06:04:42,new
+PG-00228,2025-01-07 09:59:03,PG | Wells Fargo,price_target_usd,,176.00,2025-01-07 09:59:03,new
+PG-00229,2025-01-16 09:25:28,PG | JP Morgan,price_target_usd,,181.00,2025-01-16 09:25:28,new
+PG-00230,2025-01-16 15:40:27,PG | UBS,price_target_usd,,189.00,2025-01-16 15:40:27,new
+PG-00231,2025-01-17 11:34:31,PG | Stifel,price_target_usd,,161.00,2025-01-17 11:34:31,new
+PG-00232,2025-01-17 12:17:18,PG | Barclays,price_target_usd,,155.00,2025-01-17 12:17:18,new
+PG-00233,2025-01-22 06:02:59,PG | Piper Sandler,price_target_usd,,173.00,2025-01-22 06:02:59,new
+PG-00234,2025-01-23 06:35:06,PG | DA Davidson,price_target_usd,,209.00,2025-01-23 06:35:06,new
+PG-00235,2025-01-23 08:08:33,PG | Barclays,price_target_usd,,159.00,2025-01-23 08:08:33,new
+PG-00236,2025-01-23 09:08:35,PG | Wells Fargo,price_target_usd,,180.00,2025-01-23 09:08:35,new
+PG-00237,2025-01-23 10:22:29,PG | Stifel,price_target_usd,,165.00,2025-01-23 10:22:29,new
+PG-00238,2025-01-23 12:16:31,PG | RBC Capital,price_target_usd,,164.00,2025-01-23 12:16:31,reiterate
+PG-00239,2025-02-24 08:24:19,PG | Piper Sandler,price_target_usd,,172.00,2025-02-24 08:24:19,new
+PG-00240,2025-03-27 09:45:10,PG | Barclays,price_target_usd,,165.00,2025-03-27 09:45:10,new
+PG-00241,2025-04-03 08:57:26,PG | Truist Securities,price_target_usd,,185.00,2025-04-03 08:57:26,new
+PG-00242,2025-04-11 12:20:26,PG | JP Morgan,price_target_usd,,172.00,2025-04-11 12:20:26,new
+PG-00243,2025-04-22 10:09:49,PG | RBC Capital,price_target_usd,,164.00,2025-04-22 10:09:49,new
+PG-00244,2025-04-25 08:51:44,PG | B of A Securities,price_target_usd,,180.00,2025-04-25 08:51:44,new
+PG-00245,2025-04-25 10:17:39,PG | Citigroup,price_target_usd,,181.00,2025-04-25 10:17:39,new
+PG-00246,2025-04-25 12:04:51,PG | Morgan Stanley,price_target_usd,,180.00,2025-04-25 12:04:51,new
+PG-00247,2025-04-25 12:22:15,PG | Raymond James,price_target_usd,,185.00,2025-04-25 12:22:15,new
+PG-00248,2025-04-25 12:24:42,PG | RBC Capital,rating,,Outperform,2025-04-25 12:24:42,new
+PG-00248,2025-04-25 12:24:42,PG | RBC Capital,price_target_usd,,177.00,2025-04-25 12:24:42,new
+PG-00249,2025-04-25 12:25:24,PG | Truist Securities,price_target_usd,,180.00,2025-04-25 12:25:24,new
+PG-00250,2025-05-05 13:19:27,PG | Piper Sandler,price_target_usd,,164.00,2025-05-05 13:19:27,new
+PG-00251,2025-06-03 10:00:09,PG | Evercore ISI Group,price_target_usd,,190.00,2025-06-03 10:00:09,new
+PG-00252,2025-07-14 07:28:31,PG | Evercore ISI Group,rating,,In-Line,2025-07-14 07:28:31,new
+PG-00252,2025-07-14 07:28:31,PG | Evercore ISI Group,price_target_usd,,170.00,2025-07-14 07:28:31,new
+PG-00253,2025-07-15 15:40:47,PG | Barclays,price_target_usd,,161.00,2025-07-15 15:40:47,new
+PG-00254,2025-07-17 10:37:13,PG | UBS,price_target_usd,,180.00,2025-07-17 10:37:13,new
+PG-00255,2025-07-25 08:44:57,PG | JP Morgan,rating,,Neutral,2025-07-25 08:44:57,new
+PG-00255,2025-07-25 08:44:57,PG | JP Morgan,price_target_usd,,170.00,2025-07-25 08:44:57,new
+PG-00256,2025-07-30 09:31:06,PG | Wells Fargo,price_target_usd,,173.00,2025-07-30 09:31:06,new
+PG-00257,2025-07-31 18:11:26,PG | Barclays,price_target_usd,,164.00,2025-07-31 18:11:26,new
+PG-00258,2025-08-15 12:46:47,PG | BNP Paribas,rating,,Outperform,2025-08-15 12:46:47,new
+PG-00258,2025-08-15 12:46:47,PG | BNP Paribas,price_target_usd,,177.00,2025-08-15 12:46:47,new
+PG-00259,2025-09-25 09:28:03,PG | Wells Fargo,price_target_usd,,170.00,2025-09-25 09:28:03,new
+PG-00260,2025-10-01 11:16:51,PG | Barclays,price_target_usd,,153.00,2025-10-01 11:16:51,new
+PG-00260,2025-10-01 11:16:51,PG | Barclays,rating,,Equal-Weight,2025-10-01 11:16:51,new
+PG-00261,2025-10-08 12:26:03,PG | UBS,price_target_usd,,176.00,2025-10-08 12:26:03,new
+PG-00262,2025-10-08 14:03:49,PG | B of A Securities,price_target_usd,,174.00,2025-10-08 14:03:49,new
+PG-00263,2025-10-10 09:25:22,PG | JP Morgan,price_target_usd,,163.00,2025-10-10 09:25:22,new
+PG-00264,2025-10-20 13:30:01,PG | Raymond James,price_target_usd,,175.00,2025-10-20 13:30:01,new
+PG-00265,2025-10-27 10:26:17,PG | JP Morgan,price_target_usd,,165.00,2025-10-27 10:26:17,new
+PG-00266,2025-10-29 15:24:57,PG | Freedom Broker,price_target_usd,,169.00,2025-10-29 15:24:57,new
+PG-00267,2025-12-17 08:17:27,PG | Jefferies,rating,,Buy,2025-12-17 08:17:27,new
+PG-00267,2025-12-17 08:17:27,PG | Jefferies,price_target_usd,,179.00,2025-12-17 08:17:27,new
+PG-00268,2025-12-18 11:55:34,PG | JP Morgan,price_target_usd,,157.00,2025-12-18 11:55:34,new
+PG-00269,2026-01-05 14:43:17,PG | Wells Fargo,price_target_usd,,158.00,2026-01-05 14:43:17,new
+PG-00270,2026-01-08 13:38:11,PG | TD Cowen,price_target_usd,,150.00,2026-01-08 13:38:11,new
+PG-00271,2026-01-14 13:48:02,PG | UBS,price_target_usd,,161.00,2026-01-14 13:48:02,new
+PG-00272,2026-01-23 07:19:25,PG | JP Morgan,rating,,Overweight,2026-01-23 07:19:25,new
+PG-00272,2026-01-23 07:19:25,PG | JP Morgan,price_target_usd,,165.00,2026-01-23 07:19:25,new
+PG-00273,2026-01-23 09:33:36,PG | Wells Fargo,price_target_usd,,165.00,2026-01-23 09:33:36,new
+PG-00274,2026-01-23 14:36:42,PG | UBS,price_target_usd,,170.00,2026-01-23 14:36:42,new
+PG-00275,2026-01-27 08:08:43,PG | TD Cowen,price_target_usd,2026-01-27,156.00,2026-01-27 08:08:43,new
+PG-00275,2026-01-27 08:08:43,PG | TD Cowen,rating,2026-01-27,Hold,2026-01-27 08:08:43,new
+PG-00276,2026-03-30 13:31:46,PG | Deutsche Bank,price_target_usd,2026-03-30,162.00,2026-03-30 13:31:46,new
+PG-00277,2026-04-07 15:01:49,PG | UBS,price_target_usd,2026-04-07,166.00,2026-04-07 15:01:49,new
+PG-00278,2026-04-08 09:57:04,PG | Piper Sandler,price_target_usd,2026-04-08,142.00,2026-04-08 09:57:04,new
+PG-00279,2026-04-08 14:36:20,PG | Wells Fargo,price_target_usd,,158.00,2026-04-08 14:36:20,new
+PG-00280,2026-04-10 06:46:07,PG | B of A Securities,price_target_usd,,167.00,2026-04-10 06:46:07,new
+PG-00281,2026-04-14 15:56:51,PG | Barclays,price_target_usd,,146.00,2026-04-14 15:56:51,new
+PG-00282,2026-04-17 11:47:24,PG | JP Morgan,price_target_usd,,162.00,2026-04-17 11:47:24,new
+PG-00283,2026-04-27 09:01:54,PG | Evercore ISI Group,price_target_usd,,162.00,2026-04-07 15:01:49,new
+PG-00284,2026-04-27 10:27:43,PG | Wells Fargo,price_target_usd,,164.00,2026-04-27 10:27:43,new
+PG-00285,2026-04-27 13:25:12,PG | TD Cowen,price_target_usd,,150.00,2026-04-27 13:25:12,new
+PG-00286,2026-04-27 15:10:27,PG | UBS,price_target_usd,,172.00,2026-04-27 15:10:27,new
+PG-00287,2026-06-11 10:53:49,PG | Bernstein,rating,,Market Perform,2026-06-11 10:53:49,new
+PG-00287,2026-06-11 10:53:49,PG | Bernstein,price_target_usd,,156.00,2026-06-11 10:53:49,new
+PG-00288,2026-07-10 06:44:14,PG | B of A Securities,price_target_usd,,166.00,2026-07-10 06:44:14,new
+PG-00289,2026-07-16 15:23:56,PG | JP Morgan,price_target_usd,,162.00,2026-07-16 15:23:56,new
+PG-00290,2026-07-21 09:53:00,PG | Barclays,price_target_usd,,152.00,2026-07-21 09:53:00,new
+PG-00291,2026-07-30 14:54:56,PG | Citigroup,price_target_usd,,170.00,2026-07-30 14:54:56,new
+PG-00292,2026-07-30 15:55:40,PG | HSBC,rating,,Hold,2026-07-30 15:55:40,new
+PG-00292,2026-07-30 15:55:40,PG | HSBC,price_target_usd,,149.00,2026-07-30 15:55:40,new
+PG-00293,2026-08-07 11:46:51,PG | Argus Research,rating,,Hold,2026-08-07 11:46:51,new
+PG-00294,2026-09-30 08:36:37,PG | TD Cowen,price_target_usd,,150.00,2026-09-30 08:36:37,reiterate
+PG-00295,2026-10-06 09:12:28,PG | RBC Capital,price_target_usd,2026-10-06,166.00,2026-10-06 09:12:28,new
+PG-00296,2026-10-06 12:15:01,PG | Evercore ISI Group,rating,,Outperform,2026-10-06 12:15:01,new
+PG-00296,2026-10-06 12:15:01,PG | Evercore ISI Group,price_target_usd,,166.00,2026-10-06 12:15:01,new
+PG-00297,2026-10-14 14:22:58,PG | Citigroup,price_target_usd,,180.00,2026-10-14 14:22:58,new
+PG-00298,2026-10-20 09:15:34,PG | RBC Capital,rating,,Outperform,2026-10-06 09:12:28,new
+PG-00298,2026-10-20 09:15:34,PG | RBC Capital,price_target_usd,,166.00,2026-10-06 09:12:28,new
+PG-00299,2026-10-23 08:01:23,PG | Morgan Stanley,price_target_usd,,185.00,2026-10-23 08:01:23,new
+PG-00300,2026-10-23 09:01:02,PG | TD Cowen,price_target_usd,,166.00,2026-10-23 09:01:02,new
+PG-00301,2026-10-23 09:48:03,PG | TD Cowen,price_target_usd,,180.00,2026-10-23 09:48:03,new
+PG-00302,2026-10-23 10:27:49,PG | RBC Capital,price_target_usd,,169.00,2026-10-23 10:27:49,new
+PG-00303,2026-10-23 11:53:48,PG | Evercore ISI Group,price_target_usd,,180.00,2026-10-23 11:53:48,new
+PG-00304,2026-10-23 12:19:37,PG | JP Morgan,price_target_usd,,180.00,2026-10-23 12:19:37,new
+PG-00305,2026-10-23 14:08:22,PG | BNP Paribas,price_target_usd,,189.00,2026-10-23 14:08:22,new
+PG-00306,2026-10-23 14:34:25,PG | Citigroup,price_target_usd,,187.00,2026-10-23 14:34:25,new
+PG-00307,2026-10-23 16:17:53,PG | UBS,price_target_usd,,190.00,2026-10-23 16:17:53,new
+PG-00308,2026-10-23 16:38:03,PG | Freedom Broker,rating,,Buy,2026-10-23 16:38:03,new
+PG-00308,2026-10-23 16:38:03,PG | Freedom Broker,price_target_usd,,176.00,2026-10-23 16:38:03,new
+PG-00309,2026-10-26 08:20:59,PG | Piper Sandler,price_target_usd,2026-10-26,167.00,2026-10-26 08:20:59,new
+PG-00310,2026-10-26 11:03:21,PG | Barclays,price_target_usd,,165.00,2026-10-26 11:03:21,new
+PG-00311,2026-11-18 09:32:11,PG | Wells Fargo,price_target_usd,,188.00,2026-11-18 09:32:11,new
+PG-00312,2026-11-20 09:42:30,PG | TD Cowen,price_target_usd,,180.00,2026-11-20 09:42:30,new
+PG-00313,2026-11-20 14:24:35,PG | TD Cowen,price_target_usd,,190.00,2026-11-20 14:24:35,new

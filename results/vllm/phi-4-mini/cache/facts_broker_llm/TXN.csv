@@ -1,0 +1,216 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+TXN-00374,2024-04-24 07:54:21,TXN | Mizuho,price_target_usd,2024-04-24,170.00,2024-04-24 07:54:21,new
+TXN-00374,2024-04-24 07:54:21,TXN | Mizuho,rating,2024-04-24,Neutral,2024-04-24 07:54:21,new
+TXN-00375,2024-04-24 07:56:25,TXN | Truist Securities,price_target_usd,,167.00,2024-04-24 07:56:25,new
+TXN-00376,2024-04-24 07:58:31,TXN | Rosenblatt,price_target_usd,,210.00,2024-04-24 07:58:31,new
+TXN-00377,2024-04-24 08:09:23,TXN | Stifel,price_target_usd,,172.00,2024-04-24 08:09:23,new
+TXN-00378,2024-04-24 08:15:14,TXN | Susquehanna,price_target_usd,,205.00,2024-04-24 08:15:14,new
+TXN-00379,2024-04-24 09:45:22,TXN | Goldman Sachs,price_target_usd,,157.00,2024-04-24 09:45:22,new
+TXN-00380,2024-04-24 09:54:43,TXN | Cantor Fitzgerald,price_target_usd,,180.00,2024-04-24 09:54:43,new
+TXN-00381,2024-04-24 10:01:36,TXN | Benchmark,price_target_usd,,210.00,2024-04-24 10:01:36,new
+TXN-00382,2024-04-24 11:09:51,TXN | JP Morgan,price_target_usd,,195.00,2024-04-24 11:09:51,new
+TXN-00383,2024-04-24 13:35:30,TXN | TD Cowen,price_target_usd,,175.00,2024-04-24 13:35:30,new
+TXN-00384,2024-04-24 13:37:23,TXN | Evercore ISI Group,price_target_usd,,225.00,2024-04-24 13:37:23,new
+TXN-00385,2024-04-25 07:15:50,TXN | Baird,price_target_usd,,175.00,2024-04-25 07:15:50,new
+TXN-00387,2024-05-13 14:38:56,TXN | Citigroup,price_target_usd,,185.00,2024-05-13 14:38:56,new
+TXN-00388,2024-05-15 08:12:14,TXN | Cantor Fitzgerald,price_target_usd,,210.00,2024-05-15 08:12:14,new
+TXN-00389,2024-05-16 10:23:04,TXN | Wells Fargo,rating,,Underweight,2024-05-16 10:23:04,new
+TXN-00389,2024-05-16 10:23:04,TXN | Wells Fargo,price_target_usd,,150.00,2024-05-16 10:23:04,new
+TXN-00390,2024-05-20 09:18:25,TXN | Barclays,price_target_usd,,190.00,2024-05-20 09:18:25,new
+TXN-00391,2024-06-21 09:13:23,TXN | Benchmark,price_target_usd,,230.00,2024-06-21 09:13:23,new
+TXN-00392,2024-06-24 11:03:39,TXN | Benchmark,price_target_usd,,230.00,2024-06-24 11:03:39,new
+TXN-00393,2024-07-11 12:48:18,TXN | Morgan Stanley,price_target_usd,,156.00,2024-07-11 12:48:18,new
+TXN-00393,2024-07-11 12:48:18,TXN | Morgan Stanley,rating,,Underweight,2024-07-11 12:48:18,new
+TXN-00394,2024-07-15 10:42:24,TXN | Citigroup,price_target_usd,,200.00,2024-07-15 10:42:24,new
+TXN-00395,2024-07-17 09:20:53,TXN | Susquehanna,price_target_usd,,250.00,2024-07-17 09:20:53,new
+TXN-00396,2024-07-18 11:54:15,TXN | Stifel,price_target_usd,,200.00,2024-07-18 11:54:15,new
+TXN-00397,2024-07-22 08:23:41,TXN | Rosenblatt,price_target_usd,,250.00,2024-07-22 08:23:41,new
+TXN-00398,2024-07-24 07:18:18,TXN | Rosenblatt,price_target_usd,,250.00,2024-07-24 07:18:18,new
+TXN-00399,2024-07-24 08:53:33,TXN | Truist Securities,price_target_usd,,203.00,2024-07-24 08:53:33,new
+TXN-00400,2024-07-24 09:20:40,TXN | Keybanc,price_target_usd,2024-07-24,250.00,2024-07-24 09:20:40,new
+TXN-00401,2024-07-24 10:12:38,TXN | Jefferies,price_target_usd,,185.00,2024-07-24 10:12:38,new
+TXN-00402,2024-07-24 10:27:12,TXN | Goldman Sachs,price_target_usd,,176.00,2024-07-24 10:27:12,new
+TXN-00403,2024-07-24 10:40:52,TXN | JP Morgan,price_target_usd,,230.00,2024-07-24 10:40:52,new
+TXN-00404,2024-07-24 11:20:07,TXN | Benchmark,price_target_usd,,230.00,2024-07-24 11:20:07,new
+TXN-00405,2024-07-24 12:37:38,TXN | Barclays,price_target_usd,,210.00,2024-07-24 12:37:38,new
+TXN-00405,2024-07-24 12:37:38,TXN | Barclays,rating,,Equal-Weight,2024-07-24 12:37:38,new
+TXN-00406,2024-07-24 13:08:29,TXN | Deutsche Bank,price_target_usd,,185.00,2024-07-24 13:08:29,new
+TXN-00407,2024-07-24 13:47:33,TXN | Baird,price_target_usd,,200.00,2024-07-24 13:47:33,new
+TXN-00408,2024-07-24 13:53:14,TXN | Cantor Fitzgerald,price_target_usd,,210.00,2024-07-24 13:53:14,new
+TXN-00409,2024-08-20 08:53:06,TXN | Evercore ISI Group,price_target_usd,2024-08-20,268.00,2024-08-20 08:53:06,new
+TXN-00410,2024-08-21 08:16:59,TXN | Citigroup,rating,,Buy,2024-08-21 08:16:59,new
+TXN-00410,2024-08-21 08:16:59,TXN | Citigroup,price_target_usd,,235.00,2024-08-21 08:16:59,new
+TXN-00411,2024-08-21 09:19:54,TXN | Cantor Fitzgerald,price_target_usd,,210.00,2024-08-21 09:19:54,new
+TXN-00412,2024-08-21 09:54:20,TXN | Truist Securities,price_target_usd,2024-08-21,198.00,2024-08-21 09:54:20,new
+TXN-00413,2024-10-08 15:15:32,TXN | Cantor Fitzgerald,price_target_usd,2024-10-08,200.00,2024-10-08 15:15:32,new
+TXN-00414,2024-10-14 09:48:08,TXN | Rosenblatt,price_target_usd,,250.00,2024-10-14 09:48:08,new
+TXN-00415,2024-10-21 09:08:29,TXN | Susquehanna,price_target_usd,2024-10-21,240.00,2024-10-21 09:08:29,new
+TXN-00416,2024-10-23 07:10:27,TXN | Benchmark,price_target_usd,,230.00,2024-10-23 07:10:27,new
+TXN-00417,2024-10-23 07:13:26,TXN | Rosenblatt,price_target_usd,,250.00,2024-10-23 07:13:26,new
+TXN-00418,2024-10-23 07:35:58,TXN | Baird,price_target_usd,,175.00,2024-10-23 07:35:58,new
+TXN-00419,2024-10-23 08:07:08,TXN | Morgan Stanley,price_target_usd,,167.00,2024-10-23 08:07:08,new
+TXN-00420,2024-10-23 09:09:30,TXN | Evercore ISI Group,price_target_usd,,298.00,2024-10-23 09:09:30,new
+TXN-00421,2024-10-23 09:14:41,TXN | Barclays,price_target_usd,,200.00,2024-10-23 09:14:41,new
+TXN-00422,2024-10-23 12:34:24,TXN | Cantor Fitzgerald,price_target_usd,,200.00,2024-10-23 12:34:24,new
+TXN-00423,2024-10-23 13:05:19,TXN | Truist Securities,price_target_usd,,190.00,2024-10-23 13:05:19,new
+TXN-00424,2024-10-23 13:33:44,TXN | B of A Securities,price_target_usd,,215.00,2024-10-23 13:33:44,new
+TXN-00425,2024-11-22 08:53:52,TXN | Wells Fargo,rating,,Equal-Weight,2024-11-22 08:53:52,new
+TXN-00425,2024-11-22 08:53:52,TXN | Wells Fargo,price_target_usd,,215.00,2024-11-22 08:53:52,new
+TXN-00426,2025-01-13 10:50:57,TXN | Wells Fargo,price_target_usd,,208.00,2025-01-13 10:50:57,inferred revision
+TXN-00427,2025-01-17 09:06:19,TXN | Wells Fargo,price_target_usd,-,200.00,2025-01-17 09:06:19,new
+TXN-00428,2025-01-21 07:30:47,TXN | Rosenblatt,price_target_usd,,250.00,2025-01-21 07:30:47,new
+TXN-00429,2025-01-24 07:21:37,TXN | Benchmark,price_target_usd,,230.00,2025-01-24 07:21:37,new
+TXN-00430,2025-01-24 09:47:40,TXN | Cantor Fitzgerald,price_target_usd,,200.00,2025-01-24 09:47:40,new
+TXN-00431,2025-01-24 10:19:42,TXN | Barclays,price_target_usd,,180.00,2025-01-24 10:19:42,new
+TXN-00432,2025-01-24 12:48:42,TXN | Mizuho,price_target_usd,,190.00,2025-01-24 12:48:42,new
+TXN-00433,2025-01-24 12:59:42,TXN | Truist Securities,price_target_usd,2025-01-24,195.00,2025-01-24 12:59:42,new
+TXN-00434,2025-01-24 14:05:43,TXN | Morgan Stanley,price_target_usd,,165.00,2025-01-24 14:05:43,new
+TXN-00435,2025-04-07 12:55:49,TXN | Baird,price_target_usd,,175.00,2025-04-07 12:55:49,new
+TXN-00436,2025-04-11 17:14:44,TXN | Citigroup,price_target_usd,2025-04-11,210.00,2025-04-11 17:14:44,new
+TXN-00437,2025-04-14 17:56:34,TXN | UBS,price_target_usd,2025-04-14,225.00,2025-04-14 17:56:34,new
+TXN-00438,2025-04-16 12:43:28,TXN | B of A Securities,price_target_usd,2025-04-16,176.00,2025-04-16 12:43:28,new
+TXN-00439,2025-04-17 09:59:34,TXN | Stifel,price_target_usd,,160.00,2025-04-17 09:59:34,new
+TXN-00440,2025-04-22 07:19:37,TXN | Barclays,price_target_usd,,125.00,2025-04-22 07:19:37,new
+TXN-00440,2025-04-22 07:19:37,TXN | Barclays,rating,,Underweight,2025-04-22 07:19:37,new
+TXN-00441,2025-04-24 06:59:20,TXN | Rosenblatt,price_target_usd,,216.00,2025-04-24 06:59:20,new
+TXN-00442,2025-04-24 09:26:35,TXN | Wells Fargo,price_target_usd,-,175.00,2025-04-24 09:26:35,new
+TXN-00443,2025-04-24 09:37:41,TXN | Keybanc,price_target_usd,,215.00,2025-04-24 09:37:41,new
+TXN-00444,2025-04-24 10:46:51,TXN | TD Securities,price_target_usd,,160.00,2025-04-24 10:46:51,new
+TXN-00445,2025-04-24 12:03:37,TXN | Truist Securities,price_target_usd,,171.00,2025-04-24 12:03:37,new
+TXN-00446,2025-04-24 12:14:08,TXN | JP Morgan,price_target_usd,,195.00,2025-04-24 12:14:08,new
+TXN-00447,2025-04-24 12:36:14,TXN | Cantor Fitzgerald,price_target_usd,,170.00,2025-04-24 12:36:14,new
+TXN-00448,2025-04-24 13:01:36,TXN | Morgan Stanley,price_target_usd,,148.00,2025-04-24 13:01:36,new
+TXN-00449,2025-04-24 13:09:01,TXN | UBS,price_target_usd,,215.00,2025-04-24 13:09:01,new
+TXN-00450,2025-04-24 13:51:46,TXN | Mizuho,price_target_usd,,170.00,2025-04-24 13:51:46,new
+TXN-00451,2025-04-24 14:51:11,TXN | Benchmark,price_target_usd,,200.00,2025-04-24 14:51:11,new
+TXN-00452,2025-04-30 09:03:52,TXN | Seaport Global,rating,,Sell,2025-04-30 09:03:52,new
+TXN-00452,2025-04-30 09:03:52,TXN | Seaport Global,price_target_usd,,130.00,2025-04-30 09:03:52,new
+TXN-00453,2025-06-09 14:12:38,TXN | Citigroup,price_target_usd,,220.00,2025-06-09 14:12:38,new
+TXN-00454,2025-06-16 10:33:05,TXN | Wells Fargo,price_target_usd,,190.00,2025-06-16 10:33:05,new
+TXN-00455,2025-06-18 10:40:54,TXN | Cantor Fitzgerald,price_target_usd,,200.00,2025-06-18 10:40:54,new
+TXN-00456,2025-06-25 11:13:08,TXN | TD Cowen,price_target_usd,,200.00,2025-06-25 11:13:08,new
+TXN-00457,2025-07-07 11:44:54,TXN | UBS,price_target_usd,,245.00,2025-07-07 11:44:54,new
+TXN-00458,2025-07-07 15:16:33,TXN | Citigroup,price_target_usd,,260.00,2025-07-07 15:16:33,new
+TXN-00459,2025-07-08 10:17:21,TXN | Mizuho,price_target_usd,,205.00,2025-07-08 10:17:21,new
+TXN-00460,2025-07-08 12:29:13,TXN | Keybanc,price_target_usd,,240.00,2025-07-08 12:29:13,new
+TXN-00461,2025-07-10 08:42:01,TXN | Goldman Sachs,rating,,Buy,2025-07-10 08:42:01,new
+TXN-00461,2025-07-10 08:42:01,TXN | Goldman Sachs,price_target_usd,,225.00,2025-07-10 08:42:01,new
+TXN-00462,2025-07-11 08:06:06,TXN | TD Cowen,price_target_usd,,245.00,2025-07-11 08:06:06,new
+TXN-00463,2025-07-14 09:46:37,TXN | UBS,price_target_usd,,255.00,2025-07-14 09:46:37,new
+TXN-00464,2025-07-16 12:17:25,TXN | Wells Fargo,price_target_usd,,215.00,2025-07-16 12:17:25,new
+TXN-00465,2025-07-18 10:14:50,TXN | Stifel,price_target_usd,,192.00,2025-07-18 10:14:50,new
+TXN-00466,2025-07-21 07:44:57,TXN | Seaport Global,rating,,Neutral,2025-07-21 07:44:57,new
+TXN-00467,2025-07-22 11:52:14,TXN | Susquehanna,price_target_usd,,250.00,2025-07-22 11:52:14,new
+TXN-00468,2025-07-23 06:41:47,TXN | Benchmark,price_target_usd,,220.00,2025-07-23 06:41:47,new
+TXN-00469,2025-07-23 07:15:52,TXN | Rosenblatt,price_target_usd,,245.00,2025-07-23 07:15:52,new
+TXN-00470,2025-07-23 08:59:53,TXN | Baird,price_target_usd,,220.00,2025-07-23 08:59:53,new
+TXN-00471,2025-07-23 09:40:11,TXN | Susquehanna,price_target_usd,,240.00,2025-07-23 09:40:11,new
+TXN-00472,2025-07-23 10:17:39,TXN | Wells Fargo,price_target_usd,,195.00,2025-07-23 10:17:39,new
+TXN-00473,2025-07-23 10:58:33,TXN | Truist Securities,price_target_usd,,196.00,2025-07-23 10:58:33,new
+TXN-00474,2025-07-23 11:16:17,TXN | JP Morgan,price_target_usd,,225.00,2025-07-23 11:16:17,new
+TXN-00475,2025-07-23 14:11:55,TXN | Mizuho,price_target_usd,,200.00,2025-07-23 14:11:55,new
+TXN-00476,2025-07-28 06:33:28,TXN | Wolfe Research,rating,,Outperform,2025-07-28 06:33:28,new
+TXN-00476,2025-07-28 06:33:28,TXN | Wolfe Research,price_target_usd,,230.00,2025-07-28 06:33:28,new
+TXN-00477,2025-09-05 07:25:27,TXN | B of A Securities,price_target_usd,,208.00,2025-09-05 07:25:27,new
+TXN-00478,2025-09-08 06:42:01,TXN | Benchmark,price_target_usd,,220.00,2025-09-08 06:42:01,new
+TXN-00479,2025-09-12 11:47:33,TXN | Morgan Stanley,price_target_usd,,192.00,2025-09-12 11:47:33,new
+TXN-00480,2025-10-13 14:18:11,TXN | B of A Securities,rating,,Underperform,2025-10-13 14:18:11,new
+TXN-00480,2025-10-13 14:18:11,TXN | B of A Securities,price_target_usd,,190.00,2025-10-13 14:18:11,new
+TXN-00481,2025-10-16 08:10:42,TXN | Citigroup,price_target_usd,,235.00,2025-10-16 08:10:42,new
+TXN-00482,2025-10-17 10:35:29,TXN | Stifel,price_target_usd,,185.00,2025-10-17 10:35:29,new
+TXN-00483,2025-10-20 09:25:30,TXN | Mizuho,rating,,Underperform,2025-10-20 09:25:30,new
+TXN-00483,2025-10-20 09:25:30,TXN | Mizuho,price_target_usd,,150.00,2025-10-20 09:25:30,new
+TXN-00484,2025-10-22 07:25:04,TXN | Goldman Sachs,price_target_usd,,200.00,2025-10-22 07:25:04,new
+TXN-00485,2025-10-22 08:56:13,TXN | Stifel,price_target_usd,,170.00,2025-10-22 08:56:13,new
+TXN-00486,2025-10-22 09:37:08,TXN | Susquehanna,price_target_usd,,200.00,2025-10-22 09:37:08,new
+TXN-00487,2025-10-22 09:37:18,TXN | Wells Fargo,price_target_usd,,170.00,2025-10-22 09:37:18,new
+TXN-00488,2025-10-22 10:09:49,TXN | Rosenblatt,price_target_usd,,200.00,2025-10-22 10:09:49,new
+TXN-00489,2025-10-22 10:25:36,TXN | Truist Securities,price_target_usd,,175.00,2025-10-22 10:25:36,new
+TXN-00490,2025-10-22 10:55:49,TXN | Cantor Fitzgerald,price_target_usd,,170.00,2025-10-22 10:55:49,new
+TXN-00491,2025-10-22 11:12:56,TXN | TD Cowen,price_target_usd,,200.00,2025-10-22 11:12:56,new
+TXN-00492,2025-10-22 12:13:51,TXN | JP Morgan,price_target_usd,,210.00,2025-10-22 12:13:51,new
+TXN-00493,2025-10-22 15:07:40,TXN | Jefferies,price_target_usd,,180.00,2025-10-22 15:07:40,new
+TXN-00494,2025-12-15 12:44:39,TXN | Goldman Sachs,price_target_usd,,156.00,2025-12-15 12:44:39,new
+TXN-00494,2025-12-15 12:44:39,TXN | Goldman Sachs,rating,,Sell,2025-12-15 12:44:39,new
+TXN-00495,2025-12-19 08:14:38,TXN | Truist Securities,price_target_usd,,195.00,2025-12-19 08:14:38,new
+TXN-00496,2026-01-15 09:47:29,TXN | Wells Fargo,price_target_usd,,185.00,2026-01-15 09:47:29,new
+TXN-00497,2026-01-16 10:48:19,TXN | Stifel,price_target_usd,,200.00,2026-01-16 10:48:19,new
+TXN-00498,2026-01-22 08:29:15,TXN | Susquehanna,price_target_usd,,225.00,2026-01-22 08:29:15,new
+TXN-00499,2026-01-28 07:17:15,TXN | Rosenblatt,price_target_usd,,240.00,2026-01-28 07:17:15,new
+TXN-00500,2026-01-28 07:20:35,TXN | Benchmark,price_target_usd,,250.00,2026-01-28 07:20:35,new
+TXN-00501,2026-01-28 07:48:27,TXN | Truist Securities,price_target_usd,,225.00,2026-01-28 07:48:27,new
+TXN-00502,2026-01-28 07:49:54,TXN | Deutsche Bank,price_target_usd,,205.00,2026-01-28 07:49:54,new
+TXN-00503,2026-01-28 07:52:41,TXN | Mizuho,price_target_usd,,160.00,2026-01-28 07:52:41,new
+TXN-00504,2026-01-28 07:56:56,TXN | B of A Securities,rating,,Neutral,2026-01-28 07:56:56,new
+TXN-00504,2026-01-28 07:56:56,TXN | B of A Securities,price_target_usd,,235.00,2026-01-28 07:56:56,new
+TXN-00505,2026-01-28 07:58:05,TXN | Stifel,price_target_usd,,215.00,2026-01-28 07:58:05,new
+TXN-00506,2026-01-28 09:38:46,TXN | Keybanc,price_target_usd,,240.00,2026-01-28 09:38:46,new
+TXN-00507,2026-01-28 09:58:26,TXN | Cantor Fitzgerald,price_target_usd,,225.00,2026-01-28 09:58:26,new
+TXN-00508,2026-01-28 10:23:13,TXN | Wells Fargo,price_target_usd,,215.00,2026-01-28 10:23:13,new
+TXN-00509,2026-01-28 10:49:04,TXN | UBS,price_target_usd,,260.00,2026-01-28 10:49:04,new
+TXN-00510,2026-01-28 12:42:40,TXN | Goldman Sachs,price_target_usd,,175.00,2026-01-28 12:42:40,new
+TXN-00511,2026-01-28 15:04:15,TXN | JP Morgan,price_target_usd,,227.00,2026-01-28 15:04:15,new
+TXN-00512,2026-01-28 15:09:39,TXN | Jefferies,price_target_usd,,210.00,2026-01-28 15:09:39,new
+TXN-00513,2026-02-05 07:47:42,TXN | Rosenblatt,price_target_usd,,240.00,2026-02-05 07:47:42,new
+TXN-00514,2026-02-23 11:18:27,TXN | Cantor Fitzgerald,price_target_usd,,250.00,2026-02-23 11:18:27,new
+TXN-00515,2026-04-09 06:13:25,TXN | Stifel,price_target_usd,,250.00,2026-04-09 06:13:25,new
+TXN-00516,2026-04-17 06:55:15,TXN | Mizuho,rating,,Neutral,2026-04-17 06:55:15,new
+TXN-00516,2026-04-17 06:55:15,TXN | Mizuho,price_target_usd,,215.00,2026-04-17 06:55:15,new
+TXN-00517,2026-04-23 06:16:31,TXN | B of A Securities,rating,,Buy,2026-04-23 06:16:31,new
+TXN-00517,2026-04-23 06:16:31,TXN | B of A Securities,price_target_usd,,320.00,2026-04-23 06:16:31,new
+TXN-00518,2026-04-23 07:28:15,TXN | Goldman Sachs,price_target_usd,,200.00,2026-04-23 07:28:15,new
+TXN-00519,2026-04-23 07:41:03,TXN | Baird,price_target_usd,,300.00,2026-04-23 07:41:03,new
+TXN-00520,2026-04-23 08:01:48,TXN | Rosenblatt,price_target_usd,,330.00,2026-04-23 08:01:48,new
+TXN-00521,2026-04-23 08:50:42,TXN | Barclays,rating,,Equal-Weight,2026-04-23 08:50:42,new
+TXN-00521,2026-04-23 08:50:42,TXN | Barclays,price_target_usd,,250.00,2026-04-23 08:50:42,new
+TXN-00522,2026-04-23 09:27:08,TXN | Benchmark,price_target_usd,,315.00,2026-04-23 09:27:08,new
+TXN-00523,2026-04-23 10:17:00,TXN | Keybanc,price_target_usd,,325.00,2026-04-23 10:17:00,new
+TXN-00524,2026-04-23 10:47:37,TXN | Wells Fargo,price_target_usd,,260.00,2026-04-23 10:47:37,new
+TXN-00525,2026-04-23 10:49:46,TXN | Evercore ISI Group,price_target_usd,,316.00,2026-04-23 10:49:46,new
+TXN-00526,2026-04-23 11:48:18,TXN | Stifel,price_target_usd,,290.00,2026-04-23 11:48:18,new
+TXN-00527,2026-04-23 12:12:35,TXN | Cantor Fitzgerald,price_target_usd,,280.00,2026-04-23 12:12:35,new
+TXN-00528,2026-04-23 12:20:45,TXN | TD Cowen,price_target_usd,,300.00,2026-04-23 12:20:45,new
+TXN-00529,2026-04-23 13:10:54,TXN | Truist Securities,price_target_usd,,278.00,2026-04-23 13:10:54,new
+TXN-00530,2026-04-23 13:48:32,TXN | Jefferies,price_target_usd,,260.00,2026-04-23 13:48:32,new
+TXN-00531,2026-04-23 14:19:29,TXN | JP Morgan,price_target_usd,,280.00,2026-04-23 14:19:29,new
+TXN-00532,2026-04-23 15:31:01,TXN | Citigroup,price_target_usd,,280.00,2026-04-23 15:31:01,new
+TXN-00533,2026-04-23 16:12:31,TXN | UBS,price_target_usd,,295.00,2026-04-23 16:12:31,new
+TXN-00534,2026-05-13 09:11:02,TXN | Cantor Fitzgerald,price_target_usd,,300.00,2026-05-13 09:11:02,new
+TXN-00535,2026-05-19 07:42:10,TXN | Mizuho,price_target_usd,,300.00,2026-05-19 07:42:10,new
+TXN-00536,2026-05-22 08:19:34,TXN | Seaport Global,price_target_usd,,400.00,2026-05-22 08:19:34,new
+TXN-00537,2026-05-26 13:52:10,TXN | B of A Securities,price_target_usd,,370.00,2026-05-26 13:52:10,new
+TXN-00538,2026-06-09 11:49:16,TXN | Wells Fargo,price_target_usd,,300.00,2026-06-09 11:49:16,new
+TXN-00539,2026-06-15 14:10:25,TXN | Citigroup,price_target_usd,,345.00,2026-06-15 14:10:25,new
+TXN-00540,2026-06-24 10:53:11,TXN | Stifel,price_target_usd,,360.00,2026-06-24 10:53:11,new
+TXN-00541,2026-06-29 10:36:34,TXN | Cantor Fitzgerald,price_target_usd,,340.00,2026-06-29 10:36:34,new
+TXN-00542,2026-06-29 12:45:34,TXN | UBS,price_target_usd,,350.00,2026-06-29 12:45:34,new
+TXN-00543,2026-07-13 14:10:10,TXN | TD Cowen,price_target_usd,,360.00,2026-07-13 14:10:10,new
+TXN-00544,2026-07-14 07:34:01,TXN | Keybanc,price_target_usd,,390.00,2026-07-14 07:34:01,new
+TXN-00545,2026-07-20 14:38:16,TXN | Morgan Stanley,price_target_usd,,230.00,2026-07-20 14:38:16,new
+TXN-00546,2026-07-21 10:36:42,TXN | Susquehanna,price_target_usd,,340.00,2026-07-21 10:36:42,new
+TXN-00547,2026-07-23 08:11:26,TXN | Keybanc,price_target_usd,,400.00,2026-07-23 08:11:26,new
+TXN-00548,2026-07-23 09:09:34,TXN | Evercore ISI Group,price_target_usd,,330.00,2026-07-23 09:09:34,new
+TXN-00549,2026-07-23 10:16:18,TXN | Wells Fargo,price_target_usd,,310.00,2026-07-23 10:16:18,new
+TXN-00550,2026-07-23 11:05:08,TXN | Benchmark,price_target_usd,,360.00,2026-07-23 11:05:08,new
+TXN-00551,2026-07-23 12:17:57,TXN | Goldman Sachs,price_target_usd,,225.00,2026-07-23 12:17:57,new
+TXN-00552,2026-07-23 13:00:04,TXN | Baird,price_target_usd,,385.00,2026-07-23 13:00:04,new
+TXN-00553,2026-07-23 13:20:42,TXN | Mizuho,price_target_usd,,305.00,2026-07-23 13:20:42,new
+TXN-00554,2026-07-23 13:32:30,TXN | Truist Securities,price_target_usd,,300.00,2026-07-23 13:32:30,new
+TXN-00555,2026-07-23 13:44:35,TXN | TD Cowen,price_target_usd,,340.00,2026-07-23 13:44:35,new
+TXN-00556,2026-07-23 13:50:13,TXN | Morgan Stanley,price_target_usd,,255.00,2026-07-23 13:50:13,new
+TXN-00557,2026-07-23 14:22:42,TXN | JP Morgan,price_target_usd,,340.00,2026-07-23 14:22:42,new
+TXN-00558,2026-07-23 15:20:33,TXN | Bernstein,price_target_usd,,290.00,2026-07-23 15:20:33,new
+TXN-00559,2026-07-24 09:03:17,TXN | Rosenblatt,price_target_usd,,350.00,2026-07-24 09:03:17,new
+TXN-00560,2026-08-17 07:54:54,TXN | Cantor Fitzgerald,price_target_usd,,340.00,2026-08-17 07:54:54,new
+TXN-00561,2026-10-19 05:56:52,TXN | TD Cowen,price_target_usd,,330.00,2026-10-19 05:56:52,new
+TXN-00562,2026-10-20 10:15:51,TXN | Wells Fargo,price_target_usd,-,300.00,2026-10-20 10:15:51,new
+TXN-00563,2026-10-22 08:09:59,TXN | Mizuho,price_target_usd,,290.00,2026-10-22 08:09:59,new
+TXN-00564,2026-10-22 08:53:17,TXN | Rosenblatt,price_target_usd,,360.00,2026-10-22 08:53:17,new
+TXN-00565,2026-10-22 09:05:18,TXN | Stifel,price_target_usd,,370.00,2026-10-22 09:05:18,new
+TXN-00566,2026-10-22 09:54:06,TXN | JP Morgan,price_target_usd,,365.00,2026-10-22 09:54:06,new
+TXN-00567,2026-10-22 12:32:42,TXN | Barclays,price_target_usd,,280.00,2026-10-22 12:32:42,new
+TXN-00568,2026-10-22 13:40:11,TXN | Morgan Stanley,price_target_usd,,278.00,2026-10-22 13:40:11,new
+TXN-00569,2026-10-22 15:41:00,TXN | UBS,price_target_usd,,360.00,2026-10-22 15:41:00,new
+TXN-00570,2026-10-22 16:24:58,TXN | Freedom Broker,price_target_usd,,330.00,2026-10-22 16:24:58,new
+TXN-00570,2026-10-22 16:24:58,TXN | Freedom Broker,rating,,Buy,2026-10-22 16:24:58,new
+TXN-00571,2026-10-22 16:28:07,TXN | Jefferies,price_target_usd,,300.00,2026-10-22 16:28:07,new

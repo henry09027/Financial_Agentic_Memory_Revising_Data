@@ -1,0 +1,213 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+UNH-00301,2024-02-29 13:06:06,UNH | RBC Capital,price_target_usd,,596.00,2024-02-29 13:06:06,new
+UNH-00301,2024-02-29 13:06:06,UNH | RBC Capital,rating,,Outperform,2024-02-29 13:06:06,new
+UNH-00302,2024-03-06 07:02:48,UNH | Barclays,rating,,Overweight,2024-03-06 07:02:48,new
+UNH-00302,2024-03-06 07:02:48,UNH | Barclays,price_target_usd,,551.00,2024-03-06 07:02:48,new
+UNH-00303,2024-03-07 06:43:50,UNH | B of A Securities,price_target_usd,,675.00,2024-03-07 06:43:50,new
+UNH-00304,2024-03-13 11:10:25,UNH | Erste Group,rating,,Hold,2024-03-13 11:10:25,new
+UNH-00305,2024-04-04 10:14:33,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-04-04 10:14:33,new
+UNH-00306,2024-04-04 10:55:51,UNH | HSBC,price_target_usd,,460.00,2024-04-04 10:55:51,new
+UNH-00307,2024-04-05 07:29:00,UNH | Morgan Stanley,price_target_usd,,584.00,2024-04-05 07:29:00,new
+UNH-00308,2024-04-08 08:34:35,UNH | Wells Fargo,price_target_usd,,525.00,2024-04-08 08:34:35,new
+UNH-00309,2024-04-10 10:33:21,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-04-10 10:33:21,new
+UNH-00310,2024-04-10 11:34:43,UNH | TD Cowen,price_target_usd,,546.00,2024-04-10 11:34:43,new
+UNH-00311,2024-04-17 08:17:16,UNH | Piper Sandler,price_target_usd,,571.00,2024-04-17 08:17:16,new
+UNH-00312,2024-04-17 09:49:38,UNH | Barclays,price_target_usd,,560.00,2024-04-17 09:49:38,new
+UNH-00313,2024-04-17 10:56:45,UNH | RBC Capital,price_target_usd,,555.00,2024-04-17 10:56:45,new
+UNH-00314,2024-04-17 13:22:07,UNH | Truist Securities,price_target_usd,,600.00,2024-04-17 13:22:07,new
+UNH-00315,2024-04-19 05:11:20,UNH | Deutsche Bank,price_target_usd,,562.00,2024-04-19 05:11:20,new
+UNH-00316,2024-05-30 06:10:55,UNH | Baird,rating,,Outperform,2024-05-30 06:10:55,new
+UNH-00316,2024-05-30 06:10:55,UNH | Baird,price_target_usd,,597.00,2024-05-30 06:10:55,new
+UNH-00317,2024-05-30 14:06:43,UNH | JP Morgan,price_target_usd,,559.00,2024-05-30 14:06:43,new
+UNH-00320,2024-07-17 07:10:04,UNH | Morgan Stanley,price_target_usd,,615.00,2024-07-17 07:10:04,new
+UNH-00321,2024-07-17 07:36:46,UNH | Baird,price_target_usd,,640.00,2024-07-17 07:36:46,new
+UNH-00322,2024-07-17 08:00:20,UNH | Truist Securities,price_target_usd,,640.00,2024-07-17 08:00:20,new
+UNH-00323,2024-07-17 08:48:56,UNH | Jefferies,rating,,Buy,2024-07-17 08:48:56,new
+UNH-00323,2024-07-17 08:48:56,UNH | Jefferies,price_target_usd,,647.00,2024-07-17 08:48:56,new
+UNH-00324,2024-07-17 10:05:46,UNH | RBC Capital,price_target_usd,,615.00,2024-07-17 10:05:46,new
+UNH-00325,2024-07-17 10:35:03,UNH | Wells Fargo,price_target_usd,,630.00,2024-07-17 10:35:03,new
+UNH-00326,2024-07-17 10:37:03,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-07-17 10:37:03,new
+UNH-00327,2024-07-17 11:51:19,UNH | Barclays,price_target_usd,,604.00,2024-07-17 11:51:19,new
+UNH-00328,2024-07-17 12:56:51,UNH | TD Cowen,price_target_usd,,601.00,2024-07-17 12:56:51,new
+UNH-00329,2024-07-17 13:40:28,UNH | Argus Research,price_target_usd,,600.00,2024-07-17 13:40:28,new
+UNH-00330,2024-07-18 13:00:37,UNH | UBS,price_target_usd,,680.00,2024-07-18 13:00:37,new
+UNH-00331,2024-07-23 12:48:01,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-07-23 12:48:01,new
+UNH-00332,2024-08-19 11:43:08,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-08-19 11:43:08,new
+UNH-00333,2024-09-10 11:37:11,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-09-10 11:37:11,new
+UNH-00334,2024-09-16 13:02:55,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-09-16 13:02:55,new
+UNH-00335,2024-09-20 11:02:59,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-09-20 11:02:59,new
+UNH-00336,2024-10-01 11:33:02,UNH | Cantor Fitzgerald,price_target_usd,,591.00,2024-10-01 11:33:02,new
+UNH-00337,2024-10-11 12:10:53,UNH | Keybanc,rating,,Overweight,2024-10-11 12:10:53,new
+UNH-00337,2024-10-11 12:10:53,UNH | Keybanc,price_target_usd,,675.00,2024-10-11 12:10:53,new
+UNH-00338,2024-10-16 07:38:30,UNH | B of A Securities,price_target_usd,,650.00,2024-10-16 07:38:30,new
+UNH-00339,2024-10-16 07:57:53,UNH | Morgan Stanley,price_target_usd,,610.00,2024-10-16 07:57:53,new
+UNH-00340,2024-10-16 08:11:43,UNH | Keybanc,price_target_usd,,650.00,2024-10-16 08:11:43,new
+UNH-00341,2024-10-16 08:37:30,UNH | RBC Capital,price_target_usd,,595.00,2024-10-16 08:37:30,new
+UNH-00342,2024-10-16 10:44:45,UNH | Cantor Fitzgerald,price_target_usd,,644.00,2024-10-16 10:44:45,new
+UNH-00343,2024-10-16 10:47:45,UNH | Truist Securities,price_target_usd,,625.00,2024-10-16 10:47:45,new
+UNH-00344,2024-10-16 11:16:01,UNH | Stephens & Co.,price_target_usd,,605.00,2024-10-16 11:16:01,new
+UNH-00345,2024-10-16 11:53:42,UNH | UBS,price_target_usd,,650.00,2024-10-16 11:53:42,new
+UNH-00346,2024-10-18 11:13:01,UNH | TD Cowen,price_target_usd,,609.00,2024-10-18 11:13:01,new
+UNH-00347,2024-10-22 12:35:56,UNH | Barclays,price_target_usd,,603.00,2024-10-22 12:35:56,new
+UNH-00348,2024-11-27 09:38:48,UNH | Barclays,price_target_usd,,655.00,2024-11-27 09:38:48,new
+UNH-00349,2024-12-03 07:29:28,UNH | Deutsche Bank,price_target_usd,,625.00,2024-12-03 07:29:28,new
+UNH-00350,2024-12-05 07:15:19,UNH | Stephens & Co.,price_target_usd,,675.00,2024-12-05 07:15:19,new
+UNH-00351,2024-12-06 11:02:44,UNH | Oppenheimer,price_target_usd,,640.00,2024-12-06 11:02:44,new
+UNH-00352,2025-01-02 06:52:00,UNH | Piper Sandler,price_target_usd,,600.00,2025-01-02 06:52:00,new
+UNH-00353,2025-01-06 09:09:23,UNH | Truist Securities,price_target_usd,,610.00,2025-01-06 09:09:23,new
+UNH-00354,2025-01-17 09:38:19,UNH | Cantor Fitzgerald,price_target_usd,,700.00,2025-01-17 09:38:19,new
+UNH-00355,2025-01-17 10:41:49,UNH | Keybanc,price_target_usd,,650.00,2025-01-17 10:41:49,new
+UNH-00356,2025-01-17 13:18:00,UNH | Barclays,price_target_usd,,642.00,2025-01-17 13:18:00,new
+UNH-00357,2025-01-28 08:51:44,UNH | Wells Fargo,price_target_usd,,660.00,2025-01-28 08:51:44,new
+UNH-00358,2025-04-08 14:22:17,UNH | Wells Fargo,price_target_usd,,677.00,2025-04-08 14:22:17,new
+UNH-00359,2025-04-09 08:02:36,UNH | Mizuho,price_target_usd,,650.00,2025-04-09 08:02:36,new
+UNH-00360,2025-04-11 09:18:04,UNH | Truist Securities,price_target_usd,,660.00,2025-04-11 09:18:04,new
+UNH-00361,2025-04-21 01:28:28,UNH | B of A Securities,price_target_usd,,560.00,2025-04-21 01:28:28,new
+UNH-00362,2025-04-21 09:20:00,UNH | Oppenheimer,price_target_usd,,600.00,2025-04-21 09:20:00,new
+UNH-00363,2025-04-21 10:13:15,UNH | Raymond James,price_target_usd,,540.00,2025-04-21 10:13:15,new
+UNH-00364,2025-04-21 11:05:24,UNH | Keybanc,price_target_usd,,575.00,2025-04-21 11:05:24,new
+UNH-00365,2025-04-21 11:12:08,UNH | Barclays,price_target_usd,,560.00,2025-04-21 11:12:08,new
+UNH-00366,2025-04-21 12:14:49,UNH | Truist Securities,price_target_usd,,580.00,2025-04-21 12:14:49,new
+UNH-00367,2025-04-21 14:15:32,UNH | Argus Research,rating,,Hold,2025-04-21 14:15:32,new
+UNH-00368,2025-04-22 09:19:55,UNH | Morgan Stanley,price_target_usd,,563.00,2025-04-22 09:19:55,new
+UNH-00369,2025-04-22 11:04:49,UNH | HSBC,rating,,Hold,2025-04-22 11:04:49,new
+UNH-00369,2025-04-22 11:04:49,UNH | HSBC,price_target_usd,,490.00,2025-04-22 11:04:49,new
+UNH-00370,2025-04-23 13:24:44,UNH | RBC Capital,price_target_usd,,525.00,2025-04-23 13:24:44,new
+UNH-00371,2025-04-24 12:17:43,UNH | JP Morgan,price_target_usd,,525.00,2025-04-24 12:17:43,new
+UNH-00372,2025-04-24 17:44:35,UNH | Barclays,price_target_usd,,513.00,2025-04-24 17:44:35,new
+UNH-00373,2025-04-29 08:30:33,UNH | Baird,price_target_usd,,510.00,2025-04-29 08:30:33,inferred revision
+UNH-00374,2025-05-06 11:37:38,UNH | Mizuho,price_target_usd,,515.00,2025-05-06 11:37:38,new
+UNH-00375,2025-05-13 05:18:35,UNH | Piper Sandler,price_target_usd,,552.00,2025-05-13 05:18:35,new
+UNH-00376,2025-05-14 09:00:32,UNH | Keybanc,price_target_usd,,450.00,2025-05-14 09:00:32,inferred revision
+UNH-00377,2025-05-14 09:15:05,UNH | Baird,price_target_usd,,356.00,2025-05-14 09:15:05,new
+UNH-00378,2025-05-14 09:31:48,UNH | B of A Securities,price_target_usd,,350.00,2025-05-14 09:31:48,new
+UNH-00378,2025-05-14 09:31:48,UNH | B of A Securities,rating,,Neutral,2025-05-14 09:31:48,new
+UNH-00379,2025-05-14 10:21:20,UNH | Morgan Stanley,price_target_usd,,374.00,2025-05-14 10:21:20,new
+UNH-00380,2025-05-14 10:28:05,UNH | Wells Fargo,price_target_usd,,351.00,2025-05-14 10:28:05,new
+UNH-00381,2025-05-14 10:35:44,UNH | Oppenheimer,price_target_usd,,400.00,2025-05-14 10:35:44,new
+UNH-00382,2025-05-14 13:52:11,UNH | Deutsche Bank,price_target_usd,,362.00,2025-05-14 13:52:11,new
+UNH-00383,2025-05-15 08:29:09,UNH | JP Morgan,price_target_usd,,405.00,2025-05-15 08:29:09,new
+UNH-00384,2025-05-15 08:58:50,UNH | Barclays,price_target_usd,,362.00,2025-05-15 08:58:50,new
+UNH-00385,2025-05-16 12:44:42,UNH | RBC Capital,price_target_usd,,355.00,2025-05-16 12:44:42,new
+UNH-00386,2025-05-16 13:58:42,UNH | Mizuho,price_target_usd,,350.00,2025-05-16 13:58:42,new
+UNH-00387,2025-05-19 09:52:41,UNH | Truist Securities,price_target_usd,,360.00,2025-05-19 09:52:41,new
+UNH-00388,2025-05-19 13:37:38,UNH | TD Securities,rating,,Hold,2025-05-19 13:37:38,new
+UNH-00388,2025-05-19 13:37:38,UNH | TD Securities,price_target_usd,,308.00,2025-05-19 13:37:38,new
+UNH-00389,2025-05-20 12:16:25,UNH | Wolfe Research,price_target_usd,,390.00,2025-05-20 12:16:25,new
+UNH-00390,2025-05-21 07:23:53,UNH | HSBC,rating,,Reduce,2025-05-21 07:23:53,new
+UNH-00390,2025-05-21 07:23:53,UNH | HSBC,price_target_usd,,270.00,2025-05-21 07:23:53,new
+UNH-00391,2025-06-02 09:13:53,UNH | Keybanc,price_target_usd,,400.00,2025-06-02 09:13:53,inferred revision
+UNH-00392,2025-06-02 10:32:52,UNH | Barclays,price_target_usd,,350.00,2025-06-02 10:32:52,new
+UNH-00393,2025-06-03 10:12:17,UNH | Piper Sandler,price_target_usd,,353.00,2025-06-03 10:12:17,new
+UNH-00394,2025-06-11 09:02:48,UNH | Baird,rating,,Neutral,2025-06-11 09:02:48,new
+UNH-00394,2025-06-11 09:02:48,UNH | Baird,price_target_usd,,312.00,2025-06-11 09:02:48,new
+UNH-00395,2025-06-20 08:29:30,UNH | JP Morgan,price_target_usd,,418.00,2025-06-20 08:29:30,new
+UNH-00396,2025-06-25 10:07:17,UNH | UBS,price_target_usd,,385.00,2025-06-25 10:07:17,new
+UNH-00397,2025-07-09 16:05:37,UNH | Barclays,price_target_usd,,337.00,2025-07-09 16:05:37,new
+UNH-00398,2025-07-13 08:06:30,UNH | Morgan Stanley,price_target_usd,,342.00,2025-07-13 08:06:30,new
+UNH-00399,2025-07-16 10:32:58,UNH | Truist Securities,price_target_usd,,345.00,2025-07-16 10:32:58,new
+UNH-00400,2025-07-25 10:04:43,UNH | Wells Fargo,price_target_usd,,306.00,2025-07-25 10:04:43,new
+UNH-00401,2025-07-29 13:40:32,UNH | B of A Securities,price_target_usd,,300.00,2025-07-29 13:40:32,new
+UNH-00402,2025-07-30 07:08:59,UNH | B of A Securities,price_target_usd,,290.00,2025-07-30 07:08:59,new
+UNH-00403,2025-07-30 08:42:16,UNH | Piper Sandler,price_target_usd,,317.00,2025-07-30 08:42:16,new
+UNH-00404,2025-07-30 09:24:26,UNH | Keybanc,price_target_usd,,350.00,2025-07-30 09:24:26,new
+UNH-00405,2025-07-30 09:44:00,UNH | Oppenheimer,price_target_usd,,325.00,2025-07-30 09:44:00,new
+UNH-00406,2025-07-30 10:46:42,UNH | RBC Capital,price_target_usd,,286.00,2025-07-30 10:46:42,new
+UNH-00407,2025-07-31 07:19:48,UNH | Baird,rating,,Underperform,2025-07-31 07:19:48,new
+UNH-00407,2025-07-31 07:19:48,UNH | Baird,price_target_usd,,198.00,2025-07-31 07:19:48,new
+UNH-00408,2025-08-04 10:00:30,UNH | Wells Fargo,price_target_usd,,267.00,2025-08-04 10:00:30,new
+UNH-00409,2025-08-06 19:13:32,UNH | JP Morgan,price_target_usd,,310.00,2025-08-06 19:13:32,new
+UNH-00410,2025-08-07 11:35:42,UNH | Mizuho,price_target_usd,,300.00,2025-08-07 11:35:42,new
+UNH-00411,2025-08-18 08:43:21,UNH | B of A Securities,price_target_usd,,325.00,2025-08-18 08:43:21,new
+UNH-00412,2025-08-20 11:08:47,UNH | Morgan Stanley,price_target_usd,,325.00,2025-08-20 11:08:47,new
+UNH-00413,2025-08-26 09:24:23,UNH | Cantor Fitzgerald,price_target_usd,,440.00,2025-08-26 09:24:23,new
+UNH-00414,2025-09-04 10:49:47,UNH | Barclays,price_target_usd,,352.00,2025-09-04 10:49:47,new
+UNH-00415,2025-09-05 11:24:44,UNH | Bernstein,price_target_usd,,379.00,2025-09-05 11:24:44,new
+UNH-00416,2025-09-09 11:57:37,UNH | Truist Securities,price_target_usd,,365.00,2025-09-09 11:57:37,new
+UNH-00417,2025-09-12 11:38:21,UNH | Morgan Stanley,price_target_usd,,395.00,2025-09-12 11:38:21,new
+UNH-00418,2025-10-07 10:08:11,UNH | Wells Fargo,price_target_usd,,400.00,2025-10-07 10:08:11,new
+UNH-00419,2025-10-08 09:20:09,UNH | Keybanc,price_target_usd,,400.00,2025-10-08 09:20:09,new
+UNH-00420,2025-10-08 10:24:42,UNH | Bernstein,price_target_usd,,433.00,2025-10-08 10:24:42,new
+UNH-00421,2025-10-08 13:45:41,UNH | B of A Securities,price_target_usd,,390.00,2025-10-08 13:45:41,new
+UNH-00422,2025-10-09 08:25:07,UNH | Barclays,price_target_usd,,386.00,2025-10-09 08:25:07,new
+UNH-00423,2025-10-09 09:04:34,UNH | Mizuho,price_target_usd,,430.00,2025-10-09 09:04:34,new
+UNH-00424,2025-10-09 09:32:28,UNH | JP Morgan,price_target_usd,,425.00,2025-10-09 09:32:28,new
+UNH-00425,2025-10-14 08:29:18,UNH | Goldman Sachs,rating,,Buy,2025-10-14 08:29:18,new
+UNH-00425,2025-10-14 08:29:18,UNH | Goldman Sachs,price_target_usd,,406.00,2025-10-14 08:29:18,new
+UNH-00426,2025-10-17 15:13:50,UNH | Jefferies,price_target_usd,,409.00,2025-10-17 15:13:50,new
+UNH-00427,2025-10-29 09:36:29,UNH | Piper Sandler,price_target_usd,2025-10-29,417.00,2025-10-29 09:36:29,new
+UNH-00428,2025-10-29 12:58:49,UNH | RBC Capital,price_target_usd,,408.00,2025-10-29 12:58:49,new
+UNH-00429,2025-10-29 13:59:02,UNH | UBS,price_target_usd,2025-10-29,430.00,2025-10-29 13:59:02,new
+UNH-00430,2025-10-30 13:16:53,UNH | Bernstein,price_target_usd,2025-10-30,440.00,2025-10-30 13:16:53,new
+UNH-00431,2025-10-30 16:10:46,UNH | TD Cowen,price_target_usd,2025-10-30,338.00,2025-10-30 13:16:53,new
+UNH-00432,2026-01-05 09:21:28,UNH | Barclays,price_target_usd,,391.00,2026-01-05 09:21:28,new
+UNH-00433,2026-01-23 12:49:14,UNH | Morgan Stanley,price_target_usd,,409.00,2026-01-23 12:49:14,new
+UNH-00434,2026-01-28 10:56:14,UNH | UBS,price_target_usd,,410.00,2026-01-28 10:56:14,new
+UNH-00435,2026-01-28 11:42:51,UNH | Oppenheimer,price_target_usd,2026-01-28,385.00,2026-01-28 11:42:51,new
+UNH-00436,2026-01-28 11:45:20,UNH | RBC Capital,price_target_usd,,361.00,2026-01-28 11:45:20,new
+UNH-00437,2026-01-28 13:39:12,UNH | Leerink Partners,price_target_usd,,345.00,2026-01-28 13:39:12,new
+UNH-00438,2026-01-28 15:15:13,UNH | Jefferies,price_target_usd,,340.00,2026-01-28 15:15:13,new
+UNH-00439,2026-01-30 10:19:02,UNH | Wells Fargo,price_target_usd,,370.00,2026-01-30 10:19:02,new
+UNH-00440,2026-01-30 11:17:12,UNH | Barclays,price_target_usd,,327.00,2026-01-30 11:17:12,new
+UNH-00441,2026-02-02 08:08:18,UNH | JP Morgan,price_target_usd,,389.00,2026-02-02 08:08:18,new
+UNH-00442,2026-02-02 09:40:19,UNH | Truist Securities,price_target_usd,,370.00,2026-02-02 09:40:19,new
+UNH-00443,2026-02-05 06:58:28,UNH | Mizuho,price_target_usd,,350.00,2026-02-05 06:58:28,new
+UNH-00444,2026-04-01 10:14:03,UNH | Raymond James,rating,,Outperform,2026-04-01 10:14:03,new
+UNH-00444,2026-04-01 10:14:03,UNH | Raymond James,price_target_usd,,330.00,2026-04-01 10:14:03,new
+UNH-00445,2026-04-07 09:59:15,UNH | Bernstein,price_target_usd,,411.00,2026-04-07 09:59:15,new
+UNH-00446,2026-04-20 13:08:23,UNH | Jefferies,price_target_usd,,373.00,2026-04-20 13:08:23,new
+UNH-00447,2026-04-22 08:26:45,UNH | Truist Securities,price_target_usd,,395.00,2026-04-22 08:26:45,new
+UNH-00448,2026-04-22 09:32:53,UNH | Barclays,price_target_usd,,373.00,2026-04-22 09:32:53,new
+UNH-00449,2026-04-22 09:35:43,UNH | Baird,price_target_usd,,287.00,2026-04-22 09:35:43,new
+UNH-00450,2026-04-22 10:24:47,UNH | Oppenheimer,price_target_usd,,405.00,2026-04-22 10:24:47,new
+UNH-00451,2026-04-22 10:29:46,UNH | Leerink Partners,price_target_usd,,400.00,2026-04-22 10:29:46,new
+UNH-00452,2026-04-22 10:35:40,UNH | RBC Capital,price_target_usd,,400.00,2026-04-22 10:35:40,new
+UNH-00453,2026-04-22 10:52:46,UNH | Wells Fargo,price_target_usd,,397.00,2026-04-22 10:52:46,new
+UNH-00454,2026-04-22 11:16:29,UNH | Argus Research,rating,,Buy,2026-04-22 11:16:29,new
+UNH-00454,2026-04-22 11:16:29,UNH | Argus Research,price_target_usd,,400.00,2026-04-22 11:16:29,new
+UNH-00455,2026-04-22 11:32:17,UNH | Morgan Stanley,price_target_usd,,395.00,2026-04-22 11:32:17,new
+UNH-00456,2026-04-23 12:57:57,UNH | TD Cowen,price_target_usd,,337.00,2026-04-23 12:57:57,new
+UNH-00457,2026-04-28 14:16:27,UNH | JP Morgan,price_target_usd,,420.00,2026-04-28 14:16:27,new
+UNH-00458,2026-05-20 09:12:08,UNH | Mizuho,price_target_usd,,440.00,2026-05-20 09:12:08,new
+UNH-00459,2026-05-22 11:32:24,UNH | UBS,price_target_usd,,460.00,2026-05-22 11:32:24,new
+UNH-00460,2026-05-26 15:45:30,UNH | Barclays,price_target_usd,,429.00,2026-05-26 15:45:30,new
+UNH-00461,2026-05-27 07:44:32,UNH | Bernstein,price_target_usd,,492.00,2026-05-27 07:44:32,new
+UNH-00462,2026-06-01 10:22:30,UNH | Truist Securities,price_target_usd,,440.00,2026-06-01 10:22:30,new
+UNH-00463,2026-06-04 06:28:23,UNH | B of A Securities,rating,,Buy,2026-06-04 06:28:23,new
+UNH-00463,2026-06-04 06:28:23,UNH | B of A Securities,price_target_usd,,450.00,2026-06-04 06:28:23,new
+UNH-00464,2026-06-04 12:15:26,UNH | Morgan Stanley,price_target_usd,,453.00,2026-06-04 12:15:26,new
+UNH-00465,2026-06-08 11:48:32,UNH | JP Morgan,price_target_usd,,466.00,2026-06-08 11:48:32,new
+UNH-00466,2026-06-08 13:37:18,UNH | Mizuho,price_target_usd,,460.00,2026-06-08 13:37:18,new
+UNH-00467,2026-06-17 10:54:42,UNH | Leerink Partners,price_target_usd,,462.00,2026-06-17 10:54:42,new
+UNH-00468,2026-06-24 13:10:29,UNH | B of A Securities,price_target_usd,,475.00,2026-06-24 13:10:29,new
+UNH-00469,2026-06-30 09:06:19,UNH | Morgan Stanley,price_target_usd,,468.00,2026-06-30 09:06:19,new
+UNH-00470,2026-07-06 14:51:01,UNH | HSBC,price_target_usd,,380.00,2026-07-06 14:51:01,new
+UNH-00471,2026-07-09 13:34:13,UNH | RBC Capital,price_target_usd,,463.00,2026-07-09 13:34:13,new
+UNH-00472,2026-07-13 10:19:43,UNH | Wells Fargo,price_target_usd,,485.00,2026-07-13 10:19:43,new
+UNH-00473,2026-07-14 07:52:07,UNH | Keybanc,price_target_usd,,475.00,2026-07-14 07:52:07,new
+UNH-00474,2026-07-14 09:37:17,UNH | Truist Securities,price_target_usd,,480.00,2026-07-14 09:37:17,new
+UNH-00475,2026-07-14 11:30:39,UNH | TD Cowen,price_target_usd,,430.00,2026-07-14 11:30:39,new
+UNH-00476,2026-07-16 13:37:22,UNH | Baird,rating,,Neutral,2026-07-16 13:37:22,new
+UNH-00476,2026-07-16 13:37:22,UNH | Baird,price_target_usd,,453.00,2026-07-16 13:37:22,new
+UNH-00477,2026-07-17 08:47:22,UNH | UBS,price_target_usd,,490.00,2026-07-17 08:47:22,new
+UNH-00478,2026-07-17 09:31:22,UNH | RBC Capital,price_target_usd,,478.00,2026-07-17 09:31:22,new
+UNH-00479,2026-07-17 09:32:28,UNH | Truist Securities,price_target_usd,,500.00,2026-07-17 09:32:28,new
+UNH-00480,2026-07-17 11:26:18,UNH | Oppenheimer,price_target_usd,,500.00,2026-07-17 11:26:18,new
+UNH-00481,2026-07-17 13:04:58,UNH | Keybanc,price_target_usd,,500.00,2026-07-17 13:04:58,new
+UNH-00482,2026-07-17 13:32:37,UNH | Morgan Stanley,price_target_usd,,529.00,2026-07-17 13:32:37,new
+UNH-00483,2026-07-20 09:30:53,UNH | Barclays,price_target_usd,,441.00,2026-07-20 09:30:53,new
+UNH-00484,2026-07-21 09:03:17,UNH | Mizuho,price_target_usd,,493.00,2026-07-21 09:03:17,new
+UNH-00485,2026-07-21 11:37:13,UNH | JP Morgan,price_target_usd,,516.00,2026-07-21 11:37:13,new
+UNH-00486,2026-10-09 11:52:27,UNH | TD Cowen,price_target_usd,,402.00,2026-10-09 11:52:27,new
+UNH-00487,2026-10-14 08:37:21,UNH | Baird,price_target_usd,,427.00,2026-10-14 08:37:21,new
+UNH-00488,2026-10-14 10:00:41,UNH | Barclays,price_target_usd,,440.00,2026-10-14 10:00:41,new
+UNH-00489,2026-10-14 12:39:00,UNH | Piper Sandler,price_target_usd,,504.00,2026-10-14 12:39:00,new
+UNH-00490,2026-10-15 09:49:53,UNH | TD Cowen,price_target_usd,,402.00,2026-10-15 09:49:53,reiterate
+UNH-00491,2026-10-16 11:30:10,UNH | JP Morgan,price_target_usd,,524.00,2026-10-16 11:30:10,new
+UNH-00492,2026-10-16 13:01:34,UNH | Bernstein,price_target_usd,,500.00,2026-10-16 13:01:34,new
+UNH-00493,2026-10-20 09:28:39,UNH | RBC Capital,price_target_usd,,498.00,2026-10-20 09:28:39,new
+UNH-00494,2026-10-22 08:11:24,UNH | Mizuho,price_target_usd,,500.00,2026-10-22 08:11:24,new
+UNH-00495,2026-10-27 07:29:39,UNH | Morgan Stanley,price_target_usd,,531.00,2026-10-27 07:29:39,new
+UNH-00496,2026-10-27 10:19:24,UNH | Wells Fargo,price_target_usd,,487.00,2026-10-27 10:19:24,new
+UNH-00497,2026-11-20 09:17:38,UNH | TD Cowen,rating,,Buy,2026-11-20 09:17:38,new
+UNH-00497,2026-11-20 09:17:38,UNH | TD Cowen,price_target_usd,,455.00,2026-11-20 09:17:38,new

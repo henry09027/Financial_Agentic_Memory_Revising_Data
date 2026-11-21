@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-CVX-001-Q7-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "edgar",
+ "entity": "CVX",
+ "qtype": "not_yet_published",
+ "mode": "as_of",
+ "as_of": "2019-03-13 00:31:00",
+ "question": "What was Chevron Corp's revenue for the three months ended 31 March 2019, in $ millions?",
+ "gold": "CANNOT_ANSWER",
+ "peek_answers": "35200",
+ "trap_answers": "",
+ "gold_evidence": "",
+ "answer": "5.6",
+ "cited": "",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": null,
+ "in_tokens": 616,
+ "out_tokens": 1000,
+ "seconds": 0.054,
+ "n_evidence": 0,
+ "n_dropped": 0,
+ "created": "2026-11-21T19:40:33",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-03-13 00:31:00\nQuestion: What was Chevron Corp's revenue for the three months ended 31 March 2019, in $ millions?\n\nEvidence:\n"
+  }
+ ],
+ "final_text": "{\"answer\": 5.6, \"evidence_ids\": [7031234, 7031235, 7031236, 7031237, 7031238, 7031239, 7031240, 7031241, 7031242, 7031243, 7031244, 7031245, 7031246, 7031247, 7031248, 7031249, 7031250, 7031251, 7031252, 7031253, 7031254, 7031255, 7031256, 7031257, 7031258, 7031259, 7031260, 7031261, 7031262, 7031263, 7031264, 7031265, 7031266, 7031267, 7031268, 7031269, 7031270, 7031271, 7031272, 7031273, 7031274, 7031275, 7031276, 7031277, 7031278, 7031279, 7031280, 7031281, 7031282, 7031283, 7031284, 7031285, 7031286, 7031287, 7031288, 7031289, 7031290, 7031291, 7031292, 7031293, 7031294, 7031295, 7031296, 7031297, 7031298, 7031299, 7031300, 7031301, 7031302, 7031303, 7031304, 7031305, 7031306, 7031307, 7031308, 7031309, 7031310, 7031311, 7031312, 7031313, 7031314, 7031315, 7031316, 7031317, 7031318, 7031319, 7031320, 7031321, 7031322, 7031323, 7031324, 7031325, 7031326, 7031327, 7031328, 7031329, 7031330, 7031331, 7031332, 7031333, 7031334, 7031335, 7031336, 7031337, 7031338, 7031339, 7031340, 7031341, 7031342, 7031343, 7031344, 7031345, 7031346, 7031347, 7031348, 7031349, 7031350, 7031351, 7031352, 7031353, 7031354, 7031355, 7031356, 7031357, 7031358, 7031359, 7031360, 7031361, 7031362, 7031363, 7031364, 7031365, 7031366, 7031367, 7031368, 7031369, 7031370, 7031371, 7031372, 7031373, 7031374, 7031375, 7031376, 7031377, 7031378, 7031379, 7031380, 7031381, 7031382, 7031383, 7031384, 7031385, 7031386, 7031387, 7031388, 7031389, 7031390, 7031391, 7031392, 7031393, 7031394, 7031395, 7031396, 7031397, 7031398, 7031399, 7031400, 7031401, 7031402, 7031403, 7031404, 7031405, 7031406, 7031407, 7031408, 7031409, 7031410, 7031411, 7031412, 7031413, 7031414, 7031415, 7031416, 7031417, 7031418, 7031419, 7031420, 7031421, 7031422, 7031423, 7031424, 7031425, 7031426, 7031427, 7031428, 7031429, 7031430, 703",
+ "raw_output": "{\"answer\": 5.6, \"evidence_ids\": [7031234, 7031235, 7031236, 7031237, 7031238, 7031239, 7031240, 7031241, 7031242, 7031243, 7031244, 7031245, 7031246, 7031247, 7031248, 7031249, 7031250, 7031251, 7031252, 7031253, 7031254, 7031255, 7031256, 7031257, 7031258, 7031259, 7031260, 7031261, 7031262, 7031263, 7031264, 7031265, 7031266, 7031267, 7031268, 7031269, 7031270, 7031271, 7031272, 7031273, 7031274, 7031275, 7031276, 7031277, 7031278, 7031279, 7031280, 7031281, 7031282, 7031283, 7031284, 7031285, 7031286, 7031287, 7031288, 7031289, 7031290, 7031291, 7031292, 7031293, 7031294, 7031295, 7031296, 7031297, 7031298, 7031299, 7031300, 7031301, 7031302, 7031303, 7031304, 7031305, 7031306, 7031307, 7031308, 7031309, 7031310, 7031311, 7031312, 7031313, 7031314, 7031315, 7031316, 7031317, 7031318, 7031319, 7031320, 7031321, 7031322, 7031323, 7031324, 7031325, 7031326, 7031327, 7031328, 7031329, 7031330, 7031331, 7031332, 7031333, 7031334, 7031335, 7031336, 7031337, 7031338, 7031339, 7031340, 7031341, 7031342, 7031343, 7031344, 7031345, 7031346, 7031347, 7031348, 7031349, 7031350, 7031351, 7031352, 7031353, 7031354, 7031355, 7031356, 7031357, 7031358, 7031359, 7031360, 7031361, 7031362, 7031363, 7031364, 7031365, 7031366, 7031367, 7031368, 7031369, 7031370, 7031371, 7031372, 7031373, 7031374, 7031375, 7031376, 7031377, 7031378, 7031379, 7031380, 7031381, 7031382, 7031383, 7031384, 7031385, 7031386, 7031387, 7031388, 7031389, 7031390, 7031391, 7031392, 7031393, 7031394, 7031395, 7031396, 7031397, 7031398, 7031399, 7031400, 7031401, 7031402, 7031403, 7031404, 7031405, 7031406, 7031407, 7031408, 7031409, 7031410, 7031411, 7031412, 7031413, 7031414, 7031415, 7031416, 7031417, 7031418, 7031419, 7031420, 7031421, 7031422, 7031423, 7031424, 7031425, 7031426, 7031427, 7031428, 7031429, 7031430, 703"
+}
