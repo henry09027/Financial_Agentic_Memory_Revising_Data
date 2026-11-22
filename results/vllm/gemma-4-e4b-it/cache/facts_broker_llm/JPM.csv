@@ -1,0 +1,326 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+JPM-00172,2022-07-18 04:45:12,JPM | Berenberg,rating,,Hold,2022-07-18 04:45:12,new
+JPM-00172,2022-07-18 04:45:12,JPM | Berenberg,price_target_usd,,120.0,2022-07-18 04:45:12,new
+JPM-00173,2022-09-12 09:24:34,JPM | Deutsche Bank,rating,,Buy,2022-09-12 09:24:34,new
+JPM-00173,2022-09-12 09:24:34,JPM | Deutsche Bank,price_target_usd,,155.0,2022-09-12 09:24:34,new
+JPM-00174,2022-10-04 08:53:25,JPM | Goldman Sachs,rating,,Buy,2022-10-04 08:53:25,new
+JPM-00174,2022-10-04 08:53:25,JPM | Goldman Sachs,price_target_usd,,130.0,2022-10-04 08:53:25,new
+JPM-00175,2022-10-05 07:52:50,JPM | Morgan Stanley,rating,,Underweight,2022-10-05 07:52:50,new
+JPM-00175,2022-10-05 07:52:50,JPM | Morgan Stanley,price_target_usd,,126.0,2022-10-05 07:52:50,new
+JPM-00176,2022-10-17 07:16:31,JPM | BMO Capital,rating,,Market Perform,2022-10-17 07:16:31,new
+JPM-00176,2022-10-17 07:16:31,JPM | BMO Capital,price_target_usd,,158.0,2022-10-17 07:16:31,new
+JPM-00177,2022-12-06 06:09:26,JPM | Morgan Stanley,rating,,Overweight,2022-12-06 06:09:26,new
+JPM-00177,2022-12-06 06:09:26,JPM | Morgan Stanley,price_target_usd,,153.0,2022-12-06 06:09:26,new
+JPM-00178,2022-12-08 05:07:47,JPM | Piper Sandler,rating,,Overweight,2022-12-08 05:07:47,new
+JPM-00178,2022-12-08 05:07:47,JPM | Piper Sandler,price_target_usd,,150.0,2022-12-08 05:07:47,new
+JPM-00179,2022-12-12 09:02:31,JPM | Citigroup,rating,,Buy,2022-12-12 09:02:31,new
+JPM-00179,2022-12-12 09:02:31,JPM | Citigroup,price_target_usd,,150.0,2022-12-12 09:02:31,new
+JPM-00180,2022-12-28 08:47:10,JPM | Oppenheimer,rating,,Outperform,2022-12-28 08:47:10,new
+JPM-00180,2022-12-28 08:47:10,JPM | Oppenheimer,price_target_usd,,169.0,2022-12-28 08:47:10,new
+JPM-00181,2023-01-03 07:01:59,JPM | Barclays,rating,,Overweight,2023-01-03 07:01:59,new
+JPM-00181,2023-01-03 07:01:59,JPM | Barclays,price_target_usd,,189.0,2023-01-03 07:01:59,new
+JPM-00182,2023-01-06 05:11:24,JPM | Deutsche Bank,rating,,Hold,2023-01-06 05:11:24,new
+JPM-00182,2023-01-06 05:11:24,JPM | Deutsche Bank,price_target_usd,,145.0,2023-01-06 05:11:24,new
+JPM-00183,2023-01-17 06:50:04,JPM | Piper Sandler,rating,,Overweight,2023-01-17 06:50:04,corroborate
+JPM-00183,2023-01-17 06:50:04,JPM | Piper Sandler,price_target_usd,,157.0,2023-01-17 06:50:04,new
+JPM-00184,2023-01-17 09:48:51,JPM | Morgan Stanley,rating,,Overweight,2023-01-17 09:48:51,corroborate
+JPM-00184,2023-01-17 09:48:51,JPM | Morgan Stanley,price_target_usd,,167.0,2023-01-17 09:48:51,new
+JPM-00185,2023-01-17 12:42:41,JPM | Oppenheimer,rating,,Outperform,2023-01-17 12:42:41,corroborate
+JPM-00185,2023-01-17 12:42:41,JPM | Oppenheimer,price_target_usd,,177.0,2023-01-17 12:42:41,new
+JPM-00186,2023-02-02 07:45:10,JPM | Oppenheimer,rating,,Outperform,2023-02-02 07:45:10,corroborate
+JPM-00186,2023-02-02 07:45:10,JPM | Oppenheimer,price_target_usd,,186.0,2023-02-02 07:45:10,new
+JPM-00187,2023-02-24 08:04:30,JPM | Morgan Stanley,rating,,Overweight,2023-02-24 08:04:30,corroborate
+JPM-00187,2023-02-24 08:04:30,JPM | Morgan Stanley,price_target_usd,,173.0,2023-02-24 08:04:30,new
+JPM-00188,2023-03-13 05:51:18,JPM | Wells Fargo,rating,,Overweight,2023-03-13 05:51:18,new
+JPM-00188,2023-03-13 05:51:18,JPM | Wells Fargo,price_target_usd,,155.0,2023-03-13 05:51:18,new
+JPM-00189,2023-03-23 07:44:39,JPM | Oppenheimer,rating,,Outperform,2023-03-23 07:44:39,corroborate
+JPM-00189,2023-03-23 07:44:39,JPM | Oppenheimer,price_target_usd,,157.0,2023-03-23 07:44:39,new
+JPM-00190,2023-03-24 09:45:54,JPM | RBC Capital,rating,,Outperform,2023-03-24 09:45:54,new
+JPM-00190,2023-03-24 09:45:54,JPM | RBC Capital,price_target_usd,,132.0,2023-03-24 09:45:54,new
+JPM-00191,2023-04-05 09:35:11,JPM | Morgan Stanley,rating,,Overweight,2023-04-05 09:35:11,corroborate
+JPM-00191,2023-04-05 09:35:11,JPM | Morgan Stanley,price_target_usd,,153.0,2023-04-05 09:35:11,new
+JPM-00192,2023-04-05 12:37:23,JPM | Evercore ISI Group,rating,,Outperform,2023-04-05 12:37:23,new
+JPM-00192,2023-04-05 12:37:23,JPM | Evercore ISI Group,price_target_usd,,146.0,2023-04-05 12:37:23,new
+JPM-00193,2023-04-12 12:12:29,JPM | Barclays,rating,,Overweight,2023-04-12 12:12:29,corroborate
+JPM-00193,2023-04-12 12:12:29,JPM | Barclays,price_target_usd,,179.0,2023-04-12 12:12:29,new
+JPM-00194,2023-04-17 05:56:31,JPM | Piper Sandler,rating,,Overweight,2023-04-17 05:56:31,corroborate
+JPM-00194,2023-04-17 05:56:31,JPM | Piper Sandler,price_target_usd,,151.0,2023-04-17 05:56:31,new
+JPM-00195,2023-04-17 06:51:31,JPM | Wells Fargo,rating,,Overweight,2023-04-17 06:51:31,corroborate
+JPM-00195,2023-04-17 06:51:31,JPM | Wells Fargo,price_target_usd,,165.0,2023-04-17 06:51:31,new
+JPM-00196,2023-04-17 07:20:17,JPM | B of A Securities,rating,,Buy,2023-04-17 07:20:17,new
+JPM-00196,2023-04-17 07:20:17,JPM | B of A Securities,price_target_usd,,158.0,2023-04-17 07:20:17,new
+JPM-00197,2023-04-17 08:23:03,JPM | Morgan Stanley,price_target_usd,,157.0,2023-04-17 08:23:03,new
+JPM-00198,2023-04-17 08:51:09,JPM | Oppenheimer,rating,,Outperform,2023-04-17 08:51:09,corroborate
+JPM-00198,2023-04-17 08:51:09,JPM | Oppenheimer,price_target_usd,,192.0,2023-04-17 08:51:09,new
+JPM-00199,2023-04-17 08:54:24,"JPM | Keefe, Bruyette & Woods",rating,,Market Perform,2023-04-17 08:54:24,new
+JPM-00199,2023-04-17 08:54:24,"JPM | Keefe, Bruyette & Woods",price_target_usd,,155.0,2023-04-17 08:54:24,new
+JPM-00200,2023-04-17 09:18:19,JPM | BMO Capital,price_target_usd,,169.0,2023-04-17 09:18:19,new
+JPM-00201,2023-05-02 07:33:10,JPM | Credit Suisse,rating,,Outperform,2023-05-02 07:33:10,new
+JPM-00201,2023-05-02 07:33:10,JPM | Credit Suisse,price_target_usd,,160.0,2023-05-02 07:33:10,new
+JPM-00202,2023-05-02 08:04:04,JPM | Oppenheimer,rating,,Outperform,2023-05-02 08:04:04,corroborate
+JPM-00202,2023-05-02 08:04:04,JPM | Oppenheimer,price_target_usd,,196.0,2023-05-02 08:04:04,new
+JPM-00203,2023-05-02 09:21:33,JPM | RBC Capital,rating,,Outperform,2023-05-02 09:21:33,corroborate
+JPM-00203,2023-05-02 09:21:33,JPM | RBC Capital,price_target_usd,,147.0,2023-05-02 09:21:33,new
+JPM-00204,2023-05-12 09:10:03,JPM | Evercore ISI Group,rating,,Outperform,2023-05-12 09:10:03,corroborate
+JPM-00204,2023-05-12 09:10:03,JPM | Evercore ISI Group,price_target_usd,,151.0,2023-05-12 09:10:03,new
+JPM-00205,2023-05-15 09:09:39,JPM | Jefferies,rating,,Hold,2023-05-15 09:09:39,new
+JPM-00205,2023-05-15 09:09:39,JPM | Jefferies,price_target_usd,,149.0,2023-05-15 09:09:39,new
+JPM-00206,2023-05-23 07:44:47,JPM | Morgan Stanley,price_target_usd,,160.0,2023-05-23 07:44:47,new
+JPM-00207,2023-06-15 09:14:46,JPM | Citigroup,rating,,Buy,2023-06-15 09:14:46,corroborate
+JPM-00207,2023-06-15 09:14:46,JPM | Citigroup,price_target_usd,,165.0,2023-06-15 09:14:46,corroborate
+JPM-00208,2023-06-20 09:08:54,JPM | Morgan Stanley,rating,,corroborate,2023-06-20 09:08:54,corroborate
+JPM-00208,2023-06-20 09:08:54,JPM | Morgan Stanley,price_target_usd,,corroborate,2023-06-20 09:08:54,corroborate
+JPM-00209,2023-06-26 10:33:11,JPM | Citigroup,price_target_usd,,160.0,2023-06-26 10:33:11,new
+JPM-00210,2023-07-07 05:26:41,JPM | Wolfe Research,rating,,Outperform,2023-07-07 05:26:41,new
+JPM-00211,2023-07-07 11:52:18,JPM | Morgan Stanley,rating,,Overweight,2023-07-07 11:52:18,corroborate
+JPM-00211,2023-07-07 11:52:18,JPM | Morgan Stanley,price_target_usd,,160.0,2023-07-07 11:52:18,corroborate
+JPM-00212,2023-07-10 14:37:46,JPM | Societe Generale,rating,,Hold,2023-07-10 14:37:46,new
+JPM-00213,2023-07-11 04:58:42,JPM | Jefferies,rating,,Buy,2023-07-11 04:58:42,new
+JPM-00213,2023-07-11 04:58:42,JPM | Jefferies,price_target_usd,,165.0,2023-07-11 04:58:42,new
+JPM-00214,2023-07-12 10:29:29,JPM | Citigroup,rating,,Neutral,2023-07-12 10:29:29,new
+JPM-00214,2023-07-12 10:29:29,JPM | Citigroup,price_target_usd,,160.0,2023-07-12 10:29:29,new
+JPM-00215,2023-07-17 07:56:27,JPM | Credit Suisse,price_target_usd,,170.0,2023-07-17 07:56:27,new
+JPM-00216,2023-07-17 08:25:34,JPM | Oppenheimer,rating,,Outperform,2023-07-17 08:25:34,corroborate
+JPM-00216,2023-07-17 08:25:34,JPM | Oppenheimer,price_target_usd,,227.0,2023-07-17 08:25:34,new
+JPM-00217,2023-07-17 11:36:57,JPM | Piper Sandler,rating,,Overweight,2023-07-17 11:36:57,corroborate
+JPM-00217,2023-07-17 11:36:57,JPM | Piper Sandler,price_target_usd,,168.0,2023-07-17 11:36:57,new
+JPM-00218,2023-07-18 10:17:16,JPM | Morgan Stanley,price_target_usd,,173.0,2023-07-18 10:17:16,new
+JPM-00219,2023-08-01 06:23:24,JPM | Atlantic Equities,rating,,Neutral,2023-08-01 06:23:24,new
+JPM-00219,2023-08-01 06:23:24,JPM | Atlantic Equities,price_target_usd,,160.0,2023-08-01 06:23:24,new
+JPM-00220,2023-08-18 08:22:18,JPM | Oppenheimer,rating,,Outperform,2023-08-18 08:22:18,corroborate
+JPM-00220,2023-08-18 08:22:18,JPM | Oppenheimer,price_target_usd,,219.0,2023-08-18 08:22:18,new
+JPM-00221,2023-09-07 05:06:25,JPM | HSBC,rating,,Hold,2023-09-07 05:06:25,new
+JPM-00221,2023-09-07 05:06:25,JPM | HSBC,price_target_usd,,159.0,2023-09-07 05:06:25,new
+JPM-00222,2023-09-08 09:02:38,JPM | RBC Capital,rating,,Outperform,2023-09-08 09:02:38,corroborate
+JPM-00222,2023-09-08 09:02:38,JPM | RBC Capital,price_target_usd,,158.0,2023-09-08 09:02:38,corroborate
+JPM-00223,2023-09-12 08:55:14,JPM | Morgan Stanley,price_target_usd,,179.0,2023-09-12 08:55:14,new
+JPM-00224,2023-09-12 11:36:13,JPM | RBC Capital,rating,,Outperform,2023-09-12 11:36:13,corroborate
+JPM-00224,2023-09-12 11:36:13,JPM | RBC Capital,price_target_usd,,158.0,2023-09-12 11:36:13,corroborate
+JPM-00225,2023-09-26 10:34:37,JPM | Oppenheimer,rating,,Outperform,2023-09-26 10:34:37,corroborate
+JPM-00225,2023-09-26 10:34:37,JPM | Oppenheimer,price_target_usd,,215.0,2023-09-26 10:34:37,new
+JPM-00226,2023-10-03 11:00:06,JPM | Morgan Stanley,price_target_usd,,187.0,2023-10-03 11:00:06,new
+JPM-00226,2023-10-03 11:00:06,JPM | Morgan Stanley,rating,,Overweight,2023-10-03 11:00:06,corroborate
+JPM-00227,2023-10-16 08:51:16,JPM | Morgan Stanley,price_target_usd,,191.0,2023-10-16 08:51:16,new
+JPM-00228,2023-10-16 09:46:43,JPM | Oppenheimer,rating,,Outperform,2023-10-16 09:46:43,corroborate
+JPM-00228,2023-10-16 09:46:43,JPM | Oppenheimer,price_target_usd,,233.0,2023-10-16 09:46:43,new
+JPM-00229,2023-10-16 12:56:38,JPM | BMO Capital,price_target_usd,,171.0,2023-10-16 12:56:38,new
+JPM-00230,2023-10-16 13:28:28,JPM | Piper Sandler,rating,,Overweight,2023-10-16 13:28:28,corroborate
+JPM-00230,2023-10-16 13:28:28,JPM | Piper Sandler,price_target_usd,,170.0,2023-10-16 13:28:28,new
+JPM-00231,2023-11-16 13:51:48,JPM | Oppenheimer,rating,,Outperform,2023-11-16 13:51:48,corroborate
+JPM-00231,2023-11-16 13:51:48,JPM | Oppenheimer,price_target_usd,,243.0,2023-11-16 13:51:48,new
+JPM-00232,2023-12-18 11:17:05,JPM | Daiwa Capital,rating,,Buy,2023-12-18 11:17:05,new
+JPM-00233,2024-01-02 06:48:24,JPM | Barclays,rating,,Overweight,2024-01-02 06:48:24,corroborate
+JPM-00233,2024-01-02 06:48:24,JPM | Barclays,price_target_usd,,212.0,2024-01-02 06:48:24,new
+JPM-00234,2024-01-04 11:15:47,JPM | B of A Securities,price_target_usd,,188.0,2024-01-04 11:15:47,new
+JPM-00235,2024-01-09 06:57:32,JPM | Deutsche Bank,rating,,Buy,2024-01-09 06:57:32,new
+JPM-00235,2024-01-09 06:57:32,JPM | Deutsche Bank,price_target_usd,,190.0,2024-01-09 06:57:32,new
+JPM-00236,2024-01-16 08:42:00,JPM | BMO Capital,rating,,Market Perform,2024-01-16 08:42:00,corroborate
+JPM-00236,2024-01-16 08:42:00,JPM | BMO Capital,price_target_usd,,194.0,2024-01-16 08:42:00,new
+JPM-00237,2024-01-16 10:02:20,JPM | Piper Sandler,rating,,Overweight,2024-01-16 10:02:20,corroborate
+JPM-00237,2024-01-16 10:02:20,JPM | Piper Sandler,price_target_usd,,200.0,2024-01-16 10:02:20,new
+JPM-00238,2024-01-16 10:27:12,JPM | Oppenheimer,rating,,Outperform,2024-01-16 10:27:12,corroborate
+JPM-00238,2024-01-16 10:27:12,JPM | Oppenheimer,price_target_usd,,232.0,2024-01-16 10:27:12,new
+JPM-00239,2024-01-30 06:39:33,JPM | Morgan Stanley,rating,,Overweight,2024-01-30 06:39:33,corroborate
+JPM-00239,2024-01-30 06:39:33,JPM | Morgan Stanley,price_target_usd,,221.0,2024-01-30 06:39:33,new
+JPM-00240,2024-01-30 13:08:37,JPM | Oppenheimer,price_target_usd,,238.0,2024-01-30 13:08:37,new
+JPM-00241,2024-02-01 14:04:29,JPM | Goldman Sachs,rating,,Buy,2024-02-01 14:04:29,corroborate
+JPM-00242,2024-03-08 09:40:11,JPM | Piper Sandler,rating,,Overweight,2024-03-08 09:40:11,corroborate
+JPM-00242,2024-03-08 09:40:11,JPM | Piper Sandler,price_target_usd,,210.0,2024-03-08 09:40:11,new
+JPM-00243,2024-03-13 10:59:38,JPM | RBC Capital,rating,,Outperform,2024-03-13 10:59:38,corroborate
+JPM-00243,2024-03-13 10:59:38,JPM | RBC Capital,price_target_usd,,185.0,2024-03-13 10:59:38,corroborate
+JPM-00244,2024-03-19 09:21:44,JPM | Oppenheimer,rating,,Outperform,2024-03-19 09:21:44,corroborate
+JPM-00244,2024-03-19 09:21:44,JPM | Oppenheimer,price_target_usd,,219.0,2024-03-19 09:21:44,new
+JPM-00245,2024-03-20 06:24:02,JPM | Wells Fargo,rating,,Overweight,2024-03-20 06:24:02,corroborate
+JPM-00245,2024-03-20 06:24:02,JPM | Wells Fargo,price_target_usd,,220.0,2024-03-20 06:24:02,new
+JPM-00246,2024-03-20 11:06:23,JPM | RBC Capital,rating,,Outperform,2024-03-20 11:06:23,corroborate
+JPM-00246,2024-03-20 11:06:23,JPM | RBC Capital,price_target_usd,,185.0,2024-03-20 11:06:23,corroborate
+JPM-00247,2024-04-04 12:46:07,JPM | Evercore ISI Group,rating,,Outperform,2024-04-04 12:46:07,corroborate
+JPM-00247,2024-04-04 12:46:07,JPM | Evercore ISI Group,price_target_usd,,210.0,2024-04-04 12:46:07,new
+JPM-00248,2024-04-05 11:48:58,"JPM | Keefe, Bruyette & Woods",rating,,Market Perform,2024-04-05 11:48:58,corroborate
+JPM-00248,2024-04-05 11:48:58,"JPM | Keefe, Bruyette & Woods",price_target_usd,,195.0,2024-04-05 11:48:58,new
+JPM-00249,2024-04-08 15:17:14,JPM | Jefferies,rating,,Buy,2024-04-08 15:17:14,corroborate
+JPM-00249,2024-04-08 15:17:14,JPM | Jefferies,price_target_usd,,228.0,2024-04-08 15:17:14,new
+JPM-00250,2024-04-14 06:35:57,"JPM | Keefe, Bruyette & Woods",price_target_usd,,203.0,2024-04-14 06:35:57,new
+JPM-00251,2024-04-15 07:50:37,JPM | Oppenheimer,rating,,Outperform,2024-04-15 07:50:37,corroborate
+JPM-00251,2024-04-15 07:50:37,JPM | Oppenheimer,price_target_usd,,217.0,2024-04-15 07:50:37,new
+JPM-00252,2024-04-15 09:00:02,JPM | BMO Capital,rating,,Market Perform,2024-04-15 09:00:02,corroborate
+JPM-00252,2024-04-15 09:00:02,JPM | BMO Capital,price_target_usd,,195.0,2024-04-15 09:00:02,new
+JPM-00253,2024-04-15 09:41:32,JPM | Piper Sandler,rating,,Overweight,2024-04-15 09:41:32,corroborate
+JPM-00253,2024-04-15 09:41:32,JPM | Piper Sandler,price_target_usd,,215.0,2024-04-15 09:41:32,new
+JPM-00254,2024-04-15 12:35:36,JPM | Morgan Stanley,rating,,Overweight,2024-04-15 12:35:36,corroborate
+JPM-00254,2024-04-15 12:35:36,JPM | Morgan Stanley,price_target_usd,,216.0,2024-04-15 12:35:36,new
+JPM-00255,2024-04-16 08:52:54,JPM | UBS,rating,,Buy,2024-04-16 08:52:54,new
+JPM-00255,2024-04-16 08:52:54,JPM | UBS,price_target_usd,,219.0,2024-04-16 08:52:54,new
+JPM-00256,2024-05-21 06:52:03,"JPM | Keefe, Bruyette & Woods",price_target_usd,,209.0,2024-05-21 06:52:03,new
+JPM-00257,2024-05-21 07:12:07,JPM | Baird,rating,,Neutral,2024-05-21 07:12:07,new
+JPM-00257,2024-05-21 07:12:07,JPM | Baird,price_target_usd,,185.0,2024-05-21 07:12:07,new
+JPM-00258,2024-05-21 08:36:20,JPM | Piper Sandler,rating,,Overweight,2024-05-21 08:36:20,corroborate
+JPM-00258,2024-05-21 08:36:20,JPM | Piper Sandler,price_target_usd,,220.0,2024-05-21 08:36:20,new
+JPM-00259,2024-05-21 11:09:49,JPM | RBC Capital,rating,,Outperform,2024-05-21 11:09:49,corroborate
+JPM-00259,2024-05-21 11:09:49,JPM | RBC Capital,price_target_usd,,211.0,2024-05-21 11:09:49,corroborate
+JPM-00260,2024-05-21 11:31:37,JPM | Morgan Stanley,price_target_usd,,214.0,2024-05-21 11:31:37,new
+JPM-00261,2024-05-21 14:39:00,JPM | UBS,price_target_usd,,224.0,2024-05-21 14:39:00,new
+JPM-00262,2024-07-03 09:50:46,JPM | Evercore ISI Group,rating,,Outperform,2024-07-03 09:50:46,corroborate
+JPM-00262,2024-07-03 09:50:46,JPM | Evercore ISI Group,price_target_usd,,210.0,2024-07-03 09:50:46,corroborate
+JPM-00263,2024-07-03 11:34:43,JPM | Jefferies,price_target_usd,,239.0,2024-07-03 11:34:43,new
+JPM-00263,2024-07-03 11:34:43,JPM | Jefferies,rating,,Buy,2024-07-03 11:34:43,corroborate
+JPM-00264,2024-07-09 09:27:54,"JPM | Keefe, Bruyette & Woods",rating,,Market Perform,2024-07-09 09:27:54,corroborate
+JPM-00264,2024-07-09 09:27:54,"JPM | Keefe, Bruyette & Woods",price_target_usd,,211.0,2024-07-09 09:27:54,new
+JPM-00265,2024-07-15 08:14:53,JPM | Piper Sandler,rating,,Overweight,2024-07-15 08:14:53,corroborate
+JPM-00265,2024-07-15 08:14:53,JPM | Piper Sandler,price_target_usd,,230.0,2024-07-15 08:14:53,new
+JPM-00266,2024-07-15 08:38:16,JPM | Morgan Stanley,rating,,Overweight,2024-07-15 08:38:16,corroborate
+JPM-00266,2024-07-15 08:38:16,JPM | Morgan Stanley,price_target_usd,,221.0,2024-07-15 08:38:16,new
+JPM-00267,2024-07-15 08:50:13,JPM | Oppenheimer,rating,,Outperform,2024-07-15 08:50:13,corroborate
+JPM-00267,2024-07-15 08:50:13,JPM | Oppenheimer,price_target_usd,,221.0,2024-07-15 08:50:13,new
+JPM-00268,2024-07-15 08:58:15,JPM | Barclays,rating,,Overweight,2024-07-15 08:58:15,corroborate
+JPM-00268,2024-07-15 08:58:15,JPM | Barclays,price_target_usd,,217.0,2024-07-15 08:58:15,new
+JPM-00269,2024-07-15 09:14:34,JPM | Wells Fargo,rating,,Overweight,2024-07-15 09:14:34,corroborate
+JPM-00269,2024-07-15 09:14:34,JPM | Wells Fargo,price_target_usd,,225.0,2024-07-15 09:14:34,new
+JPM-00270,2024-07-15 10:17:50,JPM | Citigroup,price_target_usd,,215.0,2024-07-15 10:17:50,new
+JPM-00271,2024-07-15 10:56:14,JPM | Evercore ISI Group,price_target_usd,,211.0,2024-07-15 10:56:14,new
+JPM-00272,2024-07-30 10:52:44,JPM | Morgan Stanley,rating,,Overweight,2024-07-30 10:52:44,corroborate
+JPM-00272,2024-07-30 10:52:44,JPM | Morgan Stanley,price_target_usd,,226.0,2024-07-30 10:52:44,new
+JPM-00273,2024-09-03 07:02:29,JPM | Deutsche Bank,rating,,Hold,2024-09-03 07:02:29,new
+JPM-00273,2024-09-03 07:02:29,JPM | Deutsche Bank,price_target_usd,,235.0,2024-09-03 07:02:29,new
+JPM-00274,2024-09-12 09:15:17,JPM | Morgan Stanley,rating,,Overweight,2024-09-12 09:15:17,corroborate
+JPM-00274,2024-09-12 09:15:17,JPM | Morgan Stanley,price_target_usd,,220.0,2024-09-12 09:15:17,new
+JPM-00275,2024-10-02 09:55:16,JPM | Oppenheimer,rating,,Outperform,2024-10-02 09:55:16,corroborate
+JPM-00275,2024-10-02 09:55:16,JPM | Oppenheimer,price_target_usd,,234.0,2024-10-02 09:55:16,new
+JPM-00276,2024-10-14 08:59:32,JPM | Evercore ISI Group,price_target_usd,,230.0,2024-10-14 08:59:32,new
+JPM-00277,2024-10-14 09:48:16,JPM | RBC Capital,price_target_usd,,230.0,2024-10-14 09:48:16,new
+JPM-00278,2024-10-14 10:22:21,JPM | Barclays,rating,,Overweight,2024-10-14 10:22:21,corroborate
+JPM-00278,2024-10-14 10:22:21,JPM | Barclays,price_target_usd,,257.0,2024-10-14 10:22:21,new
+JPM-00279,2024-10-14 11:34:37,JPM | Oppenheimer,rating,,Outperform,2024-10-14 11:34:37,corroborate
+JPM-00279,2024-10-14 11:34:37,JPM | Oppenheimer,price_target_usd,,232.0,2024-10-14 11:34:37,new
+JPM-00280,2024-11-05 11:48:46,JPM | Oppenheimer,rating,,Outperform,2024-11-05 11:48:46,corroborate
+JPM-00280,2024-11-05 11:48:46,JPM | Oppenheimer,price_target_usd,,241.0,2024-11-05 11:48:46,new
+JPM-00281,2024-11-15 07:51:27,JPM | Wells Fargo,rating,,Overweight,2024-11-15 07:51:27,corroborate
+JPM-00281,2024-11-15 07:51:27,JPM | Wells Fargo,price_target_usd,,270.0,2024-11-15 07:51:27,new
+JPM-00282,2024-11-19 11:45:14,JPM | Citigroup,price_target_usd,,250.0,2024-11-19 11:45:14,new
+JPM-00283,2024-11-20 09:35:42,JPM | Oppenheimer,rating,,Perform,2024-11-20 09:35:42,new
+JPM-00284,2024-12-03 07:40:18,"JPM | Keefe, Bruyette & Woods",rating,,Market Perform,2024-12-03 07:40:18,corroborate
+JPM-00284,2024-12-03 07:40:18,"JPM | Keefe, Bruyette & Woods",price_target_usd,,254.0,2024-12-03 07:40:18,new
+JPM-00285,2024-12-03 11:13:59,JPM | Piper Sandler,rating,,Overweight,2024-12-03 11:13:59,corroborate
+JPM-00285,2024-12-03 11:13:59,JPM | Piper Sandler,price_target_usd,,275.0,2024-12-03 11:13:59,new
+JPM-00286,2025-01-06 13:11:13,JPM | Barclays,price_target_usd,,304.0,2025-01-06 13:11:13,new
+JPM-00287,2025-01-07 07:12:58,JPM | Truist Securities,rating,,Hold,2025-01-07 07:12:58,new
+JPM-00287,2025-01-07 07:12:58,JPM | Truist Securities,price_target_usd,,260.0,2025-01-07 07:12:58,new
+JPM-00288,2025-01-07 12:46:53,JPM | B of A Securities,rating,,Buy,2025-01-07 12:46:53,corroborate
+JPM-00288,2025-01-07 12:46:53,JPM | B of A Securities,price_target_usd,,280.0,2025-01-07 12:46:53,new
+JPM-00289,2025-01-16 09:46:50,JPM | Truist Securities,price_target_usd,,268.0,2025-01-16 09:46:50,new
+JPM-00290,2025-01-16 11:30:37,"JPM | Keefe, Bruyette & Woods",rating,,Market Perform,2025-01-16 11:30:37,new
+JPM-00290,2025-01-16 11:30:37,"JPM | Keefe, Bruyette & Woods",price_target_usd,,264.0,2025-01-16 11:30:37,new
+JPM-00291,2025-01-16 12:59:28,JPM | Barclays,price_target_usd,,330.0,2025-01-16 12:59:28,new
+JPM-00292,2025-01-16 15:25:21,JPM | UBS,price_target_usd,,287.0,2025-01-16 15:25:21,new
+JPM-00293,2025-04-01 10:35:56,JPM | Evercore ISI Group,rating,,Outperform,2025-04-01 10:35:56,corroborate
+JPM-00293,2025-04-01 10:35:56,JPM | Evercore ISI Group,price_target_usd,,265.0,2025-04-01 10:35:56,new
+JPM-00294,2025-04-02 08:30:14,JPM | B of A Securities,price_target_usd,,284.0,2025-04-02 08:30:14,new
+JPM-00295,2025-04-04 10:24:44,JPM | Truist Securities,price_target_usd,,264.0,2025-04-04 10:24:44,new
+JPM-00296,2025-04-14 08:33:32,JPM | Truist Securities,price_target_usd,,251.0,2025-04-14 08:33:32,new
+JPM-00297,2025-04-17 13:18:34,JPM | UBS,price_target_usd,,305.0,2025-04-17 13:18:34,new
+JPM-00298,2025-05-20 08:58:32,JPM | Baird,price_target_usd,,235.0,2025-05-20 08:58:32,new
+JPM-00299,2025-05-20 09:18:37,JPM | Morgan Stanley,price_target_usd,,236.0,2025-05-20 09:18:37,new
+JPM-00299,2025-05-20 09:18:37,JPM | Morgan Stanley,rating,,Equal-Weight,2025-05-20 09:18:37,new
+JPM-00300,2025-05-20 10:04:14,JPM | RBC Capital,price_target_usd,,285.0,2025-05-20 10:04:14,new
+JPM-00301,2025-05-20 10:31:15,JPM | Piper Sandler,rating,,Overweight,2025-05-20 10:31:15,corroborate
+JPM-00301,2025-05-20 10:31:15,JPM | Piper Sandler,price_target_usd,,295.0,2025-05-20 10:31:15,new
+JPM-00302,2025-05-20 10:48:48,JPM | TD Securities,rating,,Buy,2025-05-20 10:48:48,new
+JPM-00302,2025-05-20 10:48:48,JPM | TD Securities,price_target_usd,,315.0,2025-05-20 10:48:48,new
+JPM-00303,2025-05-23 08:53:26,JPM | Truist Securities,price_target_usd,,270.0,2025-05-23 08:53:26,new
+JPM-00304,2025-06-02 09:24:52,JPM | Truist Securities,price_target_usd,,280.0,2025-06-02 09:24:52,new
+JPM-00305,2025-06-10 09:34:59,JPM | Wells Fargo,rating,,Overweight,2025-06-10 09:34:59,corroborate
+JPM-00305,2025-06-10 09:34:59,JPM | Wells Fargo,price_target_usd,,320.0,2025-06-10 09:34:59,new
+JPM-00306,2025-06-18 10:10:19,JPM | B of A Securities,price_target_usd,,325.0,2025-06-18 10:10:19,new
+JPM-00307,2025-06-23 13:55:46,JPM | Morgan Stanley,price_target_usd,,240.0,2025-06-23 13:55:46,new
+JPM-00307,2025-06-23 13:55:46,JPM | Morgan Stanley,rating,,Equal-Weight,2025-06-23 13:55:46,new
+JPM-00308,2025-06-26 09:40:17,JPM | Citigroup,price_target_usd,,275.0,2025-06-26 09:40:17,new
+JPM-00309,2025-07-02 11:59:31,JPM | Evercore ISI Group,price_target_usd,,298.0,2025-07-02 11:59:31,new
+JPM-00310,2025-07-03 12:14:55,JPM | Morgan Stanley,price_target_usd,,296.0,2025-07-03 12:14:55,new
+JPM-00310,2025-07-03 12:14:55,JPM | Morgan Stanley,rating,,Equal-Weight,2025-07-03 12:14:55,new
+JPM-00311,2025-07-09 10:25:53,JPM | Truist Securities,price_target_usd,,290.0,2025-07-09 10:25:53,new
+JPM-00312,2025-07-15 11:47:21,JPM | Piper Sandler,price_target_usd,,320.0,2025-07-15 11:47:21,new
+JPM-00313,2025-07-16 07:17:36,JPM | B of A Securities,price_target_usd,,340.0,2025-07-16 07:17:36,new
+JPM-00314,2025-07-16 08:02:38,"JPM | Keefe, Bruyette & Woods",rating,,Outperform,2025-07-16 08:02:38,new
+JPM-00314,2025-07-16 08:02:38,"JPM | Keefe, Bruyette & Woods",price_target_usd,,330.0,2025-07-16 08:02:38,new
+JPM-00315,2025-07-16 08:06:47,JPM | Morgan Stanley,price_target_usd,,298.0,2025-07-16 08:06:47,new
+JPM-00315,2025-07-16 08:06:47,JPM | Morgan Stanley,rating,,Equal-Weight,2025-07-16 08:06:47,new
+JPM-00316,2025-07-16 12:08:58,JPM | Wells Fargo,rating,,Overweight,2025-07-16 12:08:58,corroborate
+JPM-00316,2025-07-16 12:08:58,JPM | Wells Fargo,price_target_usd,,325.0,2025-07-16 12:08:58,new
+JPM-00317,2025-09-16 09:17:44,JPM | Wells Fargo,price_target_usd,,345.0,2025-09-16 09:17:44,new
+JPM-00318,2025-09-24 10:08:12,JPM | Citigroup,price_target_usd,,325.0,2025-09-24 10:08:12,new
+JPM-00319,2025-09-24 13:21:52,JPM | Truist Securities,price_target_usd,,319.0,2025-09-24 13:21:52,new
+JPM-00320,2025-09-29 13:31:14,JPM | Morgan Stanley,price_target_usd,,336.0,2025-09-29 13:31:14,new
+JPM-00320,2025-09-29 13:31:14,JPM | Morgan Stanley,rating,,Equal-Weight,2025-09-29 13:31:14,new
+JPM-00321,2025-09-30 13:20:41,JPM | Evercore ISI Group,price_target_usd,,330.0,2025-09-30 13:20:41,new
+JPM-00322,2025-10-07 12:36:17,JPM | UBS,price_target_usd,,350.0,2025-10-07 12:36:17,new
+JPM-00322,2025-10-07 12:36:17,JPM | UBS,rating,,Buy,2025-10-07 12:36:17,corroborate
+JPM-00323,2025-10-15 09:04:40,JPM | Morgan Stanley,price_target_usd,,338.0,2025-10-15 09:04:40,new
+JPM-00323,2025-10-15 09:04:40,JPM | Morgan Stanley,rating,,Equal-Weight,2025-10-15 09:04:40,new
+JPM-00324,2025-10-15 10:45:33,JPM | Barclays,price_target_usd,,342.0,2025-10-15 10:45:33,new
+JPM-00325,2025-10-23 16:25:21,JPM | Freedom Broker,rating,,Hold,2025-10-23 16:25:21,new
+JPM-00325,2025-10-23 16:25:21,JPM | Freedom Broker,price_target_usd,,310.0,2025-10-23 16:25:21,new
+JPM-00326,2025-11-03 09:08:49,JPM | Wells Fargo,price_target_usd,,350.0,2025-11-03 09:08:49,new
+JPM-00327,2025-12-17 13:05:25,"JPM | Keefe, Bruyette & Woods",price_target_usd,,363.0,2025-12-17 13:05:25,new
+JPM-00328,2025-12-18 09:29:56,JPM | Truist Securities,price_target_usd,,330.0,2025-12-18 09:29:56,new
+JPM-00329,2026-01-05 09:46:17,JPM | Barclays,rating,,Overweight,2026-01-05 09:46:17,corroborate
+JPM-00329,2026-01-05 09:46:17,JPM | Barclays,price_target_usd,,391.0,2026-01-05 09:46:17,new
+JPM-00330,2026-01-06 10:03:11,JPM | Truist Securities,price_target_usd,,331.0,2026-01-06 10:03:11,new
+JPM-00331,2026-01-14 08:02:10,JPM | CICC,rating,,Outperform,2026-01-14 08:02:10,new
+JPM-00331,2026-01-14 08:02:10,JPM | CICC,price_target_usd,,355.0,2026-01-14 08:02:10,new
+JPM-00332,2026-01-22 05:20:56,JPM | Freedom Broker,price_target_usd,,320.0,2026-01-22 05:20:56,new
+JPM-00333,2026-02-17 09:15:44,JPM | Wells Fargo,rating,,Overweight,2026-02-17 09:15:44,corroborate
+JPM-00333,2026-02-17 09:15:44,JPM | Wells Fargo,price_target_usd,,350.0,2026-02-17 09:15:44,new
+JPM-00334,2026-02-25 13:19:51,JPM | Truist Securities,rating,,Hold,2026-02-25 13:19:51,corroborate
+JPM-00334,2026-02-25 13:19:51,JPM | Truist Securities,price_target_usd,,330.0,2026-02-25 13:19:51,new
+JPM-00335,2026-03-26 08:53:41,JPM | Jefferies,rating,,Hold,2026-03-26 08:53:41,new
+JPM-00335,2026-03-26 08:53:41,JPM | Jefferies,price_target_usd,,310.0,2026-03-26 08:53:41,new
+JPM-00336,2026-03-26 13:17:34,JPM | Truist Securities,rating,,Hold,2026-03-26 13:17:34,corroborate
+JPM-00336,2026-03-26 13:17:34,JPM | Truist Securities,price_target_usd,,323.0,2026-03-26 13:17:34,new
+JPM-00337,2026-03-30 13:49:29,JPM | Piper Sandler,rating,,Overweight,2026-03-30 13:49:29,new
+JPM-00337,2026-03-30 13:49:29,JPM | Piper Sandler,price_target_usd,,325.0,2026-03-30 13:49:29,new
+JPM-00337,2026-03-30 13:49:29,JPM | Piper Sandler,price_target_usd,,345.0,2026-03-30 13:49:29,inferred
+JPM-00338,2026-04-06 13:33:31,JPM | Evercore ISI Group,rating,,Outperform,2026-04-06 13:33:31,corroborate
+JPM-00338,2026-04-06 13:33:31,JPM | Evercore ISI Group,price_target_usd,,320.0,2026-04-06 13:33:31,new
+JPM-00339,2026-04-14 13:08:19,JPM | Piper Sandler,rating,,Overweight,2026-04-14 13:08:19,new
+JPM-00339,2026-04-14 13:08:19,JPM | Piper Sandler,price_target_usd,,345.0,2026-04-14 13:08:19,new
+JPM-00340,2026-04-15 10:22:32,JPM | Truist Securities,price_target_usd,,332.0,2026-04-15 10:22:32,new
+JPM-00341,2026-04-15 13:04:17,JPM | Jefferies,price_target_usd,,320.0,2026-04-15 13:04:17,new
+JPM-00342,2026-04-17 08:30:19,JPM | Evercore ISI Group,rating,,Outperform,2026-04-17 08:30:19,corroborate
+JPM-00342,2026-04-17 08:30:19,JPM | Evercore ISI Group,price_target_usd,,340.0,2026-04-17 08:30:19,new
+JPM-00343,2026-06-26 12:15:35,JPM | Truist Securities,price_target_usd,,344.0,2026-06-26 12:15:35,new
+JPM-00344,2026-06-29 13:27:02,JPM | Morgan Stanley,rating,,Equal-Weight,2026-06-29 13:27:02,new
+JPM-00344,2026-06-29 13:27:02,JPM | Morgan Stanley,price_target_usd,,362.0,2026-06-29 13:27:02,new
+JPM-00345,2026-07-06 07:17:41,JPM | Wells Fargo,rating,,Overweight,2026-07-06 07:17:41,corroborate
+JPM-00345,2026-07-06 07:17:41,JPM | Wells Fargo,price_target_usd,,360.0,2026-07-06 07:17:41,new
+JPM-00346,2026-07-06 12:29:31,JPM | Evercore ISI Group,rating,,Outperform,2026-07-06 12:29:31,corroborate
+JPM-00346,2026-07-06 12:29:31,JPM | Evercore ISI Group,price_target_usd,,360.0,2026-07-06 12:29:31,new
+JPM-00347,2026-07-07 09:29:20,JPM | UBS,price_target_usd,,384.0,2026-07-07 09:29:20,new
+JPM-00347,2026-07-07 09:29:20,JPM | UBS,rating,,Buy,2026-07-07 09:29:20,corroborate
+JPM-00348,2026-07-07 10:29:41,JPM | B of A Securities,rating,,Buy,2026-07-07 10:29:41,corroborate
+JPM-00348,2026-07-07 10:29:41,JPM | B of A Securities,price_target_usd,,408.0,2026-07-07 10:29:41,new
+JPM-00349,2026-07-15 08:20:41,"JPM | Keefe, Bruyette & Woods",price_target_usd,,384.0,2026-07-15 08:20:41,new
+JPM-00350,2026-07-15 08:24:27,JPM | Barclays,price_target_usd,,420.0,2026-07-15 08:24:27,new
+JPM-00351,2026-07-15 08:49:41,JPM | Truist Securities,price_target_usd,,352.0,2026-07-15 08:49:41,new
+JPM-00352,2026-07-15 09:14:18,JPM | Wells Fargo,rating,,Overweight,2026-07-15 09:14:18,corroborate
+JPM-00352,2026-07-15 09:14:18,JPM | Wells Fargo,price_target_usd,,375.0,2026-07-15 09:14:18,new
+JPM-00353,2026-07-15 11:48:14,JPM | RBC Capital,price_target_usd,,370.0,2026-07-15 11:48:14,new
+JPM-00354,2026-07-15 13:34:51,JPM | Baird,price_target_usd,,305.0,2026-07-15 13:34:51,new
+JPM-00355,2026-07-16 13:53:34,JPM | B of A Securities,price_target_usd,,420.0,2026-07-16 13:53:34,new
+JPM-00356,2026-07-17 09:41:34,JPM | Evercore ISI Group,rating,,Outperform,2026-07-17 09:41:34,corroborate
+JPM-00356,2026-07-17 09:41:34,JPM | Evercore ISI Group,price_target_usd,,368.0,2026-07-17 09:41:34,new
+JPM-00357,2026-07-20 14:59:47,JPM | Citigroup,price_target_usd,,360.0,2026-07-20 14:59:47,new
+JPM-00358,2026-08-03 16:52:27,JPM | UBS,price_target_usd,,400.0,2026-08-03 16:52:27,new
+JPM-00358,2026-08-03 16:52:27,JPM | UBS,rating,,Buy,2026-08-03 16:52:27,corroborate
+JPM-00359,2026-08-14 10:37:22,JPM | Wells Fargo,price_target_usd,,390.0,2026-08-14 10:37:22,new
+JPM-00360,2026-09-28 09:56:12,JPM | HSBC,price_target_usd,,377.0,2026-09-28 09:56:12,new
+JPM-00360,2026-09-28 09:56:12,JPM | HSBC,rating,,Hold,2026-09-28 09:56:12,corroborate
+JPM-00361,2026-10-05 16:54:05,JPM | UBS,price_target_usd,,395.0,2026-10-05 16:54:05,new
+JPM-00362,2026-10-14 08:34:25,JPM | Baird,price_target_usd,,312.0,2026-10-14 08:34:25,new
+JPM-00363,2026-10-14 08:49:56,JPM | Morgan Stanley,rating,,Equal-Weight,2026-10-14 08:49:56,new
+JPM-00363,2026-10-14 08:49:56,JPM | Morgan Stanley,price_target_usd,,377.0,2026-10-14 08:49:56,new
+JPM-00364,2026-10-14 09:32:45,JPM | RBC Capital,rating,,Outperform,2026-10-14 09:32:45,corroborate
+JPM-00364,2026-10-14 09:32:45,JPM | RBC Capital,price_target_usd,,370.0,2026-10-14 09:32:45,corroborate
+JPM-00365,2026-10-14 09:53:14,JPM | Barclays,price_target_usd,,425.0,2026-10-14 09:53:14,new
+JPM-00366,2026-10-14 13:33:58,JPM | Truist Securities,price_target_usd,,361.0,2026-10-14 13:33:58,new
+JPM-00367,2026-10-15 15:00:56,JPM | Citigroup,price_target_usd,,350.0,2026-10-15 15:00:56,new
+JPM-00368,2026-11-02 16:58:18,JPM | UBS,price_target_usd,,400.0,2026-11-02 16:58:18,new

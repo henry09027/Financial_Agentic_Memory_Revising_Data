@@ -1,0 +1,43 @@
+{
+ "qid": "broker-XOM-002-Q5-today",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "XOM",
+ "qtype": "count_changes",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many times did brokers raise or lower their XOM price target between 1 March 2024 and the as-of time?",
+ "gold": "125",
+ "peek_answers": "",
+ "trap_answers": "140|163|178",
+ "gold_evidence": "XOM-00246|XOM-00257|XOM-00274|XOM-00280|XOM-00281|XOM-00298|XOM-00314|XOM-00319|XOM-00325|XOM-00344|XOM-00353|XOM-00359|XOM-00368|XOM-00229|XOM-00242|XOM-00251|XOM-00268|XOM-00276|XOM-00283|XOM-00297|XOM-00309|XOM-00326|XOM-00345|XOM-00349|XOM-00232|XOM-00238|XOM-00249|XOM-00255|XOM-00272|XOM-00285|XOM-00308|XOM-00317|XOM-00321|XOM-00331|XOM-00360|XOM-00233|XOM-00243|XOM-00248|XOM-00256|XOM-00271|XOM-00296|XOM-00307|XOM-00316|XOM-00322|XOM-00350|XOM-00230|XOM-00239|XOM-00263|XOM-00264|XOM-00310|XOM-00320|XOM-00336|XOM-00348|XOM-00352|XOM-00356|XOM-00364|XOM-00235|XOM-00261|XOM-00278|XOM-00288|XOM-00299|XOM-00302|XOM-00340|XOM-00236|XOM-00241|XOM-00244|XOM-00250|XOM-00253|XOM-00267|XOM-00277|XOM-00279|XOM-00295|XOM-00300|XOM-00341|XOM-00363|XOM-00252|XOM-00275|XOM-00290|XOM-00304|XOM-00315|XOM-00328|XOM-00337|XOM-00347|XOM-00354|XOM-00358|XOM-00362|XOM-00228|XOM-00237|XOM-00270|XOM-00284|XOM-00286|XOM-00287|XOM-00293|XOM-00303|XOM-00313|XOM-00324|XOM-00334|XOM-00355|XOM-00305|XOM-00332|XOM-00265|XOM-00282|XOM-00318|XOM-00333|XOM-00306|XOM-00323|XOM-00329|XOM-00365|XOM-00330|XOM-00247|XOM-00311|XOM-00343|XOM-00367|XOM-00269|XOM-00289|XOM-00335|XOM-00254|XOM-00240|XOM-00291|XOM-00327|XOM-00258|XOM-00351|XOM-00366|XOM-00338|XOM-00361",
+ "answer": "3",
+ "cited": "XOM-00365|XOM-00367|XOM-00368",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.024,
+ "in_tokens": 980,
+ "out_tokens": 42,
+ "seconds": 0.0428,
+ "retrieved": "XOM-00365|XOM-00367|XOM-00368",
+ "n_dropped": 0,
+ "created": "2026-11-21T22:09:55",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many times did brokers raise or lower their XOM price target between 1 March 2024 and the as-of time?\n\nEvidence:\n[XOM-00365] 2026-11-04 16:16 | Citigroup maintained Neutral on XOM, and raised its price target from $155.00 to $175.00.\n[XOM-00367] 2026-11-12 07:41 | Bernstein maintained Outperform on XOM, and lowered its price target from $193.00 to $186.00.\n[XOM-00368] 2026-11-13 10:31 | Barclays maintained Overweight on XOM, and raised its price target from $200.00 to $206.00."
+  }
+ ],
+ "final_text": "{\"answer\": 3, \"evidence_ids\": [\"XOM-00365\", \"XOM-00367\", \"XOM-00368\"]}",
+ "raw_output": "{\"answer\": 3, \"evidence_ids\": [\"XOM-00365\", \"XOM-00367\", \"XOM-00368\"]}"
+}

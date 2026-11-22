@@ -1,0 +1,55 @@
+{
+ "qid": "broker-QCOM-003-Q6-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "broker",
+ "entity": "QCOM",
+ "qtype": "count_buy",
+ "mode": "as_of",
+ "as_of": "2026-04-30 11:38:00",
+ "question": "How many active brokers currently rate QCOM Buy or an equivalent rating?",
+ "gold": "9",
+ "peek_answers": "8",
+ "trap_answers": "6|14",
+ "gold_evidence": "QCOM-00408|QCOM-00426|QCOM-00424|QCOM-00392|QCOM-00421|QCOM-00395|QCOM-00425|QCOM-00400|QCOM-00412|QCOM-00427|QCOM-00397|QCOM-00378|QCOM-00423|QCOM-00416|QCOM-00414|QCOM-00420|QCOM-00418|QCOM-00419|QCOM-00413|QCOM-00422",
+ "answer": "22",
+ "cited": "",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 3437,
+ "out_tokens": 115,
+ "seconds": 0.2257,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT COUNT(DISTINCT CASE WHEN attribute = 'rating' AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform') THEN subject END) AS active_buy_ratings\\nFROM facts\\nWHERE subject LIKE 'QCOM | %' AND attribute = 'rating'\\nAND kind IN ('new', 'corroborate')\\nAND effective_at <= '2026-04-30 11:38:00'\"]",
+ "created": "2026-11-21T21:59:11",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-04-30 11:38:00\nQuestion: How many active brokers currently rate QCOM Buy or an equivalent rating?\n\nDatabase contents at the as-of time: 307 facts, 146 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'QCOM | Argus Research': price_target_usd (2), rating (2)\n  'QCOM | B of A Securities': price_target_usd (4), rating (4)\n  'QCOM | BNP Paribas': price_target_usd (1), rating (1)\n  'QCOM | Baird': price_target_usd (3), rating (3)\n  'QCOM | Barclays': price_target_usd (4), rating (4)\n  'QCOM | Benchmark': price_target_usd (6), rating (6)\n  'QCOM | Bernstein': price_target_usd (3), rating (2)\n  'QCOM | Canaccord Genuity': price_target_usd (3), rating (2)\n  'QCOM | Cantor Fitzgerald': price_target_usd (18), rating (17)\n  'QCOM | Citigroup': price_target_usd (8), rating (8)\n  'QCOM | DZ Bank': price_target_usd (1), rating (1)\n  'QCOM | Daiwa Capital': price_target_usd (1), rating (1)\n  'QCOM | Deutsche Bank': price_target_usd (1), rating (1)\n  'QCOM | Evercore ISI Group': price_target_usd (6), rating (5)\n  'QCOM | HSBC': price_target_usd (2), rating (2)\n  'QCOM | JP Morgan': price_target_usd (15), rating (11)\n  'QCOM | Keybanc': price_target_usd (5), rating (6)\n  'QCOM | Loop Capital': price_target_usd (3), rating (3)\n  'QCOM | Melius Research': price_target_usd (1), rating (1)\n  'QCOM | Mizuho': price_target_usd (12), rating (9)\n  'QCOM | Morgan Stanley': price_target_usd (6), rating (4)\n  'QCOM | Piper Sandler': price_target_usd (6), rating (6)\n  'QCOM | RBC Capital': price_target_usd (2), rating (2)\n  'QCOM | Rosenblatt': price_target_usd (12), rating (11)\n  'QCOM | Seaport Global': price_target_usd (1), rating (2)\n  'QCOM | Susquehanna': price_target_usd (9), rating (8)\n  'QCOM | TD Cowen': price_target_usd (5), rating (3)\n  'QCOM | Tigress Financial': price_target_usd (1), rating (1)\n  'QCOM | UBS': price_target_usd (9), rating (7)\n  'QCOM | Wells Fargo': price_target_usd (10), rating (9)\n  'QCOM | WestPark Capital': rating (2)\n  'QCOM | Wolfe Research': price_target_usd (1), rating (2)\nkind values: 'corroborate', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT COUNT(DISTINCT CASE WHEN attribute = 'rating' AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform') THEN subject END) AS active_buy_ratings\nFROM facts\nWHERE subject LIKE 'QCOM | %' AND attribute = 'rating'\nAND kind IN ('new', 'corroborate')\nAND effective_at <= '2026-04-30 11:38:00'\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nactive_buy_ratings\n22\n"
+  }
+ ],
+ "final_text": "{\"answer\": 22, \"evidence_ids\": []}",
+ "raw_output": "```sql\nSELECT COUNT(DISTINCT CASE WHEN attribute = 'rating' AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform') THEN subject END) AS active_buy_ratings\nFROM facts\nWHERE subject LIKE 'QCOM | %' AND attribute = 'rating'\nAND kind IN ('new', 'corroborate')\nAND effective_at <= '2026-04-30 11:38:00'\n```\n\n===== next turn =====\n\n{\"answer\": 22, \"evidence_ids\": []}"
+}

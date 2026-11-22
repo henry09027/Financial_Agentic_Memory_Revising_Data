@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-COST-001-Q5-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "COST",
+ "qtype": "count_reports",
+ "mode": "as_of",
+ "as_of": "2019-12-20 03:56:00",
+ "question": "How many filings have reported a fiscal year 2019 (ended 1 September 2019) total revenue figure for COSTCO WHOLESALE CORP /NEW?",
+ "gold": "1",
+ "peek_answers": "3",
+ "trap_answers": "",
+ "gold_evidence": "COST-00053",
+ "answer": "1",
+ "cited": "COST-00053",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 2793,
+ "out_tokens": 39,
+ "seconds": 0.297,
+ "n_facts": 18,
+ "n_dropped": 0,
+ "created": "2026-11-22T05:40:38",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-12-20 03:56:00\nQuestion: How many filings have reported a fiscal year 2019 (ended 1 September 2019) total revenue figure for COSTCO WHOLESALE CORP /NEW?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nCOST | Revenues | value_usd_m | 2015-08-31..2016-05-08: latest 82159 | first 82159 | 2 reports: 82159 [COST-00016 @2016-06-01 20:12]; 82159 [COST-00025 @2017-06-01 00:21]\nCOST | Revenues | value_usd_m | 2016-02-15..2016-05-08: latest 26769 | first 26769 | 2 reports: 26769 [COST-00017 @2016-06-01 20:12]; 26769 [COST-00026 @2017-06-01 00:21]\nCOST | Revenues | value_usd_m | 2015-08-31..2016-08-28: latest 118719 | first 118719 | 3 reports: 118719 [COST-00020 @2016-10-11 23:26]; 118719 [COST-00030 @2017-10-18 01:17]; 118719 [COST-00040 @2018-10-26 13:21]\nCOST | Revenues | value_usd_m | 2016-08-29..2016-11-20: latest 28099 | first 28099 | 2 reports: 28099 [COST-00022 @2016-12-16 02:03]; 28099 [COST-00032 @2017-12-21 00:55]\nCOST | Revenues | value_usd_m | 2016-11-21..2017-02-12: latest 29766 | first 29766 | 2 reports: 29766 [COST-00024 @2017-03-09 00:07]; 29766 [COST-00034 @2018-03-14 22:30]\nCOST | Revenues | value_usd_m | 2016-08-29..2017-05-07: latest 86725 | first 86725 | 2 reports: 86725 [COST-00027 @2017-06-01 00:21]; 86725 [COST-00036 @2018-06-06 23:40]\nCOST | Revenues | value_usd_m | 2017-02-13..2017-05-07: latest 28860 | first 28860 | 2 reports: 28860 [COST-00028 @2017-06-01 00:21]; 28860 [COST-00037 @2018-06-06 23:40]\nCOST | Revenues | value_usd_m | 2016-08-29..2017-09-03: latest 129025 | first 129025 | 3 reports: 129025 [COST-00031 @2017-10-18 01:17]; 129025 [COST-00041 @2018-10-26 13:21]; 129025 [COST-00051 @2019-10-10 22:06]\nCOST | Revenues | value_usd_m | 2017-09-04..2017-11-26: latest 31809 | first 31809 | 2 reports: 31809 [COST-00033 @2017-12-21 00:55]; 31809 [COST-00043 @2018-12-20 00:59]\nCOST | Revenues | value_usd_m | 2017-11-27..2018-02-18: latest 32995 | first 32995 | 2 reports: 32995 [COST-00035 @2018-03-14 22:30]; 32995 [COST-00045 @2019-03-13 20:49]\nCOST | Revenues | value_usd_m | 2017-09-04..2018-05-13: latest 97165 | first 97165 | 2 reports: 97165 [COST-00038 @2018-06-06 23:40]; 97165 [COST-00047 @2019-06-06 00:46]\nCOST | Revenues | value_usd_m | 2018-02-19..2018-05-13: latest 32361 | first 32361 | 2 reports: 32361 [COST-00039 @2018-06-06 23:40]; 32361 [COST-00048 @2019-06-06 00:46]\nCOST | Revenues | value_usd_m | 2017-09-04..2018-09-02: latest 141576 | first 141576 | 2 reports: 141576 [COST-00042 @2018-10-26 13:21]; 141576 [COST-00052 @2019-10-10 22:06]\nCOST | Revenues | value_usd_m | 2018-09-03..2018-11-25: latest 35069 | first 35069 | 1 reports: 35069 [COST-00044 @2018-12-20 00:59]\nCOST | Revenues | value_usd_m | 2018-11-26..2019-02-17: latest 35396 | first 35396 | 1 reports: 35396 [COST-00046 @2019-03-13 20:49]\nCOST | Revenues | value_usd_m | 2018-09-03..2019-05-12: latest 105205 | first 105205 | 1 reports: 105205 [COST-00049 @2019-06-06 00:46]\nCOST | Revenues | value_usd_m | 2019-02-18..2019-05-12: latest 34740 | first 34740 | 1 reports: 34740 [COST-00050 @2019-06-06 00:46]\nCOST | Revenues | value_usd_m | 2018-09-03..2019-09-01: latest 152703 | first 152703 | 1 reports: 152703 [COST-00053 @2019-10-10 22:06]"
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"COST-00053\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"COST-00053\"\n  ]\n}\n```"
+}

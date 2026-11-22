@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-MA-001-Q6-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "MA",
+ "qtype": "ttm",
+ "mode": "as_of",
+ "as_of": "2019-03-11 03:41:00",
+ "question": "What is Mastercard Incorporated's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "17630",
+ "peek_answers": "16944|15707|36288",
+ "trap_answers": "14950",
+ "gold_evidence": "MA-00051|MA-00046|MA-00043|MA-00045|MA-00049",
+ "answer": "14950",
+ "cited": "MA-00052 @2019-02-13 15:03",
+ "json_ok": true,
+ "category": "trap",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1596,
+ "out_tokens": 31,
+ "seconds": 0.2258,
+ "n_facts": 14,
+ "n_dropped": 0,
+ "created": "2026-11-21T21:16:38",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-03-11 03:41:00\nQuestion: What is Mastercard Incorporated's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nMA | Revenues | value_usd_m | 2016-01-01..2016-09-30: latest 8020 | first 8020 | 2 reports: 8020 [MA-00025 @2016-10-28 14:27]; 8020 [MA-00036 @2017-10-31 14:23]\nMA | Revenues | value_usd_m | 2016-01-01..2016-12-31: latest 10776 | first 10776 | 3 reports: 10776 [MA-00029 @2017-02-15 15:22]; 10776 [MA-00041 @2018-02-14 17:37]; 10776 [MA-00050 @2019-02-13 15:03]\nMA | Revenues | value_usd_m | 2017-01-01..2017-03-31: latest 2734 | first 2734 | 1 reports: 2734 [MA-00031 @2017-05-02 14:22]\nMA | Revenues | value_usd_m | 2017-01-01..2017-06-30: latest 5787 | first 5787 | 1 reports: 5787 [MA-00034 @2017-07-27 14:23]\nMA | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 3053 | first 3053 | 1 reports: 3053 [MA-00035 @2017-07-27 14:23]\nMA | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 9185 | first 9185 | 2 reports: 9185 [MA-00038 @2017-10-31 14:23]; 9185 [MA-00046 @2018-10-30 14:20]\nMA | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 3398 | first 3398 | 2 reports: 3398 [MA-00039 @2017-10-31 14:23]; 3398 [MA-00047 @2018-10-30 14:20]\nMA | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 12497 | first 12497 | 2 reports: 12497 [MA-00042 @2018-02-14 17:37]; 12497 [MA-00051 @2019-02-13 15:03]\nMA | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 5070 | first 5070 | 1 reports: 5070 [MA-00043 @2018-05-02 14:38]\nMA | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 10420 | first 10420 | 1 reports: 10420 [MA-00044 @2018-07-26 14:13]\nMA | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 5350 | first 5350 | 1 reports: 5350 [MA-00045 @2018-07-26 14:13]\nMA | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 11143 | first 11143 | 1 reports: 11143 [MA-00048 @2018-10-30 14:20]\nMA | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 3898 | first 3898 | 1 reports: 3898 [MA-00049 @2018-10-30 14:20]\nMA | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 14950 | first 14950 | 1 reports: 14950 [MA-00052 @2019-02-13 15:03]"
+  }
+ ],
+ "final_text": "{\"answer\": 14950, \"evidence_ids\": [\"MA-00052 @2019-02-13 15:03\"]}",
+ "raw_output": "{\"answer\": 14950, \"evidence_ids\": [\"MA-00052 @2019-02-13 15:03\"]}"
+}

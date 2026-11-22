@@ -1,0 +1,55 @@
+{
+ "qid": "edgar-GOOGL-001-Q4-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "GOOGL",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2021-10-26 02:30:00",
+ "question": "What was the year-over-year revenue growth (percent) of Alphabet Inc.'s most recently reported fiscal quarter (three-month figures)?",
+ "gold": "61.579",
+ "peek_answers": "41.03|24.653",
+ "trap_answers": "47.495",
+ "gold_evidence": "GOOGL-00078|GOOGL-00076",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "false_abstain",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 2354,
+ "out_tokens": 227,
+ "seconds": 0.1101,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT (MAX(CASE WHEN period = '2021-01-01..2021-06-30' THEN value_num ELSE 0 END) - MAX(CASE WHEN period = '2020-01-01..2020-06-30' THEN value_num ELSE 0 END)) / MAX(CASE WHEN period = '2020-01-01..2020-06-30' THEN value_num ELSE 0 END) * 100 AS yoy_growth_percent, period\\nFROM (SELECT *, row_number() OVER (ORDER BY learned_at DESC) rn FROM (SELECT value_num, period, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'GOOGL | Revenues' AND attribute = 'value_usd_m') AS subquery) AS ranked\\nWHERE rn <= 2 AND period IN ('2021-01-01..2021-06-30', '2020-01-01..2020-06-30')\\nGROUP BY period;\"]",
+ "created": "2026-11-21T21:41:20",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2021-10-26 02:30:00\nQuestion: What was the year-over-year revenue growth (percent) of Alphabet Inc.'s most recently reported fiscal quarter (three-month figures)?\n\nDatabase contents at the as-of time: 52 facts, 46 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'GOOGL | Revenues': value_usd_m (52)\nkind values: '', 'corroborate', 'new', 'revision'\nmost recently learned periods: '2021-04-01..2021-06-30', '2021-01-01..2021-06-30', '2020-04-01..2020-06-30', '2020-01-01..2020-06-30', '2021-01-01..2021-03-31', '2020-01-01..2020-03-31', '2020-01-01..2020-12-31', '2019-01-01..2019-12-31'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'GOOGL | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT (MAX(CASE WHEN period = '2021-01-01..2021-06-30' THEN value_num ELSE 0 END) - MAX(CASE WHEN period = '2020-01-01..2020-06-30' THEN value_num ELSE 0 END)) / MAX(CASE WHEN period = '2020-01-01..2020-06-30' THEN value_num ELSE 0 END) * 100 AS yoy_growth_percent, period\nFROM (SELECT *, row_number() OVER (ORDER BY learned_at DESC) rn FROM (SELECT value_num, period, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'GOOGL | Revenues' AND attribute = 'value_usd_m') AS subquery) AS ranked\nWHERE rn <= 2 AND period IN ('2021-01-01..2021-06-30', '2020-01-01..2020-06-30')\nGROUP BY period;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nyoy_growth_percent,period\n-100.0,2020-01-01..2020-06-30\n"
+  }
+ ],
+ "final_text": "{\"answer\":\"CANNOT_ANSWER\", \"evidence_ids\": []}",
+ "raw_output": "```sql\nSELECT (MAX(CASE WHEN period = '2021-01-01..2021-06-30' THEN value_num ELSE 0 END) - MAX(CASE WHEN period = '2020-01-01..2020-06-30' THEN value_num ELSE 0 END)) / MAX(CASE WHEN period = '2020-01-01..2020-06-30' THEN value_num ELSE 0 END) * 100 AS yoy_growth_percent, period\nFROM (SELECT *, row_number() OVER (ORDER BY learned_at DESC) rn FROM (SELECT value_num, period, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'GOOGL | Revenues' AND attribute = 'value_usd_m') AS subquery) AS ranked\nWHERE rn <= 2 AND period IN ('2021-01-01..2021-06-30', '2020-01-01..2020-06-30')\nGROUP BY period;\n```\n\n===== next turn =====\n\n{\"answer\":\"CANNOT_ANSWER\", \"evidence_ids\": []}"
+}

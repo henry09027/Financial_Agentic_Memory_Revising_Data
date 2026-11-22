@@ -1,0 +1,79 @@
+{
+ "qid": "edgar-LLY-001-Q6-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "LLY",
+ "qtype": "ttm",
+ "mode": "as_of",
+ "as_of": "2022-11-01 04:46:00",
+ "question": "What is ELI LILLY AND COMPANY's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "29070.7",
+ "peek_answers": "29239.5|86462",
+ "trap_answers": "28318.4",
+ "gold_evidence": "LLY-00091|LLY-00094|LLY-00090|LLY-00096|LLY-00100",
+ "answer": "24636.7",
+ "cited": "LLY-00100|LLY-00096|LLY-00091|LLY-00083",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.6,
+ "in_tokens": 16114,
+ "out_tokens": 281,
+ "seconds": 0.8815,
+ "n_dropped": 0,
+ "n_sql": 4,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 5,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 20\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' ORDER BY learned_at DESC\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2021%' ORDER BY learned_at DESC\"]",
+ "created": "2026-11-22T01:58:00",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2022-11-01 04:46:00\nQuestion: What is ELI LILLY AND COMPANY's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nDatabase contents at the as-of time: 57 facts, 57 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'LLY | Revenues': value_usd_m (57)\nkind values: 'corroborate', 'new', 'revision'\nmost recently learned periods: '2022-04-01..2022-06-30', '2022-01-01..2022-06-30', '2021-04-01..2021-06-30', '2021-01-01..2021-06-30', '2022-01-01..2022-03-31', '2021-01-01..2021-03-31', '2021-01-01..2021-12-31', '2020-01-01..2020-12-31'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-01-01..2021-06-30,13545.7,2022-08-04 15:31:24,2022-08-04 15:31:24,corroborate,LLY-00097\n2021-04-01..2021-06-30,6740.1,2022-08-04 15:31:24,2022-08-04 15:31:24,corroborate,LLY-00098\n2022-01-01..2022-06-30,14298.0,2022-08-04 15:31:24,2022-08-04 15:31:24,revision,LLY-00099\n2022-04-01..2022-06-30,6488.0,2022-08-04 15:31:24,2022-08-04 15:31:24,new,LLY-00100\n2021-01-01..2021-03-31,6805.6,2022-04-29 15:57:54,2022-04-29 15:57:54,corroborate,LLY-00095\n2022-01-01..2022-03-31,7810.0,2022-04-29 15:57:54,2022-04-29 15:57:54,new,LLY-00096\n2019-01-01..2019-12-31,22319.5,2022-02-23 16:00:57,2022-02-23 16:00:57,corroborate,LLY-00092\n2020-01-01..2020-12-31,24539.8,2022-02-23 16:00:57,2022-02-23 16:00:57,corroborate,LLY-00093\n2021-01-01..2021-12-31,28318.4,2022-02-23 16:00:57,2022-02-23 16:00:57,revision,LLY-00094\n2020-01-01..2020-09-30,17099.8,2021-10-27 13:06:59,2021-10-27 13:06:59,corroborate,LLY-00088\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 20\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-01-01..2021-06-30,13545.7,2022-08-04 15:31:24,2022-08-04 15:31:24,corroborate,LLY-00097\n2021-04-01..2021-06-30,6740.1,2022-08-04 15:31:24,2022-08-04 15:31:24,corroborate,LLY-00098\n2022-01-01..2022-06-30,14298.0,2022-08-04 15:31:24,2022-08-04 15:31:24,revision,LLY-00099\n2022-04-01..2022-06-30,6488.0,2022-08-04 15:31:24,2022-08-04 15:31:24,new,LLY-00100\n2021-01-01..2021-03-31,6805.6,2022-04-29 15:57:54,2022-04-29 15:57:54,corroborate,LLY-00095\n2022-01-01..2022-03-31,7810.0,2022-04-29 15:57:54,2022-04-29 15:57:54,new,LLY-00096\n2019-01-01..2019-12-31,22319.5,2022-02-23 16:00:57,2022-02-23 16:00:57,corroborate,LLY-00092\n2020-01-01..2020-12-31,24539.8,2022-02-23 16:00:57,2022-02-23 16:00:57,corroborate,LLY-00093\n2021-01-01..2021-12-31,28318.4,2022-02-23 16:00:57,2022-02-23 16:00:57,revision,LLY-00094\n2020-01-01..2020-09-30,17099.8,2021-10-27 13:06:59,2021-10-27 13:06:59,corroborate,LLY-00088\n2020-07-01..2020-09-30,5740.6,2021-10-27 13:06:59,2021-10-27 13:06:59,corroborate,LLY-00089\n2021-01-01..2021-09-30,20318.5,2021-10-27 13:06:59,2021-10-27 13:06:59,revision,LLY-00090\n2021-07-01..2021-09-30,6772.8,2021-10-27 13:06:59,2021-10-27 13:06:59,new,LLY-00091\n2020-01-01..2020-06-30,11359.2,2021-08-03 16:04:04,2021-08-03 16:04:04,corroborate,LLY-00084\n2020-04-01..2020-06-30,5499.4,2021-08-03 16:04:04,2021-08-03 16:04:04,corroborate,LLY-00085\n2021-01-01..2021-06-30,13545.7,2021-08-03 16:04:04,2021-08-03 16:04:04,revision,LLY-00086\n2021-04-01..2021-06-30,6740.1,2021-08-03 16:04:04,2021-08-03 16:04:04,revision,LLY-00087\n2020-01-01..2020-03-31,5859.8,2021-04-30 13:23:35,2021-04-30 13:23:35,corroborate,LLY-00082\n2021-01-01..2021-03-31,6805.6,2021-04-30 13:23:35,2021-04-30 13:23:35,new,LLY-00083\n2018-01-01..2018-12-31,21493.3,2021-02-17 15:59:12,2021-02-17 15:59:12,corroborate,LLY-00079\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' ORDER BY learned_at DESC\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2022-01-01..2022-06-30,14298.0,2022-08-04 15:31:24,2022-08-04 15:31:24,revision,LLY-00099\n2022-04-01..2022-06-30,6488.0,2022-08-04 15:31:24,2022-08-04 15:31:24,new,LLY-00100\n2022-01-01..2022-03-31,7810.0,2022-04-29 15:57:54,2022-04-29 15:57:54,new,LLY-00096\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2021%' ORDER BY learned_at DESC\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-01-01..2021-06-30,13545.7,2022-08-04 15:31:24,2022-08-04 15:31:24,corroborate,LLY-00097\n2021-04-01..2021-06-30,6740.1,2022-08-04 15:31:24,2022-08-04 15:31:24,corroborate,LLY-00098\n2021-01-01..2021-03-31,6805.6,2022-04-29 15:57:54,2022-04-29 15:57:54,corroborate,LLY-00095\n2021-01-01..2021-12-31,28318.4,2022-02-23 16:00:57,2022-02-23 16:00:57,revision,LLY-00094\n2021-01-01..2021-09-30,20318.5,2021-10-27 13:06:59,2021-10-27 13:06:59,revision,LLY-00090\n2021-07-01..2021-09-30,6772.8,2021-10-27 13:06:59,2021-10-27 13:06:59,new,LLY-00091\n2021-01-01..2021-06-30,13545.7,2021-08-03 16:04:04,2021-08-03 16:04:04,revision,LLY-00086\n2021-04-01..2021-06-30,6740.1,2021-08-03 16:04:04,2021-08-03 16:04:04,revision,LLY-00087\n2021-01-01..2021-03-31,6805.6,2021-04-30 13:23:35,2021-04-30 13:23:35,new,LLY-00083\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 24636.7, \"evidence_ids\": [\"LLY-00100\", \"LLY-00096\", \"LLY-00091\", \"LLY-00083\"]}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 20\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' ORDER BY learned_at DESC\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2021%' ORDER BY learned_at DESC\n```\n\n===== next turn =====\n\n```json\n{\"answer\": 24636.7, \"evidence_ids\": [\"LLY-00100\", \"LLY-00096\", \"LLY-00091\", \"LLY-00083\"]}\n```"
+}

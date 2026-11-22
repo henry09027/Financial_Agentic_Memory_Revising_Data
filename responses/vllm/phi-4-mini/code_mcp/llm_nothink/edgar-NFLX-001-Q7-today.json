@@ -1,0 +1,55 @@
+{
+ "qid": "edgar-NFLX-001-Q7-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "NFLX",
+ "qtype": "not_yet_published",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "What was Netflix, Inc.'s revenue for the three months ended 30 June 2019, in $ millions?",
+ "gold": "4923.116",
+ "peek_answers": "",
+ "trap_answers": "9444.108",
+ "gold_evidence": "NFLX-00075",
+ "answer": "11510.307",
+ "cited": "NFLX-00157",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 4782,
+ "out_tokens": 81,
+ "seconds": 0.1153,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'NFLX | Revenues' AND attribute = 'value_usd_m' \\nORDER BY learned_at DESC \\nLIMIT 50;\"]",
+ "created": "2026-11-21T21:43:42",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: What was Netflix, Inc.'s revenue for the three months ended 30 June 2019, in $ millions?\n\nDatabase contents at the as-of time: 151 facts, 112 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'NFLX | Revenues': value_usd_m (151)\nkind values: '', 'corroborate', 'new', 'revision'\nmost recently learned periods: '2026-07-01..2026-09-30', '2026-01-01..2026-09-30', '2025-07-01..2025-09-30', '2025-01-01..2025-09-30', '2026-04-01..2026-06-30', '2026-01-01..2026-06-30', '2025-04-01..2025-06-30', '2025-01-01..2025-06-30'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'NFLX | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'NFLX | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2025-01-01..2025-09-30,33132.274,2026-10-21 20:01:46,2026-10-21 20:01:46,new,NFLX-00156\n2025-07-01..2025-09-30,11510.307,2026-10-21 20:01:46,2026-10-21 20:01:46,new,NFLX-00157\n2026-01-01..2026-09-30,37683.871,2026-10-21 20:01:46,2026-10-21 20:01:46,new,NFLX-00158\n2026-07-01..2026-09-30,12874.176,2026-10-21 20:01:46,2026-10-21 20:01:46,new,NFLX-00159\n2025-01-01..2025-06-30,21621.967,2025-07-17 20:02:51,2026-07-17 20:02:51,new,NFLX-00152\n2025-04-01..2025-06-30,11077960000.0,2026-07-17 20:02:51,2026-07-17 20:02:51,revision,NFLX-00153\n2026-01-01..2026-06-30,24809.695,2026-07-17 20:02:51,2026-07-17 20:02:51,new,NFLX-00154\n2026-04-01..2026-06-30,12559.938,2026-07-17 20:02:51,2026-07-17 20:02:51,new,NFLX-00155\n2025-01-01..2025-03-31,10542.801,2026-04-17 20:02:05,2026-04-17 20:02:05,new,NFLX-00150\n2026-01-01..2026-03-31,12249.757,2026-04-17 20:02:05,2026-04-17 20:02:05,new,NFLX-00151\n2023-01-01..2023-12-31,33723.297,2025-01-27 21:01:56,2026-01-23 21:06:33,corroborate,NFLX-00147\n2024-01-01..2024-12-31,39900.966,2025-01-27 21:01:56,2026-01-23 21:06:33,corroborate,NFLX-00148\n2025-01-01..2025-09-30,33132.274,2025-10-22 20:02:46,2026-01-23 21:06:33,corroborate,NFLX-00148\n2025-07-01..2025-09-30,11510.307,2025-10-22 20:02:46,2026-01-23 21:06:33,corroborate,NFLX-00148\n2025-01-01..2025-12-31,45183.036,2026-01-23 21:06:33,2026-01-23 21:06:33,new,NFLX-00149\n,,,2025-10-22 20:02:46,,NFLX-00143\n2024-07-01..2024-09-30,9824.703,2025-10-22 20:02:46,2025-10-22 20:02:46,corroborate,NFLX-00144\n2025-01-01..2025-09-30,33132.274,2025-10-22 20:02:46,2025-10-22 20:02:46,new,NFLX-00145\n2025-07-01..2025-09-30,11510.307,2025-10-22 20:02:46,2025-10-22 20:02:46,new,NFLX-00146\n2024-01-01..2024-06-30,18929.75,2025-07-18 20:02:28,2025-07-18 20:02:28,new,NFLX-00139\n2024-04-01..2024-06-30,9559.31,2025-07-18 20:02:28,2025-07-18 20:02:28,new,NFLX-00140\n2025-01-01..2025-06-30,21621.967,2025-07-18 20:02:28,2025-07-18 20:02:28,new,NFLX-00141\n2025-04-01..2025-06-30,11079.166,2025-07-18 20:02:28,2025-07-18 20:02:28,new,NFLX-00142\n2024-01-01..2024-03-31,9370.44,2025-04-18 20:02:54,2025-04-18 20:02:54,new,NFLX-00137\n2025-01-01..2025-03-31,10542.801,2025-04-18 20:02:54,2025-04-18 20:02:54,new,NFLX-00138\n2022-01-01..2022-12-31,31615.55,2023-01-26 21:03:50,2025-01-27 21:01:56,corroborate,NFLX-00134\n2023-01-01..2023-03-31,8161.503,2024-04-22 20:01:53,2025-01-27 21:01:56,new,NFLX-00134\n2023-01-01..2023-06-30,16348.804,2024-07-19 20:04:45,2025-01-27 21:01:56,new,NFLX-00134\n2023-04-01..2023-06-30,8187.301,2024-07-19 20:04:45,2025-01-27 21:01:56,new,NFLX-00134\n2022-07-01..2022-09-30,7925.589,2023-10-20 20:04:17,2025-01-27 21:01:56,corroborate,NFLX-00134\n2023-01-01..2023-09-30,24890.472,2024-10-18 20:01:49,2025-01-27 21:01:56,new,NFLX-00134\n2023-07-01..2023-09-30,9824.703,2024-10-18 20:01:49,2025-01-27 21:01:56,new,NFLX-00134\n2023-01-01..2023-12-31,33723.297,2024-01-26 21:01:56,2025-01-27 21:01:56,new,NFLX-00134\n2024-01-01..2024-03-31,9370.44,2024-04-22 20:01:53,2025-01-27 21:01:56,new,NFLX-00134\n2024-01-01..2024-06-30,18929.75,2024-07-19 20:04:45,2025-01-27 21:01:56,new,NFLX-00134\n2024-04-01..2024-06-30,9559.31,2024-07-19 20:04:45,2025-01-27 21:01:56,new,NFLX-00134\n2024-01-01..2024-09-30,28754.453,2024-10-18 20:01:49,2025-01-27 21:01:56,new,NFLX-00134\n2024-07-01..2024-09-30,9824.703,2024-10-18 20:01:49,2025-01-27 21:01:56,new,NFLX-00134\n2023-01-01..2023-12-31,33723.297,2025-01-27 21:01:56,2025-01-27 21:01:56,new,NFLX-00135\n2024-01-01..2024-12-31,39900.966,2025-01-27 21:01:56,2025-01-27 21:01:56,new,NFLX-00136\n2023-01-01..2023-09-30,24890.472,2024-10-18 20:01:49,2024-10-18 20:01:49,new,NFLX-00130\n2023-07-01..2023-09-30,8541.668,2024-10-18 20:01:49,2024-10-18 20:01:49,revision,NFLX-00131\n2024-01-01..2024-09-30,28754.453,2024-10-18 20:01:49,2024-10-18 20:01:49,new,NFLX-00132\n2024-07-01..2024-09-30,9824.703,2024-10-18 20:01:49,2024-10-18 20:01:49,new,NFLX-00133\n2023-01-01..2023-06-30,16348.804,2024-07-19 20:04:45,2024-07-19 20:04:45,new,NFLX-00126\n2023-04-01..2023-06-30,8187.301,2024-07-19 20:04:45,2024-07-19 20:04:45,revision,NFLX-00127\n2024-01-01..2024-06-30,18929.75,2024-07-19 20:04:45,2024-07-19 20:04:45,new,NFLX-00128\n2024-04-01..2024-06-30,9559.31,2024-07-19 20:04:45,2024-07-19 20:04:45,revision,NFLX-00129\n2023-01-01..2023-03-31,8161.503,2024-04-22 20:01:53,2024-04-22 20:01:53,new,NFLX-00124\n2024-01-01..2024-03-31,9370.44,2024-04-22 20:01:53,2024-04-22 20:01:53,new,NFLX-00125\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": \"11510.307\", \"evidence_ids\": [\"NFLX-00157\"]}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'NFLX | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```\n\n===== next turn =====\n\n```json\n{\"answer\": \"11510.307\", \"evidence_ids\": [\"NFLX-00157\"]}\n```"
+}

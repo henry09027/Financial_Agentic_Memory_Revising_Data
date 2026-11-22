@@ -1,0 +1,399 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+ORCL-00371,2025-03-31 09:53:02,ORCL | Jefferies,price_target_usd,,190.00,2025-03-31 09:53:02,new
+ORCL-00371,2025-03-31 09:53:02,ORCL | Jefferies,rating,,Buy,2025-03-31 09:53:02,new
+ORCL-00372,2025-04-01 05:25:38,ORCL | WestPark Capital,price_target_usd,,195.00,2025-04-01 05:25:38,new
+ORCL-00372,2025-04-01 05:25:38,ORCL | WestPark Capital,rating,,Buy,2025-04-01 05:25:38,new
+ORCL-00373,2025-04-03 10:18:33,ORCL | Guggenheim,price_target_usd,,220.00,2025-04-03 10:18:33,new
+ORCL-00373,2025-04-03 10:18:33,ORCL | Guggenheim,rating,,Buy,2025-04-03 10:18:33,corroborate
+ORCL-00374,2025-04-14 14:16:27,ORCL | DA Davidson,price_target_usd,,140.00,2025-04-14 14:16:27,new
+ORCL-00374,2025-04-14 14:16:27,ORCL | DA Davidson,rating,,Neutral,2025-04-14 14:16:27,new
+ORCL-00375,2025-04-15 08:52:31,ORCL | Mizuho,price_target_usd,,180.00,2025-04-15 08:52:31,new
+ORCL-00375,2025-04-15 08:52:31,ORCL | Mizuho,rating,,Outperform,2025-04-15 08:52:31,new
+ORCL-00376,2025-04-16 12:11:33,ORCL | Morgan Stanley,price_target_usd,,160.00,2025-04-16 12:11:33,new
+ORCL-00376,2025-04-16 12:11:33,ORCL | Morgan Stanley,rating,,Equal-Weight,2025-04-16 12:11:33,new
+ORCL-00377,2025-04-23 11:41:20,ORCL | Piper Sandler,price_target_usd,,130.00,2025-04-23 11:41:20,new
+ORCL-00377,2025-04-23 11:41:20,ORCL | Piper Sandler,rating,,Neutral,2025-04-23 11:41:20,new
+ORCL-00378,2025-06-05 11:19:42,ORCL | Guggenheim,price_target_usd,,220.00,2025-06-05 11:19:42,corroborate
+ORCL-00378,2025-06-05 11:19:42,ORCL | Guggenheim,rating,,Buy,2025-06-05 11:19:42,corroborate
+ORCL-00379,2025-06-09 10:15:20,ORCL | BMO Capital,price_target_usd,,200.00,2025-06-09 10:15:20,new
+ORCL-00379,2025-06-09 10:15:20,ORCL | BMO Capital,rating,,Market Perform,2025-06-09 10:15:20,new
+ORCL-00380,2025-06-09 11:29:49,ORCL | Jefferies,price_target_usd,,200.00,2025-06-09 11:29:49,new
+ORCL-00380,2025-06-09 11:29:49,ORCL | Jefferies,rating,,Buy,2025-06-09 11:29:49,corroborate
+ORCL-00381,2025-06-09 12:46:33,ORCL | Morgan Stanley,price_target_usd,,175.00,2025-06-09 12:46:33,new
+ORCL-00381,2025-06-09 12:46:33,ORCL | Morgan Stanley,rating,,Equal-Weight,2025-06-09 12:46:33,corroborate
+ORCL-00382,2025-06-09 14:52:04,ORCL | Citigroup,price_target_usd,,186.00,2025-06-09 14:52:04,new
+ORCL-00382,2025-06-09 14:52:04,ORCL | Citigroup,rating,,Neutral,2025-06-09 14:52:04,corroborate
+ORCL-00383,2025-06-11 14:22:47,ORCL | Piper Sandler,price_target_usd,,130.00,2025-06-11 14:22:47,corroborate
+ORCL-00383,2025-06-11 14:22:47,ORCL | Piper Sandler,rating,,Neutral,2025-06-11 14:22:47,corroborate
+ORCL-00384,2025-06-12 05:12:19,ORCL | Piper Sandler,price_target_usd,,190.00,2025-06-12 05:12:19,new
+ORCL-00384,2025-06-12 05:12:19,ORCL | Piper Sandler,rating,,Neutral,2025-06-12 05:12:19,corroborate
+ORCL-00385,2025-06-12 06:49:11,ORCL | WestPark Capital,price_target_usd,,246.0,2025-06-12 06:49:11,new
+ORCL-00385,2025-06-12 06:49:11,ORCL | WestPark Capital,rating,,Buy,2025-06-12 06:49:11,corroborate
+ORCL-00386,2025-06-12 08:44:00,ORCL | B of A Securities,price_target_usd,,220.00,2025-06-12 08:44:00,new
+ORCL-00386,2025-06-12 08:44:00,ORCL | B of A Securities,rating,,Neutral,2025-06-12 08:44:00,new
+ORCL-00387,2025-06-12 08:51:59,ORCL | Deutsche Bank,price_target_usd,,240.0,2025-06-12 08:51:59,new
+ORCL-00387,2025-06-12 08:51:59,ORCL | Deutsche Bank,rating,,Buy,2025-06-12 08:51:59,corroborate
+ORCL-00388,2025-06-12 08:55:57,ORCL | Keybanc,price_target_usd,,225.0,2025-06-12 08:55:57,new
+ORCL-00388,2025-06-12 08:55:57,ORCL | Keybanc,rating,,Overweight,2025-06-12 08:55:57,new
+ORCL-00389,2025-06-12 09:17:07,ORCL | Stifel,price_target_usd,,180.00,2025-06-12 09:17:07,new
+ORCL-00389,2025-06-12 09:17:07,ORCL | Stifel,rating,,Hold,2025-06-12 09:17:07,new
+ORCL-00390,2025-06-12 09:22:39,ORCL | UBS,price_target_usd,,225.00,2025-06-12 09:22:39,new
+ORCL-00390,2025-06-12 09:22:39,ORCL | UBS,rating,,Buy,2025-06-12 09:22:39,corroborate
+ORCL-00391,2025-06-12 10:29:04,ORCL | Jefferies,price_target_usd,,220.0,2025-06-12 10:29:04,new
+ORCL-00391,2025-06-12 10:29:04,ORCL | Jefferies,rating,,Buy,2025-06-12 10:29:04,corroborate
+ORCL-00392,2025-06-12 10:36:06,ORCL | Evercore ISI Group,price_target_usd,,215.00,2025-06-12 10:36:06,new
+ORCL-00392,2025-06-12 10:36:06,ORCL | Evercore ISI Group,rating,,Outperform,2025-06-12 10:36:06,corroborate
+ORCL-00393,2025-06-12 10:39:44,ORCL | JP Morgan,price_target_usd,,185.00,2025-06-12 10:39:44,new
+ORCL-00393,2025-06-12 10:39:44,ORCL | JP Morgan,rating,,Neutral,2025-06-12 10:39:44,new
+ORCL-00394,2025-06-12 10:46:18,ORCL | JMP Securities,price_target_usd,,240.00,2025-06-12 10:46:18,new
+ORCL-00394,2025-06-12 10:46:18,ORCL | JMP Securities,rating,,Market Outperform,2025-06-12 10:46:18,new
+ORCL-00395,2025-06-12 10:57:28,ORCL | Guggenheim,price_target_usd,,220.00,2025-06-12 10:57:28,corroborate
+ORCL-00395,2025-06-12 10:57:28,ORCL | Guggenheim,rating,,Buy,2025-06-12 10:57:28,corroborate
+ORCL-00396,2025-06-12 11:04:50,ORCL | DA Davidson,price_target_usd,,170.00,2025-06-12 11:04:50,new
+ORCL-00396,2025-06-12 11:04:50,ORCL | DA Davidson,rating,,Neutral,2025-06-12 11:04:50,corroborate
+ORCL-00397,2025-06-12 11:33:32,ORCL | Mizuho,price_target_usd,,245.00,2025-06-12 11:33:32,new
+ORCL-00397,2025-06-12 11:33:32,ORCL | Mizuho,rating,,Outperform,2025-06-12 11:33:32,corroborate
+ORCL-00398,2025-06-12 11:50:13,ORCL | RBC Capital,price_target_usd,,195.00,2025-06-12 11:50:13,new
+ORCL-00398,2025-06-12 11:50:13,ORCL | RBC Capital,rating,,Sector Perform,2025-06-12 11:50:13,new
+ORCL-00399,2025-06-13 08:42:34,ORCL | Barclays,price_target_usd,,221.00,2025-06-13 08:42:34,new
+ORCL-00399,2025-06-13 08:42:34,ORCL | Barclays,rating,,Overweight,2025-06-13 08:42:34,corroborate
+ORCL-00400,2025-06-13 09:03:34,ORCL | Citigroup,price_target_usd,,196.00,2025-06-13 09:03:34,new
+ORCL-00400,2025-06-13 09:03:34,ORCL | Citigroup,rating,,Neutral,2025-06-13 09:03:34,corroborate
+ORCL-00401,2025-06-13 09:21:13,ORCL | BMO Capital,price_target_usd,,235.00,2025-06-13 09:21:13,new
+ORCL-00401,2025-06-13 09:21:13,ORCL | BMO Capital,rating,,Outperform,2025-06-13 09:21:13,new
+ORCL-00402,2025-06-13 10:25:41,ORCL | Goldman Sachs,price_target_usd,,195.00,2025-06-13 10:25:41,new
+ORCL-00402,2025-06-13 10:25:41,ORCL | Goldman Sachs,rating,,Neutral,2025-06-13 10:25:41,corroborate
+ORCL-00403,2025-06-18 11:09:16,ORCL | Guggenheim,price_target_usd,,250.00,2025-06-18 11:09:16,new
+ORCL-00403,2025-06-18 11:09:16,ORCL | Guggenheim,rating,,Buy,2025-06-18 11:09:16,corroborate
+ORCL-00404,2025-06-25 10:03:54,ORCL | UBS,price_target_usd,,250.00,2025-06-25 10:03:54,new
+ORCL-00404,2025-06-25 10:03:54,ORCL | UBS,rating,,Buy,2025-06-25 10:03:54,corroborate
+ORCL-00405,2025-06-30 07:45:11,ORCL | Stifel,price_target_usd,,250.00,2025-06-30 07:45:11,new
+ORCL-00405,2025-06-30 07:45:11,ORCL | Stifel,rating,,Buy,2025-06-30 07:45:11,new
+ORCL-00406,2025-07-02 10:27:10,ORCL | BMO Capital,price_target_usd,,245.00,2025-07-02 10:27:10,new
+ORCL-00406,2025-07-02 10:27:10,ORCL | BMO Capital,rating,,Outperform,2025-07-02 10:27:10,corroborate
+ORCL-00407,2025-07-03 10:05:18,ORCL | TD Cowen,price_target_usd,,275.0,2025-07-03 10:05:18,new
+ORCL-00407,2025-07-03 10:05:18,ORCL | TD Cowen,rating,,Buy,2025-07-03 10:05:18,corroborate
+ORCL-00408,2025-07-10 05:52:34,ORCL | Piper Sandler,price_target_usd,,270.00,2025-07-10 05:52:34,new
+ORCL-00408,2025-07-10 05:52:34,ORCL | Piper Sandler,rating,,Overweight,2025-07-10 05:52:34,new
+ORCL-00409,2025-07-14 09:19:56,ORCL | Evercore ISI Group,price_target_usd,,270.0,2025-07-14 09:19:56,new
+ORCL-00409,2025-07-14 09:19:56,ORCL | Evercore ISI Group,rating,,Outperform,2025-07-14 09:19:56,corroborate
+ORCL-00410,2025-07-17 07:14:10,ORCL | Scotiabank,price_target_usd,,300.00,2025-07-17 07:14:10,new
+ORCL-00410,2025-07-17 07:14:10,ORCL | Scotiabank,rating,,Sector Outperform,2025-07-17 07:14:10,new
+ORCL-00411,2025-07-17 09:44:57,ORCL | UBS,price_target_usd,,280.00,2025-07-17 09:44:57,new
+ORCL-00411,2025-07-17 09:44:57,ORCL | UBS,rating,,Buy,2025-07-17 09:44:57,corroborate
+ORCL-00412,2025-07-18 08:06:03,ORCL | JMP Securities,price_target_usd,,315.0,2025-07-18 08:06:03,new
+ORCL-00412,2025-07-18 08:06:03,ORCL | JMP Securities,rating,,Market Outperform,2025-07-18 08:06:03,corroborate
+ORCL-00413,2025-08-05 10:20:09,ORCL | B of A Securities,price_target_usd,,295.0,2025-08-05 10:20:09,new
+ORCL-00413,2025-08-05 10:20:09,ORCL | B of A Securities,rating,,Neutral,2025-08-05 10:20:09,corroborate
+ORCL-00414,2025-08-06 05:14:01,ORCL | Bernstein,price_target_usd,,308.0,2025-08-06 05:14:01,new
+ORCL-00414,2025-08-06 05:14:01,ORCL | Bernstein,rating,,Outperform,2025-08-06 05:14:01,corroborate
+ORCL-00415,2025-08-06 14:22:05,ORCL | TD Cowen,price_target_usd,,325.0,2025-08-06 14:22:05,new
+ORCL-00415,2025-08-06 14:22:05,ORCL | TD Cowen,rating,,Buy,2025-08-06 14:22:05,corroborate
+ORCL-00416,2025-08-15 07:38:58,ORCL | Mizuho,price_target_usd,,300.0,2025-08-15 07:38:58,new
+ORCL-00416,2025-08-15 07:38:58,ORCL | Mizuho,rating,,Outperform,2025-08-15 07:38:58,corroborate
+ORCL-00417,2025-09-08 06:30:27,ORCL | Barclays,price_target_usd,,281.0,2025-09-08 06:30:27,new
+ORCL-00417,2025-09-08 06:30:27,ORCL | Barclays,rating,,Overweight,2025-09-08 06:30:27,corroborate
+ORCL-00418,2025-09-08 09:05:03,ORCL | Morgan Stanley,price_target_usd,,246.0,2025-09-08 09:05:03,new
+ORCL-00418,2025-09-08 09:05:03,ORCL | Morgan Stanley,rating,,Equal-Weight,2025-09-08 09:05:03,corroborate
+ORCL-00419,2025-09-08 09:36:57,ORCL | JP Morgan,price_target_usd,,210.0,2025-09-08 09:36:57,new
+ORCL-00419,2025-09-08 09:36:57,ORCL | JP Morgan,rating,,Neutral,2025-09-08 09:36:57,corroborate
+ORCL-00420,2025-09-09 07:18:12,ORCL | Citigroup,price_target_usd,,240.0,2025-09-09 07:18:12,new
+ORCL-00420,2025-09-09 07:18:12,ORCL | Citigroup,rating,,Neutral,2025-09-09 07:18:12,corroborate
+ORCL-00421,2025-09-09 07:41:54,ORCL | BMO Capital,price_target_usd,,275.0,2025-09-09 07:41:54,new
+ORCL-00421,2025-09-09 07:41:54,ORCL | BMO Capital,rating,,Outperform,2025-09-09 07:41:54,corroborate
+ORCL-00422,2025-09-10 05:07:22,ORCL | Piper Sandler,price_target_usd,,330.0,2025-09-10 05:07:22,new
+ORCL-00422,2025-09-10 05:07:22,ORCL | Piper Sandler,rating,,Overweight,2025-09-10 05:07:22,corroborate
+ORCL-00423,2025-09-10 07:00:54,ORCL | Wolfe Research,price_target_usd,,400.0,2025-09-10 07:00:54,new
+ORCL-00423,2025-09-10 07:00:54,ORCL | Wolfe Research,rating,,Outperform,2025-09-10 07:00:54,corroborate
+ORCL-00424,2025-09-10 07:02:09,ORCL | DA Davidson,price_target_usd,,300.0,2025-09-10 07:02:09,new
+ORCL-00424,2025-09-10 07:02:09,ORCL | DA Davidson,rating,,Neutral,2025-09-10 07:02:09,new
+ORCL-00425,2025-09-10 07:03:06,ORCL | Jefferies,price_target_usd,,360.0,2025-09-10 07:03:06,new
+ORCL-00425,2025-09-10 07:03:06,ORCL | Jefferies,rating,,Buy,2025-09-10 07:03:06,corroborate
+ORCL-00426,2025-09-10 07:27:12,ORCL | Evercore ISI Group,price_target_usd,,340.0,2025-09-10 07:27:12,new
+ORCL-00426,2025-09-10 07:27:12,ORCL | Evercore ISI Group,rating,,Outperform,2025-09-10 07:27:12,corroborate
+ORCL-00427,2025-09-10 08:25:40,ORCL | Stifel,price_target_usd,,350.0,2025-09-10 08:25:40,new
+ORCL-00427,2025-09-10 08:25:40,ORCL | Stifel,rating,,Buy,2025-09-10 08:25:40,corroborate
+ORCL-00428,2025-09-10 08:27:09,ORCL | JMP Securities,price_target_usd,,342.0,2025-09-10 08:27:09,new
+ORCL-00428,2025-09-10 08:27:09,ORCL | JMP Securities,rating,,Market Outperform,2025-09-10 08:27:09,corroborate
+ORCL-00429,2025-09-10 08:50:47,ORCL | Guggenheim,price_target_usd,,375.0,2025-09-10 08:50:47,new
+ORCL-00429,2025-09-10 08:50:47,ORCL | Guggenheim,rating,,Buy,2025-09-10 08:50:47,corroborate
+ORCL-00430,2025-09-10 09:05:10,ORCL | Cantor Fitzgerald,price_target_usd,,400.0,2025-09-10 09:05:10,new
+ORCL-00430,2025-09-10 09:05:10,ORCL | Cantor Fitzgerald,rating,,Overweight,2025-09-10 09:05:10,corroborate
+ORCL-00431,2025-09-10 09:07:00,ORCL | Mizuho,price_target_usd,,350.0,2025-09-10 09:07:00,new
+ORCL-00431,2025-09-10 09:07:00,ORCL | Mizuho,rating,,Outperform,2025-09-10 09:07:00,corroborate
+ORCL-00432,2025-09-10 09:41:21,ORCL | UBS,price_target_usd,,360.0,2025-09-10 09:41:21,new
+ORCL-00432,2025-09-10 09:41:21,ORCL | UBS,rating,,Buy,2025-09-10 09:41:21,corroborate
+ORCL-00433,2025-09-10 10:08:07,ORCL | Scotiabank,price_target_usd,,350.0,2025-09-10 10:08:07,new
+ORCL-00433,2025-09-10 10:08:07,ORCL | Scotiabank,rating,,Sector Outperform,2025-09-10 10:08:07,corroborate
+ORCL-00434,2025-09-10 11:23:32,ORCL | BMO Capital,price_target_usd,,345.0,2025-09-10 11:23:32,new
+ORCL-00434,2025-09-10 11:23:32,ORCL | BMO Capital,rating,,Outperform,2025-09-10 11:23:32,corroborate
+ORCL-00435,2025-09-10 12:15:50,ORCL | Citigroup,price_target_usd,,410.0,2025-09-10 12:15:50,new
+ORCL-00435,2025-09-10 12:15:50,ORCL | Citigroup,rating,,Buy,2025-09-10 12:15:50,new
+ORCL-00436,2025-09-10 12:57:41,ORCL | TD Cowen,price_target_usd,,375.0,2025-09-10 12:57:41,new
+ORCL-00436,2025-09-10 12:57:41,ORCL | TD Cowen,rating,,Buy,2025-09-10 12:57:41,corroborate
+ORCL-00437,2025-09-10 13:15:33,ORCL | B of A Securities,price_target_usd,,368.0,2025-09-10 13:15:33,new
+ORCL-00437,2025-09-10 13:15:33,ORCL | B of A Securities,rating,,Buy,2025-09-10 13:15:33,new
+ORCL-00438,2025-09-10 13:49:15,ORCL | Melius Research,price_target_usd,,370.0,2025-09-10 13:49:15,new
+ORCL-00438,2025-09-10 13:49:15,ORCL | Melius Research,rating,,Buy,2025-09-10 13:49:15,new
+ORCL-00439,2025-09-11 08:22:23,ORCL | Barclays,price_target_usd,,347.00,2025-09-11 08:22:23,new
+ORCL-00439,2025-09-11 08:22:23,ORCL | Barclays,rating,,Overweight,2025-09-11 08:22:23,corroborate
+ORCL-00440,2025-09-11 10:08:45,ORCL | JP Morgan,price_target_usd,,275.0,2025-09-11 10:08:45,new
+ORCL-00440,2025-09-11 10:08:45,ORCL | JP Morgan,rating,,Neutral,2025-09-11 10:08:45,corroborate
+ORCL-00441,2025-09-12 11:15:20,ORCL | DA Davidson,price_target_usd,,300.0,2025-09-12 11:15:20,new
+ORCL-00441,2025-09-12 11:15:20,ORCL | DA Davidson,rating,,Neutral,2025-09-12 11:15:20,new
+ORCL-00442,2025-09-15 11:54:52,ORCL | Berenberg,price_target_usd,,306.0,2025-09-15 11:54:52,new
+ORCL-00442,2025-09-15 11:54:52,ORCL | Berenberg,rating,,Hold,2025-09-15 11:54:52,new
+ORCL-00443,2025-09-15 14:15:56,ORCL | Goldman Sachs,price_target_usd,,310.0,2025-09-15 14:15:56,new
+ORCL-00443,2025-09-15 14:15:56,ORCL | Goldman Sachs,rating,,Neutral,2025-09-15 14:15:56,corroborate
+ORCL-00444,2025-09-23 11:50:26,ORCL | Morgan Stanley,price_target_usd,,320.0,2025-09-23 11:50:26,new
+ORCL-00444,2025-09-23 11:50:26,ORCL | Morgan Stanley,rating,,Equal-Weight,2025-09-23 11:50:26,new
+ORCL-00445,2025-09-24 09:03:00,ORCL | JMP Securities,price_target_usd,,342.0,2025-09-24 09:03:00,corroborate
+ORCL-00445,2025-09-24 09:03:00,ORCL | JMP Securities,rating,,Market Outperform,2025-09-24 09:03:00,corroborate
+ORCL-00446,2025-09-25 11:24:48,ORCL | Rothschild & Co,price_target_usd,,175.0,2025-09-25 11:24:48,new
+ORCL-00446,2025-09-25 11:24:48,ORCL | Rothschild & Co,rating,,Sell,2025-09-25 11:24:48,new
+ORCL-00447,2025-09-26 10:28:49,ORCL | Bernstein,price_target_usd,,364.0,2025-09-26 10:28:49,new
+ORCL-00447,2025-09-26 10:28:49,ORCL | Bernstein,rating,,Outperform,2025-09-26 10:28:49,corroborate
+ORCL-00448,2025-10-09 06:42:57,ORCL | Baird,price_target_usd,,365.0,2025-10-09 06:42:57,new
+ORCL-00448,2025-10-09 06:42:57,ORCL | Baird,rating,,Outperform,2025-10-09 06:42:57,new
+ORCL-00449,2025-10-10 07:38:16,ORCL | Evercore ISI Group,price_target_usd,,350.0,2025-10-10 07:38:16,new
+ORCL-00449,2025-10-10 07:38:16,ORCL | Evercore ISI Group,rating,,Outperform,2025-10-10 07:38:16,corroborate
+ORCL-00450,2025-10-17 05:19:43,ORCL | Piper Sandler,price_target_usd,,380.0,2025-10-17 05:19:43,new
+ORCL-00450,2025-10-17 05:19:43,ORCL | Piper Sandler,rating,,Overweight,2025-10-17 05:19:43,corroborate
+ORCL-00451,2025-10-17 08:05:44,ORCL | Guggenheim,price_target_usd,,400.0,2025-10-17 08:05:44,new
+ORCL-00451,2025-10-17 08:05:44,ORCL | Guggenheim,rating,,Buy,2025-10-17 08:05:44,corroborate
+ORCL-00452,2025-10-17 08:33:48,ORCL | Stephens & Co.,price_target_usd,,331.0,2025-10-17 08:33:48,new
+ORCL-00452,2025-10-17 08:33:48,ORCL | Stephens & Co.,rating,,Equal-Weight,2025-10-17 08:33:48,new
+ORCL-00453,2025-10-17 09:20:33,ORCL | JMP Securities,price_target_usd,,342.0,2025-10-17 09:20:33,corroborate
+ORCL-00453,2025-10-17 09:20:33,ORCL | JMP Securities,rating,,Market Outperform,2025-10-17 09:20:33,corroborate
+ORCL-00454,2025-10-17 09:24:38,ORCL | Barclays,price_target_usd,,400.00,2025-10-17 09:24:38,new
+ORCL-00454,2025-10-17 09:24:38,ORCL | Barclays,rating,,Overweight,2025-10-17 09:24:38,corroborate
+ORCL-00455,2025-10-17 09:55:46,ORCL | UBS,price_target_usd,,380.0,2025-10-17 09:55:46,new
+ORCL-00455,2025-10-17 09:55:46,ORCL | UBS,rating,,Buy,2025-10-17 09:55:46,corroborate
+ORCL-00456,2025-10-17 09:57:07,ORCL | RBC Capital,price_target_usd,,310.00,2025-10-17 09:57:07,corroborate
+ORCL-00456,2025-10-17 09:57:07,ORCL | RBC Capital,rating,,Sector Perform,2025-10-17 09:57:07,corroborate
+ORCL-00457,2025-10-17 10:53:07,ORCL | Evercore ISI Group,price_target_usd,,385.0,2025-10-17 10:53:07,new
+ORCL-00457,2025-10-17 10:53:07,ORCL | Evercore ISI Group,rating,,Outperform,2025-10-17 10:53:07,corroborate
+ORCL-00458,2025-10-17 13:23:36,ORCL | Scotiabank,price_target_usd,,360.0,2025-10-17 13:23:36,new
+ORCL-00458,2025-10-17 13:23:36,ORCL | Scotiabank,rating,,Sector Outperform,2025-10-17 13:23:36,corroborate
+ORCL-00459,2025-10-17 15:12:03,ORCL | Jefferies,price_target_usd,,400.0,2025-10-17 15:12:03,new
+ORCL-00459,2025-10-17 15:12:03,ORCL | Jefferies,rating,,Buy,2025-10-17 15:12:03,corroborate
+ORCL-00460,2025-11-18 11:01:31,ORCL | Baird,price_target_usd,,315.0,2025-11-18 11:01:31,new
+ORCL-00460,2025-11-18 11:01:31,ORCL | Baird,rating,,Outperform,2025-11-18 11:01:31,corroborate
+ORCL-00461,2025-11-25 10:52:02,ORCL | DA Davidson,price_target_usd,,200.0,2025-11-25 10:52:02,new
+ORCL-00461,2025-11-25 10:52:02,ORCL | DA Davidson,rating,,Neutral,2025-11-25 10:52:02,new
+ORCL-00462,2025-11-26 12:35:06,ORCL | Deutsche Bank,price_target_usd,,375.0,2025-11-26 12:35:06,new
+ORCL-00462,2025-11-26 12:35:06,ORCL | Deutsche Bank,rating,,Buy,2025-11-26 12:35:06,corroborate
+ORCL-00463,2025-12-04 13:14:46,ORCL | Citigroup,price_target_usd,,375.00,2025-12-04 13:14:46,new
+ORCL-00463,2025-12-04 13:14:46,ORCL | Citigroup,rating,,Buy,2025-12-04 13:14:46,corroborate
+ORCL-00464,2025-12-09 11:42:29,ORCL | Barclays,price_target_usd,,330.00,2025-12-09 11:42:29,new
+ORCL-00464,2025-12-09 11:42:29,ORCL | Barclays,rating,,Overweight,2025-12-09 11:42:29,corroborate
+ORCL-00465,2025-12-11 05:25:28,ORCL | Piper Sandler,price_target_usd,,290.00,2025-12-11 05:25:28,new
+ORCL-00465,2025-12-11 05:25:28,ORCL | Piper Sandler,rating,,Overweight,2025-12-11 05:25:28,corroborate
+ORCL-00466,2025-12-11 07:12:15,ORCL | B of A Securities,price_target_usd,,300.0,2025-12-11 07:12:15,new
+ORCL-00466,2025-12-11 07:12:15,ORCL | B of A Securities,rating,,Buy,2025-12-11 07:12:15,corroborate
+ORCL-00467,2025-12-11 07:59:25,ORCL | BMO Capital,price_target_usd,,270.00,2025-12-11 07:59:25,new
+ORCL-00467,2025-12-11 07:59:25,ORCL | BMO Capital,rating,,Outperform,2025-12-11 07:59:25,corroborate
+ORCL-00468,2025-12-11 08:17:27,ORCL | Bernstein,price_target_usd,,339.0,2025-12-11 08:17:27,new
+ORCL-00468,2025-12-11 08:17:27,ORCL | Bernstein,rating,,Outperform,2025-12-11 08:17:27,corroborate
+ORCL-00469,2025-12-11 09:17:16,ORCL | Stifel,price_target_usd,,275.0,2025-12-11 09:17:16,new
+ORCL-00469,2025-12-11 09:17:16,ORCL | Stifel,rating,,Buy,2025-12-11 09:17:16,corroborate
+ORCL-00470,2025-12-11 09:48:12,ORCL | Keybanc,price_target_usd,,300.0,2025-12-11 09:48:12,new
+ORCL-00470,2025-12-11 09:48:12,ORCL | Keybanc,rating,,Overweight,2025-12-11 09:48:12,corroborate
+ORCL-00471,2025-12-11 09:58:28,ORCL | Cantor Fitzgerald,price_target_usd,,320.0,2025-12-11 09:58:28,new
+ORCL-00471,2025-12-11 09:58:28,ORCL | Cantor Fitzgerald,rating,,Overweight,2025-12-11 09:58:28,corroborate
+ORCL-00472,2025-12-11 10:07:34,ORCL | Guggenheim,price_target_usd,,400.0,2025-12-11 10:07:34,new
+ORCL-00472,2025-12-11 10:07:34,ORCL | Guggenheim,rating,,Buy,2025-12-11 10:07:34,corroborate
+ORCL-00473,2025-12-11 10:26:36,ORCL | RBC Capital,price_target_usd,,250.00,2025-12-11 10:26:36,new
+ORCL-00473,2025-12-11 10:26:36,ORCL | RBC Capital,rating,,Sector Perform,2025-12-11 10:26:36,corroborate
+ORCL-00474,2025-12-11 11:57:54,ORCL | TD Cowen,price_target_usd,,350.0,2025-12-11 11:57:54,new
+ORCL-00474,2025-12-11 11:57:54,ORCL | TD Cowen,rating,,Buy,2025-12-11 11:57:54,corroborate
+ORCL-00475,2025-12-11 12:43:01,ORCL | Scotiabank,price_target_usd,,260.0,2025-12-11 12:43:01,new
+ORCL-00475,2025-12-11 12:43:01,ORCL | Scotiabank,rating,,Sector Outperform,2025-12-11 12:43:01,corroborate
+ORCL-00476,2025-12-11 13:14:30,ORCL | JP Morgan,price_target_usd,,230.0,2025-12-11 13:14:30,new
+ORCL-00476,2025-12-11 13:14:30,ORCL | JP Morgan,rating,,Neutral,2025-12-11 13:14:30,corroborate
+ORCL-00477,2025-12-11 13:28:49,ORCL | DA Davidson,price_target_usd,,180.00,2025-12-11 13:28:49,new
+ORCL-00477,2025-12-11 13:28:49,ORCL | DA Davidson,rating,,Neutral,2025-12-11 13:28:49,new
+ORCL-00478,2025-12-11 16:09:10,ORCL | Citigroup,price_target_usd,,370.0,2025-12-11 16:09:10,new
+ORCL-00478,2025-12-11 16:09:10,ORCL | Citigroup,rating,,Buy,2025-12-11 16:09:10,corroborate
+ORCL-00479,2025-12-11 16:36:52,ORCL | UBS,price_target_usd,,325.0,2025-12-11 16:36:52,new
+ORCL-00479,2025-12-11 16:36:52,ORCL | UBS,rating,,Buy,2025-12-11 16:36:52,corroborate
+ORCL-00480,2025-12-12 12:53:41,ORCL | Goldman Sachs,price_target_usd,,220.0,2025-12-12 12:53:41,new
+ORCL-00480,2025-12-12 12:53:41,ORCL | Goldman Sachs,rating,,Neutral,2025-12-12 12:53:41,corroborate
+ORCL-00481,2026-01-05 07:06:48,ORCL | Jefferies,price_target_usd,,400.0,2026-01-05 07:06:48,new
+ORCL-00481,2026-01-05 07:06:48,ORCL | Jefferies,rating,,Buy,2026-01-05 07:06:48,corroborate
+ORCL-00482,2026-01-05 09:47:24,ORCL | RBC Capital,price_target_usd,,195.00,2026-01-05 09:47:24,new
+ORCL-00482,2026-01-05 09:47:24,ORCL | RBC Capital,rating,,Sector Perform,2026-01-05 09:47:24,corroborate
+ORCL-00483,2026-01-05 13:11:02,ORCL | UBS,price_target_usd,,280.0,2026-01-05 13:11:02,new
+ORCL-00483,2026-01-05 13:11:02,ORCL | UBS,rating,,Buy,2026-01-05 13:11:02,corroborate
+ORCL-00484,2026-01-23 12:44:41,ORCL | Morgan Stanley,price_target_usd,,213.00,2026-01-23 12:44:41,new
+ORCL-00484,2026-01-23 12:44:41,ORCL | Morgan Stanley,rating,,Equal-Weight,2026-01-23 12:44:41,corroborate
+ORCL-00485,2026-02-02 16:09:48,ORCL | UBS,price_target_usd,,250.0,2026-02-02 16:09:48,new
+ORCL-00485,2026-02-02 16:09:48,ORCL | UBS,rating,,Buy,2026-02-02 16:09:48,corroborate
+ORCL-00486,2026-02-03 06:31:48,ORCL | Piper Sandler,price_target_usd,,240.00,2026-02-03 06:31:48,new
+ORCL-00486,2026-02-03 06:31:48,ORCL | Piper Sandler,rating,,Overweight,2026-02-03 06:31:48,corroborate
+ORCL-00487,2026-02-03 08:44:05,ORCL | Scotiabank,price_target_usd,,220.0,2026-02-03 08:44:05,new
+ORCL-00487,2026-02-03 08:44:05,ORCL | Scotiabank,rating,,Sector Outperform,2026-02-03 08:44:05,corroborate
+ORCL-00488,2026-02-05 09:04:44,ORCL | Citizens,price_target_usd,,285.00,2026-02-05 09:04:44,new
+ORCL-00488,2026-02-05 09:04:44,ORCL | Citizens,rating,,Market Outperform,2026-02-05 09:04:44,corroborate
+ORCL-00489,2026-02-09 07:16:20,ORCL | DA Davidson,price_target_usd,,180.0,2026-02-09 07:16:20,new
+ORCL-00489,2026-02-09 07:16:20,ORCL | DA Davidson,rating,,Buy,2026-02-09 07:16:20,new
+ORCL-00490,2026-02-25 07:15:12,ORCL | Oppenheimer,price_target_usd,,185.0,2026-02-25 07:15:12,new
+ORCL-00490,2026-02-25 07:15:12,ORCL | Oppenheimer,rating,,Outperform,2026-02-25 07:15:12,new
+ORCL-00491,2026-03-04 10:00:41,ORCL | RBC Capital,price_target_usd,,160.0,2026-03-04 10:00:41,new
+ORCL-00491,2026-03-04 10:00:41,ORCL | RBC Capital,rating,,Sector Perform,2026-03-04 10:00:41,corroborate
+ORCL-00492,2026-03-04 13:46:35,ORCL | Citigroup,price_target_usd,,310.0,2026-03-04 13:46:35,new
+ORCL-00492,2026-03-04 13:46:35,ORCL | Citigroup,rating,,Buy,2026-03-04 13:46:35,corroborate
+ORCL-00493,2026-03-05 09:23:48,ORCL | Evercore ISI Group,price_target_usd,,220.0,2026-03-05 09:23:48,new
+ORCL-00493,2026-03-05 09:23:48,ORCL | Evercore ISI Group,rating,,Outperform,2026-03-05 09:23:48,corroborate
+ORCL-00494,2026-03-06 11:22:51,ORCL | TD Cowen,price_target_usd,,250.0,2026-03-06 11:22:51,new
+ORCL-00494,2026-03-06 11:22:51,ORCL | TD Cowen,rating,,Buy,2026-03-06 11:22:51,corroborate
+ORCL-00495,2026-03-06 15:22:48,ORCL | Jefferies,price_target_usd,,320.0,2026-03-06 15:22:48,new
+ORCL-00495,2026-03-06 15:22:48,ORCL | Jefferies,rating,,Buy,2026-03-06 15:22:48,new
+ORCL-00496,2026-03-09 10:16:38,ORCL | Barclays,price_target_usd,,230.0,2026-03-09 10:16:38,new
+ORCL-00496,2026-03-09 10:16:38,ORCL | Barclays,rating,,Overweight,2026-03-09 10:16:38,corroborate
+ORCL-00497,2026-03-09 10:45:41,ORCL | Scotiabank,price_target_usd,,215.0,2026-03-09 10:45:41,new
+ORCL-00497,2026-03-09 10:45:41,ORCL | Scotiabank,rating,,Sector Outperform,2026-03-09 10:45:41,corroborate
+ORCL-00498,2026-03-09 10:56:12,ORCL | Deutsche Bank,price_target_usd,,300.0,2026-03-09 10:56:12,new
+ORCL-00498,2026-03-09 10:56:12,ORCL | Deutsche Bank,rating,,Buy,2026-03-09 10:56:12,new
+ORCL-00499,2026-03-10 07:07:18,ORCL | Baird,price_target_usd,,200.0,2026-03-10 07:07:18,new
+ORCL-00499,2026-03-10 07:07:18,ORCL | Baird,rating,,Outperform,2026-03-10 07:07:18,corroborate
+ORCL-00500,2026-03-11 05:17:19,ORCL | Piper Sandler,price_target_usd,,210.0,2026-03-11 05:17:19,new
+ORCL-00500,2026-03-11 05:17:19,ORCL | Piper Sandler,rating,,Overweight,2026-03-11 05:17:19,corroborate
+ORCL-00501,2026-03-11 09:39:06,ORCL | Cantor Fitzgerald,price_target_usd,,229.0,2026-03-11 09:39:06,new
+ORCL-00501,2026-03-11 09:39:06,ORCL | Cantor Fitzgerald,rating,,Overweight,2026-03-11 09:39:06,corroborate
+ORCL-00502,2026-03-11 09:40:47,ORCL | DA Davidson,price_target_usd,,200.0,2026-03-11 09:40:47,new
+ORCL-00502,2026-03-11 09:40:47,ORCL | DA Davidson,rating,,Buy,2026-03-11 09:40:47,new
+ORCL-00503,2026-03-11 10:00:15,ORCL | JP Morgan,price_target_usd,,210.0,2026-03-11 10:00:15,new
+ORCL-00503,2026-03-11 10:00:15,ORCL | JP Morgan,rating,,Overweight,2026-03-11 10:00:15,new
+ORCL-00504,2026-03-11 10:19:16,ORCL | RBC Capital,price_target_usd,,160.0,2026-03-11 10:19:16,corroborate
+ORCL-00504,2026-03-11 10:19:16,ORCL | RBC Capital,rating,,Sector Perform,2026-03-11 10:19:16,corroborate
+ORCL-00505,2026-03-11 10:23:49,ORCL | TD Cowen,price_target_usd,,250.0,2026-03-11 10:23:49,corroborate
+ORCL-00505,2026-03-11 10:23:49,ORCL | TD Cowen,rating,,Buy,2026-03-11 10:23:49,corroborate
+ORCL-00506,2026-03-11 10:26:02,ORCL | BMO Capital,price_target_usd,,200.0,2026-03-11 10:26:02,new
+ORCL-00506,2026-03-11 10:26:02,ORCL | BMO Capital,rating,,Outperform,2026-03-11 10:26:02,corroborate
+ORCL-00507,2026-03-11 11:03:01,ORCL | Barclays,price_target_usd,,240.0,2026-03-11 11:03:01,new
+ORCL-00507,2026-03-11 11:03:01,ORCL | Barclays,rating,,Overweight,2026-03-11 11:03:01,corroborate
+ORCL-00508,2026-03-11 11:46:58,ORCL | Stifel,price_target_usd,,220.0,2026-03-11 11:46:58,new
+ORCL-00508,2026-03-11 11:46:58,ORCL | Stifel,rating,,Buy,2026-03-11 11:46:58,corroborate
+ORCL-00509,2026-03-12 11:58:18,ORCL | Citigroup,price_target_usd,,320.0,2026-03-12 11:58:18,new
+ORCL-00509,2026-03-12 11:58:18,ORCL | Citigroup,rating,,Buy,2026-03-12 11:58:18,corroborate
+ORCL-00510,2026-03-13 09:12:54,ORCL | Guggenheim,price_target_usd,,400.0,2026-03-13 09:12:54,new
+ORCL-00510,2026-03-13 09:12:54,ORCL | Guggenheim,rating,,Buy,2026-03-13 09:12:54,corroborate
+ORCL-00511,2026-03-16 07:55:48,ORCL | Mizuho,price_target_usd,,320.0,2026-03-16 07:55:48,new
+ORCL-00511,2026-03-16 07:55:48,ORCL | Mizuho,rating,,Outperform,2026-03-16 07:55:48,corroborate
+ORCL-00512,2026-04-07 08:34:56,ORCL | Stephens & Co.,price_target_usd,,254.00,2026-04-07 08:34:56,new
+ORCL-00512,2026-04-07 08:34:56,ORCL | Stephens & Co.,rating,,Equal-Weight,2026-04-07 08:34:56,corroborate
+ORCL-00513,2026-04-23 09:18:22,ORCL | Morgan Stanley,price_target_usd,,207.0,2026-04-23 09:18:22,new
+ORCL-00513,2026-04-23 09:18:22,ORCL | Morgan Stanley,rating,,Equal-Weight,2026-04-23 09:18:22,new
+ORCL-00514,2026-04-24 11:12:28,ORCL | Wedbush,price_target_usd,,225.0,2026-04-24 11:12:28,new
+ORCL-00514,2026-04-24 11:12:28,ORCL | Wedbush,rating,,Outperform,2026-04-24 11:12:28,new
+ORCL-00515,2026-04-29 12:03:51,ORCL | Wedbush,price_target_usd,,225.0,2026-04-29 12:03:51,corroborate
+ORCL-00515,2026-04-29 12:03:51,ORCL | Wedbush,rating,,Outperform,2026-04-29 12:03:51,corroborate
+ORCL-00516,2026-05-12 13:38:44,ORCL | Oppenheimer,price_target_usd,,235.0,2026-05-12 13:38:44,new
+ORCL-00516,2026-05-12 13:38:44,ORCL | Oppenheimer,rating,,Outperform,2026-05-12 13:38:44,corroborate
+ORCL-00517,2026-05-13 10:47:17,ORCL | Wedbush,price_target_usd,,275.0,2026-05-13 10:47:17,new
+ORCL-00517,2026-05-13 10:47:17,ORCL | Wedbush,rating,,Outperform,2026-05-13 10:47:17,corroborate
+ORCL-00518,2026-06-02 09:33:40,ORCL | Scotiabank,price_target_usd,,290.0,2026-06-02 09:33:40,new
+ORCL-00518,2026-06-02 09:33:40,ORCL | Scotiabank,rating,,Sector Outperform,2026-06-02 09:33:40,corroborate
+ORCL-00519,2026-06-02 10:12:24,ORCL | UBS,price_target_usd,,285.0,2026-06-02 10:12:24,new
+ORCL-00519,2026-06-02 10:12:24,ORCL | UBS,rating,,Buy,2026-06-02 10:12:24,corroborate
+ORCL-00520,2026-06-04 14:06:09,ORCL | Citigroup,price_target_usd,,330.0,2026-06-04 14:06:09,new
+ORCL-00520,2026-06-04 14:06:09,ORCL | Citigroup,rating,,Buy,2026-06-04 14:06:09,corroborate
+ORCL-00521,2026-06-05 09:11:42,ORCL | BTIG,price_target_usd,,400.0,2026-06-05 09:11:42,new
+ORCL-00521,2026-06-05 09:11:42,ORCL | BTIG,rating,,Buy,2026-06-05 09:11:42,corroborate
+ORCL-00522,2026-06-05 09:54:15,ORCL | RBC Capital,price_target_usd,,190.0,2026-06-05 09:54:15,new
+ORCL-00522,2026-06-05 09:54:15,ORCL | RBC Capital,rating,,Sector Perform,2026-06-05 09:54:15,corroborate
+ORCL-00523,2026-06-05 13:49:05,ORCL | Cantor Fitzgerald,price_target_usd,,284.0,2026-06-05 13:49:05,new
+ORCL-00523,2026-06-05 13:49:05,ORCL | Cantor Fitzgerald,rating,,Overweight,2026-06-05 13:49:05,corroborate
+ORCL-00524,2026-06-08 11:24:30,ORCL | TD Cowen,price_target_usd,,300.0,2026-06-08 11:24:30,new
+ORCL-00524,2026-06-08 11:24:30,ORCL | TD Cowen,rating,,Buy,2026-06-08 11:24:30,corroborate
+ORCL-00525,2026-06-08 13:40:57,ORCL | Oppenheimer,price_target_usd,,275.0,2026-06-08 13:40:57,new
+ORCL-00525,2026-06-08 13:40:57,ORCL | Oppenheimer,rating,,Outperform,2026-06-08 13:40:57,corroborate
+ORCL-00526,2026-06-08 14:05:58,ORCL | Evercore ISI Group,price_target_usd,,245.0,2026-06-08 14:05:58,new
+ORCL-00526,2026-06-08 14:05:58,ORCL | Evercore ISI Group,rating,,Outperform,2026-06-08 14:05:58,corroborate
+ORCL-00527,2026-06-09 06:36:51,ORCL | B of A Securities,price_target_usd,,240.0,2026-06-09 06:36:51,new
+ORCL-00527,2026-06-09 06:36:51,ORCL | B of A Securities,rating,,Buy,2026-06-09 06:36:51,new
+ORCL-00528,2026-06-11 05:16:26,ORCL | Piper Sandler,price_target_usd,,225.0,2026-06-11 05:16:26,new
+ORCL-00528,2026-06-11 05:16:26,ORCL | Piper Sandler,rating,,Overweight,2026-06-11 05:16:26,corroborate
+ORCL-00529,2026-06-11 09:03:05,ORCL | BMO Capital,price_target_usd,,220.0,2026-06-11 09:03:05,new
+ORCL-00529,2026-06-11 09:03:05,ORCL | BMO Capital,rating,,Outperform,2026-06-11 09:03:05,corroborate
+ORCL-00530,2026-06-11 09:03:32,ORCL | Scotiabank,price_target_usd,,241.0,2026-06-11 09:03:32,new
+ORCL-00530,2026-06-11 09:03:32,ORCL | Scotiabank,rating,,Sector Outperform,2026-06-11 09:03:32,corroborate
+ORCL-00531,2026-06-11 09:12:25,ORCL | DA Davidson,price_target_usd,,225.0,2026-06-11 09:12:25,new
+ORCL-00531,2026-06-11 09:12:25,ORCL | DA Davidson,rating,,Buy,2026-06-11 09:12:25,new
+ORCL-00532,2026-06-11 09:16:46,ORCL | Guggenheim,price_target_usd,,400.0,2026-06-11 09:16:46,new
+ORCL-00532,2026-06-11 09:16:46,ORCL | Guggenheim,rating,,Buy,2026-06-11 09:16:46,corroborate
+ORCL-00533,2026-06-11 09:35:44,ORCL | Stephens & Co.,price_target_usd,,164.00,2026-06-11 09:35:44,new
+ORCL-00533,2026-06-11 09:35:44,ORCL | Stephens & Co.,rating,,Equal-Weight,2026-06-11 09:35:44,corroborate
+ORCL-00534,2026-06-11 10:00:31,ORCL | Wedbush,price_target_usd,,240.0,2026-06-11 10:00:31,new
+ORCL-00534,2026-06-11 10:00:31,ORCL | Wedbush,rating,,Outperform,2026-06-11 10:00:31,corroborate
+ORCL-00535,2026-06-11 10:47:52,ORCL | Cantor Fitzgerald,price_target_usd,,284.0,2026-06-11 10:47:52,corroborate
+ORCL-00535,2026-06-11 10:47:52,ORCL | Cantor Fitzgerald,rating,,Overweight,2026-06-11 10:47:52,corroborate
+ORCL-00536,2026-06-11 10:48:08,ORCL | Barclays,price_target_usd,,250.0,2026-06-11 10:48:08,new
+ORCL-00536,2026-06-11 10:48:08,ORCL | Barclays,rating,,Overweight,2026-06-11 10:48:08,corroborate
+ORCL-00537,2026-06-11 11:07:49,ORCL | TD Cowen,price_target_usd,,300.0,2026-06-11 11:07:49,corroborate
+ORCL-00537,2026-06-11 11:07:49,ORCL | TD Cowen,rating,,Buy,2026-06-11 11:07:49,corroborate
+ORCL-00538,2026-06-11 11:31:17,ORCL | RBC Capital,price_target_usd,,190.0,2026-06-11 11:31:17,corroborate
+ORCL-00538,2026-06-11 11:31:17,ORCL | RBC Capital,rating,,Sector Perform,2026-06-11 11:31:17,corroborate
+ORCL-00539,2026-06-11 12:43:45,ORCL | Bernstein,price_target_usd,,325.0,2026-06-11 12:43:45,new
+ORCL-00539,2026-06-11 12:43:45,ORCL | Bernstein,rating,,Outperform,2026-06-11 12:43:45,corroborate
+ORCL-00540,2026-06-30 03:48:41,ORCL | Stephens & Co.,price_target_usd,,175.0,2026-06-30 03:48:41,new
+ORCL-00540,2026-06-30 03:48:41,ORCL | Stephens & Co.,rating,,Equal-Weight,2026-06-30 03:48:41,corroborate
+ORCL-00541,2026-07-20 07:04:29,ORCL | CLSA,price_target_usd,,145.0,2026-07-20 07:04:29,new
+ORCL-00541,2026-07-20 07:04:29,ORCL | CLSA,rating,,Hold,2026-07-20 07:04:29,new
+ORCL-00542,2026-08-06 14:23:52,ORCL | UBS,price_target_usd,,245.0,2026-08-06 14:23:52,new
+ORCL-00542,2026-08-06 14:23:52,ORCL | UBS,rating,,Buy,2026-08-06 14:23:52,corroborate
+ORCL-00543,2026-09-01 09:44:09,ORCL | TD Cowen,price_target_usd,,240.0,2026-09-01 09:44:09,new
+ORCL-00543,2026-09-01 09:44:09,ORCL | TD Cowen,rating,,Buy,2026-09-01 09:44:09,corroborate
+ORCL-00544,2026-09-02 12:11:22,ORCL | Jefferies,price_target_usd,,290.0,2026-09-02 12:11:22,new
+ORCL-00544,2026-09-02 12:11:22,ORCL | Jefferies,rating,,Buy,2026-09-02 12:11:22,corroborate
+ORCL-00545,2026-09-04 09:49:36,ORCL | RBC Capital,price_target_usd,,190.0,2026-09-04 09:49:36,corroborate
+ORCL-00545,2026-09-04 09:49:36,ORCL | RBC Capital,rating,,Sector Perform,2026-09-04 09:49:36,corroborate
+ORCL-00546,2026-09-04 12:15:52,ORCL | Morgan Stanley,price_target_usd,,210.0,2026-09-04 12:15:52,new
+ORCL-00546,2026-09-04 12:15:52,ORCL | Morgan Stanley,rating,,Equal-Weight,2026-09-04 12:15:52,corroborate
+ORCL-00547,2026-09-08 09:43:48,ORCL | Guggenheim,price_target_usd,,400.0,2026-09-08 09:43:48,corroborate
+ORCL-00547,2026-09-08 09:43:48,ORCL | Guggenheim,rating,,Buy,2026-09-08 09:43:48,corroborate
+ORCL-00548,2026-09-09 09:05:03,ORCL | Citizens,price_target_usd,,285.00,2026-09-09 09:05:03,corroborate
+ORCL-00548,2026-09-09 09:05:03,ORCL | Citizens,rating,,Market Outperform,2026-09-09 09:05:03,corroborate
+ORCL-00549,2026-09-09 16:23:22,ORCL | Scotiabank,price_target_usd,,215.0,2026-09-09 16:23:22,new
+ORCL-00549,2026-09-09 16:23:22,ORCL | Scotiabank,rating,,Sector Outperform,2026-09-09 16:23:22,corroborate
+ORCL-00550,2026-09-11 07:01:02,ORCL | Cantor Fitzgerald,price_target_usd,,284.0,2026-09-11 07:01:02,corroborate
+ORCL-00550,2026-09-11 07:01:02,ORCL | Cantor Fitzgerald,rating,,Overweight,2026-09-11 07:01:02,corroborate
+ORCL-00551,2026-09-11 09:07:11,ORCL | Stephens & Co.,price_target_usd,,185.0,2026-09-11 09:07:11,new
+ORCL-00551,2026-09-11 09:07:11,ORCL | Stephens & Co.,rating,,Equal-Weight,2026-09-11 09:07:11,corroborate
+ORCL-00552,2026-09-11 09:25:23,ORCL | BMO Capital,price_target_usd,,195.0,2026-09-11 09:25:23,new
+ORCL-00552,2026-09-11 09:25:23,ORCL | BMO Capital,rating,,Outperform,2026-09-11 09:25:23,corroborate
+ORCL-00553,2026-09-11 09:33:11,ORCL | Guggenheim,price_target_usd,,400.0,2026-09-11 09:33:11,corroborate
+ORCL-00553,2026-09-11 09:33:11,ORCL | Guggenheim,rating,,Buy,2026-09-11 09:33:11,corroborate
+ORCL-00554,2026-09-11 09:49:56,ORCL | Barclays,price_target_usd,,252.0,2026-09-11 09:49:56,new
+ORCL-00554,2026-09-11 09:49:56,ORCL | Barclays,rating,,Overweight,2026-09-11 09:49:56,corroborate
+ORCL-00555,2026-09-11 09:52:46,ORCL | RBC Capital,price_target_usd,,165.0,2026-09-11 09:52:46,new
+ORCL-00555,2026-09-11 09:52:46,ORCL | RBC Capital,rating,,Sector Perform,2026-09-11 09:52:46,corroborate
+ORCL-00556,2026-09-11 09:56:30,ORCL | DA Davidson,price_target_usd,,225.0,2026-09-11 09:56:30,new
+ORCL-00556,2026-09-11 09:56:30,ORCL | DA Davidson,rating,,Buy,2026-09-11 09:56:30,new
+ORCL-00557,2026-09-11 10:12:26,ORCL | UBS,price_target_usd,,250.0,2026-09-11 10:12:26,new
+ORCL-00557,2026-09-11 10:12:26,ORCL | UBS,rating,,Buy,2026-09-11 10:12:26,corroborate
+ORCL-00558,2026-09-11 10:45:00,ORCL | TD Cowen,price_target_usd,,240.0,2026-09-11 10:45:00,corroborate
+ORCL-00558,2026-09-11 10:45:00,ORCL | TD Cowen,rating,,Buy,2026-09-11 10:45:00,corroborate
+ORCL-00559,2026-09-11 11:51:10,ORCL | Stifel,price_target_usd,,200.0,2026-09-11 11:51:10,new
+ORCL-00559,2026-09-11 11:51:10,ORCL | Stifel,rating,,Buy,2026-09-11 11:51:10,corroborate
+ORCL-00560,2026-09-14 08:53:07,ORCL | Argus Research,price_target_usd,,225.0,2026-09-14 08:53:07,new
+ORCL-00560,2026-09-14 08:53:07,ORCL | Argus Research,rating,,Buy,2026-09-14 08:53:07,corroborate
+ORCL-00561,2026-09-14 16:38:17,ORCL | Freedom Broker,price_target_usd,,205.0,2026-09-14 16:38:17,new
+ORCL-00561,2026-09-14 16:38:17,ORCL | Freedom Broker,rating,,Buy,2026-09-14 16:38:17,new
+ORCL-00562,2026-10-02 08:56:17,ORCL | Citizens,price_target_usd,,285.00,2026-10-02 08:56:17,corroborate
+ORCL-00562,2026-10-02 08:56:17,ORCL | Citizens,rating,,Market Outperform,2026-10-02 08:56:17,corroborate
+ORCL-00563,2026-10-22 06:48:14,ORCL | Cantor Fitzgerald,price_target_usd,,284.0,2026-10-22 06:48:14,corroborate
+ORCL-00563,2026-10-22 06:48:14,ORCL | Cantor Fitzgerald,rating,,Overweight,2026-10-22 06:48:14,corroborate
+ORCL-00564,2026-10-23 14:04:45,ORCL | Goldman Sachs,price_target_usd,,206.0,2026-10-23 14:04:45,new
+ORCL-00564,2026-10-23 14:04:45,ORCL | Goldman Sachs,rating,,Buy,2026-10-23 14:04:45,corroborate
+ORCL-00565,2026-10-26 10:15:06,ORCL | Wells Fargo,price_target_usd,,250.0,2026-10-26 10:15:06,new
+ORCL-00565,2026-10-26 10:15:06,ORCL | Wells Fargo,rating,,Overweight,2026-10-26 10:15:06,new
+ORCL-00566,2026-10-29 05:03:43,ORCL | Piper Sandler,price_target_usd,,225.0,2026-10-29 05:03:43,new
+ORCL-00566,2026-10-29 05:03:43,ORCL | Piper Sandler,rating,,Overweight,2026-10-29 05:03:43,new
+ORCL-00567,2026-10-29 09:31:35,ORCL | Oppenheimer,price_target_usd,,275.0,2026-10-29 09:31:35,corroborate
+ORCL-00567,2026-10-29 09:31:35,ORCL | Oppenheimer,rating,,Outperform,2026-10-29 09:31:35,corroborate
+ORCL-00568,2026-10-29 11:41:56,ORCL | TD Cowen,price_target_usd,,240.0,2026-10-29 11:41:56,corroborate
+ORCL-00568,2026-10-29 11:41:56,ORCL | TD Cowen,rating,,Buy,2026-10-29 11:41:56,corroborate
+ORCL-00569,2026-11-02 08:26:51,ORCL | Stephens & Co.,price_target_usd,,213.0,2026-11-02 08:26:51,new
+ORCL-00569,2026-11-02 08:26:51,ORCL | Stephens & Co.,rating,,Overweight,2026-11-02 08:26:51,new

@@ -1,0 +1,95 @@
+{
+ "qid": "broker-ABBV-002-Q3-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "broker",
+ "entity": "ABBV",
+ "qtype": "change_since_initiation",
+ "mode": "as_of",
+ "as_of": "2024-10-09 12:23:00",
+ "question": "By what percent has Guggenheim's ABBV price target changed since it initiated coverage? (split-adjusted, in percent)",
+ "gold": "10.47",
+ "peek_answers": "87.21",
+ "trap_answers": "",
+ "gold_evidence": "ABBV-00205|ABBV-00230",
+ "answer": "It appears that the result provided is the current price target for Guggenheim on ABBV, which is $190.0. However, to calculate the percent change since Guggenheim initiated coverage, we need to know t",
+ "cited": "",
+ "json_ok": false,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 13948,
+ "out_tokens": 1084,
+ "seconds": 2.8844,
+ "n_dropped": 0,
+ "n_sql": 6,
+ "n_sql_error": 3,
+ "n_sql_empty": 0,
+ "n_turns": 7,
+ "sql": "[\"SELECT AVG((value_num - (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') * 100) AS percent_change\\nFROM facts\\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\\nAND effective_at < '2024-10-09 12:23:00'\\nAND kind IN ('new', 'corroborate')\\nORDER BY effective_at DESC LIMIT 1;\", \"SELECT AVG(((value_num / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') - 1) * 100) AS percent_change\\nFROM facts\\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\\nAND effective_at < '2024-10-09 12:23:00'\\nAND kind IN ('new', 'corroborate')\\nORDER BY effective_at DESC LIMIT 1;\", \"SELECT AVG(((value_num / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') - 1) * 100)) AS percent_change\\nFROM facts\\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\\nAND effective_at < '2024-10-09 12:23:00'\\nAND kind IN ('new', 'corroborate')\\nORDER BY effective_at DESC LIMIT 1;\", \"SELECT value_num\\nFROM facts\\nWHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd'\\nAND effective_at < '2024-10-09 12:23:00'\\nAND kind IN ('new', 'corroborate')\\nORDER BY effective_at DESC LIMIT 1;\", \"With the most recent price target for Guggenheim on ABBV being $190.0, we need the initial price target at the time Guggenheim initiated coverage to calculate the percent change. Since we do not have the initial price target in the provided data, we cannot calculate the percent change.\", \"SELECT value_num\\nFROM facts\\nWHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd'\\nAND effective_at < '2024-10-09 12:23:00'\\nAND kind IN ('new', 'corroborate')\\nORDER BY effective_at DESC LIMIT 1;\"]",
+ "created": "2026-11-21T21:47:45",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2024-10-09 12:23:00\nQuestion: By what percent has Guggenheim's ABBV price target changed since it initiated coverage? (split-adjusted, in percent)\n\nDatabase contents at the as-of time: 135 facts, 64 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'ABBV | Argus Research': rating (1)\n  'ABBV | Atlantic Equities': price_target_usd (1), rating (1)\n  'ABBV | B of A Securities': price_target_usd (1), rating (1)\n  'ABBV | BMO Capital': price_target_usd (5), rating (4)\n  'ABBV | Barclays': price_target_usd (7), rating (7)\n  'ABBV | CFRA': price_target_usd (1), rating (1)\n  'ABBV | Cantor Fitzgerald': price_target_usd (5), rating (5)\n  'ABBV | Deutsche Bank': price_target_usd (1), rating (1)\n  'ABBV | Evercore ISI Group': price_target_usd (3), rating (2)\n  'ABBV | Exane BNP Paribas': price_target_usd (1), rating (1)\n  'ABBV | Goldman Sachs': price_target_usd (1), rating (1)\n  'ABBV | Guggenheim': price_target_usd (4), rating (3)\n  'ABBV | HSBC': price_target_usd (3), rating (3)\n  'ABBV | JP Morgan': price_target_usd (1), rating (1)\n  'ABBV | Morgan Stanley': price_target_usd (11), rating (8)\n  'ABBV | Piper Sandler': price_target_usd (8), rating (6)\n  'ABBV | Raymond James': price_target_usd (5), rating (4)\n  'ABBV | SVB Leerink': price_target_usd (1), rating (1)\n  'ABBV | TD Cowen': price_target_usd (1), rating (1)\n  'ABBV | Truist Securities': price_target_usd (4), rating (4)\n  'ABBV | UBS': price_target_usd (4), rating (3)\n  'ABBV | Wells Fargo': price_target_usd (3), rating (2)\n  'ABBV | William Blair': rating (2)\n  'ABBV | Wolfe Research': rating (1)\nkind values: 'corroborate', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'ABBV | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT AVG((value_num - (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') * 100) AS percent_change\nFROM facts\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nSQL error: near \"AS\": syntax error."
+  },
+  {
+   "role": "assistant",
+   "content": "Apologies for the oversight. The corrected query should not include the \"AS\" keyword in the subquery. Here is the revised query:\n\n```sql\nSELECT AVG(((value_num / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') - 1) * 100) AS percent_change\nFROM facts\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nSQL error: near \"AS\": syntax error."
+  },
+  {
+   "role": "assistant",
+   "content": "Apologies for the confusion. It seems there was a mistake in the query syntax. Let's try again with the correct SQL syntax:\n\n```sql\nSELECT AVG(((value_num / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') - 1) * 100)) AS percent_change\nFROM facts\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\npercent_change\n\"\"\n"
+  },
+  {
+   "role": "assistant",
+   "content": "It appears that the result returned an empty string, which suggests that there might not be any new or corroborated broker notes for Guggenheim's price target for ABBV since they initiated coverage, or the price targets are all the same and thus there is no change to calculate. To ensure we have the correct data, we should check for any broker notes for Guggenheim regarding ABBV's price target.\n\nLet's run a query to retrieve the most recent price target for Guggenheim for ABBV:\n\n```sql\nSELECT value_num\nFROM facts\nWHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```\n\nPlease run this query to check the latest price target for Guggenheim on ABBV. If the result is null or zero, it means there have been no changes in the price target since Guggenheim initiated coverage. If there is a number, that is the most recent price target, and we can use it to calculate the percent change."
+  },
+  {
+   "role": "user",
+   "content": "Result:\nvalue_num\n190.0\n"
+  },
+  {
+   "role": "assistant",
+   "content": "With the most recent price target for Guggenheim on ABBV being $190.0, we need the initial price target at the time Guggenheim initiated coverage to calculate the percent change. Since we do not have the initial price target in the provided data, we cannot calculate the percent change.\n\nIf you can provide the initial price target for Guggenheim on ABBV when they first started covering the stock, we can then calculate the percent change from that initial target to the current target of $190.0."
+  },
+  {
+   "role": "user",
+   "content": "Result:\nSQL error: near \"most\": syntax error."
+  },
+  {
+   "role": "assistant",
+   "content": "Apologies for the confusion. It seems there was a mistake in the query. The correct SQL query to retrieve the most recent price target for Guggenheim on ABBV should not include the word \"most\" and should be as follows:\n\n```sql\nSELECT value_num\nFROM facts\nWHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```\n\nPlease run this corrected query to get the most recent price target for Guggenheim on ABBV. If the result is not null or zero, that is the current price target, and we can use it to calculate the percent change from the initial price target when Guggenheim first started covering the stock. If the result is null or zero, it means there have been no changes in the price target since Guggenheim initiated coverage."
+  },
+  {
+   "role": "user",
+   "content": "Result:\nvalue_num\n190.0\n"
+  }
+ ],
+ "final_text": "It appears that the result provided is the current price target for Guggenheim on ABBV, which is $190.0. However, to calculate the percent change since Guggenheim initiated coverage, we need to know the initial price target at that time. Since the initial price target is not provided in the result, we cannot calculate the percent change.\n\nIf you can provide the initial price target for Guggenheim on ABBV when they first started covering the stock, we can then calculate the percent change from that initial target to the current target of $190.0. Without the initial price target, it is not possible to determine the percent change.",
+ "raw_output": "```sql\nSELECT AVG((value_num - (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') * 100) AS percent_change\nFROM facts\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```\n\n===== next turn =====\n\nApologies for the oversight. The corrected query should not include the \"AS\" keyword in the subquery. Here is the revised query:\n\n```sql\nSELECT AVG(((value_num / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') - 1) * 100) AS percent_change\nFROM facts\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```\n\n===== next turn =====\n\nApologies for the confusion. It seems there was a mistake in the query syntax. Let's try again with the correct SQL syntax:\n\n```sql\nSELECT AVG(((value_num / (SELECT value_num FROM facts WHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd') - 1) * 100)) AS percent_change\nFROM facts\nWHERE subject = 'ABBV' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```\n\n===== next turn =====\n\nIt appears that the result returned an empty string, which suggests that there might not be any new or corroborated broker notes for Guggenheim's price target for ABBV since they initiated coverage, or the price targets are all the same and thus there is no change to calculate. To ensure we have the correct data, we should check for any broker notes for Guggenheim regarding ABBV's price target.\n\nLet's run a query to retrieve the most recent price target for Guggenheim for ABBV:\n\n```sql\nSELECT value_num\nFROM facts\nWHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```\n\nPlease run this query to check the latest price target for Guggenheim on ABBV. If the result is null or zero, it means there have been no changes in the price target since Guggenheim initiated coverage. If there is a number, that is the most recent price target, and we can use it to calculate the percent change.\n\n===== next turn =====\n\nWith the most recent price target for Guggenheim on ABBV being $190.0, we need the initial price target at the time Guggenheim initiated coverage to calculate the percent change. Since we do not have the initial price target in the provided data, we cannot calculate the percent change.\n\nIf you can provide the initial price target for Guggenheim on ABBV when they first started covering the stock, we can then calculate the percent change from that initial target to the current target of $190.0.\n\n===== next turn =====\n\nApologies for the confusion. It seems there was a mistake in the query. The correct SQL query to retrieve the most recent price target for Guggenheim on ABBV should not include the word \"most\" and should be as follows:\n\n```sql\nSELECT value_num\nFROM facts\nWHERE subject = 'ABBV | Guggenheim' AND attribute = 'price_target_usd'\nAND effective_at < '2024-10-09 12:23:00'\nAND kind IN ('new', 'corroborate')\nORDER BY effective_at DESC LIMIT 1;\n```\n\nPlease run this corrected query to get the most recent price target for Guggenheim on ABBV. If the result is not null or zero, that is the current price target, and we can use it to calculate the percent change from the initial price target when Guggenheim first started covering the stock. If the result is null or zero, it means there have been no changes in the price target since Guggenheim initiated coverage.\n\n===== next turn =====\n\nIt appears that the result provided is the current price target for Guggenheim on ABBV, which is $190.0. However, to calculate the percent change since Guggenheim initiated coverage, we need to know the initial price target at that time. Since the initial price target is not provided in the result, we cannot calculate the percent change.\n\nIf you can provide the initial price target for Guggenheim on ABBV when they first started covering the stock, we can then calculate the percent change from that initial target to the current target of $190.0. Without the initial price target, it is not possible to determine the percent change."
+}

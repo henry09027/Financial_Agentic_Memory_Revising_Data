@@ -1,0 +1,359 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+MRK-00076,2019-12-26 18:22:00,MRK | Cowen & Co.,alias,,TD Cowen,2019-12-26 18:22:00,event
+MRK-00113,2021-12-07 07:40:58,MRK | Guggenheim,rating,,Neutral,2021-12-07 07:40:58,new
+MRK-00114,2021-12-09 08:26:28,MRK | Wells Fargo,rating,,Overweight,2021-12-09 08:26:28,new
+MRK-00114,2021-12-09 08:26:28,MRK | Wells Fargo,price_target_usd,,90.0,2021-12-09 08:26:28,new
+MRK-00115,2021-12-13 08:08:20,MRK | UBS,rating,,Neutral,2021-12-13 08:08:20,new
+MRK-00115,2021-12-13 08:08:20,MRK | UBS,price_target_usd,,76.0,2021-12-13 08:08:20,new
+MRK-00116,2021-12-16 06:34:04,MRK | Daiwa Capital,rating,,Neutral,2021-12-16 06:34:04,new
+MRK-00116,2021-12-16 06:34:04,MRK | Daiwa Capital,price_target_usd,,70.0,2021-12-16 06:34:04,new
+MRK-00117,2022-01-28 08:37:34,MRK | JP Morgan,rating,,Overweight,2022-01-28 08:37:34,new
+MRK-00117,2022-01-28 08:37:34,MRK | JP Morgan,price_target_usd,,95.0,2022-01-28 08:37:34,new
+MRK-00118,2022-02-04 06:20:19,MRK | SVB Leerink,rating,,Outperform,2022-02-04 06:20:19,new
+MRK-00118,2022-02-04 06:20:19,MRK | SVB Leerink,price_target_usd,,101.0,2022-02-04 06:20:19,new
+MRK-00119,2022-04-06 07:41:49,MRK | SVB Leerink,rating,,Outperform,2022-04-06 07:41:49,corroborate
+MRK-00119,2022-04-06 07:41:49,MRK | SVB Leerink,price_target_usd,,100.0,2022-04-06 07:41:49,new
+MRK-00120,2022-04-06 10:11:39,MRK | Morgan Stanley,rating,,Equal-Weight,2022-04-06 10:11:39,new
+MRK-00120,2022-04-06 10:11:39,MRK | Morgan Stanley,price_target_usd,,80.0,2022-04-06 10:11:39,new
+MRK-00121,2022-04-12 08:54:01,MRK | Barclays,rating,,Overweight,2022-04-12 08:54:01,new
+MRK-00121,2022-04-12 08:54:01,MRK | Barclays,price_target_usd,,97.0,2022-04-12 08:54:01,new
+MRK-00122,2022-04-21 06:24:09,MRK | SVB Leerink,rating,,Outperform,2022-04-21 06:24:09,corroborate
+MRK-00122,2022-04-21 06:24:09,MRK | SVB Leerink,price_target_usd,,97.0,2022-04-21 06:24:09,new
+MRK-00123,2022-04-29 06:23:32,MRK | SVB Leerink,rating,,Outperform,2022-04-29 06:23:32,corroborate
+MRK-00123,2022-04-29 06:23:32,MRK | SVB Leerink,price_target_usd,,102.0,2022-04-29 06:23:32,new
+MRK-00124,2022-04-29 07:36:37,MRK | Wells Fargo,rating,,Overweight,2022-04-29 07:36:37,corroborate
+MRK-00124,2022-04-29 07:36:37,MRK | Wells Fargo,price_target_usd,,105.0,2022-04-29 07:36:37,new
+MRK-00125,2022-04-29 10:14:19,MRK | Morgan Stanley,price_target_usd,,87.0,2022-04-29 10:14:19,new
+MRK-00126,2022-06-27 08:00:12,MRK | Cowen & Co.,rating,,Market Perform,2022-06-27 08:00:12,new
+MRK-00126,2022-06-27 08:00:12,MRK | Cowen & Co.,price_target_usd,,102.0,2022-06-27 08:00:12,new
+MRK-00127,2022-07-07 05:53:23,MRK | Daiwa Capital,rating,,Outperform,2022-07-07 05:53:23,new
+MRK-00127,2022-07-07 05:53:23,MRK | Daiwa Capital,price_target_usd,,102.0,2022-07-07 05:53:23,new
+MRK-00128,2022-07-08 07:59:45,MRK | Morgan Stanley,rating,,Equal-Weight,2022-07-08 07:59:45,corroborate
+MRK-00128,2022-07-08 07:59:45,MRK | Morgan Stanley,price_target_usd,,88.0,2022-07-08 07:59:45,new
+MRK-00129,2022-07-13 05:00:40,MRK | Atlantic Equities,rating,,Overweight,2022-07-13 05:00:40,new
+MRK-00129,2022-07-13 05:00:40,MRK | Atlantic Equities,price_target_usd,,110.0,2022-07-13 05:00:40,new
+MRK-00130,2022-07-18 09:40:38,MRK | UBS,price_target_usd,,98.0,2022-07-18 09:40:38,new
+MRK-00131,2022-07-29 07:25:54,MRK | SVB Leerink,rating,,Outperform,2022-07-29 07:25:54,corroborate
+MRK-00131,2022-07-29 07:25:54,MRK | SVB Leerink,price_target_usd,,105.0,2022-07-29 07:25:54,new
+MRK-00132,2022-07-29 08:39:07,MRK | Morgan Stanley,price_target_usd,,92.0,2022-07-29 08:39:07,new
+MRK-00133,2022-07-29 11:06:42,MRK | Barclays,rating,,Overweight,2022-07-29 11:06:42,corroborate
+MRK-00133,2022-07-29 11:06:42,MRK | Barclays,price_target_usd,,101.0,2022-07-29 11:06:42,new
+MRK-00134,2022-08-25 13:58:10,MRK | Erste Group,rating,,Buy,2022-08-25 13:58:10,new
+MRK-00135,2022-09-12 07:17:07,MRK | SVB Leerink,rating,,Outperform,2022-09-12 07:17:07,corroborate
+MRK-00135,2022-09-12 07:17:07,MRK | SVB Leerink,price_target_usd,,109.0,2022-09-12 07:17:07,new
+MRK-00136,2022-09-14 04:41:02,MRK | Berenberg,rating,,Buy,2022-09-14 04:41:02,new
+MRK-00136,2022-09-14 04:41:02,MRK | Berenberg,price_target_usd,,100.0,2022-09-14 04:41:02,new
+MRK-00137,2022-09-30 04:53:49,MRK | SVB Leerink,rating,,Outperform,2022-09-30 04:53:49,corroborate
+MRK-00137,2022-09-30 04:53:49,MRK | SVB Leerink,price_target_usd,,110.0,2022-09-30 04:53:49,new
+MRK-00138,2022-10-10 08:11:04,MRK | Guggenheim,rating,,Buy,2022-10-10 08:11:04,new
+MRK-00139,2022-10-11 06:05:26,MRK | Atlantic Equities,rating,,Overweight,2022-10-11 06:05:26,corroborate
+MRK-00139,2022-10-11 06:05:26,MRK | Atlantic Equities,price_target_usd,,116.0,2022-10-11 06:05:26,new
+MRK-00140,2022-10-12 10:39:22,MRK | Morgan Stanley,price_target_usd,,91.0,2022-10-12 10:39:22,new
+MRK-00141,2022-10-28 05:21:01,MRK | Atlantic Equities,rating,,Overweight,2022-10-28 05:21:01,corroborate
+MRK-00141,2022-10-28 05:21:01,MRK | Atlantic Equities,price_target_usd,,122.0,2022-10-28 05:21:01,new
+MRK-00142,2022-10-28 06:34:48,MRK | SVB Leerink,rating,,Outperform,2022-10-28 06:34:48,corroborate
+MRK-00142,2022-10-28 06:34:48,MRK | SVB Leerink,price_target_usd,,112.0,2022-10-28 06:34:48,new
+MRK-00143,2022-10-28 08:05:43,MRK | Wells Fargo,rating,,Overweight,2022-10-28 08:05:43,corroborate
+MRK-00143,2022-10-28 08:05:43,MRK | Wells Fargo,price_target_usd,,110.0,2022-10-28 08:05:43,new
+MRK-00144,2022-10-28 08:50:41,MRK | Truist Securities,rating,,Buy,2022-10-28 08:50:41,new
+MRK-00144,2022-10-28 08:50:41,MRK | Truist Securities,price_target_usd,,106.0,2022-10-28 08:50:41,new
+MRK-00145,2022-10-28 11:15:49,MRK | Morgan Stanley,price_target_usd,,100.0,2022-10-28 11:15:49,new
+MRK-00146,2022-10-28 15:35:11,MRK | Barclays,rating,,Overweight,2022-10-28 15:35:11,corroborate
+MRK-00146,2022-10-28 15:35:11,MRK | Barclays,price_target_usd,,110.0,2022-10-28 15:35:11,new
+MRK-00147,2022-11-01 09:42:07,MRK | Guggenheim,price_target_usd,,111.0,2022-11-01 09:42:07,new
+MRK-00148,2022-11-18 04:53:24,MRK | Credit Suisse,rating,,Outperform,2022-11-18 04:53:24,new
+MRK-00148,2022-11-18 04:53:24,MRK | Credit Suisse,price_target_usd,,120.0,2022-11-18 04:53:24,new
+MRK-00149,2022-12-19 07:59:34,MRK | Cantor Fitzgerald,rating,,Overweight,2022-12-19 07:59:34,new
+MRK-00149,2022-12-19 07:59:34,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2022-12-19 07:59:34,new
+MRK-00150,2023-01-03 09:14:06,MRK | Wells Fargo,rating,,Overweight,2023-01-03 09:14:06,corroborate
+MRK-00150,2023-01-03 09:14:06,MRK | Wells Fargo,price_target_usd,,125.0,2023-01-03 09:14:06,new
+MRK-00151,2023-01-04 07:16:09,MRK | B of A Securities,rating,,Buy,2023-01-04 07:16:09,new
+MRK-00151,2023-01-04 07:16:09,MRK | B of A Securities,price_target_usd,,130.0,2023-01-04 07:16:09,new
+MRK-00152,2023-01-23 05:31:32,MRK | SVB Leerink,rating,,Outperform,2023-01-23 05:31:32,corroborate
+MRK-00152,2023-01-23 05:31:32,MRK | SVB Leerink,price_target_usd,,120.0,2023-01-23 05:31:32,new
+MRK-00153,2023-02-03 06:29:22,MRK | SVB Leerink,rating,,Outperform,2023-02-03 06:29:22,corroborate
+MRK-00153,2023-02-03 06:29:22,MRK | SVB Leerink,price_target_usd,,122.0,2023-02-03 06:29:22,new
+MRK-00154,2023-02-03 07:43:14,MRK | Truist Securities,price_target_usd,,118.0,2023-02-03 07:43:14,new
+MRK-00154,2023-02-03 07:43:14,MRK | Truist Securities,rating,,Buy,2023-02-03 07:43:14,corroborate
+MRK-00155,2023-02-03 08:30:00,MRK | Morgan Stanley,price_target_usd,,99.0,2023-02-03 08:30:00,new
+MRK-00156,2023-02-03 10:02:56,MRK | Wells Fargo,rating,,Overweight,2023-02-03 10:02:56,corroborate
+MRK-00156,2023-02-03 10:02:56,MRK | Wells Fargo,price_target_usd,,120.0,2023-02-03 10:02:56,new
+MRK-00157,2023-02-13 06:47:29,MRK | Credit Suisse,rating,,Outperform,2023-02-13 06:47:29,corroborate
+MRK-00157,2023-02-13 06:47:29,MRK | Credit Suisse,price_target_usd,,125.0,2023-02-13 06:47:29,new
+MRK-00158,2023-02-22 05:53:25,MRK | Wolfe Research,rating,,Outperform,2023-02-22 05:53:25,new
+MRK-00158,2023-02-22 05:53:25,MRK | Wolfe Research,price_target_usd,,127.0,2023-02-22 05:53:25,new
+MRK-00159,2023-02-23 09:21:58,MRK | JP Morgan,rating,,Overweight,2023-02-23 09:21:58,corroborate
+MRK-00159,2023-02-23 09:21:58,MRK | JP Morgan,price_target_usd,,125.0,2023-02-23 09:21:58,new
+MRK-00160,2023-03-06 06:24:30,MRK | Jefferies,rating,,Buy,2023-03-06 06:24:30,new
+MRK-00160,2023-03-06 06:24:30,MRK | Jefferies,price_target_usd,,125.0,2023-03-06 06:24:30,new
+MRK-00161,2023-03-07 04:44:41,MRK | Atlantic Equities,price_target_usd,,127.0,2023-03-07 04:44:41,new
+MRK-00162,2023-03-07 07:36:37,MRK | Credit Suisse,rating,,Outperform,2023-03-07 07:36:37,corroborate
+MRK-00162,2023-03-07 07:36:37,MRK | Credit Suisse,price_target_usd,,126.0,2023-03-07 07:36:37,new
+MRK-00163,2023-03-10 06:30:02,MRK | Berenberg,price_target_usd,,130.0,2023-03-10 06:30:02,new
+MRK-00164,2023-03-13 06:07:41,MRK | Wells Fargo,rating,,Equal-Weight,2023-03-13 06:07:41,new
+MRK-00164,2023-03-13 06:07:41,MRK | Wells Fargo,price_target_usd,,115.0,2023-03-13 06:07:41,new
+MRK-00165,2023-03-17 09:16:02,MRK | Mizuho,rating,,Buy,2023-03-17 09:16:02,new
+MRK-00165,2023-03-17 09:16:02,MRK | Mizuho,price_target_usd,,130.0,2023-03-17 09:16:02,new
+MRK-00166,2023-04-10 07:52:50,MRK | Mizuho,rating,,Buy,2023-04-10 07:52:50,corroborate
+MRK-00166,2023-04-10 07:52:50,MRK | Mizuho,price_target_usd,,130.0,2023-04-10 07:52:50,corroborate
+MRK-00167,2023-04-11 10:36:48,MRK | Guggenheim,price_target_usd,,124.0,2023-04-11 10:36:48,new
+MRK-00168,2023-04-13 04:51:44,MRK | Citigroup,rating,,Buy,2023-04-13 04:51:44,new
+MRK-00168,2023-04-13 04:51:44,MRK | Citigroup,price_target_usd,,130.0,2023-04-13 04:51:44,new
+MRK-00169,2023-05-01 06:00:26,MRK | Barclays,rating,,Overweight,2023-05-01 06:00:26,corroborate
+MRK-00169,2023-05-01 06:00:26,MRK | Barclays,price_target_usd,,130.0,2023-05-01 06:00:26,new
+MRK-00170,2023-05-01 10:31:55,MRK | Atlantic Equities,rating,,Overweight,2023-05-01 10:31:55,corroborate
+MRK-00170,2023-05-01 10:31:55,MRK | Atlantic Equities,price_target_usd,,129.0,2023-05-01 10:31:55,new
+MRK-00171,2023-05-30 08:05:47,MRK | Cantor Fitzgerald,rating,,corroborate,2023-05-30 08:05:47,corroborate
+MRK-00171,2023-05-30 08:05:47,MRK | Cantor Fitzgerald,price_target_usd,,corroborate,2023-05-30 08:05:47,corroborate
+MRK-00172,2023-07-11 09:29:06,MRK | Morgan Stanley,rating,,corroborate,2023-07-11 09:29:06,corroborate
+MRK-00172,2023-07-11 09:29:06,MRK | Morgan Stanley,price_target_usd,,109.0,2023-07-11 09:29:06,corroborate
+MRK-00173,2023-07-14 04:51:41,MRK | HSBC,rating,,Hold,2023-07-14 04:51:41,new
+MRK-00173,2023-07-14 04:51:41,MRK | HSBC,price_target_usd,,123.0,2023-07-14 04:51:41,new
+MRK-00174,2023-07-20 10:28:58,MRK | Truist Securities,price_target_usd,,116.0,2023-07-20 10:28:58,new
+MRK-00175,2023-08-02 10:41:12,MRK | Morgan Stanley,rating,,Equal-Weight,2023-08-02 10:41:12,corroborate
+MRK-00175,2023-08-02 10:41:12,MRK | Morgan Stanley,price_target_usd,,116.0,2023-08-02 10:41:12,new
+MRK-00176,2023-08-02 12:35:31,MRK | Truist Securities,price_target_usd,,122.0,2023-08-02 12:35:31,new
+MRK-00177,2023-08-22 10:21:27,MRK | Cantor Fitzgerald,rating,,Overweight,2023-08-22 10:21:27,new
+MRK-00177,2023-08-22 10:21:27,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2023-08-22 10:21:27,new
+MRK-00178,2023-09-05 10:01:10,MRK | Cantor Fitzgerald,rating,,Overweight,2023-09-05 10:01:10,corroborate
+MRK-00178,2023-09-05 10:01:10,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2023-09-05 10:01:10,corroborate
+MRK-00179,2023-10-02 12:55:15,MRK | Cantor Fitzgerald,rating,,Overweight,2023-10-02 12:55:15,corroborate
+MRK-00179,2023-10-02 12:55:15,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2023-10-02 12:55:15,corroborate
+MRK-00180,2023-10-04 09:57:42,MRK | Cantor Fitzgerald,rating,,corroborate,2023-10-04 09:57:42,corroborate
+MRK-00180,2023-10-04 09:57:42,MRK | Cantor Fitzgerald,price_target_usd,,corroborate,2023-10-04 09:57:42,corroborate
+MRK-00181,2023-10-06 12:09:23,MRK | Truist Securities,rating,,Buy,2023-10-06 12:09:23,corroborate
+MRK-00181,2023-10-06 12:09:23,MRK | Truist Securities,price_target_usd,,122.0,2023-10-06 12:09:23,corroborate
+MRK-00182,2023-10-11 10:28:44,MRK | Morgan Stanley,rating,,Equal-Weight,2023-10-11 10:28:44,corroborate
+MRK-00182,2023-10-11 10:28:44,MRK | Morgan Stanley,price_target_usd,,115.0,2023-10-11 10:28:44,new
+MRK-00183,2023-10-23 10:20:10,MRK | Cantor Fitzgerald,rating,,Overweight,2023-10-23 10:20:10,new
+MRK-00183,2023-10-23 10:20:10,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2023-10-23 10:20:10,new
+MRK-00184,2023-10-27 06:25:06,MRK | BMO Capital,rating,,Outperform,2023-10-27 06:25:06,new
+MRK-00184,2023-10-27 06:25:06,MRK | BMO Capital,price_target_usd,,132.0,2023-10-27 06:25:06,new
+MRK-00185,2023-10-27 09:32:24,MRK | Morgan Stanley,rating,,Equal-Weight,2023-10-27 09:32:24,corroborate
+MRK-00185,2023-10-27 09:32:24,MRK | Morgan Stanley,price_target_usd,,118.0,2023-10-27 09:32:24,new
+MRK-00186,2023-11-09 05:08:24,MRK | Deutsche Bank,rating,,Buy,2023-11-09 05:08:24,new
+MRK-00186,2023-11-09 05:08:24,MRK | Deutsche Bank,price_target_usd,,115.0,2023-11-09 05:08:24,new
+MRK-00187,2023-11-15 09:49:43,MRK | Cantor Fitzgerald,rating,,corroborate,2023-11-15 09:49:43,corroborate
+MRK-00187,2023-11-15 09:49:43,MRK | Cantor Fitzgerald,price_target_usd,,corroborate,2023-11-15 09:49:43,corroborate
+MRK-00188,2023-11-20 12:17:56,MRK | Cantor Fitzgerald,rating,,Overweight,2023-11-20 12:17:56,corroborate
+MRK-00188,2023-11-20 12:17:56,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2023-11-20 12:17:56,corroborate
+MRK-00189,2023-11-29 09:23:36,MRK | Cantor Fitzgerald,rating,,corroborate,2023-11-29 09:23:36,corroborate
+MRK-00189,2023-11-29 09:23:36,MRK | Cantor Fitzgerald,price_target_usd,,corroborate,2023-11-29 09:23:36,corroborate
+MRK-00190,2024-01-04 06:02:36,MRK | TD Cowen,rating,,Outperform,2024-01-04 06:02:36,new
+MRK-00190,2024-01-04 06:02:36,MRK | TD Cowen,price_target_usd,,135.0,2024-01-04 06:02:36,new
+MRK-00191,2024-01-09 09:05:35,MRK | Cantor Fitzgerald,rating,,corroborate,2024-01-09 09:05:35,corroborate
+MRK-00191,2024-01-09 09:05:35,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-01-09 09:05:35,corroborate
+MRK-00192,2024-01-23 08:17:55,MRK | Barclays,rating,,Overweight,2024-01-23 08:17:55,corroborate
+MRK-00192,2024-01-23 08:17:55,MRK | Barclays,price_target_usd,,135.0,2024-01-23 08:17:55,new
+MRK-00193,2024-02-02 08:20:47,MRK | Barclays,price_target_usd,,145.0,2024-02-02 08:20:47,new
+MRK-00193,2024-02-02 08:20:47,MRK | Barclays,rating,,Overweight,2024-02-02 08:20:47,corroborate
+MRK-00194,2024-02-02 09:14:26,MRK | Wells Fargo,rating,,Equal-Weight,2024-02-02 09:14:26,new
+MRK-00194,2024-02-02 09:14:26,MRK | Wells Fargo,price_target_usd,,130.0,2024-02-02 09:14:26,new
+MRK-00195,2024-02-02 13:54:18,MRK | UBS,rating,,Buy,2024-02-02 13:54:18,new
+MRK-00195,2024-02-02 13:54:18,MRK | UBS,price_target_usd,,148.0,2024-02-02 13:54:18,new
+MRK-00196,2024-02-02 14:55:53,MRK | Truist Securities,price_target_usd,,139.0,2024-02-02 14:55:53,new
+MRK-00196,2024-02-02 14:55:53,MRK | Truist Securities,rating,,Buy,2024-02-02 14:55:53,corroborate
+MRK-00197,2024-02-05 11:17:12,MRK | Cantor Fitzgerald,rating,,corroborate,2024-02-05 11:17:12,corroborate
+MRK-00197,2024-02-05 11:17:12,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-02-05 11:17:12,corroborate
+MRK-00198,2024-02-14 11:31:19,MRK | Cantor Fitzgerald,rating,,corroborate,2024-02-14 11:31:19,corroborate
+MRK-00198,2024-02-14 11:31:19,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-02-14 11:31:19,corroborate
+MRK-00199,2024-02-29 13:44:08,MRK | Cantor Fitzgerald,rating,,corroborate,2024-02-29 13:44:08,corroborate
+MRK-00199,2024-02-29 13:44:08,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-02-29 13:44:08,corroborate
+MRK-00200,2024-03-11 09:17:52,MRK | Cantor Fitzgerald,rating,,corroborate,2024-03-11 09:17:52,corroborate
+MRK-00200,2024-03-11 09:17:52,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-03-11 09:17:52,corroborate
+MRK-00201,2024-03-11 13:32:37,MRK | Societe Generale,rating,,Sell,2024-03-11 13:32:37,new
+MRK-00201,2024-03-11 13:32:37,MRK | Societe Generale,price_target_usd,,104.0,2024-03-11 13:32:37,new
+MRK-00202,2024-03-27 08:36:53,MRK | Wells Fargo,rating,,Equal-Weight,2024-03-27 08:36:53,new
+MRK-00202,2024-03-27 08:36:53,MRK | Wells Fargo,price_target_usd,,135.0,2024-03-27 08:36:53,new
+MRK-00203,2024-03-27 09:29:43,MRK | Cantor Fitzgerald,rating,,corroborate,2024-03-27 09:29:43,corroborate
+MRK-00203,2024-03-27 09:29:43,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-03-27 09:29:43,corroborate
+MRK-00204,2024-03-28 11:40:30,MRK | Truist Securities,rating,,Buy,2024-03-28 11:40:30,corroborate
+MRK-00204,2024-03-28 11:40:30,MRK | Truist Securities,price_target_usd,,142.0,2024-03-28 11:40:30,new
+MRK-00205,2024-04-01 08:37:15,MRK | Cantor Fitzgerald,rating,,corroborate,2024-04-01 08:37:15,corroborate
+MRK-00205,2024-04-01 08:37:15,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-04-01 08:37:15,corroborate
+MRK-00206,2024-04-05 09:27:30,MRK | Cantor Fitzgerald,rating,,corroborate,2024-04-05 09:27:30,corroborate
+MRK-00206,2024-04-05 09:27:30,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-04-05 09:27:30,corroborate
+MRK-00207,2024-04-08 08:09:04,MRK | Berenberg,price_target_usd,,143.0,2024-04-08 08:09:04,new
+MRK-00208,2024-04-18 09:57:08,MRK | Cantor Fitzgerald,rating,,corroborate,2024-04-18 09:57:08,corroborate
+MRK-00208,2024-04-18 09:57:08,MRK | Cantor Fitzgerald,price_target_usd,,135.0,2024-04-18 09:57:08,corroborate
+MRK-00209,2024-04-26 11:51:24,MRK | Truist Securities,price_target_usd,,143.0,2024-04-26 11:51:24,new
+MRK-00210,2024-06-04 13:25:11,MRK | Cantor Fitzgerald,rating,,corroborate,2024-06-04 13:25:11,corroborate
+MRK-00210,2024-06-04 13:25:11,MRK | Cantor Fitzgerald,price_target_usd,,155.0,2024-06-04 13:25:11,corroborate
+MRK-00211,2024-06-18 08:07:20,MRK | Cantor Fitzgerald,rating,,corroborate,2024-06-18 08:07:20,corroborate
+MRK-00211,2024-06-18 08:07:20,MRK | Cantor Fitzgerald,price_target_usd,,155.0,2024-06-18 08:07:20,corroborate
+MRK-00212,2024-06-20 12:58:46,MRK | Cantor Fitzgerald,rating,,corroborate,2024-06-20 12:58:46,corroborate
+MRK-00212,2024-06-20 12:58:46,MRK | Cantor Fitzgerald,price_target_usd,,155.0,2024-06-20 12:58:46,corroborate
+MRK-00213,2024-07-11 13:10:35,MRK | Morgan Stanley,rating,,Equal-Weight,2024-07-11 13:10:35,corroborate
+MRK-00213,2024-07-11 13:10:35,MRK | Morgan Stanley,price_target_usd,,134.0,2024-07-11 13:10:35,new
+MRK-00214,2024-07-31 11:45:54,MRK | UBS,rating,,Buy,2024-07-31 11:45:54,new
+MRK-00214,2024-07-31 11:45:54,MRK | UBS,price_target_usd,,142.0,2024-07-31 11:45:54,new
+MRK-00215,2024-07-31 12:05:53,MRK | Wells Fargo,rating,,Equal-Weight,2024-07-31 12:05:53,new
+MRK-00215,2024-07-31 12:05:53,MRK | Wells Fargo,price_target_usd,,125.0,2024-07-31 12:05:53,new
+MRK-00216,2024-07-31 13:23:29,MRK | B of A Securities,rating,,Buy,2024-07-31 13:23:29,corroborate
+MRK-00216,2024-07-31 13:23:29,MRK | B of A Securities,price_target_usd,,145.0,2024-07-31 13:23:29,new
+MRK-00217,2024-07-31 15:07:22,MRK | Barclays,rating,,Overweight,2024-07-31 15:07:22,corroborate
+MRK-00217,2024-07-31 15:07:22,MRK | Barclays,price_target_usd,,142.0,2024-07-31 15:07:22,new
+MRK-00218,2024-08-29 11:26:35,MRK | Cantor Fitzgerald,rating,,corroborate,2024-08-29 11:26:35,corroborate
+MRK-00218,2024-08-29 11:26:35,MRK | Cantor Fitzgerald,price_target_usd,,155.0,2024-08-29 11:26:35,corroborate
+MRK-00219,2024-09-16 12:15:50,MRK | Cantor Fitzgerald,rating,,corroborate,2024-09-16 12:15:50,corroborate
+MRK-00219,2024-09-16 12:15:50,MRK | Cantor Fitzgerald,price_target_usd,,155.0,2024-09-16 12:15:50,corroborate
+MRK-00220,2024-10-03 11:09:26,MRK | Cantor Fitzgerald,rating,,corroborate,2024-10-03 11:09:26,corroborate
+MRK-00220,2024-10-03 11:09:26,MRK | Cantor Fitzgerald,price_target_usd,,155.0,2024-10-03 11:09:26,corroborate
+MRK-00221,2024-10-07 14:40:15,MRK | Barclays,price_target_usd,,140.0,2024-10-07 14:40:15,new
+MRK-00222,2024-10-09 12:27:16,MRK | Truist Securities,rating,,Buy,2024-10-09 12:27:16,corroborate
+MRK-00222,2024-10-09 12:27:16,MRK | Truist Securities,price_target_usd,,132.0,2024-10-09 12:27:16,new
+MRK-00223,2024-10-09 18:00:10,MRK | UBS,rating,,Buy,2024-10-09 18:00:10,new
+MRK-00223,2024-10-09 18:00:10,MRK | UBS,price_target_usd,,136.0,2024-10-09 18:00:10,new
+MRK-00224,2024-10-17 12:29:44,MRK | Bernstein,rating,,Market Perform,2024-10-17 12:29:44,new
+MRK-00224,2024-10-17 12:29:44,MRK | Bernstein,price_target_usd,,115.0,2024-10-17 12:29:44,new
+MRK-00225,2024-10-25 14:25:10,MRK | Citigroup,price_target_usd,,130.0,2024-10-25 14:25:10,new
+MRK-00226,2024-11-01 09:17:15,MRK | Morgan Stanley,price_target_usd,,123.0,2024-11-01 09:17:15,new
+MRK-00227,2024-11-01 12:06:23,MRK | BMO Capital,rating,,Outperform,2024-11-01 12:06:23,corroborate
+MRK-00227,2024-11-01 12:06:23,MRK | BMO Capital,price_target_usd,,136.0,2024-11-01 12:06:23,new
+MRK-00228,2024-11-01 14:44:43,MRK | Wells Fargo,rating,,Equal-Weight,2024-11-01 14:44:43,new
+MRK-00228,2024-11-01 14:44:43,MRK | Wells Fargo,price_target_usd,,110.0,2024-11-01 14:44:43,new
+MRK-00229,2024-11-06 13:11:41,MRK | Guggenheim,rating,,Buy,2024-11-06 13:11:41,new
+MRK-00229,2024-11-06 13:11:41,MRK | Guggenheim,price_target_usd,,130.0,2024-11-06 13:11:41,new
+MRK-00230,2024-11-07 09:26:19,MRK | Truist Securities,price_target_usd,,130.0,2024-11-07 09:26:19,new
+MRK-00231,2024-11-15 05:32:49,MRK | Wolfe Research,rating,,Peer Perform,2024-11-15 05:32:49,new
+MRK-00232,2024-12-20 05:08:20,MRK | BMO Capital,rating,,Market Perform,2024-12-20 05:08:20,new
+MRK-00232,2024-12-20 05:08:20,MRK | BMO Capital,price_target_usd,,105.0,2024-12-20 05:08:20,new
+MRK-00233,2025-01-08 06:38:21,MRK | Truist Securities,rating,,Hold,2025-01-08 06:38:21,new
+MRK-00233,2025-01-08 06:38:21,MRK | Truist Securities,price_target_usd,,110.0,2025-01-08 06:38:21,new
+MRK-00234,2025-01-08 09:56:53,MRK | UBS,rating,,Buy,2025-01-08 09:56:53,new
+MRK-00234,2025-01-08 09:56:53,MRK | UBS,price_target_usd,,120.0,2025-01-08 09:56:53,new
+MRK-00235,2025-01-13 11:02:51,MRK | Leerink Partners,rating,,Outperform,2025-01-13 11:02:51,new
+MRK-00235,2025-01-13 11:02:51,MRK | Leerink Partners,price_target_usd,,119.0,2025-01-13 11:02:51,new
+MRK-00236,2025-01-17 05:27:07,MRK | Guggenheim,price_target_usd,,122.0,2025-01-17 05:27:07,new
+MRK-00236,2025-01-17 05:27:07,MRK | Guggenheim,rating,,Buy,2025-01-17 05:27:07,new
+MRK-00237,2025-01-21 11:08:13,MRK | Morgan Stanley,rating,,Equal-Weight,2025-01-21 11:08:13,new
+MRK-00237,2025-01-21 11:08:13,MRK | Morgan Stanley,price_target_usd,,113.0,2025-01-21 11:08:13,new
+MRK-00238,2025-01-28 07:25:27,MRK | Citigroup,price_target_usd,,125.0,2025-01-28 07:25:27,new
+MRK-00239,2025-02-05 07:53:57,MRK | Morgan Stanley,rating,,Equal-Weight,2025-02-05 07:53:57,new
+MRK-00239,2025-02-05 07:53:57,MRK | Morgan Stanley,price_target_usd,,106.0,2025-02-05 07:53:57,new
+MRK-00240,2025-02-05 09:09:11,MRK | Citigroup,price_target_usd,,115.0,2025-02-05 09:09:11,new
+MRK-00241,2025-02-05 10:18:16,MRK | BMO Capital,rating,,Market Perform,2025-02-05 10:18:16,corroborate
+MRK-00241,2025-02-05 10:18:16,MRK | BMO Capital,price_target_usd,,96.0,2025-02-05 10:18:16,new
+MRK-00242,2025-02-05 10:40:43,MRK | B of A Securities,price_target_usd,,112.0,2025-02-05 10:40:43,new
+MRK-00242,2025-02-05 10:40:43,MRK | B of A Securities,rating,,Buy,2025-02-05 10:40:43,corroborate
+MRK-00243,2025-02-12 10:24:31,MRK | Guggenheim,price_target_usd,,115.0,2025-02-12 10:24:31,new
+MRK-00243,2025-02-12 10:24:31,MRK | Guggenheim,rating,,Buy,2025-02-12 10:24:31,new
+MRK-00244,2025-02-18 07:33:36,MRK | Deutsche Bank,rating,,Hold,2025-02-18 07:33:36,new
+MRK-00244,2025-02-18 07:33:36,MRK | Deutsche Bank,price_target_usd,,105.0,2025-02-18 07:33:36,new
+MRK-00245,2025-04-17 11:28:50,MRK | Guggenheim,rating,,Buy,2025-04-17 11:28:50,corroborate
+MRK-00245,2025-04-17 11:28:50,MRK | Guggenheim,price_target_usd,,115.0,2025-04-17 11:28:50,corroborate
+MRK-00246,2025-04-22 07:43:34,MRK | Cantor Fitzgerald,rating,,Neutral,2025-04-22 07:43:34,new
+MRK-00246,2025-04-22 07:43:34,MRK | Cantor Fitzgerald,price_target_usd,,85.0,2025-04-22 07:43:34,new
+MRK-00247,2025-05-14 08:09:52,MRK | Citigroup,rating,,Neutral,2025-05-14 08:09:52,new
+MRK-00247,2025-05-14 08:09:52,MRK | Citigroup,price_target_usd,,84.0,2025-05-14 08:09:52,new
+MRK-00248,2025-07-10 12:15:36,MRK | Morgan Stanley,rating,,Equal-Weight,2025-07-10 12:15:36,new
+MRK-00248,2025-07-10 12:15:36,MRK | Morgan Stanley,price_target_usd,,98.0,2025-07-10 12:15:36,new
+MRK-00249,2025-07-30 10:06:06,MRK | Wells Fargo,rating,,Equal-Weight,2025-07-30 10:06:06,new
+MRK-00249,2025-07-30 10:06:06,MRK | Wells Fargo,price_target_usd,,90.0,2025-07-30 10:06:06,new
+MRK-00250,2025-09-17 06:40:57,MRK | Berenberg,rating,,Hold,2025-09-17 06:40:57,new
+MRK-00250,2025-09-17 06:40:57,MRK | Berenberg,price_target_usd,,90.0,2025-09-17 06:40:57,new
+MRK-00251,2025-11-03 12:52:27,MRK | Morgan Stanley,rating,,Equal-Weight,2025-11-03 12:52:27,new
+MRK-00251,2025-11-03 12:52:27,MRK | Morgan Stanley,price_target_usd,,100.0,2025-11-03 12:52:27,new
+MRK-00252,2025-11-18 13:26:01,MRK | Deutsche Bank,price_target_usd,,111.0,2025-11-18 13:26:01,new
+MRK-00253,2025-11-24 08:45:43,MRK | Wells Fargo,rating,,Overweight,2025-11-24 08:45:43,new
+MRK-00253,2025-11-24 08:45:43,MRK | Wells Fargo,price_target_usd,,125.0,2025-11-24 08:45:43,new
+MRK-00254,2025-12-02 13:13:22,MRK | Goldman Sachs,rating,,Buy,2025-12-02 13:13:22,new
+MRK-00254,2025-12-02 13:13:22,MRK | Goldman Sachs,price_target_usd,,120.0,2025-12-02 13:13:22,new
+MRK-00255,2025-12-04 14:54:51,MRK | Scotiabank,rating,,Outperform,2025-12-04 14:54:51,new
+MRK-00255,2025-12-04 14:54:51,MRK | Scotiabank,price_target_usd,,120.0,2025-12-04 14:54:51,new
+MRK-00256,2025-12-12 12:19:06,MRK | Morgan Stanley,rating,,Equal-Weight,2025-12-12 12:19:06,new
+MRK-00256,2025-12-12 12:19:06,MRK | Morgan Stanley,price_target_usd,,102.0,2025-12-12 12:19:06,new
+MRK-00257,2025-12-15 08:19:02,MRK | B of A Securities,price_target_usd,,120.0,2025-12-15 08:19:02,new
+MRK-00258,2025-12-18 07:48:03,MRK | BMO Capital,rating,,Outperform,2025-12-18 07:48:03,new
+MRK-00258,2025-12-18 07:48:03,MRK | BMO Capital,price_target_usd,,130.0,2025-12-18 07:48:03,new
+MRK-00259,2026-01-07 14:46:02,MRK | Citigroup,price_target_usd,,110.0,2026-01-07 14:46:02,new
+MRK-00260,2026-01-07 15:02:44,MRK | UBS,rating,,Buy,2026-01-07 15:02:44,new
+MRK-00260,2026-01-07 15:02:44,MRK | UBS,price_target_usd,,130.0,2026-01-07 15:02:44,new
+MRK-00261,2026-01-08 07:22:23,MRK | Wolfe Research,rating,,Outperform,2026-01-08 07:22:23,new
+MRK-00261,2026-01-08 07:22:23,MRK | Wolfe Research,price_target_usd,,135.0,2026-01-08 07:22:23,new
+MRK-00262,2026-01-20 13:08:25,MRK | TD Cowen,rating,,Hold,2026-01-20 13:08:25,new
+MRK-00262,2026-01-20 13:08:25,MRK | TD Cowen,price_target_usd,,120.0,2026-01-20 13:08:25,new
+MRK-00263,2026-01-27 09:41:12,MRK | Citigroup,price_target_usd,,115.0,2026-01-27 09:41:12,new
+MRK-00264,2026-02-04 09:52:37,MRK | Wells Fargo,rating,,Overweight,2026-02-04 09:52:37,new
+MRK-00264,2026-02-04 09:52:37,MRK | Wells Fargo,price_target_usd,,135.0,2026-02-04 09:52:37,new
+MRK-00265,2026-02-04 11:12:14,MRK | Cantor Fitzgerald,price_target_usd,,120.0,2026-02-04 11:12:14,new
+MRK-00266,2026-02-04 12:51:48,MRK | Citigroup,price_target_usd,,120.0,2026-02-04 12:51:48,new
+MRK-00267,2026-02-06 09:46:54,MRK | Guggenheim,price_target_usd,,140.0,2026-02-06 09:46:54,new
+MRK-00267,2026-02-06 09:46:54,MRK | Guggenheim,rating,,Buy,2026-02-06 09:46:54,new
+MRK-00268,2026-02-09 07:01:40,MRK | Freedom Broker,rating,,Hold,2026-02-09 07:01:40,new
+MRK-00268,2026-02-09 07:01:40,MRK | Freedom Broker,price_target_usd,,110.0,2026-02-09 07:01:40,new
+MRK-00269,2026-02-20 09:58:37,MRK | Barclays,rating,,Overweight,2026-02-20 09:58:37,new
+MRK-00269,2026-02-20 09:58:37,MRK | Barclays,price_target_usd,,140.0,2026-02-20 09:58:37,new
+MRK-00270,2026-02-25 07:33:53,MRK | RBC Capital,rating,,Outperform,2026-02-25 07:33:53,new
+MRK-00270,2026-02-25 07:33:53,MRK | RBC Capital,price_target_usd,,142.0,2026-02-25 07:33:53,new
+MRK-00271,2026-03-12 09:04:23,MRK | Wells Fargo,rating,,Overweight,2026-03-12 09:04:23,new
+MRK-00271,2026-03-12 09:04:23,MRK | Wells Fargo,price_target_usd,,150.0,2026-03-12 09:04:23,new
+MRK-00272,2026-03-20 15:31:26,MRK | Citigroup,price_target_usd,,125.0,2026-03-20 15:31:26,new
+MRK-00273,2026-03-30 13:12:27,MRK | RBC Capital,rating,,Outperform,2026-03-30 13:12:27,corroborate
+MRK-00273,2026-03-30 13:12:27,MRK | RBC Capital,price_target_usd,,142.0,2026-03-30 13:12:27,corroborate
+MRK-00274,2026-04-06 14:20:50,MRK | JP Morgan,rating,,Overweight,2026-04-06 14:20:50,new
+MRK-00274,2026-04-06 14:20:50,MRK | JP Morgan,price_target_usd,,135.0,2026-04-06 14:20:50,new
+MRK-00275,2026-04-13 16:34:44,MRK | UBS,rating,,Buy,2026-04-13 16:34:44,new
+MRK-00275,2026-04-13 16:34:44,MRK | UBS,price_target_usd,,145.0,2026-04-13 16:34:44,new
+MRK-00276,2026-05-01 09:46:09,MRK | Wells Fargo,rating,,Overweight,2026-05-01 09:46:09,new
+MRK-00276,2026-05-01 09:46:09,MRK | Wells Fargo,price_target_usd,,145.0,2026-05-01 09:46:09,new
+MRK-00277,2026-06-24 14:00:15,MRK | CICC,rating,,Outperform,2026-06-24 14:00:15,new
+MRK-00277,2026-06-24 14:00:15,MRK | CICC,price_target_usd,,138.0,2026-06-24 14:00:15,new
+MRK-00278,2026-06-30 10:48:44,MRK | Scotiabank,price_target_usd,,155.0,2026-06-30 10:48:44,new
+MRK-00279,2026-06-30 13:39:23,MRK | B of A Securities,price_target_usd,,141.0,2026-06-30 13:39:23,new
+MRK-00280,2026-07-06 08:58:29,MRK | Cantor Fitzgerald,rating,,Neutral,2026-07-06 08:58:29,corroborate
+MRK-00280,2026-07-06 08:58:29,MRK | Cantor Fitzgerald,price_target_usd,,120.0,2026-07-06 08:58:29,corroborate
+MRK-00281,2026-07-08 06:41:22,MRK | Wells Fargo,rating,,Overweight,2026-07-08 06:41:22,new
+MRK-00281,2026-07-08 06:41:22,MRK | Wells Fargo,price_target_usd,,150.0,2026-07-08 06:41:22,new
+MRK-00282,2026-07-08 09:48:31,MRK | RBC Capital,rating,,Outperform,2026-07-08 09:48:31,corroborate
+MRK-00282,2026-07-08 09:48:31,MRK | RBC Capital,price_target_usd,,142.0,2026-07-08 09:48:31,corroborate
+MRK-00283,2026-07-09 13:17:39,MRK | Morgan Stanley,rating,,Equal-Weight,2026-07-09 13:17:39,new
+MRK-00283,2026-07-09 13:17:39,MRK | Morgan Stanley,price_target_usd,,113.0,2026-07-09 13:17:39,new
+MRK-00284,2026-07-13 08:38:13,MRK | Guggenheim,price_target_usd,,145.0,2026-07-13 08:38:13,new
+MRK-00285,2026-07-13 08:57:53,MRK | BMO Capital,rating,,Outperform,2026-07-13 08:57:53,corroborate
+MRK-00285,2026-07-13 08:57:53,MRK | BMO Capital,price_target_usd,,142.0,2026-07-13 08:57:53,new
+MRK-00286,2026-07-13 11:40:49,MRK | JP Morgan,rating,,Overweight,2026-07-13 11:40:49,new
+MRK-00286,2026-07-13 11:40:49,MRK | JP Morgan,price_target_usd,,140.0,2026-07-13 11:40:49,new
+MRK-00287,2026-07-29 08:04:06,MRK | Barclays,rating,,Overweight,2026-07-29 08:04:06,new
+MRK-00287,2026-07-29 08:04:06,MRK | Barclays,price_target_usd,,150.0,2026-07-29 08:04:06,new
+MRK-00288,2026-08-05 08:20:06,MRK | Guggenheim,price_target_usd,,146.0,2026-08-05 08:20:06,new
+MRK-00289,2026-08-11 09:00:26,MRK | Argus Research,rating,,Buy,2026-08-11 09:00:26,new
+MRK-00289,2026-08-11 09:00:26,MRK | Argus Research,price_target_usd,,145.0,2026-08-11 09:00:26,new
+MRK-00290,2026-08-12 11:38:05,MRK | Daiwa Capital,rating,,Outperform,2026-08-12 11:38:05,new
+MRK-00290,2026-08-12 11:38:05,MRK | Daiwa Capital,price_target_usd,,143.0,2026-08-12 11:38:05,new
+MRK-00291,2026-08-20 06:05:07,MRK | Morgan Stanley,rating,,Overweight,2026-08-20 06:05:07,new
+MRK-00291,2026-08-20 06:05:07,MRK | Morgan Stanley,price_target_usd,,179.0,2026-08-20 06:05:07,new
+MRK-00292,2026-08-20 09:28:11,MRK | RBC Capital,rating,,Sector Perform,2026-08-20 09:28:11,new
+MRK-00292,2026-08-20 09:28:11,MRK | RBC Capital,price_target_usd,,150.0,2026-08-20 09:28:11,new
+MRK-00293,2026-08-20 11:52:43,MRK | UBS,rating,,Buy,2026-08-20 11:52:43,new
+MRK-00293,2026-08-20 11:52:43,MRK | UBS,price_target_usd,,175.0,2026-08-20 11:52:43,new
+MRK-00294,2026-08-20 13:17:03,MRK | BMO Capital,price_target_usd,,170.0,2026-08-20 13:17:03,new
+MRK-00295,2026-08-21 13:50:24,MRK | Goldman Sachs,rating,,Buy,2026-08-21 13:50:24,corroborate
+MRK-00295,2026-08-21 13:50:24,MRK | Goldman Sachs,price_target_usd,,160.0,2026-08-21 13:50:24,new
+MRK-00296,2026-08-25 08:56:04,MRK | Argus Research,price_target_usd,,170.0,2026-08-25 08:56:04,new
+MRK-00297,2026-08-25 11:26:52,MRK | Wolfe Research,price_target_usd,,180.0,2026-08-25 11:26:52,new
+MRK-00298,2026-09-04 10:27:06,MRK | Wells Fargo,rating,,Overweight,2026-09-04 10:27:06,new
+MRK-00298,2026-09-04 10:27:06,MRK | Wells Fargo,price_target_usd,,170.0,2026-09-04 10:27:06,new
+MRK-00299,2026-09-08 09:37:38,MRK | Guggenheim,rating,,Buy,2026-09-08 09:37:38,new
+MRK-00299,2026-09-08 09:37:38,MRK | Guggenheim,price_target_usd,,170.0,2026-09-08 09:37:38,new
+MRK-00300,2026-09-09 11:57:56,MRK | Leerink Partners,rating,,Outperform,2026-09-09 11:57:56,corroborate
+MRK-00300,2026-09-09 11:57:56,MRK | Leerink Partners,price_target_usd,,161.0,2026-09-09 11:57:56,new
+MRK-00301,2026-09-10 09:40:41,MRK | HSBC,rating,,Buy,2026-09-10 09:40:41,new
+MRK-00301,2026-09-10 09:40:41,MRK | HSBC,price_target_usd,,172.0,2026-09-10 09:40:41,new
+MRK-00302,2026-09-29 10:58:55,MRK | Scotiabank,price_target_usd,,180.0,2026-09-29 10:58:55,new
+MRK-00303,2026-10-05 11:59:05,MRK | JP Morgan,rating,,Overweight,2026-10-05 11:59:05,new
+MRK-00303,2026-10-05 11:59:05,MRK | JP Morgan,price_target_usd,,165.0,2026-10-05 11:59:05,new
+MRK-00304,2026-10-07 10:50:07,MRK | Morgan Stanley,rating,,Overweight,2026-10-07 10:50:07,new
+MRK-00304,2026-10-07 10:50:07,MRK | Morgan Stanley,price_target_usd,,177.0,2026-10-07 10:50:07,new
+MRK-00305,2026-10-08 06:44:02,MRK | Cantor Fitzgerald,price_target_usd,,145.0,2026-10-08 06:44:02,new
+MRK-00306,2026-10-12 10:21:09,MRK | RBC Capital,price_target_usd,,145.0,2026-10-12 10:21:09,new
+MRK-00307,2026-10-12 16:16:56,MRK | Citigroup,price_target_usd,,145.0,2026-10-12 16:16:56,new
+MRK-00308,2026-10-26 10:57:00,MRK | Barclays,rating,,Overweight,2026-10-26 10:57:00,new
+MRK-00308,2026-10-26 10:57:00,MRK | Barclays,price_target_usd,,180.0,2026-10-26 10:57:00,new
+MRK-00309,2026-10-30 09:10:33,MRK | Guggenheim,rating,,Buy,2026-10-30 09:10:33,new
+MRK-00309,2026-10-30 09:10:33,MRK | Guggenheim,price_target_usd,,171.0,2026-10-30 09:10:33,new
+MRK-00310,2026-10-30 12:47:22,MRK | RBC Capital,price_target_usd,,140.0,2026-10-30 12:47:22,new
+MRK-00311,2026-10-30 18:47:46,MRK | JP Morgan,rating,,Overweight,2026-10-30 18:47:46,new
+MRK-00311,2026-10-30 18:47:46,MRK | JP Morgan,price_target_usd,,175.0,2026-10-30 18:47:46,new
+MRK-00312,2026-11-02 07:29:26,MRK | Cantor Fitzgerald,price_target_usd,,155.0,2026-11-02 07:29:26,new
+MRK-00313,2026-11-02 18:09:22,MRK | Freedom Broker,price_target_usd,,140.0,2026-11-02 18:09:22,new

@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-CAT-002-Q4-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "CAT",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2021-11-03 00:14:00",
+ "question": "What was the year-over-year revenue growth (percent) of CATERPILLAR INC's most recently reported fiscal quarter (three-month figures)?",
+ "gold": "28.929",
+ "peek_answers": "25.463|17.258",
+ "trap_answers": "20.085",
+ "gold_evidence": "CAT-00087|CAT-00085",
+ "answer": "10.6",
+ "cited": "CAT | Revenues | value_usd_m | 2020-04-01..2020-06-30: latest 9997|CAT | Revenues | value_usd_m | 2021-04-01..2021-06-30: latest 12889",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 3641,
+ "out_tokens": 118,
+ "seconds": 0.2776,
+ "n_facts": 26,
+ "n_dropped": 0,
+ "created": "2026-11-22T00:40:32",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2021-11-03 00:14:00\nQuestion: What was the year-over-year revenue growth (percent) of CATERPILLAR INC's most recently reported fiscal quarter (three-month figures)?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nCAT | Revenues | value_usd_m | 2017-01-01..2017-06-30: latest 21153 | first 21153 | 2 reports: 21153 [CAT-00034 @2017-08-02 15:47]; 21153 [CAT-00045 @2018-08-07 16:17]\nCAT | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 11331 | first 11331 | 2 reports: 11331 [CAT-00035 @2017-08-02 15:47]; 11331 [CAT-00046 @2018-08-07 16:17]\nCAT | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 32566 | first 32566 | 2 reports: 32566 [CAT-00038 @2017-11-01 15:52]; 32566 [CAT-00049 @2018-10-31 16:14]\nCAT | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 11413 | first 11413 | 2 reports: 11413 [CAT-00039 @2017-11-01 15:52]; 11413 [CAT-00050 @2018-10-31 16:14]\nCAT | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 45462 | first 45462 | 3 reports: 45462 [CAT-00042 @2018-02-15 17:14]; 45462 [CAT-00054 @2019-02-14 18:25]; 45462 [CAT-00066 @2020-02-19 19:12]\nCAT | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 12859 | first 12859 | 2 reports: 12859 [CAT-00044 @2018-05-02 15:32]; 12859 [CAT-00056 @2019-05-06 16:20]\nCAT | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 26870 | first 26870 | 2 reports: 26870 [CAT-00047 @2018-08-07 16:17]; 26870 [CAT-00058 @2019-08-01 15:04]\nCAT | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 14011 | first 14011 | 2 reports: 14011 [CAT-00048 @2018-08-07 16:17]; 14011 [CAT-00059 @2019-08-01 15:04]\nCAT | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 40380 | first 40380 | 2 reports: 40380 [CAT-00051 @2018-10-31 16:14]; 40380 [CAT-00062 @2019-10-31 14:52]\nCAT | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 13510 | first 13510 | 2 reports: 13510 [CAT-00052 @2018-10-31 16:14]; 13510 [CAT-00063 @2019-10-31 14:52]\nCAT | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 54722 | first 54722 | 3 reports: 54722 [CAT-00055 @2019-02-14 18:25]; 54722 [CAT-00067 @2020-02-19 19:12]; 54722 [CAT-00079 @2021-02-17 15:41]\nCAT | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 13466 | first 13466 | 2 reports: 13466 [CAT-00057 @2019-05-06 16:20]; 13466 [CAT-00069 @2020-05-06 17:09]\nCAT | Revenues | value_usd_m | 2019-01-01..2019-06-30: latest 27898 | first 27898 | 2 reports: 27898 [CAT-00060 @2019-08-01 15:04]; 27898 [CAT-00071 @2020-08-05 14:50]\nCAT | Revenues | value_usd_m | 2019-04-01..2019-06-30: latest 14432 | first 14432 | 2 reports: 14432 [CAT-00061 @2019-08-01 15:04]; 14432 [CAT-00072 @2020-08-05 14:50]\nCAT | Revenues | value_usd_m | 2019-01-01..2019-09-30: latest 40656 | first 40656 | 2 reports: 40656 [CAT-00064 @2019-10-31 14:52]; 40656 [CAT-00075 @2020-11-04 15:29]\nCAT | Revenues | value_usd_m | 2019-07-01..2019-09-30: latest 12758 | first 12758 | 2 reports: 12758 [CAT-00065 @2019-10-31 14:52]; 12758 [CAT-00076 @2020-11-04 15:29]\nCAT | Revenues | value_usd_m | 2019-01-01..2019-12-31: latest 53800 | first 53800 | 2 reports: 53800 [CAT-00068 @2020-02-19 19:12]; 53800 [CAT-00080 @2021-02-17 15:41]\nCAT | Revenues | value_usd_m | 2020-01-01..2020-03-31: latest 10635 | first 10635 | 2 reports: 10635 [CAT-00070 @2020-05-06 17:09]; 10635 [CAT-00082 @2021-05-05 14:42]\nCAT | Revenues | value_usd_m | 2020-01-01..2020-06-30: latest 20632 | first 20632 | 2 reports: 20632 [CAT-00073 @2020-08-05 14:50]; 20632 [CAT-00084 @2021-08-04 15:06]\nCAT | Revenues | value_usd_m | 2020-04-01..2020-06-30: latest 9997 | first 9997 | 2 reports: 9997 [CAT-00074 @2020-08-05 14:50]; 9997 [CAT-00085 @2021-08-04 15:06]\nCAT | Revenues | value_usd_m | 2020-01-01..2020-09-30: latest 30513 | first 30513 | 1 reports: 30513 [CAT-00077 @2020-11-04 15:29]\nCAT | Revenues | value_usd_m | 2020-07-01..2020-09-30: latest 9881 | first 9881 | 1 reports: 9881 [CAT-00078 @2020-11-04 15:29]\nCAT | Revenues | value_usd_m | 2020-01-01..2020-12-31: latest 41748 | first 41748 | 1 reports: 41748 [CAT-00081 @2021-02-17 15:41]\nCAT | Revenues | value_usd_m | 2021-01-01..2021-03-31: latest 11887 | first 11887 | 1 reports: 11887 [CAT-00083 @2021-05-05 14:42]\nCAT | Revenues | value_usd_m | 2021-01-01..2021-06-30: latest 24776 | first 24776 | 1 reports: 24776 [CAT-00086 @2021-08-04 15:06]\nCAT | Revenues | value_usd_m | 2021-04-01..2021-06-30: latest 12889 | first 12889 | 1 reports: 12889 [CAT-00087 @2021-08-04 15:06]"
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 10.6,\n  \"evidence_ids\": [\n    \"CAT | Revenues | value_usd_m | 2020-04-01..2020-06-30: latest 9997\",\n    \"CAT | Revenues | value_usd_m | 2021-04-01..2021-06-30: latest 12889\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 10.6,\n  \"evidence_ids\": [\n    \"CAT | Revenues | value_usd_m | 2020-04-01..2020-06-30: latest 9997\",\n    \"CAT | Revenues | value_usd_m | 2021-04-01..2021-06-30: latest 12889\"\n  ]\n}\n```"
+}

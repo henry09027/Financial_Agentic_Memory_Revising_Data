@@ -1,0 +1,55 @@
+{
+ "qid": "broker-XOM-004-Q7-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "XOM",
+ "qtype": "event_lookup",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "In November 2026, what rating did TD Cowen move XOM to, and what was its new price target (USD)? Answer as 'Rating; target'.",
+ "gold": "Buy; 193",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "XOM-00364|XOM-00062",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "false_abstain",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 3300,
+ "out_tokens": 75,
+ "seconds": 0.2445,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 1,
+ "n_turns": 2,
+ "sql": "[\"SELECT subject, attribute, value_num, effective_at, kind FROM facts WHERE subject = 'XOM | TD Cowen' AND attribute = 'price_target_usd' AND attribute = 'rating' ORDER BY effective_at DESC LIMIT 1;\"]",
+ "created": "2026-11-21T21:38:41",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: In November 2026, what rating did TD Cowen move XOM to, and what was its new price target (USD)? Answer as 'Rating; target'.\n\nDatabase contents at the as-of time: 225 facts, 201 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'XOM | Argus Research': price_target_usd (1)\n  'XOM | B of A Securities': price_target_usd (7), rating (2)\n  'XOM | BMO Capital': price_target_usd (1)\n  'XOM | BNP Paribas': price_target_usd (1), rating (1)\n  'XOM | Barclays': price_target_usd (15), rating (1)\n  'XOM | Bernstein': price_target_usd (5), rating (1)\n  'XOM | Citigroup': price_target_usd (5)\n  'XOM | Cowen & Co.': price_target_usd (1)\n  'XOM | Erste Group': rating (1)\n  'XOM | Evercore ISI Group': price_target_usd (1)\n  'XOM | Exane BNP Paribas': price_target_usd (1), rating (1)\n  'XOM | Freedom Broker': price_target_usd (3), rating (2)\n  'XOM | Goldman Sachs': price_target_usd (2), rating (1)\n  'XOM | HSBC': price_target_usd (3)\n  'XOM | JP Morgan': price_target_usd (5), rating (2)\n  'XOM | Jefferies': price_target_usd (4)\n  'XOM | Melius Research': price_target_usd (1), rating (1)\n  'XOM | Mizuho': price_target_usd (21), rating (2)\n  'XOM | Morgan Stanley': price_target_usd (18), rating (1)\n  'XOM | Piper Sandler': price_target_usd (15), rating (1)\n  'XOM | RBC Capital': price_target_usd (15), rating (1)\n  'XOM | Redburn Atlantic': price_target_usd (2), rating (1)\n  'XOM | Redburn Partners': price_target_usd (2)\n  'XOM | Scotiabank': price_target_usd (8), rating (2)\n  'XOM | TD Cowen': alias (1), price_target_usd (12), rating (1)\n  'XOM | Truist Securities': price_target_usd (10), rating (2)\n  'XOM | UBS': price_target_usd (18), rating (1)\n  'XOM | Wells Fargo': price_target_usd (17), rating (2)\n  'XOM | Wolfe Research': price_target_usd (1), rating (2)\nkind values: 'event', 'new'\nmost recently learned periods: '-'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'XOM | Mizuho' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, value_num, effective_at, kind FROM facts WHERE subject = 'XOM | TD Cowen' AND attribute = 'price_target_usd' AND attribute = 'rating' ORDER BY effective_at DESC LIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,value_num,effective_at,kind\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  }
+ ],
+ "final_text": "```json\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}\n```",
+ "raw_output": "```sql\nSELECT subject, attribute, value_num, effective_at, kind FROM facts WHERE subject = 'XOM | TD Cowen' AND attribute = 'price_target_usd' AND attribute = 'rating' ORDER BY effective_at DESC LIMIT 1;\n```\n\n===== next turn =====\n\n```json\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}\n```"
+}

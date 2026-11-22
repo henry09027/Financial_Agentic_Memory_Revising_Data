@@ -1,0 +1,383 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+COST-00371,2024-05-31 13:30:24,COST | TD Cowen,price_target_usd,,850.00,2024-05-31 13:30:24,new
+COST-00371,2024-05-31 13:30:24,COST | TD Cowen,rating,,Buy,2024-05-31 13:30:24,new
+COST-00372,2024-05-31 13:54:04,COST | Barclays,price_target_usd,,765.00,2024-05-31 13:54:04,new
+COST-00372,2024-05-31 13:54:04,COST | Barclays,rating,,Equal-Weight,2024-05-31 13:54:04,new
+COST-00373,2024-05-31 16:11:09,COST | Citigroup,price_target_usd,,800.00,2024-05-31 16:11:09,new
+COST-00373,2024-05-31 16:11:09,COST | Citigroup,rating,,Neutral,2024-05-31 16:11:09,new
+COST-00374,2024-06-03 08:05:31,COST | Telsey Advisory Group,rating,,Outperform,2024-06-03 08:05:31,new
+COST-00374,2024-06-03 08:05:31,COST | Telsey Advisory Group,price_target_usd,,850.0,2024-06-03 08:05:31,new
+COST-00375,2024-06-03 10:57:43,COST | Loop Capital,price_target_usd,,890.0,2024-06-03 10:57:43,new
+COST-00375,2024-06-03 10:57:43,COST | Loop Capital,rating,,Buy,2024-06-03 10:57:43,new
+COST-00376,2024-06-06 08:49:25,COST | Telsey Advisory Group,price_target_usd,,900.0,2024-06-06 08:49:25,new
+COST-00376,2024-06-06 08:49:25,COST | Telsey Advisory Group,rating,,Outperform,2024-06-06 08:49:25,corroborate
+COST-00377,2024-06-06 09:32:56,COST | Oppenheimer,price_target_usd,,905.0,2024-06-06 09:32:56,new
+COST-00377,2024-06-06 09:32:56,COST | Oppenheimer,rating,,Outperform,2024-06-06 09:32:56,new
+COST-00378,2024-06-14 11:07:59,COST | Loop Capital,price_target_usd,,940.0,2024-06-14 11:07:59,new
+COST-00378,2024-06-14 11:07:59,COST | Loop Capital,rating,,Buy,2024-06-14 11:07:59,corroborate
+COST-00379,2024-06-20 10:33:56,COST | Evercore ISI Group,rating,,Outperform,2024-06-20 10:33:56,new
+COST-00379,2024-06-20 10:33:56,COST | Evercore ISI Group,price_target_usd,,890.00,2024-06-20 10:33:56,new
+COST-00380,2024-06-25 14:33:00,COST | Tigress Financial,price_target_usd,,975.0,2024-06-25 14:33:00,new
+COST-00380,2024-06-25 14:33:00,COST | Tigress Financial,rating,,Buy,2024-06-25 14:33:00,new
+COST-00381,2024-07-02 08:18:00,COST | Stifel,price_target_usd,,900.0,2024-07-02 08:18:00,new
+COST-00381,2024-07-02 08:18:00,COST | Stifel,rating,,Buy,2024-07-02 08:18:00,new
+COST-00382,2024-07-08 08:40:37,COST | Telsey Advisory Group,rating,,Outperform,2024-07-08 08:40:37,corroborate
+COST-00382,2024-07-08 08:40:37,COST | Telsey Advisory Group,price_target_usd,,900.0,2024-07-08 08:40:37,corroborate
+COST-00383,2024-07-10 07:56:31,COST | Telsey Advisory Group,price_target_usd,,925.0,2024-07-10 07:56:31,new
+COST-00383,2024-07-10 07:56:31,COST | Telsey Advisory Group,rating,,Outperform,2024-07-10 07:56:31,corroborate
+COST-00384,2024-07-11 05:45:02,COST | Baird,rating,,Outperform,2024-07-11 05:45:02,new
+COST-00384,2024-07-11 05:45:02,COST | Baird,price_target_usd,,975.00,2024-07-11 05:45:02,new
+COST-00385,2024-07-11 07:14:23,COST | B of A Securities,price_target_usd,,962.0,2024-07-11 07:14:23,new
+COST-00385,2024-07-11 07:14:23,COST | B of A Securities,rating,,Buy,2024-07-11 07:14:23,new
+COST-00386,2024-07-11 09:19:46,COST | Stifel,price_target_usd,,950.0,2024-07-11 09:19:46,new
+COST-00386,2024-07-11 09:19:46,COST | Stifel,rating,,Buy,2024-07-11 09:19:46,corroborate
+COST-00387,2024-07-11 11:13:09,COST | Loop Capital,price_target_usd,,970.0,2024-07-11 11:13:09,new
+COST-00387,2024-07-11 11:13:09,COST | Loop Capital,rating,,Buy,2024-07-11 11:13:09,corroborate
+COST-00388,2024-07-11 12:20:06,COST | Barclays,price_target_usd,,830.0,2024-07-11 12:20:06,new
+COST-00388,2024-07-11 12:20:06,COST | Barclays,rating,,Equal-Weight,2024-07-11 12:20:06,corroborate
+COST-00389,2024-07-11 12:40:45,COST | Evercore ISI Group,rating,,Outperform,2024-07-11 12:40:45,corroborate
+COST-00389,2024-07-11 12:40:45,COST | Evercore ISI Group,price_target_usd,,920.0,2024-07-11 12:40:45,new
+COST-00390,2024-07-11 13:23:01,COST | Oppenheimer,price_target_usd,,950.0,2024-07-11 13:23:01,new
+COST-00390,2024-07-11 13:23:01,COST | Oppenheimer,rating,,Outperform,2024-07-11 13:23:01,corroborate
+COST-00391,2024-07-11 15:05:41,COST | Wells Fargo,price_target_usd,,800.0,2024-07-11 15:05:41,new
+COST-00391,2024-07-11 15:05:41,COST | Wells Fargo,rating,,Equal-Weight,2024-07-11 15:05:41,new
+COST-00392,2024-07-12 07:51:41,COST | TD Cowen,price_target_usd,,925.0,2024-07-12 07:51:41,new
+COST-00392,2024-07-12 07:51:41,COST | TD Cowen,rating,,Buy,2024-07-12 07:51:41,corroborate
+COST-00393,2024-08-05 11:32:38,COST | Telsey Advisory Group,rating,,Outperform,2024-08-05 11:32:38,corroborate
+COST-00393,2024-08-05 11:32:38,COST | Telsey Advisory Group,price_target_usd,,925.0,2024-08-05 11:32:38,corroborate
+COST-00394,2024-08-07 09:55:24,COST | Evercore ISI Group,price_target_usd,,915.0,2024-08-07 09:55:24,new
+COST-00394,2024-08-07 09:55:24,COST | Evercore ISI Group,rating,,Outperform,2024-08-07 09:55:24,corroborate
+COST-00395,2024-08-08 08:17:27,COST | Oppenheimer,price_target_usd,,925.0,2024-08-08 08:17:27,new
+COST-00395,2024-08-08 08:17:27,COST | Oppenheimer,rating,,Outperform,2024-08-08 08:17:27,corroborate
+COST-00396,2024-08-08 12:09:08,COST | Deutsche Bank,rating,,Buy,2024-08-08 12:09:08,new
+COST-00396,2024-08-08 12:09:08,COST | Deutsche Bank,price_target_usd,,927.0,2024-08-08 12:09:08,new
+COST-00397,2024-08-08 14:48:41,COST | Gordon Haskett,rating,,Buy,2024-08-08 14:48:41,new
+COST-00397,2024-08-08 14:48:41,COST | Gordon Haskett,price_target_usd,,925.0,2024-08-08 14:48:41,new
+COST-00398,2024-08-12 13:03:28,COST | BMO Capital,rating,,Outperform,2024-08-12 13:03:28,new
+COST-00398,2024-08-12 13:03:28,COST | BMO Capital,price_target_usd,,950.0,2024-08-12 13:03:28,new
+COST-00399,2024-08-27 11:13:49,COST | Telsey Advisory Group,rating,,Outperform,2024-08-27 11:13:49,corroborate
+COST-00399,2024-08-27 11:13:49,COST | Telsey Advisory Group,price_target_usd,,925.0,2024-08-27 11:13:49,corroborate
+COST-00400,2024-09-06 08:14:47,COST | Oppenheimer,price_target_usd,,955.0,2024-09-06 08:14:47,new
+COST-00400,2024-09-06 08:14:47,COST | Oppenheimer,rating,,Outperform,2024-09-06 08:14:47,corroborate
+COST-00401,2024-09-06 08:27:17,COST | Evercore ISI Group,price_target_usd,,925.0,2024-09-06 08:27:17,new
+COST-00402,2024-09-06 11:04:51,COST | DA Davidson,price_target_usd,,780.0,2024-09-06 11:04:51,new
+COST-00402,2024-09-06 11:04:51,COST | DA Davidson,rating,,Neutral,2024-09-06 11:04:51,new
+COST-00403,2024-09-06 11:30:53,COST | Stifel,price_target_usd,,915.0,2024-09-06 11:30:53,new
+COST-00403,2024-09-06 11:30:53,COST | Stifel,rating,,Buy,2024-09-06 11:30:53,corroborate
+COST-00404,2024-09-06 12:04:30,COST | Telsey Advisory Group,rating,,Outperform,2024-09-06 12:04:30,corroborate
+COST-00404,2024-09-06 12:04:30,COST | Telsey Advisory Group,price_target_usd,,925.0,2024-09-06 12:04:30,corroborate
+COST-00405,2024-09-06 13:25:12,COST | Loop Capital,price_target_usd,,975.0,2024-09-06 13:25:12,new
+COST-00405,2024-09-06 13:25:12,COST | Loop Capital,rating,,Buy,2024-09-06 13:25:12,corroborate
+COST-00406,2024-09-09 08:19:04,COST | Morgan Stanley,rating,,Overweight,2024-09-09 08:19:04,new
+COST-00406,2024-09-09 08:19:04,COST | Morgan Stanley,price_target_usd,,950.0,2024-09-09 08:19:04,new
+COST-00407,2024-09-10 06:03:36,COST | Redburn Atlantic,rating,,Neutral,2024-09-10 06:03:36,new
+COST-00407,2024-09-10 06:03:36,COST | Redburn Atlantic,price_target_usd,,890.0,2024-09-10 06:03:36,new
+COST-00408,2024-09-23 13:55:35,COST | Melius Research,rating,,Hold,2024-09-23 13:55:35,new
+COST-00408,2024-09-23 13:55:35,COST | Melius Research,price_target_usd,,950.0,2024-09-23 13:55:35,new
+COST-00409,2024-09-24 09:32:09,COST | Truist Securities,rating,,Hold,2024-09-24 09:32:09,new
+COST-00409,2024-09-24 09:32:09,COST | Truist Securities,price_target_usd,,873.0,2024-09-24 09:32:09,new
+COST-00410,2024-09-27 07:55:00,COST | Loop Capital,price_target_usd,,1005.0,2024-09-27 07:55:00,new
+COST-00410,2024-09-27 07:55:00,COST | Loop Capital,rating,,Buy,2024-09-27 07:55:00,corroborate
+COST-00411,2024-09-27 08:50:24,COST | Stifel,price_target_usd,,925.0,2024-09-27 08:50:24,new
+COST-00412,2024-09-27 09:52:59,COST | BMO Capital,rating,,Outperform,2024-09-27 09:52:59,corroborate
+COST-00412,2024-09-27 09:52:59,COST | BMO Capital,price_target_usd,,980.0,2024-09-27 09:52:59,new
+COST-00413,2024-09-27 10:09:00,COST | Truist Securities,price_target_usd,,909.0,2024-09-27 10:09:00,new
+COST-00414,2024-09-27 10:28:51,COST | Barclays,price_target_usd,,850.0,2024-09-27 10:28:51,new
+COST-00414,2024-09-27 10:28:51,COST | Barclays,rating,,Equal-Weight,2024-09-27 10:28:51,corroborate
+COST-00415,2024-09-27 10:59:39,COST | Telsey Advisory Group,price_target_usd,,1000.0,2024-09-27 10:59:39,new
+COST-00416,2024-09-27 11:22:45,COST | Wells Fargo,price_target_usd,,850.0,2024-09-27 11:22:45,new
+COST-00416,2024-09-27 11:22:45,COST | Wells Fargo,rating,,Equal-Weight,2024-09-27 11:22:45,corroborate
+COST-00417,2024-09-27 11:24:45,COST | Goldman Sachs,price_target_usd,,995.0,2024-09-27 11:24:45,new
+COST-00417,2024-09-27 11:24:45,COST | Goldman Sachs,rating,,Buy,2024-09-27 11:24:45,new
+COST-00418,2024-09-27 11:45:41,COST | Roth MKM,price_target_usd,,755.0,2024-09-27 11:45:41,new
+COST-00418,2024-09-27 11:45:41,COST | Roth MKM,rating,,Neutral,2024-09-27 11:45:41,new
+COST-00419,2024-09-27 11:59:51,COST | DA Davidson,price_target_usd,,880.0,2024-09-27 11:59:51,new
+COST-00420,2024-09-30 11:03:29,COST | TD Cowen,rating,,Buy,2024-09-30 11:03:29,new
+COST-00420,2024-09-30 11:03:29,COST | TD Cowen,price_target_usd,,975.0,2024-09-30 11:03:29,new
+COST-00421,2024-10-03 10:32:09,COST | Telsey Advisory Group,rating,,Outperform,2024-10-03 10:32:09,corroborate
+COST-00421,2024-10-03 10:32:09,COST | Telsey Advisory Group,price_target_usd,,1000.0,2024-10-03 10:32:09,corroborate
+COST-00422,2024-10-10 08:18:32,COST | Stifel,price_target_usd,,935.0,2024-10-10 08:18:32,new
+COST-00422,2024-10-10 08:18:32,COST | Stifel,rating,,Buy,2024-10-10 08:18:32,corroborate
+COST-00423,2024-10-10 08:26:14,COST | Evercore ISI Group,rating,,Outperform,2024-10-10 08:26:14,corroborate
+COST-00423,2024-10-10 08:26:14,COST | Evercore ISI Group,price_target_usd,,990.0,2024-10-10 08:26:14,new
+COST-00424,2024-10-10 09:49:40,COST | Oppenheimer,price_target_usd,,980.0,2024-10-10 09:49:40,new
+COST-00424,2024-10-10 09:49:40,COST | Oppenheimer,rating,,Outperform,2024-10-10 09:49:40,corroborate
+COST-00425,2024-10-10 11:39:05,COST | DA Davidson,rating,,Neutral,2024-10-10 11:39:05,corroborate
+COST-00425,2024-10-10 11:39:05,COST | DA Davidson,price_target_usd,,880.0,2024-10-10 11:39:05,corroborate
+COST-00426,2024-10-10 13:33:51,COST | Telsey Advisory Group,rating,,Outperform,2024-10-10 13:33:51,corroborate
+COST-00426,2024-10-10 13:33:51,COST | Telsey Advisory Group,price_target_usd,,1000.0,2024-10-10 13:33:51,corroborate
+COST-00427,2024-10-17 13:51:14,COST | Tigress Financial,price_target_usd,,1065.0,2024-10-17 13:51:14,new
+COST-00427,2024-10-17 13:51:14,COST | Tigress Financial,rating,,Buy,2024-10-17 13:51:14,corroborate
+COST-00428,2024-10-22 05:47:43,COST | Bernstein,rating,,Outperform,2024-10-22 05:47:43,new
+COST-00428,2024-10-22 05:47:43,COST | Bernstein,price_target_usd,,1016.0,2024-10-22 05:47:43,new
+COST-00429,2024-11-04 06:08:12,COST | Telsey Advisory Group,rating,,Outperform,2024-11-04 06:08:12,corroborate
+COST-00429,2024-11-04 06:08:12,COST | Telsey Advisory Group,price_target_usd,,1000.0,2024-11-04 06:08:12,corroborate
+COST-00430,2024-11-07 08:57:01,COST | Telsey Advisory Group,rating,,Outperform,2024-11-07 08:57:01,corroborate
+COST-00430,2024-11-07 08:57:01,COST | Telsey Advisory Group,price_target_usd,,1000.0,2024-11-07 08:57:01,corroborate
+COST-00431,2024-11-18 11:20:48,COST | BMO Capital,price_target_usd,,1075.0,2024-11-18 11:20:48,new
+COST-00432,2024-11-29 06:54:52,COST | Telsey Advisory Group,rating,,Outperform,2024-11-29 06:54:52,corroborate
+COST-00432,2024-11-29 06:54:52,COST | Telsey Advisory Group,price_target_usd,,1000.0,2024-11-29 06:54:52,corroborate
+COST-00433,2024-12-05 05:41:07,COST | Telsey Advisory Group,rating,,Outperform,2024-12-05 05:41:07,corroborate
+COST-00433,2024-12-05 05:41:07,COST | Telsey Advisory Group,price_target_usd,,1050.0,2024-12-05 05:41:07,new
+COST-00434,2024-12-05 08:07:48,COST | Baird,price_target_usd,,1075.0,2024-12-05 08:07:48,new
+COST-00435,2024-12-05 09:33:31,COST | Wells Fargo,price_target_usd,,950.0,2024-12-05 09:33:31,new
+COST-00436,2024-12-05 11:02:20,COST | Stifel,price_target_usd,,1000.0,2024-12-05 11:02:20,new
+COST-00437,2024-12-05 14:25:00,COST | Jefferies,rating,,Buy,2024-12-05 14:25:00,new
+COST-00437,2024-12-05 14:25:00,COST | Jefferies,price_target_usd,,1145.0,2024-12-05 14:25:00,new
+COST-00438,2024-12-10 11:04:56,COST | Oppenheimer,price_target_usd,,1075.0,2024-12-10 11:04:56,new
+COST-00439,2024-12-13 05:13:00,COST | Telsey Advisory Group,rating,,Outperform,2024-12-13 05:13:00,new
+COST-00439,2024-12-13 05:13:00,COST | Telsey Advisory Group,price_target_usd,,1050.0,2024-12-13 05:13:00,new
+COST-00440,2024-12-13 08:06:11,COST | Evercore ISI Group,rating,,Outperform,2024-12-13 08:06:11,corroborate
+COST-00440,2024-12-13 08:06:11,COST | Evercore ISI Group,price_target_usd,,1030.0,2024-12-13 08:06:11,new
+COST-00441,2024-12-13 08:17:07,COST | Roth MKM,price_target_usd,,907.0,2024-12-13 08:17:07,new
+COST-00442,2024-12-13 08:32:07,COST | Deutsche Bank,price_target_usd,,1096.0,2024-12-13 08:32:07,new
+COST-00442,2024-12-13 08:32:07,COST | Deutsche Bank,rating,,Buy,2024-12-13 08:32:07,corroborate
+COST-00443,2024-12-13 08:49:44,COST | BMO Capital,price_target_usd,,1175.0,2024-12-13 08:49:44,new
+COST-00443,2024-12-13 08:49:44,COST | BMO Capital,rating,,Outperform,2024-12-13 08:49:44,corroborate
+COST-00444,2024-12-13 08:58:50,COST | Loop Capital,price_target_usd,,1095.0,2024-12-13 08:58:50,new
+COST-00444,2024-12-13 08:58:50,COST | Loop Capital,rating,,Buy,2024-12-13 08:58:50,corroborate
+COST-00445,2024-12-13 09:21:58,COST | Morgan Stanley,price_target_usd,,1150.0,2024-12-13 09:21:58,new
+COST-00445,2024-12-13 09:21:58,COST | Morgan Stanley,rating,,Overweight,2024-12-13 09:21:58,corroborate
+COST-00446,2024-12-13 10:11:20,COST | Barclays,price_target_usd,,940.0,2024-12-13 10:11:20,new
+COST-00446,2024-12-13 10:11:20,COST | Barclays,rating,,Equal-Weight,2024-12-13 10:11:20,new
+COST-00447,2024-12-13 10:13:33,COST | Truist Securities,price_target_usd,,935.0,2024-12-13 10:13:33,new
+COST-00448,2024-12-13 12:08:53,COST | TD Cowen,rating,,Buy,2024-12-13 12:08:53,new
+COST-00448,2024-12-13 12:08:53,COST | TD Cowen,price_target_usd,,1090.0,2024-12-13 12:08:53,new
+COST-00448,2024-12-13 12:08:53,COST | TD Cowen,price_target_usd,,975.0,2024-12-13 12:08:53,inferred
+COST-00449,2024-12-13 13:52:11,COST | DA Davidson,price_target_usd,,900.0,2024-12-13 13:52:11,new
+COST-00450,2024-12-13 14:58:16,COST | Wells Fargo,price_target_usd,,1000.0,2024-12-13 14:58:16,new
+COST-00451,2024-12-16 09:01:12,COST | Raymond James,price_target_usd,,1070.0,2024-12-16 09:01:12,new
+COST-00451,2024-12-16 09:01:12,COST | Raymond James,rating,,Market Perform,2024-12-16 09:01:12,new
+COST-00452,2024-12-18 10:23:15,COST | Citigroup,rating,,Neutral,2024-12-18 10:23:15,new
+COST-00452,2024-12-18 10:23:15,COST | Citigroup,price_target_usd,,1060.0,2024-12-18 10:23:15,new
+COST-00453,2025-01-03 07:06:35,COST | Telsey Advisory Group,rating,,Outperform,2025-01-03 07:06:35,new
+COST-00453,2025-01-03 07:06:35,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-01-03 07:06:35,new
+COST-00454,2025-01-09 06:19:35,COST | Telsey Advisory Group,rating,,Outperform,2025-01-09 06:19:35,new
+COST-00454,2025-01-09 06:19:35,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-01-09 06:19:35,new
+COST-00455,2025-02-03 05:39:59,COST | Telsey Advisory Group,rating,,Outperform,2025-02-03 05:39:59,new
+COST-00455,2025-02-03 05:39:59,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-02-03 05:39:59,new
+COST-00456,2025-02-06 06:15:44,COST | Telsey Advisory Group,rating,,Outperform,2025-02-06 06:15:44,new
+COST-00456,2025-02-06 06:15:44,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-02-06 06:15:44,new
+COST-00457,2025-02-06 09:29:35,COST | Oppenheimer,price_target_usd,,1130.0,2025-02-06 09:29:35,new
+COST-00457,2025-02-06 09:29:35,COST | Oppenheimer,rating,,Outperform,2025-02-06 09:29:35,corroborate
+COST-00458,2025-02-06 10:30:13,COST | Evercore ISI Group,price_target_usd,,1070.0,2025-02-06 10:30:13,new
+COST-00458,2025-02-06 10:30:13,COST | Evercore ISI Group,rating,,Outperform,2025-02-06 10:30:13,corroborate
+COST-00459,2025-02-06 11:59:21,COST | Stifel,price_target_usd,,1075.0,2025-02-06 11:59:21,new
+COST-00459,2025-02-06 11:59:21,COST | Stifel,rating,,Buy,2025-02-06 11:59:21,corroborate
+COST-00460,2025-02-06 12:47:59,COST | DA Davidson,price_target_usd,,1000.0,2025-02-06 12:47:59,new
+COST-00461,2025-03-03 07:17:36,COST | Telsey Advisory Group,rating,,Outperform,2025-03-03 07:17:36,new
+COST-00461,2025-03-03 07:17:36,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-03-03 07:17:36,new
+COST-00462,2025-03-07 05:28:35,COST | Telsey Advisory Group,rating,,Outperform,2025-03-07 05:28:35,new
+COST-00462,2025-03-07 05:28:35,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-03-07 05:28:35,new
+COST-00463,2025-03-07 08:32:51,COST | Baird,price_target_usd,,1125.0,2025-03-07 08:32:51,new
+COST-00463,2025-03-07 08:32:51,COST | Baird,rating,,Outperform,2025-03-07 08:32:51,corroborate
+COST-00464,2025-03-07 08:47:01,COST | JP Morgan,rating,,Overweight,2025-03-07 08:47:01,new
+COST-00464,2025-03-07 08:47:01,COST | JP Morgan,price_target_usd,,1070.0,2025-03-07 08:47:01,new
+COST-00465,2025-03-07 11:23:25,COST | Truist Securities,price_target_usd,,995.0,2025-03-07 11:23:25,new
+COST-00466,2025-03-07 16:05:21,COST | Loop Capital,rating,,Buy,2025-03-07 16:05:21,new
+COST-00466,2025-03-07 16:05:21,COST | Loop Capital,price_target_usd,,1135.0,2025-03-07 16:05:21,new
+COST-00467,2025-03-10 09:06:27,COST | Barclays,rating,,Equal-Weight,2025-03-10 09:06:27,new
+COST-00467,2025-03-10 09:06:27,COST | Barclays,price_target_usd,,980.0,2025-03-10 09:06:27,new
+COST-00468,2025-03-11 11:39:19,COST | Evercore ISI Group,rating,,Outperform,2025-03-11 11:39:19,corroborate
+COST-00468,2025-03-11 11:39:19,COST | Evercore ISI Group,price_target_usd,,1070.0,2025-03-11 11:39:19,new
+COST-00469,2025-03-20 07:15:48,COST | Stifel,price_target_usd,,1035.0,2025-03-20 07:15:48,new
+COST-00469,2025-03-20 07:15:48,COST | Stifel,rating,,Buy,2025-03-20 07:15:48,corroborate
+COST-00470,2025-04-04 07:03:19,COST | Telsey Advisory Group,rating,,Outperform,2025-04-04 07:03:19,new
+COST-00470,2025-04-04 07:03:19,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-04-04 07:03:19,new
+COST-00471,2025-04-09 11:14:34,COST | Loop Capital,rating,,Buy,2025-04-09 11:14:34,new
+COST-00471,2025-04-09 11:14:34,COST | Loop Capital,price_target_usd,,1045.0,2025-04-09 11:14:34,new
+COST-00472,2025-04-10 07:13:53,COST | Telsey Advisory Group,rating,,Outperform,2025-04-10 07:13:53,new
+COST-00472,2025-04-10 07:13:53,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-04-10 07:13:53,new
+COST-00473,2025-04-11 07:01:12,COST | Mizuho,rating,,Neutral,2025-04-11 07:01:12,new
+COST-00473,2025-04-11 07:01:12,COST | Mizuho,price_target_usd,,975.0,2025-04-11 07:01:12,new
+COST-00474,2025-04-28 06:33:01,COST | Telsey Advisory Group,rating,,Outperform,2025-04-28 06:33:01,new
+COST-00474,2025-04-28 06:33:01,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-04-28 06:33:01,new
+COST-00475,2025-05-05 07:06:26,COST | Telsey Advisory Group,rating,,Outperform,2025-05-05 07:06:26,new
+COST-00475,2025-05-05 07:06:26,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-05-05 07:06:26,new
+COST-00476,2025-05-08 05:30:36,COST | Loop Capital,rating,,Buy,2025-05-08 05:30:36,new
+COST-00476,2025-05-08 05:30:36,COST | Loop Capital,price_target_usd,,1115.0,2025-05-08 05:30:36,new
+COST-00477,2025-05-08 07:17:56,COST | Telsey Advisory Group,rating,,Outperform,2025-05-08 07:17:56,new
+COST-00477,2025-05-08 07:17:56,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-05-08 07:17:56,new
+COST-00478,2025-05-30 07:20:07,COST | Telsey Advisory Group,rating,,Outperform,2025-05-30 07:20:07,new
+COST-00478,2025-05-30 07:20:07,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-05-30 07:20:07,new
+COST-00479,2025-05-30 12:31:33,COST | Truist Securities,price_target_usd,,1042.0,2025-05-30 12:31:33,new
+COST-00480,2025-05-30 13:01:06,COST | Evercore ISI Group,rating,,Outperform,2025-05-30 13:01:06,new
+COST-00480,2025-05-30 13:01:06,COST | Evercore ISI Group,price_target_usd,,1075.0,2025-05-30 13:01:06,new
+COST-00480,2025-05-30 13:01:06,COST | Evercore ISI Group,price_target_usd,,1070.0,2025-05-30 13:01:06,inferred
+COST-00481,2025-05-30 13:50:29,COST | Loop Capital,rating,,Buy,2025-05-30 13:50:29,new
+COST-00481,2025-05-30 13:50:29,COST | Loop Capital,price_target_usd,,1110.0,2025-05-30 13:50:29,new
+COST-00482,2025-05-30 14:09:41,COST | Morgan Stanley,price_target_usd,,1225.0,2025-05-30 14:09:41,new
+COST-00482,2025-05-30 14:09:41,COST | Morgan Stanley,rating,,Overweight,2025-05-30 14:09:41,corroborate
+COST-00483,2025-06-05 07:16:25,COST | Telsey Advisory Group,rating,,Outperform,2025-06-05 07:16:25,new
+COST-00483,2025-06-05 07:16:25,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-06-05 07:16:25,new
+COST-00484,2025-06-17 13:01:47,COST | Evercore ISI Group,rating,,Outperform,2025-06-17 13:01:47,new
+COST-00484,2025-06-17 13:01:47,COST | Evercore ISI Group,price_target_usd,,1060.0,2025-06-17 13:01:47,new
+COST-00485,2025-07-03 08:09:57,COST | Telsey Advisory Group,rating,,Outperform,2025-07-03 08:09:57,new
+COST-00485,2025-07-03 08:09:57,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-07-03 08:09:57,new
+COST-00486,2025-07-10 07:14:15,COST | Telsey Advisory Group,rating,,Outperform,2025-07-10 07:14:15,new
+COST-00486,2025-07-10 07:14:15,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-07-10 07:14:15,new
+COST-00487,2025-08-04 07:11:10,COST | Telsey Advisory Group,rating,,Outperform,2025-08-04 07:11:10,new
+COST-00487,2025-08-04 07:11:10,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-08-04 07:11:10,new
+COST-00488,2025-08-07 07:11:19,COST | Telsey Advisory Group,rating,,Outperform,2025-08-07 07:11:19,new
+COST-00488,2025-08-07 07:11:19,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-08-07 07:11:19,new
+COST-00489,2025-08-07 15:10:56,COST | JP Morgan,price_target_usd,,1160.0,2025-08-07 15:10:56,new
+COST-00490,2025-08-27 07:26:06,COST | Telsey Advisory Group,rating,,Outperform,2025-08-27 07:26:06,new
+COST-00490,2025-08-27 07:26:06,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-08-27 07:26:06,new
+COST-00491,2025-09-24 07:45:58,COST | Telsey Advisory Group,rating,,Outperform,2025-09-24 07:45:58,new
+COST-00491,2025-09-24 07:45:58,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-09-24 07:45:58,new
+COST-00492,2025-09-26 06:20:32,COST | JP Morgan,rating,,Overweight,2025-09-26 06:20:32,corroborate
+COST-00492,2025-09-26 06:20:32,COST | JP Morgan,price_target_usd,,1050.0,2025-09-26 06:20:32,new
+COST-00493,2025-09-26 07:29:32,COST | Telsey Advisory Group,rating,,Outperform,2025-09-26 07:29:32,new
+COST-00493,2025-09-26 07:29:32,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-09-26 07:29:32,new
+COST-00494,2025-09-26 09:12:24,COST | DA Davidson,rating,,Neutral,2025-09-26 09:12:24,corroborate
+COST-00494,2025-09-26 09:12:24,COST | DA Davidson,price_target_usd,,1000.0,2025-09-26 09:12:24,corroborate
+COST-00495,2025-09-26 10:24:13,COST | Bernstein,price_target_usd,,1140.0,2025-09-26 10:24:13,new
+COST-00496,2025-09-26 11:12:22,COST | Truist Securities,price_target_usd,,1033.0,2025-09-26 11:12:22,new
+COST-00497,2025-09-26 11:24:52,COST | Oppenheimer,rating,,Outperform,2025-09-26 11:24:52,new
+COST-00497,2025-09-26 11:24:52,COST | Oppenheimer,price_target_usd,,1130.0,2025-09-26 11:24:52,new
+COST-00498,2025-09-26 12:19:32,COST | Evercore ISI Group,rating,,Outperform,2025-09-26 12:19:32,new
+COST-00498,2025-09-26 12:19:32,COST | Evercore ISI Group,price_target_usd,,1025.0,2025-09-26 12:19:32,new
+COST-00499,2025-09-29 08:52:32,COST | Citigroup,rating,,Neutral,2025-09-29 08:52:32,new
+COST-00499,2025-09-29 08:52:32,COST | Citigroup,price_target_usd,,990.0,2025-09-29 08:52:32,new
+COST-00500,2025-09-29 08:59:41,COST | Argus Research,rating,,Buy,2025-09-29 08:59:41,new
+COST-00500,2025-09-29 08:59:41,COST | Argus Research,price_target_usd,,1200.0,2025-09-29 08:59:41,new
+COST-00501,2025-10-09 09:10:45,COST | Mizuho,price_target_usd,,950.0,2025-10-09 09:10:45,new
+COST-00502,2025-10-15 08:47:28,COST | BTIG,rating,,Buy,2025-10-15 08:47:28,new
+COST-00502,2025-10-15 08:47:28,COST | BTIG,price_target_usd,,1115.0,2025-10-15 08:47:28,new
+COST-00503,2025-11-03 06:24:29,COST | Oppenheimer,rating,,Outperform,2025-11-03 06:24:29,new
+COST-00503,2025-11-03 06:24:29,COST | Oppenheimer,price_target_usd,,1050.0,2025-11-03 06:24:29,new
+COST-00504,2025-11-04 08:32:25,COST | Telsey Advisory Group,rating,,Outperform,2025-11-04 08:32:25,new
+COST-00504,2025-11-04 08:32:25,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-11-04 08:32:25,new
+COST-00505,2025-11-06 08:16:06,COST | Telsey Advisory Group,rating,,Outperform,2025-11-06 08:16:06,new
+COST-00505,2025-11-06 08:16:06,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-11-06 08:16:06,new
+COST-00506,2025-11-06 17:20:45,COST | JP Morgan,rating,,Overweight,2025-11-06 17:20:45,corroborate
+COST-00506,2025-11-06 17:20:45,COST | JP Morgan,price_target_usd,,1025.0,2025-11-06 17:20:45,new
+COST-00507,2025-12-01 07:16:19,COST | Telsey Advisory Group,rating,,Outperform,2025-12-01 07:16:19,new
+COST-00507,2025-12-01 07:16:19,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-12-01 07:16:19,new
+COST-00508,2025-12-04 07:14:42,COST | Telsey Advisory Group,rating,,Outperform,2025-12-04 07:14:42,new
+COST-00508,2025-12-04 07:14:42,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-12-04 07:14:42,new
+COST-00509,2025-12-04 14:13:41,COST | DA Davidson,rating,,Neutral,2025-12-04 14:13:41,corroborate
+COST-00509,2025-12-04 14:13:41,COST | DA Davidson,price_target_usd,,1000.0,2025-12-04 14:13:41,corroborate
+COST-00510,2025-12-12 07:11:16,COST | Telsey Advisory Group,rating,,Outperform,2025-12-12 07:11:16,new
+COST-00510,2025-12-12 07:11:16,COST | Telsey Advisory Group,price_target_usd,,1100.0,2025-12-12 07:11:16,new
+COST-00511,2025-12-12 09:05:21,COST | Bernstein,price_target_usd,,1146.0,2025-12-12 09:05:21,new
+COST-00512,2025-12-12 10:03:58,COST | Baird,price_target_usd,,1000.0,2025-12-12 10:03:58,new
+COST-00513,2025-12-12 13:01:07,COST | Goldman Sachs,rating,,Buy,2025-12-12 13:01:07,corroborate
+COST-00513,2025-12-12 13:01:07,COST | Goldman Sachs,price_target_usd,,1171.0,2025-12-12 13:01:07,new
+COST-00514,2025-12-12 14:43:46,COST | JP Morgan,rating,,Overweight,2025-12-12 14:43:46,corroborate
+COST-00514,2025-12-12 14:43:46,COST | JP Morgan,price_target_usd,,1027.0,2025-12-12 14:43:46,new
+COST-00515,2025-12-15 12:55:24,COST | Roth Capital,rating,,Sell,2025-12-15 12:55:24,new
+COST-00515,2025-12-15 12:55:24,COST | Roth Capital,price_target_usd,,769.0,2025-12-15 12:55:24,new
+COST-00516,2025-12-19 08:46:06,COST | Wells Fargo,price_target_usd,,900.0,2025-12-19 08:46:06,new
+COST-00516,2025-12-19 08:46:06,COST | Wells Fargo,rating,,Equal-Weight,2025-12-19 08:46:06,corroborate
+COST-00517,2025-12-24 11:26:48,COST | Northcoast Research,rating,,Buy,2025-12-24 11:26:48,new
+COST-00517,2025-12-24 11:26:48,COST | Northcoast Research,price_target_usd,,1100.0,2025-12-24 11:26:48,new
+COST-00518,2026-01-02 07:34:21,COST | Telsey Advisory Group,rating,,Outperform,2026-01-02 07:34:21,new
+COST-00518,2026-01-02 07:34:21,COST | Telsey Advisory Group,price_target_usd,,1100.0,2026-01-02 07:34:21,new
+COST-00519,2026-01-05 08:36:53,COST | Mizuho,rating,,Outperform,2026-01-05 08:36:53,new
+COST-00519,2026-01-05 08:36:53,COST | Mizuho,price_target_usd,,1000.0,2026-01-05 08:36:53,new
+COST-00520,2026-01-08 06:45:26,COST | Telsey Advisory Group,rating,,Outperform,2026-01-08 06:45:26,new
+COST-00520,2026-01-08 06:45:26,COST | Telsey Advisory Group,price_target_usd,,1100.0,2026-01-08 06:45:26,new
+COST-00521,2026-02-02 07:13:19,COST | Telsey Advisory Group,rating,,Outperform,2026-02-02 07:13:19,new
+COST-00521,2026-02-02 07:13:19,COST | Telsey Advisory Group,price_target_usd,,1100.0,2026-02-02 07:13:19,new
+COST-00522,2026-02-03 12:57:35,COST | Mizuho,price_target_usd,,1065.0,2026-02-03 12:57:35,new
+COST-00522,2026-02-03 12:57:35,COST | Mizuho,rating,,Outperform,2026-02-03 12:57:35,corroborate
+COST-00523,2026-02-05 07:19:35,COST | Telsey Advisory Group,rating,,Outperform,2026-02-05 07:19:35,new
+COST-00523,2026-02-05 07:19:35,COST | Telsey Advisory Group,price_target_usd,,1100.0,2026-02-05 07:19:35,new
+COST-00524,2026-02-05 08:48:10,COST | Wells Fargo,price_target_usd,,950.0,2026-02-05 08:48:10,new
+COST-00524,2026-02-05 08:48:10,COST | Wells Fargo,rating,,Equal-Weight,2026-02-05 08:48:10,corroborate
+COST-00525,2026-02-05 15:36:08,COST | DA Davidson,rating,,Neutral,2026-02-05 15:36:08,corroborate
+COST-00525,2026-02-05 15:36:08,COST | DA Davidson,price_target_usd,,1000.0,2026-02-05 15:36:08,corroborate
+COST-00526,2026-02-09 15:17:10,COST | JP Morgan,rating,,Overweight,2026-02-09 15:17:10,corroborate
+COST-00526,2026-02-09 15:17:10,COST | JP Morgan,price_target_usd,,1050.0,2026-02-09 15:17:10,new
+COST-00527,2026-02-10 09:12:07,COST | Evercore ISI Group,rating,,Outperform,2026-02-10 09:12:07,new
+COST-00527,2026-02-10 09:12:07,COST | Evercore ISI Group,price_target_usd,,1050.0,2026-02-10 09:12:07,new
+COST-00528,2026-03-05 05:12:51,COST | BTIG,rating,,Buy,2026-03-05 05:12:51,corroborate
+COST-00528,2026-03-05 05:12:51,COST | BTIG,price_target_usd,,1115.0,2026-03-05 05:12:51,corroborate
+COST-00529,2026-03-06 05:57:21,COST | BTIG,price_target_usd,,1125.0,2026-03-06 05:57:21,new
+COST-00529,2026-03-06 05:57:21,COST | BTIG,rating,,Buy,2026-03-06 05:57:21,corroborate
+COST-00530,2026-03-06 08:46:48,COST | Truist Securities,price_target_usd,,977.0,2026-03-06 08:46:48,new
+COST-00531,2026-03-06 10:48:26,COST | DA Davidson,rating,,Neutral,2026-03-06 10:48:26,corroborate
+COST-00531,2026-03-06 10:48:26,COST | DA Davidson,price_target_usd,,1000.0,2026-03-06 10:48:26,corroborate
+COST-00532,2026-03-06 10:57:06,COST | Telsey Advisory Group,rating,,Outperform,2026-03-06 10:57:06,new
+COST-00532,2026-03-06 10:57:06,COST | Telsey Advisory Group,price_target_usd,,1125.0,2026-03-06 10:57:06,new
+COST-00533,2026-03-06 12:56:22,COST | BMO Capital,price_target_usd,,1315.0,2026-03-06 12:56:22,new
+COST-00533,2026-03-06 12:56:22,COST | BMO Capital,rating,,Outperform,2026-03-06 12:56:22,corroborate
+COST-00534,2026-03-06 15:33:25,COST | JP Morgan,rating,,Overweight,2026-03-06 15:33:25,corroborate
+COST-00534,2026-03-06 15:33:25,COST | JP Morgan,price_target_usd,,1060.0,2026-03-06 15:33:25,new
+COST-00535,2026-03-31 08:29:54,COST | Telsey Advisory Group,rating,,Outperform,2026-03-31 08:29:54,new
+COST-00535,2026-03-31 08:29:54,COST | Telsey Advisory Group,price_target_usd,,1125.0,2026-03-31 08:29:54,new
+COST-00536,2026-04-09 08:54:55,COST | Wells Fargo,price_target_usd,,1000.0,2026-04-09 08:54:55,new
+COST-00536,2026-04-09 08:54:55,COST | Wells Fargo,rating,,Equal-Weight,2026-04-09 08:54:55,corroborate
+COST-00537,2026-04-09 12:49:54,COST | Telsey Advisory Group,rating,,Outperform,2026-04-09 12:49:54,new
+COST-00537,2026-04-09 12:49:54,COST | Telsey Advisory Group,price_target_usd,,1135.0,2026-04-09 12:49:54,new
+COST-00537,2026-04-09 12:49:54,COST | Telsey Advisory Group,price_target_usd,,1125.0,2026-04-09 12:49:54,inferred
+COST-00538,2026-04-10 16:08:48,COST | DA Davidson,rating,,Neutral,2026-04-10 16:08:48,corroborate
+COST-00538,2026-04-10 16:08:48,COST | DA Davidson,price_target_usd,,1000.0,2026-04-10 16:08:48,corroborate
+COST-00539,2026-05-19 10:11:21,COST | Oppenheimer,rating,,Outperform,2026-05-19 10:11:21,new
+COST-00539,2026-05-19 10:11:21,COST | Oppenheimer,price_target_usd,,1160.0,2026-05-19 10:11:21,new
+COST-00540,2026-05-20 12:41:04,COST | UBS,rating,,Buy,2026-05-20 12:41:04,new
+COST-00540,2026-05-20 12:41:04,COST | UBS,price_target_usd,,1275.0,2026-05-20 12:41:04,new
+COST-00540,2026-05-20 12:41:04,COST | UBS,price_target_usd,,1205.0,2026-05-20 12:41:04,inferred
+COST-00541,2026-05-29 07:27:55,COST | BTIG,rating,,Buy,2026-05-29 07:27:55,corroborate
+COST-00541,2026-05-29 07:27:55,COST | BTIG,price_target_usd,,1125.0,2026-05-29 07:27:55,corroborate
+COST-00542,2026-05-29 12:57:40,COST | Truist Securities,price_target_usd,,1011.0,2026-05-29 12:57:40,new
+COST-00543,2026-05-29 14:11:46,COST | B of A Securities,rating,,Buy,2026-05-29 14:11:46,new
+COST-00543,2026-05-29 14:11:46,COST | B of A Securities,price_target_usd,,1200.0,2026-05-29 14:11:46,new
+COST-00544,2026-05-29 14:41:55,COST | DA Davidson,rating,,Neutral,2026-05-29 14:41:55,corroborate
+COST-00544,2026-05-29 14:41:55,COST | DA Davidson,price_target_usd,,1000.0,2026-05-29 14:41:55,corroborate
+COST-00545,2026-06-01 09:39:04,COST | DA Davidson,rating,,Neutral,2026-06-01 09:39:04,corroborate
+COST-00545,2026-06-01 09:39:04,COST | DA Davidson,price_target_usd,,1000.0,2026-06-01 09:39:04,corroborate
+COST-00546,2026-06-03 10:26:37,COST | TD Cowen,rating,,Buy,2026-06-03 10:26:37,new
+COST-00546,2026-06-03 10:26:37,COST | TD Cowen,price_target_usd,,1175.0,2026-06-03 10:26:37,new
+COST-00547,2026-06-04 10:30:36,COST | DA Davidson,rating,,Neutral,2026-06-04 10:30:36,corroborate
+COST-00547,2026-06-04 10:30:36,COST | DA Davidson,price_target_usd,,1000.0,2026-06-04 10:30:36,corroborate
+COST-00548,2026-07-09 09:02:14,COST | JP Morgan,rating,,Overweight,2026-07-09 09:02:14,corroborate
+COST-00548,2026-07-09 09:02:14,COST | JP Morgan,price_target_usd,,1100.0,2026-07-09 09:02:14,new
+COST-00549,2026-09-03 05:19:40,COST | BTIG,rating,,Buy,2026-09-03 05:19:40,corroborate
+COST-00549,2026-09-03 05:19:40,COST | BTIG,price_target_usd,,1125.0,2026-09-03 05:19:40,corroborate
+COST-00550,2026-09-03 17:30:06,COST | DA Davidson,rating,,Neutral,2026-09-03 17:30:06,corroborate
+COST-00550,2026-09-03 17:30:06,COST | DA Davidson,price_target_usd,,1000.0,2026-09-03 17:30:06,corroborate
+COST-00551,2026-09-04 08:05:42,COST | Bernstein,rating,,Outperform,2026-09-04 08:05:42,corroborate
+COST-00551,2026-09-04 08:05:42,COST | Bernstein,price_target_usd,,1144.0,2026-09-04 08:05:42,new
+COST-00552,2026-09-08 08:04:18,COST | Freedom Broker,rating,,Buy,2026-09-08 08:04:18,new
+COST-00552,2026-09-08 08:04:18,COST | Freedom Broker,price_target_usd,,1030.0,2026-09-08 08:04:18,new
+COST-00553,2026-09-16 09:48:47,COST | B of A Securities,rating,,Buy,2026-09-16 09:48:47,new
+COST-00553,2026-09-16 09:48:47,COST | B of A Securities,price_target_usd,,1095.0,2026-09-16 09:48:47,new
+COST-00554,2026-09-16 14:11:03,COST | Oppenheimer,rating,,Outperform,2026-09-16 14:11:03,new
+COST-00554,2026-09-16 14:11:03,COST | Oppenheimer,price_target_usd,,1160.0,2026-09-16 14:11:03,new
+COST-00555,2026-09-23 06:24:11,COST | BTIG,rating,,Buy,2026-09-23 06:24:11,corroborate
+COST-00555,2026-09-23 06:24:11,COST | BTIG,price_target_usd,,1125.0,2026-09-23 06:24:11,corroborate
+COST-00556,2026-09-25 08:14:02,COST | Bernstein,rating,,Outperform,2026-09-25 08:14:02,corroborate
+COST-00556,2026-09-25 08:14:02,COST | Bernstein,price_target_usd,,1143.0,2026-09-25 08:14:02,new
+COST-00557,2026-09-25 08:15:59,COST | Mizuho,price_target_usd,,1065.0,2026-09-25 08:15:59,new
+COST-00558,2026-09-25 09:43:40,COST | Wells Fargo,rating,,Equal-Weight,2026-09-25 09:43:40,new
+COST-00558,2026-09-25 09:43:40,COST | Wells Fargo,price_target_usd,,950.0,2026-09-25 09:43:40,new
+COST-00559,2026-09-25 09:46:35,COST | RBC Capital,rating,,Sector Perform,2026-09-25 09:46:35,new
+COST-00559,2026-09-25 09:46:35,COST | RBC Capital,price_target_usd,,1000.0,2026-09-25 09:46:35,new
+COST-00560,2026-09-25 09:54:14,COST | DA Davidson,price_target_usd,,1040.0,2026-09-25 09:54:14,new
+COST-00561,2026-09-25 09:58:32,COST | Truist Securities,price_target_usd,,955.0,2026-09-25 09:58:32,new
+COST-00562,2026-09-25 10:15:39,COST | JP Morgan,rating,,Overweight,2026-09-25 10:15:39,corroborate
+COST-00562,2026-09-25 10:15:39,COST | JP Morgan,price_target_usd,,1015.0,2026-09-25 10:15:39,new
+COST-00563,2026-09-25 12:11:23,COST | Roth Capital,rating,,Sell,2026-09-25 12:11:23,corroborate
+COST-00563,2026-09-25 12:11:23,COST | Roth Capital,price_target_usd,,781.0,2026-09-25 12:11:23,corroborate
+COST-00564,2026-09-25 12:54:14,COST | Raymond James,rating,,Outperform,2026-09-25 12:54:14,new
+COST-00564,2026-09-25 12:54:14,COST | Raymond James,price_target_usd,,1050.0,2026-09-25 12:54:14,new
+COST-00565,2026-09-25 14:41:22,COST | Freedom Broker,price_target_usd,,1010.0,2026-09-25 14:41:22,new
+COST-00565,2026-09-25 14:41:22,COST | Freedom Broker,rating,,Buy,2026-09-25 14:41:22,corroborate
+COST-00566,2026-09-28 09:00:43,COST | Argus Research,rating,,Buy,2026-09-28 09:00:43,corroborate
+COST-00566,2026-09-28 09:00:43,COST | Argus Research,price_target_usd,,1230.0,2026-09-28 09:00:43,corroborate
+COST-00567,2026-09-28 12:47:48,COST | Deutsche Bank,rating,,Buy,2026-09-28 12:47:48,new
+COST-00567,2026-09-28 12:47:48,COST | Deutsche Bank,price_target_usd,,1079.0,2026-09-28 12:47:48,new
+COST-00568,2026-10-09 10:37:03,COST | RBC Capital,rating,,Sector Perform,2026-10-09 10:37:03,corroborate
+COST-00568,2026-10-09 10:37:03,COST | RBC Capital,price_target_usd,,1000.0,2026-10-09 10:37:03,corroborate
+COST-00569,2026-10-15 17:16:05,COST | Tigress Financial,rating,,Buy,2026-10-15 17:16:05,new
+COST-00569,2026-10-15 17:16:05,COST | Tigress Financial,price_target_usd,,1250.0,2026-10-15 17:16:05,new
+COST-00570,2026-10-21 08:07:39,COST | CICC,rating,,Outperform,2026-10-21 08:07:39,new
+COST-00570,2026-10-21 08:07:39,COST | CICC,price_target_usd,,1050.0,2026-10-21 08:07:39,new
+COST-00571,2026-11-05 18:27:26,COST | JP Morgan,price_target_usd,,1150.0,2026-11-05 18:27:26,new
+COST-00571,2026-11-05 18:27:26,COST | JP Morgan,rating,,Overweight,2026-11-05 18:27:26,corroborate
+COST-00572,2026-11-11 12:26:35,COST | Bernstein,price_target_usd,,1155.0,2026-11-11 12:26:35,new
+COST-00573,2026-11-16 08:19:07,COST | Evercore ISI Group,rating,,Outperform,2026-11-16 08:19:07,new
+COST-00573,2026-11-16 08:19:07,COST | Evercore ISI Group,price_target_usd,,1200.0,2026-11-16 08:19:07,new
+COST-00574,2026-11-17 10:26:14,COST | Mizuho,price_target_usd,,1150.0,2026-11-17 10:26:14,new

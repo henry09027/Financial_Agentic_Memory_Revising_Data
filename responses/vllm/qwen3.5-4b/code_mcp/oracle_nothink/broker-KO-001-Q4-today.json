@@ -1,0 +1,55 @@
+{
+ "qid": "broker-KO-001-Q4-today",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "broker",
+ "entity": "KO",
+ "qtype": "value_on_date",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "What was JP Morgan's KO price target on 13 October 2024, in US dollars?",
+ "gold": "75",
+ "peek_answers": "",
+ "trap_answers": "72|98",
+ "gold_evidence": "KO-00175|KO-00199",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "false_abstain",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 5094,
+ "out_tokens": 74,
+ "seconds": 0.2571,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'KO | JP Morgan' AND attribute = 'price_target_usd' ORDER BY effective_at ASC LIMIT 100\"]",
+ "created": "2026-11-22T02:21:07",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: What was JP Morgan's KO price target on 13 October 2024, in US dollars?\n\nDatabase contents at the as-of time: 488 facts, 214 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'KO | Argus Research': price_target_usd (6), rating (4)\n  'KO | Atlantic Equities': rating (1)\n  'KO | B of A Securities': price_target_usd (9), rating (5)\n  'KO | BMO Capital': price_target_usd (2), rating (2)\n  'KO | BNP Paribas': price_target_usd (1), rating (1)\n  'KO | Barclays': price_target_usd (22), rating (20)\n  'KO | Bernstein': price_target_usd (3), rating (3)\n  'KO | CFRA': price_target_usd (1), rating (2)\n  'KO | Citigroup': price_target_usd (19), rating (14)\n  'KO | Cowen & Co.': alias (1), price_target_usd (10), rating (8)\n  'KO | Credit Suisse': price_target_usd (5), rating (4)\n  'KO | DA Davidson': rating (1)\n  'KO | DZ Bank': price_target_usd (2), rating (2)\n  'KO | Deutsche Bank': price_target_usd (20), rating (14)\n  'KO | Deutsche bank': price_target_usd (1), rating (1)\n  'KO | Evercore ISI Group': price_target_usd (8), rating (5)\n  'KO | Exane BNP Paribas': price_target_usd (1), rating (1)\n  'KO | Freedom Broker': price_target_usd (3), rating (2)\n  'KO | Guggenheim': price_target_usd (3), rating (2)\n  'KO | HSBC': price_target_usd (10), rating (6)\n  'KO | JP Morgan': price_target_usd (29), rating (21)\n  'KO | Jefferies': price_target_usd (10), rating (7)\n  'KO | Morgan Stanley': price_target_usd (32), rating (27)\n  'KO | Piper Sandler': price_target_usd (8), rating (7)\n  'KO | RBC Capital': price_target_usd (19), rating (14)\n  'KO | SunTrust Robinson Humphrey': alias (1), price_target_usd (2), rating (2)\n  'KO | UBS': price_target_usd (28), rating (18)\n  'KO | Wedbush': price_target_usd (3), rating (2)\n  'KO | Wells Fargo': price_target_usd (17), rating (15)\n  'KO | Wolfe Research': rating (1)\nkind values: 'corroborate', 'event', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'KO | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'KO | JP Morgan' AND attribute = 'price_target_usd' ORDER BY effective_at ASC LIMIT 100\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n,59.0,2019-07-24 08:43:54,2019-07-24 08:43:54,new,KO-00067\n,44.0,2020-03-23 05:09:28,2020-03-23 05:09:28,new,KO-00083\n,55.0,2021-01-07 07:03:21,2021-01-07 07:03:21,new,KO-00102\n,63.0,2021-12-13 05:10:42,2021-12-13 05:10:42,new,KO-00112\n,65.0,2021-12-13 05:10:43,2022-03-30 08:05:01,inferred,KO-00117\n,68.0,2022-03-30 08:05:01,2022-03-30 08:05:01,new,KO-00117\n,73.0,2022-03-30 08:05:02,2022-07-20 07:36:02,inferred,KO-00126\n,70.0,2022-07-20 07:36:02,2022-07-20 07:36:02,new,KO-00126\n,67.0,2022-07-20 07:36:03,2023-07-27 09:51:43,inferred,KO-00152\n,71.0,2023-07-27 09:51:43,2023-07-27 09:51:43,new,KO-00152\n,59.0,2023-10-16 10:42:43,2023-10-16 10:42:43,new,KO-00158\n,62.0,2023-10-25 12:22:44,2023-10-25 12:22:44,new,KO-00161\n,64.0,2023-10-25 12:22:45,2024-02-14 12:43:14,inferred,KO-00164\n,66.0,2024-02-14 12:43:14,2024-02-14 12:43:14,new,KO-00164\n,65.0,2024-04-19 08:55:24,2024-04-19 08:55:24,new,KO-00167\n,68.0,2024-05-01 10:34:56,2024-05-01 10:34:56,new,KO-00168\n,72.0,2024-07-10 12:24:07,2024-07-10 12:24:07,new,KO-00175\n,75.0,2024-07-10 12:24:08,2025-01-28 10:02:04,inferred,KO-00199\n,70.0,2025-01-28 10:02:04,2025-01-28 10:02:04,new,KO-00199\n,74.0,2025-01-28 10:02:05,2025-04-21 08:57:22,inferred,KO-00209\n,78.0,2025-04-21 08:57:22,2025-04-21 08:57:22,new,KO-00209\n,77.0,2025-04-21 08:57:23,2025-07-23 10:58:43,inferred,KO-00215\n,79.0,2025-07-23 10:58:43,2025-07-23 10:58:43,new,KO-00215\n,83.0,2026-02-11 14:25:57,2026-02-11 14:25:57,new,KO-00232\n,85.0,2026-04-29 15:59:26,2026-04-29 15:59:26,new,KO-00240\n,90.0,2026-04-29 15:59:27,2026-07-29 14:25:22,inferred,KO-00256\n,96.0,2026-07-29 14:25:22,2026-07-29 14:25:22,new,KO-00256\n,95.0,2026-09-28 13:31:16,2026-09-28 13:31:16,new,KO-00259\n,98.0,2026-10-28 15:03:25,2026-10-28 15:03:25,new,KO-00269\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'KO | JP Morgan' AND attribute = 'price_target_usd' ORDER BY effective_at ASC LIMIT 100\n```\n\n===== next turn =====\n\n```json\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}\n```"
+}

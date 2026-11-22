@@ -1,0 +1,55 @@
+{
+ "qid": "broker-LLY-001-Q5-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "LLY",
+ "qtype": "count_changes",
+ "mode": "as_of",
+ "as_of": "2025-01-01 01:52:00",
+ "question": "How many times did brokers raise or lower their LLY price target between 1 December 2024 and the as-of time?",
+ "gold": "0",
+ "peek_answers": "1|2|84",
+ "trap_answers": "",
+ "gold_evidence": "",
+ "answer": "0",
+ "cited": "",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": null,
+ "in_tokens": 3281,
+ "out_tokens": 115,
+ "seconds": 0.1932,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT count(*)\\nFROM facts\\nWHERE subject LIKE 'LLY | %'\\n  AND attribute = 'price_target_usd'\\n  AND kind IN ('new', 'inferred')\\n  AND effective_at >= '2024-12-01 00:00:00'\\n  AND effective_at < '2025-01-01 01:52:00';\"]",
+ "created": "2026-11-22T06:34:12",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2025-01-01 01:52:00\nQuestion: How many times did brokers raise or lower their LLY price target between 1 December 2024 and the as-of time?\n\nDatabase contents at the as-of time: 189 facts, 101 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'LLY | Argus Research': price_target_usd (2), rating (1)\n  'LLY | B of A Securities': price_target_usd (5), rating (3)\n  'LLY | BMO Capital': price_target_usd (5), rating (5)\n  'LLY | Barclays': price_target_usd (5), rating (4)\n  'LLY | Berenberg': price_target_usd (2), rating (1)\n  'LLY | Bernstein': price_target_usd (1), rating (1)\n  'LLY | Cantor Fitzgerald': price_target_usd (35), rating (35)\n  'LLY | Citigroup': price_target_usd (3), rating (1)\n  'LLY | Credit Suisse': price_target_usd (1), rating (1)\n  'LLY | DZ Bank': price_target_usd (1), rating (1)\n  'LLY | Daiwa Capital': price_target_usd (1), rating (1)\n  'LLY | Deutsche Bank': price_target_usd (4), rating (3)\n  'LLY | Erste Group': rating (1)\n  'LLY | Goldman Sachs': price_target_usd (3), rating (1)\n  'LLY | Guggenheim': price_target_usd (2), rating (1)\n  'LLY | JP Morgan': price_target_usd (5), rating (5)\n  'LLY | Jefferies': price_target_usd (3), rating (3)\n  'LLY | Morgan Stanley': price_target_usd (8), rating (8)\n  'LLY | RBC Capital': price_target_usd (1), rating (1)\n  'LLY | Truist Securities': price_target_usd (7), rating (6)\n  'LLY | Wells Fargo': price_target_usd (5), rating (5)\n  'LLY | Wolfe Research': price_target_usd (1), rating (1)\nkind values: 'corroborate', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'LLY | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT count(*)\nFROM facts\nWHERE subject LIKE 'LLY | %'\n  AND attribute = 'price_target_usd'\n  AND kind IN ('new', 'inferred')\n  AND effective_at >= '2024-12-01 00:00:00'\n  AND effective_at < '2025-01-01 01:52:00';\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\ncount(*)\n0\n"
+  }
+ ],
+ "final_text": "{\"answer\": 0, \"evidence_ids\": []}",
+ "raw_output": "```sql\nSELECT count(*)\nFROM facts\nWHERE subject LIKE 'LLY | %'\n  AND attribute = 'price_target_usd'\n  AND kind IN ('new', 'inferred')\n  AND effective_at >= '2024-12-01 00:00:00'\n  AND effective_at < '2025-01-01 01:52:00';\n```\n\n===== next turn =====\n\n{\"answer\": 0, \"evidence_ids\": []}"
+}

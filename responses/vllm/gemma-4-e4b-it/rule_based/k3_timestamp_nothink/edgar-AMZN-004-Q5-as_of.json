@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-AMZN-004-Q5-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "edgar",
+ "entity": "AMZN",
+ "qtype": "count_reports",
+ "mode": "as_of",
+ "as_of": "2026-09-05 04:33:00",
+ "question": "How many filings have reported a fiscal year 2025 (ended 31 December 2025) total revenue figure for AMAZON.COM, INC.?",
+ "gold": "1",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "AMZN-00146",
+ "answer": "0",
+ "cited": "",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1032,
+ "out_tokens": 25,
+ "seconds": 0.0465,
+ "retrieved": "AMZN-00149|AMZN-00150|AMZN-00152",
+ "n_dropped": 0,
+ "created": "2026-11-22T02:49:21",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-09-05 04:33:00\nQuestion: How many filings have reported a fiscal year 2025 (ended 31 December 2025) total revenue figure for AMAZON.COM, INC.?\n\nEvidence:\n[AMZN-00149] 2026-07-30 22:11 | Form 10-Q (FY2026 Q2) filed 2026-07-31: AMAZON.COM, INC. (AMZN) Revenues for 2025-01-01 to 2025-06-30 = $323,369M (prior-year comparative).\n[AMZN-00150] 2026-07-30 22:11 | Form 10-Q (FY2026 Q2) filed 2026-07-31: AMAZON.COM, INC. (AMZN) Revenues for 2025-04-01 to 2025-06-30 = $167,702M (prior-year comparative).\n[AMZN-00152] 2026-07-30 22:11 | Form 10-Q (FY2026 Q2) filed 2026-07-31: AMAZON.COM, INC. (AMZN) Revenues for 2026-04-01 to 2026-06-30 = $200,606M."
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 0,\n  \"evidence_ids\": []\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 0,\n  \"evidence_ids\": []\n}\n```"
+}

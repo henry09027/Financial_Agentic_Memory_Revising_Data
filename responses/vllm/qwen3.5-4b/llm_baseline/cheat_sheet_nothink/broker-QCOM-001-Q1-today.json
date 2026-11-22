@@ -1,0 +1,43 @@
+{
+ "qid": "broker-QCOM-001-Q1-today",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "broker",
+ "entity": "QCOM",
+ "qtype": "consensus",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "What is the consensus (median) price target for QCOM across active brokers, in US dollars?",
+ "gold": "185",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "QCOM-00436|QCOM-00453|QCOM-00459|QCOM-00476|QCOM-00473|QCOM-00455|QCOM-00478|QCOM-00462|QCOM-00475|QCOM-00457|QCOM-00469|QCOM-00474|QCOM-00466|QCOM-00440|QCOM-00481|QCOM-00479|QCOM-00416|QCOM-00477|QCOM-00437|QCOM-00472|QCOM-00418|QCOM-00419|QCOM-00468|QCOM-00422|QCOM-00480",
+ "answer": "195",
+ "cited": "QCOM-00416|QCOM-00418|QCOM-00419|QCOM-00422|QCOM-00436|QCOM-00437|QCOM-00440|QCOM-00453|QCOM-00455|QCOM-00457|QCOM-00459|QCOM-00462|QCOM-00466|QCOM-00468|QCOM-00469|QCOM-00472|QCOM-00473|QCOM-00474|QCOM-00475|QCOM-00476|QCOM-00477|QCOM-00478|QCOM-00479|QCOM-00480|QCOM-00481",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 2286,
+ "out_tokens": 264,
+ "seconds": 0.1076,
+ "n_evidence": 25,
+ "n_dropped": 0,
+ "created": "2026-11-21T23:36:12",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: What is the consensus (median) price target for QCOM across active brokers, in US dollars?\n\nEvidence:\n[QCOM-00416] 2026-02-06 12:17 | Argus Research maintained Buy on QCOM, and lowered its price target from $205.00 to $180.00.\n[QCOM-00418] 2026-02-24 07:45 | Loop Capital upgraded QCOM from Hold to Buy, with a $185.00 price target.\n[QCOM-00419] 2026-03-16 07:24 | Seaport Global downgraded QCOM from Neutral to Sell, with a $100.00 price target.\n[QCOM-00422] 2026-04-17 13:58 | BNP Paribas downgraded QCOM from Outperform to Neutral, and lowered its price target from $180.00 to $120.00.\n[QCOM-00436] 2026-05-08 16:25 | Daiwa Capital upgraded QCOM from Neutral to Outperform, and raised its price target from $140.00 to $225.00.\n[QCOM-00437] 2026-05-08 19:16 | Tigress Financial maintained Buy on QCOM, and raised its price target from $270.00 to $280.00.\n[QCOM-00440] 2026-06-23 08:22 | B of A Securities maintained Underperform on QCOM, and raised its price target from $165.00 to $195.00.\n[QCOM-00453] 2026-06-29 10:04 | Mizuho maintained Neutral on QCOM, and raised its price target from $170.00 to $210.00.\n[QCOM-00455] 2026-07-30 08:07 | Morgan Stanley maintained Equal-Weight on QCOM, and lowered its price target from $231.00 to $220.00.\n[QCOM-00457] 2026-07-30 09:06 | Cantor Fitzgerald maintained Neutral on QCOM, and lowered its price target from $200.00 to $165.00.\n[QCOM-00459] 2026-07-30 10:54 | Wells Fargo maintained Equal-Weight on QCOM, and lowered its price target from $265.00 to $170.00.\n[QCOM-00462] 2026-07-30 14:22 | Citigroup maintained Neutral on QCOM, and lowered its price target from $198.00 to $175.00.\n[QCOM-00466] 2026-07-30 15:50 | Benchmark maintained Buy on QCOM, and lowered its price target from $300.00 to $270.00.\n[QCOM-00468] 2026-09-09 09:41 | RBC Capital maintained Sector Perform on QCOM, and raised its price target from $160.00 to $180.00.\n[QCOM-00469] 2026-09-10 10:08 | Piper Sandler initiated coverage of QCOM with a Neutral rating and a $190.00 price target.\n[QCOM-00472] 2026-11-02 13:43 | Bernstein maintained Market Perform on QCOM, and lowered its price target from $165.00 to $155.00.\n[QCOM-00473] 2026-11-05 08:40 | Susquehanna maintained Neutral on QCOM, and lowered its price target from $185.00 to $165.00.\n[QCOM-00474] 2026-11-05 09:29 | Evercore ISI Group maintained In-Line on QCOM, and raised its price target from $159.00 to $165.00.\n[QCOM-00475] 2026-11-05 14:02 | Barclays maintained Underweight on QCOM, and lowered its price target from $180.00 to $150.00.\n[QCOM-00476] 2026-11-05 14:30 | Rosenblatt maintained Buy on QCOM, and lowered its price target from $235.00 to $205.00.\n[QCOM-00477] 2026-11-05 15:53 | TD Cowen maintained Buy on QCOM, and lowered its price target from $200.00 to $185.00.\n[QCOM-00478] 2026-11-05 17:51 | JP Morgan maintained Neutral on QCOM, and lowered its price target from $215.00 to $200.00.\n[QCOM-00479] 2026-11-05 19:08 | UBS maintained Neutral on QCOM, and lowered its price target from $185.00 to $180.00.\n[QCOM-00480] 2026-11-09 15:13 | Freedom Broker downgraded QCOM from Buy to Hold, and lowered its price target from $200.00 to $185.00.\n[QCOM-00481] 2026-11-18 08:27 | Baird maintained Outperform on QCOM, and lowered its price target from $320.00 to $300.00."
+  }
+ ],
+ "final_text": "{\"answer\": 195, \"evidence_ids\": [\"QCOM-00416\", \"QCOM-00418\", \"QCOM-00419\", \"QCOM-00422\", \"QCOM-00436\", \"QCOM-00437\", \"QCOM-00440\", \"QCOM-00453\", \"QCOM-00455\", \"QCOM-00457\", \"QCOM-00459\", \"QCOM-00462\", \"QCOM-00466\", \"QCOM-00468\", \"QCOM-00469\", \"QCOM-00472\", \"QCOM-00473\", \"QCOM-00474\", \"QCOM-00475\", \"QCOM-00476\", \"QCOM-00477\", \"QCOM-00478\", \"QCOM-00479\", \"QCOM-00480\", \"QCOM-00481\"]}",
+ "raw_output": "{\"answer\": 195, \"evidence_ids\": [\"QCOM-00416\", \"QCOM-00418\", \"QCOM-00419\", \"QCOM-00422\", \"QCOM-00436\", \"QCOM-00437\", \"QCOM-00440\", \"QCOM-00453\", \"QCOM-00455\", \"QCOM-00457\", \"QCOM-00459\", \"QCOM-00462\", \"QCOM-00466\", \"QCOM-00468\", \"QCOM-00469\", \"QCOM-00472\", \"QCOM-00473\", \"QCOM-00474\", \"QCOM-00475\", \"QCOM-00476\", \"QCOM-00477\", \"QCOM-00478\", \"QCOM-00479\", \"QCOM-00480\", \"QCOM-00481\"]}"
+}

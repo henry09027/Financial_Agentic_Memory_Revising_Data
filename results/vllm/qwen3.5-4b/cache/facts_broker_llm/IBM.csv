@@ -1,0 +1,414 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+IBM-00094,2020-10-09 08:15:32,IBM | Morgan Stanley,price_target_usd,,140.00,2020-10-09 08:15:32,new
+IBM-00094,2020-10-09 08:15:32,IBM | Morgan Stanley,rating,,Equal-Weight,2020-10-09 08:15:32,new
+IBM-00095,2020-10-20 12:16:27,IBM | BMO Capital,price_target_usd,,138.00,2020-10-20 12:16:27,new
+IBM-00095,2020-10-20 12:16:27,IBM | BMO Capital,rating,,Market Perform,2020-10-20 12:16:27,new
+IBM-00096,2021-04-08 08:04:47,IBM | Morgan Stanley,price_target_usd,,150.00,2021-04-08 08:04:47,new
+IBM-00096,2021-04-08 08:04:47,IBM | Morgan Stanley,rating,,Equal-Weight,2021-04-08 08:04:47,corroborate
+IBM-00097,2021-04-20 09:32:55,IBM | Morgan Stanley,price_target_usd,,152.00,2021-04-20 09:32:55,new
+IBM-00097,2021-04-20 09:32:55,IBM | Morgan Stanley,rating,,Equal-Weight,2021-04-20 09:32:55,corroborate
+IBM-00098,2021-04-20 09:47:33,IBM | BMO Capital,price_target_usd,,150.00,2021-04-20 09:47:33,new
+IBM-00098,2021-04-20 09:47:33,IBM | BMO Capital,rating,,Market Perform,2021-04-20 09:47:33,corroborate
+IBM-00099,2021-04-20 10:29:07,IBM | Credit Suisse,price_target_usd,,165.00,2021-04-20 10:29:07,new
+IBM-00099,2021-04-20 10:29:07,IBM | Credit Suisse,rating,,Outperform,2021-04-20 10:29:07,corroborate
+IBM-00100,2021-07-16 09:05:27,IBM | BMO Capital,price_target_usd,,155.00,2021-07-16 09:05:27,new
+IBM-00100,2021-07-16 09:05:27,IBM | BMO Capital,rating,,Market Perform,2021-07-16 09:05:27,corroborate
+IBM-00101,2021-07-20 05:40:15,IBM | Societe Generale,price_target_usd,,140.00,2021-07-20 05:40:15,new
+IBM-00101,2021-07-20 05:40:15,IBM | Societe Generale,rating,,Hold,2021-07-20 05:40:15,new
+IBM-00102,2021-07-20 06:56:22,IBM | Citigroup,price_target_usd,,150.00,2021-07-20 06:56:22,new
+IBM-00102,2021-07-20 06:56:22,IBM | Citigroup,rating,,Neutral,2021-07-20 06:56:22,new
+IBM-00103,2021-07-20 09:14:00,IBM | Morgan Stanley,price_target_usd,,164.00,2021-07-20 09:14:00,new
+IBM-00103,2021-07-20 09:14:00,IBM | Morgan Stanley,rating,,Equal-Weight,2021-07-20 09:14:00,corroborate
+IBM-00104,2021-10-01 06:07:00,IBM | Jefferies,price_target_usd,,170.00,2021-10-01 06:07:00,new
+IBM-00104,2021-10-01 06:07:00,IBM | Jefferies,rating,,Buy,2021-10-01 06:07:00,new
+IBM-00105,2021-10-05 07:31:39,IBM | Credit Suisse,price_target_usd,,176.00,2021-10-05 07:31:39,new
+IBM-00105,2021-10-05 07:31:39,IBM | Credit Suisse,rating,,Outperform,2021-10-05 07:31:39,corroborate
+IBM-00106,2021-10-21 07:02:26,IBM | Credit Suisse,price_target_usd,,172.0,2021-10-21 07:02:26,new
+IBM-00106,2021-10-21 07:02:26,IBM | Credit Suisse,rating,,Outperform,2021-10-21 07:02:26,corroborate
+IBM-00107,2021-11-04 06:00:00,IBM,split_ratio,,1.046,2021-11-04 00:00:00,event
+IBM-00108,2022-01-10 07:41:16,IBM | Goldman Sachs,price_target_usd,,,2022-01-10 07:41:16,new
+IBM-00108,2022-01-10 07:41:16,IBM | Goldman Sachs,rating,,Neutral,2022-01-10 07:41:16,new
+IBM-00109,2022-01-11 06:10:00,IBM | UBS,price_target_usd,,124.00,2022-01-11 06:10:00,new
+IBM-00109,2022-01-11 06:10:00,IBM | UBS,rating,,Sell,2022-01-11 06:10:00,new
+IBM-00110,2022-01-25 07:37:17,IBM | BMO Capital,price_target_usd,,155.00,2022-01-25 07:37:17,new
+IBM-00110,2022-01-25 07:37:17,IBM | BMO Capital,rating,,Market Perform,2022-01-25 07:37:17,corroborate
+IBM-00111,2022-04-13 09:45:45,IBM | BMO Capital,price_target_usd,,148.0,2022-04-13 09:45:45,new
+IBM-00111,2022-04-13 09:45:45,IBM | BMO Capital,rating,,Market Perform,2022-04-13 09:45:45,corroborate
+IBM-00112,2022-04-14 08:11:24,IBM | Morgan Stanley,price_target_usd,,150.00,2022-04-14 08:11:24,new
+IBM-00112,2022-04-14 08:11:24,IBM | Morgan Stanley,rating,,Overweight,2022-04-14 08:11:24,new
+IBM-00113,2022-04-20 07:05:17,IBM | B of A Securities,price_target_usd,,165.00,2022-04-20 07:05:17,new
+IBM-00113,2022-04-20 07:05:17,IBM | B of A Securities,rating,,Buy,2022-04-20 07:05:17,new
+IBM-00114,2022-04-20 07:13:02,IBM | Credit Suisse,price_target_usd,,166.00,2022-04-20 07:13:02,new
+IBM-00114,2022-04-20 07:13:02,IBM | Credit Suisse,rating,,Outperform,2022-04-20 07:13:02,corroborate
+IBM-00115,2022-04-20 07:17:34,IBM | BMO Capital,price_target_usd,,152.00,2022-04-20 07:17:34,new
+IBM-00115,2022-04-20 07:17:34,IBM | BMO Capital,rating,,Market Perform,2022-04-20 07:17:34,corroborate
+IBM-00116,2022-04-20 07:52:00,IBM | Morgan Stanley,price_target_usd,,157.00,2022-04-20 07:52:00,new
+IBM-00116,2022-04-20 07:52:00,IBM | Morgan Stanley,rating,,Overweight,2022-04-20 07:52:00,corroborate
+IBM-00117,2022-04-21 05:43:35,IBM | Tigress Financial,price_target_usd,,139.00,2022-04-21 05:43:35,new
+IBM-00117,2022-04-21 05:43:35,IBM | Tigress Financial,rating,,Neutral,2022-04-21 05:43:35,new
+IBM-00118,2022-07-19 07:32:45,IBM | BMO Capital,price_target_usd,,148.00,2022-07-19 07:32:45,new
+IBM-00118,2022-07-19 07:32:45,IBM | BMO Capital,rating,,Market Perform,2022-07-19 07:32:45,corroborate
+IBM-00119,2022-07-19 07:35:35,IBM | Morgan Stanley,price_target_usd,,155.00,2022-07-19 07:35:35,new
+IBM-00119,2022-07-19 07:35:35,IBM | Morgan Stanley,rating,,Overweight,2022-07-19 07:35:35,corroborate
+IBM-00120,2022-07-20 06:58:49,IBM | Credit Suisse,price_target_usd,,156.00,2022-07-20 06:58:49,new
+IBM-00120,2022-07-20 06:58:49,IBM | Credit Suisse,rating,,Outperform,2022-07-20 06:58:49,corroborate
+IBM-00121,2022-10-06 08:26:30,IBM | Morgan Stanley,price_target_usd,,152.00,2022-10-06 08:26:30,new
+IBM-00121,2022-10-06 08:26:30,IBM | Morgan Stanley,rating,,Overweight,2022-10-06 08:26:30,corroborate
+IBM-00122,2022-10-17 07:07:44,IBM | Stifel,price_target_usd,,140.00,2022-10-17 07:07:44,new
+IBM-00122,2022-10-17 07:07:44,IBM | Stifel,rating,,Buy,2022-10-17 07:07:44,corroborate
+IBM-00123,2022-10-20 08:16:18,IBM | Credit Suisse,price_target_usd,,155.00,2022-10-20 08:16:18,new
+IBM-00123,2022-10-20 08:16:18,IBM | Credit Suisse,rating,,Outperform,2022-10-20 08:16:18,corroborate
+IBM-00124,2023-01-18 05:14:11,IBM | Morgan Stanley,price_target_usd,,148.00,2023-01-18 05:14:11,new
+IBM-00124,2023-01-18 05:14:11,IBM | Morgan Stanley,rating,,Equal-Weight,2023-01-18 05:14:11,new
+IBM-00125,2023-01-19 08:52:08,IBM | MoffettNathanson,price_target_usd,,140.00,2023-01-19 08:52:08,new
+IBM-00125,2023-01-19 08:52:08,IBM | MoffettNathanson,rating,,Market Perform,2023-01-19 08:52:08,new
+IBM-00126,2023-01-23 09:27:32,IBM | Stifel,price_target_usd,,158.00,2023-01-23 09:27:32,new
+IBM-00126,2023-01-23 09:27:32,IBM | Stifel,rating,,Buy,2023-01-23 09:27:32,corroborate
+IBM-00127,2023-01-26 07:38:35,IBM | BMO Capital,price_target_usd,,155.00,2023-01-26 07:38:35,new
+IBM-00127,2023-01-26 07:38:35,IBM | BMO Capital,rating,,Market Perform,2023-01-26 07:38:35,corroborate
+IBM-00128,2023-01-26 09:22:59,IBM | Citigroup,price_target_usd,,145.00,2023-01-26 09:22:59,new
+IBM-00128,2023-01-26 09:22:59,IBM | Citigroup,rating,,Neutral,2023-01-26 09:22:59,corroborate
+IBM-00129,2023-02-06 06:00:25,IBM | Edward Jones,price_target_usd,,,2023-02-06 06:00:25,new
+IBM-00129,2023-02-06 06:00:25,IBM | Edward Jones,rating,,Hold,2023-02-06 06:00:25,new
+IBM-00130,2023-04-13 06:36:48,IBM | Credit Suisse,price_target_usd,,162.00,2023-04-13 06:36:48,new
+IBM-00130,2023-04-13 06:36:48,IBM | Credit Suisse,rating,,Outperform,2023-04-13 06:36:48,corroborate
+IBM-00131,2023-04-20 07:54:52,IBM | Morgan Stanley,price_target_usd,,135.00,2023-04-20 07:54:52,new
+IBM-00131,2023-04-20 07:54:52,IBM | Morgan Stanley,rating,,Equal-Weight,2023-04-20 07:54:52,corroborate
+IBM-00132,2023-04-20 09:12:41,IBM | Stifel,price_target_usd,,140.00,2023-04-20 09:12:41,new
+IBM-00132,2023-04-20 09:12:41,IBM | Stifel,rating,,Buy,2023-04-20 09:12:41,corroborate
+IBM-00133,2023-04-20 09:18:09,IBM | Evercore ISI Group,price_target_usd,,140.00,2023-04-20 09:18:09,new
+IBM-00133,2023-04-20 09:18:09,IBM | Evercore ISI Group,rating,,In-Line,2023-04-20 09:18:09,new
+IBM-00134,2023-04-20 09:42:34,IBM | BMO Capital,price_target_usd,,145.00,2023-04-20 09:42:34,new
+IBM-00134,2023-04-20 09:42:34,IBM | BMO Capital,rating,,Market Perform,2023-04-20 09:42:34,corroborate
+IBM-00135,2023-04-27 08:17:36,IBM | Wedbush,price_target_usd,,140.00,2023-04-27 08:17:36,new
+IBM-00135,2023-04-27 08:17:36,IBM | Wedbush,rating,,Neutral,2023-04-27 08:17:36,corroborate
+IBM-00136,2023-06-26 12:45:49,IBM | Credit Suisse,price_target_usd,,162.00,2023-06-26 12:45:49,corroborate
+IBM-00136,2023-06-26 12:45:49,IBM | Credit Suisse,rating,,Outperform,2023-06-26 12:45:49,corroborate
+IBM-00137,2023-07-07 05:32:58,IBM | JP Morgan,price_target_usd,,145.00,2023-07-07 05:32:58,new
+IBM-00137,2023-07-07 05:32:58,IBM | JP Morgan,rating,,Neutral,2023-07-07 05:32:58,new
+IBM-00138,2023-07-11 07:36:04,IBM | Credit Suisse,price_target_usd,,162.00,2023-07-11 07:36:04,corroborate
+IBM-00138,2023-07-11 07:36:04,IBM | Credit Suisse,rating,,Outperform,2023-07-11 07:36:04,corroborate
+IBM-00139,2023-07-12 09:25:00,IBM | Morgan Stanley,price_target_usd,,135.00,2023-07-12 09:25:00,corroborate
+IBM-00139,2023-07-12 09:25:00,IBM | Morgan Stanley,rating,,Equal-Weight,2023-07-12 09:25:00,corroborate
+IBM-00140,2023-07-17 08:02:49,IBM | BMO Capital,price_target_usd,,150.00,2023-07-17 08:02:49,new
+IBM-00140,2023-07-17 08:02:49,IBM | BMO Capital,rating,,Market Perform,2023-07-17 08:02:49,corroborate
+IBM-00141,2023-07-20 08:00:06,IBM | BMO Capital,price_target_usd,,152.00,2023-07-20 08:00:06,new
+IBM-00141,2023-07-20 08:00:06,IBM | BMO Capital,rating,,Market Perform,2023-07-20 08:00:06,corroborate
+IBM-00142,2023-07-20 08:27:46,IBM | Wedbush,price_target_usd,,140.00,2023-07-20 08:27:46,corroborate
+IBM-00142,2023-07-20 08:27:46,IBM | Wedbush,rating,,Neutral,2023-07-20 08:27:46,corroborate
+IBM-00143,2023-07-20 09:18:20,IBM | Morgan Stanley,price_target_usd,,135.00,2023-07-20 09:18:20,corroborate
+IBM-00143,2023-07-20 09:18:20,IBM | Morgan Stanley,rating,,Equal-Weight,2023-07-20 09:18:20,corroborate
+IBM-00144,2023-07-20 10:38:04,IBM | Stifel,price_target_usd,,144.00,2023-07-20 10:38:04,new
+IBM-00144,2023-07-20 10:38:04,IBM | Stifel,rating,,Buy,2023-07-20 10:38:04,corroborate
+IBM-00145,2023-07-20 12:12:12,IBM | B of A Securities,price_target_usd,,160.00,2023-07-20 12:12:12,new
+IBM-00145,2023-07-20 12:12:12,IBM | B of A Securities,rating,,Buy,2023-07-20 12:12:12,corroborate
+IBM-00146,2023-09-20 06:13:19,IBM | RBC Capital,price_target_usd,,188.00,2023-09-20 06:13:19,new
+IBM-00146,2023-09-20 06:13:19,IBM | RBC Capital,rating,,Outperform,2023-09-20 06:13:19,new
+IBM-00147,2023-10-17 10:22:30,IBM | Morgan Stanley,price_target_usd,,130.00,2023-10-17 10:22:30,new
+IBM-00147,2023-10-17 10:22:30,IBM | Morgan Stanley,rating,,Equal-Weight,2023-10-17 10:22:30,corroborate
+IBM-00148,2023-10-26 09:20:33,IBM | Wedbush,price_target_usd,,140.00,2023-10-26 09:20:33,corroborate
+IBM-00148,2023-10-26 09:20:33,IBM | Wedbush,rating,,Neutral,2023-10-26 09:20:33,corroborate
+IBM-00149,2023-10-26 10:22:29,IBM | BMO Capital,price_target_usd,,155.00,2023-10-26 10:22:29,new
+IBM-00149,2023-10-26 10:22:29,IBM | BMO Capital,rating,,Market Perform,2023-10-26 10:22:29,corroborate
+IBM-00150,2023-10-26 13:22:55,IBM | RBC Capital,price_target_usd,,179.00,2023-10-26 13:22:55,new
+IBM-00150,2023-10-26 13:22:55,IBM | RBC Capital,rating,,Outperform,2023-10-26 13:22:55,corroborate
+IBM-00151,2023-11-13 09:03:06,IBM | Wedbush,price_target_usd,,140.00,2023-11-13 09:03:06,corroborate
+IBM-00151,2023-11-13 09:03:06,IBM | Wedbush,rating,,Neutral,2023-11-13 09:03:06,corroborate
+IBM-00152,2024-01-05 07:09:19,IBM | Societe Generale,price_target_usd,,143.00,2024-01-05 07:09:19,new
+IBM-00152,2024-01-05 07:09:19,IBM | Societe Generale,rating,,Sell,2024-01-05 07:09:19,new
+IBM-00153,2024-01-05 07:33:44,IBM | Jefferies,price_target_usd,,180.00,2024-01-05 07:33:44,new
+IBM-00153,2024-01-05 07:33:44,IBM | Jefferies,rating,,Hold,2024-01-05 07:33:44,new
+IBM-00154,2024-01-19 07:29:46,IBM | Evercore ISI Group,price_target_usd,,200.00,2024-01-19 07:29:46,new
+IBM-00154,2024-01-19 07:29:46,IBM | Evercore ISI Group,rating,,Outperform,2024-01-19 07:29:46,new
+IBM-00155,2024-01-22 15:28:57,IBM | Stifel,price_target_usd,,183.00,2024-01-22 15:28:57,new
+IBM-00155,2024-01-22 15:28:57,IBM | Stifel,rating,,Buy,2024-01-22 15:28:57,corroborate
+IBM-00156,2024-01-25 09:51:58,IBM | Stifel,price_target_usd,,190.00,2024-01-25 09:51:58,new
+IBM-00156,2024-01-25 09:51:58,IBM | Stifel,rating,,Buy,2024-01-25 09:51:58,corroborate
+IBM-00157,2024-01-25 09:58:56,IBM | BMO Capital,price_target_usd,,210.00,2024-01-25 09:58:56,new
+IBM-00157,2024-01-25 09:58:56,IBM | BMO Capital,rating,,Market Perform,2024-01-25 09:58:56,corroborate
+IBM-00158,2024-01-25 11:28:23,IBM | RBC Capital,price_target_usd,,200.00,2024-01-25 11:28:23,new
+IBM-00158,2024-01-25 11:28:23,IBM | RBC Capital,rating,,Outperform,2024-01-25 11:28:23,corroborate
+IBM-00159,2024-03-07 05:46:50,IBM | Bernstein,price_target_usd,,186.00,2024-03-07 05:46:50,new
+IBM-00159,2024-03-07 05:46:50,IBM | Bernstein,rating,,Market Perform,2024-03-07 05:46:50,new
+IBM-00160,2024-03-14 08:09:05,IBM | B of A Securities,price_target_usd,,220.00,2024-03-14 08:09:05,new
+IBM-00160,2024-03-14 08:09:05,IBM | B of A Securities,rating,,Buy,2024-03-14 08:09:05,corroborate
+IBM-00161,2024-04-17 13:24:45,IBM | Stifel,price_target_usd,,190.00,2024-04-17 13:24:45,corroborate
+IBM-00161,2024-04-17 13:24:45,IBM | Stifel,rating,,Buy,2024-04-17 13:24:45,corroborate
+IBM-00162,2024-04-22 14:42:55,IBM | UBS,price_target_usd,,130.00,2024-04-22 14:42:55,new
+IBM-00162,2024-04-22 14:42:55,IBM | UBS,rating,,Sell,2024-04-22 14:42:55,corroborate
+IBM-00163,2024-04-23 11:03:24,IBM | Jefferies,price_target_usd,,210.00,2024-04-23 11:03:24,new
+IBM-00163,2024-04-23 11:03:24,IBM | Jefferies,rating,,Hold,2024-04-23 11:03:24,corroborate
+IBM-00164,2024-04-25 08:39:24,IBM | Jefferies,price_target_usd,,190.00,2024-04-25 08:39:24,new
+IBM-00164,2024-04-25 08:39:24,IBM | Jefferies,rating,,Hold,2024-04-25 08:39:24,corroborate
+IBM-00165,2024-04-25 08:40:43,IBM | Wedbush,price_target_usd,,160.00,2024-04-25 08:40:43,new
+IBM-00165,2024-04-25 08:40:43,IBM | Wedbush,rating,,Neutral,2024-04-25 08:40:43,corroborate
+IBM-00166,2024-04-25 12:27:55,IBM | BMO Capital,price_target_usd,,190.00,2024-04-25 12:27:55,new
+IBM-00166,2024-04-25 12:27:55,IBM | BMO Capital,rating,,Market Perform,2024-04-25 12:27:55,corroborate
+IBM-00167,2024-04-25 13:41:47,IBM | JP Morgan,price_target_usd,,185.00,2024-04-25 13:41:47,new
+IBM-00167,2024-04-25 13:41:47,IBM | JP Morgan,rating,,Neutral,2024-04-25 13:41:47,corroborate
+IBM-00168,2024-04-26 12:44:37,IBM | Morgan Stanley,price_target_usd,,179.00,2024-04-26 12:44:37,new
+IBM-00168,2024-04-26 12:44:37,IBM | Morgan Stanley,rating,,Equal-Weight,2024-04-26 12:44:37,corroborate
+IBM-00169,2024-05-02 07:18:48,IBM | Exane BNP Paribas,price_target_usd,,145.00,2024-05-02 07:18:48,new
+IBM-00169,2024-05-02 07:18:48,IBM | Exane BNP Paribas,rating,,Underperform,2024-05-02 07:18:48,new
+IBM-00170,2024-05-16 12:33:39,IBM | RBC Capital,price_target_usd,,200.00,2024-05-16 12:33:39,corroborate
+IBM-00170,2024-05-16 12:33:39,IBM | RBC Capital,rating,,Outperform,2024-05-16 12:33:39,corroborate
+IBM-00171,2024-05-16 13:46:34,IBM | Stifel,price_target_usd,,190.00,2024-05-16 13:46:34,corroborate
+IBM-00171,2024-05-16 13:46:34,IBM | Stifel,rating,,Buy,2024-05-16 13:46:34,corroborate
+IBM-00172,2024-05-22 10:13:29,IBM | RBC Capital,price_target_usd,,200.00,2024-05-22 10:13:29,corroborate
+IBM-00172,2024-05-22 10:13:29,IBM | RBC Capital,rating,,Outperform,2024-05-22 10:13:29,corroborate
+IBM-00173,2024-06-24 05:15:51,IBM | Goldman Sachs,price_target_usd,,200.00,2024-06-24 05:15:51,new
+IBM-00173,2024-06-24 05:15:51,IBM | Goldman Sachs,rating,,Buy,2024-06-24 05:15:51,new
+IBM-00174,2024-07-25 09:59:54,IBM | Stifel,price_target_usd,,205.00,2024-07-25 09:59:54,new
+IBM-00174,2024-07-25 09:59:54,IBM | Stifel,rating,,Buy,2024-07-25 09:59:54,corroborate
+IBM-00175,2024-07-25 11:58:56,IBM | BMO Capital,price_target_usd,,210.00,2024-07-25 11:58:56,new
+IBM-00175,2024-07-25 11:58:56,IBM | BMO Capital,rating,,Market Perform,2024-07-25 11:58:56,corroborate
+IBM-00176,2024-07-25 12:05:55,IBM | Jefferies,price_target_usd,,200.00,2024-07-25 12:05:55,new
+IBM-00176,2024-07-25 12:05:55,IBM | Jefferies,rating,,Hold,2024-07-25 12:05:55,corroborate
+IBM-00177,2024-07-25 12:43:56,IBM | RBC Capital,price_target_usd,,211.00,2024-07-25 12:43:56,new
+IBM-00177,2024-07-25 12:43:56,IBM | RBC Capital,rating,,Outperform,2024-07-25 12:43:56,corroborate
+IBM-00178,2024-09-04 10:12:15,IBM | UBS,price_target_usd,,145.00,2024-09-04 10:12:15,new
+IBM-00178,2024-09-04 10:12:15,IBM | UBS,rating,,Sell,2024-09-04 10:12:15,corroborate
+IBM-00179,2024-09-11 09:44:42,IBM | Evercore ISI Group,price_target_usd,,240.00,2024-09-11 09:44:42,new
+IBM-00179,2024-09-11 09:44:42,IBM | Evercore ISI Group,rating,,Outperform,2024-09-11 09:44:42,corroborate
+IBM-00180,2024-09-30 08:35:11,IBM | Goldman Sachs,price_target_usd,,250.00,2024-09-30 08:35:11,new
+IBM-00180,2024-09-30 08:35:11,IBM | Goldman Sachs,rating,,Buy,2024-09-30 08:35:11,corroborate
+IBM-00181,2024-10-09 13:44:30,IBM | B of A Securities,price_target_usd,,250.00,2024-10-09 13:44:30,new
+IBM-00181,2024-10-09 13:44:30,IBM | B of A Securities,rating,,Buy,2024-10-09 13:44:30,corroborate
+IBM-00182,2024-10-10 12:46:32,IBM | RBC Capital,price_target_usd,,250.00,2024-10-10 12:46:32,new
+IBM-00182,2024-10-10 12:46:32,IBM | RBC Capital,rating,,Outperform,2024-10-10 12:46:32,corroborate
+IBM-00183,2024-10-16 10:04:18,IBM | Stifel,price_target_usd,,246.00,2024-10-16 10:04:18,new
+IBM-00183,2024-10-16 10:04:18,IBM | Stifel,rating,,Buy,2024-10-16 10:04:18,corroborate
+IBM-00184,2024-10-17 10:09:56,IBM | Morgan Stanley,price_target_usd,,217.00,2024-10-17 10:09:56,new
+IBM-00184,2024-10-17 10:09:56,IBM | Morgan Stanley,rating,,Equal-Weight,2024-10-17 10:09:56,corroborate
+IBM-00185,2024-10-21 08:09:11,IBM | Jefferies,price_target_usd,,245.00,2024-10-21 08:09:11,new
+IBM-00185,2024-10-21 08:09:11,IBM | Jefferies,rating,,Hold,2024-10-21 08:09:11,corroborate
+IBM-00186,2024-10-24 09:17:40,IBM | BMO Capital,price_target_usd,,260.00,2024-10-24 09:17:40,new
+IBM-00186,2024-10-24 09:17:40,IBM | BMO Capital,rating,,Market Perform,2024-10-24 09:17:40,corroborate
+IBM-00187,2024-10-24 12:46:50,IBM | Morgan Stanley,price_target_usd,,208.00,2024-10-24 12:46:50,new
+IBM-00187,2024-10-24 12:46:50,IBM | Morgan Stanley,rating,,Equal-Weight,2024-10-24 12:46:50,corroborate
+IBM-00188,2024-10-24 13:17:53,IBM | RBC Capital,price_target_usd,,250.00,2024-10-24 13:17:53,corroborate
+IBM-00188,2024-10-24 13:17:53,IBM | RBC Capital,rating,,Outperform,2024-10-24 13:17:53,corroborate
+IBM-00189,2024-12-16 09:03:38,IBM | Morgan Stanley,price_target_usd,,222.00,2024-12-16 09:03:38,new
+IBM-00189,2024-12-16 09:03:38,IBM | Morgan Stanley,rating,,Equal-Weight,2024-12-16 09:03:38,corroborate
+IBM-00190,2025-01-03 10:33:14,IBM | Bernstein,price_target_usd,,215.00,2025-01-03 10:33:14,new
+IBM-00190,2025-01-03 10:33:14,IBM | Bernstein,rating,,Market Perform,2025-01-03 10:33:14,corroborate
+IBM-00191,2025-01-14 08:34:24,IBM | UBS,price_target_usd,,160.00,2025-01-14 08:34:24,new
+IBM-00191,2025-01-14 08:34:24,IBM | UBS,rating,,Sell,2025-01-14 08:34:24,corroborate
+IBM-00192,2025-01-23 06:37:39,IBM | B of A Securities,price_target_usd,,260.00,2025-01-23 06:37:39,new
+IBM-00192,2025-01-23 06:37:39,IBM | B of A Securities,rating,,Buy,2025-01-23 06:37:39,corroborate
+IBM-00193,2025-01-23 06:55:54,IBM | JP Morgan,price_target_usd,,233.00,2025-01-23 06:55:54,new
+IBM-00193,2025-01-23 06:55:54,IBM | JP Morgan,rating,,Neutral,2025-01-23 06:55:54,corroborate
+IBM-00194,2025-01-27 12:55:45,IBM | RBC Capital,price_target_usd,,250.00,2025-01-27 12:55:45,corroborate
+IBM-00194,2025-01-27 12:55:45,IBM | RBC Capital,rating,,Outperform,2025-01-27 12:55:45,corroborate
+IBM-00195,2025-01-28 12:50:16,IBM | Morgan Stanley,price_target_usd,,217.00,2025-01-28 12:50:16,new
+IBM-00195,2025-01-28 12:50:16,IBM | Morgan Stanley,rating,,Equal-Weight,2025-01-28 12:50:16,corroborate
+IBM-00196,2025-01-30 07:45:48,IBM | Morgan Stanley,price_target_usd,,228.00,2025-01-30 07:45:48,new
+IBM-00196,2025-01-30 07:45:48,IBM | Morgan Stanley,rating,,Equal-Weight,2025-01-30 07:45:48,corroborate
+IBM-00197,2025-01-30 11:46:41,IBM | RBC Capital,price_target_usd,,276.00,2025-01-30 11:46:41,new
+IBM-00197,2025-01-30 11:46:41,IBM | RBC Capital,rating,,Outperform,2025-01-30 11:46:41,corroborate
+IBM-00198,2025-01-30 12:03:46,IBM | BMO Capital,price_target_usd,,280.00,2025-01-30 12:03:46,new
+IBM-00198,2025-01-30 12:03:46,IBM | BMO Capital,rating,,Market Perform,2025-01-30 12:03:46,corroborate
+IBM-00199,2025-01-30 12:20:20,IBM | B of A Securities,price_target_usd,,270.00,2025-01-30 12:20:20,new
+IBM-00199,2025-01-30 12:20:20,IBM | B of A Securities,rating,,Buy,2025-01-30 12:20:20,corroborate
+IBM-00200,2025-01-30 16:30:29,IBM | Jefferies,price_target_usd,,270.00,2025-01-30 16:30:29,new
+IBM-00200,2025-01-30 16:30:29,IBM | Jefferies,rating,,Hold,2025-01-30 16:30:29,corroborate
+IBM-00201,2025-01-30 16:45:55,IBM | JP Morgan,price_target_usd,,244.00,2025-01-30 16:45:55,new
+IBM-00201,2025-01-30 16:45:55,IBM | JP Morgan,rating,,Neutral,2025-01-30 16:45:55,corroborate
+IBM-00202,2025-02-11 09:01:49,IBM | Oppenheimer,price_target_usd,,320.00,2025-02-11 09:01:49,new
+IBM-00202,2025-02-11 09:01:49,IBM | Oppenheimer,rating,,Outperform,2025-02-11 09:01:49,new
+IBM-00203,2025-03-31 09:32:20,IBM | Jefferies,price_target_usd,,265.00,2025-03-31 09:32:20,new
+IBM-00203,2025-03-31 09:32:20,IBM | Jefferies,rating,,Hold,2025-03-31 09:32:20,corroborate
+IBM-00204,2025-04-14 10:45:43,IBM | RBC Capital,price_target_usd,,276.00,2025-04-14 10:45:43,corroborate
+IBM-00204,2025-04-14 10:45:43,IBM | RBC Capital,rating,,Outperform,2025-04-14 10:45:43,corroborate
+IBM-00205,2025-04-24 12:07:50,IBM | Wedbush,price_target_usd,,300.00,2025-04-24 12:07:50,new
+IBM-00205,2025-04-24 12:07:50,IBM | Wedbush,rating,,Outperform,2025-04-24 12:07:50,corroborate
+IBM-00206,2025-04-24 12:52:32,IBM | Morgan Stanley,price_target_usd,,233.00,2025-04-24 12:52:32,new
+IBM-00206,2025-04-24 12:52:32,IBM | Morgan Stanley,rating,,Equal-Weight,2025-04-24 12:52:32,corroborate
+IBM-00207,2025-04-24 13:05:13,IBM | UBS,price_target_usd,,170.00,2025-04-24 13:05:13,new
+IBM-00207,2025-04-24 13:05:13,IBM | UBS,rating,,Sell,2025-04-24 13:05:13,corroborate
+IBM-00208,2025-05-07 12:14:05,IBM | Wedbush,price_target_usd,,300.00,2025-05-07 12:14:05,corroborate
+IBM-00208,2025-05-07 12:14:05,IBM | Wedbush,rating,,Outperform,2025-05-07 12:14:05,corroborate
+IBM-00209,2025-05-15 12:42:16,IBM | RBC Capital,price_target_usd,,285.00,2025-05-15 12:42:16,new
+IBM-00209,2025-05-15 12:42:16,IBM | RBC Capital,rating,,Outperform,2025-05-15 12:42:16,corroborate
+IBM-00210,2025-06-09 10:23:07,IBM | B of A Securities,price_target_usd,,290.00,2025-06-09 10:23:07,new
+IBM-00210,2025-06-09 10:23:07,IBM | B of A Securities,rating,,Buy,2025-06-09 10:23:07,corroborate
+IBM-00211,2025-06-18 09:54:21,IBM | B of A Securities,price_target_usd,,320.00,2025-06-18 09:54:21,new
+IBM-00211,2025-06-18 09:54:21,IBM | B of A Securities,rating,,Buy,2025-06-18 09:54:21,corroborate
+IBM-00212,2025-06-20 08:10:50,IBM | Wedbush,price_target_usd,,325.00,2025-06-20 08:10:50,new
+IBM-00212,2025-06-20 08:10:50,IBM | Wedbush,rating,,Outperform,2025-06-20 08:10:50,corroborate
+IBM-00213,2025-07-02 13:31:39,IBM | Goldman Sachs,price_target_usd,,310.00,2025-07-02 13:31:39,new
+IBM-00213,2025-07-02 13:31:39,IBM | Goldman Sachs,rating,,Buy,2025-07-02 13:31:39,corroborate
+IBM-00214,2025-07-09 10:48:35,IBM | UBS,price_target_usd,,195.00,2025-07-09 10:48:35,new
+IBM-00214,2025-07-09 10:48:35,IBM | UBS,rating,,Sell,2025-07-09 10:48:35,corroborate
+IBM-00215,2025-07-16 10:46:53,IBM | Stifel,price_target_usd,,310.00,2025-07-16 10:46:53,new
+IBM-00215,2025-07-16 10:46:53,IBM | Stifel,rating,,Buy,2025-07-16 10:46:53,corroborate
+IBM-00216,2025-07-17 09:48:07,IBM | RBC Capital,price_target_usd,,315.00,2025-07-17 09:48:07,new
+IBM-00216,2025-07-17 09:48:07,IBM | RBC Capital,rating,,Outperform,2025-07-17 09:48:07,corroborate
+IBM-00217,2025-07-18 07:04:53,IBM | BMO Capital,price_target_usd,,300.00,2025-07-18 07:04:53,new
+IBM-00217,2025-07-18 07:04:53,IBM | BMO Capital,rating,,Market Perform,2025-07-18 07:04:53,corroborate
+IBM-00218,2025-07-24 08:36:29,IBM | B of A Securities,price_target_usd,,310.00,2025-07-24 08:36:29,new
+IBM-00218,2025-07-24 08:36:29,IBM | B of A Securities,rating,,Buy,2025-07-24 08:36:29,corroborate
+IBM-00219,2025-07-24 10:22:54,IBM | JP Morgan,price_target_usd,,290.00,2025-07-24 10:22:54,new
+IBM-00219,2025-07-24 10:22:54,IBM | JP Morgan,rating,,Neutral,2025-07-24 10:22:54,corroborate
+IBM-00220,2025-07-24 10:54:34,IBM | UBS,price_target_usd,,200.00,2025-07-24 10:54:34,new
+IBM-00220,2025-07-24 10:54:34,IBM | UBS,rating,,Sell,2025-07-24 10:54:34,corroborate
+IBM-00221,2025-09-16 09:50:44,IBM | Bernstein,price_target_usd,,280.00,2025-09-16 09:50:44,new
+IBM-00221,2025-09-16 09:50:44,IBM | Bernstein,rating,,Market Perform,2025-09-16 09:50:44,new
+IBM-00222,2025-10-15 09:03:01,IBM | Morgan Stanley,price_target_usd,,256.00,2025-10-15 09:03:01,new
+IBM-00222,2025-10-15 09:03:01,IBM | Morgan Stanley,rating,,Equal-Weight,2025-10-15 09:03:01,corroborate
+IBM-00223,2025-10-16 09:48:49,IBM | RBC Capital,price_target_usd,,315.00,2025-10-16 09:48:49,corroborate
+IBM-00223,2025-10-16 09:48:49,IBM | RBC Capital,rating,,Outperform,2025-10-16 09:48:49,corroborate
+IBM-00224,2025-10-21 07:21:50,IBM | Jefferies,price_target_usd,,300.00,2025-10-21 07:21:50,new
+IBM-00224,2025-10-21 07:21:50,IBM | Jefferies,rating,,Hold,2025-10-21 07:21:50,corroborate
+IBM-00225,2025-10-23 07:14:09,IBM | B of A Securities,price_target_usd,,315.00,2025-10-23 07:14:09,new
+IBM-00225,2025-10-23 07:14:09,IBM | B of A Securities,rating,,Buy,2025-10-23 07:14:09,corroborate
+IBM-00226,2025-10-23 08:27:56,IBM | BMO Capital,price_target_usd,,305.00,2025-10-23 08:27:56,new
+IBM-00226,2025-10-23 08:27:56,IBM | BMO Capital,rating,,Market Perform,2025-10-23 08:27:56,corroborate
+IBM-00227,2025-10-23 09:30:32,IBM | RBC Capital,price_target_usd,,300.00,2025-10-23 09:30:32,new
+IBM-00227,2025-10-23 09:30:32,IBM | RBC Capital,rating,,Outperform,2025-10-23 09:30:32,corroborate
+IBM-00228,2025-10-23 09:39:17,IBM | Stifel,price_target_usd,,295.00,2025-10-23 09:39:17,new
+IBM-00228,2025-10-23 09:39:17,IBM | Stifel,rating,,Buy,2025-10-23 09:39:17,corroborate
+IBM-00229,2025-10-23 13:55:14,IBM | Morgan Stanley,price_target_usd,,252.00,2025-10-23 13:55:14,new
+IBM-00229,2025-10-23 13:55:14,IBM | Morgan Stanley,rating,,Equal-Weight,2025-10-23 13:55:14,corroborate
+IBM-00230,2025-10-23 17:19:04,IBM | UBS,price_target_usd,,210.00,2025-10-23 17:19:04,new
+IBM-00230,2025-10-23 17:19:04,IBM | UBS,rating,,Sell,2025-10-23 17:19:04,corroborate
+IBM-00231,2025-11-21 07:25:01,IBM | Oppenheimer,price_target_usd,,360.00,2025-11-21 07:25:01,new
+IBM-00231,2025-11-21 07:25:01,IBM | Oppenheimer,rating,,Outperform,2025-11-21 07:25:01,new
+IBM-00232,2025-12-09 08:57:41,IBM | Stifel,price_target_usd,,325.00,2025-12-09 08:57:41,new
+IBM-00232,2025-12-09 08:57:41,IBM | Stifel,rating,,Buy,2025-12-09 08:57:41,corroborate
+IBM-00233,2026-01-05 07:17:38,IBM | Jefferies,price_target_usd,,360.00,2026-01-05 07:17:38,new
+IBM-00233,2026-01-05 07:17:38,IBM | Jefferies,rating,,Buy,2026-01-05 07:17:38,new
+IBM-00234,2026-01-05 09:30:49,IBM | RBC Capital,price_target_usd,,350.00,2026-01-05 09:30:49,new
+IBM-00234,2026-01-05 09:30:49,IBM | RBC Capital,rating,,Outperform,2026-01-05 09:30:49,corroborate
+IBM-00235,2026-01-13 07:48:34,IBM | B of A Securities,price_target_usd,,335.00,2026-01-13 07:48:34,new
+IBM-00235,2026-01-13 07:48:34,IBM | B of A Securities,rating,,Buy,2026-01-13 07:48:34,corroborate
+IBM-00236,2026-01-20 07:25:22,IBM | Evercore ISI Group,price_target_usd,,330.00,2026-01-20 07:25:22,new
+IBM-00236,2026-01-20 07:25:22,IBM | Evercore ISI Group,rating,,Outperform,2026-01-20 07:25:22,corroborate
+IBM-00237,2026-01-21 10:53:13,IBM | JP Morgan,price_target_usd,,312.00,2026-01-21 10:53:13,new
+IBM-00237,2026-01-21 10:53:13,IBM | JP Morgan,rating,,Neutral,2026-01-21 10:53:13,corroborate
+IBM-00238,2026-01-29 08:57:39,IBM | Evercore ISI Group,price_target_usd,,345.00,2026-01-29 08:57:39,new
+IBM-00238,2026-01-29 08:57:39,IBM | Evercore ISI Group,rating,,Outperform,2026-01-29 08:57:39,corroborate
+IBM-00239,2026-01-29 10:12:24,IBM | Wedbush,price_target_usd,,340.00,2026-01-29 10:12:24,new
+IBM-00239,2026-01-29 10:12:24,IBM | Wedbush,rating,,Outperform,2026-01-29 10:12:24,corroborate
+IBM-00240,2026-01-29 10:29:04,IBM | Stifel,price_target_usd,,340.00,2026-01-29 10:29:04,new
+IBM-00240,2026-01-29 10:29:04,IBM | Stifel,rating,,Buy,2026-01-29 10:29:04,corroborate
+IBM-00241,2026-01-29 10:51:08,IBM | RBC Capital,price_target_usd,,361.00,2026-01-29 10:51:08,new
+IBM-00241,2026-01-29 10:51:08,IBM | RBC Capital,rating,,Outperform,2026-01-29 10:51:08,corroborate
+IBM-00242,2026-01-29 16:25:36,IBM | JP Morgan,price_target_usd,,317.00,2026-01-29 16:25:36,new
+IBM-00242,2026-01-29 16:25:36,IBM | JP Morgan,rating,,Neutral,2026-01-29 16:25:36,corroborate
+IBM-00243,2026-01-29 16:27:55,IBM | UBS,price_target_usd,,236.00,2026-01-29 16:27:55,new
+IBM-00243,2026-01-29 16:27:55,IBM | UBS,rating,,Sell,2026-01-29 16:27:55,corroborate
+IBM-00244,2026-01-29 16:29:56,IBM | Jefferies,price_target_usd,,370.00,2026-01-29 16:29:56,new
+IBM-00244,2026-01-29 16:29:56,IBM | Jefferies,rating,,Buy,2026-01-29 16:29:56,corroborate
+IBM-00245,2026-02-25 07:51:49,IBM | UBS,price_target_usd,,236.00,2026-02-25 07:51:49,new
+IBM-00245,2026-02-25 07:51:49,IBM | UBS,rating,,Neutral,2026-02-25 07:51:49,new
+IBM-00246,2026-02-25 08:33:27,IBM | Wedbush,price_target_usd,,340.00,2026-02-25 08:33:27,corroborate
+IBM-00246,2026-02-25 08:33:27,IBM | Wedbush,rating,,Outperform,2026-02-25 08:33:27,corroborate
+IBM-00247,2026-02-25 10:42:18,IBM | Morgan Stanley,price_target_usd,,247.00,2026-02-25 10:42:18,new
+IBM-00247,2026-02-25 10:42:18,IBM | Morgan Stanley,rating,,Equal-Weight,2026-02-25 10:42:18,corroborate
+IBM-00248,2026-03-18 11:30:24,IBM | JP Morgan,price_target_usd,,283.00,2026-03-18 11:30:24,new
+IBM-00248,2026-03-18 11:30:24,IBM | JP Morgan,rating,,Neutral,2026-03-18 11:30:24,corroborate
+IBM-00249,2026-03-19 08:18:13,IBM | BMO Capital,price_target_usd,,290.00,2026-03-19 08:18:13,new
+IBM-00249,2026-03-19 08:18:13,IBM | BMO Capital,rating,,Market Perform,2026-03-19 08:18:13,corroborate
+IBM-00250,2026-04-08 10:36:36,IBM | Stifel,price_target_usd,,290.00,2026-04-08 10:36:36,new
+IBM-00250,2026-04-08 10:36:36,IBM | Stifel,rating,,Buy,2026-04-08 10:36:36,corroborate
+IBM-00251,2026-04-16 12:51:00,IBM | Oppenheimer,price_target_usd,,320.00,2026-04-16 12:51:00,new
+IBM-00251,2026-04-16 12:51:00,IBM | Oppenheimer,rating,,Outperform,2026-04-16 12:51:00,corroborate
+IBM-00252,2026-04-17 09:01:32,IBM | Wedbush,price_target_usd,,340.00,2026-04-17 09:01:32,corroborate
+IBM-00252,2026-04-17 09:01:32,IBM | Wedbush,rating,,Outperform,2026-04-17 09:01:32,corroborate
+IBM-00253,2026-04-17 09:39:33,IBM | RBC Capital,price_target_usd,,330.00,2026-04-17 09:39:33,new
+IBM-00253,2026-04-17 09:39:33,IBM | RBC Capital,rating,,Outperform,2026-04-17 09:39:33,corroborate
+IBM-00254,2026-04-20 12:59:30,IBM | Jefferies,price_target_usd,,320.00,2026-04-20 12:59:30,new
+IBM-00254,2026-04-20 12:59:30,IBM | Jefferies,rating,,Buy,2026-04-20 12:59:30,corroborate
+IBM-00255,2026-04-23 09:05:34,IBM | BMO Capital,price_target_usd,,270.00,2026-04-23 09:05:34,new
+IBM-00255,2026-04-23 09:05:34,IBM | BMO Capital,rating,,Market Perform,2026-04-23 09:05:34,corroborate
+IBM-00256,2026-04-23 09:16:51,IBM | Morgan Stanley,price_target_usd,,225.00,2026-04-23 09:16:51,new
+IBM-00256,2026-04-23 09:16:51,IBM | Morgan Stanley,rating,,Equal-Weight,2026-04-23 09:16:51,corroborate
+IBM-00257,2026-04-23 10:34:06,IBM | Evercore ISI Group,price_target_usd,,310.00,2026-04-23 10:34:06,new
+IBM-00257,2026-04-23 10:34:06,IBM | Evercore ISI Group,rating,,Outperform,2026-04-23 10:34:06,corroborate
+IBM-00258,2026-04-23 10:56:32,IBM | Wedbush,price_target_usd,,320.00,2026-04-23 10:56:32,new
+IBM-00258,2026-04-23 10:56:32,IBM | Wedbush,rating,,Outperform,2026-04-23 10:56:32,corroborate
+IBM-00259,2026-04-28 11:27:05,IBM | HSBC,price_target_usd,,231.00,2026-04-28 11:27:05,new
+IBM-00259,2026-04-28 11:27:05,IBM | HSBC,rating,,Hold,2026-04-28 11:27:05,new
+IBM-00260,2026-05-06 08:50:55,IBM | Wedbush,price_target_usd,,320.00,2026-05-06 08:50:55,corroborate
+IBM-00260,2026-05-06 08:50:55,IBM | Wedbush,rating,,Outperform,2026-05-06 08:50:55,corroborate
+IBM-00261,2026-05-06 11:32:01,IBM | RBC Capital,price_target_usd,,300.00,2026-05-06 11:32:01,new
+IBM-00261,2026-05-06 11:32:01,IBM | RBC Capital,rating,,Outperform,2026-05-06 11:32:01,corroborate
+IBM-00262,2026-05-29 09:48:58,IBM | Wedbush,price_target_usd,,320.00,2026-05-29 09:48:58,corroborate
+IBM-00262,2026-05-29 09:48:58,IBM | Wedbush,rating,,Outperform,2026-05-29 09:48:58,corroborate
+IBM-00263,2026-06-01 09:20:03,IBM | Barclays,price_target_usd,,350.00,2026-06-01 09:20:03,new
+IBM-00263,2026-06-01 09:20:03,IBM | Barclays,rating,,Overweight,2026-06-01 09:20:03,new
+IBM-00264,2026-06-03 14:07:28,IBM | Citigroup,price_target_usd,,375.00,2026-06-03 14:07:28,new
+IBM-00264,2026-06-03 14:07:28,IBM | Citigroup,rating,,Buy,2026-06-03 14:07:28,corroborate
+IBM-00265,2026-06-23 07:50:11,IBM | JP Morgan,price_target_usd,,291.00,2026-06-23 07:50:11,new
+IBM-00265,2026-06-23 07:50:11,IBM | JP Morgan,rating,,Overweight,2026-06-23 07:50:11,new
+IBM-00266,2026-06-23 13:07:01,IBM | Morgan Stanley,price_target_usd,,267.00,2026-06-23 13:07:01,new
+IBM-00266,2026-06-23 13:07:01,IBM | Morgan Stanley,rating,,Equal-Weight,2026-06-23 13:07:01,new
+IBM-00267,2026-07-06 06:49:38,IBM | B of A Securities,price_target_usd,,330.00,2026-07-06 06:49:38,new
+IBM-00267,2026-07-06 06:49:38,IBM | B of A Securities,rating,,Buy,2026-07-06 06:49:38,corroborate
+IBM-00268,2026-07-10 07:53:21,IBM | Susquehanna,price_target_usd,,303.00,2026-07-10 07:53:21,new
+IBM-00268,2026-07-10 07:53:21,IBM | Susquehanna,rating,,Neutral,2026-07-10 07:53:21,new
+IBM-00269,2026-07-14 08:02:25,IBM | Morgan Stanley,price_target_usd,,293.00,2026-07-14 08:02:25,new
+IBM-00269,2026-07-14 08:02:25,IBM | Morgan Stanley,rating,,Equal-Weight,2026-07-14 08:02:25,new
+IBM-00270,2026-07-14 09:04:58,IBM | Oppenheimer,price_target_usd,,350.00,2026-07-14 09:04:58,new
+IBM-00270,2026-07-14 09:04:58,IBM | Oppenheimer,rating,,Outperform,2026-07-14 09:04:58,corroborate
+IBM-00271,2026-07-14 10:46:54,IBM | HSBC,price_target_usd,,191.00,2026-07-14 10:46:54,new
+IBM-00271,2026-07-14 10:46:54,IBM | HSBC,rating,,Reduce,2026-07-14 10:46:54,new
+IBM-00272,2026-07-16 09:49:09,IBM | Evercore ISI Group,price_target_usd,,250.00,2026-07-16 09:49:09,new
+IBM-00272,2026-07-16 09:49:09,IBM | Evercore ISI Group,rating,,Outperform,2026-07-16 09:49:09,corroborate
+IBM-00273,2026-07-16 11:38:58,IBM | Argus Research,price_target_usd,,280.00,2026-07-16 11:38:58,new
+IBM-00273,2026-07-16 11:38:58,IBM | Argus Research,rating,,Buy,2026-07-16 11:38:58,new
+IBM-00274,2026-07-17 11:14:37,IBM | JP Morgan,price_target_usd,,250.00,2026-07-17 11:14:37,new
+IBM-00274,2026-07-17 11:14:37,IBM | JP Morgan,rating,,Overweight,2026-07-17 11:14:37,corroborate
+IBM-00275,2026-07-17 14:37:14,IBM | Citigroup,price_target_usd,,255.00,2026-07-17 14:37:14,new
+IBM-00275,2026-07-17 14:37:14,IBM | Citigroup,rating,,Buy,2026-07-17 14:37:14,corroborate
+IBM-00276,2026-07-20 11:16:21,IBM | Stifel,price_target_usd,,235.00,2026-07-20 11:16:21,new
+IBM-00276,2026-07-20 11:16:21,IBM | Stifel,rating,,Buy,2026-07-20 11:16:21,corroborate
+IBM-00277,2026-07-21 08:06:07,IBM | Jefferies,price_target_usd,,260.0,2026-07-21 08:06:07,new
+IBM-00277,2026-07-21 08:06:07,IBM | Jefferies,rating,,Buy,2026-07-21 08:06:07,corroborate
+IBM-00278,2026-07-21 09:18:46,IBM | Barclays,price_target_usd,,288.00,2026-07-21 09:18:46,new
+IBM-00278,2026-07-21 09:18:46,IBM | Barclays,rating,,Overweight,2026-07-21 09:18:46,corroborate
+IBM-00279,2026-07-22 05:25:27,IBM | Baird,price_target_usd,,230.00,2026-07-22 05:25:27,new
+IBM-00279,2026-07-22 05:25:27,IBM | Baird,rating,,Neutral,2026-07-22 05:25:27,new
+IBM-00280,2026-07-23 10:21:01,IBM | Barclays,price_target_usd,,262.00,2026-07-23 10:21:01,new
+IBM-00280,2026-07-23 10:21:01,IBM | Barclays,rating,,Overweight,2026-07-23 10:21:01,corroborate
+IBM-00281,2026-07-23 11:58:42,IBM | RBC Capital,price_target_usd,,270.00,2026-07-23 11:58:42,new
+IBM-00281,2026-07-23 11:58:42,IBM | RBC Capital,rating,,Outperform,2026-07-23 11:58:42,corroborate
+IBM-00282,2026-07-23 13:05:30,IBM | BMO Capital,price_target_usd,,230.00,2026-07-23 13:05:30,new
+IBM-00282,2026-07-23 13:05:30,IBM | BMO Capital,rating,,Market Perform,2026-07-23 13:05:30,corroborate
+IBM-00283,2026-07-23 13:39:56,IBM | Morgan Stanley,price_target_usd,,190.00,2026-07-23 13:39:56,new
+IBM-00283,2026-07-23 13:39:56,IBM | Morgan Stanley,rating,,Equal-Weight,2026-07-23 13:39:56,new
+IBM-00284,2026-07-24 10:03:17,IBM | Susquehanna,price_target_usd,,225.00,2026-07-24 10:03:17,new
+IBM-00284,2026-07-24 10:03:17,IBM | Susquehanna,rating,,Neutral,2026-07-24 10:03:17,corroborate
+IBM-00285,2026-07-24 14:53:41,IBM | Citigroup,price_target_usd,,245.00,2026-07-24 14:53:41,new
+IBM-00285,2026-07-24 14:53:41,IBM | Citigroup,rating,,Buy,2026-07-24 14:53:41,corroborate
+IBM-00286,2026-08-31 09:53:37,IBM | Susquehanna,price_target_usd,,235.00,2026-08-31 09:53:37,new
+IBM-00286,2026-08-31 09:53:37,IBM | Susquehanna,rating,,Neutral,2026-08-31 09:53:37,corroborate
+IBM-00287,2026-10-09 07:22:54,IBM | Truist Securities,price_target_usd,,240.00,2026-10-09 07:22:54,new
+IBM-00287,2026-10-09 07:22:54,IBM | Truist Securities,rating,,Hold,2026-10-09 07:22:54,new
+IBM-00288,2026-10-13 10:16:54,IBM | RBC Capital,price_target_usd,,270.00,2026-10-13 10:16:54,corroborate
+IBM-00288,2026-10-13 10:16:54,IBM | RBC Capital,rating,,Outperform,2026-10-13 10:16:54,corroborate
+IBM-00289,2026-10-15 12:48:39,IBM | Morgan Stanley,price_target_usd,,238.00,2026-10-15 12:48:39,new
+IBM-00289,2026-10-15 12:48:39,IBM | Morgan Stanley,rating,,Equal-Weight,2026-10-15 12:48:39,new
+IBM-00290,2026-10-22 07:33:38,IBM | Baird,price_target_usd,,260.00,2026-10-22 07:33:38,new
+IBM-00290,2026-10-22 07:33:38,IBM | Baird,rating,,Neutral,2026-10-22 07:33:38,corroborate
+IBM-00291,2026-10-22 08:31:35,IBM | Susquehanna,price_target_usd,,256.00,2026-10-22 08:31:35,new
+IBM-00291,2026-10-22 08:31:35,IBM | Susquehanna,rating,,Neutral,2026-10-22 08:31:35,corroborate
+IBM-00292,2026-10-22 08:51:59,IBM | Stifel,price_target_usd,,260.00,2026-10-22 08:51:59,new
+IBM-00292,2026-10-22 08:51:59,IBM | Stifel,rating,,Buy,2026-10-22 08:51:59,corroborate
+IBM-00293,2026-10-22 09:47:32,IBM | JP Morgan,price_target_usd,,269.00,2026-10-22 09:47:32,new
+IBM-00293,2026-10-22 09:47:32,IBM | JP Morgan,rating,,Overweight,2026-10-22 09:47:32,corroborate
+IBM-00294,2026-10-22 11:55:19,IBM | RBC Capital,price_target_usd,,270.00,2026-10-22 11:55:19,corroborate
+IBM-00294,2026-10-22 11:55:19,IBM | RBC Capital,rating,,Outperform,2026-10-22 11:55:19,corroborate
+IBM-00295,2026-10-22 11:56:54,IBM | Barclays,price_target_usd,,277.00,2026-10-22 11:56:54,new
+IBM-00295,2026-10-22 11:56:54,IBM | Barclays,rating,,Overweight,2026-10-22 11:56:54,corroborate
+IBM-00296,2026-10-22 13:24:13,IBM | BMO Capital,price_target_usd,,265.00,2026-10-22 13:24:13,new
+IBM-00296,2026-10-22 13:24:13,IBM | BMO Capital,rating,,Market Perform,2026-10-22 13:24:13,corroborate
+IBM-00297,2026-10-22 13:35:05,IBM | Morgan Stanley,price_target_usd,,240.00,2026-10-22 13:35:05,new
+IBM-00297,2026-10-22 13:35:05,IBM | Morgan Stanley,rating,,Equal-Weight,2026-10-22 13:35:05,new
+IBM-00298,2026-10-22 15:08:16,IBM | Citigroup,price_target_usd,,280.00,2026-10-22 15:08:16,new
+IBM-00298,2026-10-22 15:08:16,IBM | Citigroup,rating,,Buy,2026-10-22 15:08:16,corroborate
+IBM-00299,2026-10-22 15:43:11,IBM | UBS,price_target_usd,,243.00,2026-10-22 15:43:11,new
+IBM-00299,2026-10-22 15:43:11,IBM | UBS,rating,,Neutral,2026-10-22 15:43:11,corroborate
+IBM-00300,2026-10-22 16:29:33,IBM | Jefferies,price_target_usd,,280.00,2026-10-22 16:29:33,new
+IBM-00300,2026-10-22 16:29:33,IBM | Jefferies,rating,,Buy,2026-10-22 16:29:33,corroborate

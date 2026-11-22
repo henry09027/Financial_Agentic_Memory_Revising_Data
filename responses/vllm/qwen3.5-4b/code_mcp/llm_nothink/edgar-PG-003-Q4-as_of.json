@@ -1,0 +1,79 @@
+{
+ "qid": "edgar-PG-003-Q4-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "PG",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2022-10-19 02:46:00",
+ "question": "What was the year-over-year revenue growth (percent) of PROCTER & GAMBLE Co's most recently reported fiscal quarter (three-month figures)?",
+ "gold": "7.024",
+ "peek_answers": "1.347|-0.859|3.976",
+ "trap_answers": "6.122",
+ "gold_evidence": "PG-00102|PG-00100",
+ "answer": "5.1",
+ "cited": "PG-00105|PG-00104",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 10865,
+ "out_tokens": 323,
+ "seconds": 0.5333,
+ "n_dropped": 0,
+ "n_sql": 4,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 5,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'PG | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%2022%' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'PG | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%2021%' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'PG | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%2021-07-01..2021%' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'PG | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%2020-07-01..2021%' \\nORDER BY learned_at DESC \\nLIMIT 10\"]",
+ "created": "2026-11-22T02:02:32",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2022-10-19 02:46:00\nQuestion: What was the year-over-year revenue growth (percent) of PROCTER & GAMBLE Co's most recently reported fiscal quarter (three-month figures)?\n\nDatabase contents at the as-of time: 60 facts, 60 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'PG | Revenues': value_usd_m (60)\nkind values: 'corroborate', 'new', 'revision'\nmost recently learned periods: '2021-07-01..2022-06-30', '2020-07-01..2021-06-30', '2019-07-01..2020-06-30', '2022-01-01..2022-03-31', '2021-07-01..2022-03-31', '2021-01-01..2021-03-31', '2020-07-01..2021-03-31', '2021-10-01..2021-12-31'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PG | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2022%' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-07-01..2022-06-30,80187.0,2022-08-05 20:21:50,2022-08-05 20:21:50,new,PG-00105\n2021-07-01..2022-03-31,60672.0,2022-04-20 20:16:34,2022-04-20 20:16:34,new,PG-00101\n2022-01-01..2022-03-31,19381.0,2022-04-20 20:16:34,2022-04-20 20:16:34,new,PG-00102\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2021%' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2020-07-01..2021-06-30,76118.0,2022-08-05 20:21:50,2022-08-05 20:21:50,corroborate,PG-00104\n2021-07-01..2022-06-30,80187.0,2022-08-05 20:21:50,2022-08-05 20:21:50,new,PG-00105\n2020-07-01..2021-03-31,57172.0,2022-04-20 20:16:34,2022-04-20 20:16:34,corroborate,PG-00099\n2021-01-01..2021-03-31,18109.0,2022-04-20 20:16:34,2022-04-20 20:16:34,corroborate,PG-00100\n2021-07-01..2022-03-31,60672.0,2022-04-20 20:16:34,2022-04-20 20:16:34,new,PG-00101\n2021-07-01..2021-12-31,41291.0,2022-01-19 21:17:41,2022-01-19 21:17:41,new,PG-00097\n2021-10-01..2021-12-31,20953.0,2022-01-19 21:17:41,2022-01-19 21:17:41,revision,PG-00098\n2021-07-01..2021-09-30,20338.0,2021-10-19 20:27:06,2021-10-19 20:27:06,new,PG-00094\n2020-07-01..2021-06-30,76118.0,2021-08-06 20:19:59,2021-08-06 20:19:59,new,PG-00092\n2020-07-01..2021-03-31,57172.0,2021-04-20 20:25:09,2021-04-20 20:25:09,new,PG-00088\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2021-07-01..2021%' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-07-01..2021-12-31,41291.0,2022-01-19 21:17:41,2022-01-19 21:17:41,new,PG-00097\n2021-07-01..2021-09-30,20338.0,2021-10-19 20:27:06,2021-10-19 20:27:06,new,PG-00094\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2020-07-01..2021%' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2020-07-01..2021-06-30,76118.0,2022-08-05 20:21:50,2022-08-05 20:21:50,corroborate,PG-00104\n2020-07-01..2021-03-31,57172.0,2022-04-20 20:16:34,2022-04-20 20:16:34,corroborate,PG-00099\n2020-07-01..2021-06-30,76118.0,2021-08-06 20:19:59,2021-08-06 20:19:59,new,PG-00092\n2020-07-01..2021-03-31,57172.0,2021-04-20 20:25:09,2021-04-20 20:25:09,new,PG-00088\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 5.1, \"evidence_ids\": [\"PG-00105\", \"PG-00104\"]}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2022%' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2021%' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2021-07-01..2021%' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'PG | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%2020-07-01..2021%' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```json\n{\"answer\": 5.1, \"evidence_ids\": [\"PG-00105\", \"PG-00104\"]}\n```"
+}

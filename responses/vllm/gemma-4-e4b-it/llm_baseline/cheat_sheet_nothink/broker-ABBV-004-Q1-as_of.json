@@ -1,0 +1,43 @@
+{
+ "qid": "broker-ABBV-004-Q1-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "broker",
+ "entity": "ABBV",
+ "qtype": "consensus",
+ "mode": "as_of",
+ "as_of": "2026-08-09 05:42:00",
+ "question": "What is the consensus (median) price target for ABBV across active brokers, in US dollars?",
+ "gold": "280",
+ "peek_answers": "300",
+ "trap_answers": "260",
+ "gold_evidence": "ABBV-00347|ABBV-00339|ABBV-00341|ABBV-00349|ABBV-00348|ABBV-00355|ABBV-00269|ABBV-00358|ABBV-00345|ABBV-00318|ABBV-00311|ABBV-00352|ABBV-00356|ABBV-00343|ABBV-00354|ABBV-00350|ABBV-00360|ABBV-00325|ABBV-00346|ABBV-00357",
+ "answer": "285",
+ "cited": "ABBV-00269|ABBV-00311|ABBV-00318|ABBV-00325|ABBV-00339|ABBV-00341|ABBV-00343|ABBV-00345|ABBV-00346|ABBV-00347|ABBV-00348|ABBV-00349|ABBV-00350|ABBV-00352|ABBV-00354|ABBV-00355|ABBV-00356|ABBV-00357|ABBV-00358|ABBV-00360",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 1972,
+ "out_tokens": 270,
+ "seconds": 0.1294,
+ "n_evidence": 20,
+ "n_dropped": 0,
+ "created": "2026-11-22T04:29:12",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-08-09 05:42:00\nQuestion: What is the consensus (median) price target for ABBV across active brokers, in US dollars?\n\nEvidence:\n[ABBV-00269] 2024-11-15 05:08 | Wolfe Research initiated coverage of ABBV with a Outperform rating and a $205.00 price target.\n[ABBV-00311] 2025-10-17 12:04 | Raymond James reiterated Outperform on ABBV, and raised its price target from $236.00 to $250.00.\n[ABBV-00318] 2025-12-10 06:50 | HSBC upgraded ABBV from Hold to Buy, and raised its price target from $225.00 to $265.00.\n[ABBV-00325] 2026-02-17 06:37 | Freedom Broker maintained Buy on ABBV, and raised its price target from $245.00 to $260.00.\n[ABBV-00339] 2026-05-15 13:18 | Evercore ISI Group maintained Outperform on ABBV, and lowered its price target from $236.00 to $235.00.\n[ABBV-00341] 2026-06-23 12:18 | Piper Sandler reiterated Overweight on ABBV, with a $298.00 price target.\n[ABBV-00343] 2026-07-09 08:27 | JP Morgan maintained Overweight on ABBV, and raised its price target from $260.00 to $280.00.\n[ABBV-00345] 2026-07-10 08:25 | Wells Fargo maintained Overweight on ABBV, and raised its price target from $260.00 to $295.00.\n[ABBV-00346] 2026-07-10 09:18 | RBC Capital maintained Outperform on ABBV, and raised its price target from $260.00 to $280.00.\n[ABBV-00347] 2026-07-10 14:00 | B of A Securities maintained Buy on ABBV, and raised its price target from $234.00 to $276.00.\n[ABBV-00348] 2026-07-13 08:55 | BMO Capital maintained Outperform on ABBV, and raised its price target from $258.00 to $300.00.\n[ABBV-00349] 2026-07-13 14:23 | UBS maintained Neutral on ABBV, and raised its price target from $230.00 to $260.00.\n[ABBV-00350] 2026-07-15 11:15 | Citigroup maintained Neutral on ABBV, and raised its price target from $230.00 to $260.00.\n[ABBV-00352] 2026-07-29 07:48 | Barclays maintained Overweight on ABBV, and raised its price target from $275.00 to $300.00.\n[ABBV-00354] 2026-07-31 08:01 | TD Cowen maintained Buy on ABBV, with a $280.00 price target.\n[ABBV-00355] 2026-08-03 06:57 | Morgan Stanley maintained Overweight on ABBV, and raised its price target from $278.00 to $296.00.\n[ABBV-00356] 2026-08-03 08:45 | Cantor Fitzgerald maintained Overweight on ABBV, and raised its price target from $265.00 to $285.00.\n[ABBV-00357] 2026-08-03 17:17 | Canaccord Genuity maintained Buy on ABBV, and raised its price target from $282.00 to $290.00.\n[ABBV-00358] 2026-08-04 07:47 | Guggenheim maintained Buy on ABBV, and raised its price target from $261.00 to $288.00.\n[ABBV-00360] 2026-08-06 05:49 | Berenberg maintained Buy on ABBV, with a $275.00 price target."
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 285,\n  \"evidence_ids\": [\n    \"ABBV-00269\",\n    \"ABBV-00311\",\n    \"ABBV-00318\",\n    \"ABBV-00325\",\n    \"ABBV-00339\",\n    \"ABBV-00341\",\n    \"ABBV-00343\",\n    \"ABBV-00345\",\n    \"ABBV-00346\",\n    \"ABBV-00347\",\n    \"ABBV-00348\",\n    \"ABBV-00349\",\n    \"ABBV-00350\",\n    \"ABBV-00352\",\n    \"ABBV-00354\",\n    \"ABBV-00355\",\n    \"ABBV-00356\",\n    \"ABBV-00357\",\n    \"ABBV-00358\",\n    \"ABBV-00360\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 285,\n  \"evidence_ids\": [\n    \"ABBV-00269\",\n    \"ABBV-00311\",\n    \"ABBV-00318\",\n    \"ABBV-00325\",\n    \"ABBV-00339\",\n    \"ABBV-00341\",\n    \"ABBV-00343\",\n    \"ABBV-00345\",\n    \"ABBV-00346\",\n    \"ABBV-00347\",\n    \"ABBV-00348\",\n    \"ABBV-00349\",\n    \"ABBV-00350\",\n    \"ABBV-00352\",\n    \"ABBV-00354\",\n    \"ABBV-00355\",\n    \"ABBV-00356\",\n    \"ABBV-00357\",\n    \"ABBV-00358\",\n    \"ABBV-00360\"\n  ]\n}\n```"
+}

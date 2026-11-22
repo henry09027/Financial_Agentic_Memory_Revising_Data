@@ -1,0 +1,359 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+INTC-00449,2024-08-02 10:22:39,INTC | Wedbush,price_target_usd,,25.00,2024-08-02 10:22:39,new
+INTC-00449,2024-08-02 10:22:39,INTC | Wedbush,rating,,Neutral,2024-08-02 10:22:39,new
+INTC-00450,2024-08-02 10:51:54,INTC | Cantor Fitzgerald,price_target_usd,,27.0,2024-08-02 10:51:54,new
+INTC-00450,2024-08-02 10:51:54,INTC | Cantor Fitzgerald,rating,,Neutral,2024-08-02 10:51:54,new
+INTC-00451,2024-08-02 10:58:52,INTC | Barclays,price_target_usd,,25.0,2024-08-02 10:58:52,new
+INTC-00451,2024-08-02 10:58:52,INTC | Barclays,rating,,Equal-Weight,2024-08-02 10:58:52,new
+INTC-00452,2024-08-02 13:18:02,INTC | Roth MKM,price_target_usd,,25.0,2024-08-02 13:18:02,new
+INTC-00452,2024-08-02 13:18:02,INTC | Roth MKM,rating,,Neutral,2024-08-02 13:18:02,new
+INTC-00453,2024-08-02 13:42:24,INTC | UBS,price_target_usd,,32.0,2024-08-02 13:42:24,new
+INTC-00453,2024-08-02 13:42:24,INTC | UBS,rating,,Neutral,2024-08-02 13:42:24,new
+INTC-00454,2024-08-02 13:59:02,INTC | Northland Capital Markets,price_target_usd,,42.0,2024-08-02 13:59:02,new
+INTC-00454,2024-08-02 13:59:02,INTC | Northland Capital Markets,rating,,Outperform,2024-08-02 13:59:02,new
+INTC-00455,2024-08-02 18:41:24,INTC | Rosenblatt,price_target_usd,,17.00,2024-08-02 18:41:24,new
+INTC-00455,2024-08-02 18:41:24,INTC | Rosenblatt,rating,,Sell,2024-08-02 18:41:24,new
+INTC-00456,2024-08-08 05:50:22,INTC | Mizuho,price_target_usd,,22.0,2024-08-08 05:50:22,new
+INTC-00456,2024-08-08 05:50:22,INTC | Mizuho,rating,,Neutral,2024-08-08 05:50:22,new
+INTC-00457,2024-09-23 06:43:11,INTC | Mizuho,rating,,Hold,2024-09-23 06:43:11,corroborate
+INTC-00458,2024-10-03 12:40:00,INTC | Deutsche Bank,price_target_usd,,25.0,2024-10-03 12:40:00,new
+INTC-00458,2024-10-03 12:40:00,INTC | Deutsche Bank,rating,,Hold,2024-10-03 12:40:00,new
+INTC-00459,2024-10-17 12:51:58,INTC | Goldman Sachs,price_target_usd,,21.0,2024-10-17 12:51:58,new
+INTC-00459,2024-10-17 12:51:58,INTC | Goldman Sachs,rating,,Sell,2024-10-17 12:51:58,new
+INTC-00460,2024-10-25 11:24:40,INTC | Stifel,price_target_usd,,25.0,2024-10-25 11:24:40,new
+INTC-00460,2024-10-25 11:24:40,INTC | Stifel,rating,,Hold,2024-10-25 11:24:40,new
+INTC-00461,2024-10-29 10:07:18,INTC | Rosenblatt,rating,,Sell,2024-10-29 10:07:18,corroborate
+INTC-00461,2024-10-29 10:07:18,INTC | Rosenblatt,price_target_usd,,17.0,2024-10-29 10:07:18,corroborate
+INTC-00462,2024-11-01 06:11:49,INTC | Needham,rating,,Hold,2024-11-01 06:11:49,corroborate
+INTC-00463,2024-11-01 07:27:52,INTC | Rosenblatt,price_target_usd,,20.0,2024-11-01 07:27:52,new
+INTC-00464,2024-11-01 07:48:00,INTC | Needham,rating,,Hold,2024-11-01 07:48:00,corroborate
+INTC-00465,2024-11-01 08:51:55,INTC | Baird,price_target_usd,,25.0,2024-11-01 08:51:55,new
+INTC-00465,2024-11-01 08:51:55,INTC | Baird,rating,,Neutral,2024-11-01 08:51:55,new
+INTC-00466,2024-11-01 10:42:45,INTC | Truist Securities,price_target_usd,,26.0,2024-11-01 10:42:45,new
+INTC-00466,2024-11-01 10:42:45,INTC | Truist Securities,rating,,Hold,2024-11-01 10:42:45,new
+INTC-00467,2024-11-01 14:11:14,INTC | Mizuho,price_target_usd,,23.0,2024-11-01 14:11:14,new
+INTC-00467,2024-11-01 14:11:14,INTC | Mizuho,rating,,Neutral,2024-11-01 14:11:14,corroborate
+INTC-00468,2024-11-01 14:41:31,INTC | Northland Capital Markets,price_target_usd,,28.0,2024-11-01 14:41:31,new
+INTC-00469,2024-12-03 12:07:10,INTC | B of A Securities,price_target_usd,,21.0,2024-12-03 12:07:10,new
+INTC-00469,2024-12-03 12:07:10,INTC | B of A Securities,rating,,Underperform,2024-12-03 12:07:10,new
+INTC-00470,2024-12-16 04:58:46,INTC | Truist Securities,price_target_usd,,22.0,2024-12-16 04:58:46,new
+INTC-00471,2025-01-10 12:50:49,INTC | Mizuho,price_target_usd,,21.0,2025-01-10 12:50:49,new
+INTC-00471,2025-01-10 12:50:49,INTC | Mizuho,rating,,Neutral,2025-01-10 12:50:49,corroborate
+INTC-00472,2025-01-17 07:56:17,INTC | Barclays,price_target_usd,,23.0,2025-01-17 07:56:17,new
+INTC-00472,2025-01-17 07:56:17,INTC | Barclays,rating,,Equal-Weight,2025-01-17 07:56:17,corroborate
+INTC-00473,2025-01-21 10:23:25,INTC | Citigroup,price_target_usd,,21.0,2025-01-21 10:23:25,new
+INTC-00473,2025-01-21 10:23:25,INTC | Citigroup,rating,,Neutral,2025-01-21 10:23:25,new
+INTC-00474,2025-01-21 10:54:52,INTC | HSBC,rating,,Hold,2025-01-21 10:54:52,new
+INTC-00475,2025-01-21 13:11:30,INTC | UBS,price_target_usd,,23.0,2025-01-21 13:11:30,new
+INTC-00475,2025-01-21 13:11:30,INTC | UBS,rating,,Neutral,2025-01-21 13:11:30,corroborate
+INTC-00476,2025-01-23 04:55:01,INTC | Susquehanna,price_target_usd,,24.0,2025-01-23 04:55:01,new
+INTC-00476,2025-01-23 04:55:01,INTC | Susquehanna,rating,,Neutral,2025-01-23 04:55:01,new
+INTC-00477,2025-01-27 05:07:13,INTC | Wedbush,price_target_usd,,20.0,2025-01-27 05:07:13,new
+INTC-00477,2025-01-27 05:07:13,INTC | Wedbush,rating,,Neutral,2025-01-27 05:07:13,corroborate
+INTC-00478,2025-01-30 08:07:48,INTC | Rosenblatt,rating,,Sell,2025-01-30 08:07:48,corroborate
+INTC-00478,2025-01-30 08:07:48,INTC | Rosenblatt,price_target_usd,,20.0,2025-01-30 08:07:48,corroborate
+INTC-00479,2025-01-31 04:45:01,INTC | Baird,price_target_usd,,20.0,2025-01-31 04:45:01,new
+INTC-00479,2025-01-31 04:45:01,INTC | Baird,rating,,Neutral,2025-01-31 04:45:01,corroborate
+INTC-00480,2025-01-31 06:23:50,INTC | Roth MKM,price_target_usd,,20.0,2025-01-31 06:23:50,new
+INTC-00480,2025-01-31 06:23:50,INTC | Roth MKM,rating,,Neutral,2025-01-31 06:23:50,corroborate
+INTC-00481,2025-01-31 07:45:40,INTC | Needham,rating,,Hold,2025-01-31 07:45:40,corroborate
+INTC-00482,2025-01-31 08:16:04,INTC | Needham,rating,,Hold,2025-01-31 08:16:04,corroborate
+INTC-00483,2025-01-31 10:31:01,INTC | Cantor Fitzgerald,price_target_usd,,22.0,2025-01-31 10:31:01,corroborate
+INTC-00483,2025-01-31 10:31:01,INTC | Cantor Fitzgerald,rating,,Neutral,2025-01-31 10:31:01,corroborate
+INTC-00484,2025-01-31 10:33:19,INTC | Wells Fargo,price_target_usd,,25.0,2025-01-31 10:33:19,new
+INTC-00484,2025-01-31 10:33:19,INTC | Wells Fargo,rating,,Equal-Weight,2025-01-31 10:33:19,new
+INTC-00485,2025-01-31 10:57:36,INTC | Truist Securities,price_target_usd,,21.0,2025-01-31 10:57:36,new
+INTC-00485,2025-01-31 10:57:36,INTC | Truist Securities,rating,,Hold,2025-01-31 10:57:36,corroborate
+INTC-00486,2025-01-31 11:43:53,INTC | Stifel,price_target_usd,,21.0,2025-01-31 11:43:53,new
+INTC-00487,2025-01-31 13:47:11,INTC | JP Morgan,price_target_usd,,23.0,2025-01-31 13:47:11,new
+INTC-00487,2025-01-31 13:47:11,INTC | JP Morgan,rating,,Underweight,2025-01-31 13:47:11,new
+INTC-00488,2025-02-18 09:04:45,INTC | Cantor Fitzgerald,price_target_usd,,29.0,2025-02-18 09:04:45,new
+INTC-00489,2025-03-13 05:13:59,INTC | B of A Securities,rating,,Neutral,2025-03-13 05:13:59,new
+INTC-00489,2025-03-13 05:13:59,INTC | B of A Securities,price_target_usd,,25.0,2025-03-13 05:13:59,new
+INTC-00490,2025-04-14 13:31:53,INTC | Needham,rating,,Hold,2025-04-14 13:31:53,corroborate
+INTC-00491,2025-04-14 17:51:53,INTC | UBS,price_target_usd,,22.0,2025-04-14 17:51:53,new
+INTC-00491,2025-04-14 17:51:53,INTC | UBS,rating,,Neutral,2025-04-14 17:51:53,corroborate
+INTC-00492,2025-04-16 04:40:25,INTC | B of A Securities,price_target_usd,,23.0,2025-04-16 04:40:25,new
+INTC-00493,2025-04-16 10:15:11,INTC | Susquehanna,price_target_usd,,22.0,2025-04-16 10:15:11,new
+INTC-00494,2025-04-22 11:17:08,INTC | Barclays,price_target_usd,,19.0,2025-04-22 11:17:08,new
+INTC-00494,2025-04-22 11:17:08,INTC | Barclays,rating,,Equal-Weight,2025-04-22 11:17:08,corroborate
+INTC-00495,2025-04-22 13:07:21,INTC | Bernstein,price_target_usd,,21.0,2025-04-22 13:07:21,new
+INTC-00495,2025-04-22 13:07:21,INTC | Bernstein,rating,,Market Perform,2025-04-22 13:07:21,new
+INTC-00496,2025-04-23 10:42:19,INTC | Wedbush,price_target_usd,,19.0,2025-04-23 10:42:19,new
+INTC-00496,2025-04-23 10:42:19,INTC | Wedbush,rating,,Neutral,2025-04-23 10:42:19,corroborate
+INTC-00497,2025-04-25 07:04:53,INTC | Rosenblatt,price_target_usd,,14.0,2025-04-25 07:04:53,new
+INTC-00497,2025-04-25 07:04:53,INTC | Rosenblatt,rating,,Sell,2025-04-25 07:04:53,corroborate
+INTC-00498,2025-04-25 08:05:52,INTC | Benchmark,rating,,Hold,2025-04-25 08:05:52,new
+INTC-00499,2025-04-25 08:09:54,INTC | Needham,rating,,Hold,2025-04-25 08:09:54,corroborate
+INTC-00500,2025-04-25 11:35:37,INTC | UBS,price_target_usd,,21.0,2025-04-25 11:35:37,new
+INTC-00501,2025-04-25 11:57:45,INTC | Morgan Stanley,price_target_usd,,23.0,2025-04-25 11:57:45,new
+INTC-00501,2025-04-25 11:57:45,INTC | Morgan Stanley,rating,,Equal-Weight,2025-04-25 11:57:45,new
+INTC-00502,2025-04-25 17:11:25,INTC | JP Morgan,price_target_usd,,20.0,2025-04-25 17:11:25,new
+INTC-00502,2025-04-25 17:11:25,INTC | JP Morgan,rating,,Underweight,2025-04-25 17:11:25,corroborate
+INTC-00503,2025-04-30 08:03:43,INTC | Rosenblatt,rating,,Sell,2025-04-30 08:03:43,corroborate
+INTC-00503,2025-04-30 08:03:43,INTC | Rosenblatt,price_target_usd,,14.0,2025-04-30 08:03:43,corroborate
+INTC-00504,2025-04-30 09:02:27,INTC | Seaport Global,price_target_usd,,18.0,2025-04-30 09:02:27,new
+INTC-00504,2025-04-30 09:02:27,INTC | Seaport Global,rating,,Sell,2025-04-30 09:02:27,new
+INTC-00505,2025-07-03 08:54:55,INTC | Mizuho,price_target_usd,,23.0,2025-07-03 08:54:55,new
+INTC-00505,2025-07-03 08:54:55,INTC | Mizuho,rating,,Neutral,2025-07-03 08:54:55,corroborate
+INTC-00506,2025-07-07 15:09:04,INTC | Citigroup,price_target_usd,,24.0,2025-07-07 15:09:04,new
+INTC-00506,2025-07-07 15:09:04,INTC | Citigroup,rating,,Neutral,2025-07-07 15:09:04,corroborate
+INTC-00507,2025-07-14 09:29:40,INTC | UBS,price_target_usd,,25.0,2025-07-14 09:29:40,new
+INTC-00508,2025-07-21 08:26:11,INTC | Stifel,price_target_usd,,24.5,2025-07-21 08:26:11,new
+INTC-00509,2025-07-21 18:11:02,INTC | Loop Capital,rating,,Hold,2025-07-21 18:11:02,new
+INTC-00509,2025-07-21 18:11:02,INTC | Loop Capital,price_target_usd,,25.0,2025-07-21 18:11:02,new
+INTC-00510,2025-07-25 06:41:38,INTC | Benchmark,rating,,Hold,2025-07-25 06:41:38,corroborate
+INTC-00511,2025-07-25 06:55:03,INTC | Needham,rating,,Hold,2025-07-25 06:55:03,corroborate
+INTC-00512,2025-07-25 07:19:27,INTC | Rosenblatt,rating,,Sell,2025-07-25 07:19:27,corroborate
+INTC-00512,2025-07-25 07:19:27,INTC | Rosenblatt,price_target_usd,,14.0,2025-07-25 07:19:27,corroborate
+INTC-00513,2025-07-25 17:42:07,INTC | JP Morgan,price_target_usd,,21.0,2025-07-25 17:42:07,new
+INTC-00514,2025-09-19 07:25:24,INTC | Benchmark,rating,,Buy,2025-09-19 07:25:24,new
+INTC-00514,2025-09-19 07:25:24,INTC | Benchmark,price_target_usd,,43.0,2025-09-19 07:25:24,new
+INTC-00515,2025-09-19 08:27:19,INTC | Citigroup,rating,,Sell,2025-09-19 08:27:19,new
+INTC-00515,2025-09-19 08:27:19,INTC | Citigroup,price_target_usd,,29.0,2025-09-19 08:27:19,new
+INTC-00516,2025-09-19 09:24:17,INTC | Barclays,price_target_usd,,25.0,2025-09-19 09:24:17,new
+INTC-00516,2025-09-19 09:24:17,INTC | Barclays,rating,,Equal-Weight,2025-09-19 09:24:17,new
+INTC-00517,2025-09-19 11:10:13,INTC | UBS,price_target_usd,,35.0,2025-09-19 11:10:13,new
+INTC-00517,2025-09-19 11:10:13,INTC | UBS,rating,,Neutral,2025-09-19 11:10:13,corroborate
+INTC-00518,2025-09-25 08:04:45,INTC | Seaport Global,rating,,Neutral,2025-09-25 08:04:45,new
+INTC-00519,2025-09-29 10:23:14,INTC | Deutsche Bank,price_target_usd,,30.0,2025-09-29 10:23:14,new
+INTC-00520,2025-10-06 12:33:43,INTC | UBS,price_target_usd,,40.0,2025-10-06 12:33:43,new
+INTC-00520,2025-10-06 12:33:43,INTC | UBS,rating,,Neutral,2025-10-06 12:33:43,corroborate
+INTC-00521,2025-10-08 08:50:28,INTC | HSBC,price_target_usd,,24.0,2025-10-08 08:50:28,new
+INTC-00521,2025-10-08 08:50:28,INTC | HSBC,rating,,Reduce,2025-10-08 08:50:28,new
+INTC-00522,2025-10-13 14:10:08,INTC | Mizuho,price_target_usd,,39.0,2025-10-13 14:10:08,new
+INTC-00523,2025-10-13 14:19:55,INTC | B of A Securities,rating,,Underperform,2025-10-13 14:19:55,new
+INTC-00523,2025-10-13 14:19:55,INTC | B of A Securities,price_target_usd,,34.0,2025-10-13 14:19:55,new
+INTC-00524,2025-10-16 09:57:01,INTC | Wells Fargo,price_target_usd,,30.0,2025-10-16 09:57:01,new
+INTC-00524,2025-10-16 09:57:01,INTC | Wells Fargo,rating,,Equal-Weight,2025-10-16 09:57:01,corroborate
+INTC-00525,2025-10-20 10:27:23,INTC | Morgan Stanley,price_target_usd,,36.0,2025-10-20 10:27:23,new
+INTC-00525,2025-10-20 10:27:23,INTC | Morgan Stanley,rating,,Equal-Weight,2025-10-20 10:27:23,corroborate
+INTC-00526,2025-10-22 09:18:38,INTC | Wedbush,price_target_usd,,20.0,2025-10-22 09:18:38,new
+INTC-00526,2025-10-22 09:18:38,INTC | Wedbush,rating,,Neutral,2025-10-22 09:18:38,new
+INTC-00527,2025-10-24 05:48:08,INTC | Needham,rating,,Hold,2025-10-24 05:48:08,corroborate
+INTC-00528,2025-10-24 07:30:08,INTC | Rosenblatt,price_target_usd,,25.0,2025-10-24 07:30:08,new
+INTC-00529,2025-10-24 08:20:14,INTC | JP Morgan,price_target_usd,,30.0,2025-10-24 08:20:14,new
+INTC-00529,2025-10-24 08:20:14,INTC | JP Morgan,rating,,Underweight,2025-10-24 08:20:14,corroborate
+INTC-00530,2025-10-24 08:36:52,INTC | Wedbush,price_target_usd,,30.0,2025-10-24 08:36:52,new
+INTC-00530,2025-10-24 08:36:52,INTC | Wedbush,rating,,Neutral,2025-10-24 08:36:52,new
+INTC-00531,2025-10-24 08:38:45,INTC | Morgan Stanley,price_target_usd,,38.0,2025-10-24 08:38:45,new
+INTC-00531,2025-10-24 08:38:45,INTC | Morgan Stanley,rating,,Equal-Weight,2025-10-24 08:38:45,corroborate
+INTC-00532,2025-10-24 09:15:02,INTC | Mizuho,price_target_usd,,41.0,2025-10-24 09:15:02,new
+INTC-00533,2025-10-24 09:39:42,INTC | Cantor Fitzgerald,price_target_usd,,45.0,2025-10-24 09:39:42,new
+INTC-00533,2025-10-24 09:39:42,INTC | Cantor Fitzgerald,rating,,Neutral,2025-10-24 09:39:42,new
+INTC-00534,2025-10-24 10:15:56,INTC | Wells Fargo,price_target_usd,,45.0,2025-10-24 10:15:56,new
+INTC-00535,2025-10-24 11:51:36,INTC | TD Cowen,rating,,Hold,2025-10-24 11:51:36,new
+INTC-00535,2025-10-24 11:51:36,INTC | TD Cowen,price_target_usd,,38.0,2025-10-24 11:51:36,new
+INTC-00536,2025-10-24 14:09:52,INTC | Truist Securities,price_target_usd,,39.0,2025-10-24 14:09:52,new
+INTC-00537,2025-10-27 11:03:12,INTC | Barclays,price_target_usd,,35.0,2025-10-27 11:03:12,new
+INTC-00537,2025-10-27 11:03:12,INTC | Barclays,rating,,Equal-Weight,2025-10-27 11:03:12,new
+INTC-00538,2025-11-04 11:40:53,INTC | Tigress Financial,rating,,Buy,2025-11-04 11:40:53,new
+INTC-00538,2025-11-04 11:40:53,INTC | Tigress Financial,price_target_usd,,52.0,2025-11-04 11:40:53,new
+INTC-00539,2025-12-09 15:42:42,INTC | KGI Securities,rating,,Outperform,2025-12-09 15:42:42,new
+INTC-00539,2025-12-09 15:42:42,INTC | KGI Securities,price_target_usd,,52.0,2025-12-09 15:42:42,new
+INTC-00540,2026-01-05 06:10:48,INTC | Melius Research,rating,,Buy,2026-01-05 06:10:48,new
+INTC-00540,2026-01-05 06:10:48,INTC | Melius Research,price_target_usd,,50.0,2026-01-05 06:10:48,new
+INTC-00541,2026-01-13 07:30:24,INTC | Keybanc,rating,,Overweight,2026-01-13 07:30:24,new
+INTC-00541,2026-01-13 07:30:24,INTC | Keybanc,price_target_usd,,60.0,2026-01-13 07:30:24,new
+INTC-00542,2026-01-14 12:41:05,INTC | UBS,price_target_usd,,49.0,2026-01-14 12:41:05,new
+INTC-00542,2026-01-14 12:41:05,INTC | UBS,rating,,Neutral,2026-01-14 12:41:05,new
+INTC-00543,2026-01-15 05:02:45,INTC | RBC Capital,rating,,Sector Perform,2026-01-15 05:02:45,new
+INTC-00543,2026-01-15 05:02:45,INTC | RBC Capital,price_target_usd,,50.0,2026-01-15 05:02:45,new
+INTC-00544,2026-01-15 14:40:26,INTC | Citigroup,rating,,Neutral,2026-01-15 14:40:26,new
+INTC-00544,2026-01-15 14:40:26,INTC | Citigroup,price_target_usd,,50.0,2026-01-15 14:40:26,new
+INTC-00545,2026-01-16 09:40:36,INTC | Jefferies,price_target_usd,,45.0,2026-01-16 09:40:36,new
+INTC-00545,2026-01-16 09:40:36,INTC | Jefferies,rating,,Hold,2026-01-16 09:40:36,new
+INTC-00546,2026-01-20 05:17:26,INTC | HSBC,rating,,Hold,2026-01-20 05:17:26,new
+INTC-00546,2026-01-20 05:17:26,INTC | HSBC,price_target_usd,,50.0,2026-01-20 05:17:26,new
+INTC-00547,2026-01-20 08:14:14,INTC | Seaport Global,rating,,Buy,2026-01-20 08:14:14,new
+INTC-00547,2026-01-20 08:14:14,INTC | Seaport Global,price_target_usd,,65.0,2026-01-20 08:14:14,new
+INTC-00548,2026-01-20 10:33:57,INTC | Wedbush,price_target_usd,,30.0,2026-01-20 10:33:57,new
+INTC-00548,2026-01-20 10:33:57,INTC | Wedbush,rating,,Neutral,2026-01-20 10:33:57,new
+INTC-00549,2026-01-20 12:10:52,INTC | Susquehanna,price_target_usd,,45.0,2026-01-20 12:10:52,new
+INTC-00550,2026-01-21 10:29:08,INTC | Bernstein,price_target_usd,,36.0,2026-01-21 10:29:08,new
+INTC-00550,2026-01-21 10:29:08,INTC | Bernstein,rating,,Market Perform,2026-01-21 10:29:08,corroborate
+INTC-00551,2026-01-23 07:00:30,INTC | Needham,rating,,Hold,2026-01-23 07:00:30,corroborate
+INTC-00552,2026-01-23 07:15:28,INTC | Benchmark,price_target_usd,,57.0,2026-01-23 07:15:28,new
+INTC-00553,2026-01-23 07:38:24,INTC | Rosenblatt,price_target_usd,,30.0,2026-01-23 07:38:24,new
+INTC-00553,2026-01-23 07:38:24,INTC | Rosenblatt,rating,,Sell,2026-01-23 07:38:24,new
+INTC-00554,2026-01-23 08:23:12,INTC | Keybanc,price_target_usd,,65.0,2026-01-23 08:23:12,new
+INTC-00555,2026-01-23 08:59:15,INTC | Evercore ISI Group,price_target_usd,,45.0,2026-01-23 08:59:15,new
+INTC-00555,2026-01-23 08:59:15,INTC | Evercore ISI Group,rating,,In-Line,2026-01-23 08:59:15,new
+INTC-00556,2026-01-23 09:11:35,INTC | Wedbush,rating,,Neutral,2026-01-23 09:11:35,new
+INTC-00556,2026-01-23 09:11:35,INTC | Wedbush,price_target_usd,,30.0,2026-01-23 09:11:35,new
+INTC-00557,2026-01-23 09:45:19,INTC | Stifel,rating,,Hold,2026-01-23 09:45:19,new
+INTC-00557,2026-01-23 09:45:19,INTC | Stifel,price_target_usd,,42.0,2026-01-23 09:45:19,new
+INTC-00558,2026-01-23 10:20:30,INTC | RBC Capital,price_target_usd,,48.0,2026-01-23 10:20:30,new
+INTC-00559,2026-01-23 10:26:11,INTC | Roth Capital,price_target_usd,,50.0,2026-01-23 10:26:11,new
+INTC-00559,2026-01-23 10:26:11,INTC | Roth Capital,rating,,Neutral,2026-01-23 10:26:11,new
+INTC-00560,2026-01-23 12:32:50,INTC | Morgan Stanley,price_target_usd,,41.0,2026-01-23 12:32:50,new
+INTC-00560,2026-01-23 12:32:50,INTC | Morgan Stanley,rating,,Equal-Weight,2026-01-23 12:32:50,corroborate
+INTC-00561,2026-01-23 13:36:06,INTC | Citigroup,price_target_usd,,48.0,2026-01-23 13:36:06,new
+INTC-00562,2026-01-23 14:24:22,INTC | UBS,price_target_usd,,52.0,2026-01-23 14:24:22,new
+INTC-00562,2026-01-23 14:24:22,INTC | UBS,rating,,Neutral,2026-01-23 14:24:22,new
+INTC-00563,2026-02-13 09:14:17,INTC | DA Davidson,rating,,Neutral,2026-02-13 09:14:17,new
+INTC-00563,2026-02-13 09:14:17,INTC | DA Davidson,price_target_usd,,45.0,2026-02-13 09:14:17,new
+INTC-00564,2026-04-06 08:12:03,INTC | Keybanc,price_target_usd,,70.0,2026-04-06 08:12:03,new
+INTC-00565,2026-04-07 10:17:27,INTC | Wells Fargo,rating,,Equal-Weight,2026-04-07 10:17:27,corroborate
+INTC-00565,2026-04-07 10:17:27,INTC | Wells Fargo,price_target_usd,,55.0,2026-04-07 10:17:27,new
+INTC-00566,2026-04-09 10:16:11,INTC | Cantor Fitzgerald,price_target_usd,,60.0,2026-04-09 10:16:11,new
+INTC-00566,2026-04-09 10:16:11,INTC | Cantor Fitzgerald,rating,,Neutral,2026-04-09 10:16:11,new
+INTC-00567,2026-04-10 11:19:07,INTC | Benchmark,price_target_usd,,76.0,2026-04-10 11:19:07,new
+INTC-00568,2026-04-14 10:48:38,INTC | Susquehanna,price_target_usd,,65.0,2026-04-14 10:48:38,new
+INTC-00568,2026-04-14 10:48:38,INTC | Susquehanna,rating,,Neutral,2026-04-14 10:48:38,corroborate
+INTC-00569,2026-04-16 07:39:00,INTC | Bernstein,price_target_usd,,60.0,2026-04-16 07:39:00,new
+INTC-00569,2026-04-16 07:39:00,INTC | Bernstein,rating,,Market Perform,2026-04-16 07:39:00,corroborate
+INTC-00570,2026-04-20 08:52:24,INTC | Stifel,price_target_usd,,65.0,2026-04-20 08:52:24,new
+INTC-00570,2026-04-20 08:52:24,INTC | Stifel,rating,,Hold,2026-04-20 08:52:24,new
+INTC-00571,2026-04-20 14:59:10,INTC | KGI Securities,rating,,Neutral,2026-04-20 14:59:10,new
+INTC-00571,2026-04-20 14:59:10,INTC | KGI Securities,price_target_usd,,71.0,2026-04-20 14:59:10,new
+INTC-00572,2026-04-21 12:16:27,INTC | HSBC,rating,,Buy,2026-04-21 12:16:27,new
+INTC-00572,2026-04-21 12:16:27,INTC | HSBC,price_target_usd,,95.0,2026-04-21 12:16:27,new
+INTC-00573,2026-04-24 07:57:40,INTC | Rosenblatt,price_target_usd,,50.0,2026-04-24 07:57:40,new
+INTC-00573,2026-04-24 07:57:40,INTC | Rosenblatt,rating,,Sell,2026-04-24 07:57:40,new
+INTC-00574,2026-04-24 08:56:01,INTC | Stifel,price_target_usd,,75.0,2026-04-24 08:56:01,new
+INTC-00574,2026-04-24 08:56:01,INTC | Stifel,rating,,Hold,2026-04-24 08:56:01,new
+INTC-00575,2026-04-24 09:25:52,INTC | Jefferies,price_target_usd,,80.0,2026-04-24 09:25:52,new
+INTC-00576,2026-04-24 09:37:47,INTC | RBC Capital,price_target_usd,,80.0,2026-04-24 09:37:47,new
+INTC-00577,2026-04-24 10:00:19,INTC | Citigroup,rating,,Buy,2026-04-24 10:00:19,new
+INTC-00577,2026-04-24 10:00:19,INTC | Citigroup,price_target_usd,,95.0,2026-04-24 10:00:19,new
+INTC-00578,2026-04-24 10:16:48,INTC | Benchmark,price_target_usd,,105.0,2026-04-24 10:16:48,new
+INTC-00579,2026-04-24 10:29:38,INTC | Cantor Fitzgerald,price_target_usd,,90.0,2026-04-24 10:29:38,new
+INTC-00579,2026-04-24 10:29:38,INTC | Cantor Fitzgerald,rating,,Neutral,2026-04-24 10:29:38,new
+INTC-00580,2026-04-24 11:03:56,INTC | Keybanc,price_target_usd,,110.0,2026-04-24 11:03:56,new
+INTC-00580,2026-04-24 11:03:56,INTC | Keybanc,rating,,Overweight,2026-04-24 11:03:56,corroborate
+INTC-00581,2026-04-24 11:44:10,INTC | Morgan Stanley,rating,,Equal-Weight,2026-04-24 11:44:10,corroborate
+INTC-00581,2026-04-24 11:44:10,INTC | Morgan Stanley,price_target_usd,,73.0,2026-04-24 11:44:10,new
+INTC-00582,2026-04-24 11:51:19,INTC | JP Morgan,price_target_usd,,45.0,2026-04-24 11:51:19,new
+INTC-00582,2026-04-24 11:51:19,INTC | JP Morgan,rating,,Underweight,2026-04-24 11:51:19,corroborate
+INTC-00583,2026-04-24 12:32:32,INTC | TD Cowen,price_target_usd,,75.0,2026-04-24 12:32:32,new
+INTC-00584,2026-04-24 16:11:53,INTC | UBS,price_target_usd,,83.0,2026-04-24 16:11:53,new
+INTC-00584,2026-04-24 16:11:53,INTC | UBS,rating,,Neutral,2026-04-24 16:11:53,new
+INTC-00585,2026-04-24 16:42:28,INTC | Wells Fargo,price_target_usd,,85.0,2026-04-24 16:42:28,new
+INTC-00585,2026-04-24 16:42:28,INTC | Wells Fargo,rating,,Equal-Weight,2026-04-24 16:42:28,corroborate
+INTC-00586,2026-04-27 11:06:27,INTC | Barclays,price_target_usd,,65.0,2026-04-27 11:06:27,new
+INTC-00586,2026-04-27 11:06:27,INTC | Barclays,rating,,Equal-Weight,2026-04-27 11:06:27,new
+INTC-00587,2026-04-28 13:51:47,INTC | Freedom Broker,rating,,Buy,2026-04-28 13:51:47,new
+INTC-00587,2026-04-28 13:51:47,INTC | Freedom Broker,price_target_usd,,100.0,2026-04-28 13:51:47,new
+INTC-00588,2026-04-30 19:39:59,INTC | Tigress Financial,price_target_usd,,118.0,2026-04-30 19:39:59,new
+INTC-00588,2026-04-30 19:39:59,INTC | Tigress Financial,rating,,Buy,2026-04-30 19:39:59,corroborate
+INTC-00589,2026-05-04 11:36:22,INTC | RBC Capital,rating,,Sector Perform,2026-05-04 11:36:22,corroborate
+INTC-00589,2026-05-04 11:36:22,INTC | RBC Capital,price_target_usd,,80.0,2026-05-04 11:36:22,corroborate
+INTC-00590,2026-05-12 08:36:43,INTC | Mizuho,price_target_usd,,124.0,2026-05-12 08:36:43,new
+INTC-00590,2026-05-12 08:36:43,INTC | Mizuho,rating,,Neutral,2026-05-12 08:36:43,new
+INTC-00591,2026-05-18 08:15:32,INTC | Benchmark,price_target_usd,,140.0,2026-05-18 08:15:32,new
+INTC-00592,2026-05-18 13:49:28,INTC | Citigroup,price_target_usd,,130.0,2026-05-18 13:49:28,new
+INTC-00592,2026-05-18 13:49:28,INTC | Citigroup,rating,,Buy,2026-05-18 13:49:28,new
+INTC-00593,2026-06-01 07:49:09,INTC | Mizuho,price_target_usd,,128.0,2026-06-01 07:49:09,new
+INTC-00593,2026-06-01 07:49:09,INTC | Mizuho,rating,,Neutral,2026-06-01 07:49:09,new
+INTC-00594,2026-06-01 11:58:59,INTC | Wells Fargo,price_target_usd,,110.0,2026-06-01 11:58:59,new
+INTC-00595,2026-06-01 14:47:34,INTC | Barclays,price_target_usd,,100.0,2026-06-01 14:47:34,new
+INTC-00595,2026-06-01 14:47:34,INTC | Barclays,rating,,Equal-Weight,2026-06-01 14:47:34,new
+INTC-00596,2026-06-11 06:25:45,INTC | B of A Securities,rating,,Buy,2026-06-11 06:25:45,new
+INTC-00596,2026-06-11 06:25:45,INTC | B of A Securities,price_target_usd,,135.0,2026-06-11 06:25:45,new
+INTC-00597,2026-06-23 08:42:28,INTC | B of A Securities,price_target_usd,,160.0,2026-06-23 08:42:28,new
+INTC-00597,2026-06-23 08:42:28,INTC | B of A Securities,rating,,Buy,2026-06-23 08:42:28,new
+INTC-00598,2026-06-25 05:19:51,INTC | Goldman Sachs,rating,,Neutral,2026-06-25 05:19:51,new
+INTC-00598,2026-06-25 05:19:51,INTC | Goldman Sachs,price_target_usd,,150.0,2026-06-25 05:19:51,new
+INTC-00599,2026-06-29 10:18:06,INTC | Cantor Fitzgerald,price_target_usd,,150.0,2026-06-29 10:18:06,new
+INTC-00599,2026-06-29 10:18:06,INTC | Cantor Fitzgerald,rating,,Neutral,2026-06-29 10:18:06,new
+INTC-00600,2026-07-10 09:15:22,INTC | Stifel,price_target_usd,,120.0,2026-07-10 09:15:22,new
+INTC-00600,2026-07-10 09:15:22,INTC | Stifel,rating,,Hold,2026-07-10 09:15:22,new
+INTC-00601,2026-07-13 13:16:00,INTC | TD Cowen,price_target_usd,,115.0,2026-07-13 13:16:00,new
+INTC-00602,2026-07-13 14:26:29,INTC | UBS,price_target_usd,,121.0,2026-07-13 14:26:29,new
+INTC-00602,2026-07-13 14:26:29,INTC | UBS,rating,,Neutral,2026-07-13 14:26:29,new
+INTC-00603,2026-07-14 07:10:05,INTC | Keybanc,price_target_usd,,155.0,2026-07-14 07:10:05,new
+INTC-00604,2026-07-16 09:44:22,INTC | Susquehanna,price_target_usd,,115.0,2026-07-16 09:44:22,new
+INTC-00605,2026-07-20 14:40:36,INTC | Morgan Stanley,price_target_usd,,75.0,2026-07-20 14:40:36,new
+INTC-00605,2026-07-20 14:40:36,INTC | Morgan Stanley,rating,,Equal-Weight,2026-07-20 14:40:36,corroborate
+INTC-00606,2026-07-23 11:47:50,INTC | Seaport Global,price_target_usd,,125.0,2026-07-23 11:47:50,new
+INTC-00607,2026-07-24 06:59:30,INTC | Mizuho,rating,,Neutral,2026-07-24 06:59:30,new
+INTC-00607,2026-07-24 06:59:30,INTC | Mizuho,price_target_usd,,109.0,2026-07-24 06:59:30,new
+INTC-00608,2026-07-24 07:45:11,INTC | Wells Fargo,price_target_usd,,120.0,2026-07-24 07:45:11,new
+INTC-00609,2026-07-24 08:24:40,INTC | Rosenblatt,price_target_usd,,80.0,2026-07-24 08:24:40,new
+INTC-00609,2026-07-24 08:24:40,INTC | Rosenblatt,rating,,Sell,2026-07-24 08:24:40,new
+INTC-00609,2026-07-24 08:24:40,INTC | Rosenblatt,price_target_usd,,65.0,2026-07-24 08:24:40,inferred
+INTC-00610,2026-07-24 08:26:58,INTC | Cantor Fitzgerald,price_target_usd,,125.0,2026-07-24 08:26:58,new
+INTC-00610,2026-07-24 08:26:58,INTC | Cantor Fitzgerald,rating,,Neutral,2026-07-24 08:26:58,new
+INTC-00611,2026-07-24 08:55:58,INTC | Wedbush,price_target_usd,,98.0,2026-07-24 08:55:58,new
+INTC-00611,2026-07-24 08:55:58,INTC | Wedbush,rating,,Neutral,2026-07-24 08:55:58,new
+INTC-00612,2026-07-24 10:33:25,INTC | Stifel,rating,,Hold,2026-07-24 10:33:25,new
+INTC-00612,2026-07-24 10:33:25,INTC | Stifel,price_target_usd,,110.0,2026-07-24 10:33:25,new
+INTC-00613,2026-07-24 13:43:58,INTC | Roth Capital,price_target_usd,,120.0,2026-07-24 13:43:58,new
+INTC-00614,2026-07-24 13:51:08,INTC | JP Morgan,price_target_usd,,85.0,2026-07-24 13:51:08,new
+INTC-00614,2026-07-24 13:51:08,INTC | JP Morgan,rating,,Underweight,2026-07-24 13:51:08,corroborate
+INTC-00615,2026-07-24 14:03:17,INTC | Truist Securities,rating,,Hold,2026-07-24 14:03:17,new
+INTC-00615,2026-07-24 14:03:17,INTC | Truist Securities,price_target_usd,,108.0,2026-07-24 14:03:17,new
+INTC-00615,2026-07-24 14:03:17,INTC | Truist Securities,price_target_usd,,81.0,2026-07-24 14:03:17,inferred
+INTC-00616,2026-07-24 14:49:32,INTC | Morgan Stanley,price_target_usd,,84.0,2026-07-24 14:49:32,new
+INTC-00616,2026-07-24 14:49:32,INTC | Morgan Stanley,rating,,Equal-Weight,2026-07-24 14:49:32,corroborate
+INTC-00617,2026-07-24 21:45:21,INTC | DA Davidson,price_target_usd,,100.0,2026-07-24 21:45:21,new
+INTC-00618,2026-07-27 08:02:06,INTC | Baird,price_target_usd,,125.0,2026-07-27 08:02:06,new
+INTC-00618,2026-07-27 08:02:06,INTC | Baird,rating,,Neutral,2026-07-27 08:02:06,new
+INTC-00619,2026-07-28 16:47:08,INTC | B of A Securities,rating,,Buy,2026-07-28 16:47:08,new
+INTC-00619,2026-07-28 16:47:08,INTC | B of A Securities,price_target_usd,,160.0,2026-07-28 16:47:08,new
+INTC-00620,2026-08-12 09:39:04,INTC | UBS,price_target_usd,,112.0,2026-08-12 09:39:04,new
+INTC-00620,2026-08-12 09:39:04,INTC | UBS,rating,,Neutral,2026-08-12 09:39:04,new
+INTC-00621,2026-08-12 10:14:39,INTC | B of A Securities,price_target_usd,,145.0,2026-08-12 10:14:39,new
+INTC-00621,2026-08-12 10:14:39,INTC | B of A Securities,rating,,Buy,2026-08-12 10:14:39,new
+INTC-00622,2026-09-04 11:54:55,INTC | Mizuho,rating,,Neutral,2026-09-04 11:54:55,new
+INTC-00622,2026-09-04 11:54:55,INTC | Mizuho,price_target_usd,,92.0,2026-09-04 11:54:55,new
+INTC-00623,2026-09-08 11:24:12,INTC | Northland Capital Markets,rating,,Outperform,2026-09-08 11:24:12,new
+INTC-00623,2026-09-08 11:24:12,INTC | Northland Capital Markets,price_target_usd,,120.0,2026-09-08 11:24:12,new
+INTC-00624,2026-09-10 08:23:25,INTC | Piper Sandler,rating,,Neutral,2026-09-10 08:23:25,new
+INTC-00624,2026-09-10 08:23:25,INTC | Piper Sandler,price_target_usd,,110.0,2026-09-10 08:23:25,new
+INTC-00625,2026-09-15 16:03:14,INTC | Tigress Financial,price_target_usd,,145.0,2026-09-15 16:03:14,new
+INTC-00626,2026-09-24 09:14:59,INTC | TD Cowen,rating,,Hold,2026-09-24 09:14:59,corroborate
+INTC-00626,2026-09-24 09:14:59,INTC | TD Cowen,price_target_usd,,115.0,2026-09-24 09:14:59,corroborate
+INTC-00627,2026-10-06 08:53:47,INTC | Mizuho,price_target_usd,,114.0,2026-10-06 08:53:47,new
+INTC-00627,2026-10-06 08:53:47,INTC | Mizuho,rating,,Neutral,2026-10-06 08:53:47,new
+INTC-00628,2026-10-19 05:25:19,INTC | JP Morgan,rating,,Neutral,2026-10-19 05:25:19,new
+INTC-00628,2026-10-19 05:25:19,INTC | JP Morgan,price_target_usd,,85.0,2026-10-19 05:25:19,new
+INTC-00629,2026-10-19 05:46:08,INTC | TD Cowen,price_target_usd,,95.0,2026-10-19 05:46:08,new
+INTC-00630,2026-10-21 08:45:48,INTC | Susquehanna,price_target_usd,,105.0,2026-10-21 08:45:48,new
+INTC-00630,2026-10-21 08:45:48,INTC | Susquehanna,rating,,Neutral,2026-10-21 08:45:48,corroborate
+INTC-00631,2026-10-26 11:31:04,INTC | New Street Research,rating,,Buy,2026-10-26 11:31:04,new
+INTC-00631,2026-10-26 11:31:04,INTC | New Street Research,price_target_usd,,125.0,2026-10-26 11:31:04,new
+INTC-00632,2026-10-26 12:04:51,INTC | RBC Capital,price_target_usd,,100.0,2026-10-26 12:04:51,corroborate
+INTC-00633,2026-10-27 09:22:12,INTC | Wedbush,rating,,Neutral,2026-10-27 09:22:12,new
+INTC-00633,2026-10-27 09:22:12,INTC | Wedbush,price_target_usd,,98.0,2026-10-27 09:22:12,new
+INTC-00634,2026-10-27 15:56:32,INTC | Rosenblatt,rating,,Sell,2026-10-27 15:56:32,new
+INTC-00634,2026-10-27 15:56:32,INTC | Rosenblatt,price_target_usd,,80.0,2026-10-27 15:56:32,new
+INTC-00635,2026-10-30 05:21:48,INTC | B of A Securities,rating,,Neutral,2026-10-30 05:21:48,new
+INTC-00635,2026-10-30 05:21:48,INTC | B of A Securities,price_target_usd,,100.0,2026-10-30 05:21:48,new
+INTC-00636,2026-10-30 06:24:27,INTC | Roth Capital,rating,,Neutral,2026-10-30 06:24:27,new
+INTC-00636,2026-10-30 06:24:27,INTC | Roth Capital,price_target_usd,,70.0,2026-10-30 06:24:27,new
+INTC-00637,2026-10-30 07:08:16,INTC | Cantor Fitzgerald,price_target_usd,,90.0,2026-10-30 07:08:16,new
+INTC-00637,2026-10-30 07:08:16,INTC | Cantor Fitzgerald,rating,,Neutral,2026-10-30 07:08:16,new
+INTC-00638,2026-10-30 07:53:50,INTC | Needham,rating,,Hold,2026-10-30 07:53:50,corroborate
+INTC-00639,2026-10-30 08:12:50,INTC | KGI Securities,rating,,Outperform,2026-10-30 08:12:50,new
+INTC-00639,2026-10-30 08:12:50,INTC | KGI Securities,price_target_usd,,95.0,2026-10-30 08:12:50,new
+INTC-00640,2026-10-30 08:15:32,INTC | Seaport Global,rating,,Neutral,2026-10-30 08:15:32,new
+INTC-00641,2026-10-30 08:28:14,INTC | Keybanc,price_target_usd,,140.0,2026-10-30 08:28:14,new
+INTC-00641,2026-10-30 08:28:14,INTC | Keybanc,rating,,Overweight,2026-10-30 08:28:14,corroborate
+INTC-00642,2026-10-30 08:36:49,INTC | Evercore ISI Group,price_target_usd,,131.0,2026-10-30 08:36:49,new
+INTC-00643,2026-10-30 09:03:48,INTC | Susquehanna,rating,,Neutral,2026-10-30 09:03:48,new
+INTC-00643,2026-10-30 09:03:48,INTC | Susquehanna,price_target_usd,,75.0,2026-10-30 09:03:48,new
+INTC-00644,2026-10-30 09:46:24,INTC | StoneX,price_target_usd,,100.0,2026-10-30 09:46:24,new
+INTC-00644,2026-10-30 09:46:24,INTC | StoneX,rating,,Buy,2026-10-30 09:46:24,new
+INTC-00645,2026-10-30 12:19:18,INTC | RBC Capital,price_target_usd,,75.0,2026-10-30 12:19:18,new
+INTC-00646,2026-10-30 12:41:24,INTC | Truist Securities,rating,,Hold,2026-10-30 12:41:24,new
+INTC-00646,2026-10-30 12:41:24,INTC | Truist Securities,price_target_usd,,72.0,2026-10-30 12:41:24,new
+INTC-00647,2026-10-30 13:39:50,INTC | Wedbush,price_target_usd,,75.0,2026-10-30 13:39:50,new
+INTC-00647,2026-10-30 13:39:50,INTC | Wedbush,rating,,Neutral,2026-10-30 13:39:50,new
+INTC-00648,2026-10-30 14:39:30,INTC | Wells Fargo,rating,,Equal-Weight,2026-10-30 14:39:30,new
+INTC-00648,2026-10-30 14:39:30,INTC | Wells Fargo,price_target_usd,,80.0,2026-10-30 14:39:30,new
+INTC-00649,2026-10-30 14:57:39,INTC | Rosenblatt,rating,,Sell,2026-10-30 14:57:39,new
+INTC-00649,2026-10-30 14:57:39,INTC | Rosenblatt,price_target_usd,,70.0,2026-10-30 14:57:39,new
+INTC-00650,2026-10-30 15:01:31,INTC | DA Davidson,price_target_usd,,70.0,2026-10-30 15:01:31,new
+INTC-00651,2026-10-30 15:35:54,INTC | TD Cowen,price_target_usd,,75.0,2026-10-30 15:35:54,new
+INTC-00652,2026-10-30 16:50:24,INTC | Citigroup,rating,,Buy,2026-10-30 16:50:24,new
+INTC-00652,2026-10-30 16:50:24,INTC | Citigroup,price_target_usd,,100.0,2026-10-30 16:50:24,new
+INTC-00653,2026-10-30 19:56:46,INTC | JP Morgan,price_target_usd,,80.0,2026-10-30 19:56:46,new
+INTC-00653,2026-10-30 19:56:46,INTC | JP Morgan,rating,,Neutral,2026-10-30 19:56:46,corroborate
+INTC-00654,2026-10-30 21:36:07,INTC | Freedom Broker,rating,,Hold,2026-10-30 21:36:07,new
+INTC-00654,2026-10-30 21:36:07,INTC | Freedom Broker,price_target_usd,,90.0,2026-10-30 21:36:07,new
+INTC-00655,2026-10-30 22:16:59,INTC | UBS,price_target_usd,,80.0,2026-10-30 22:16:59,new
+INTC-00655,2026-10-30 22:16:59,INTC | UBS,rating,,Neutral,2026-10-30 22:16:59,new
+INTC-00656,2026-11-12 12:26:02,INTC | B of A Securities,rating,,Neutral,2026-11-12 12:26:02,new
+INTC-00656,2026-11-12 12:26:02,INTC | B of A Securities,price_target_usd,,80.0,2026-11-12 12:26:02,new

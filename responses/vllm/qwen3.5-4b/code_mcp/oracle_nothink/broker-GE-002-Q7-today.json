@@ -1,0 +1,103 @@
+{
+ "qid": "broker-GE-002-Q7-today",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "broker",
+ "entity": "GE",
+ "qtype": "event_lookup",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "In December 2024, what rating did Wells Fargo move GE to, and what was its new price target (USD)? Answer as 'Rating; target'.",
+ "gold": "Overweight; 225",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "GE-00134",
+ "answer": "Overweight; 380",
+ "cited": "GE-00187",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 17680,
+ "out_tokens": 356,
+ "seconds": 3.0456,
+ "n_dropped": 0,
+ "n_sql": 7,
+ "n_sql_error": 1,
+ "n_sql_empty": 4,
+ "n_turns": 8,
+ "sql": "[\"SELECT evidence_id, text, learned_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December 2024%' AND text LIKE '%rating%' AND text LIKE '%price%' ORDER BY learned_at DESC LIMIT 10\", \"SELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December 2024%' AND text LIKE '%rating%' AND text LIKE '%price%' ORDER BY known_at DESC LIMIT 10\", \"SELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December%' AND text LIKE '%rating%' ORDER BY known_at DESC LIMIT 10\", \"SELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%rating%' ORDER BY known_at DESC LIMIT 10\", \"SELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' ORDER BY known_at DESC LIMIT 20\", \"SELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE' ORDER BY known_at DESC LIMIT 20\", \"SELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE' AND text LIKE '%Wells Fargo%' AND known_at <= '2026-11-20 23:59:59' ORDER BY known_at DESC LIMIT 10\"]",
+ "created": "2026-11-22T02:16:41",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: In December 2024, what rating did Wells Fargo move GE to, and what was its new price target (USD)? Answer as 'Rating; target'.\n\nDatabase contents at the as-of time: 436 facts, 185 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'GE': split_ratio (2)\n  'GE | Argus Research': price_target_usd (3), rating (2)\n  'GE | B of A Securities': price_target_usd (9), rating (6)\n  'GE | BNP Paribas': price_target_usd (1), rating (1)\n  'GE | Barclays': price_target_usd (25), rating (19)\n  'GE | Bernstein': price_target_usd (4), rating (3)\n  'GE | Citigroup': price_target_usd (20), rating (16)\n  'GE | Credit Suisse': price_target_usd (7), rating (5)\n  'GE | Daiwa Capital': price_target_usd (1), rating (1)\n  'GE | Deutsche Bank': price_target_usd (20), rating (12)\n  'GE | Goldman Sachs': price_target_usd (10), rating (6)\n  'GE | JP Morgan': price_target_usd (16), rating (11)\n  'GE | Jefferies': price_target_usd (10), rating (8)\n  'GE | Morgan Stanley': price_target_usd (16), rating (14)\n  'GE | Oppenheimer': price_target_usd (5), rating (6)\n  'GE | RBC Capital': price_target_usd (36), rating (28)\n  'GE | Seaport Global': price_target_usd (1), rating (1)\n  'GE | Susquehanna': price_target_usd (4), rating (3)\n  'GE | TD Cowen': price_target_usd (3), rating (2)\n  'GE | UBS': price_target_usd (24), rating (14)\n  'GE | Vertical Research': price_target_usd (1), rating (1)\n  'GE | Wells Fargo': price_target_usd (34), rating (23)\n  'GE | Wolfe Research': price_target_usd (1), rating (1)\nkind values: 'corroborate', 'event', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'GE | RBC Capital' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text, learned_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December 2024%' AND text LIKE '%rating%' AND text LIKE '%price%' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nSQL error: no such column: learned_at. Tables and columns: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text)"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December 2024%' AND text LIKE '%rating%' AND text LIKE '%price%' ORDER BY known_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,text,known_at\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December%' AND text LIKE '%rating%' ORDER BY known_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,text,known_at\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%rating%' ORDER BY known_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,text,known_at\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' ORDER BY known_at DESC LIMIT 20\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,text,known_at\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE' ORDER BY known_at DESC LIMIT 20\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,text,known_at\nGE-00193,\"UBS maintained Buy on GE, and raised its price target from $377.00 to $380.00.\",2026-10-21 15:17:34\nGE-00192,\"BNP Paribas maintained Underperform on GE, and lowered its price target from $305.00 to $280.00.\",2026-10-21 13:22:17\nGE-00191,\"JP Morgan maintained Overweight on GE, and lowered its price target from $400.00 to $375.00.\",2026-10-21 11:21:05\nGE-00190,\"Susquehanna maintained Positive on GE, and lowered its price target from $430.00 to $400.00.\",2026-10-21 08:44:59\nGE-00189,\"RBC Capital maintained Outperform on GE, and lowered its price target from $400.00 to $375.00.\",2026-10-21 08:35:29\nGE-00188,\"Morgan Stanley maintained Overweight on GE, and lowered its price target from $400.00 to $375.00.\",2026-10-21 07:23:37\nGE-00187,\"Wells Fargo maintained Overweight on GE, and lowered its price target from $390.00 to $380.00.\",2026-09-30 10:56:30\nGE-00186,\"Jefferies maintained Buy on GE, and lowered its price target from $455.00 to $435.00.\",2026-09-23 14:02:03\nGE-00185,\"Bernstein maintained Outperform on GE, and raised its price target from $405.00 to $421.00.\",2026-07-23 15:22:21\nGE-00184,\"JP Morgan maintained Overweight on GE, and raised its price target from $335.00 to $400.00.\",2026-07-20 10:46:07\nGE-00183,\"RBC Capital reiterated Outperform on GE, with a $400.00 price target.\",2026-07-17 09:05:10\nGE-00182,\"UBS maintained Buy on GE, and raised its price target from $426.00 to $435.00.\",2026-07-17 08:43:02\nGE-00181,\"RBC Capital maintained Outperform on GE, and raised its price target from $355.00 to $400.00.\",2026-07-15 11:41:53\nGE-00180,\"TD Cowen maintained Buy on GE, and raised its price target from $330.00 to $380.00.\",2026-07-13 13:00:51\nGE-00179,\"Susquehanna maintained Positive on GE, and raised its price target from $380.00 to $430.00.\",2026-07-09 14:28:03\nGE-00178,\"Jefferies maintained Buy on GE, and raised its price target from $365.00 to $455.00.\",2026-07-02 08:24:54\nGE-00177,\"Citigroup maintained Buy on GE, and raised its price target from $353.00 to $431.00.\",2026-07-01 10:51:59\nGE-00176,Seaport Global initiated coverage of GE with a Buy rating and a $375.00 price target.,2026-05-27 06:19:54\nGE-00175,\"RBC Capital reiterated Outperform on GE, with a $355.00 price target.\",2026-05-20 11:31:32\nGE-00174,\"Jefferies maintained Buy on GE, and lowered its price target from $375.00 to $365.00.\",2026-04-26 14:55:36\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE' AND text LIKE '%Wells Fargo%' AND known_at <= '2026-11-20 23:59:59' ORDER BY known_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nBudget used up. Answer now with the JSON."
+  }
+ ],
+ "final_text": "{\"answer\": \"Overweight; 380\", \"evidence_ids\": [\"GE-00187\"]}",
+ "raw_output": "```sql\nSELECT evidence_id, text, learned_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December 2024%' AND text LIKE '%rating%' AND text LIKE '%price%' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December 2024%' AND text LIKE '%rating%' AND text LIKE '%price%' ORDER BY known_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%December%' AND text LIKE '%rating%' ORDER BY known_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' AND text LIKE '%rating%' ORDER BY known_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE | Wells Fargo' ORDER BY known_at DESC LIMIT 20\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE' ORDER BY known_at DESC LIMIT 20\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text, known_at FROM evidence WHERE entity = 'GE' AND text LIKE '%Wells Fargo%' AND known_at <= '2026-11-20 23:59:59' ORDER BY known_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n{\"answer\": \"Overweight; 380\", \"evidence_ids\": [\"GE-00187\"]}"
+}

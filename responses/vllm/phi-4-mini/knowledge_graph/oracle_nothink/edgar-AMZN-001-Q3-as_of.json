@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-AMZN-001-Q3-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "AMZN",
+ "qtype": "derived_quarter",
+ "mode": "as_of",
+ "as_of": "2019-07-25 02:41:00",
+ "question": "What was AMAZON.COM, INC.'s revenue for the three months ended 31 December 2018 (the fourth quarter of fiscal year 2018), in $ millions?",
+ "gold": "72383",
+ "peek_answers": "",
+ "trap_answers": "CANNOT_ANSWER|232887",
+ "gold_evidence": "AMZN-00055|AMZN-00051",
+ "answer": "56576",
+ "cited": "AMZN-00052 @2018-10-25 23:42",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1358,
+ "out_tokens": 32,
+ "seconds": 0.2199,
+ "n_facts": 10,
+ "n_dropped": 0,
+ "created": "2026-11-21T21:12:15",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-07-25 02:41:00\nQuestion: What was AMAZON.COM, INC.'s revenue for the three months ended 31 December 2018 (the fourth quarter of fiscal year 2018), in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nAMZN | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 117413 | first 117413 | 2 reports: 117413 [AMZN-00038 @2017-10-26 23:41]; 117413 [AMZN-00049 @2018-10-25 23:42]\nAMZN | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 43744 | first 43744 | 2 reports: 43744 [AMZN-00039 @2017-10-26 23:41]; 43744 [AMZN-00050 @2018-10-25 23:42]\nAMZN | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 177866 | first 177866 | 2 reports: 177866 [AMZN-00042 @2018-02-02 01:41]; 177866 [AMZN-00054 @2019-02-01 01:22]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 51042 | first 51042 | 2 reports: 51042 [AMZN-00044 @2018-04-26 23:36]; 51042 [AMZN-00056 @2019-04-25 23:08]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 103928 | first 103928 | 1 reports: 103928 [AMZN-00047 @2018-07-26 23:23]\nAMZN | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 52886 | first 52886 | 1 reports: 52886 [AMZN-00048 @2018-07-26 23:23]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 160504 | first 160504 | 1 reports: 160504 [AMZN-00051 @2018-10-25 23:42]\nAMZN | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 56576 | first 56576 | 1 reports: 56576 [AMZN-00052 @2018-10-25 23:42]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 232887 | first 232887 | 1 reports: 232887 [AMZN-00055 @2019-02-01 01:22]\nAMZN | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 59700 | first 59700 | 1 reports: 59700 [AMZN-00057 @2019-04-25 23:08]"
+  }
+ ],
+ "final_text": "{\"answer\": 56576, \"evidence_ids\": [\"AMZN-00052 @2018-10-25 23:42\"]}",
+ "raw_output": "{\"answer\": 56576, \"evidence_ids\": [\"AMZN-00052 @2018-10-25 23:42\"]}"
+}

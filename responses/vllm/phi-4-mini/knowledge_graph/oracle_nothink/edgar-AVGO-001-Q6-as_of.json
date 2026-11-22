@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-AVGO-001-Q6-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "AVGO",
+ "qtype": "ttm",
+ "mode": "as_of",
+ "as_of": "2019-09-13 15:07:00",
+ "question": "What is Broadcom Inc.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "21813",
+ "peek_answers": "22265|89104",
+ "trap_answers": "20848",
+ "gold_evidence": "AVGO-00008|AVGO-00011|AVGO-00007|AVGO-00013|AVGO-00017",
+ "answer": "5789",
+ "cited": "AVGO-00013",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.2,
+ "in_tokens": 1609,
+ "out_tokens": 24,
+ "seconds": 0.2258,
+ "n_facts": 15,
+ "n_dropped": 0,
+ "created": "2026-11-21T21:13:22",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-09-13 15:07:00\nQuestion: What is Broadcom Inc.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nAVGO | Revenues | value_usd_m | 2016-10-31..2017-04-30: latest 8329 | first 8329 | 1 reports: 8329 [AVGO-00001 @2018-06-14 20:44]\nAVGO | Revenues | value_usd_m | 2017-01-30..2017-04-30: latest 4190 | first 4190 | 1 reports: 4190 [AVGO-00002 @2018-06-14 20:44]\nAVGO | Revenues | value_usd_m | 2017-10-30..2018-05-06: latest 10341 | first 10341 | 2 reports: 10341 [AVGO-00003 @2018-06-14 20:44]; 10341 [AVGO-00014 @2019-06-14 21:01]\nAVGO | Revenues | value_usd_m | 2018-02-05..2018-05-06: latest 5014 | first 5014 | 2 reports: 5014 [AVGO-00004 @2018-06-14 20:44]; 5014 [AVGO-00015 @2019-06-14 21:01]\nAVGO | Revenues | value_usd_m | 2016-10-31..2017-07-30: latest 12792 | first 12792 | 1 reports: 12792 [AVGO-00005 @2018-09-13 20:08]\nAVGO | Revenues | value_usd_m | 2017-05-01..2017-07-30: latest 4463 | first 4463 | 1 reports: 4463 [AVGO-00006 @2018-09-13 20:08]\nAVGO | Revenues | value_usd_m | 2017-10-30..2018-08-05: latest 15404 | first 15404 | 1 reports: 15404 [AVGO-00007 @2018-09-13 20:08]\nAVGO | Revenues | value_usd_m | 2018-05-07..2018-08-05: latest 5063 | first 5063 | 1 reports: 5063 [AVGO-00008 @2018-09-13 20:08]\nAVGO | Revenues | value_usd_m | 2015-11-02..2016-10-30: latest 13240 | first 13240 | 1 reports: 13240 [AVGO-00009 @2018-12-21 22:17]\nAVGO | Revenues | value_usd_m | 2016-10-31..2017-10-29: latest 17636 | first 17636 | 1 reports: 17636 [AVGO-00010 @2018-12-21 22:17]\nAVGO | Revenues | value_usd_m | 2017-10-30..2018-11-04: latest 20848 | first 20848 | 1 reports: 20848 [AVGO-00011 @2018-12-21 22:17]\nAVGO | Revenues | value_usd_m | 2017-10-30..2018-02-04: latest 5327 | first 5327 | 1 reports: 5327 [AVGO-00012 @2019-03-15 20:58]\nAVGO | Revenues | value_usd_m | 2018-11-05..2019-02-03: latest 5789 | first 5789 | 1 reports: 5789 [AVGO-00013 @2019-03-15 20:58]\nAVGO | Revenues | value_usd_m | 2018-11-05..2019-05-05: latest 11306 | first 11306 | 1 reports: 11306 [AVGO-00016 @2019-06-14 21:01]\nAVGO | Revenues | value_usd_m | 2019-02-04..2019-05-05: latest 5517 | first 5517 | 1 reports: 5517 [AVGO-00017 @2019-06-14 21:01]"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 5789, \"evidence_ids\": [\"AVGO-00013\"]}\n```",
+ "raw_output": "```json\n{\"answer\": 5789, \"evidence_ids\": [\"AVGO-00013\"]}\n```"
+}

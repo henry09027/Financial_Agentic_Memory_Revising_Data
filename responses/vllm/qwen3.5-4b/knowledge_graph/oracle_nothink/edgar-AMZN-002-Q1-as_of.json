@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-AMZN-002-Q1-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "AMZN",
+ "qtype": "latest_value",
+ "mode": "as_of",
+ "as_of": "2022-01-05 05:35:00",
+ "question": "What is AMAZON.COM, INC.'s latest reported total revenue for fiscal year 2020 (ended 31 December 2020), in $ millions?",
+ "gold": "386064",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "AMZN-00081",
+ "answer": "386064",
+ "cited": "AMZN-00081",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 3790,
+ "out_tokens": 27,
+ "seconds": 0.2733,
+ "n_facts": 26,
+ "n_dropped": 0,
+ "created": "2026-11-22T01:13:05",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2022-01-05 05:35:00\nQuestion: What is AMAZON.COM, INC.'s latest reported total revenue for fiscal year 2020 (ended 31 December 2020), in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nAMZN | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 117413 | first 117413 | 2 reports: 117413 [AMZN-00038 @2017-10-26 23:41]; 117413 [AMZN-00049 @2018-10-25 23:42]\nAMZN | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 43744 | first 43744 | 2 reports: 43744 [AMZN-00039 @2017-10-26 23:41]; 43744 [AMZN-00050 @2018-10-25 23:42]\nAMZN | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 177866 | first 177866 | 3 reports: 177866 [AMZN-00042 @2018-02-02 01:41]; 177866 [AMZN-00054 @2019-02-01 01:22]; 177866 [AMZN-00066 @2020-01-31 01:46]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 51042 | first 51042 | 2 reports: 51042 [AMZN-00044 @2018-04-26 23:36]; 51042 [AMZN-00056 @2019-04-25 23:08]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 103928 | first 103928 | 2 reports: 103928 [AMZN-00047 @2018-07-26 23:23]; 103928 [AMZN-00058 @2019-07-25 23:40]\nAMZN | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 52886 | first 52886 | 2 reports: 52886 [AMZN-00048 @2018-07-26 23:23]; 52886 [AMZN-00059 @2019-07-25 23:40]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 160504 | first 160504 | 2 reports: 160504 [AMZN-00051 @2018-10-25 23:42]; 160504 [AMZN-00062 @2019-10-25 00:49]\nAMZN | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 56576 | first 56576 | 2 reports: 56576 [AMZN-00052 @2018-10-25 23:42]; 56576 [AMZN-00063 @2019-10-25 00:49]\nAMZN | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 232887 | first 232887 | 3 reports: 232887 [AMZN-00055 @2019-02-01 01:22]; 232887 [AMZN-00067 @2020-01-31 01:46]; 232887 [AMZN-00079 @2021-02-03 00:44]\nAMZN | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 59700 | first 59700 | 2 reports: 59700 [AMZN-00057 @2019-04-25 23:08]; 59700 [AMZN-00069 @2020-04-30 23:23]\nAMZN | Revenues | value_usd_m | 2019-01-01..2019-06-30: latest 123104 | first 123104 | 2 reports: 123104 [AMZN-00060 @2019-07-25 23:40]; 123104 [AMZN-00071 @2020-07-31 00:00]\nAMZN | Revenues | value_usd_m | 2019-04-01..2019-06-30: latest 63404 | first 63404 | 2 reports: 63404 [AMZN-00061 @2019-07-25 23:40]; 63404 [AMZN-00072 @2020-07-31 00:00]\nAMZN | Revenues | value_usd_m | 2019-01-01..2019-09-30: latest 193086 | first 193086 | 2 reports: 193086 [AMZN-00064 @2019-10-25 00:49]; 193086 [AMZN-00075 @2020-10-29 23:08]\nAMZN | Revenues | value_usd_m | 2019-07-01..2019-09-30: latest 69981 | first 69981 | 2 reports: 69981 [AMZN-00065 @2019-10-25 00:49]; 69981 [AMZN-00076 @2020-10-29 23:08]\nAMZN | Revenues | value_usd_m | 2019-01-01..2019-12-31: latest 280522 | first 280522 | 2 reports: 280522 [AMZN-00068 @2020-01-31 01:46]; 280522 [AMZN-00080 @2021-02-03 00:44]\nAMZN | Revenues | value_usd_m | 2020-01-01..2020-03-31: latest 75452 | first 75452 | 2 reports: 75452 [AMZN-00070 @2020-04-30 23:23]; 75452 [AMZN-00082 @2021-04-29 22:48]\nAMZN | Revenues | value_usd_m | 2020-01-01..2020-06-30: latest 164364 | first 164364 | 2 reports: 164364 [AMZN-00073 @2020-07-31 00:00]; 164364 [AMZN-00084 @2021-07-29 23:02]\nAMZN | Revenues | value_usd_m | 2020-04-01..2020-06-30: latest 88912 | first 88912 | 2 reports: 88912 [AMZN-00074 @2020-07-31 00:00]; 88912 [AMZN-00085 @2021-07-29 23:02]\nAMZN | Revenues | value_usd_m | 2020-01-01..2020-09-30: latest 260509 | first 260509 | 2 reports: 260509 [AMZN-00077 @2020-10-29 23:08]; 260509 [AMZN-00088 @2021-10-28 22:29]\nAMZN | Revenues | value_usd_m | 2020-07-01..2020-09-30: latest 96145 | first 96145 | 2 reports: 96145 [AMZN-00078 @2020-10-29 23:08]; 96145 [AMZN-00089 @2021-10-28 22:29]\nAMZN | Revenues | value_usd_m | 2020-01-01..2020-12-31: latest 386064 | first 386064 | 1 reports: 386064 [AMZN-00081 @2021-02-03 00:44]\nAMZN | Revenues | value_usd_m | 2021-01-01..2021-03-31: latest 108518 | first 108518 | 1 reports: 108518 [AMZN-00083 @2021-04-29 22:48]\nAMZN | Revenues | value_usd_m | 2021-01-01..2021-06-30: latest 221598 | first 221598 | 1 reports: 221598 [AMZN-00086 @2021-07-29 23:02]\nAMZN | Revenues | value_usd_m | 2021-04-01..2021-06-30: latest 113080 | first 113080 | 1 reports: 113080 [AMZN-00087 @2021-07-29 23:02]\nAMZN | Revenues | value_usd_m | 2021-01-01..2021-09-30: latest 332410 | first 332410 | 1 reports: 332410 [AMZN-00090 @2021-10-28 22:29]\nAMZN | Revenues | value_usd_m | 2021-07-01..2021-09-30: latest 110812 | first 110812 | 1 reports: 110812 [AMZN-00091 @2021-10-28 22:29]"
+  }
+ ],
+ "final_text": "{\"answer\": 386064, \"evidence_ids\": [\"AMZN-00081\"]}",
+ "raw_output": "{\"answer\": 386064, \"evidence_ids\": [\"AMZN-00081\"]}"
+}

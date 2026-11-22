@@ -1,0 +1,339 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+ABBV-00189,2022-12-08 09:25:00,ABBV | BNP Paribas,rating,,Neutral,2022-12-08 09:25:00,new
+ABBV-00189,2022-12-08 09:25:00,ABBV | BNP Paribas,price_target_usd,,169.0,2022-12-08 09:25:00,new
+ABBV-00190,2022-12-14 09:08:00,ABBV | B of A Securities,rating,,Neutral,2022-12-14 09:08:00,new
+ABBV-00190,2022-12-14 09:08:00,ABBV | B of A Securities,price_target_usd,,165.0,2022-12-14 09:08:00,new
+ABBV-00191,2022-12-20 09:05:00,ABBV | Evercore ISI Group,rating,,Outperform,2022-12-20 09:05:00,new
+ABBV-00191,2022-12-20 09:05:00,ABBV | Evercore ISI Group,price_target_usd,,154.0,2022-12-20 09:05:00,new
+ABBV-00192,2023-01-05 08:28:50,ABBV | Truist Securities,rating,,Buy,2023-01-05 08:28:50,new
+ABBV-00192,2023-01-05 08:28:50,ABBV | Truist Securities,price_target_usd,,180.0,2023-01-05 08:28:50,new
+ABBV-00192,2023-01-05 08:28:50,ABBV | Truist Securities,price_target_usd,,160.0,2023-01-05 08:28:50,inferred
+ABBV-00193,2023-01-17 07:49:48,ABBV | Piper Sandler,rating,,Overweight,2023-01-17 07:49:48,new
+ABBV-00193,2023-01-17 07:49:48,ABBV | Piper Sandler,price_target_usd,,157.0,2023-01-17 07:49:48,new
+ABBV-00194,2023-01-31 08:24:00,ABBV | UBS,rating,,Neutral,2023-01-31 08:24:00,new
+ABBV-00194,2023-01-31 08:24:00,ABBV | UBS,price_target_usd,,150.0,2023-01-31 08:24:00,new
+ABBV-00195,2023-02-06 07:58:42,ABBV | BMO Capital,rating,,Outperform,2023-02-06 07:58:42,new
+ABBV-00195,2023-02-06 07:58:42,ABBV | BMO Capital,price_target_usd,,167.0,2023-02-06 07:58:42,new
+ABBV-00196,2023-02-09 12:14:00,ABBV | CFRA,rating,,Sell,2023-02-09 12:14:00,new
+ABBV-00196,2023-02-09 12:14:00,ABBV | CFRA,price_target_usd,,133.0,2023-02-09 12:14:00,new
+ABBV-00197,2023-02-09 13:39:00,ABBV | Truist Securities,rating,,Buy,2023-02-09 13:39:00,corroborate
+ABBV-00197,2023-02-09 13:39:00,ABBV | Truist Securities,price_target_usd,,180.0,2023-02-09 13:39:00,new
+ABBV-00198,2023-02-09 13:43:00,ABBV | Evercore ISI Group,price_target_usd,,165.0,2023-02-09 13:43:00,new
+ABBV-00199,2023-02-10 06:11:24,ABBV | Piper Sandler,price_target_usd,,163.0,2023-02-10 06:11:24,new
+ABBV-00200,2023-02-10 07:19:56,ABBV | Morgan Stanley,rating,,Overweight,2023-02-10 07:19:56,new
+ABBV-00200,2023-02-10 07:19:56,ABBV | Morgan Stanley,price_target_usd,,178.0,2023-02-10 07:19:56,new
+ABBV-00201,2023-02-10 08:29:00,ABBV | UBS,price_target_usd,,152.0,2023-02-10 08:29:00,new
+ABBV-00202,2023-02-10 09:07:29,ABBV | Atlantic Equities,rating,,Neutral,2023-02-10 09:07:29,new
+ABBV-00202,2023-02-10 09:07:29,ABBV | Atlantic Equities,price_target_usd,,154.0,2023-02-10 09:07:29,new
+ABBV-00203,2023-02-10 09:17:53,ABBV | SVB Leerink,rating,,Market Perform,2023-02-10 09:17:53,new
+ABBV-00203,2023-02-10 09:17:53,ABBV | SVB Leerink,price_target_usd,,153.0,2023-02-10 09:17:53,new
+ABBV-00204,2023-02-22 05:54:12,ABBV | Wolfe Research,rating,,Peer Perform,2023-02-22 05:54:12,new
+ABBV-00205,2023-03-01 05:22:58,ABBV | Guggenheim,rating,,Buy,2023-03-01 05:22:58,new
+ABBV-00205,2023-03-01 05:22:58,ABBV | Guggenheim,price_target_usd,,172.0,2023-03-01 05:22:58,new
+ABBV-00206,2023-04-05 08:32:27,ABBV | Argus Research,rating,,Hold,2023-04-05 08:32:27,new
+ABBV-00207,2023-04-10 10:12:02,ABBV | Morgan Stanley,rating,,Overweight,2023-04-10 10:12:02,corroborate
+ABBV-00207,2023-04-10 10:12:02,ABBV | Morgan Stanley,price_target_usd,,181.0,2023-04-10 10:12:02,new
+ABBV-00208,2023-04-28 08:24:04,ABBV | Wells Fargo,rating,,Overweight,2023-04-28 08:24:04,new
+ABBV-00208,2023-04-28 08:24:04,ABBV | Wells Fargo,price_target_usd,,195.0,2023-04-28 08:24:04,new
+ABBV-00209,2023-04-28 08:57:47,ABBV | Morgan Stanley,rating,,Overweight,2023-04-28 08:57:47,corroborate
+ABBV-00209,2023-04-28 08:57:47,ABBV | Morgan Stanley,price_target_usd,,182.0,2023-04-28 08:57:47,new
+ABBV-00210,2023-04-28 11:27:49,ABBV | Guggenheim,price_target_usd,,171.0,2023-04-28 11:27:49,new
+ABBV-00211,2023-07-11 08:45:03,ABBV | Morgan Stanley,rating,,Overweight,2023-07-11 08:45:03,corroborate
+ABBV-00211,2023-07-11 08:45:03,ABBV | Morgan Stanley,price_target_usd,,182.0,2023-07-11 08:45:03,corroborate
+ABBV-00212,2023-07-14 04:41:47,ABBV | HSBC,rating,,Buy,2023-07-14 04:41:47,new
+ABBV-00212,2023-07-14 04:41:47,ABBV | HSBC,price_target_usd,,167.0,2023-07-14 04:41:47,new
+ABBV-00213,2023-07-25 10:12:07,ABBV | William Blair,rating,,Market Perform,2023-07-25 10:12:07,new
+ABBV-00214,2023-07-28 13:37:29,ABBV | Piper Sandler,rating,,Overweight,2023-07-28 13:37:29,corroborate
+ABBV-00214,2023-07-28 13:37:29,ABBV | Piper Sandler,price_target_usd,,170.0,2023-07-28 13:37:29,new
+ABBV-00215,2023-09-29 08:06:33,ABBV | Raymond James,rating,,Outperform,2023-09-29 08:06:33,new
+ABBV-00215,2023-09-29 08:06:33,ABBV | Raymond James,price_target_usd,,177.0,2023-09-29 08:06:33,new
+ABBV-00216,2023-10-11 09:17:03,ABBV | Morgan Stanley,rating,,Overweight,2023-10-11 09:17:03,corroborate
+ABBV-00216,2023-10-11 09:17:03,ABBV | Morgan Stanley,price_target_usd,,193.0,2023-10-11 09:17:03,new
+ABBV-00217,2023-10-30 06:13:17,ABBV | Barclays,rating,,Overweight,2023-10-30 06:13:17,new
+ABBV-00217,2023-10-30 06:13:17,ABBV | Barclays,price_target_usd,,170.0,2023-10-30 06:13:17,new
+ABBV-00218,2023-10-30 10:06:49,ABBV | Morgan Stanley,rating,,Overweight,2023-10-30 10:06:49,corroborate
+ABBV-00218,2023-10-30 10:06:49,ABBV | Morgan Stanley,price_target_usd,,196.0,2023-10-30 10:06:49,new
+ABBV-00219,2023-11-09 05:12:10,ABBV | Deutsche Bank,rating,,Hold,2023-11-09 05:12:10,new
+ABBV-00219,2023-11-09 05:12:10,ABBV | Deutsche Bank,price_target_usd,,150.0,2023-11-09 05:12:10,new
+ABBV-00220,2023-12-01 07:30:25,ABBV | Raymond James,rating,,Outperform,2023-12-01 07:30:25,corroborate
+ABBV-00220,2023-12-01 07:30:25,ABBV | Raymond James,price_target_usd,,181.0,2023-12-01 07:30:25,new
+ABBV-00221,2023-12-11 08:11:45,ABBV | Goldman Sachs,rating,,Buy,2023-12-11 08:11:45,new
+ABBV-00221,2023-12-11 08:11:45,ABBV | Goldman Sachs,price_target_usd,,173.0,2023-12-11 08:11:45,new
+ABBV-00222,2023-12-18 07:26:19,ABBV | HSBC,rating,,Hold,2023-12-18 07:26:19,new
+ABBV-00222,2023-12-18 07:26:19,ABBV | HSBC,price_target_usd,,156.0,2023-12-18 07:26:19,new
+ABBV-00223,2024-01-23 08:08:40,ABBV | Barclays,rating,,Overweight,2024-01-23 08:08:40,corroborate
+ABBV-00223,2024-01-23 08:08:40,ABBV | Barclays,price_target_usd,,175.0,2024-01-23 08:08:40,new
+ABBV-00224,2024-01-29 09:38:08,ABBV | William Blair,rating,,Outperform,2024-01-29 09:38:08,new
+ABBV-00225,2024-02-05 06:54:59,ABBV | Barclays,price_target_usd,,185.0,2024-02-05 06:54:59,new
+ABBV-00226,2024-02-05 07:22:25,ABBV | Raymond James,rating,,Outperform,2024-02-05 07:22:25,corroborate
+ABBV-00226,2024-02-05 07:22:25,ABBV | Raymond James,price_target_usd,,189.0,2024-02-05 07:22:25,new
+ABBV-00227,2024-02-05 08:55:38,ABBV | BMO Capital,rating,,Outperform,2024-02-05 08:55:38,new
+ABBV-00227,2024-02-05 08:55:38,ABBV | BMO Capital,price_target_usd,,195.0,2024-02-05 08:55:38,new
+ABBV-00228,2024-02-06 03:24:14,ABBV | Raymond James,rating,,Outperform,2024-02-06 03:24:14,corroborate
+ABBV-00228,2024-02-06 03:24:14,ABBV | Raymond James,price_target_usd,,189.0,2024-02-06 03:24:14,new
+ABBV-00229,2024-02-06 09:13:05,ABBV | Truist Securities,price_target_usd,,195.0,2024-02-06 09:13:05,new
+ABBV-00230,2024-03-22 14:01:10,ABBV | Guggenheim,price_target_usd,,190.0,2024-03-22 14:01:10,new
+ABBV-00231,2024-03-27 07:46:59,ABBV | Barclays,rating,,Overweight,2024-03-27 07:46:59,corroborate
+ABBV-00231,2024-03-27 07:46:59,ABBV | Barclays,price_target_usd,,195.0,2024-03-27 07:46:59,new
+ABBV-00232,2024-04-29 10:08:46,ABBV | BMO Capital,rating,,Outperform,2024-04-29 10:08:46,corroborate
+ABBV-00232,2024-04-29 10:08:46,ABBV | BMO Capital,price_target_usd,,180.0,2024-04-29 10:08:46,new
+ABBV-00233,2024-04-29 11:25:57,ABBV | Barclays,rating,,Overweight,2024-04-29 11:25:57,corroborate
+ABBV-00233,2024-04-29 11:25:57,ABBV | Barclays,price_target_usd,,187.0,2024-04-29 11:25:57,new
+ABBV-00234,2024-05-17 07:15:05,ABBV | Cantor Fitzgerald,rating,,Overweight,2024-05-17 07:15:05,new
+ABBV-00234,2024-05-17 07:15:05,ABBV | Cantor Fitzgerald,price_target_usd,,200.0,2024-05-17 07:15:05,new
+ABBV-00235,2024-06-05 06:06:57,ABBV | HSBC,rating,,Buy,2024-06-05 06:06:57,new
+ABBV-00235,2024-06-05 06:06:57,ABBV | HSBC,price_target_usd,,185.0,2024-06-05 06:06:57,new
+ABBV-00236,2024-06-18 08:31:08,ABBV | Piper Sandler,rating,,Overweight,2024-06-18 08:31:08,corroborate
+ABBV-00236,2024-06-18 08:31:08,ABBV | Piper Sandler,price_target_usd,,190.0,2024-06-18 08:31:08,new
+ABBV-00237,2024-06-20 12:47:04,ABBV | Cantor Fitzgerald,rating,,corroborate,2024-06-20 12:47:04,corroborate
+ABBV-00237,2024-06-20 12:47:04,ABBV | Cantor Fitzgerald,price_target_usd,,corroborate,2024-06-20 12:47:04,corroborate
+ABBV-00238,2024-07-02 13:22:55,ABBV | Piper Sandler,rating,,Overweight,2024-07-02 13:22:55,corroborate
+ABBV-00238,2024-07-02 13:22:55,ABBV | Piper Sandler,price_target_usd,,190.0,2024-07-02 13:22:55,corroborate
+ABBV-00239,2024-07-09 09:19:17,ABBV | Cantor Fitzgerald,rating,,Overweight,2024-07-09 09:19:17,new
+ABBV-00239,2024-07-09 09:19:17,ABBV | Cantor Fitzgerald,price_target_usd,,200.0,2024-07-09 09:19:17,new
+ABBV-00240,2024-07-11 13:12:21,ABBV | Morgan Stanley,rating,,Overweight,2024-07-11 13:12:21,new
+ABBV-00240,2024-07-11 13:12:21,ABBV | Morgan Stanley,price_target_usd,,196.0,2024-07-11 13:12:21,new
+ABBV-00241,2024-07-19 10:40:43,ABBV | BMO Capital,rating,,Outperform,2024-07-19 10:40:43,new
+ABBV-00241,2024-07-19 10:40:43,ABBV | BMO Capital,price_target_usd,,214.0,2024-07-19 10:40:43,new
+ABBV-00242,2024-07-25 09:55:42,ABBV | JP Morgan,rating,,Overweight,2024-07-25 09:55:42,new
+ABBV-00242,2024-07-25 09:55:42,ABBV | JP Morgan,price_target_usd,,210.0,2024-07-25 09:55:42,new
+ABBV-00243,2024-07-26 05:58:58,ABBV | UBS,price_target_usd,,185.0,2024-07-26 05:58:58,new
+ABBV-00244,2024-07-26 07:38:02,ABBV | Barclays,rating,,Overweight,2024-07-26 07:38:02,corroborate
+ABBV-00244,2024-07-26 07:38:02,ABBV | Barclays,price_target_usd,,200.0,2024-07-26 07:38:02,new
+ABBV-00245,2024-07-26 08:42:17,ABBV | Wells Fargo,rating,,Overweight,2024-07-26 08:42:17,corroborate
+ABBV-00245,2024-07-26 08:42:17,ABBV | Wells Fargo,price_target_usd,,205.0,2024-07-26 08:42:17,new
+ABBV-00246,2024-07-26 08:47:29,ABBV | Truist Securities,rating,,Buy,2024-07-26 08:47:29,corroborate
+ABBV-00246,2024-07-26 08:47:29,ABBV | Truist Securities,price_target_usd,,210.0,2024-07-26 08:47:29,new
+ABBV-00247,2024-07-26 13:22:51,ABBV | Cantor Fitzgerald,rating,,corroborate,2024-07-26 13:22:51,corroborate
+ABBV-00247,2024-07-26 13:22:51,ABBV | Cantor Fitzgerald,price_target_usd,,corroborate,2024-07-26 13:22:51,corroborate
+ABBV-00248,2024-08-05 14:04:51,ABBV | Cantor Fitzgerald,rating,,Overweight,2024-08-05 14:04:51,new
+ABBV-00248,2024-08-05 14:04:51,ABBV | Cantor Fitzgerald,price_target_usd,,200.0,2024-08-05 14:04:51,new
+ABBV-00249,2024-08-12 13:28:26,ABBV | Morgan Stanley,rating,,Overweight,2024-08-12 13:28:26,corroborate
+ABBV-00249,2024-08-12 13:28:26,ABBV | Morgan Stanley,price_target_usd,,218.0,2024-08-12 13:28:26,new
+ABBV-00250,2024-08-23 10:23:44,ABBV | Piper Sandler,rating,,Overweight,2024-08-23 10:23:44,corroborate
+ABBV-00250,2024-08-23 10:23:44,ABBV | Piper Sandler,price_target_usd,,209.0,2024-08-23 10:23:44,new
+ABBV-00251,2024-10-07 13:37:49,ABBV | TD Cowen,rating,,Buy,2024-10-07 13:37:49,new
+ABBV-00251,2024-10-07 13:37:49,ABBV | TD Cowen,price_target_usd,,225.0,2024-10-07 13:37:49,new
+ABBV-00252,2024-10-07 14:18:34,ABBV | Barclays,rating,,Overweight,2024-10-07 14:18:34,corroborate
+ABBV-00252,2024-10-07 14:18:34,ABBV | Barclays,price_target_usd,,212.0,2024-10-07 14:18:34,new
+ABBV-00253,2024-10-09 17:58:51,ABBV | UBS,price_target_usd,,195.0,2024-10-09 17:58:51,new
+ABBV-00254,2024-10-10 09:16:22,ABBV | Truist Securities,price_target_usd,,215.0,2024-10-10 09:16:22,new
+ABBV-00255,2024-10-17 07:34:26,ABBV | Bernstein,rating,,Market Perform,2024-10-17 07:34:26,new
+ABBV-00255,2024-10-17 07:34:26,ABBV | Bernstein,price_target_usd,,203.0,2024-10-17 07:34:26,new
+ABBV-00256,2024-10-17 09:50:02,ABBV | BMO Capital,rating,,Outperform,2024-10-17 09:50:02,corroborate
+ABBV-00256,2024-10-17 09:50:02,ABBV | BMO Capital,price_target_usd,,220.0,2024-10-17 09:50:02,new
+ABBV-00257,2024-10-18 13:26:33,ABBV | B of A Securities,rating,,Neutral,2024-10-18 13:26:33,new
+ABBV-00257,2024-10-18 13:26:33,ABBV | B of A Securities,price_target_usd,,195.0,2024-10-18 13:26:33,new
+ABBV-00258,2024-10-25 14:22:02,ABBV | Citigroup,rating,,Buy,2024-10-25 14:22:02,new
+ABBV-00258,2024-10-25 14:22:02,ABBV | Citigroup,price_target_usd,,215.0,2024-10-25 14:22:02,new
+ABBV-00259,2024-10-31 04:33:54,ABBV | BMO Capital,rating,,Outperform,2024-10-31 04:33:54,corroborate
+ABBV-00259,2024-10-31 04:33:54,ABBV | BMO Capital,price_target_usd,,228.0,2024-10-31 04:33:54,new
+ABBV-00260,2024-10-31 08:50:13,ABBV | Morgan Stanley,rating,,Overweight,2024-10-31 08:50:13,corroborate
+ABBV-00260,2024-10-31 08:50:13,ABBV | Morgan Stanley,price_target_usd,,231.0,2024-10-31 08:50:13,new
+ABBV-00261,2024-10-31 15:35:18,ABBV | UBS,price_target_usd,,200.0,2024-10-31 15:35:18,new
+ABBV-00262,2024-10-31 16:28:37,ABBV | Citigroup,price_target_usd,,226.0,2024-10-31 16:28:37,new
+ABBV-00263,2024-11-04 11:27:26,ABBV | Argus Research,rating,,Buy,2024-11-04 11:27:26,new
+ABBV-00264,2024-11-06 13:05:47,ABBV | Guggenheim,price_target_usd,,221.0,2024-11-06 13:05:47,new
+ABBV-00265,2024-11-12 08:28:39,ABBV | Morgan Stanley,rating,,Overweight,2024-11-12 08:28:39,corroborate
+ABBV-00265,2024-11-12 08:28:39,ABBV | Morgan Stanley,price_target_usd,,224.0,2024-11-12 08:28:39,new
+ABBV-00266,2024-11-12 11:37:24,ABBV | BMO Capital,rating,,Outperform,2024-11-12 11:37:24,corroborate
+ABBV-00266,2024-11-12 11:37:24,ABBV | BMO Capital,price_target_usd,,208.0,2024-11-12 11:37:24,new
+ABBV-00267,2024-11-12 13:57:51,ABBV | Citigroup,price_target_usd,,215.0,2024-11-12 13:57:51,new
+ABBV-00268,2024-11-13 09:50:32,ABBV | JP Morgan,rating,,Overweight,2024-11-13 09:50:32,corroborate
+ABBV-00268,2024-11-13 09:50:32,ABBV | JP Morgan,price_target_usd,,200.0,2024-11-13 09:50:32,new
+ABBV-00269,2024-11-15 05:08:38,ABBV | Wolfe Research,rating,,Outperform,2024-11-15 05:08:38,new
+ABBV-00269,2024-11-15 05:08:38,ABBV | Wolfe Research,price_target_usd,,205.0,2024-11-15 05:08:38,new
+ABBV-00270,2024-11-22 07:43:56,ABBV | Leerink Partners,rating,,Outperform,2024-11-22 07:43:56,new
+ABBV-00270,2024-11-22 07:43:56,ABBV | Leerink Partners,price_target_usd,,206.0,2024-11-22 07:43:56,new
+ABBV-00271,2024-12-17 12:31:25,ABBV | Piper Sandler,rating,,Overweight,2024-12-17 12:31:25,new
+ABBV-00271,2024-12-17 12:31:25,ABBV | Piper Sandler,price_target_usd,,220.0,2024-12-17 12:31:25,new
+ABBV-00272,2025-01-08 06:39:23,ABBV | Truist Securities,rating,,Buy,2025-01-08 06:39:23,new
+ABBV-00272,2025-01-08 06:39:23,ABBV | Truist Securities,price_target_usd,,211.0,2025-01-08 06:39:23,new
+ABBV-00273,2025-01-17 16:32:34,ABBV | Guggenheim,price_target_usd,,212.0,2025-01-17 16:32:34,new
+ABBV-00274,2025-01-28 07:12:20,ABBV | Citigroup,price_target_usd,,205.0,2025-01-28 07:12:20,new
+ABBV-00275,2025-02-03 08:10:13,ABBV | BMO Capital,rating,,Outperform,2025-02-03 08:10:13,corroborate
+ABBV-00275,2025-02-03 08:10:13,ABBV | BMO Capital,price_target_usd,,215.0,2025-02-03 08:10:13,new
+ABBV-00276,2025-02-03 08:26:41,ABBV | Guggenheim,price_target_usd,,214.0,2025-02-03 08:26:41,new
+ABBV-00277,2025-02-03 08:57:54,ABBV | Raymond James,rating,,Outperform,2025-02-03 08:57:54,corroborate
+ABBV-00277,2025-02-03 08:57:54,ABBV | Raymond James,price_target_usd,,220.0,2025-02-03 08:57:54,new
+ABBV-00278,2025-02-03 09:25:29,ABBV | Morgan Stanley,rating,,Overweight,2025-02-03 09:25:29,corroborate
+ABBV-00278,2025-02-03 09:25:29,ABBV | Morgan Stanley,price_target_usd,,239.0,2025-02-03 09:25:29,new
+ABBV-00279,2025-02-03 10:41:07,ABBV | Wells Fargo,rating,,Overweight,2025-02-03 10:41:07,corroborate
+ABBV-00279,2025-02-03 10:41:07,ABBV | Wells Fargo,price_target_usd,,210.0,2025-02-03 10:41:07,new
+ABBV-00280,2025-02-03 11:04:26,ABBV | UBS,rating,,Neutral,2025-02-03 11:04:26,new
+ABBV-00280,2025-02-03 11:04:26,ABBV | UBS,price_target_usd,,190.0,2025-02-03 11:04:26,new
+ABBV-00281,2025-02-03 12:39:39,ABBV | Truist Securities,rating,,Buy,2025-02-03 12:39:39,new
+ABBV-00281,2025-02-03 12:39:39,ABBV | Truist Securities,price_target_usd,,217.0,2025-02-03 12:39:39,new
+ABBV-00282,2025-02-03 13:57:46,ABBV | Citigroup,price_target_usd,,215.0,2025-02-03 13:57:46,new
+ABBV-00283,2025-03-04 10:02:15,ABBV | B of A Securities,rating,,Neutral,2025-03-04 10:02:15,new
+ABBV-00283,2025-03-04 10:02:15,ABBV | B of A Securities,price_target_usd,,223.0,2025-03-04 10:02:15,new
+ABBV-00284,2025-03-05 10:12:44,ABBV | Wells Fargo,rating,,Overweight,2025-03-05 10:12:44,corroborate
+ABBV-00284,2025-03-05 10:12:44,ABBV | Wells Fargo,price_target_usd,,240.0,2025-03-05 10:12:44,new
+ABBV-00285,2025-04-09 09:55:42,ABBV | Morgan Stanley,rating,,Overweight,2025-04-09 09:55:42,corroborate
+ABBV-00285,2025-04-09 09:55:42,ABBV | Morgan Stanley,price_target_usd,,241.0,2025-04-09 09:55:42,new
+ABBV-00286,2025-04-11 15:20:43,ABBV | Citigroup,rating,,Buy,2025-04-11 15:20:43,corroborate
+ABBV-00286,2025-04-11 15:20:43,ABBV | Citigroup,price_target_usd,,210.0,2025-04-11 15:20:43,new
+ABBV-00287,2025-04-17 11:28:50,ABBV | Guggenheim,rating,,Buy,2025-04-17 11:28:50,corroborate
+ABBV-00287,2025-04-17 11:28:50,ABBV | Guggenheim,price_target_usd,,214.0,2025-04-17 11:28:50,corroborate
+ABBV-00288,2025-04-21 15:05:09,ABBV | B of A Securities,rating,,Neutral,2025-04-21 15:05:09,new
+ABBV-00288,2025-04-21 15:05:09,ABBV | B of A Securities,price_target_usd,,200.0,2025-04-21 15:05:09,new
+ABBV-00289,2025-04-22 07:27:08,ABBV | Cantor Fitzgerald,rating,,Overweight,2025-04-22 07:27:08,new
+ABBV-00289,2025-04-22 07:27:08,ABBV | Cantor Fitzgerald,price_target_usd,,210.0,2025-04-22 07:27:08,new
+ABBV-00290,2025-04-28 08:45:34,ABBV | Morgan Stanley,rating,,Overweight,2025-04-28 08:45:34,corroborate
+ABBV-00290,2025-04-28 08:45:34,ABBV | Morgan Stanley,price_target_usd,,250.0,2025-04-28 08:45:34,new
+ABBV-00291,2025-04-28 09:56:37,ABBV | Evercore ISI Group,rating,,Outperform,2025-04-28 09:56:37,new
+ABBV-00291,2025-04-28 09:56:37,ABBV | Evercore ISI Group,price_target_usd,,205.0,2025-04-28 09:56:37,new
+ABBV-00292,2025-04-28 15:04:05,ABBV | B of A Securities,rating,,Neutral,2025-04-28 15:04:05,new
+ABBV-00292,2025-04-28 15:04:05,ABBV | B of A Securities,price_target_usd,,204.0,2025-04-28 15:04:05,new
+ABBV-00293,2025-04-28 16:37:04,ABBV | Raymond James,rating,,Outperform,2025-04-28 16:37:04,corroborate
+ABBV-00293,2025-04-28 16:37:04,ABBV | Raymond James,price_target_usd,,227.0,2025-04-28 16:37:04,new
+ABBV-00294,2025-04-29 08:13:52,ABBV | Guggenheim,price_target_usd,,216.0,2025-04-29 08:13:52,new
+ABBV-00295,2025-05-14 08:18:35,ABBV | Citigroup,rating,,Neutral,2025-05-14 08:18:35,new
+ABBV-00295,2025-05-14 08:18:35,ABBV | Citigroup,price_target_usd,,205.0,2025-05-14 08:18:35,new
+ABBV-00296,2025-08-01 09:10:41,ABBV | Raymond James,rating,,Outperform,2025-08-01 09:10:41,corroborate
+ABBV-00296,2025-08-01 09:10:41,ABBV | Raymond James,price_target_usd,,236.0,2025-08-01 09:10:41,new
+ABBV-00297,2025-08-01 10:05:52,ABBV | Morgan Stanley,price_target_usd,,255.0,2025-08-01 10:05:52,new
+ABBV-00298,2025-08-01 10:20:24,ABBV | Guggenheim,price_target_usd,,227.0,2025-08-01 10:20:24,new
+ABBV-00299,2025-08-01 15:23:24,ABBV | Evercore ISI Group,rating,,Outperform,2025-08-01 15:23:24,new
+ABBV-00299,2025-08-01 15:23:24,ABBV | Evercore ISI Group,price_target_usd,,207.0,2025-08-01 15:23:24,new
+ABBV-00300,2025-08-13 15:25:18,ABBV | Cantor Fitzgerald,rating,,Overweight,2025-08-13 15:25:18,corroborate
+ABBV-00300,2025-08-13 15:25:18,ABBV | Cantor Fitzgerald,price_target_usd,,215.0,2025-08-13 15:25:18,new
+ABBV-00301,2025-09-12 05:08:50,ABBV | BMO Capital,rating,,Outperform,2025-09-12 05:08:50,corroborate
+ABBV-00301,2025-09-12 05:08:50,ABBV | BMO Capital,price_target_usd,,240.0,2025-09-12 05:08:50,new
+ABBV-00302,2025-09-12 08:13:27,ABBV | Wells Fargo,rating,,Overweight,2025-09-12 08:13:27,corroborate
+ABBV-00302,2025-09-12 08:13:27,ABBV | Wells Fargo,price_target_usd,,260.0,2025-09-12 08:13:27,new
+ABBV-00303,2025-09-15 08:21:59,ABBV | Cantor Fitzgerald,price_target_usd,,245.0,2025-09-15 08:21:59,new
+ABBV-00304,2025-09-16 07:36:12,ABBV | JP Morgan,rating,,Overweight,2025-09-16 07:36:12,corroborate
+ABBV-00304,2025-09-16 07:36:12,ABBV | JP Morgan,price_target_usd,,235.0,2025-09-16 07:36:12,new
+ABBV-00305,2025-09-17 06:29:29,ABBV | Berenberg,rating,,Buy,2025-09-17 06:29:29,new
+ABBV-00305,2025-09-17 06:29:29,ABBV | Berenberg,price_target_usd,,270.0,2025-09-17 06:29:29,new
+ABBV-00306,2025-09-22 10:52:38,ABBV | Evercore ISI Group,rating,,Outperform,2025-09-22 10:52:38,new
+ABBV-00306,2025-09-22 10:52:38,ABBV | Evercore ISI Group,price_target_usd,,222.0,2025-09-22 10:52:38,new
+ABBV-00307,2025-10-01 13:34:07,ABBV | HSBC,rating,,Hold,2025-10-01 13:34:07,new
+ABBV-00308,2025-10-03 09:15:05,ABBV | B of A Securities,rating,,Neutral,2025-10-03 09:15:05,new
+ABBV-00308,2025-10-03 09:15:05,ABBV | B of A Securities,price_target_usd,,251.0,2025-10-03 09:15:05,new
+ABBV-00309,2025-10-09 15:22:57,ABBV | Cantor Fitzgerald,rating,,Overweight,2025-10-09 15:22:57,corroborate
+ABBV-00309,2025-10-09 15:22:57,ABBV | Cantor Fitzgerald,price_target_usd,,250.0,2025-10-09 15:22:57,new
+ABBV-00310,2025-10-10 08:36:20,ABBV | Piper Sandler,rating,,Overweight,2025-10-10 08:36:20,new
+ABBV-00310,2025-10-10 08:36:20,ABBV | Piper Sandler,price_target_usd,,284.0,2025-10-10 08:36:20,new
+ABBV-00311,2025-10-17 12:04:11,ABBV | Raymond James,rating,,Outperform,2025-10-17 12:04:11,corroborate
+ABBV-00311,2025-10-17 12:04:11,ABBV | Raymond James,price_target_usd,,250.0,2025-10-17 12:04:11,new
+ABBV-00312,2025-10-20 08:34:04,ABBV | Guggenheim,price_target_usd,,242.0,2025-10-20 08:34:04,new
+ABBV-00313,2025-11-03 09:38:53,ABBV | JP Morgan,rating,,Overweight,2025-11-03 09:38:53,corroborate
+ABBV-00313,2025-11-03 09:38:53,ABBV | JP Morgan,price_target_usd,,260.0,2025-11-03 09:38:53,new
+ABBV-00314,2025-11-03 15:05:39,ABBV | Citigroup,price_target_usd,,235.0,2025-11-03 15:05:39,new
+ABBV-00315,2025-11-05 10:40:43,ABBV | Piper Sandler,rating,,Overweight,2025-11-05 10:40:43,new
+ABBV-00315,2025-11-05 10:40:43,ABBV | Piper Sandler,price_target_usd,,289.0,2025-11-05 10:40:43,new
+ABBV-00316,2025-11-07 11:11:32,ABBV | UBS,rating,,Neutral,2025-11-07 11:11:32,new
+ABBV-00316,2025-11-07 11:11:32,ABBV | UBS,price_target_usd,,220.0,2025-11-07 11:11:32,new
+ABBV-00317,2025-11-12 13:42:51,ABBV | Freedom Broker,rating,,Buy,2025-11-12 13:42:51,new
+ABBV-00317,2025-11-12 13:42:51,ABBV | Freedom Broker,price_target_usd,,245.0,2025-11-12 13:42:51,new
+ABBV-00318,2025-12-10 06:50:30,ABBV | HSBC,rating,,Buy,2025-12-10 06:50:30,new
+ABBV-00318,2025-12-10 06:50:30,ABBV | HSBC,price_target_usd,,265.0,2025-12-10 06:50:30,new
+ABBV-00319,2025-12-12 11:59:18,ABBV | Morgan Stanley,rating,,Overweight,2025-12-12 11:59:18,corroborate
+ABBV-00319,2025-12-12 11:59:18,ABBV | Morgan Stanley,price_target_usd,,269.0,2025-12-12 11:59:18,new
+ABBV-00320,2026-01-08 07:24:50,ABBV | Wolfe Research,rating,,Peer Perform,2026-01-08 07:24:50,new
+ABBV-00321,2026-01-27 10:07:46,ABBV | Citigroup,price_target_usd,,230.0,2026-01-27 10:07:46,new
+ABBV-00322,2026-02-05 08:23:29,ABBV | Morgan Stanley,price_target_usd,,270.0,2026-02-05 08:23:29,new
+ABBV-00323,2026-02-05 09:21:12,ABBV | Evercore ISI Group,rating,,Outperform,2026-02-05 09:21:12,new
+ABBV-00323,2026-02-05 09:21:12,ABBV | Evercore ISI Group,price_target_usd,,228.0,2026-02-05 09:21:12,new
+ABBV-00324,2026-02-05 10:26:40,ABBV | UBS,rating,,Neutral,2026-02-05 10:26:40,new
+ABBV-00324,2026-02-05 10:26:40,ABBV | UBS,price_target_usd,,230.0,2026-02-05 10:26:40,new
+ABBV-00325,2026-02-17 06:37:36,ABBV | Freedom Broker,price_target_usd,,260.0,2026-02-17 06:37:36,new
+ABBV-00326,2026-02-18 07:23:26,ABBV | Piper Sandler,rating,,Overweight,2026-02-18 07:23:26,new
+ABBV-00326,2026-02-18 07:23:26,ABBV | Piper Sandler,price_target_usd,,299.0,2026-02-18 07:23:26,new
+ABBV-00327,2026-02-20 09:34:38,ABBV | Barclays,rating,,Overweight,2026-02-20 09:34:38,new
+ABBV-00327,2026-02-20 09:34:38,ABBV | Barclays,price_target_usd,,275.0,2026-02-20 09:34:38,new
+ABBV-00328,2026-02-25 09:50:32,ABBV | RBC Capital,rating,,Outperform,2026-02-25 09:50:32,new
+ABBV-00328,2026-02-25 09:50:32,ABBV | RBC Capital,price_target_usd,,260.0,2026-02-25 09:50:32,new
+ABBV-00329,2026-04-08 08:50:58,ABBV | Cantor Fitzgerald,rating,,Overweight,2026-04-08 08:50:58,corroborate
+ABBV-00329,2026-04-08 08:50:58,ABBV | Cantor Fitzgerald,price_target_usd,,240.0,2026-04-08 08:50:58,new
+ABBV-00330,2026-04-10 09:19:45,ABBV | Guggenheim,price_target_usd,,249.0,2026-04-10 09:19:45,new
+ABBV-00331,2026-04-21 11:51:07,ABBV | Canaccord Genuity,rating,,Buy,2026-04-21 11:51:07,new
+ABBV-00331,2026-04-21 11:51:07,ABBV | Canaccord Genuity,price_target_usd,,262.0,2026-04-21 11:51:07,new
+ABBV-00332,2026-04-23 11:52:17,ABBV | Piper Sandler,rating,,Overweight,2026-04-23 11:52:17,new
+ABBV-00332,2026-04-23 11:52:17,ABBV | Piper Sandler,price_target_usd,,294.0,2026-04-23 11:52:17,new
+ABBV-00333,2026-04-30 10:00:32,ABBV | Cantor Fitzgerald,rating,,Overweight,2026-04-30 10:00:32,corroborate
+ABBV-00333,2026-04-30 10:00:32,ABBV | Cantor Fitzgerald,price_target_usd,,240.0,2026-04-30 10:00:32,corroborate
+ABBV-00334,2026-04-30 13:48:05,ABBV | Morgan Stanley,rating,,Overweight,2026-04-30 13:48:05,new
+ABBV-00334,2026-04-30 13:48:05,ABBV | Morgan Stanley,price_target_usd,,278.0,2026-04-30 13:48:05,new
+ABBV-00335,2026-04-30 19:01:13,ABBV | Canaccord Genuity,price_target_usd,,265.0,2026-04-30 19:01:13,new
+ABBV-00336,2026-05-01 11:43:20,ABBV | Guggenheim,rating,,Buy,2026-05-01 11:43:20,corroborate
+ABBV-00336,2026-05-01 11:43:20,ABBV | Guggenheim,price_target_usd,,249.0,2026-05-01 11:43:20,corroborate
+ABBV-00337,2026-05-04 10:58:26,ABBV | Evercore ISI Group,rating,,Outperform,2026-05-04 10:58:26,new
+ABBV-00337,2026-05-04 10:58:26,ABBV | Evercore ISI Group,price_target_usd,,236.0,2026-05-04 10:58:26,new
+ABBV-00338,2026-05-14 11:11:16,ABBV | Piper Sandler,rating,,Overweight,2026-05-14 11:11:16,new
+ABBV-00338,2026-05-14 11:11:16,ABBV | Piper Sandler,price_target_usd,,298.0,2026-05-14 11:11:16,new
+ABBV-00339,2026-05-15 13:18:54,ABBV | Evercore ISI Group,rating,,Outperform,2026-05-15 13:18:54,new
+ABBV-00339,2026-05-15 13:18:54,ABBV | Evercore ISI Group,price_target_usd,,235.0,2026-05-15 13:18:54,new
+ABBV-00340,2026-06-23 09:59:40,ABBV | Canaccord Genuity,price_target_usd,,273.0,2026-06-23 09:59:40,new
+ABBV-00341,2026-06-23 12:18:50,ABBV | Piper Sandler,rating,,Overweight,2026-06-23 12:18:50,new
+ABBV-00341,2026-06-23 12:18:50,ABBV | Piper Sandler,price_target_usd,,298.0,2026-06-23 12:18:50,new
+ABBV-00342,2026-07-06 08:48:04,ABBV | Cantor Fitzgerald,price_target_usd,,265.0,2026-07-06 08:48:04,new
+ABBV-00343,2026-07-09 08:27:08,ABBV | JP Morgan,rating,,Overweight,2026-07-09 08:27:08,corroborate
+ABBV-00343,2026-07-09 08:27:08,ABBV | JP Morgan,price_target_usd,,280.0,2026-07-09 08:27:08,new
+ABBV-00344,2026-07-09 10:11:08,ABBV | Guggenheim,price_target_usd,,261.0,2026-07-09 10:11:08,new
+ABBV-00345,2026-07-10 08:25:19,ABBV | Wells Fargo,rating,,Overweight,2026-07-10 08:25:19,corroborate
+ABBV-00345,2026-07-10 08:25:19,ABBV | Wells Fargo,price_target_usd,,295.0,2026-07-10 08:25:19,new
+ABBV-00346,2026-07-10 09:18:28,ABBV | RBC Capital,price_target_usd,,280.0,2026-07-10 09:18:28,new
+ABBV-00347,2026-07-10 14:00:42,ABBV | B of A Securities,rating,,Buy,2026-07-10 14:00:42,new
+ABBV-00347,2026-07-10 14:00:42,ABBV | B of A Securities,price_target_usd,,276.0,2026-07-10 14:00:42,new
+ABBV-00348,2026-07-13 08:55:42,ABBV | BMO Capital,rating,,Outperform,2026-07-13 08:55:42,new
+ABBV-00348,2026-07-13 08:55:42,ABBV | BMO Capital,price_target_usd,,300.0,2026-07-13 08:55:42,new
+ABBV-00349,2026-07-13 14:23:47,ABBV | UBS,rating,,Neutral,2026-07-13 14:23:47,new
+ABBV-00349,2026-07-13 14:23:47,ABBV | UBS,price_target_usd,,260.0,2026-07-13 14:23:47,new
+ABBV-00350,2026-07-15 11:15:50,ABBV | Citigroup,price_target_usd,,260.0,2026-07-15 11:15:50,new
+ABBV-00351,2026-07-22 07:12:40,ABBV | Canaccord Genuity,price_target_usd,,282.0,2026-07-22 07:12:40,new
+ABBV-00352,2026-07-29 07:48:35,ABBV | Barclays,price_target_usd,,300.0,2026-07-29 07:48:35,new
+ABBV-00353,2026-07-31 07:35:58,ABBV | William Blair,rating,,Buy,2026-07-31 07:35:58,corroborate
+ABBV-00354,2026-07-31 08:01:57,ABBV | TD Cowen,rating,,Buy,2026-07-31 08:01:57,corroborate
+ABBV-00354,2026-07-31 08:01:57,ABBV | TD Cowen,price_target_usd,,280.0,2026-07-31 08:01:57,corroborate
+ABBV-00355,2026-08-03 06:57:36,ABBV | Morgan Stanley,rating,,Overweight,2026-08-03 06:57:36,new
+ABBV-00355,2026-08-03 06:57:36,ABBV | Morgan Stanley,price_target_usd,,296.0,2026-08-03 06:57:36,new
+ABBV-00356,2026-08-03 08:45:56,ABBV | Cantor Fitzgerald,rating,,Overweight,2026-08-03 08:45:56,corroborate
+ABBV-00356,2026-08-03 08:45:56,ABBV | Cantor Fitzgerald,price_target_usd,,285.0,2026-08-03 08:45:56,new
+ABBV-00357,2026-08-03 17:17:39,ABBV | Canaccord Genuity,price_target_usd,,290.0,2026-08-03 17:17:39,new
+ABBV-00358,2026-08-04 07:47:38,ABBV | Guggenheim,price_target_usd,,288.0,2026-08-04 07:47:38,new
+ABBV-00358,2026-08-04 07:47:38,ABBV | Guggenheim,rating,,Buy,2026-08-04 07:47:38,corroborate
+ABBV-00359,2026-08-05 06:01:11,ABBV | Erste Group,rating,,Buy,2026-08-05 06:01:11,new
+ABBV-00360,2026-08-06 05:49:00,ABBV | Berenberg,price_target_usd,,275.0,2026-08-06 05:49:00,new
+ABBV-00361,2026-08-10 12:01:32,ABBV | Evercore ISI Group,rating,,Outperform,2026-08-10 12:01:32,new
+ABBV-00361,2026-08-10 12:01:32,ABBV | Evercore ISI Group,price_target_usd,,260.0,2026-08-10 12:01:32,new
+ABBV-00362,2026-08-11 13:54:39,ABBV | BNP Paribas,rating,,Neutral,2026-08-11 13:54:39,new
+ABBV-00362,2026-08-11 13:54:39,ABBV | BNP Paribas,price_target_usd,,247.0,2026-08-11 13:54:39,new
+ABBV-00363,2026-08-13 13:13:27,ABBV | Wolfe Research,rating,,Outperform,2026-08-13 13:13:27,new
+ABBV-00363,2026-08-13 13:13:27,ABBV | Wolfe Research,price_target_usd,,300.0,2026-08-13 13:13:27,new
+ABBV-00364,2026-08-17 09:03:55,ABBV | Wells Fargo,price_target_usd,,300.0,2026-08-17 09:03:55,new
+ABBV-00365,2026-08-20 12:13:00,ABBV | Piper Sandler,rating,,Overweight,2026-08-20 12:13:00,new
+ABBV-00365,2026-08-20 12:13:00,ABBV | Piper Sandler,price_target_usd,,303.0,2026-08-20 12:13:00,new
+ABBV-00366,2026-09-10 10:10:09,ABBV | HSBC,price_target_usd,,315.0,2026-09-10 10:10:09,new
+ABBV-00367,2026-10-06 08:43:02,ABBV | Scotiabank,rating,,Outperform,2026-10-06 08:43:02,new
+ABBV-00367,2026-10-06 08:43:02,ABBV | Scotiabank,price_target_usd,,320.0,2026-10-06 08:43:02,new
+ABBV-00368,2026-10-07 10:13:50,ABBV | Morgan Stanley,rating,,Overweight,2026-10-07 10:13:50,new
+ABBV-00368,2026-10-07 10:13:50,ABBV | Morgan Stanley,price_target_usd,,310.0,2026-10-07 10:13:50,new
+ABBV-00369,2026-10-08 06:35:55,ABBV | Cantor Fitzgerald,price_target_usd,,290.0,2026-10-08 06:35:55,new
+ABBV-00370,2026-10-08 16:53:13,ABBV | JP Morgan,price_target_usd,,300.0,2026-10-08 16:53:13,new
+ABBV-00371,2026-10-09 09:18:52,ABBV | Guggenheim,rating,,Buy,2026-10-09 09:18:52,corroborate
+ABBV-00371,2026-10-09 09:18:52,ABBV | Guggenheim,price_target_usd,,288.0,2026-10-09 09:18:52,corroborate
+ABBV-00372,2026-10-09 11:27:19,ABBV | UBS,price_target_usd,,275.0,2026-10-09 11:27:19,new
+ABBV-00372,2026-10-09 11:27:19,ABBV | UBS,rating,,Neutral,2026-10-09 11:27:19,new
+ABBV-00373,2026-10-13 10:18:34,ABBV | RBC Capital,rating,,Outperform,2026-10-13 10:18:34,corroborate
+ABBV-00373,2026-10-13 10:18:34,ABBV | RBC Capital,price_target_usd,,280.0,2026-10-13 10:18:34,corroborate
+ABBV-00374,2026-10-21 08:48:37,ABBV | Barclays,price_target_usd,,325.0,2026-10-21 08:48:37,new
+ABBV-00375,2026-10-23 14:00:38,ABBV | Goldman Sachs,rating,,Neutral,2026-10-23 14:00:38,new
+ABBV-00375,2026-10-23 14:00:38,ABBV | Goldman Sachs,price_target_usd,,294.0,2026-10-23 14:00:38,new
+ABBV-00376,2026-11-02 07:25:56,ABBV | Cantor Fitzgerald,rating,,Overweight,2026-11-02 07:25:56,new
+ABBV-00376,2026-11-02 07:25:56,ABBV | Cantor Fitzgerald,price_target_usd,,325.0,2026-11-02 07:25:56,new
+ABBV-00377,2026-11-02 07:37:38,ABBV | Canaccord Genuity,price_target_usd,,338.0,2026-11-02 07:37:38,new
+ABBV-00378,2026-11-02 08:23:53,ABBV | RBC Capital,rating,,Outperform,2026-11-02 08:23:53,corroborate
+ABBV-00378,2026-11-02 08:23:53,ABBV | RBC Capital,price_target_usd,,330.0,2026-11-02 08:23:53,new
+ABBV-00379,2026-11-02 08:49:08,ABBV | Wells Fargo,price_target_usd,,340.0,2026-11-02 08:49:08,new
+ABBV-00380,2026-11-02 09:13:43,ABBV | Guggenheim,price_target_usd,,322.0,2026-11-02 09:13:43,new
+ABBV-00381,2026-11-02 12:25:08,ABBV | Morgan Stanley,rating,,Overweight,2026-11-02 12:25:08,new
+ABBV-00381,2026-11-02 12:25:08,ABBV | Morgan Stanley,price_target_usd,,346.0,2026-11-02 12:25:08,new
+ABBV-00382,2026-11-02 15:02:54,ABBV | Leerink Partners,rating,,Outperform,2026-11-02 15:02:54,corroborate
+ABBV-00382,2026-11-02 15:02:54,ABBV | Leerink Partners,price_target_usd,,342.0,2026-11-02 15:02:54,new
+ABBV-00383,2026-11-02 16:20:06,ABBV | UBS,rating,,Neutral,2026-11-02 16:20:06,new
+ABBV-00383,2026-11-02 16:20:06,ABBV | UBS,price_target_usd,,295.0,2026-11-02 16:20:06,new
+ABBV-00384,2026-11-16 09:59:18,ABBV | Barclays,rating,,Overweight,2026-11-16 09:59:18,corroborate
+ABBV-00384,2026-11-16 09:59:18,ABBV | Barclays,price_target_usd,,335.0,2026-11-16 09:59:18,new

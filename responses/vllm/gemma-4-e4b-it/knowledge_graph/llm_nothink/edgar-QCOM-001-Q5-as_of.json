@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-QCOM-001-Q5-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "QCOM",
+ "qtype": "count_reports",
+ "mode": "as_of",
+ "as_of": "2020-02-18 12:38:00",
+ "question": "How many filings have reported a fiscal year 2019 (ended 29 September 2019) total revenue figure for QUALCOMM INC/DE?",
+ "gold": "1",
+ "peek_answers": "3",
+ "trap_answers": "",
+ "gold_evidence": "QCOM-00070",
+ "answer": "1",
+ "cited": "QCOM-00070",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 2478,
+ "out_tokens": 40,
+ "seconds": 0.2949,
+ "n_facts": 16,
+ "n_dropped": 0,
+ "created": "2026-11-22T05:47:28",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2020-02-18 12:38:00\nQuestion: How many filings have reported a fiscal year 2019 (ended 29 September 2019) total revenue figure for QUALCOMM INC/DE?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nQCOM | Revenues | value_usd_m | 2016-09-26..2017-09-24: latest 22258 | first 22291 | 3 reports: 22291 [QCOM-00039 @2017-11-01 20:10]; 22291 [QCOM-00051 @2018-11-07 21:15]; 22258 [QCOM-00068 @2019-11-06 21:08]\nQCOM | Revenues | value_usd_m | 2017-09-25..2017-12-24: latest 6035 | first 6068 | 2 reports: 6068 [QCOM-00041 @2018-01-31 21:10]; 6035 [QCOM-00055 @2019-01-30 21:08]\nQCOM | Revenues | value_usd_m | 2017-09-25..2018-03-25: latest 11255 | first 11329 | 2 reports: 11329 [QCOM-00044 @2018-04-25 20:07]; 11255 [QCOM-00060 @2019-05-01 20:11]\nQCOM | Revenues | value_usd_m | 2017-12-25..2018-03-25: latest 5220 | first 5261 | 3 reports: 5261 [QCOM-00045 @2018-04-25 20:07]; 5220 [QCOM-00056 @2019-01-30 21:08]; 5220 [QCOM-00061 @2019-05-01 20:11]\nQCOM | Revenues | value_usd_m | 2017-09-25..2018-06-24: latest 16833 | first 16928 | 2 reports: 16928 [QCOM-00048 @2018-07-25 20:10]; 16833 [QCOM-00064 @2019-07-31 20:13]\nQCOM | Revenues | value_usd_m | 2018-03-26..2018-06-24: latest 5577 | first 5599 | 3 reports: 5599 [QCOM-00049 @2018-07-25 20:10]; 5577 [QCOM-00057 @2019-01-30 21:08]; 5577 [QCOM-00065 @2019-07-31 20:13]\nQCOM | Revenues | value_usd_m | 2017-09-25..2018-09-30: latest 22611 | first 22732 | 2 reports: 22732 [QCOM-00052 @2018-11-07 21:15]; 22611 [QCOM-00069 @2019-11-06 21:08]\nQCOM | Revenues | value_usd_m | 2017-06-26..2017-09-24: latest 5888 | first 5888 | 1 reports: 5888 [QCOM-00054 @2019-01-30 21:08]\nQCOM | Revenues | value_usd_m | 2018-06-25..2018-09-30: latest 5778 | first 5778 | 1 reports: 5778 [QCOM-00058 @2019-01-30 21:08]\nQCOM | Revenues | value_usd_m | 2018-10-01..2018-12-30: latest 4842 | first 4842 | 2 reports: 4842 [QCOM-00059 @2019-01-30 21:08]; 4842 [QCOM-00071 @2020-02-05 21:07]\nQCOM | Revenues | value_usd_m | 2018-10-01..2019-03-31: latest 9824 | first 9824 | 1 reports: 9824 [QCOM-00062 @2019-05-01 20:11]\nQCOM | Revenues | value_usd_m | 2018-12-31..2019-03-31: latest 4982 | first 4982 | 1 reports: 4982 [QCOM-00063 @2019-05-01 20:11]\nQCOM | Revenues | value_usd_m | 2018-10-01..2019-06-30: latest 19459 | first 19459 | 1 reports: 19459 [QCOM-00066 @2019-07-31 20:13]\nQCOM | Revenues | value_usd_m | 2019-04-01..2019-06-30: latest 9635 | first 9635 | 1 reports: 9635 [QCOM-00067 @2019-07-31 20:13]\nQCOM | Revenues | value_usd_m | 2018-10-01..2019-09-29: latest 24273 | first 24273 | 1 reports: 24273 [QCOM-00070 @2019-11-06 21:08]\nQCOM | Revenues | value_usd_m | 2019-09-30..2019-12-29: latest 5077 | first 5077 | 1 reports: 5077 [QCOM-00072 @2020-02-05 21:07]"
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"QCOM-00070\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"QCOM-00070\"\n  ]\n}\n```"
+}

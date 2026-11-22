@@ -1,0 +1,43 @@
+{
+ "qid": "broker-META-004-Q5-today",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "META",
+ "qtype": "count_changes",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many times did brokers raise or lower their META price target between 1 September 2026 and the as-of time?",
+ "gold": "42",
+ "peek_answers": "",
+ "trap_answers": "54|43|55",
+ "gold_evidence": "META-00485|META-00476|META-00491|META-00519|META-00477|META-00487|META-00514|META-00502|META-00526|META-00499|META-00527|META-00489|META-00496|META-00481|META-00508|META-00511|META-00472|META-00484|META-00516|META-00486|META-00520|META-00490|META-00488|META-00515|META-00498|META-00521|META-00524|META-00473|META-00512|META-00507|META-00503|META-00523|META-00509|META-00480|META-00493|META-00506|META-00525|META-00482|META-00522|META-00497|META-00505|META-00517",
+ "answer": "1",
+ "cited": "META-00507",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.023809523809523808,
+ "in_tokens": 962,
+ "out_tokens": 39,
+ "seconds": 0.0455,
+ "retrieved": "META-00479|META-00507|META-00513",
+ "n_dropped": 0,
+ "created": "2026-11-22T02:48:43",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many times did brokers raise or lower their META price target between 1 September 2026 and the as-of time?\n\nEvidence:\n[META-00479] 2026-09-22 09:01 | B of A Securities reiterated Buy on META, with a $810.00 price target.\n[META-00507] 2026-10-22 07:36 | B of A Securities maintained Buy on META, and raised its price target from $810.00 to $845.00.\n[META-00513] 2026-10-22 09:11 | StoneX reiterated Hold on META."
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"META-00507\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"META-00507\"\n  ]\n}\n```"
+}

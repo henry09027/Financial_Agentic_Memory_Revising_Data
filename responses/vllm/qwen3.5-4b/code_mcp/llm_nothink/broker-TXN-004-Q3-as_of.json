@@ -1,0 +1,79 @@
+{
+ "qid": "broker-TXN-004-Q3-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "TXN",
+ "qtype": "change_since_initiation",
+ "mode": "as_of",
+ "as_of": "2026-07-22 15:06:00",
+ "question": "By what percent has Wells Fargo's TXN price target changed since it initiated coverage? (split-adjusted, in percent)",
+ "gold": "100",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "TXN-00389|TXN-00538",
+ "answer": "100",
+ "cited": "TXN-00389|TXN-00538",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 14671,
+ "out_tokens": 439,
+ "seconds": 1.4282,
+ "n_dropped": 0,
+ "n_sql": 4,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 5,
+ "sql": "[\"SELECT subject, attribute, period, value, effective_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'TXN | Wells Fargo' \\n  AND attribute = 'price_target_usd' \\nORDER BY effective_at ASC\", \"SELECT subject, attribute, period, value, effective_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'TXN | Wells Fargo' \\n  AND attribute = 'price_target_usd' \\n  AND effective_at <= '2026-07-22 15:06:00'\\nORDER BY effective_at ASC\", \"SELECT \\n    (SELECT MAX(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00') AS latest_target,\\n    (SELECT MIN(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00' AND kind = 'new') AS init_target\\nFROM facts\", \"SELECT \\n    (SELECT MAX(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00') AS latest_target,\\n    (SELECT MIN(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00' AND kind = 'new') AS init_target\\nFROM facts\\nLIMIT 1;\"]",
+ "created": "2026-11-22T01:46:44",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-07-22 15:06:00\nQuestion: By what percent has Wells Fargo's TXN price target changed since it initiated coverage? (split-adjusted, in percent)\n\nDatabase contents at the as-of time: 347 facts, 173 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'TXN | B of A Securities': price_target_usd (7), rating (7)\n  'TXN | Baird': price_target_usd (6), rating (6)\n  'TXN | Barclays': price_target_usd (6), rating (6)\n  'TXN | Benchmark': price_target_usd (11), rating (11)\n  'TXN | Cantor Fitzgerald': price_target_usd (15), rating (15)\n  'TXN | Citigroup': price_target_usd (9), rating (9)\n  'TXN | Deutsche Bank': price_target_usd (2), rating (2)\n  'TXN | Evercore ISI Group': price_target_usd (4), rating (4)\n  'TXN | Goldman Sachs': price_target_usd (7), rating (7)\n  'TXN | JP Morgan': price_target_usd (7), rating (7)\n  'TXN | Jefferies': price_target_usd (5), rating (5)\n  'TXN | Keybanc': price_target_usd (6), rating (6)\n  'TXN | Mizuho': price_target_usd (10), rating (9)\n  'TXN | Morgan Stanley': price_target_usd (6), rating (6)\n  'TXN | Rosenblatt': price_target_usd (12), rating (12)\n  'TXN | Seaport Global': price_target_usd (3), rating (3)\n  'TXN | Stifel': price_target_usd (11), rating (11)\n  'TXN | Susquehanna': price_target_usd (8), rating (8)\n  'TXN | TD Cowen': price_target_usd (6), rating (6)\n  'TXN | TD Securities': price_target_usd (1), rating (1)\n  'TXN | Truist Securities': price_target_usd (11), rating (11)\n  'TXN | UBS': price_target_usd (7), rating (7)\n  'TXN | Wells Fargo': price_target_usd (13), rating (13)\n  'TXN | Wolfe Research': price_target_usd (1), rating (1)\nkind values: 'corroborate', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'TXN | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id \nFROM facts \nWHERE subject = 'TXN | Wells Fargo' \n  AND attribute = 'price_target_usd' \nORDER BY effective_at ASC\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value,effective_at,kind,evidence_id\nTXN | Wells Fargo,price_target_usd,,150.00,2024-05-16 10:23:04,new,TXN-00389\nTXN | Wells Fargo,price_target_usd,,215.00,2024-11-22 08:53:52,new,TXN-00425\nTXN | Wells Fargo,price_target_usd,,208.0,2025-01-13 10:50:57,new,TXN-00426\nTXN | Wells Fargo,price_target_usd,,200.0,2025-01-17 09:06:19,new,TXN-00427\nTXN | Wells Fargo,price_target_usd,,175.0,2025-04-24 09:26:35,new,TXN-00442\nTXN | Wells Fargo,price_target_usd,,190.0,2025-06-16 10:33:05,new,TXN-00454\nTXN | Wells Fargo,price_target_usd,,215.0,2025-07-16 12:17:25,new,TXN-00464\nTXN | Wells Fargo,price_target_usd,,195.0,2025-07-23 10:17:39,new,TXN-00472\nTXN | Wells Fargo,price_target_usd,,170.0,2025-10-22 09:37:18,new,TXN-00487\nTXN | Wells Fargo,price_target_usd,,185.0,2026-01-15 09:47:29,new,TXN-00496\nTXN | Wells Fargo,price_target_usd,,215.0,2026-01-28 10:23:13,new,TXN-00508\nTXN | Wells Fargo,price_target_usd,,260.0,2026-04-23 10:47:37,new,TXN-00524\nTXN | Wells Fargo,price_target_usd,,300.0,2026-06-09 11:49:16,new,TXN-00538\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id \nFROM facts \nWHERE subject = 'TXN | Wells Fargo' \n  AND attribute = 'price_target_usd' \n  AND effective_at <= '2026-07-22 15:06:00'\nORDER BY effective_at ASC\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value,effective_at,kind,evidence_id\nTXN | Wells Fargo,price_target_usd,,150.00,2024-05-16 10:23:04,new,TXN-00389\nTXN | Wells Fargo,price_target_usd,,215.00,2024-11-22 08:53:52,new,TXN-00425\nTXN | Wells Fargo,price_target_usd,,208.0,2025-01-13 10:50:57,new,TXN-00426\nTXN | Wells Fargo,price_target_usd,,200.0,2025-01-17 09:06:19,new,TXN-00427\nTXN | Wells Fargo,price_target_usd,,175.0,2025-04-24 09:26:35,new,TXN-00442\nTXN | Wells Fargo,price_target_usd,,190.0,2025-06-16 10:33:05,new,TXN-00454\nTXN | Wells Fargo,price_target_usd,,215.0,2025-07-16 12:17:25,new,TXN-00464\nTXN | Wells Fargo,price_target_usd,,195.0,2025-07-23 10:17:39,new,TXN-00472\nTXN | Wells Fargo,price_target_usd,,170.0,2025-10-22 09:37:18,new,TXN-00487\nTXN | Wells Fargo,price_target_usd,,185.0,2026-01-15 09:47:29,new,TXN-00496\nTXN | Wells Fargo,price_target_usd,,215.0,2026-01-28 10:23:13,new,TXN-00508\nTXN | Wells Fargo,price_target_usd,,260.0,2026-04-23 10:47:37,new,TXN-00524\nTXN | Wells Fargo,price_target_usd,,300.0,2026-06-09 11:49:16,new,TXN-00538\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT \n    (SELECT MAX(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00') AS latest_target,\n    (SELECT MIN(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00' AND kind = 'new') AS init_target\nFROM facts\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nlatest_target,init_target\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n300.0,150.0\n...(truncated)"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT \n    (SELECT MAX(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00') AS latest_target,\n    (SELECT MIN(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00' AND kind = 'new') AS init_target\nFROM facts\nLIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nlatest_target,init_target\n300.0,150.0\n"
+  }
+ ],
+ "final_text": "{\n\"answer\": 100,\n\"evidence_ids\": [\"TXN-00389\", \"TXN-00538\"]\n}",
+ "raw_output": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id \nFROM facts \nWHERE subject = 'TXN | Wells Fargo' \n  AND attribute = 'price_target_usd' \nORDER BY effective_at ASC\n```\n\n===== next turn =====\n\n```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id \nFROM facts \nWHERE subject = 'TXN | Wells Fargo' \n  AND attribute = 'price_target_usd' \n  AND effective_at <= '2026-07-22 15:06:00'\nORDER BY effective_at ASC\n```\n\n===== next turn =====\n\n```sql\nSELECT \n    (SELECT MAX(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00') AS latest_target,\n    (SELECT MIN(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00' AND kind = 'new') AS init_target\nFROM facts\n```\n\n===== next turn =====\n\n```sql\nSELECT \n    (SELECT MAX(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00') AS latest_target,\n    (SELECT MIN(value_num) FROM facts WHERE subject = 'TXN | Wells Fargo' AND attribute = 'price_target_usd' AND effective_at <= '2026-07-22 15:06:00' AND kind = 'new') AS init_target\nFROM facts\nLIMIT 1;\n```\n\n===== next turn =====\n\n{\n\"answer\": 100,\n\"evidence_ids\": [\"TXN-00389\", \"TXN-00538\"]\n}"
+}

@@ -1,0 +1,349 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+AMZN-00795,2025-08-01 06:11:42,AMZN | Needham,rating,,Buy,2025-08-01 06:11:42,new
+AMZN-00795,2025-08-01 06:11:42,AMZN | Needham,price_target_usd,,265.0,2025-08-01 06:11:42,new
+AMZN-00796,2025-08-01 06:21:55,AMZN | Needham,price_target_usd,,260.0,2025-08-01 06:21:55,new
+AMZN-00796,2025-08-01 06:21:55,AMZN | Needham,rating,,Buy,2025-08-01 06:21:55,corroborate
+AMZN-00797,2025-08-01 06:23:43,AMZN | Goldman Sachs,rating,,Buy,2025-08-01 06:23:43,new
+AMZN-00797,2025-08-01 06:23:43,AMZN | Goldman Sachs,price_target_usd,,240.0,2025-08-01 06:23:43,new
+AMZN-00798,2025-08-01 06:46:34,AMZN | B of A Securities,rating,,Buy,2025-08-01 06:46:34,new
+AMZN-00798,2025-08-01 06:46:34,AMZN | B of A Securities,price_target_usd,,272.0,2025-08-01 06:46:34,new
+AMZN-00798,2025-08-01 06:46:34,AMZN | B of A Securities,price_target_usd,,265.0,2025-08-01 06:46:34,inferred
+AMZN-00799,2025-08-01 07:09:15,AMZN | Telsey Advisory Group,rating,,Outperform,2025-08-01 07:09:15,new
+AMZN-00799,2025-08-01 07:09:15,AMZN | Telsey Advisory Group,price_target_usd,,265.0,2025-08-01 07:09:15,new
+AMZN-00800,2025-08-01 07:12:11,AMZN | WestPark Capital,rating,,Buy,2025-08-01 07:12:11,new
+AMZN-00800,2025-08-01 07:12:11,AMZN | WestPark Capital,price_target_usd,,280.0,2025-08-01 07:12:11,new
+AMZN-00801,2025-08-01 07:31:44,AMZN | Piper Sandler,rating,,Overweight,2025-08-01 07:31:44,new
+AMZN-00801,2025-08-01 07:31:44,AMZN | Piper Sandler,price_target_usd,,255.0,2025-08-01 07:31:44,new
+AMZN-00802,2025-08-01 07:42:24,AMZN | Rosenblatt,rating,,Buy,2025-08-01 07:42:24,new
+AMZN-00802,2025-08-01 07:42:24,AMZN | Rosenblatt,price_target_usd,,297.0,2025-08-01 07:42:24,new
+AMZN-00803,2025-08-01 08:16:48,AMZN | Canaccord Genuity,rating,,Buy,2025-08-01 08:16:48,new
+AMZN-00803,2025-08-01 08:16:48,AMZN | Canaccord Genuity,price_target_usd,,280.0,2025-08-01 08:16:48,new
+AMZN-00804,2025-08-01 08:48:26,AMZN | Barclays,rating,,Overweight,2025-08-01 08:48:26,new
+AMZN-00804,2025-08-01 08:48:26,AMZN | Barclays,price_target_usd,,275.0,2025-08-01 08:48:26,new
+AMZN-00805,2025-08-01 08:52:13,AMZN | Susquehanna,rating,,Positive,2025-08-01 08:52:13,new
+AMZN-00805,2025-08-01 08:52:13,AMZN | Susquehanna,price_target_usd,,260.0,2025-08-01 08:52:13,new
+AMZN-00806,2025-08-01 09:16:18,AMZN | JMP Securities,rating,,Market Outperform,2025-08-01 09:16:18,new
+AMZN-00806,2025-08-01 09:16:18,AMZN | JMP Securities,price_target_usd,,285.0,2025-08-01 09:16:18,new
+AMZN-00807,2025-08-01 09:45:45,AMZN | Wedbush,rating,,Outperform,2025-08-01 09:45:45,new
+AMZN-00807,2025-08-01 09:45:45,AMZN | Wedbush,price_target_usd,,250.0,2025-08-01 09:45:45,new
+AMZN-00808,2025-08-01 09:55:21,AMZN | Cantor Fitzgerald,rating,,Overweight,2025-08-01 09:55:21,new
+AMZN-00808,2025-08-01 09:55:21,AMZN | Cantor Fitzgerald,price_target_usd,,280.0,2025-08-01 09:55:21,new
+AMZN-00809,2025-08-01 11:05:28,AMZN | Stifel,rating,,Buy,2025-08-01 11:05:28,new
+AMZN-00809,2025-08-01 11:05:28,AMZN | Stifel,price_target_usd,,260.0,2025-08-01 11:05:28,new
+AMZN-00810,2025-08-01 11:06:31,AMZN | RBC Capital,rating,,Outperform,2025-08-01 11:06:31,new
+AMZN-00810,2025-08-01 11:06:31,AMZN | RBC Capital,price_target_usd,,240.0,2025-08-01 11:06:31,new
+AMZN-00811,2025-08-01 12:09:34,AMZN | JP Morgan,rating,,Overweight,2025-08-01 12:09:34,new
+AMZN-00811,2025-08-01 12:09:34,AMZN | JP Morgan,price_target_usd,,265.0,2025-08-01 12:09:34,new
+AMZN-00812,2025-08-01 13:27:47,AMZN | BMO Capital,rating,,Outperform,2025-08-01 13:27:47,new
+AMZN-00812,2025-08-01 13:27:47,AMZN | BMO Capital,price_target_usd,,280.0,2025-08-01 13:27:47,new
+AMZN-00813,2025-08-01 13:47:30,AMZN | Oppenheimer,rating,,Outperform,2025-08-01 13:47:30,new
+AMZN-00813,2025-08-01 13:47:30,AMZN | Oppenheimer,price_target_usd,,245.0,2025-08-01 13:47:30,new
+AMZN-00814,2025-08-01 16:00:10,AMZN | Citigroup,rating,,Buy,2025-08-01 16:00:10,new
+AMZN-00814,2025-08-01 16:00:10,AMZN | Citigroup,price_target_usd,,270.0,2025-08-01 16:00:10,new
+AMZN-00815,2025-08-01 17:45:30,AMZN | DA Davidson,rating,,Buy,2025-08-01 17:45:30,new
+AMZN-00815,2025-08-01 17:45:30,AMZN | DA Davidson,price_target_usd,,265.0,2025-08-01 17:45:30,new
+AMZN-00816,2025-08-04 06:16:26,AMZN | HSBC,rating,,Buy,2025-08-04 06:16:26,new
+AMZN-00816,2025-08-04 06:16:26,AMZN | HSBC,price_target_usd,,256.0,2025-08-04 06:16:26,new
+AMZN-00817,2025-08-13 06:11:38,AMZN | Evercore ISI Group,rating,,Outperform,2025-08-13 06:11:38,corroborate
+AMZN-00817,2025-08-13 06:11:38,AMZN | Evercore ISI Group,price_target_usd,,280.0,2025-08-13 06:11:38,corroborate
+AMZN-00818,2025-08-13 16:54:37,AMZN | Telsey Advisory Group,rating,,Outperform,2025-08-13 16:54:37,corroborate
+AMZN-00818,2025-08-13 16:54:37,AMZN | Telsey Advisory Group,price_target_usd,,265.0,2025-08-13 16:54:37,corroborate
+AMZN-00819,2025-08-14 06:09:29,AMZN | Morgan Stanley,rating,,Overweight,2025-08-14 06:09:29,new
+AMZN-00819,2025-08-14 06:09:29,AMZN | Morgan Stanley,price_target_usd,,300.0,2025-08-14 06:09:29,new
+AMZN-00820,2025-09-16 10:42:17,AMZN | Truist Securities,rating,,Buy,2025-09-16 10:42:17,new
+AMZN-00820,2025-09-16 10:42:17,AMZN | Truist Securities,price_target_usd,,270.0,2025-09-16 10:42:17,new
+AMZN-00821,2025-09-19 08:34:57,AMZN | Wedbush,rating,,Outperform,2025-09-19 08:34:57,corroborate
+AMZN-00821,2025-09-19 08:34:57,AMZN | Wedbush,price_target_usd,,250.0,2025-09-19 08:34:57,corroborate
+AMZN-00822,2025-09-24 07:24:02,AMZN | Wells Fargo,rating,,Overweight,2025-09-24 07:24:02,new
+AMZN-00822,2025-09-24 07:24:02,AMZN | Wells Fargo,price_target_usd,,280.0,2025-09-24 07:24:02,new
+AMZN-00823,2025-09-24 07:45:18,AMZN | Telsey Advisory Group,rating,,Outperform,2025-09-24 07:45:18,new
+AMZN-00823,2025-09-24 07:45:18,AMZN | Telsey Advisory Group,price_target_usd,,265.0,2025-09-24 07:45:18,new
+AMZN-00824,2025-09-30 11:47:30,AMZN | Mizuho,rating,,Outperform,2025-09-30 11:47:30,new
+AMZN-00824,2025-09-30 11:47:30,AMZN | Mizuho,price_target_usd,,300.0,2025-09-30 11:47:30,new
+AMZN-00825,2025-10-03 11:20:53,AMZN | Goldman Sachs,rating,,Buy,2025-10-03 11:20:53,new
+AMZN-00825,2025-10-03 11:20:53,AMZN | Goldman Sachs,price_target_usd,,275.0,2025-10-03 11:20:53,new
+AMZN-00826,2025-10-22 08:48:36,AMZN | Benchmark,rating,,Buy,2025-10-22 08:48:36,new
+AMZN-00826,2025-10-22 08:48:36,AMZN | Benchmark,price_target_usd,,260.0,2025-10-22 08:48:36,new
+AMZN-00827,2025-10-24 08:34:26,AMZN | Wedbush,price_target_usd,,280.0,2025-10-24 08:34:26,new
+AMZN-00828,2025-10-24 09:45:56,AMZN | Stifel,price_target_usd,,269.0,2025-10-24 09:45:56,new
+AMZN-00829,2025-10-28 12:55:37,AMZN | UBS,rating,,Buy,2025-10-28 12:55:37,new
+AMZN-00829,2025-10-28 12:55:37,AMZN | UBS,price_target_usd,,279.0,2025-10-28 12:55:37,new
+AMZN-00830,2025-10-31 05:56:56,AMZN | Citizens,rating,,Market Outperform,2025-10-31 05:56:56,new
+AMZN-00830,2025-10-31 05:56:56,AMZN | Citizens,price_target_usd,,300.0,2025-10-31 05:56:56,new
+AMZN-00831,2025-10-31 06:53:42,AMZN | B of A Securities,rating,,Buy,2025-10-31 06:53:42,new
+AMZN-00831,2025-10-31 06:53:42,AMZN | B of A Securities,price_target_usd,,303.0,2025-10-31 06:53:42,new
+AMZN-00832,2025-10-31 07:13:01,AMZN | Telsey Advisory Group,rating,,Outperform,2025-10-31 07:13:01,new
+AMZN-00832,2025-10-31 07:13:01,AMZN | Telsey Advisory Group,price_target_usd,,300.0,2025-10-31 07:13:01,new
+AMZN-00833,2025-10-31 07:36:01,AMZN | Stifel,price_target_usd,,295.0,2025-10-31 07:36:01,new
+AMZN-00834,2025-10-31 08:13:41,AMZN | Rosenblatt,rating,,Buy,2025-10-31 08:13:41,new
+AMZN-00834,2025-10-31 08:13:41,AMZN | Rosenblatt,price_target_usd,,305.0,2025-10-31 08:13:41,new
+AMZN-00835,2025-10-31 08:39:23,AMZN | Evercore ISI Group,price_target_usd,,335.0,2025-10-31 08:39:23,new
+AMZN-00836,2025-10-31 08:53:40,AMZN | Keybanc,rating,,Overweight,2025-10-31 08:53:40,new
+AMZN-00836,2025-10-31 08:53:40,AMZN | Keybanc,price_target_usd,,303.0,2025-10-31 08:53:40,new
+AMZN-00837,2025-10-31 09:20:24,AMZN | DA Davidson,price_target_usd,,300.0,2025-10-31 09:20:24,new
+AMZN-00838,2025-10-31 09:28:29,AMZN | Cantor Fitzgerald,price_target_usd,,315.0,2025-10-31 09:28:29,new
+AMZN-00839,2025-10-31 09:50:09,AMZN | Benchmark,price_target_usd,,295.0,2025-10-31 09:50:09,new
+AMZN-00840,2025-10-31 10:31:23,AMZN | RBC Capital,price_target_usd,,300.0,2025-10-31 10:31:23,new
+AMZN-00841,2025-10-31 11:14:17,AMZN | Barclays,rating,,Overweight,2025-10-31 11:14:17,new
+AMZN-00841,2025-10-31 11:14:17,AMZN | Barclays,price_target_usd,,300.0,2025-10-31 11:14:17,new
+AMZN-00842,2025-10-31 11:38:09,AMZN | UBS,price_target_usd,,310.0,2025-10-31 11:38:09,new
+AMZN-00843,2025-10-31 11:53:49,AMZN | Bernstein,rating,,Outperform,2025-10-31 11:53:49,new
+AMZN-00843,2025-10-31 11:53:49,AMZN | Bernstein,price_target_usd,,300.0,2025-10-31 11:53:49,new
+AMZN-00844,2025-10-31 12:02:40,AMZN | Piper Sandler,rating,,Overweight,2025-10-31 12:02:40,new
+AMZN-00844,2025-10-31 12:02:40,AMZN | Piper Sandler,price_target_usd,,300.0,2025-10-31 12:02:40,new
+AMZN-00845,2025-10-31 12:08:01,AMZN | TD Cowen,rating,,Buy,2025-10-31 12:08:01,new
+AMZN-00845,2025-10-31 12:08:01,AMZN | TD Cowen,price_target_usd,,300.0,2025-10-31 12:08:01,new
+AMZN-00846,2025-10-31 14:17:01,AMZN | JP Morgan,price_target_usd,,305.0,2025-10-31 14:17:01,new
+AMZN-00847,2025-10-31 15:35:37,AMZN | Citigroup,price_target_usd,,320.0,2025-10-31 15:35:37,new
+AMZN-00848,2025-10-31 16:26:00,AMZN | Canaccord Genuity,rating,,Buy,2025-10-31 16:26:00,new
+AMZN-00848,2025-10-31 16:26:00,AMZN | Canaccord Genuity,price_target_usd,,300.0,2025-10-31 16:26:00,new
+AMZN-00849,2025-10-31 17:25:50,AMZN | Wells Fargo,rating,,Overweight,2025-10-31 17:25:50,corroborate
+AMZN-00849,2025-10-31 17:25:50,AMZN | Wells Fargo,price_target_usd,,292.0,2025-10-31 17:25:50,new
+AMZN-00850,2025-11-04 06:51:16,AMZN | Mizuho,rating,,Outperform,2025-11-04 06:51:16,corroborate
+AMZN-00850,2025-11-04 06:51:16,AMZN | Mizuho,price_target_usd,,315.0,2025-11-04 06:51:16,new
+AMZN-00851,2025-11-04 08:09:37,AMZN | Rosenblatt,rating,,Buy,2025-11-04 08:09:37,new
+AMZN-00851,2025-11-04 08:09:37,AMZN | Rosenblatt,price_target_usd,,305.0,2025-11-04 08:09:37,new
+AMZN-00852,2025-11-18 11:37:54,AMZN | Rothschild & Co,rating,,Neutral,2025-11-18 11:37:54,new
+AMZN-00852,2025-11-18 11:37:54,AMZN | Rothschild & Co,price_target_usd,,250.0,2025-11-18 11:37:54,new
+AMZN-00853,2025-11-25 07:38:54,AMZN | Rosenblatt,rating,,Buy,2025-11-25 07:38:54,new
+AMZN-00853,2025-11-25 07:38:54,AMZN | Rosenblatt,price_target_usd,,305.0,2025-11-25 07:38:54,new
+AMZN-00854,2025-12-01 09:15:29,AMZN | Oppenheimer,rating,,Outperform,2025-12-01 09:15:29,corroborate
+AMZN-00854,2025-12-01 09:15:29,AMZN | Oppenheimer,price_target_usd,,305.0,2025-12-01 09:15:29,new
+AMZN-00855,2025-12-02 09:13:04,AMZN | Wells Fargo,price_target_usd,,295.0,2025-12-02 09:13:04,new
+AMZN-00856,2025-12-03 09:44:05,AMZN | B of A Securities,rating,,Buy,2025-12-03 09:44:05,new
+AMZN-00856,2025-12-03 09:44:05,AMZN | B of A Securities,price_target_usd,,303.0,2025-12-03 09:44:05,new
+AMZN-00857,2025-12-03 10:42:44,AMZN | Citizens,rating,,Market Outperform,2025-12-03 10:42:44,corroborate
+AMZN-00857,2025-12-03 10:42:44,AMZN | Citizens,price_target_usd,,300.0,2025-12-03 10:42:44,corroborate
+AMZN-00858,2025-12-03 12:04:58,AMZN | Wedbush,rating,,Outperform,2025-12-03 12:04:58,new
+AMZN-00858,2025-12-03 12:04:58,AMZN | Wedbush,price_target_usd,,340.0,2025-12-03 12:04:58,new
+AMZN-00859,2025-12-04 12:18:57,AMZN | Rosenblatt,rating,,Buy,2025-12-04 12:18:57,new
+AMZN-00859,2025-12-04 12:18:57,AMZN | Rosenblatt,price_target_usd,,305.0,2025-12-04 12:18:57,new
+AMZN-00860,2025-12-10 04:10:59,AMZN | Guggenheim,rating,,Buy,2025-12-10 04:10:59,new
+AMZN-00860,2025-12-10 04:10:59,AMZN | Guggenheim,price_target_usd,,300.0,2025-12-10 04:10:59,new
+AMZN-00861,2025-12-11 08:34:20,AMZN | TD Cowen,rating,,Buy,2025-12-11 08:34:20,corroborate
+AMZN-00861,2025-12-11 08:34:20,AMZN | TD Cowen,price_target_usd,,300.0,2025-12-11 08:34:20,corroborate
+AMZN-00862,2025-12-16 13:09:36,AMZN | BMO Capital,rating,,Outperform,2025-12-16 13:09:36,new
+AMZN-00862,2025-12-16 13:09:36,AMZN | BMO Capital,price_target_usd,,304.0,2025-12-16 13:09:36,new
+AMZN-00863,2026-01-05 11:19:30,AMZN | Jefferies,rating,,Buy,2026-01-05 11:19:30,new
+AMZN-00863,2026-01-05 11:19:30,AMZN | Jefferies,price_target_usd,,300.0,2026-01-05 11:19:30,new
+AMZN-00864,2026-01-08 09:53:16,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-01-08 09:53:16,new
+AMZN-00864,2026-01-08 09:53:16,AMZN | Cantor Fitzgerald,price_target_usd,,260.0,2026-01-08 09:53:16,new
+AMZN-00865,2026-01-12 11:22:52,AMZN | Wells Fargo,price_target_usd,,301.0,2026-01-12 11:22:52,new
+AMZN-00866,2026-01-13 13:50:32,AMZN | TD Cowen,price_target_usd,,315.0,2026-01-13 13:50:32,new
+AMZN-00867,2026-01-26 12:39:44,AMZN | Roth Capital,rating,,Buy,2026-01-26 12:39:44,new
+AMZN-00867,2026-01-26 12:39:44,AMZN | Roth Capital,price_target_usd,,295.0,2026-01-26 12:39:44,new
+AMZN-00868,2026-01-27 12:15:43,AMZN | Stifel,rating,,Buy,2026-01-27 12:15:43,new
+AMZN-00868,2026-01-27 12:15:43,AMZN | Stifel,price_target_usd,,300.0,2026-01-27 12:15:43,new
+AMZN-00869,2026-01-27 12:35:16,AMZN | B of A Securities,rating,,Buy,2026-01-27 12:35:16,new
+AMZN-00869,2026-01-27 12:35:16,AMZN | B of A Securities,price_target_usd,,286.0,2026-01-27 12:35:16,new
+AMZN-00870,2026-01-28 09:25:30,AMZN | Keybanc,price_target_usd,,308.0,2026-01-28 09:25:30,new
+AMZN-00871,2026-01-28 11:15:43,AMZN | Oppenheimer,price_target_usd,,315.0,2026-01-28 11:15:43,new
+AMZN-00872,2026-01-29 10:40:34,AMZN | Wedbush,rating,,Outperform,2026-01-29 10:40:34,new
+AMZN-00872,2026-01-29 10:40:34,AMZN | Wedbush,price_target_usd,,340.0,2026-01-29 10:40:34,new
+AMZN-00873,2026-01-30 07:08:46,AMZN | Telsey Advisory Group,rating,,Outperform,2026-01-30 07:08:46,new
+AMZN-00873,2026-01-30 07:08:46,AMZN | Telsey Advisory Group,price_target_usd,,300.0,2026-01-30 07:08:46,new
+AMZN-00874,2026-02-02 11:00:22,AMZN | Citizens,price_target_usd,,315.0,2026-02-02 11:00:22,new
+AMZN-00875,2026-02-03 09:03:00,AMZN | UBS,price_target_usd,,311.0,2026-02-03 09:03:00,new
+AMZN-00875,2026-02-03 09:03:00,AMZN | UBS,rating,,Buy,2026-02-03 09:03:00,new
+AMZN-00876,2026-02-06 06:51:12,AMZN | Needham,rating,,Buy,2026-02-06 06:51:12,new
+AMZN-00876,2026-02-06 06:51:12,AMZN | Needham,price_target_usd,,265.0,2026-02-06 06:51:12,new
+AMZN-00877,2026-02-06 07:02:15,AMZN | Morgan Stanley,rating,,Overweight,2026-02-06 07:02:15,corroborate
+AMZN-00877,2026-02-06 07:02:15,AMZN | Morgan Stanley,price_target_usd,,300.0,2026-02-06 07:02:15,new
+AMZN-00878,2026-02-06 07:08:39,AMZN | Evercore ISI Group,price_target_usd,,285.0,2026-02-06 07:08:39,new
+AMZN-00879,2026-02-06 07:13:29,AMZN | Truist Securities,price_target_usd,,280.0,2026-02-06 07:13:29,new
+AMZN-00879,2026-02-06 07:13:29,AMZN | Truist Securities,rating,,Buy,2026-02-06 07:13:29,corroborate
+AMZN-00880,2026-02-06 07:21:37,AMZN | BMO Capital,price_target_usd,,310.0,2026-02-06 07:21:37,new
+AMZN-00881,2026-02-06 08:17:11,AMZN | Rosenblatt,rating,,Buy,2026-02-06 08:17:11,new
+AMZN-00881,2026-02-06 08:17:11,AMZN | Rosenblatt,price_target_usd,,296.0,2026-02-06 08:17:11,new
+AMZN-00882,2026-02-06 08:27:47,AMZN | Telsey Advisory Group,rating,,Outperform,2026-02-06 08:27:47,new
+AMZN-00882,2026-02-06 08:27:47,AMZN | Telsey Advisory Group,price_target_usd,,300.0,2026-02-06 08:27:47,new
+AMZN-00883,2026-02-06 08:34:43,AMZN | Wedbush,rating,,Outperform,2026-02-06 08:34:43,new
+AMZN-00883,2026-02-06 08:34:43,AMZN | Wedbush,price_target_usd,,300.0,2026-02-06 08:34:43,new
+AMZN-00884,2026-02-06 09:37:45,AMZN | DA Davidson,rating,,Neutral,2026-02-06 09:37:45,new
+AMZN-00884,2026-02-06 09:37:45,AMZN | DA Davidson,price_target_usd,,175.0,2026-02-06 09:37:45,new
+AMZN-00885,2026-02-06 09:39:14,AMZN | Scotiabank,rating,,Outperform,2026-02-06 09:39:14,new
+AMZN-00885,2026-02-06 09:39:14,AMZN | Scotiabank,price_target_usd,,275.0,2026-02-06 09:39:14,new
+AMZN-00886,2026-02-06 09:56:36,AMZN | Guggenheim,rating,,Buy,2026-02-06 09:56:36,corroborate
+AMZN-00886,2026-02-06 09:56:36,AMZN | Guggenheim,price_target_usd,,300.0,2026-02-06 09:56:36,corroborate
+AMZN-00887,2026-02-06 10:02:14,AMZN | Piper Sandler,rating,,Overweight,2026-02-06 10:02:14,new
+AMZN-00887,2026-02-06 10:02:14,AMZN | Piper Sandler,price_target_usd,,260.0,2026-02-06 10:02:14,new
+AMZN-00888,2026-02-06 10:24:55,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-02-06 10:24:55,new
+AMZN-00888,2026-02-06 10:24:55,AMZN | Cantor Fitzgerald,price_target_usd,,250.0,2026-02-06 10:24:55,new
+AMZN-00889,2026-02-06 11:33:33,AMZN | Citizens,rating,,Market Outperform,2026-02-06 11:33:33,corroborate
+AMZN-00889,2026-02-06 11:33:33,AMZN | Citizens,price_target_usd,,315.0,2026-02-06 11:33:33,corroborate
+AMZN-00890,2026-02-06 12:05:32,AMZN | Argus Research,rating,,Buy,2026-02-06 12:05:32,new
+AMZN-00890,2026-02-06 12:05:32,AMZN | Argus Research,price_target_usd,,325.0,2026-02-06 12:05:32,new
+AMZN-00891,2026-02-06 12:19:59,AMZN | Oppenheimer,rating,,Outperform,2026-02-06 12:19:59,new
+AMZN-00891,2026-02-06 12:19:59,AMZN | Oppenheimer,price_target_usd,,260.0,2026-02-06 12:19:59,new
+AMZN-00892,2026-02-06 12:30:23,AMZN | RBC Capital,rating,,Outperform,2026-02-06 12:30:23,new
+AMZN-00892,2026-02-06 12:30:23,AMZN | RBC Capital,price_target_usd,,300.0,2026-02-06 12:30:23,new
+AMZN-00893,2026-02-06 12:47:06,AMZN | Wells Fargo,rating,,Overweight,2026-02-06 12:47:06,corroborate
+AMZN-00893,2026-02-06 12:47:06,AMZN | Wells Fargo,price_target_usd,,305.0,2026-02-06 12:47:06,new
+AMZN-00894,2026-02-09 13:04:33,AMZN | Citigroup,rating,,Buy,2026-02-09 13:04:33,corroborate
+AMZN-00894,2026-02-09 13:04:33,AMZN | Citigroup,price_target_usd,,265.0,2026-02-09 13:04:33,new
+AMZN-00895,2026-02-23 15:55:34,AMZN | Wells Fargo,rating,,Overweight,2026-02-23 15:55:34,corroborate
+AMZN-00895,2026-02-23 15:55:34,AMZN | Wells Fargo,price_target_usd,,304.0,2026-02-23 15:55:34,new
+AMZN-00896,2026-03-17 07:21:51,AMZN | Needham,rating,,Buy,2026-03-17 07:21:51,new
+AMZN-00896,2026-03-17 07:21:51,AMZN | Needham,price_target_usd,,265.0,2026-03-17 07:21:51,new
+AMZN-00897,2026-03-23 10:49:21,AMZN | TD Cowen,rating,,Buy,2026-03-23 10:49:21,corroborate
+AMZN-00897,2026-03-23 10:49:21,AMZN | TD Cowen,price_target_usd,,300.0,2026-03-23 10:49:21,corroborate
+AMZN-00898,2026-03-25 10:04:14,AMZN | Citigroup,price_target_usd,,285.0,2026-03-25 10:04:14,new
+AMZN-00899,2026-03-25 10:13:21,AMZN | JP Morgan,rating,,Overweight,2026-03-25 10:13:21,new
+AMZN-00899,2026-03-25 10:13:21,AMZN | JP Morgan,price_target_usd,,280.0,2026-03-25 10:13:21,new
+AMZN-00900,2026-03-25 14:19:02,AMZN | Tigress Financial,rating,,Buy,2026-03-25 14:19:02,new
+AMZN-00900,2026-03-25 14:19:02,AMZN | Tigress Financial,price_target_usd,,315.0,2026-03-25 14:19:02,new
+AMZN-00901,2026-04-02 09:53:32,AMZN | Wells Fargo,price_target_usd,,305.0,2026-04-02 09:53:32,new
+AMZN-00902,2026-04-08 08:56:15,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-04-08 08:56:15,new
+AMZN-00902,2026-04-08 08:56:15,AMZN | Cantor Fitzgerald,price_target_usd,,260.0,2026-04-08 08:56:15,new
+AMZN-00903,2026-04-10 09:13:57,AMZN | Citizens,rating,,Market Outperform,2026-04-10 09:13:57,corroborate
+AMZN-00903,2026-04-10 09:13:57,AMZN | Citizens,price_target_usd,,315.0,2026-04-10 09:13:57,corroborate
+AMZN-00904,2026-04-13 09:58:19,AMZN | Stifel,rating,,Buy,2026-04-13 09:58:19,new
+AMZN-00904,2026-04-13 09:58:19,AMZN | Stifel,price_target_usd,,294.0,2026-04-13 09:58:19,new
+AMZN-00905,2026-04-15 08:35:46,AMZN | Rosenblatt,rating,,Buy,2026-04-15 08:35:46,new
+AMZN-00905,2026-04-15 08:35:46,AMZN | Rosenblatt,price_target_usd,,296.0,2026-04-15 08:35:46,new
+AMZN-00906,2026-04-15 09:08:36,AMZN | Citizens,rating,,Market Outperform,2026-04-15 09:08:36,corroborate
+AMZN-00906,2026-04-15 09:08:36,AMZN | Citizens,price_target_usd,,315.0,2026-04-15 09:08:36,corroborate
+AMZN-00907,2026-04-16 08:16:15,AMZN | TD Cowen,rating,,Buy,2026-04-16 08:16:15,corroborate
+AMZN-00907,2026-04-16 08:16:15,AMZN | TD Cowen,price_target_usd,,300.0,2026-04-16 08:16:15,corroborate
+AMZN-00908,2026-04-17 08:39:40,AMZN | Truist Securities,price_target_usd,,285.0,2026-04-17 08:39:40,new
+AMZN-00909,2026-04-20 07:06:18,AMZN | B of A Securities,rating,,Buy,2026-04-20 07:06:18,new
+AMZN-00909,2026-04-20 07:06:18,AMZN | B of A Securities,price_target_usd,,298.0,2026-04-20 07:06:18,new
+AMZN-00910,2026-04-20 08:11:47,AMZN | Keybanc,rating,,Overweight,2026-04-20 08:11:47,corroborate
+AMZN-00910,2026-04-20 08:11:47,AMZN | Keybanc,price_target_usd,,325.0,2026-04-20 08:11:47,new
+AMZN-00911,2026-04-21 08:53:48,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-04-21 08:53:48,new
+AMZN-00911,2026-04-21 08:53:48,AMZN | Cantor Fitzgerald,price_target_usd,,280.0,2026-04-21 08:53:48,new
+AMZN-00912,2026-04-23 08:55:14,AMZN | BMO Capital,rating,,Outperform,2026-04-23 08:55:14,new
+AMZN-00912,2026-04-23 08:55:14,AMZN | BMO Capital,price_target_usd,,315.0,2026-04-23 08:55:14,new
+AMZN-00913,2026-04-23 15:41:32,AMZN | UBS,price_target_usd,,304.0,2026-04-23 15:41:32,new
+AMZN-00913,2026-04-23 15:41:32,AMZN | UBS,rating,,Buy,2026-04-23 15:41:32,corroborate
+AMZN-00914,2026-04-24 08:15:10,AMZN | Oppenheimer,rating,,Outperform,2026-04-24 08:15:10,new
+AMZN-00914,2026-04-24 08:15:10,AMZN | Oppenheimer,price_target_usd,,275.0,2026-04-24 08:15:10,new
+AMZN-00915,2026-04-28 07:46:30,AMZN | Mizuho,rating,,Outperform,2026-04-28 07:46:30,corroborate
+AMZN-00915,2026-04-28 07:46:30,AMZN | Mizuho,price_target_usd,,325.0,2026-04-28 07:46:30,new
+AMZN-00916,2026-04-30 07:16:30,AMZN | Needham,rating,,Buy,2026-04-30 07:16:30,new
+AMZN-00916,2026-04-30 07:16:30,AMZN | Needham,price_target_usd,,300.0,2026-04-30 07:16:30,new
+AMZN-00917,2026-04-30 08:27:46,AMZN | Scotiabank,price_target_usd,,325.0,2026-04-30 08:27:46,new
+AMZN-00917,2026-04-30 08:27:46,AMZN | Scotiabank,rating,,Outperform,2026-04-30 08:27:46,new
+AMZN-00918,2026-04-30 08:38:40,AMZN | Truist Securities,price_target_usd,,310.0,2026-04-30 08:38:40,new
+AMZN-00919,2026-04-30 08:39:30,AMZN | Rosenblatt,rating,,Buy,2026-04-30 08:39:30,new
+AMZN-00919,2026-04-30 08:39:30,AMZN | Rosenblatt,price_target_usd,,332.0,2026-04-30 08:39:30,new
+AMZN-00920,2026-04-30 08:54:24,AMZN | Keybanc,price_target_usd,,330.0,2026-04-30 08:54:24,new
+AMZN-00921,2026-04-30 09:29:58,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-04-30 09:29:58,new
+AMZN-00921,2026-04-30 09:29:58,AMZN | Cantor Fitzgerald,price_target_usd,,330.0,2026-04-30 09:29:58,new
+AMZN-00922,2026-04-30 10:29:23,AMZN | Benchmark,price_target_usd,,370.0,2026-04-30 10:29:23,new
+AMZN-00923,2026-04-30 10:31:04,AMZN | Wells Fargo,price_target_usd,,313.0,2026-04-30 10:31:04,new
+AMZN-00924,2026-04-30 10:51:02,AMZN | Evercore ISI Group,price_target_usd,,315.0,2026-04-30 10:51:02,new
+AMZN-00925,2026-04-30 11:03:14,AMZN | Barclays,rating,,Overweight,2026-04-30 11:03:14,new
+AMZN-00925,2026-04-30 11:03:14,AMZN | Barclays,price_target_usd,,330.0,2026-04-30 11:03:14,new
+AMZN-00926,2026-04-30 11:36:54,AMZN | Guggenheim,price_target_usd,,320.0,2026-04-30 11:36:54,new
+AMZN-00927,2026-04-30 12:14:14,AMZN | Piper Sandler,rating,,Overweight,2026-04-30 12:14:14,new
+AMZN-00927,2026-04-30 12:14:14,AMZN | Piper Sandler,price_target_usd,,315.0,2026-04-30 12:14:14,new
+AMZN-00928,2026-04-30 12:16:14,AMZN | RBC Capital,rating,,Outperform,2026-04-30 12:16:14,new
+AMZN-00928,2026-04-30 12:16:14,AMZN | RBC Capital,price_target_usd,,320.0,2026-04-30 12:16:14,new
+AMZN-00929,2026-04-30 13:24:49,AMZN | Susquehanna,rating,,Positive,2026-04-30 13:24:49,new
+AMZN-00929,2026-04-30 13:24:49,AMZN | Susquehanna,price_target_usd,,325.0,2026-04-30 13:24:49,new
+AMZN-00930,2026-04-30 13:50:51,AMZN | Morgan Stanley,price_target_usd,,330.0,2026-04-30 13:50:51,new
+AMZN-00931,2026-04-30 14:11:39,AMZN | Citigroup,rating,,Buy,2026-04-30 14:11:39,new
+AMZN-00931,2026-04-30 14:11:39,AMZN | Citigroup,price_target_usd,,325.0,2026-04-30 14:11:39,new
+AMZN-00932,2026-04-30 14:40:55,AMZN | Bernstein,price_target_usd,,315.0,2026-04-30 14:40:55,new
+AMZN-00933,2026-04-30 15:03:42,AMZN | TD Cowen,price_target_usd,,350.0,2026-04-30 15:03:42,new
+AMZN-00934,2026-04-30 17:24:38,AMZN | JP Morgan,rating,,Overweight,2026-04-30 17:24:38,new
+AMZN-00934,2026-04-30 17:24:38,AMZN | JP Morgan,price_target_usd,,330.0,2026-04-30 17:24:38,new
+AMZN-00935,2026-04-30 19:03:11,AMZN | Canaccord Genuity,price_target_usd,,330.0,2026-04-30 19:03:11,new
+AMZN-00935,2026-04-30 19:03:11,AMZN | Canaccord Genuity,rating,,Buy,2026-04-30 19:03:11,new
+AMZN-00936,2026-04-30 19:26:32,AMZN | Telsey Advisory Group,rating,,Outperform,2026-04-30 19:26:32,new
+AMZN-00936,2026-04-30 19:26:32,AMZN | Telsey Advisory Group,price_target_usd,,315.0,2026-04-30 19:26:32,new
+AMZN-00937,2026-05-01 13:52:19,AMZN | Stifel,rating,,Buy,2026-05-01 13:52:19,new
+AMZN-00937,2026-05-01 13:52:19,AMZN | Stifel,price_target_usd,,319.0,2026-05-01 13:52:19,new
+AMZN-00938,2026-05-12 11:04:27,AMZN | TD Cowen,rating,,Buy,2026-05-12 11:04:27,corroborate
+AMZN-00938,2026-05-12 11:04:27,AMZN | TD Cowen,price_target_usd,,350.0,2026-05-12 11:04:27,corroborate
+AMZN-00939,2026-05-20 09:39:19,AMZN | Wells Fargo,price_target_usd,,312.0,2026-05-20 09:39:19,new
+AMZN-00940,2026-05-29 12:44:36,AMZN | Truist Securities,price_target_usd,,320.0,2026-05-29 12:44:36,new
+AMZN-00941,2026-07-02 06:45:37,AMZN | Wells Fargo,price_target_usd,,313.0,2026-07-02 06:45:37,new
+AMZN-00942,2026-07-08 10:54:47,AMZN | TD Cowen,price_target_usd,,340.0,2026-07-08 10:54:47,new
+AMZN-00943,2026-07-15 09:22:13,AMZN | Citizens,rating,,Market Outperform,2026-07-15 09:22:13,corroborate
+AMZN-00943,2026-07-15 09:22:13,AMZN | Citizens,price_target_usd,,315.0,2026-07-15 09:22:13,corroborate
+AMZN-00944,2026-07-16 08:25:01,AMZN | Keybanc,price_target_usd,,335.0,2026-07-16 08:25:01,new
+AMZN-00945,2026-07-21 14:12:19,AMZN | Wells Fargo,price_target_usd,,322.0,2026-07-21 14:12:19,new
+AMZN-00946,2026-07-23 10:24:07,AMZN | Wedbush,rating,,Outperform,2026-07-23 10:24:07,new
+AMZN-00946,2026-07-23 10:24:07,AMZN | Wedbush,price_target_usd,,293.0,2026-07-23 10:24:07,new
+AMZN-00947,2026-07-28 08:07:22,AMZN | Mizuho,rating,,Outperform,2026-07-28 08:07:22,corroborate
+AMZN-00947,2026-07-28 08:07:22,AMZN | Mizuho,price_target_usd,,320.0,2026-07-28 08:07:22,new
+AMZN-00948,2026-07-28 12:35:21,AMZN | BMO Capital,rating,,Outperform,2026-07-28 12:35:21,new
+AMZN-00948,2026-07-28 12:35:21,AMZN | BMO Capital,price_target_usd,,360.0,2026-07-28 12:35:21,new
+AMZN-00949,2026-07-28 14:56:02,AMZN | UBS,price_target_usd,,305.0,2026-07-28 14:56:02,new
+AMZN-00950,2026-07-31 06:44:51,AMZN | JP Morgan,rating,,Overweight,2026-07-31 06:44:51,new
+AMZN-00950,2026-07-31 06:44:51,AMZN | JP Morgan,price_target_usd,,365.0,2026-07-31 06:44:51,new
+AMZN-00951,2026-07-31 06:55:43,AMZN | Barclays,rating,,Overweight,2026-07-31 06:55:43,new
+AMZN-00951,2026-07-31 06:55:43,AMZN | Barclays,price_target_usd,,365.0,2026-07-31 06:55:43,new
+AMZN-00952,2026-07-31 07:37:06,AMZN | Rosenblatt,rating,,Buy,2026-07-31 07:37:06,new
+AMZN-00952,2026-07-31 07:37:06,AMZN | Rosenblatt,price_target_usd,,345.0,2026-07-31 07:37:06,new
+AMZN-00953,2026-07-31 07:52:35,AMZN | Keybanc,rating,,Overweight,2026-07-31 07:52:35,corroborate
+AMZN-00953,2026-07-31 07:52:35,AMZN | Keybanc,price_target_usd,,350.0,2026-07-31 07:52:35,new
+AMZN-00954,2026-07-31 08:28:44,AMZN | Needham,rating,,Buy,2026-07-31 08:28:44,new
+AMZN-00954,2026-07-31 08:28:44,AMZN | Needham,price_target_usd,,300.0,2026-07-31 08:28:44,new
+AMZN-00955,2026-07-31 08:39:09,AMZN | Citizens,rating,,Market Outperform,2026-07-31 08:39:09,corroborate
+AMZN-00955,2026-07-31 08:39:09,AMZN | Citizens,price_target_usd,,315.0,2026-07-31 08:39:09,corroborate
+AMZN-00956,2026-07-31 08:55:45,AMZN | Truist Securities,price_target_usd,,350.0,2026-07-31 08:55:45,new
+AMZN-00957,2026-07-31 09:16:51,AMZN | Wedbush,rating,,Outperform,2026-07-31 09:16:51,new
+AMZN-00957,2026-07-31 09:16:51,AMZN | Wedbush,price_target_usd,,310.0,2026-07-31 09:16:51,new
+AMZN-00958,2026-07-31 09:32:36,AMZN | Benchmark,price_target_usd,,400.0,2026-07-31 09:32:36,new
+AMZN-00959,2026-07-31 10:17:11,AMZN | Piper Sandler,rating,,Overweight,2026-07-31 10:17:11,new
+AMZN-00959,2026-07-31 10:17:11,AMZN | Piper Sandler,price_target_usd,,320.0,2026-07-31 10:17:11,new
+AMZN-00960,2026-07-31 10:34:03,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-07-31 10:34:03,new
+AMZN-00960,2026-07-31 10:34:03,AMZN | Cantor Fitzgerald,price_target_usd,,320.0,2026-07-31 10:34:03,new
+AMZN-00961,2026-07-31 10:58:27,AMZN | Wells Fargo,price_target_usd,,328.0,2026-07-31 10:58:27,new
+AMZN-00962,2026-07-31 11:06:02,AMZN | DA Davidson,rating,,Neutral,2026-07-31 11:06:02,corroborate
+AMZN-00962,2026-07-31 11:06:02,AMZN | DA Davidson,price_target_usd,,250.0,2026-07-31 11:06:02,new
+AMZN-00963,2026-07-31 12:02:03,AMZN | TD Cowen,price_target_usd,,350.0,2026-07-31 12:02:03,new
+AMZN-00964,2026-07-31 13:42:33,AMZN | Mizuho,price_target_usd,,330.0,2026-07-31 13:42:33,new
+AMZN-00965,2026-07-31 13:54:54,AMZN | RBC Capital,rating,,Outperform,2026-07-31 13:54:54,new
+AMZN-00965,2026-07-31 13:54:54,AMZN | RBC Capital,price_target_usd,,330.0,2026-07-31 13:54:54,new
+AMZN-00966,2026-07-31 15:31:48,AMZN | Citigroup,rating,,Buy,2026-07-31 15:31:48,new
+AMZN-00966,2026-07-31 15:31:48,AMZN | Citigroup,price_target_usd,,350.0,2026-07-31 15:31:48,new
+AMZN-00967,2026-07-31 16:12:42,AMZN | Bernstein,rating,,Outperform,2026-07-31 16:12:42,corroborate
+AMZN-00967,2026-07-31 16:12:42,AMZN | Bernstein,price_target_usd,,320.0,2026-07-31 16:12:42,new
+AMZN-00968,2026-07-31 16:59:23,AMZN | Telsey Advisory Group,rating,,Outperform,2026-07-31 16:59:23,new
+AMZN-00968,2026-07-31 16:59:23,AMZN | Telsey Advisory Group,price_target_usd,,335.0,2026-07-31 16:59:23,new
+AMZN-00969,2026-07-31 17:07:52,AMZN | UBS,price_target_usd,,318.0,2026-07-31 17:07:52,new
+AMZN-00970,2026-09-03 10:12:46,AMZN | Wells Fargo,price_target_usd,,338.0,2026-09-03 10:12:46,new
+AMZN-00971,2026-09-30 08:01:09,AMZN | Rosenblatt,rating,,Buy,2026-09-30 08:01:09,new
+AMZN-00971,2026-09-30 08:01:09,AMZN | Rosenblatt,price_target_usd,,360.0,2026-09-30 08:01:09,new
+AMZN-00972,2026-10-05 10:09:32,AMZN | TD Cowen,rating,,Buy,2026-10-05 10:09:32,corroborate
+AMZN-00972,2026-10-05 10:09:32,AMZN | TD Cowen,price_target_usd,,350.0,2026-10-05 10:09:32,corroborate
+AMZN-00973,2026-10-06 14:10:31,AMZN | Tigress Financial,price_target_usd,,385.0,2026-10-06 14:10:31,new
+AMZN-00973,2026-10-06 14:10:31,AMZN | Tigress Financial,rating,,Buy,2026-10-06 14:10:31,corroborate
+AMZN-00974,2026-10-12 07:01:18,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-10-12 07:01:18,new
+AMZN-00974,2026-10-12 07:01:18,AMZN | Cantor Fitzgerald,price_target_usd,,310.0,2026-10-12 07:01:18,new
+AMZN-00975,2026-10-12 11:37:11,AMZN | Wells Fargo,price_target_usd,,329.0,2026-10-12 11:37:11,new
+AMZN-00976,2026-10-19 12:41:21,AMZN | Morgan Stanley,price_target_usd,,350.0,2026-10-19 12:41:21,new
+AMZN-00977,2026-10-26 14:53:29,AMZN | UBS,price_target_usd,,348.0,2026-10-26 14:53:29,new
+AMZN-00978,2026-10-30 07:00:05,AMZN | Cantor Fitzgerald,rating,,Overweight,2026-10-30 07:00:05,new
+AMZN-00978,2026-10-30 07:00:05,AMZN | Cantor Fitzgerald,price_target_usd,,280.0,2026-10-30 07:00:05,new
+AMZN-00979,2026-10-30 07:24:50,AMZN | Mizuho,price_target_usd,,335.0,2026-10-30 07:24:50,new
+AMZN-00980,2026-10-30 08:19:41,AMZN | Keybanc,rating,,Overweight,2026-10-30 08:19:41,corroborate
+AMZN-00980,2026-10-30 08:19:41,AMZN | Keybanc,price_target_usd,,345.0,2026-10-30 08:19:41,new
+AMZN-00981,2026-10-30 08:46:16,AMZN | Citizens,price_target_usd,,275.0,2026-10-30 08:46:16,new
+AMZN-00982,2026-10-30 09:17:10,AMZN | Guggenheim,rating,,Buy,2026-10-30 09:17:10,corroborate
+AMZN-00982,2026-10-30 09:17:10,AMZN | Guggenheim,price_target_usd,,320.0,2026-10-30 09:17:10,corroborate
+AMZN-00983,2026-10-30 09:21:00,AMZN | StoneX,rating,,Buy,2026-10-30 09:21:00,new
+AMZN-00983,2026-10-30 09:21:00,AMZN | StoneX,price_target_usd,,380.0,2026-10-30 09:21:00,new
+AMZN-00984,2026-10-30 11:05:25,AMZN | RBC Capital,rating,,Outperform,2026-10-30 11:05:25,new
+AMZN-00984,2026-10-30 11:05:25,AMZN | RBC Capital,price_target_usd,,330.0,2026-10-30 11:05:25,new
+AMZN-00985,2026-10-30 13:38:57,AMZN | Morgan Stanley,price_target_usd,,335.0,2026-10-30 13:38:57,new
+AMZN-00986,2026-10-30 13:45:45,AMZN | Wedbush,rating,,Outperform,2026-10-30 13:45:45,new
+AMZN-00986,2026-10-30 13:45:45,AMZN | Wedbush,price_target_usd,,298.0,2026-10-30 13:45:45,new
+AMZN-00987,2026-10-30 14:09:26,AMZN | TD Cowen,price_target_usd,,340.0,2026-10-30 14:09:26,new
+AMZN-00988,2026-10-30 14:25:28,AMZN | Wells Fargo,price_target_usd,,326.0,2026-10-30 14:25:28,new
+AMZN-00989,2026-10-30 14:59:03,AMZN | Rosenblatt,rating,,Buy,2026-10-30 14:59:03,new
+AMZN-00989,2026-10-30 14:59:03,AMZN | Rosenblatt,price_target_usd,,360.0,2026-10-30 14:59:03,new
+AMZN-00990,2026-10-30 15:00:43,AMZN | DA Davidson,rating,,Neutral,2026-10-30 15:00:43,new
+AMZN-00990,2026-10-30 15:00:43,AMZN | DA Davidson,price_target_usd,,250.0,2026-10-30 15:00:43,new
+AMZN-00991,2026-10-30 15:08:05,AMZN | Telsey Advisory Group,rating,,Outperform,2026-10-30 15:08:05,new
+AMZN-00991,2026-10-30 15:08:05,AMZN | Telsey Advisory Group,price_target_usd,,335.0,2026-10-30 15:08:05,new
+AMZN-00992,2026-10-30 15:40:59,AMZN | Scotiabank,price_target_usd,,300.0,2026-10-30 15:40:59,new
+AMZN-00993,2026-10-30 22:23:32,AMZN | UBS,price_target_usd,,352.0,2026-10-30 22:23:32,new
+AMZN-00994,2026-11-03 14:59:46,AMZN | Freedom Broker,rating,,Buy,2026-11-03 14:59:46,new
+AMZN-00994,2026-11-03 14:59:46,AMZN | Freedom Broker,price_target_usd,,330.0,2026-11-03 14:59:46,new
+AMZN-00995,2026-11-20 08:46:44,AMZN | Oppenheimer,rating,,Outperform,2026-11-20 08:46:44,new
+AMZN-00995,2026-11-20 08:46:44,AMZN | Oppenheimer,price_target_usd,,310.0,2026-11-20 08:46:44,new

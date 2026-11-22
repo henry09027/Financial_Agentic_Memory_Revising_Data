@@ -1,0 +1,406 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+MA-00248,2023-06-30 09:49:54,MA | Baird,price_target_usd,,435.00,2023-06-30 09:49:54,new
+MA-00248,2023-06-30 09:49:54,MA | Baird,rating,,Outperform,2023-06-30 09:49:54,new
+MA-00249,2023-07-13 07:13:13,MA | Goldman Sachs,price_target_usd,,452.00,2023-07-13 07:13:13,new
+MA-00249,2023-07-13 07:13:13,MA | Goldman Sachs,rating,,Buy,2023-07-13 07:13:13,new
+MA-00250,2023-07-19 11:06:14,MA | Morgan Stanley,price_target_usd,,440.00,2023-07-19 11:06:14,corroborate
+MA-00250,2023-07-19 11:06:14,MA | Morgan Stanley,rating,,Overweight,2023-07-19 11:06:14,corroborate
+MA-00251,2023-07-24 07:47:33,MA | Barclays,price_target_usd,,470.00,2023-07-24 07:47:33,new
+MA-00251,2023-07-24 07:47:33,MA | Barclays,rating,,Overweight,2023-07-24 07:47:33,corroborate
+MA-00252,2023-07-28 08:15:51,MA | Baird,price_target_usd,,450.00,2023-07-28 08:15:51,new
+MA-00252,2023-07-28 08:15:51,MA | Baird,rating,,Outperform,2023-07-28 08:15:51,corroborate
+MA-00253,2023-07-28 09:57:16,MA | BMO Capital,price_target_usd,,488.00,2023-07-28 09:57:16,new
+MA-00253,2023-07-28 09:57:16,MA | BMO Capital,rating,,Outperform,2023-07-28 09:57:16,new
+MA-00254,2023-07-28 11:24:11,MA | Wells Fargo,price_target_usd,,440.00,2023-07-28 11:24:11,new
+MA-00254,2023-07-28 11:24:11,MA | Wells Fargo,rating,,Overweight,2023-07-28 11:24:11,corroborate
+MA-00255,2023-07-28 13:03:32,MA | Credit Suisse,price_target_usd,,430.00,2023-07-28 13:03:32,new
+MA-00255,2023-07-28 13:03:32,MA | Credit Suisse,rating,,Outperform,2023-07-28 13:03:32,corroborate
+MA-00256,2023-07-28 13:19:21,MA | Susquehanna,price_target_usd,,486.00,2023-07-28 13:19:21,new
+MA-00256,2023-07-28 13:19:21,MA | Susquehanna,rating,,Positive,2023-07-28 13:19:21,corroborate
+MA-00257,2023-07-31 08:41:59,MA | Barclays,price_target_usd,,480.00,2023-07-31 08:41:59,new
+MA-00257,2023-07-31 08:41:59,MA | Barclays,rating,,Overweight,2023-07-31 08:41:59,corroborate
+MA-00258,2023-07-31 10:33:00,MA | Citigroup,price_target_usd,,455.00,2023-07-31 10:33:00,new
+MA-00258,2023-07-31 10:33:00,MA | Citigroup,rating,,Buy,2023-07-31 10:33:00,corroborate
+MA-00259,2023-08-22 08:47:58,MA | JP Morgan,price_target_usd,,510.00,2023-08-22 08:47:58,new
+MA-00259,2023-08-22 08:47:58,MA | JP Morgan,rating,,Overweight,2023-08-22 08:47:58,corroborate
+MA-00260,2023-08-29 09:43:18,MA | Mizuho,price_target_usd,,435.00,2023-08-29 09:43:18,new
+MA-00260,2023-08-29 09:43:18,MA | Mizuho,rating,,Buy,2023-08-29 09:43:18,corroborate
+MA-00261,2023-09-15 11:05:05,MA | Jefferies,price_target_usd,,475.00,2023-09-15 11:05:05,new
+MA-00261,2023-09-15 11:05:05,MA | Jefferies,rating,,Buy,2023-09-15 11:05:05,corroborate
+MA-00262,2023-09-25 08:24:06,MA | Truist Securities,price_target_usd,,475.00,2023-09-25 08:24:06,new
+MA-00262,2023-09-25 08:24:06,MA | Truist Securities,rating,,Buy,2023-09-25 08:24:06,corroborate
+MA-00263,2023-10-09 14:51:34,MA | JP Morgan,price_target_usd,,496.0,2023-10-09 14:51:34,new
+MA-00263,2023-10-09 14:51:34,MA | JP Morgan,rating,,Overweight,2023-10-09 14:51:34,corroborate
+MA-00264,2023-10-12 09:00:33,MA | Seaport Global,price_target_usd,,465.00,2023-10-12 09:00:33,new
+MA-00264,2023-10-12 09:00:33,MA | Seaport Global,rating,,Buy,2023-10-12 09:00:33,new
+MA-00265,2023-10-12 14:40:14,MA | Barclays,price_target_usd,,479.0,2023-10-12 14:40:14,new
+MA-00265,2023-10-12 14:40:14,MA | Barclays,rating,,Overweight,2023-10-12 14:40:14,corroborate
+MA-00266,2023-10-13 06:38:35,MA | HSBC,price_target_usd,,424.0,2023-10-13 06:38:35,new
+MA-00266,2023-10-13 06:38:35,MA | HSBC,rating,,Hold,2023-10-13 06:38:35,new
+MA-00267,2023-10-18 06:02:52,MA | Keybanc,price_target_usd,,440.00,2023-10-18 06:02:52,new
+MA-00267,2023-10-18 06:02:52,MA | Keybanc,rating,,Overweight,2023-10-18 06:02:52,corroborate
+MA-00268,2023-10-27 04:26:12,MA | Keybanc,price_target_usd,,430.0,2023-10-27 04:26:12,new
+MA-00268,2023-10-27 04:26:12,MA | Keybanc,rating,,Overweight,2023-10-27 04:26:12,corroborate
+MA-00269,2023-10-27 09:23:10,MA | Raymond James,price_target_usd,,452.0,2023-10-27 09:23:10,new
+MA-00269,2023-10-27 09:23:10,MA | Raymond James,rating,,Outperform,2023-10-27 09:23:10,new
+MA-00270,2023-10-27 09:30:39,MA | Morgan Stanley,price_target_usd,,439.0,2023-10-27 09:30:39,new
+MA-00270,2023-10-27 09:30:39,MA | Morgan Stanley,rating,,Overweight,2023-10-27 09:30:39,corroborate
+MA-00271,2023-10-27 10:36:05,MA | BMO Capital,price_target_usd,,472.0,2023-10-27 10:36:05,new
+MA-00271,2023-10-27 10:36:05,MA | BMO Capital,rating,,Outperform,2023-10-27 10:36:05,corroborate
+MA-00272,2023-10-27 11:18:48,MA | RBC Capital,price_target_usd,,432.0,2023-10-27 11:18:48,new
+MA-00272,2023-10-27 11:18:48,MA | RBC Capital,rating,,Outperform,2023-10-27 11:18:48,corroborate
+MA-00273,2023-10-30 09:45:26,MA | Barclays,price_target_usd,,470.0,2023-10-30 09:45:26,new
+MA-00273,2023-10-30 09:45:26,MA | Barclays,rating,,Overweight,2023-10-30 09:45:26,corroborate
+MA-00274,2023-10-31 15:02:22,MA | Mizuho,price_target_usd,,420.0,2023-10-31 15:02:22,new
+MA-00274,2023-10-31 15:02:22,MA | Mizuho,rating,,Buy,2023-10-31 15:02:22,corroborate
+MA-00275,2023-12-07 14:34:57,MA | Tigress Financial,price_target_usd,,495.0,2023-12-07 14:34:57,new
+MA-00275,2023-12-07 14:34:57,MA | Tigress Financial,rating,,Strong Buy,2023-12-07 14:34:57,new
+MA-00276,2023-12-12 10:46:49,MA | Jefferies,price_target_usd,,480.0,2023-12-12 10:46:49,new
+MA-00276,2023-12-12 10:46:49,MA | Jefferies,rating,,Buy,2023-12-12 10:46:49,corroborate
+MA-00277,2023-12-20 12:25:41,"MA | Monness, Crespi, Hardt",price_target_usd,,,2023-12-20 12:25:41,new
+MA-00277,2023-12-20 12:25:41,"MA | Monness, Crespi, Hardt",rating,,Neutral,2023-12-20 12:25:41,new
+MA-00278,2024-01-08 04:35:35,MA | Keybanc,price_target_usd,,475.00,2024-01-08 04:35:35,new
+MA-00278,2024-01-08 04:35:35,MA | Keybanc,rating,,Overweight,2024-01-08 04:35:35,corroborate
+MA-00279,2024-01-08 16:51:58,MA | Jefferies,price_target_usd,,485.00,2024-01-08 16:51:58,new
+MA-00279,2024-01-08 16:51:58,MA | Jefferies,rating,,Buy,2024-01-08 16:51:58,corroborate
+MA-00280,2024-01-11 07:05:44,MA | Oppenheimer,price_target_usd,,510.0,2024-01-11 07:05:44,new
+MA-00280,2024-01-11 07:05:44,MA | Oppenheimer,rating,,Outperform,2024-01-11 07:05:44,new
+MA-00281,2024-01-11 08:24:59,MA | Goldman Sachs,price_target_usd,,482.00,2024-01-11 08:24:59,new
+MA-00281,2024-01-11 08:24:59,MA | Goldman Sachs,rating,,Buy,2024-01-11 08:24:59,corroborate
+MA-00282,2024-01-16 16:50:22,MA | Jefferies,price_target_usd,,495.00,2024-01-16 16:50:22,new
+MA-00282,2024-01-16 16:50:22,MA | Jefferies,rating,,Buy,2024-01-16 16:50:22,corroborate
+MA-00283,2024-01-18 12:04:19,MA | Mizuho,price_target_usd,,462.0,2024-01-18 12:04:19,new
+MA-00283,2024-01-18 12:04:19,MA | Mizuho,rating,,Buy,2024-01-18 12:04:19,corroborate
+MA-00284,2024-01-31 16:47:59,MA | Jefferies,price_target_usd,,520.00,2024-01-31 16:47:59,new
+MA-00284,2024-01-31 16:47:59,MA | Jefferies,rating,,Buy,2024-01-31 16:47:59,corroborate
+MA-00285,2024-02-01 09:06:37,MA | BMO Capital,price_target_usd,,490.0,2024-02-01 09:06:37,new
+MA-00285,2024-02-01 09:06:37,MA | BMO Capital,rating,,Outperform,2024-02-01 09:06:37,corroborate
+MA-00286,2024-02-01 09:44:01,MA | Raymond James,price_target_usd,,504.0,2024-02-01 09:44:01,new
+MA-00286,2024-02-01 09:44:01,MA | Raymond James,rating,,Outperform,2024-02-01 09:44:01,corroborate
+MA-00287,2024-02-01 10:49:43,MA | Mizuho,price_target_usd,,480.0,2024-02-01 10:49:43,new
+MA-00287,2024-02-01 10:49:43,MA | Mizuho,rating,,Buy,2024-02-01 10:49:43,corroborate
+MA-00288,2024-02-01 11:03:02,MA | RBC Capital,price_target_usd,,499.00,2024-02-01 11:03:02,new
+MA-00288,2024-02-01 11:03:02,MA | RBC Capital,rating,,Outperform,2024-02-01 11:03:02,corroborate
+MA-00289,2024-02-01 12:37:42,MA | Oppenheimer,price_target_usd,,510.0,2024-02-01 12:37:42,corroborate
+MA-00289,2024-02-01 12:37:42,MA | Oppenheimer,rating,,Outperform,2024-02-01 12:37:42,corroborate
+MA-00290,2024-02-01 13:11:30,MA | Keybanc,price_target_usd,,490.00,2024-02-01 13:11:30,new
+MA-00290,2024-02-01 13:11:30,MA | Keybanc,rating,,Overweight,2024-02-01 13:11:30,corroborate
+MA-00291,2024-03-06 10:12:38,MA | Wells Fargo,price_target_usd,,530.00,2024-03-06 10:12:38,new
+MA-00291,2024-03-06 10:12:38,MA | Wells Fargo,rating,,Overweight,2024-03-06 10:12:38,corroborate
+MA-00292,2024-03-08 08:55:40,MA | Jefferies,price_target_usd,,540.00,2024-03-08 08:55:40,new
+MA-00292,2024-03-08 08:55:40,MA | Jefferies,rating,,Buy,2024-03-08 08:55:40,corroborate
+MA-00293,2024-03-26 10:41:03,MA | Evercore ISI Group,price_target_usd,,545.00,2024-03-26 10:41:03,new
+MA-00293,2024-03-26 10:41:03,MA | Evercore ISI Group,rating,,Outperform,2024-03-26 10:41:03,corroborate
+MA-00294,2024-03-27 13:37:05,MA | Mizuho,price_target_usd,,480.0,2024-03-27 13:37:05,corroborate
+MA-00294,2024-03-27 13:37:05,MA | Mizuho,rating,,Buy,2024-03-27 13:37:05,corroborate
+MA-00295,2024-04-03 09:22:37,MA | Susquehanna,price_target_usd,,535.00,2024-04-03 09:22:37,new
+MA-00295,2024-04-03 09:22:37,MA | Susquehanna,rating,,Positive,2024-04-03 09:22:37,corroborate
+MA-00296,2024-04-11 05:21:10,MA | TD Cowen,price_target_usd,,545.00,2024-04-11 05:21:10,new
+MA-00296,2024-04-11 05:21:10,MA | TD Cowen,rating,,Buy,2024-04-11 05:21:10,new
+MA-00297,2024-04-15 13:46:50,MA | JP Morgan,price_target_usd,,520.00,2024-04-15 13:46:50,new
+MA-00297,2024-04-15 13:46:50,MA | JP Morgan,rating,,Overweight,2024-04-15 13:46:50,corroborate
+MA-00298,2024-04-18 07:52:10,MA | Baird,price_target_usd,,545.00,2024-04-18 07:52:10,new
+MA-00298,2024-04-18 07:52:10,MA | Baird,rating,,Outperform,2024-04-18 07:52:10,corroborate
+MA-00299,2024-04-19 12:06:56,MA | Baird,price_target_usd,,545.00,2024-04-19 12:06:56,new
+MA-00299,2024-04-19 12:06:56,MA | Baird,rating,,Outperform,2024-04-19 12:06:56,corroborate
+MA-00300,2024-05-02 08:09:45,MA | Mizuho,price_target_usd,,478.0,2024-05-02 08:09:45,new
+MA-00300,2024-05-02 08:09:45,MA | Mizuho,rating,,Buy,2024-05-02 08:09:45,corroborate
+MA-00301,2024-05-02 12:37:35,MA | JP Morgan,price_target_usd,,510.00,2024-05-02 12:37:35,new
+MA-00301,2024-05-02 12:37:35,MA | JP Morgan,rating,,Overweight,2024-05-02 12:37:35,corroborate
+MA-00302,2024-05-02 13:13:32,MA | Morgan Stanley,price_target_usd,,524.00,2024-05-02 13:13:32,new
+MA-00302,2024-05-02 13:13:32,MA | Morgan Stanley,rating,,Overweight,2024-05-02 13:13:32,new
+MA-00303,2024-05-06 11:59:59,MA | Barclays,price_target_usd,,530.00,2024-05-06 11:59:59,new
+MA-00303,2024-05-06 11:59:59,MA | Barclays,rating,,Overweight,2024-05-06 11:59:59,corroborate
+MA-00304,2024-05-13 05:22:53,MA | Piper Sandler,price_target_usd,,531.00,2024-05-13 05:22:53,new
+MA-00304,2024-05-13 05:22:53,MA | Piper Sandler,rating,,Overweight,2024-05-13 05:22:53,new
+MA-00305,2024-06-25 12:02:01,MA | Evercore ISI Group,price_target_usd,,525.00,2024-06-25 12:02:01,new
+MA-00305,2024-06-25 12:02:01,MA | Evercore ISI Group,rating,,Outperform,2024-06-25 12:02:01,corroborate
+MA-00306,2024-07-10 07:23:54,MA | B of A Securities,price_target_usd,,480.00,2024-07-10 07:23:54,new
+MA-00306,2024-07-10 07:23:54,MA | B of A Securities,rating,,Neutral,2024-07-10 07:23:54,new
+MA-00307,2024-07-18 10:17:21,MA | JP Morgan,price_target_usd,,500.00,2024-07-18 10:17:21,new
+MA-00307,2024-07-18 10:17:21,MA | JP Morgan,rating,,Overweight,2024-07-18 10:17:21,corroborate
+MA-00308,2024-08-01 09:08:41,MA | Susquehanna,price_target_usd,,540.00,2024-08-01 09:08:41,new
+MA-00308,2024-08-01 09:08:41,MA | Susquehanna,rating,,Positive,2024-08-01 09:08:41,corroborate
+MA-00309,2024-08-01 11:47:42,MA | RBC Capital,price_target_usd,,526.00,2024-08-01 11:47:42,new
+MA-00309,2024-08-01 11:47:42,MA | RBC Capital,rating,,Outperform,2024-08-01 11:47:42,corroborate
+MA-00310,2024-08-01 12:27:58,MA | BMO Capital,price_target_usd,,520.00,2024-08-01 12:27:58,new
+MA-00310,2024-08-01 12:27:58,MA | BMO Capital,rating,,Outperform,2024-08-01 12:27:58,corroborate
+MA-00311,2024-08-01 13:28:34,MA | Keybanc,price_target_usd,,515.00,2024-08-01 13:28:34,new
+MA-00311,2024-08-01 13:28:34,MA | Keybanc,rating,,Overweight,2024-08-01 13:28:34,corroborate
+MA-00312,2024-08-01 14:14:17,MA | Citigroup,price_target_usd,,538.00,2024-08-01 14:14:17,new
+MA-00312,2024-08-01 14:14:17,MA | Citigroup,rating,,Buy,2024-08-01 14:14:17,corroborate
+MA-00313,2024-08-01 14:50:22,MA | TD Cowen,price_target_usd,,533.0,2024-08-01 14:50:22,new
+MA-00313,2024-08-01 14:50:22,MA | TD Cowen,rating,,Buy,2024-08-01 14:50:22,corroborate
+MA-00314,2024-08-02 10:23:53,MA | Piper Sandler,price_target_usd,,536.00,2024-08-02 10:23:53,new
+MA-00314,2024-08-02 10:23:53,MA | Piper Sandler,rating,,Overweight,2024-08-02 10:23:53,corroborate
+MA-00315,2024-08-05 19:06:13,MA | Barclays,price_target_usd,,536.00,2024-08-05 19:06:13,new
+MA-00315,2024-08-05 19:06:13,MA | Barclays,rating,,Overweight,2024-08-05 19:06:13,corroborate
+MA-00316,2024-08-14 13:43:28,MA | BMO Capital,price_target_usd,,520.00,2024-08-14 13:43:28,new
+MA-00316,2024-08-14 13:43:28,MA | BMO Capital,rating,,Outperform,2024-08-14 13:43:28,new
+MA-00317,2024-08-20 10:37:54,MA | JP Morgan,price_target_usd,,570.00,2024-08-20 10:37:54,new
+MA-00317,2024-08-20 10:37:54,MA | JP Morgan,rating,,Overweight,2024-08-20 10:37:54,corroborate
+MA-00318,2024-09-04 11:54:33,MA | Compass Point,price_target_usd,,525.00,2024-09-04 11:54:33,new
+MA-00318,2024-09-04 11:54:33,MA | Compass Point,rating,,Neutral,2024-09-04 11:54:33,new
+MA-00319,2024-09-17 13:19:08,MA | B of A Securities,price_target_usd,,509.00,2024-09-17 13:19:08,new
+MA-00319,2024-09-17 13:19:08,MA | B of A Securities,rating,,Neutral,2024-09-17 13:19:08,corroborate
+MA-00320,2024-10-10 10:28:49,MA | Barclays,price_target_usd,,576.00,2024-10-10 10:28:49,new
+MA-00320,2024-10-10 10:28:49,MA | Barclays,rating,,Overweight,2024-10-10 10:28:49,corroborate
+MA-00321,2024-10-16 07:33:02,MA | Baird,price_target_usd,,575.00,2024-10-16 07:33:02,new
+MA-00321,2024-10-16 07:33:02,MA | Baird,rating,,Outperform,2024-10-16 07:33:02,corroborate
+MA-00322,2024-10-21 10:26:01,MA | JP Morgan,price_target_usd,,593.00,2024-10-21 10:26:01,new
+MA-00322,2024-10-21 10:26:01,MA | JP Morgan,rating,,Overweight,2024-10-21 10:26:01,corroborate
+MA-00323,2024-11-01 05:30:09,MA | Piper Sandler,price_target_usd,,565.00,2024-11-01 05:30:09,new
+MA-00323,2024-11-01 05:30:09,MA | Piper Sandler,rating,,Overweight,2024-11-01 05:30:09,corroborate
+MA-00324,2024-11-01 09:18:45,MA | JP Morgan,price_target_usd,,580.0,2024-11-01 09:18:45,new
+MA-00324,2024-11-01 09:18:45,MA | JP Morgan,rating,,Overweight,2024-11-01 09:18:45,corroborate
+MA-00325,2024-11-01 09:22:45,MA | Keybanc,price_target_usd,,580.00,2024-11-01 09:22:45,new
+MA-00325,2024-11-01 09:22:45,MA | Keybanc,rating,,Overweight,2024-11-01 09:22:45,corroborate
+MA-00326,2024-11-01 11:18:51,MA | Susquehanna,price_target_usd,,605.00,2024-11-01 11:18:51,new
+MA-00326,2024-11-01 11:18:51,MA | Susquehanna,rating,,Positive,2024-11-01 11:18:51,corroborate
+MA-00327,2024-11-01 13:53:43,MA | Deutsche Bank,price_target_usd,,580.00,2024-11-01 13:53:43,new
+MA-00327,2024-11-01 13:53:43,MA | Deutsche Bank,rating,,Buy,2024-11-01 13:53:43,corroborate
+MA-00328,2024-11-01 14:08:35,MA | Mizuho,price_target_usd,,532.0,2024-11-01 14:08:35,new
+MA-00328,2024-11-01 14:08:35,MA | Mizuho,rating,,Outperform,2024-11-01 14:08:35,corroborate
+MA-00329,2024-11-01 16:05:27,MA | Macquarie,price_target_usd,,565.00,2024-11-01 16:05:27,new
+MA-00329,2024-11-01 16:05:27,MA | Macquarie,rating,,Outperform,2024-11-01 16:05:27,corroborate
+MA-00330,2024-11-04 12:00:01,MA | Citigroup,price_target_usd,,572.00,2024-11-04 12:00:01,new
+MA-00330,2024-11-04 12:00:01,MA | Citigroup,rating,,Buy,2024-11-04 12:00:01,corroborate
+MA-00331,2024-11-04 12:59:20,MA | Morgan Stanley,price_target_usd,,544.00,2024-11-04 12:59:20,new
+MA-00331,2024-11-04 12:59:20,MA | Morgan Stanley,rating,,Overweight,2024-11-04 12:59:20,corroborate
+MA-00332,2024-11-14 07:14:19,MA | Morgan Stanley,price_target_usd,,564.00,2024-11-14 07:14:19,new
+MA-00332,2024-11-14 07:14:19,MA | Morgan Stanley,rating,,Overweight,2024-11-14 07:14:19,corroborate
+MA-00333,2024-11-14 07:49:32,MA | BMO Capital,price_target_usd,,565.00,2024-11-14 07:49:32,new
+MA-00333,2024-11-14 07:49:32,MA | BMO Capital,rating,,Outperform,2024-11-14 07:49:32,corroborate
+MA-00334,2024-11-14 09:43:00,MA | UBS,price_target_usd,,610.00,2024-11-14 09:43:00,new
+MA-00334,2024-11-14 09:43:00,MA | UBS,rating,,Buy,2024-11-14 09:43:00,corroborate
+MA-00335,2024-11-14 12:01:22,MA | RBC Capital,price_target_usd,,572.00,2024-11-14 12:01:22,new
+MA-00335,2024-11-14 12:01:22,MA | RBC Capital,rating,,Outperform,2024-11-14 12:01:22,corroborate
+MA-00336,2024-11-15 04:11:28,MA | Piper Sandler,price_target_usd,,575.00,2024-11-15 04:11:28,new
+MA-00336,2024-11-15 04:11:28,MA | Piper Sandler,rating,,Overweight,2024-11-15 04:11:28,corroborate
+MA-00337,2024-11-15 13:38:23,MA | TD Cowen,price_target_usd,,567.00,2024-11-15 13:38:23,new
+MA-00337,2024-11-15 13:38:23,MA | TD Cowen,rating,,Buy,2024-11-15 13:38:23,corroborate
+MA-00338,2024-12-09 12:02:31,"MA | Keefe, Bruyette & Woods",price_target_usd,,618.00,2024-12-09 12:02:31,new
+MA-00338,2024-12-09 12:02:31,"MA | Keefe, Bruyette & Woods",rating,,Outperform,2024-12-09 12:02:31,corroborate
+MA-00339,2024-12-09 12:54:53,MA | Jefferies,price_target_usd,,610.00,2024-12-09 12:54:53,new
+MA-00339,2024-12-09 12:54:53,MA | Jefferies,rating,,Buy,2024-12-09 12:54:53,corroborate
+MA-00340,2024-12-18 08:00:25,MA | Morgan Stanley,price_target_usd,,654.00,2024-12-18 08:00:25,new
+MA-00340,2024-12-18 08:00:25,MA | Morgan Stanley,rating,,Overweight,2024-12-18 08:00:25,corroborate
+MA-00341,2024-12-19 12:01:40,MA | Oppenheimer,price_target_usd,,588.0,2024-12-19 12:01:40,new
+MA-00341,2024-12-19 12:01:40,MA | Oppenheimer,rating,,Outperform,2024-12-19 12:01:40,corroborate
+MA-00342,2025-01-14 06:43:30,MA | Seaport Global,rating,,Neutral,2025-01-14 06:43:30,new
+MA-00343,2025-01-14 13:52:17,MA | Citigroup,price_target_usd,,584.00,2025-01-14 13:52:17,new
+MA-00343,2025-01-14 13:52:17,MA | Citigroup,rating,,Buy,2025-01-14 13:52:17,corroborate
+MA-00344,2025-01-24 04:24:23,MA | Piper Sandler,price_target_usd,,591.0,2025-01-24 04:24:23,new
+MA-00344,2025-01-24 04:24:23,MA | Piper Sandler,rating,,Overweight,2025-01-24 04:24:23,corroborate
+MA-00345,2025-01-31 08:00:22,MA | Jefferies,price_target_usd,,660.0,2025-01-31 08:00:22,new
+MA-00345,2025-01-31 08:00:22,MA | Jefferies,rating,,Buy,2025-01-31 08:00:22,corroborate
+MA-00346,2025-01-31 09:25:52,MA | Morgan Stanley,price_target_usd,,644.00,2025-01-31 09:25:52,new
+MA-00346,2025-01-31 09:25:52,MA | Morgan Stanley,rating,,Overweight,2025-01-31 09:25:52,corroborate
+MA-00347,2025-01-31 09:37:12,MA | Susquehanna,price_target_usd,,670.00,2025-01-31 09:37:12,new
+MA-00347,2025-01-31 09:37:12,MA | Susquehanna,rating,,Positive,2025-01-31 09:37:12,new
+MA-00348,2025-01-31 10:42:55,MA | Keybanc,price_target_usd,,630.00,2025-01-31 10:42:55,new
+MA-00348,2025-01-31 10:42:55,MA | Keybanc,rating,,Overweight,2025-01-31 10:42:55,corroborate
+MA-00349,2025-01-31 12:04:43,MA | Raymond James,price_target_usd,,640.0,2025-01-31 12:04:43,new
+MA-00349,2025-01-31 12:04:43,MA | Raymond James,rating,,Outperform,2025-01-31 12:04:43,corroborate
+MA-00350,2025-01-31 12:34:57,"MA | Keefe, Bruyette & Woods",price_target_usd,,665.0,2025-01-31 12:34:57,new
+MA-00350,2025-01-31 12:34:57,"MA | Keefe, Bruyette & Woods",rating,,Outperform,2025-01-31 12:34:57,corroborate
+MA-00351,2025-01-31 12:58:23,MA | JP Morgan,price_target_usd,,610.00,2025-01-31 12:58:23,new
+MA-00351,2025-01-31 12:58:23,MA | JP Morgan,rating,,Overweight,2025-01-31 12:58:23,corroborate
+MA-00352,2025-01-31 13:08:24,MA | Piper Sandler,price_target_usd,,635.0,2025-01-31 13:08:24,new
+MA-00352,2025-01-31 13:08:24,MA | Piper Sandler,rating,,Overweight,2025-01-31 13:08:24,corroborate
+MA-00353,2025-01-31 13:18:37,MA | RBC Capital,price_target_usd,,650.00,2025-01-31 13:18:37,new
+MA-00353,2025-01-31 13:18:37,MA | RBC Capital,rating,,Outperform,2025-01-31 13:18:37,corroborate
+MA-00354,2025-01-31 14:14:44,MA | UBS,price_target_usd,,660.00,2025-01-31 14:14:44,new
+MA-00354,2025-01-31 14:14:44,MA | UBS,rating,,Buy,2025-01-31 14:14:44,corroborate
+MA-00355,2025-01-31 14:49:31,MA | Citigroup,price_target_usd,,650.0,2025-01-31 14:49:31,new
+MA-00355,2025-01-31 14:49:31,MA | Citigroup,rating,,Buy,2025-01-31 14:49:31,corroborate
+MA-00356,2025-01-31 14:58:51,MA | Macquarie,price_target_usd,,645.00,2025-01-31 14:58:51,new
+MA-00356,2025-01-31 14:58:51,MA | Macquarie,rating,,Outperform,2025-01-31 14:58:51,corroborate
+MA-00357,2025-02-03 08:32:14,MA | Barclays,price_target_usd,,650.00,2025-02-03 08:32:14,new
+MA-00357,2025-02-03 08:32:14,MA | Barclays,rating,,Overweight,2025-02-03 08:32:14,corroborate
+MA-00358,2025-02-04 13:07:45,MA | Wells Fargo,price_target_usd,,625.00,2025-02-04 13:07:45,new
+MA-00358,2025-02-04 13:07:45,MA | Wells Fargo,rating,,Overweight,2025-02-04 13:07:45,corroborate
+MA-00359,2025-02-13 18:18:00,MA | Tigress Financial,price_target_usd,,685.0,2025-02-13 18:18:00,new
+MA-00359,2025-02-13 18:18:00,MA | Tigress Financial,rating,,Strong Buy,2025-02-13 18:18:00,corroborate
+MA-00360,2025-04-09 07:09:48,MA | Evercore ISI Group,price_target_usd,,550.00,2025-04-09 07:09:48,new
+MA-00360,2025-04-09 07:09:48,MA | Evercore ISI Group,rating,,In-Line,2025-04-09 07:09:48,new
+MA-00361,2025-05-02 08:00:22,MA | Jefferies,price_target_usd,,630.0,2025-05-02 08:00:22,new
+MA-00361,2025-05-02 08:00:22,MA | Jefferies,rating,,Buy,2025-05-02 08:00:22,corroborate
+MA-00362,2025-05-02 11:04:06,MA | Macquarie,price_target_usd,,610.00,2025-05-02 11:04:06,new
+MA-00362,2025-05-02 11:04:06,MA | Macquarie,rating,,Outperform,2025-05-02 11:04:06,corroborate
+MA-00363,2025-05-02 11:11:18,MA | Keybanc,price_target_usd,,635.00,2025-05-02 11:11:18,new
+MA-00363,2025-05-02 11:11:18,MA | Keybanc,rating,,Overweight,2025-05-02 11:11:18,corroborate
+MA-00364,2025-05-02 11:51:40,MA | UBS,price_target_usd,,640.00,2025-05-02 11:51:40,new
+MA-00364,2025-05-02 11:51:40,MA | UBS,rating,,Buy,2025-05-02 11:51:40,corroborate
+MA-00365,2025-05-05 17:48:27,MA | Citigroup,price_target_usd,,652.0,2025-05-05 17:48:27,new
+MA-00365,2025-05-05 17:48:27,MA | Citigroup,rating,,Buy,2025-05-05 17:48:27,corroborate
+MA-00366,2025-05-27 10:33:27,MA | Jefferies,price_target_usd,,655.0,2025-05-27 10:33:27,new
+MA-00366,2025-05-27 10:33:27,MA | Jefferies,rating,,Buy,2025-05-27 10:33:27,corroborate
+MA-00367,2025-05-28 09:39:54,MA | UBS,price_target_usd,,660.00,2025-05-28 09:39:54,new
+MA-00367,2025-05-28 09:39:54,MA | UBS,rating,,Buy,2025-05-28 09:39:54,corroborate
+MA-00368,2025-06-02 07:54:50,MA | Truist Securities,price_target_usd,,640.00,2025-06-02 07:54:50,new
+MA-00368,2025-06-02 07:54:50,MA | Truist Securities,rating,,Buy,2025-06-02 07:54:50,new
+MA-00369,2025-06-03 09:00:49,MA | UBS,price_target_usd,,670.00,2025-06-03 09:00:49,new
+MA-00369,2025-06-03 09:00:49,MA | UBS,rating,,Buy,2025-06-03 09:00:49,corroborate
+MA-00370,2025-07-14 07:15:09,MA | Seaport Global,price_target_usd,,616.00,2025-07-14 07:15:09,new
+MA-00370,2025-07-14 07:15:09,MA | Seaport Global,rating,,Buy,2025-07-14 07:15:09,new
+MA-00371,2025-07-15 09:19:50,MA | RBC Capital,price_target_usd,,650.00,2025-07-15 09:19:50,corroborate
+MA-00371,2025-07-15 09:19:50,MA | RBC Capital,rating,,Outperform,2025-07-15 09:19:50,corroborate
+MA-00372,2025-07-17 10:24:27,MA | Truist Securities,price_target_usd,,612.00,2025-07-17 10:24:27,new
+MA-00372,2025-07-17 10:24:27,MA | Truist Securities,rating,,Buy,2025-07-17 10:24:27,corroborate
+MA-00373,2025-08-01 06:04:05,MA | UBS,price_target_usd,,690.00,2025-08-01 06:04:05,new
+MA-00373,2025-08-01 06:04:05,MA | UBS,rating,,Buy,2025-08-01 06:04:05,corroborate
+MA-00374,2025-08-01 08:51:33,MA | Keybanc,price_target_usd,,660.00,2025-08-01 08:51:33,new
+MA-00374,2025-08-01 08:51:33,MA | Keybanc,rating,,Overweight,2025-08-01 08:51:33,corroborate
+MA-00375,2025-08-01 10:03:10,MA | Wells Fargo,price_target_usd,,650.00,2025-08-01 10:03:10,new
+MA-00375,2025-08-01 10:03:10,MA | Wells Fargo,rating,,Overweight,2025-08-01 10:03:10,corroborate
+MA-00376,2025-08-01 10:22:18,MA | Morgan Stanley,price_target_usd,,661.00,2025-08-01 10:22:18,new
+MA-00376,2025-08-01 10:22:18,MA | Morgan Stanley,rating,,Overweight,2025-08-01 10:22:18,corroborate
+MA-00377,2025-08-01 12:02:51,MA | RBC Capital,price_target_usd,,656.00,2025-08-01 12:02:51,new
+MA-00377,2025-08-01 12:02:51,MA | RBC Capital,rating,,Outperform,2025-08-01 12:02:51,corroborate
+MA-00378,2025-08-06 06:00:30,MA | Truist Securities,price_target_usd,,623.00,2025-08-06 06:00:30,new
+MA-00378,2025-08-06 06:00:30,MA | Truist Securities,rating,,Buy,2025-08-06 06:00:30,corroborate
+MA-00379,2025-08-11 05:58:48,MA | TD Cowen,price_target_usd,,645.00,2025-08-11 05:58:48,new
+MA-00379,2025-08-11 05:58:48,MA | TD Cowen,rating,,Buy,2025-08-11 05:58:48,corroborate
+MA-00380,2025-10-06 08:44:59,MA | Baird,price_target_usd,,660.00,2025-10-06 08:44:59,new
+MA-00380,2025-10-06 08:44:59,MA | Baird,rating,,Outperform,2025-10-06 08:44:59,corroborate
+MA-00381,2025-10-22 07:34:12,MA | Wells Fargo,price_target_usd,,669.00,2025-10-22 07:34:12,new
+MA-00381,2025-10-22 07:34:12,MA | Wells Fargo,rating,,Overweight,2025-10-22 07:34:12,new
+MA-00382,2025-10-22 17:39:34,MA | Citigroup,price_target_usd,,735.00,2025-10-22 17:39:34,new
+MA-00382,2025-10-22 17:39:34,MA | Citigroup,rating,,Buy,2025-10-22 17:39:34,new
+MA-00383,2025-10-31 11:53:28,MA | UBS,price_target_usd,,700.00,2025-10-31 11:53:28,new
+MA-00383,2025-10-31 11:53:28,MA | UBS,rating,,Buy,2025-10-31 11:53:28,corroborate
+MA-00384,2025-10-31 12:34:14,MA | RBC Capital,price_target_usd,,654.00,2025-10-31 12:34:14,new
+MA-00384,2025-10-31 12:34:14,MA | RBC Capital,rating,,Buy,2025-10-31 12:34:14,corroborate
+MA-00385,2025-10-31 13:52:00,MA | Macquarie,price_target_usd,,660.00,2025-10-31 13:52:00,new
+MA-00385,2025-10-31 13:52:00,MA | Macquarie,rating,,Outperform,2025-10-31 13:52:00,corroborate
+MA-00386,2025-10-31 17:28:14,MA | Wells Fargo,price_target_usd,,660.00,2025-10-31 17:28:14,new
+MA-00386,2025-10-31 17:28:14,MA | Wells Fargo,rating,,Overweight,2025-10-31 17:28:14,corroborate
+MA-00387,2025-11-04 10:45:55,MA | Truist Securities,price_target_usd,,630.00,2025-11-04 10:45:55,new
+MA-00387,2025-11-04 10:45:55,MA | Truist Securities,rating,,Buy,2025-11-04 10:45:55,corroborate
+MA-00388,2025-11-06 14:33:22,MA | Tigress Financial,price_target_usd,,730.0,2025-11-06 14:33:22,new
+MA-00388,2025-11-06 14:33:22,MA | Tigress Financial,rating,,Strong Buy,2025-11-06 14:33:22,corroborate
+MA-00389,2025-12-08 06:15:56,MA | HSBC,price_target_usd,,633.0,2025-12-08 06:15:56,new
+MA-00389,2025-12-08 06:15:56,MA | HSBC,rating,,Buy,2025-12-08 06:15:56,new
+MA-00390,2025-12-24 08:02:31,MA | Freedom Broker,price_target_usd,,655.00,2025-12-24 08:02:31,new
+MA-00390,2025-12-24 08:02:31,MA | Freedom Broker,rating,,Hold,2025-12-24 08:02:31,new
+MA-00391,2026-01-13 07:50:26,MA | Compass Point,price_target_usd,,735.00,2026-01-13 07:50:26,new
+MA-00391,2026-01-13 07:50:26,MA | Compass Point,rating,,Buy,2026-01-13 07:50:26,new
+MA-00392,2026-01-27 05:18:55,MA | Cantor Fitzgerald,price_target_usd,,650.00,2026-01-27 05:18:55,new
+MA-00392,2026-01-27 05:18:55,MA | Cantor Fitzgerald,rating,,Overweight,2026-01-27 05:18:55,new
+MA-00393,2026-01-30 07:10:41,MA | Raymond James,price_target_usd,,631.00,2026-01-30 07:10:41,new
+MA-00393,2026-01-30 07:10:41,MA | Raymond James,rating,,Outperform,2026-01-30 07:10:41,corroborate
+MA-00394,2026-01-30 10:33:23,MA | Wells Fargo,price_target_usd,,668.00,2026-01-30 10:33:23,new
+MA-00394,2026-01-30 10:33:23,MA | Wells Fargo,rating,,Overweight,2026-01-30 10:33:23,corroborate
+MA-00395,2026-01-30 11:52:12,MA | RBC Capital,price_target_usd,,656.00,2026-01-30 11:52:12,corroborate
+MA-00395,2026-01-30 11:52:12,MA | RBC Capital,rating,,Outperform,2026-01-30 11:52:12,corroborate
+MA-00396,2026-01-30 12:02:24,MA | Morgan Stanley,price_target_usd,,678.00,2026-01-30 12:02:24,new
+MA-00396,2026-01-30 12:02:24,MA | Morgan Stanley,rating,,Overweight,2026-01-30 12:02:24,corroborate
+MA-00397,2026-01-30 12:21:32,MA | Macquarie,price_target_usd,,675.00,2026-01-30 12:21:32,new
+MA-00397,2026-01-30 12:21:32,MA | Macquarie,rating,,Outperform,2026-01-30 12:21:32,corroborate
+MA-00398,2026-01-30 13:21:00,MA | TD Cowen,price_target_usd,,671.00,2026-01-30 13:21:00,new
+MA-00398,2026-01-30 13:21:00,MA | TD Cowen,rating,,Buy,2026-01-30 13:21:00,corroborate
+MA-00399,2026-01-30 16:40:40,MA | JP Morgan,price_target_usd,,655.00,2026-01-30 16:40:40,new
+MA-00399,2026-01-30 16:40:40,MA | JP Morgan,rating,,Overweight,2026-01-30 16:40:40,corroborate
+MA-00400,2026-02-13 08:00:46,MA | Freedom Broker,price_target_usd,,675.00,2026-02-13 08:00:46,new
+MA-00400,2026-02-13 08:00:46,MA | Freedom Broker,rating,,Buy,2026-02-13 08:00:46,new
+MA-00401,2026-03-13 16:56:07,MA | Tigress Financial,price_target_usd,,735.0,2026-03-13 16:56:07,new
+MA-00401,2026-03-13 16:56:07,MA | Tigress Financial,rating,,Strong Buy,2026-03-13 16:56:07,corroborate
+MA-00402,2026-03-31 16:10:24,MA | UBS,price_target_usd,,650.00,2026-03-31 16:10:24,new
+MA-00402,2026-03-31 16:10:24,MA | UBS,rating,,Buy,2026-03-31 16:10:24,corroborate
+MA-00403,2026-03-31 16:36:38,MA | Loop Capital,price_target_usd,,631.00,2026-03-31 16:36:38,new
+MA-00403,2026-03-31 16:36:38,MA | Loop Capital,rating,,Buy,2026-03-31 16:36:38,new
+MA-00404,2026-04-01 13:06:23,MA | Evercore ISI Group,price_target_usd,,550.00,2026-04-01 13:06:23,new
+MA-00404,2026-04-01 13:06:23,MA | Evercore ISI Group,rating,,In-Line,2026-04-01 13:06:23,corroborate
+MA-00405,2026-04-14 13:29:56,MA | Citigroup,price_target_usd,,675.00,2026-04-14 13:29:56,new
+MA-00405,2026-04-14 13:29:56,MA | Citigroup,rating,,Buy,2026-04-14 13:29:56,corroborate
+MA-00406,2026-04-22 10:44:22,MA | BMO Capital,price_target_usd,,605.00,2026-04-22 10:44:22,new
+MA-00406,2026-04-22 10:44:22,MA | BMO Capital,rating,,Outperform,2026-04-22 10:44:22,new
+MA-00407,2026-04-24 10:49:59,MA | Truist Securities,price_target_usd,,590.00,2026-04-24 10:49:59,new
+MA-00407,2026-04-24 10:49:59,MA | Truist Securities,rating,,Buy,2026-04-24 10:49:59,new
+MA-00408,2026-05-01 08:10:32,MA | Susquehanna,price_target_usd,,665.00,2026-05-01 08:10:32,new
+MA-00408,2026-05-01 08:10:32,MA | Susquehanna,rating,,Positive,2026-05-01 08:10:32,new
+MA-00409,2026-05-01 13:08:33,MA | RBC Capital,price_target_usd,,629.00,2026-05-01 13:08:33,new
+MA-00409,2026-05-01 13:08:33,MA | RBC Capital,rating,,Outperform,2026-05-01 13:08:33,corroborate
+MA-00410,2026-05-01 17:25:16,MA | UBS,price_target_usd,,640.00,2026-05-01 17:25:16,new
+MA-00410,2026-05-01 17:25:16,MA | UBS,rating,,Buy,2026-05-01 17:25:16,corroborate
+MA-00411,2026-05-01 18:40:02,MA | Macquarie,price_target_usd,,665.00,2026-05-01 18:40:02,new
+MA-00411,2026-05-01 18:40:02,MA | Macquarie,rating,,Outperform,2026-05-01 18:40:02,corroborate
+MA-00412,2026-05-12 09:25:21,MA | Truist Securities,price_target_usd,,561.00,2026-05-12 09:25:21,new
+MA-00412,2026-05-12 09:25:21,MA | Truist Securities,rating,,Buy,2026-05-12 09:25:21,new
+MA-00413,2026-06-03 09:05:21,MA | Loop Capital,price_target_usd,,631.00,2026-06-03 09:05:21,new
+MA-00413,2026-06-03 09:05:21,MA | Loop Capital,rating,,Buy,2026-06-03 09:05:21,corroborate
+MA-00414,2026-06-30 09:18:38,MA | Piper Sandler,price_target_usd,,597.00,2026-06-30 09:18:38,new
+MA-00414,2026-06-30 09:18:38,MA | Piper Sandler,rating,,Overweight,2026-06-30 09:18:38,new
+MA-00415,2026-07-07 07:11:19,MA | Baird,price_target_usd,,680.00,2026-07-07 07:11:19,new
+MA-00415,2026-07-07 07:11:19,MA | Baird,rating,,Outperform,2026-07-07 07:11:19,corroborate
+MA-00416,2026-07-07 10:19:41,MA | TD Cowen,price_target_usd,,664.00,2026-07-07 10:19:41,new
+MA-00416,2026-07-07 10:19:41,MA | TD Cowen,rating,,Buy,2026-07-07 10:19:41,corroborate
+MA-00417,2026-07-08 08:30:03,MA | Barclays,price_target_usd,,640.00,2026-07-08 08:30:03,new
+MA-00417,2026-07-08 08:30:03,MA | Barclays,rating,,Overweight,2026-07-08 08:30:03,new
+MA-00418,2026-07-24 08:12:58,MA | Truist Securities,price_target_usd,,554.00,2026-07-24 08:12:58,new
+MA-00418,2026-07-24 08:12:58,MA | Truist Securities,rating,,Buy,2026-07-24 08:12:58,new
+MA-00419,2026-07-31 07:53:32,"MA | Keefe, Bruyette & Woods",price_target_usd,,685.0,2026-07-31 07:53:32,new
+MA-00419,2026-07-31 07:53:32,"MA | Keefe, Bruyette & Woods",rating,,Outperform,2026-07-31 07:53:32,corroborate
+MA-00420,2026-07-31 07:59:53,MA | Keybanc,price_target_usd,,680.00,2026-07-31 07:59:53,new
+MA-00420,2026-07-31 07:59:53,MA | Keybanc,rating,,Overweight,2026-07-31 07:59:53,corroborate
+MA-00421,2026-07-31 08:03:32,MA | Barclays,price_target_usd,,660.00,2026-07-31 08:03:32,new
+MA-00421,2026-07-31 08:03:32,MA | Barclays,rating,,Overweight,2026-07-31 08:03:32,corroborate
+MA-00422,2026-07-31 12:55:35,MA | TD Cowen,price_target_usd,,667.00,2026-07-31 12:55:35,new
+MA-00422,2026-07-31 12:55:35,MA | TD Cowen,rating,,Buy,2026-07-31 12:55:35,corroborate
+MA-00423,2026-07-31 13:01:47,MA | Morgan Stanley,price_target_usd,,681.00,2026-07-31 13:01:47,new
+MA-00423,2026-07-31 13:01:47,MA | Morgan Stanley,rating,,Overweight,2026-07-31 13:01:47,corroborate
+MA-00424,2026-07-31 15:19:06,MA | RBC Capital,price_target_usd,,642.00,2026-07-31 15:19:06,new
+MA-00424,2026-07-31 15:19:06,MA | RBC Capital,rating,,Outperform,2026-07-31 15:19:06,corroborate
+MA-00425,2026-07-31 15:26:56,MA | Macquarie,price_target_usd,,670.00,2026-07-31 15:26:56,new
+MA-00425,2026-07-31 15:26:56,MA | Macquarie,rating,,Outperform,2026-07-31 15:26:56,corroborate
+MA-00426,2026-07-31 17:49:43,MA | UBS,price_target_usd,,670.00,2026-07-31 17:49:43,new
+MA-00426,2026-07-31 17:49:43,MA | UBS,rating,,Buy,2026-07-31 17:49:43,corroborate
+MA-00427,2026-08-03 08:53:42,MA | Cantor Fitzgerald,price_target_usd,,695.00,2026-08-03 08:53:42,new
+MA-00427,2026-08-03 08:53:42,MA | Cantor Fitzgerald,rating,,Overweight,2026-08-03 08:53:42,corroborate
+MA-00428,2026-08-05 14:12:35,MA | Truist Securities,price_target_usd,,633.00,2026-08-05 14:12:35,new
+MA-00428,2026-08-05 14:12:35,MA | Truist Securities,rating,,Buy,2026-08-05 14:12:35,corroborate
+MA-00429,2026-08-25 11:05:26,MA | Wolfe Research,price_target_usd,,740.00,2026-08-25 11:05:26,new
+MA-00429,2026-08-25 11:05:26,MA | Wolfe Research,rating,,Outperform,2026-08-25 11:05:26,corroborate
+MA-00430,2026-08-31 09:49:04,MA | RBC Capital,price_target_usd,,696.00,2026-08-31 09:49:04,new
+MA-00430,2026-08-31 09:49:04,MA | RBC Capital,rating,,Outperform,2026-08-31 09:49:04,corroborate
+MA-00431,2026-10-09 09:52:19,MA | Baird,price_target_usd,,710.00,2026-10-09 09:52:19,new
+MA-00431,2026-10-09 09:52:19,MA | Baird,rating,,Outperform,2026-10-09 09:52:19,corroborate
+MA-00432,2026-10-19 11:54:36,MA | Keybanc,price_target_usd,,722.00,2026-10-19 11:54:36,new
+MA-00432,2026-10-19 11:54:36,MA | Keybanc,rating,,Overweight,2026-10-19 11:54:36,corroborate
+MA-00433,2026-10-23 13:48:47,MA | Truist Securities,price_target_usd,,674.00,2026-10-23 13:48:47,new
+MA-00433,2026-10-23 13:48:47,MA | Truist Securities,rating,,Buy,2026-10-23 13:48:47,corroborate
+MA-00434,2026-10-30 07:42:49,MA | Cantor Fitzgerald,price_target_usd,,765.00,2026-10-30 07:42:49,new
+MA-00434,2026-10-30 07:42:49,MA | Cantor Fitzgerald,rating,,Overweight,2026-10-30 07:42:49,corroborate
+MA-00435,2026-10-30 08:38:41,MA | Evercore ISI Group,price_target_usd,,640.00,2026-10-30 08:38:41,new
+MA-00435,2026-10-30 08:38:41,MA | Evercore ISI Group,rating,,In-Line,2026-10-30 08:38:41,corroborate
+MA-00436,2026-10-30 08:40:02,MA | Keybanc,price_target_usd,,735.00,2026-10-30 08:40:02,new
+MA-00436,2026-10-30 08:40:02,MA | Keybanc,rating,,Overweight,2026-10-30 08:40:02,corroborate
+MA-00437,2026-10-30 09:04:35,MA | Susquehanna,price_target_usd,,740.00,2026-10-30 09:04:35,new
+MA-00437,2026-10-30 09:04:35,MA | Susquehanna,rating,,Positive,2026-10-30 09:04:35,new
+MA-00438,2026-10-30 09:57:41,MA | Argus Research,price_target_usd,,694.00,2026-10-30 09:57:41,new
+MA-00438,2026-10-30 09:57:41,MA | Argus Research,rating,,Buy,2026-10-30 09:57:41,corroborate
+MA-00439,2026-10-30 10:31:40,"MA | Keefe, Bruyette & Woods",price_target_usd,,750.0,2026-10-30 10:31:40,new
+MA-00439,2026-10-30 10:31:40,"MA | Keefe, Bruyette & Woods",rating,,Outperform,2026-10-30 10:31:40,corroborate
+MA-00440,2026-10-30 10:45:05,MA | Barclays,price_target_usd,,700.00,2026-10-30 10:45:05,new
+MA-00440,2026-10-30 10:45:05,MA | Barclays,rating,,Overweight,2026-10-30 10:45:05,corroborate
+MA-00441,2026-10-30 12:33:15,MA | RBC Capital,price_target_usd,,742.00,2026-10-30 12:33:15,new
+MA-00441,2026-10-30 12:33:15,MA | RBC Capital,rating,,Outperform,2026-10-30 12:33:15,corroborate
+MA-00442,2026-10-30 14:32:23,MA | Wells Fargo,price_target_usd,,731.00,2026-10-30 14:32:23,new
+MA-00442,2026-10-30 14:32:23,MA | Wells Fargo,rating,,Overweight,2026-10-30 14:32:23,corroborate
+MA-00443,2026-10-30 15:55:51,MA | TD Cowen,price_target_usd,,726.00,2026-10-30 15:55:51,new
+MA-00443,2026-10-30 15:55:51,MA | TD Cowen,rating,,Buy,2026-10-30 15:55:51,corroborate
+MA-00444,2026-10-30 18:46:25,MA | JP Morgan,price_target_usd,,755.00,2026-10-30 18:46:25,new
+MA-00444,2026-10-30 18:46:25,MA | JP Morgan,rating,,Overweight,2026-10-30 18:46:25,corroborate
+MA-00445,2026-10-30 20:55:16,MA | Macquarie,price_target_usd,,750.00,2026-10-30 20:55:16,new
+MA-00445,2026-10-30 20:55:16,MA | Macquarie,rating,,Outperform,2026-10-30 20:55:16,corroborate
+MA-00446,2026-10-30 21:51:35,MA | UBS,price_target_usd,,750.00,2026-10-30 21:51:35,new
+MA-00446,2026-10-30 21:51:35,MA | UBS,rating,,Buy,2026-10-30 21:51:35,corroborate
+MA-00447,2026-11-05 10:48:46,MA | Truist Securities,price_target_usd,,735.00,2026-11-05 10:48:46,new
+MA-00447,2026-11-05 10:48:46,MA | Truist Securities,rating,,Buy,2026-11-05 10:48:46,corroborate
+MA-00448,2026-11-05 21:15:10,MA | Freedom Broker,price_target_usd,,725.00,2026-11-05 21:15:10,new
+MA-00448,2026-11-05 21:15:10,MA | Freedom Broker,rating,,Hold,2026-11-05 21:15:10,new
+MA-00449,2026-11-10 14:33:26,MA | Citigroup,price_target_usd,,800.00,2026-11-10 14:33:26,new
+MA-00449,2026-11-10 14:33:26,MA | Citigroup,rating,,Buy,2026-11-10 14:33:26,corroborate
+MA-00450,2026-11-11 12:32:20,MA | Bernstein,price_target_usd,,764.00,2026-11-11 12:32:20,new
+MA-00450,2026-11-11 12:32:20,MA | Bernstein,rating,,Outperform,2026-11-11 12:32:20,new

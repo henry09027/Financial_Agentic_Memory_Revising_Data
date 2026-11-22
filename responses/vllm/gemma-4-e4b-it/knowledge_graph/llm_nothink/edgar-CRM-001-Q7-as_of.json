@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-CRM-001-Q7-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "CRM",
+ "qtype": "not_yet_published",
+ "mode": "as_of",
+ "as_of": "2020-12-06 06:21:00",
+ "question": "What was Salesforce, Inc.'s revenue for the three months ended 30 April 2021, in $ millions?",
+ "gold": "CANNOT_ANSWER",
+ "peek_answers": "5963",
+ "trap_answers": "",
+ "gold_evidence": "",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": null,
+ "in_tokens": 3395,
+ "out_tokens": 17,
+ "seconds": 0.297,
+ "n_facts": 23,
+ "n_dropped": 0,
+ "created": "2026-11-22T05:40:38",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2020-12-06 06:21:00\nQuestion: What was Salesforce, Inc.'s revenue for the three months ended 30 April 2021, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nCRM | Revenues | value_usd_m | 2017-02-01..2017-04-30: latest 2397.0 | first 2387.579 | 2 reports: 2387.579 [CRM-00028 @2017-05-22 20:06]; 2397.0 [CRM-00041 @2018-05-31 20:19]\nCRM | Revenues | value_usd_m | 2017-02-01..2017-07-31: latest 4974.0 | first 4949.168 | 2 reports: 4949.168 [CRM-00031 @2017-08-25 20:19]; 4974.0 [CRM-00043 @2018-08-31 20:29]\nCRM | Revenues | value_usd_m | 2017-05-01..2017-07-31: latest 2577.0 | first 2561.589 | 2 reports: 2561.589 [CRM-00032 @2017-08-25 20:19]; 2577.0 [CRM-00044 @2018-08-31 20:29]\nCRM | Revenues | value_usd_m | 2017-02-01..2017-10-31: latest 7675.0 | first 7629.009 | 2 reports: 7629.009 [CRM-00035 @2017-11-22 21:19]; 7675.0 [CRM-00047 @2018-11-28 21:36]\nCRM | Revenues | value_usd_m | 2017-08-01..2017-10-31: latest 2701.0 | first 2679.841 | 2 reports: 2679.841 [CRM-00036 @2017-11-22 21:19]; 2701.0 [CRM-00048 @2018-11-28 21:36]\nCRM | Revenues | value_usd_m | 2012-02-01..2013-01-31: latest 6667.216 | first 6667.216 | 1 reports: 6667.216 [CRM-00037 @2018-03-09 22:01]\nCRM | Revenues | value_usd_m | 2017-02-01..2018-01-31: latest 10540.0 | first 10480.012 | 3 reports: 10480.012 [CRM-00040 @2018-03-09 22:01]; 10540.0 [CRM-00052 @2019-03-08 13:04]; 10540.0 [CRM-00064 @2020-03-05 21:29]\nCRM | Revenues | value_usd_m | 2018-02-01..2018-04-30: latest 3006.0 | first 3006.0 | 2 reports: 3006.0 [CRM-00042 @2018-05-31 20:19]; 3006.0 [CRM-00054 @2019-06-05 20:17]\nCRM | Revenues | value_usd_m | 2018-02-01..2018-07-31: latest 6287.0 | first 6287.0 | 2 reports: 6287.0 [CRM-00045 @2018-08-31 20:29]; 6287.0 [CRM-00056 @2019-08-23 20:38]\nCRM | Revenues | value_usd_m | 2018-05-01..2018-07-31: latest 3281.0 | first 3281.0 | 2 reports: 3281.0 [CRM-00046 @2018-08-31 20:29]; 3281.0 [CRM-00057 @2019-08-23 20:38]\nCRM | Revenues | value_usd_m | 2018-02-01..2018-10-31: latest 9679.0 | first 9679.0 | 2 reports: 9679.0 [CRM-00049 @2018-11-28 21:36]; 9679.0 [CRM-00060 @2019-12-04 21:20]\nCRM | Revenues | value_usd_m | 2018-08-01..2018-10-31: latest 3392.0 | first 3392.0 | 2 reports: 3392.0 [CRM-00050 @2018-11-28 21:36]; 3392.0 [CRM-00061 @2019-12-04 21:20]\nCRM | Revenues | value_usd_m | 2018-02-01..2019-01-31: latest 13282.0 | first 13282.0 | 2 reports: 13282.0 [CRM-00053 @2019-03-08 13:04]; 13282.0 [CRM-00065 @2020-03-05 21:29]\nCRM | Revenues | value_usd_m | 2019-02-01..2019-04-30: latest 3737.0 | first 3737.0 | 1 reports: 3737.0 [CRM-00055 @2019-06-05 20:17]\nCRM | Revenues | value_usd_m | 2019-02-01..2019-07-31: latest 7734.0 | first 7734.0 | 2 reports: 7734.0 [CRM-00058 @2019-08-23 20:38]; 7734.0 [CRM-00067 @2020-08-28 11:59]\nCRM | Revenues | value_usd_m | 2019-05-01..2019-07-31: latest 3997.0 | first 3997.0 | 2 reports: 3997.0 [CRM-00059 @2019-08-23 20:38]; 3997.0 [CRM-00068 @2020-08-28 11:59]\nCRM | Revenues | value_usd_m | 2019-02-01..2019-10-31: latest 12247.0 | first 12247.0 | 2 reports: 12247.0 [CRM-00062 @2019-12-04 21:20]; 12247.0 [CRM-00071 @2020-12-04 13:43]\nCRM | Revenues | value_usd_m | 2019-08-01..2019-10-31: latest 4513.0 | first 4513.0 | 2 reports: 4513.0 [CRM-00063 @2019-12-04 21:20]; 4513.0 [CRM-00072 @2020-12-04 13:43]\nCRM | Revenues | value_usd_m | 2019-02-01..2020-01-31: latest 17098.0 | first 17098.0 | 1 reports: 17098.0 [CRM-00066 @2020-03-05 21:29]\nCRM | Revenues | value_usd_m | 2020-02-01..2020-07-31: latest 10016.0 | first 10016.0 | 1 reports: 10016.0 [CRM-00069 @2020-08-28 11:59]\nCRM | Revenues | value_usd_m | 2020-05-01..2020-07-31: latest 5151.0 | first 5151.0 | 1 reports: 5151.0 [CRM-00070 @2020-08-28 11:59]\nCRM | Revenues | value_usd_m | 2020-02-01..2020-10-31: latest 15435.0 | first 15435.0 | 1 reports: 15435.0 [CRM-00073 @2020-12-04 13:43]\nCRM | Revenues | value_usd_m | 2020-08-01..2020-10-31: latest 5419.0 | first 5419.0 | 1 reports: 5419.0 [CRM-00074 @2020-12-04 13:43]"
+  }
+ ],
+ "final_text": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}",
+ "raw_output": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}"
+}

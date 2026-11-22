@@ -1,0 +1,356 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+GOOGL-00792,2025-09-03 07:42:32,GOOGL | Needham,price_target_usd,,260.00,2025-09-03 07:42:32,new
+GOOGL-00792,2025-09-03 07:42:32,GOOGL | Needham,rating,,Buy,2025-09-03 07:42:32,new
+GOOGL-00793,2025-09-03 08:29:08,GOOGL | JMP Securities,price_target_usd,,250.00,2025-09-03 08:29:08,new
+GOOGL-00793,2025-09-03 08:29:08,GOOGL | JMP Securities,rating,,Market Outperform,2025-09-03 08:29:08,new
+GOOGL-00794,2025-09-03 08:52:01,GOOGL | Keybanc,price_target_usd,,265.00,2025-09-03 08:52:01,new
+GOOGL-00794,2025-09-03 08:52:01,GOOGL | Keybanc,rating,,Overweight,2025-09-03 08:52:01,new
+GOOGL-00795,2025-09-03 09:57:46,GOOGL | RBC Capital,price_target_usd,,260.00,2025-09-03 09:57:46,new
+GOOGL-00795,2025-09-03 09:57:46,GOOGL | RBC Capital,rating,,Outperform,2025-09-03 09:57:46,new
+GOOGL-00796,2025-09-03 10:13:57,GOOGL | Barclays,price_target_usd,,250.00,2025-09-03 10:13:57,new
+GOOGL-00796,2025-09-03 10:13:57,GOOGL | Barclays,rating,,Overweight,2025-09-03 10:13:57,new
+GOOGL-00797,2025-09-03 12:33:05,GOOGL | Oppenheimer,price_target_usd,,270.00,2025-09-03 12:33:05,new
+GOOGL-00797,2025-09-03 12:33:05,GOOGL | Oppenheimer,rating,,Outperform,2025-09-03 12:33:05,new
+GOOGL-00798,2025-09-04 07:53:47,GOOGL | Canaccord Genuity,price_target_usd,,270.00,2025-09-04 07:53:47,new
+GOOGL-00798,2025-09-04 07:53:47,GOOGL | Canaccord Genuity,rating,,Buy,2025-09-04 07:53:47,new
+GOOGL-00799,2025-09-05 13:06:53,GOOGL | Tigress Financial,price_target_usd,,280.00,2025-09-05 13:06:53,new
+GOOGL-00799,2025-09-05 13:06:53,GOOGL | Tigress Financial,rating,,Strong Buy,2025-09-05 13:06:53,new
+GOOGL-00800,2025-09-08 08:16:19,GOOGL | Evercore ISI Group,price_target_usd,,300.00,2025-09-08 08:16:19,new
+GOOGL-00800,2025-09-08 08:16:19,GOOGL | Evercore ISI Group,rating,,Outperform,2025-09-08 08:16:19,new
+GOOGL-00801,2025-09-15 12:24:58,GOOGL | Citigroup,rating,,Buy,2025-09-15 12:24:58,new
+GOOGL-00801,2025-09-15 12:24:58,GOOGL | Citigroup,price_target_usd,,280.00,2025-09-15 12:24:58,new
+GOOGL-00802,2025-09-18 07:33:10,GOOGL | Piper Sandler,rating,,Overweight,2025-09-18 07:33:10,new
+GOOGL-00802,2025-09-18 07:33:10,GOOGL | Piper Sandler,price_target_usd,,285.00,2025-09-18 07:33:10,new
+GOOGL-00803,2025-09-19 08:22:42,GOOGL | JMP Securities,price_target_usd,,290.00,2025-09-19 08:22:42,new
+GOOGL-00803,2025-09-19 08:22:42,GOOGL | JMP Securities,rating,,Market Outperform,2025-09-19 08:22:42,corroborate
+GOOGL-00804,2025-09-22 09:49:37,GOOGL | Truist Securities,rating,,Buy,2025-09-22 09:49:37,new
+GOOGL-00804,2025-09-22 09:49:37,GOOGL | Truist Securities,price_target_usd,,285.00,2025-09-22 09:49:37,new
+GOOGL-00805,2025-09-22 11:16:36,GOOGL | Baird,rating,,Outperform,2025-09-22 11:16:36,new
+GOOGL-00805,2025-09-22 11:16:36,GOOGL | Baird,price_target_usd,,275.00,2025-09-22 11:16:36,new
+GOOGL-00806,2025-09-24 08:36:12,GOOGL | Cantor Fitzgerald,price_target_usd,,201.00,2025-09-24 08:36:12,new
+GOOGL-00806,2025-09-24 08:36:12,GOOGL | Cantor Fitzgerald,rating,,Neutral,2025-09-24 08:36:12,new
+GOOGL-00807,2025-09-25 07:10:59,GOOGL | MoffettNathanson,price_target_usd,,295.0,2025-09-25 07:10:59,new
+GOOGL-00807,2025-09-25 07:10:59,GOOGL | MoffettNathanson,rating,,Buy,2025-09-25 07:10:59,new
+GOOGL-00808,2025-09-30 12:21:52,GOOGL | Mizuho,rating,,Outperform,2025-09-30 12:21:52,new
+GOOGL-00808,2025-09-30 12:21:52,GOOGL | Mizuho,price_target_usd,,295.0,2025-09-30 12:21:52,new
+GOOGL-00809,2025-10-02 08:49:48,GOOGL | Morgan Stanley,rating,,Overweight,2025-10-02 08:49:48,new
+GOOGL-00809,2025-10-02 08:49:48,GOOGL | Morgan Stanley,price_target_usd,,270.00,2025-10-02 08:49:48,new
+GOOGL-00809,2025-10-02 08:49:48,GOOGL | Morgan Stanley,price_target_usd,,210.00,2025-10-02 08:49:48,inferred
+GOOGL-00810,2025-10-07 08:12:26,GOOGL | HSBC,rating,,Buy,2025-10-07 08:12:26,new
+GOOGL-00810,2025-10-07 08:12:26,GOOGL | HSBC,price_target_usd,,285.0,2025-10-07 08:12:26,new
+GOOGL-00811,2025-10-07 10:15:23,GOOGL | Wells Fargo,rating,,Equal-Weight,2025-10-07 10:15:23,new
+GOOGL-00811,2025-10-07 10:15:23,GOOGL | Wells Fargo,price_target_usd,,236.00,2025-10-07 10:15:23,new
+GOOGL-00812,2025-10-09 13:59:57,GOOGL | BMO Capital,rating,,Outperform,2025-10-09 13:59:57,new
+GOOGL-00812,2025-10-09 13:59:57,GOOGL | BMO Capital,price_target_usd,,294.00,2025-10-09 13:59:57,new
+GOOGL-00813,2025-10-17 08:02:20,GOOGL | Guggenheim,rating,,Buy,2025-10-17 08:02:20,new
+GOOGL-00813,2025-10-17 08:02:20,GOOGL | Guggenheim,price_target_usd,,280.00,2025-10-17 08:02:20,new
+GOOGL-00814,2025-10-20 07:09:15,GOOGL | B of A Securities,rating,,Buy,2025-10-20 07:09:15,new
+GOOGL-00814,2025-10-20 07:09:15,GOOGL | B of A Securities,price_target_usd,,280.00,2025-10-20 07:09:15,new
+GOOGL-00815,2025-10-22 08:31:01,GOOGL | JMP Securities,rating,,Market Outperform,2025-10-22 08:31:01,new
+GOOGL-00815,2025-10-22 08:31:01,GOOGL | JMP Securities,price_target_usd,,290.0,2025-10-22 08:31:01,new
+GOOGL-00816,2025-10-23 10:12:28,GOOGL | Bernstein,price_target_usd,,260.0,2025-10-23 10:12:28,new
+GOOGL-00816,2025-10-23 10:12:28,GOOGL | Bernstein,rating,,Market Perform,2025-10-23 10:12:28,new
+GOOGL-00817,2025-10-24 09:37:59,GOOGL | Stifel,rating,,Buy,2025-10-24 09:37:59,new
+GOOGL-00817,2025-10-24 09:37:59,GOOGL | Stifel,price_target_usd,,292.00,2025-10-24 09:37:59,new
+GOOGL-00818,2025-10-27 08:28:00,GOOGL | Keybanc,price_target_usd,,300.0,2025-10-27 08:28:00,new
+GOOGL-00818,2025-10-27 08:28:00,GOOGL | Keybanc,rating,,Overweight,2025-10-27 08:28:00,new
+GOOGL-00819,2025-10-30 07:09:23,GOOGL | B of A Securities,price_target_usd,,335.0,2025-10-30 07:09:23,new
+GOOGL-00819,2025-10-30 07:09:23,GOOGL | B of A Securities,rating,,Buy,2025-10-30 07:09:23,corroborate
+GOOGL-00820,2025-10-30 07:24:50,GOOGL | Rosenblatt,price_target_usd,,279.0,2025-10-30 07:24:50,new
+GOOGL-00820,2025-10-30 07:24:50,GOOGL | Rosenblatt,rating,,Neutral,2025-10-30 07:24:50,new
+GOOGL-00821,2025-10-30 07:57:18,GOOGL | Needham,price_target_usd,,330.0,2025-10-30 07:57:18,new
+GOOGL-00821,2025-10-30 07:57:18,GOOGL | Needham,rating,,Buy,2025-10-30 07:57:18,new
+GOOGL-00822,2025-10-30 08:05:29,GOOGL | Jefferies,rating,,Buy,2025-10-30 08:05:29,new
+GOOGL-00822,2025-10-30 08:05:29,GOOGL | Jefferies,price_target_usd,,320.00,2025-10-30 08:05:29,new
+GOOGL-00823,2025-10-30 08:28:18,GOOGL | Truist Securities,price_target_usd,,320.0,2025-10-30 08:28:18,new
+GOOGL-00823,2025-10-30 08:28:18,GOOGL | Truist Securities,rating,,Buy,2025-10-30 08:28:18,corroborate
+GOOGL-00824,2025-10-30 08:43:54,GOOGL | Keybanc,rating,,Overweight,2025-10-30 08:43:54,new
+GOOGL-00824,2025-10-30 08:43:54,GOOGL | Keybanc,price_target_usd,,330.00,2025-10-30 08:43:54,new
+GOOGL-00825,2025-10-30 09:11:24,GOOGL | Piper Sandler,rating,,Overweight,2025-10-30 09:11:24,corroborate
+GOOGL-00825,2025-10-30 09:11:24,GOOGL | Piper Sandler,price_target_usd,,330.00,2025-10-30 09:11:24,new
+GOOGL-00826,2025-10-30 09:16:45,GOOGL | Canaccord Genuity,price_target_usd,,330.0,2025-10-30 09:16:45,new
+GOOGL-00826,2025-10-30 09:16:45,GOOGL | Canaccord Genuity,rating,,Buy,2025-10-30 09:16:45,corroborate
+GOOGL-00827,2025-10-30 09:22:23,GOOGL | Cantor Fitzgerald,price_target_usd,,310.0,2025-10-30 09:22:23,new
+GOOGL-00827,2025-10-30 09:22:23,GOOGL | Cantor Fitzgerald,rating,,Neutral,2025-10-30 09:22:23,corroborate
+GOOGL-00828,2025-10-30 11:04:19,GOOGL | Wells Fargo,rating,,Equal-Weight,2025-10-30 11:04:19,corroborate
+GOOGL-00828,2025-10-30 11:04:19,GOOGL | Wells Fargo,price_target_usd,,268.00,2025-10-30 11:04:19,new
+GOOGL-00829,2025-10-30 11:14:54,GOOGL | Goldman Sachs,rating,,Buy,2025-10-30 11:14:54,new
+GOOGL-00829,2025-10-30 11:14:54,GOOGL | Goldman Sachs,price_target_usd,,330.00,2025-10-30 11:14:54,new
+GOOGL-00830,2025-10-30 11:45:39,GOOGL | Barclays,rating,,Overweight,2025-10-30 11:45:39,new
+GOOGL-00830,2025-10-30 11:45:39,GOOGL | Barclays,price_target_usd,,315.00,2025-10-30 11:45:39,new
+GOOGL-00831,2025-10-30 12:48:19,GOOGL | Evercore ISI Group,price_target_usd,,325.0,2025-10-30 12:48:19,new
+GOOGL-00832,2025-10-30 13:26:27,GOOGL | Bernstein,price_target_usd,,305.0,2025-10-30 13:26:27,new
+GOOGL-00833,2025-10-30 13:52:41,GOOGL | Morgan Stanley,price_target_usd,,330.0,2025-10-30 13:52:41,new
+GOOGL-00834,2025-10-30 14:06:49,GOOGL | Citigroup,price_target_usd,,343.00,2025-10-30 14:06:49,new
+GOOGL-00835,2025-10-30 14:59:39,GOOGL | UBS,price_target_usd,,306.0,2025-10-30 14:59:39,new
+GOOGL-00835,2025-10-30 14:59:39,GOOGL | UBS,rating,,Neutral,2025-10-30 14:59:39,new
+GOOGL-00836,2025-10-30 15:36:19,GOOGL | Wedbush,rating,,Outperform,2025-10-30 15:36:19,new
+GOOGL-00836,2025-10-30 15:36:19,GOOGL | Wedbush,price_target_usd,,320.0,2025-10-30 15:36:19,new
+GOOGL-00837,2025-10-30 15:39:17,GOOGL | Wolfe Research,rating,,Outperform,2025-10-30 15:39:17,new
+GOOGL-00837,2025-10-30 15:39:17,GOOGL | Wolfe Research,price_target_usd,,350.0,2025-10-30 15:39:17,new
+GOOGL-00838,2025-10-30 16:06:54,GOOGL | DA Davidson,rating,,Neutral,2025-10-30 16:06:54,new
+GOOGL-00838,2025-10-30 16:06:54,GOOGL | DA Davidson,price_target_usd,,300.00,2025-10-30 16:06:54,new
+GOOGL-00839,2025-11-10 15:43:30,GOOGL | Freedom Broker,rating,,Buy,2025-11-10 15:43:30,new
+GOOGL-00839,2025-11-10 15:43:30,GOOGL | Freedom Broker,price_target_usd,,325.0,2025-11-10 15:43:30,new
+GOOGL-00840,2025-11-18 07:23:18,GOOGL | Loop Capital,rating,,Buy,2025-11-18 07:23:18,new
+GOOGL-00840,2025-11-18 07:23:18,GOOGL | Loop Capital,price_target_usd,,320.0,2025-11-18 07:23:18,new
+GOOGL-00841,2025-11-24 11:24:20,GOOGL | BNP Paribas Exane,rating,,Outperform,2025-11-24 11:24:20,new
+GOOGL-00841,2025-11-24 11:24:20,GOOGL | BNP Paribas Exane,price_target_usd,,355.0,2025-11-24 11:24:20,new
+GOOGL-00842,2025-11-25 13:43:07,GOOGL | DA Davidson,rating,,Neutral,2025-11-25 13:43:07,corroborate
+GOOGL-00842,2025-11-25 13:43:07,GOOGL | DA Davidson,price_target_usd,,300.00,2025-11-25 13:43:07,corroborate
+GOOGL-00843,2025-12-01 07:50:13,GOOGL | Guggenheim,price_target_usd,,375.0,2025-12-01 07:50:13,new
+GOOGL-00844,2025-12-05 09:48:06,GOOGL | Truist Securities,rating,,Buy,2025-12-05 09:48:06,new
+GOOGL-00844,2025-12-05 09:48:06,GOOGL | Truist Securities,price_target_usd,,350.0,2025-12-05 09:48:06,new
+GOOGL-00845,2025-12-11 11:16:29,GOOGL | Piper Sandler,rating,,Overweight,2025-12-11 11:16:29,new
+GOOGL-00845,2025-12-11 11:16:29,GOOGL | Piper Sandler,price_target_usd,,365.0,2025-12-11 11:16:29,new
+GOOGL-00845,2025-12-11 11:16:29,GOOGL | Piper Sandler,price_target_usd,,330.0,2025-12-11 11:16:29,inferred
+GOOGL-00846,2025-12-12 14:17:30,GOOGL | JP Morgan,rating,,Overweight,2025-12-12 14:17:30,new
+GOOGL-00846,2025-12-12 14:17:30,GOOGL | JP Morgan,price_target_usd,,385.0,2025-12-12 14:17:30,new
+GOOGL-00846,2025-12-12 14:17:30,GOOGL | JP Morgan,price_target_usd,,340.0,2025-12-12 14:17:30,inferred
+GOOGL-00847,2025-12-16 13:11:16,GOOGL | BMO Capital,rating,,Outperform,2025-12-16 13:11:16,corroborate
+GOOGL-00847,2025-12-16 13:11:16,GOOGL | BMO Capital,price_target_usd,,343.00,2025-12-16 13:11:16,new
+GOOGL-00848,2025-12-19 11:01:21,GOOGL | Wedbush,price_target_usd,,350.0,2025-12-19 11:01:21,new
+GOOGL-00849,2025-12-22 10:26:19,GOOGL | Citigroup,rating,,Buy,2025-12-22 10:26:19,new
+GOOGL-00849,2025-12-22 10:26:19,GOOGL | Citigroup,price_target_usd,,350.0,2025-12-22 10:26:19,new
+GOOGL-00850,2025-12-31 07:38:14,GOOGL | Citizens,rating,,Market Outperform,2025-12-31 07:38:14,new
+GOOGL-00850,2025-12-31 07:38:14,GOOGL | Citizens,price_target_usd,,385.0,2025-12-31 07:38:14,new
+GOOGL-00851,2026-01-05 11:16:48,GOOGL | Jefferies,price_target_usd,,365.0,2026-01-05 11:16:48,new
+GOOGL-00852,2026-01-07 10:22:55,GOOGL | Canaccord Genuity,rating,,Buy,2026-01-07 10:22:55,new
+GOOGL-00852,2026-01-07 10:22:55,GOOGL | Canaccord Genuity,price_target_usd,,390.0,2026-01-07 10:22:55,new
+GOOGL-00853,2026-01-08 05:43:01,GOOGL | Cantor Fitzgerald,rating,,Overweight,2026-01-08 05:43:01,new
+GOOGL-00853,2026-01-08 05:43:01,GOOGL | Cantor Fitzgerald,price_target_usd,,370.0,2026-01-08 05:43:01,new
+GOOGL-00854,2026-01-09 12:54:19,GOOGL | Mizuho,rating,,Outperform,2026-01-09 12:54:19,new
+GOOGL-00854,2026-01-09 12:54:19,GOOGL | Mizuho,price_target_usd,,365.00,2026-01-09 12:54:19,new
+GOOGL-00855,2026-01-12 11:21:49,GOOGL | Wells Fargo,price_target_usd,,350.0,2026-01-12 11:21:49,new
+GOOGL-00856,2026-01-13 07:47:01,GOOGL | B of A Securities,price_target_usd,,370.0,2026-01-13 07:47:01,new
+GOOGL-00857,2026-01-13 12:21:11,GOOGL | Goldman Sachs,price_target_usd,,375.00,2026-01-13 12:21:11,new
+GOOGL-00858,2026-01-20 13:14:37,GOOGL | UBS,price_target_usd,,345.0,2026-01-20 13:14:37,new
+GOOGL-00859,2026-01-23 09:34:49,GOOGL | Stifel,price_target_usd,,346.0,2026-01-23 09:34:49,new
+GOOGL-00859,2026-01-23 09:34:49,GOOGL | Stifel,rating,,Buy,2026-01-23 09:34:49,corroborate
+GOOGL-00860,2026-01-26 07:47:01,GOOGL | Needham,rating,,Buy,2026-01-26 07:47:01,new
+GOOGL-00860,2026-01-26 07:47:01,GOOGL | Needham,price_target_usd,,330.0,2026-01-26 07:47:01,new
+GOOGL-00861,2026-01-26 08:46:29,GOOGL | Keybanc,rating,,Overweight,2026-01-26 08:46:29,new
+GOOGL-00861,2026-01-26 08:46:29,GOOGL | Keybanc,price_target_usd,,360.0,2026-01-26 08:46:29,new
+GOOGL-00862,2026-01-27 12:59:16,GOOGL | Roth Capital,rating,,Buy,2026-01-27 12:59:16,new
+GOOGL-00862,2026-01-27 12:59:16,GOOGL | Roth Capital,price_target_usd,,365.0,2026-01-27 12:59:16,new
+GOOGL-00862,2026-01-27 12:59:16,GOOGL | Roth Capital,price_target_usd,,310.0,2026-01-27 12:59:16,inferred
+GOOGL-00863,2026-02-02 08:17:10,GOOGL | Jefferies,price_target_usd,,400.0,2026-02-02 08:17:10,new
+GOOGL-00863,2026-02-02 08:17:10,GOOGL | Jefferies,rating,,Buy,2026-02-02 08:17:10,corroborate
+GOOGL-00864,2026-02-05 04:31:26,GOOGL | Roth Capital,price_target_usd,,395.0,2026-02-05 04:31:26,new
+GOOGL-00864,2026-02-05 04:31:26,GOOGL | Roth Capital,rating,,Buy,2026-02-05 04:31:26,corroborate
+GOOGL-00865,2026-02-05 05:49:04,GOOGL | Needham,rating,,Buy,2026-02-05 05:49:04,new
+GOOGL-00865,2026-02-05 05:49:04,GOOGL | Needham,price_target_usd,,400.0,2026-02-05 05:49:04,new
+GOOGL-00866,2026-02-05 05:52:29,GOOGL | Pivotal Research,rating,,Buy,2026-02-05 05:52:29,new
+GOOGL-00866,2026-02-05 05:52:29,GOOGL | Pivotal Research,price_target_usd,,420.0,2026-02-05 05:52:29,new
+GOOGL-00867,2026-02-05 07:44:59,GOOGL | Rosenblatt,price_target_usd,,357.0,2026-02-05 07:44:59,new
+GOOGL-00868,2026-02-05 07:55:17,GOOGL | Mizuho,rating,,Outperform,2026-02-05 07:55:17,new
+GOOGL-00868,2026-02-05 07:55:17,GOOGL | Mizuho,price_target_usd,,410.0,2026-02-05 07:55:17,new
+GOOGL-00869,2026-02-05 08:05:48,GOOGL | Keybanc,rating,,Overweight,2026-02-05 08:05:48,new
+GOOGL-00869,2026-02-05 08:05:48,GOOGL | Keybanc,price_target_usd,,370.0,2026-02-05 08:05:48,new
+GOOGL-00870,2026-02-05 08:14:25,GOOGL | Wedbush,price_target_usd,,370.0,2026-02-05 08:14:25,new
+GOOGL-00871,2026-02-05 08:57:12,GOOGL | Citizens,rating,,Market Outperform,2026-02-05 08:57:12,corroborate
+GOOGL-00871,2026-02-05 08:57:12,GOOGL | Citizens,price_target_usd,,385.0,2026-02-05 08:57:12,corroborate
+GOOGL-00872,2026-02-05 09:26:16,GOOGL | Wells Fargo,price_target_usd,,354.0,2026-02-05 09:26:16,new
+GOOGL-00873,2026-02-05 09:28:44,GOOGL | Cantor Fitzgerald,rating,,Overweight,2026-02-05 09:28:44,new
+GOOGL-00873,2026-02-05 09:28:44,GOOGL | Cantor Fitzgerald,price_target_usd,,370.0,2026-02-05 09:28:44,new
+GOOGL-00874,2026-02-05 09:42:25,GOOGL | Evercore ISI Group,rating,,Outperform,2026-02-05 09:42:25,new
+GOOGL-00874,2026-02-05 09:42:25,GOOGL | Evercore ISI Group,price_target_usd,,400.0,2026-02-05 09:42:25,new
+GOOGL-00875,2026-02-05 09:56:02,GOOGL | RBC Capital,rating,,Outperform,2026-02-05 09:56:02,new
+GOOGL-00875,2026-02-05 09:56:02,GOOGL | RBC Capital,price_target_usd,,400.0,2026-02-05 09:56:02,new
+GOOGL-00876,2026-02-05 10:03:55,GOOGL | UBS,price_target_usd,,348.0,2026-02-05 10:03:55,new
+GOOGL-00877,2026-02-05 10:39:13,GOOGL | Barclays,rating,,Overweight,2026-02-05 10:39:13,new
+GOOGL-00877,2026-02-05 10:39:13,GOOGL | Barclays,price_target_usd,,360.0,2026-02-05 10:39:13,new
+GOOGL-00878,2026-02-05 10:48:56,GOOGL | Piper Sandler,rating,,Overweight,2026-02-05 10:48:56,new
+GOOGL-00878,2026-02-05 10:48:56,GOOGL | Piper Sandler,price_target_usd,,395.0,2026-02-05 10:48:56,new
+GOOGL-00879,2026-02-05 11:27:24,GOOGL | Stifel,rating,,Buy,2026-02-05 11:27:24,corroborate
+GOOGL-00879,2026-02-05 11:27:24,GOOGL | Stifel,price_target_usd,,395.0,2026-02-05 11:27:24,new
+GOOGL-00880,2026-02-05 12:47:49,GOOGL | JP Morgan,price_target_usd,,395.0,2026-02-05 12:47:49,new
+GOOGL-00881,2026-02-05 15:47:08,GOOGL | DA Davidson,price_target_usd,,310.0,2026-02-05 15:47:08,new
+GOOGL-00882,2026-02-06 12:03:12,GOOGL | Argus Research,rating,,Buy,2026-02-06 12:03:12,new
+GOOGL-00882,2026-02-06 12:03:12,GOOGL | Argus Research,price_target_usd,,385.0,2026-02-06 12:03:12,new
+GOOGL-00883,2026-02-06 14:17:45,GOOGL | Citigroup,rating,,Buy,2026-02-06 14:17:45,new
+GOOGL-00883,2026-02-06 14:17:45,GOOGL | Citigroup,price_target_usd,,390.00,2026-02-06 14:17:45,new
+GOOGL-00884,2026-02-13 06:12:26,GOOGL | Freedom Broker,price_target_usd,,365.0,2026-02-13 06:12:26,new
+GOOGL-00884,2026-02-13 06:12:26,GOOGL | Freedom Broker,rating,,Buy,2026-02-13 06:12:26,corroborate
+GOOGL-00885,2026-02-19 14:01:11,GOOGL | Tigress Financial,rating,,Strong Buy,2026-02-19 14:01:11,new
+GOOGL-00885,2026-02-19 14:01:11,GOOGL | Tigress Financial,price_target_usd,,415.00,2026-02-19 14:01:11,new
+GOOGL-00886,2026-02-23 09:33:46,GOOGL | Wells Fargo,rating,,Overweight,2026-02-23 09:33:46,new
+GOOGL-00886,2026-02-23 09:33:46,GOOGL | Wells Fargo,price_target_usd,,387.0,2026-02-23 09:33:46,new
+GOOGL-00887,2026-03-13 07:53:04,GOOGL | Needham,rating,,Buy,2026-03-13 07:53:04,new
+GOOGL-00887,2026-03-13 07:53:04,GOOGL | Needham,price_target_usd,,400.0,2026-03-13 07:53:04,new
+GOOGL-00888,2026-03-27 05:58:14,GOOGL | Needham,rating,,Buy,2026-03-27 05:58:14,new
+GOOGL-00888,2026-03-27 05:58:14,GOOGL | Needham,price_target_usd,,400.0,2026-03-27 05:58:14,new
+GOOGL-00889,2026-03-27 08:59:17,GOOGL | Wells Fargo,rating,,Overweight,2026-03-27 08:59:17,new
+GOOGL-00889,2026-03-27 08:59:17,GOOGL | Wells Fargo,price_target_usd,,397.0,2026-03-27 08:59:17,new
+GOOGL-00890,2026-04-02 09:51:48,GOOGL | Wells Fargo,rating,,Overweight,2026-04-02 09:51:48,new
+GOOGL-00890,2026-04-02 09:51:48,GOOGL | Wells Fargo,price_target_usd,,361.0,2026-04-02 09:51:48,new
+GOOGL-00891,2026-04-08 06:40:01,GOOGL | Needham,rating,,Buy,2026-04-08 06:40:01,new
+GOOGL-00891,2026-04-08 06:40:01,GOOGL | Needham,price_target_usd,,400.0,2026-04-08 06:40:01,new
+GOOGL-00892,2026-04-08 08:57:26,GOOGL | Cantor Fitzgerald,rating,,Overweight,2026-04-08 08:57:26,new
+GOOGL-00892,2026-04-08 08:57:26,GOOGL | Cantor Fitzgerald,price_target_usd,,370.0,2026-04-08 08:57:26,new
+GOOGL-00893,2026-04-13 09:25:04,GOOGL | Citizens,rating,,Market Outperform,2026-04-13 09:25:04,corroborate
+GOOGL-00893,2026-04-13 09:25:04,GOOGL | Citizens,price_target_usd,,385.0,2026-04-13 09:25:04,corroborate
+GOOGL-00894,2026-04-13 09:56:51,GOOGL | Stifel,price_target_usd,,387.0,2026-04-13 09:56:51,new
+GOOGL-00895,2026-04-14 13:19:49,GOOGL | Citigroup,rating,,Buy,2026-04-14 13:19:49,new
+GOOGL-00895,2026-04-14 13:19:49,GOOGL | Citigroup,price_target_usd,,405.0,2026-04-14 13:19:49,new
+GOOGL-00896,2026-04-20 08:16:33,GOOGL | Keybanc,rating,,Overweight,2026-04-20 08:16:33,new
+GOOGL-00896,2026-04-20 08:16:33,GOOGL | Keybanc,price_target_usd,,380.0,2026-04-20 08:16:33,new
+GOOGL-00897,2026-04-21 15:20:11,GOOGL | UBS,price_target_usd,,375.0,2026-04-21 15:20:11,new
+GOOGL-00898,2026-04-22 10:54:55,GOOGL | BMO Capital,rating,,Outperform,2026-04-22 10:54:55,corroborate
+GOOGL-00898,2026-04-22 10:54:55,GOOGL | BMO Capital,price_target_usd,,410.0,2026-04-22 10:54:55,new
+GOOGL-00899,2026-04-23 08:16:38,GOOGL | Rosenblatt,rating,,Neutral,2026-04-23 08:16:38,corroborate
+GOOGL-00899,2026-04-23 08:16:38,GOOGL | Rosenblatt,price_target_usd,,357.0,2026-04-23 08:16:38,corroborate
+GOOGL-00900,2026-04-24 06:27:40,GOOGL | Needham,rating,,Buy,2026-04-24 06:27:40,new
+GOOGL-00900,2026-04-24 06:27:40,GOOGL | Needham,price_target_usd,,400.0,2026-04-24 06:27:40,new
+GOOGL-00901,2026-04-30 06:25:23,GOOGL | Needham,rating,,Buy,2026-04-30 06:25:23,new
+GOOGL-00901,2026-04-30 06:25:23,GOOGL | Needham,price_target_usd,,450.0,2026-04-30 06:25:23,new
+GOOGL-00902,2026-04-30 08:35:52,GOOGL | Rosenblatt,price_target_usd,,393.0,2026-04-30 08:35:52,new
+GOOGL-00903,2026-04-30 08:37:19,GOOGL | Truist Securities,rating,,Buy,2026-04-30 08:37:19,new
+GOOGL-00903,2026-04-30 08:37:19,GOOGL | Truist Securities,price_target_usd,,415.0,2026-04-30 08:37:19,new
+GOOGL-00904,2026-04-30 08:58:22,GOOGL | Keybanc,rating,,Overweight,2026-04-30 08:58:22,new
+GOOGL-00904,2026-04-30 08:58:22,GOOGL | Keybanc,price_target_usd,,425.0,2026-04-30 08:58:22,new
+GOOGL-00905,2026-04-30 09:36:05,GOOGL | Cantor Fitzgerald,rating,,Overweight,2026-04-30 09:36:05,new
+GOOGL-00905,2026-04-30 09:36:05,GOOGL | Cantor Fitzgerald,price_target_usd,,465.0,2026-04-30 09:36:05,new
+GOOGL-00906,2026-04-30 11:01:39,GOOGL | Barclays,rating,,Overweight,2026-04-30 11:01:39,new
+GOOGL-00906,2026-04-30 11:01:39,GOOGL | Barclays,price_target_usd,,405.0,2026-04-30 11:01:39,new
+GOOGL-00907,2026-04-30 11:20:07,GOOGL | Evercore ISI Group,rating,,Outperform,2026-04-30 11:20:07,new
+GOOGL-00907,2026-04-30 11:20:07,GOOGL | Evercore ISI Group,price_target_usd,,420.0,2026-04-30 11:20:07,new
+GOOGL-00908,2026-04-30 11:44:01,GOOGL | Guggenheim,price_target_usd,,450.0,2026-04-30 11:44:01,new
+GOOGL-00909,2026-04-30 12:14:47,GOOGL | RBC Capital,rating,,Outperform,2026-04-30 12:14:47,new
+GOOGL-00909,2026-04-30 12:14:47,GOOGL | RBC Capital,price_target_usd,,425.0,2026-04-30 12:14:47,new
+GOOGL-00910,2026-04-30 12:17:54,GOOGL | Piper Sandler,rating,,Overweight,2026-04-30 12:17:54,new
+GOOGL-00910,2026-04-30 12:17:54,GOOGL | Piper Sandler,price_target_usd,,425.0,2026-04-30 12:17:54,new
+GOOGL-00911,2026-04-30 13:28:20,GOOGL | Susquehanna,rating,,Positive,2026-04-30 13:28:20,new
+GOOGL-00911,2026-04-30 13:28:20,GOOGL | Susquehanna,price_target_usd,,460.0,2026-04-30 13:28:20,new
+GOOGL-00912,2026-04-30 13:29:51,GOOGL | Morgan Stanley,rating,,Overweight,2026-04-30 13:29:51,new
+GOOGL-00912,2026-04-30 13:29:51,GOOGL | Morgan Stanley,price_target_usd,,375.0,2026-04-30 13:29:51,new
+GOOGL-00913,2026-04-30 14:04:55,GOOGL | Citigroup,rating,,Buy,2026-04-30 14:04:55,new
+GOOGL-00913,2026-04-30 14:04:55,GOOGL | Citigroup,price_target_usd,,447.0,2026-04-30 14:04:55,new
+GOOGL-00914,2026-04-30 14:46:02,GOOGL | Bernstein,rating,,Market Perform,2026-04-30 14:46:02,corroborate
+GOOGL-00914,2026-04-30 14:46:02,GOOGL | Bernstein,price_target_usd,,390.0,2026-04-30 14:46:02,new
+GOOGL-00915,2026-04-30 16:17:47,GOOGL | UBS,price_target_usd,,410.0,2026-04-30 16:17:47,new
+GOOGL-00916,2026-04-30 19:09:12,GOOGL | Canaccord Genuity,rating,,Buy,2026-04-30 19:09:12,new
+GOOGL-00916,2026-04-30 19:09:12,GOOGL | Canaccord Genuity,price_target_usd,,450.0,2026-04-30 19:09:12,new
+GOOGL-00917,2026-05-01 10:42:59,GOOGL | Wells Fargo,rating,,Overweight,2026-05-01 10:42:59,new
+GOOGL-00917,2026-05-01 10:42:59,GOOGL | Wells Fargo,price_target_usd,,427.0,2026-05-01 10:42:59,new
+GOOGL-00918,2026-05-01 13:50:29,GOOGL | Stifel,price_target_usd,,420.0,2026-05-01 13:50:29,new
+GOOGL-00918,2026-05-01 13:50:29,GOOGL | Stifel,rating,,Buy,2026-05-01 13:50:29,corroborate
+GOOGL-00919,2026-05-04 08:50:34,GOOGL | Freedom Broker,rating,,Hold,2026-05-04 08:50:34,new
+GOOGL-00919,2026-05-04 08:50:34,GOOGL | Freedom Broker,price_target_usd,,400.0,2026-05-04 08:50:34,new
+GOOGL-00920,2026-05-04 10:10:04,GOOGL | Citizens,price_target_usd,,515.0,2026-05-04 10:10:04,new
+GOOGL-00921,2026-05-06 08:46:54,GOOGL | Mizuho,rating,,Outperform,2026-05-06 08:46:54,new
+GOOGL-00921,2026-05-06 08:46:54,GOOGL | Mizuho,price_target_usd,,460.0,2026-05-06 08:46:54,new
+GOOGL-00922,2026-05-20 05:46:30,GOOGL | Needham,rating,,Buy,2026-05-20 05:46:30,new
+GOOGL-00922,2026-05-20 05:46:30,GOOGL | Needham,price_target_usd,,450.0,2026-05-20 05:46:30,new
+GOOGL-00923,2026-05-20 09:35:53,GOOGL | Wells Fargo,rating,,Overweight,2026-05-20 09:35:53,new
+GOOGL-00923,2026-05-20 09:35:53,GOOGL | Wells Fargo,price_target_usd,,435.0,2026-05-20 09:35:53,new
+GOOGL-00924,2026-05-20 10:37:37,GOOGL | Citizens,rating,,Market Outperform,2026-05-20 10:37:37,corroborate
+GOOGL-00924,2026-05-20 10:37:37,GOOGL | Citizens,price_target_usd,,515.0,2026-05-20 10:37:37,corroborate
+GOOGL-00925,2026-05-20 10:46:49,GOOGL | Keybanc,rating,,Overweight,2026-05-20 10:46:49,new
+GOOGL-00925,2026-05-20 10:46:49,GOOGL | Keybanc,price_target_usd,,425.0,2026-05-20 10:46:49,new
+GOOGL-00926,2026-05-21 08:40:31,GOOGL | Rosenblatt,rating,,Neutral,2026-05-21 08:40:31,corroborate
+GOOGL-00926,2026-05-21 08:40:31,GOOGL | Rosenblatt,price_target_usd,,393.0,2026-05-21 08:40:31,corroborate
+GOOGL-00927,2026-05-29 12:43:18,GOOGL | Truist Securities,rating,,Buy,2026-05-29 12:43:18,new
+GOOGL-00927,2026-05-29 12:43:18,GOOGL | Truist Securities,price_target_usd,,430.0,2026-05-29 12:43:18,new
+GOOGL-00928,2026-06-01 12:11:31,GOOGL | Piper Sandler,rating,,Overweight,2026-06-01 12:11:31,new
+GOOGL-00928,2026-06-01 12:11:31,GOOGL | Piper Sandler,price_target_usd,,445.0,2026-06-01 12:11:31,new
+GOOGL-00929,2026-06-02 10:40:59,GOOGL | HSBC,rating,,Buy,2026-06-02 10:40:59,new
+GOOGL-00929,2026-06-02 10:40:59,GOOGL | HSBC,price_target_usd,,420.0,2026-06-02 10:40:59,new
+GOOGL-00930,2026-06-03 06:47:45,GOOGL | Needham,rating,,Buy,2026-06-03 06:47:45,new
+GOOGL-00930,2026-06-03 06:47:45,GOOGL | Needham,price_target_usd,,450.0,2026-06-03 06:47:45,new
+GOOGL-00931,2026-06-30 09:00:09,GOOGL | Morgan Stanley,rating,,Overweight,2026-06-30 09:00:09,new
+GOOGL-00931,2026-06-30 09:00:09,GOOGL | Morgan Stanley,price_target_usd,,415.0,2026-06-30 09:00:09,new
+GOOGL-00932,2026-07-02 06:44:06,GOOGL | Wells Fargo,rating,,Overweight,2026-07-02 06:44:06,new
+GOOGL-00932,2026-07-02 06:44:06,GOOGL | Wells Fargo,price_target_usd,,416.0,2026-07-02 06:44:06,new
+GOOGL-00933,2026-07-10 08:14:14,GOOGL | Keybanc,rating,,Overweight,2026-07-10 08:14:14,new
+GOOGL-00933,2026-07-10 08:14:14,GOOGL | Keybanc,price_target_usd,,445.0,2026-07-10 08:14:14,new
+GOOGL-00934,2026-07-13 14:52:07,GOOGL | UBS,price_target_usd,,400.0,2026-07-13 14:52:07,new
+GOOGL-00935,2026-07-17 14:22:52,GOOGL | BMO Capital,rating,,Outperform,2026-07-17 14:22:52,new
+GOOGL-00935,2026-07-17 14:22:52,GOOGL | BMO Capital,price_target_usd,,455.0,2026-07-17 14:22:52,new
+GOOGL-00936,2026-07-21 14:11:15,GOOGL | Wells Fargo,rating,,Overweight,2026-07-21 14:11:15,new
+GOOGL-00936,2026-07-21 14:11:15,GOOGL | Wells Fargo,price_target_usd,,438.0,2026-07-21 14:11:15,new
+GOOGL-00937,2026-07-22 11:12:08,GOOGL | Citizens,rating,,Market Outperform,2026-07-22 11:12:08,corroborate
+GOOGL-00937,2026-07-22 11:12:08,GOOGL | Citizens,price_target_usd,,515.0,2026-07-22 11:12:08,corroborate
+GOOGL-00938,2026-07-23 05:48:07,GOOGL | Pivotal Research,price_target_usd,,475.0,2026-07-23 05:48:07,new
+GOOGL-00939,2026-07-23 07:39:05,GOOGL | Rosenblatt,rating,,Neutral,2026-07-23 07:39:05,corroborate
+GOOGL-00939,2026-07-23 07:39:05,GOOGL | Rosenblatt,price_target_usd,,393.0,2026-07-23 07:39:05,corroborate
+GOOGL-00940,2026-07-23 09:49:46,GOOGL | Piper Sandler,rating,,Overweight,2026-07-23 09:49:46,new
+GOOGL-00940,2026-07-23 09:49:46,GOOGL | Piper Sandler,price_target_usd,,395.0,2026-07-23 09:49:46,new
+GOOGL-00941,2026-07-23 09:56:25,GOOGL | Cantor Fitzgerald,rating,,Overweight,2026-07-23 09:56:25,new
+GOOGL-00941,2026-07-23 09:56:25,GOOGL | Cantor Fitzgerald,price_target_usd,,420.0,2026-07-23 09:56:25,new
+GOOGL-00942,2026-07-23 10:15:05,GOOGL | Wells Fargo,rating,,Overweight,2026-07-23 10:15:05,new
+GOOGL-00942,2026-07-23 10:15:05,GOOGL | Wells Fargo,price_target_usd,,411.0,2026-07-23 10:15:05,new
+GOOGL-00943,2026-07-23 10:17:14,GOOGL | Wedbush,rating,,Outperform,2026-07-23 10:17:14,corroborate
+GOOGL-00943,2026-07-23 10:17:14,GOOGL | Wedbush,price_target_usd,,445.0,2026-07-23 10:17:14,new
+GOOGL-00944,2026-07-23 10:17:24,GOOGL | Barclays,rating,,Overweight,2026-07-23 10:17:24,new
+GOOGL-00944,2026-07-23 10:17:24,GOOGL | Barclays,price_target_usd,,425.0,2026-07-23 10:17:24,new
+GOOGL-00945,2026-07-23 11:02:18,GOOGL | Roth Capital,price_target_usd,,440.0,2026-07-23 11:02:18,new
+GOOGL-00946,2026-07-23 11:21:37,GOOGL | RBC Capital,rating,,Outperform,2026-07-23 11:21:37,new
+GOOGL-00946,2026-07-23 11:21:37,GOOGL | RBC Capital,price_target_usd,,425.0,2026-07-23 11:21:37,new
+GOOGL-00947,2026-07-23 13:03:05,GOOGL | DA Davidson,price_target_usd,,350.0,2026-07-23 13:03:05,new
+GOOGL-00948,2026-07-23 13:09:11,GOOGL | BMO Capital,rating,,Outperform,2026-07-23 13:09:11,new
+GOOGL-00948,2026-07-23 13:09:11,GOOGL | BMO Capital,price_target_usd,,465.0,2026-07-23 13:09:11,new
+GOOGL-00949,2026-07-23 13:27:51,GOOGL | Truist Securities,rating,,Buy,2026-07-23 13:27:51,new
+GOOGL-00949,2026-07-23 13:27:51,GOOGL | Truist Securities,price_target_usd,,420.0,2026-07-23 13:27:51,new
+GOOGL-00950,2026-07-23 13:46:32,GOOGL | Morgan Stanley,rating,,Overweight,2026-07-23 13:46:32,new
+GOOGL-00950,2026-07-23 13:46:32,GOOGL | Morgan Stanley,price_target_usd,,400.0,2026-07-23 13:46:32,new
+GOOGL-00951,2026-07-23 15:39:48,GOOGL | UBS,price_target_usd,,379.0,2026-07-23 15:39:48,new
+GOOGL-00952,2026-07-24 03:45:01,GOOGL | Bernstein,price_target_usd,,385.0,2026-07-24 03:45:01,new
+GOOGL-00952,2026-07-24 03:45:01,GOOGL | Bernstein,rating,,Market Perform,2026-07-24 03:45:01,corroborate
+GOOGL-00953,2026-09-03 08:14:17,GOOGL | Rosenblatt,rating,,Buy,2026-09-03 08:14:17,new
+GOOGL-00953,2026-09-03 08:14:17,GOOGL | Rosenblatt,price_target_usd,,410.0,2026-09-03 08:14:17,new
+GOOGL-00954,2026-09-17 14:26:15,GOOGL | Evercore ISI Group,rating,,Outperform,2026-09-17 14:26:15,new
+GOOGL-00954,2026-09-17 14:26:15,GOOGL | Evercore ISI Group,price_target_usd,,450.0,2026-09-17 14:26:15,new
+GOOGL-00955,2026-09-18 07:55:32,GOOGL | Tigress Financial,rating,,Strong Buy,2026-09-18 07:55:32,new
+GOOGL-00955,2026-09-18 07:55:32,GOOGL | Tigress Financial,price_target_usd,,485.0,2026-09-18 07:55:32,new
+GOOGL-00956,2026-09-28 11:26:59,GOOGL | Piper Sandler,rating,,Overweight,2026-09-28 11:26:59,new
+GOOGL-00956,2026-09-28 11:26:59,GOOGL | Piper Sandler,price_target_usd,,400.0,2026-09-28 11:26:59,new
+GOOGL-00957,2026-10-06 09:31:11,GOOGL | Wells Fargo,rating,,Overweight,2026-10-06 09:31:11,new
+GOOGL-00957,2026-10-06 09:31:11,GOOGL | Wells Fargo,price_target_usd,,417.0,2026-10-06 09:31:11,new
+GOOGL-00958,2026-10-08 05:41:20,GOOGL | Needham,rating,,Buy,2026-10-08 05:41:20,new
+GOOGL-00958,2026-10-08 05:41:20,GOOGL | Needham,price_target_usd,,450.0,2026-10-08 05:41:20,new
+GOOGL-00959,2026-10-12 07:05:42,GOOGL | Cantor Fitzgerald,rating,,Overweight,2026-10-12 07:05:42,new
+GOOGL-00959,2026-10-12 07:05:42,GOOGL | Cantor Fitzgerald,price_target_usd,,420.0,2026-10-12 07:05:42,new
+GOOGL-00960,2026-10-14 11:31:34,GOOGL | UBS,price_target_usd,,380.0,2026-10-14 11:31:34,new
+GOOGL-00961,2026-10-15 11:12:06,GOOGL | JP Morgan,rating,,Overweight,2026-10-15 11:12:06,corroborate
+GOOGL-00961,2026-10-15 11:12:06,GOOGL | JP Morgan,price_target_usd,,425.0,2026-10-15 11:12:06,new
+GOOGL-00962,2026-10-19 09:13:03,GOOGL | Keybanc,rating,,Overweight,2026-10-19 09:13:03,new
+GOOGL-00962,2026-10-19 09:13:03,GOOGL | Keybanc,price_target_usd,,410.0,2026-10-19 09:13:03,new
+GOOGL-00963,2026-10-20 13:45:39,GOOGL | BMO Capital,rating,,Outperform,2026-10-20 13:45:39,new
+GOOGL-00963,2026-10-20 13:45:39,GOOGL | BMO Capital,price_target_usd,,480.0,2026-10-20 13:45:39,new
+GOOGL-00963,2026-10-20 13:45:39,GOOGL | BMO Capital,price_target_usd,,465.0,2026-10-20 13:45:39,inferred
+GOOGL-00964,2026-10-22 08:38:26,GOOGL | Citizens,price_target_usd,,450.0,2026-10-22 08:38:26,new
+GOOGL-00965,2026-10-29 08:02:17,GOOGL | Cantor Fitzgerald,rating,,Overweight,2026-10-29 08:02:17,new
+GOOGL-00965,2026-10-29 08:02:17,GOOGL | Cantor Fitzgerald,price_target_usd,,350.0,2026-10-29 08:02:17,new
+GOOGL-00966,2026-10-29 08:12:29,GOOGL | Rosenblatt,price_target_usd,,380.0,2026-10-29 08:12:29,new
+GOOGL-00967,2026-10-29 08:41:21,GOOGL | Needham,rating,,Buy,2026-10-29 08:41:21,new
+GOOGL-00967,2026-10-29 08:41:21,GOOGL | Needham,price_target_usd,,450.0,2026-10-29 08:41:21,new
+GOOGL-00968,2026-10-29 09:02:46,GOOGL | Susquehanna,price_target_usd,,400.0,2026-10-29 09:02:46,new
+GOOGL-00969,2026-10-29 09:24:08,GOOGL | Keybanc,rating,,Overweight,2026-10-29 09:24:08,new
+GOOGL-00969,2026-10-29 09:24:08,GOOGL | Keybanc,price_target_usd,,385.0,2026-10-29 09:24:08,new
+GOOGL-00970,2026-10-29 09:36:51,GOOGL | Piper Sandler,rating,,Overweight,2026-10-29 09:36:51,new
+GOOGL-00970,2026-10-29 09:36:51,GOOGL | Piper Sandler,price_target_usd,,345.0,2026-10-29 09:36:51,new
+GOOGL-00971,2026-10-29 10:22:30,GOOGL | Guggenheim,rating,,Buy,2026-10-29 10:22:30,corroborate
+GOOGL-00971,2026-10-29 10:22:30,GOOGL | Guggenheim,price_target_usd,,450.0,2026-10-29 10:22:30,corroborate
+GOOGL-00972,2026-10-29 10:29:20,GOOGL | Truist Securities,rating,,Buy,2026-10-29 10:29:20,new
+GOOGL-00972,2026-10-29 10:29:20,GOOGL | Truist Securities,price_target_usd,,410.0,2026-10-29 10:29:20,new
+GOOGL-00973,2026-10-29 10:49:21,GOOGL | Wedbush,rating,,Outperform,2026-10-29 10:49:21,corroborate
+GOOGL-00973,2026-10-29 10:49:21,GOOGL | Wedbush,price_target_usd,,387.0,2026-10-29 10:49:21,new
+GOOGL-00974,2026-10-29 10:50:24,GOOGL | Barclays,rating,,Overweight,2026-10-29 10:50:24,new
+GOOGL-00974,2026-10-29 10:50:24,GOOGL | Barclays,price_target_usd,,405.0,2026-10-29 10:50:24,new
+GOOGL-00975,2026-10-29 11:22:51,GOOGL | Citizens,rating,,Market Perform,2026-10-29 11:22:51,new
+GOOGL-00976,2026-10-29 11:52:47,GOOGL | DA Davidson,rating,,Neutral,2026-10-29 11:52:47,corroborate
+GOOGL-00976,2026-10-29 11:52:47,GOOGL | DA Davidson,price_target_usd,,300.0,2026-10-29 11:52:47,new
+GOOGL-00977,2026-10-29 13:24:37,GOOGL | Morgan Stanley,rating,,Overweight,2026-10-29 13:24:37,new
+GOOGL-00977,2026-10-29 13:24:37,GOOGL | Morgan Stanley,price_target_usd,,375.0,2026-10-29 13:24:37,new
+GOOGL-00978,2026-10-29 14:37:36,GOOGL | UBS,price_target_usd,,332.0,2026-10-29 14:37:36,new
+GOOGL-00979,2026-10-29 15:03:42,GOOGL | RBC Capital,rating,,Outperform,2026-10-29 15:03:42,new
+GOOGL-00979,2026-10-29 15:03:42,GOOGL | RBC Capital,price_target_usd,,400.0,2026-10-29 15:03:42,new
+GOOGL-00980,2026-10-29 17:47:33,GOOGL | Bernstein,price_target_usd,,325.0,2026-10-29 17:47:33,new
+GOOGL-00980,2026-10-29 17:47:33,GOOGL | Bernstein,rating,,Market Perform,2026-10-29 17:47:33,corroborate
+GOOGL-00981,2026-10-30 14:23:26,GOOGL | Wells Fargo,rating,,Overweight,2026-10-30 14:23:26,new
+GOOGL-00981,2026-10-30 14:23:26,GOOGL | Wells Fargo,price_target_usd,,371.0,2026-10-30 14:23:26,new
+GOOGL-00982,2026-10-30 17:07:24,GOOGL | Citigroup,rating,,Buy,2026-10-30 17:07:24,new
+GOOGL-00982,2026-10-30 17:07:24,GOOGL | Citigroup,price_target_usd,,375.0,2026-10-30 17:07:24,new
+GOOGL-00983,2026-11-02 09:40:07,GOOGL | Wells Fargo,rating,,Overweight,2026-11-02 09:40:07,new
+GOOGL-00983,2026-11-02 09:40:07,GOOGL | Wells Fargo,price_target_usd,,365.0,2026-11-02 09:40:07,new

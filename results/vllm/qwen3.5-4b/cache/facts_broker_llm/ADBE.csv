@@ -1,0 +1,392 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+ADBE-00480,2024-09-04 10:04:23,ADBE | Oppenheimer,price_target_usd,,625.00,2024-09-04 10:04:23,new
+ADBE-00480,2024-09-04 10:04:23,ADBE | Oppenheimer,rating,,Outperform,2024-09-04 10:04:23,new
+ADBE-00481,2024-09-06 11:29:14,ADBE | Stifel,price_target_usd,,650.00,2024-09-06 11:29:14,new
+ADBE-00481,2024-09-06 11:29:14,ADBE | Stifel,rating,,Buy,2024-09-06 11:29:14,new
+ADBE-00482,2024-09-11 12:11:58,ADBE | Citigroup,price_target_usd,,621.00,2024-09-11 12:11:58,new
+ADBE-00482,2024-09-11 12:11:58,ADBE | Citigroup,rating,,Neutral,2024-09-11 12:11:58,new
+ADBE-00483,2024-09-13 06:01:23,ADBE | Piper Sandler,price_target_usd,,635.00,2024-09-13 06:01:23,new
+ADBE-00483,2024-09-13 06:01:23,ADBE | Piper Sandler,rating,,Overweight,2024-09-13 06:01:23,new
+ADBE-00484,2024-09-13 07:04:47,ADBE | Bernstein,price_target_usd,,644.0,2024-09-13 07:04:47,new
+ADBE-00484,2024-09-13 07:04:47,ADBE | Bernstein,rating,,Outperform,2024-09-13 07:04:47,new
+ADBE-00485,2024-09-13 09:27:24,ADBE | Morgan Stanley,price_target_usd,,660.0,2024-09-13 09:27:24,new
+ADBE-00485,2024-09-13 09:27:24,ADBE | Morgan Stanley,rating,,Overweight,2024-09-13 09:27:24,new
+ADBE-00486,2024-09-13 09:50:50,ADBE | RBC Capital,price_target_usd,,610.0,2024-09-13 09:50:50,new
+ADBE-00486,2024-09-13 09:50:50,ADBE | RBC Capital,rating,,Outperform,2024-09-13 09:50:50,corroborate
+ADBE-00487,2024-09-13 10:35:09,ADBE | JMP Securities,price_target_usd,,,2024-09-13 10:35:09,
+ADBE-00487,2024-09-13 10:35:09,ADBE | JMP Securities,rating,,Market Perform,2024-09-13 10:35:09,corroborate
+ADBE-00488,2024-09-13 11:21:36,ADBE | Oppenheimer,price_target_usd,,625.00,2024-09-13 11:21:36,corroborate
+ADBE-00488,2024-09-13 11:21:36,ADBE | Oppenheimer,rating,,Outperform,2024-09-13 11:21:36,corroborate
+ADBE-00489,2024-09-13 13:07:07,ADBE | B of A Securities,price_target_usd,,640.00,2024-09-13 13:07:07,corroborate
+ADBE-00489,2024-09-13 13:07:07,ADBE | B of A Securities,rating,,Buy,2024-09-13 13:07:07,corroborate
+ADBE-00490,2024-09-13 14:49:30,ADBE | UBS,price_target_usd,,550.00,2024-09-13 14:49:30,new
+ADBE-00490,2024-09-13 14:49:30,ADBE | UBS,rating,,Neutral,2024-09-13 14:49:30,corroborate
+ADBE-00491,2024-09-13 16:12:06,ADBE | Citigroup,price_target_usd,,616.0,2024-09-13 16:12:06,new
+ADBE-00491,2024-09-13 16:12:06,ADBE | Citigroup,rating,,Neutral,2024-09-13 16:12:06,corroborate
+ADBE-00492,2024-10-15 10:00:30,ADBE | RBC Capital,price_target_usd,,610.00,2024-10-15 10:00:30,corroborate
+ADBE-00492,2024-10-15 10:00:30,ADBE | RBC Capital,rating,,Outperform,2024-10-15 10:00:30,corroborate
+ADBE-00493,2024-12-05 04:06:45,ADBE | Piper Sandler,price_target_usd,,635.00,2024-12-05 04:06:45,corroborate
+ADBE-00493,2024-12-05 04:06:45,ADBE | Piper Sandler,rating,,Overweight,2024-12-05 04:06:45,corroborate
+ADBE-00494,2024-12-05 10:23:05,ADBE | RBC Capital,price_target_usd,,610.00,2024-12-05 10:23:05,corroborate
+ADBE-00494,2024-12-05 10:23:05,ADBE | RBC Capital,rating,,Outperform,2024-12-05 10:23:05,corroborate
+ADBE-00495,2024-12-06 12:14:41,ADBE | BMO Capital,price_target_usd,,600.00,2024-12-06 12:14:41,new
+ADBE-00495,2024-12-06 12:14:41,ADBE | BMO Capital,rating,,Outperform,2024-12-06 12:14:41,corroborate
+ADBE-00496,2024-12-09 15:02:03,ADBE | Citigroup,price_target_usd,,590.00,2024-12-09 15:02:03,new
+ADBE-00496,2024-12-09 15:02:03,ADBE | Citigroup,rating,,Neutral,2024-12-09 15:02:03,corroborate
+ADBE-00497,2024-12-12 05:16:46,ADBE | Piper Sandler,price_target_usd,,600.00,2024-12-12 05:16:46,new
+ADBE-00497,2024-12-12 05:16:46,ADBE | Piper Sandler,rating,,Overweight,2024-12-12 05:16:46,corroborate
+ADBE-00498,2024-12-12 07:42:00,ADBE | Oppenheimer,price_target_usd,,600.00,2024-12-12 07:42:00,new
+ADBE-00498,2024-12-12 07:42:00,ADBE | Oppenheimer,rating,,Outperform,2024-12-12 07:42:00,corroborate
+ADBE-00499,2024-12-12 07:43:41,ADBE | Stifel,price_target_usd,,600.00,2024-12-12 07:43:41,new
+ADBE-00499,2024-12-12 07:43:41,ADBE | Stifel,rating,,Buy,2024-12-12 07:43:41,corroborate
+ADBE-00500,2024-12-12 07:55:08,ADBE | B of A Securities,price_target_usd,,605.00,2024-12-12 07:55:08,new
+ADBE-00500,2024-12-12 07:55:08,ADBE | B of A Securities,rating,,Buy,2024-12-12 07:55:08,corroborate
+ADBE-00501,2024-12-12 07:56:42,ADBE | Mizuho,price_target_usd,,620.0,2024-12-12 07:56:42,new
+ADBE-00501,2024-12-12 07:56:42,ADBE | Mizuho,rating,,Outperform,2024-12-12 07:56:42,corroborate
+ADBE-00502,2024-12-12 08:06:44,ADBE | BMO Capital,price_target_usd,,570.0,2024-12-12 08:06:44,new
+ADBE-00502,2024-12-12 08:06:44,ADBE | BMO Capital,rating,,Outperform,2024-12-12 08:06:44,corroborate
+ADBE-00503,2024-12-12 08:08:52,ADBE | Deutsche Bank,price_target_usd,,600.00,2024-12-12 08:08:52,new
+ADBE-00503,2024-12-12 08:08:52,ADBE | Deutsche Bank,rating,,Buy,2024-12-12 08:08:52,corroborate
+ADBE-00504,2024-12-12 08:21:30,ADBE | Jefferies,price_target_usd,,650.00,2024-12-12 08:21:30,new
+ADBE-00504,2024-12-12 08:21:30,ADBE | Jefferies,rating,,Buy,2024-12-12 08:21:30,corroborate
+ADBE-00505,2024-12-12 09:05:39,ADBE | JMP Securities,price_target_usd,,,2024-12-12 09:05:39,corroborate
+ADBE-00505,2024-12-12 09:05:39,ADBE | JMP Securities,rating,,Market Perform,2024-12-12 09:05:39,corroborate
+ADBE-00506,2024-12-12 11:15:35,ADBE | RBC Capital,price_target_usd,,590.00,2024-12-12 11:15:35,new
+ADBE-00506,2024-12-12 11:15:35,ADBE | RBC Capital,rating,,Outperform,2024-12-12 11:15:35,corroborate
+ADBE-00507,2024-12-12 11:18:18,ADBE | UBS,price_target_usd,,525.0,2024-12-12 11:18:18,new
+ADBE-00507,2024-12-12 11:18:18,ADBE | UBS,rating,,Neutral,2024-12-12 11:18:18,corroborate
+ADBE-00508,2024-12-12 11:30:23,ADBE | Barclays,price_target_usd,,645.00,2024-12-12 11:30:23,new
+ADBE-00508,2024-12-12 11:30:23,ADBE | Barclays,rating,,Overweight,2024-12-12 11:30:23,corroborate
+ADBE-00509,2024-12-12 12:32:01,ADBE | Bernstein,price_target_usd,,587.0,2024-12-12 12:32:01,new
+ADBE-00509,2024-12-12 12:32:01,ADBE | Bernstein,rating,,Outperform,2024-12-12 12:32:01,corroborate
+ADBE-00510,2024-12-12 13:12:12,ADBE | DA Davidson,price_target_usd,,625.0,2024-12-12 13:12:12,new
+ADBE-00510,2024-12-12 13:12:12,ADBE | DA Davidson,rating,,Buy,2024-12-12 13:12:12,corroborate
+ADBE-00511,2025-01-03 09:20:03,ADBE | UBS,price_target_usd,,475.0,2025-01-03 09:20:03,new
+ADBE-00511,2025-01-03 09:20:03,ADBE | UBS,rating,,Neutral,2025-01-03 09:20:03,corroborate
+ADBE-00512,2025-01-06 02:14:41,ADBE | Barclays,price_target_usd,,567.0,2025-01-06 02:14:41,new
+ADBE-00512,2025-01-06 02:14:41,ADBE | Barclays,rating,,Overweight,2025-01-06 02:14:41,corroborate
+ADBE-00513,2025-01-07 10:57:00,ADBE | Wells Fargo,price_target_usd,,640.00,2025-01-07 10:57:00,new
+ADBE-00513,2025-01-07 10:57:00,ADBE | Wells Fargo,rating,,Overweight,2025-01-07 10:57:00,corroborate
+ADBE-00514,2025-01-08 06:09:06,ADBE | Deutsche Bank,price_target_usd,,475.0,2025-01-08 06:09:06,new
+ADBE-00514,2025-01-08 06:09:06,ADBE | Deutsche Bank,rating,,Hold,2025-01-08 06:09:06,new
+ADBE-00515,2025-01-16 02:11:50,ADBE | Oppenheimer,price_target_usd,,560.0,2025-01-16 02:11:50,new
+ADBE-00515,2025-01-16 02:11:50,ADBE | Oppenheimer,rating,,Outperform,2025-01-16 02:11:50,corroborate
+ADBE-00516,2025-02-13 11:40:54,ADBE | RBC Capital,price_target_usd,,590.00,2025-02-13 11:40:54,corroborate
+ADBE-00516,2025-02-13 11:40:54,ADBE | RBC Capital,rating,,Outperform,2025-02-13 11:40:54,corroborate
+ADBE-00517,2025-02-19 12:55:24,ADBE | BMO Capital,price_target_usd,,515.0,2025-02-19 12:55:24,new
+ADBE-00517,2025-02-19 12:55:24,ADBE | BMO Capital,rating,,Outperform,2025-02-19 12:55:24,corroborate
+ADBE-00518,2025-03-07 10:22:32,ADBE | Wells Fargo,price_target_usd,,600.00,2025-03-07 10:22:32,new
+ADBE-00518,2025-03-07 10:22:32,ADBE | Wells Fargo,rating,,Overweight,2025-03-07 10:22:32,corroborate
+ADBE-00519,2025-03-07 11:35:39,ADBE | RBC Capital,price_target_usd,,550.00,2025-03-07 11:35:39,new
+ADBE-00519,2025-03-07 11:35:39,ADBE | RBC Capital,rating,,Outperform,2025-03-07 11:35:39,corroborate
+ADBE-00520,2025-03-10 13:46:58,ADBE | Citigroup,price_target_usd,,490.00,2025-03-10 13:46:58,new
+ADBE-00520,2025-03-10 13:46:58,ADBE | Citigroup,rating,,Neutral,2025-03-10 13:46:58,corroborate
+ADBE-00521,2025-03-13 07:19:34,ADBE | Morgan Stanley,price_target_usd,,600.0,2025-03-13 07:19:34,new
+ADBE-00521,2025-03-13 07:19:34,ADBE | Morgan Stanley,rating,,Overweight,2025-03-13 07:19:34,corroborate
+ADBE-00522,2025-03-13 07:29:08,ADBE | Oppenheimer,price_target_usd,,530.0,2025-03-13 07:29:08,new
+ADBE-00522,2025-03-13 07:29:08,ADBE | Oppenheimer,rating,,Outperform,2025-03-13 07:29:08,corroborate
+ADBE-00523,2025-03-13 08:13:41,ADBE | Baird,price_target_usd,,490.00,2025-03-13 08:13:41,new
+ADBE-00523,2025-03-13 08:13:41,ADBE | Baird,rating,,Neutral,2025-03-13 08:13:41,corroborate
+ADBE-00524,2025-03-13 08:22:18,ADBE | B of A Securities,price_target_usd,,528.00,2025-03-13 08:22:18,new
+ADBE-00524,2025-03-13 08:22:18,ADBE | B of A Securities,rating,,Buy,2025-03-13 08:22:18,corroborate
+ADBE-00525,2025-03-13 09:21:24,ADBE | BMO Capital,price_target_usd,,495.0,2025-03-13 09:21:24,new
+ADBE-00525,2025-03-13 09:21:24,ADBE | BMO Capital,rating,,Outperform,2025-03-13 09:21:24,corroborate
+ADBE-00526,2025-03-13 10:13:12,ADBE | Mizuho,price_target_usd,,575.0,2025-03-13 10:13:12,new
+ADBE-00526,2025-03-13 10:13:12,ADBE | Mizuho,rating,,Outperform,2025-03-13 10:13:12,corroborate
+ADBE-00527,2025-03-13 10:44:58,ADBE | UBS,price_target_usd,,460.0,2025-03-13 10:44:58,new
+ADBE-00527,2025-03-13 10:44:58,ADBE | UBS,rating,,Neutral,2025-03-13 10:44:58,corroborate
+ADBE-00528,2025-03-13 11:09:37,ADBE | Keybanc,price_target_usd,,390.00,2025-03-13 11:09:37,new
+ADBE-00528,2025-03-13 11:09:37,ADBE | Keybanc,rating,,Underweight,2025-03-13 11:09:37,new
+ADBE-00529,2025-03-13 11:18:48,ADBE | Evercore ISI Group,price_target_usd,,550.00,2025-03-13 11:18:48,new
+ADBE-00529,2025-03-13 11:18:48,ADBE | Evercore ISI Group,rating,,Outperform,2025-03-13 11:18:48,corroborate
+ADBE-00530,2025-03-13 11:39:55,ADBE | Stifel,price_target_usd,,525.00,2025-03-13 11:39:55,new
+ADBE-00530,2025-03-13 11:39:55,ADBE | Stifel,rating,,Buy,2025-03-13 11:39:55,corroborate
+ADBE-00531,2025-03-13 12:55:21,ADBE | RBC Capital,price_target_usd,,530.00,2025-03-13 12:55:21,new
+ADBE-00531,2025-03-13 12:55:21,ADBE | RBC Capital,rating,,Outperform,2025-03-13 12:55:21,corroborate
+ADBE-00532,2025-03-13 13:10:35,ADBE | Citizens Capital Markets,price_target_usd,,,2025-03-13 13:10:35,corroborate
+ADBE-00532,2025-03-13 13:10:35,ADBE | Citizens Capital Markets,rating,,Market Perform,2025-03-13 13:10:35,corroborate
+ADBE-00533,2025-03-13 16:09:06,ADBE | JP Morgan,price_target_usd,,540.00,2025-03-13 16:09:06,new
+ADBE-00533,2025-03-13 16:09:06,ADBE | JP Morgan,rating,,Overweight,2025-03-13 16:09:06,corroborate
+ADBE-00534,2025-03-14 14:13:47,ADBE | Citigroup,price_target_usd,,430.00,2025-03-14 14:13:47,new
+ADBE-00534,2025-03-14 14:13:47,ADBE | Citigroup,rating,,Neutral,2025-03-14 14:13:47,corroborate
+ADBE-00535,2025-03-19 07:33:45,ADBE | Baird,price_target_usd,,410.00,2025-03-19 07:33:45,new
+ADBE-00535,2025-03-19 07:33:45,ADBE | Baird,rating,,Neutral,2025-03-19 07:33:45,corroborate
+ADBE-00536,2025-03-19 10:27:10,ADBE | RBC Capital,price_target_usd,,530.00,2025-03-19 10:27:10,corroborate
+ADBE-00536,2025-03-19 10:27:10,ADBE | RBC Capital,rating,,Outperform,2025-03-19 10:27:10,corroborate
+ADBE-00537,2025-03-20 10:26:55,ADBE | Citizens Capital Markets,price_target_usd,,,2025-03-20 10:26:55,corroborate
+ADBE-00537,2025-03-20 10:26:55,ADBE | Citizens Capital Markets,rating,,Market Perform,2025-03-20 10:26:55,corroborate
+ADBE-00538,2025-03-21 10:38:59,ADBE | Keybanc,rating,,Sector Weight,2025-03-21 10:38:59,new
+ADBE-00539,2025-03-31 09:22:06,ADBE | Jefferies,price_target_usd,,590.00,2025-03-31 09:22:06,new
+ADBE-00539,2025-03-31 09:22:06,ADBE | Jefferies,rating,,Buy,2025-03-31 09:22:06,corroborate
+ADBE-00540,2025-04-09 03:47:11,ADBE | Evercore ISI Group,price_target_usd,,475.00,2025-04-09 03:47:11,new
+ADBE-00540,2025-04-09 03:47:11,ADBE | Evercore ISI Group,rating,,Outperform,2025-04-09 03:47:11,corroborate
+ADBE-00541,2025-04-11 10:28:32,ADBE | UBS,price_target_usd,,380.0,2025-04-11 10:28:32,new
+ADBE-00541,2025-04-11 10:28:32,ADBE | UBS,rating,,Neutral,2025-04-11 10:28:32,corroborate
+ADBE-00542,2025-04-14 10:27:02,ADBE | RBC Capital,price_target_usd,,480.00,2025-04-14 10:27:02,new
+ADBE-00542,2025-04-14 10:27:02,ADBE | RBC Capital,rating,,Outperform,2025-04-14 10:27:02,corroborate
+ADBE-00543,2025-04-14 14:19:45,ADBE | DA Davidson,price_target_usd,,450.00,2025-04-14 14:19:45,new
+ADBE-00543,2025-04-14 14:19:45,ADBE | DA Davidson,rating,,Buy,2025-04-14 14:19:45,corroborate
+ADBE-00544,2025-04-16 01:55:27,ADBE | BMO Capital,price_target_usd,,450.0,2025-04-16 01:55:27,new
+ADBE-00544,2025-04-16 01:55:27,ADBE | BMO Capital,rating,,Outperform,2025-04-16 01:55:27,corroborate
+ADBE-00545,2025-04-16 11:14:50,ADBE | Morgan Stanley,price_target_usd,,510.00,2025-04-16 11:14:50,new
+ADBE-00545,2025-04-16 11:14:50,ADBE | Morgan Stanley,rating,,Overweight,2025-04-16 11:14:50,corroborate
+ADBE-00546,2025-04-22 08:38:06,ADBE | Wells Fargo,price_target_usd,,430.00,2025-04-22 08:38:06,new
+ADBE-00546,2025-04-22 08:38:06,ADBE | Wells Fargo,rating,,Overweight,2025-04-22 08:38:06,corroborate
+ADBE-00547,2025-04-23 11:42:34,ADBE | Piper Sandler,price_target_usd,,500.00,2025-04-23 11:42:34,new
+ADBE-00547,2025-04-23 11:42:34,ADBE | Piper Sandler,rating,,Overweight,2025-04-23 11:42:34,corroborate
+ADBE-00548,2025-06-05 10:02:15,ADBE | RBC Capital,price_target_usd,,480.00,2025-06-05 10:02:15,corroborate
+ADBE-00548,2025-06-05 10:02:15,ADBE | RBC Capital,rating,,Outperform,2025-06-05 10:02:15,corroborate
+ADBE-00549,2025-06-09 15:02:07,ADBE | UBS,price_target_usd,,430.0,2025-06-09 15:02:07,new
+ADBE-00549,2025-06-09 15:02:07,ADBE | UBS,rating,,Neutral,2025-06-09 15:02:07,corroborate
+ADBE-00550,2025-06-10 09:12:12,ADBE | Citigroup,price_target_usd,,465.00,2025-06-10 09:12:12,new
+ADBE-00550,2025-06-10 09:12:12,ADBE | Citigroup,rating,,Neutral,2025-06-10 09:12:12,corroborate
+ADBE-00551,2025-06-13 06:53:02,ADBE | DA Davidson,price_target_usd,,500.00,2025-06-13 06:53:02,new
+ADBE-00551,2025-06-13 06:53:02,ADBE | DA Davidson,rating,,Buy,2025-06-13 06:53:02,corroborate
+ADBE-00552,2025-06-13 09:24:24,ADBE | BMO Capital,price_target_usd,,450.0,2025-06-13 09:24:24,corroborate
+ADBE-00552,2025-06-13 09:24:24,ADBE | BMO Capital,rating,,Outperform,2025-06-13 09:24:24,corroborate
+ADBE-00553,2025-06-13 09:28:41,ADBE | Wells Fargo,price_target_usd,,470.00,2025-06-13 09:28:41,new
+ADBE-00553,2025-06-13 09:28:41,ADBE | Wells Fargo,rating,,Overweight,2025-06-13 09:28:41,corroborate
+ADBE-00554,2025-06-13 10:20:46,ADBE | Evercore ISI Group,price_target_usd,,475.00,2025-06-13 10:20:46,corroborate
+ADBE-00554,2025-06-13 10:20:46,ADBE | Evercore ISI Group,rating,,Outperform,2025-06-13 10:20:46,corroborate
+ADBE-00555,2025-06-13 11:04:19,ADBE | Oppenheimer,price_target_usd,,500.00,2025-06-13 11:04:19,new
+ADBE-00555,2025-06-13 11:04:19,ADBE | Oppenheimer,rating,,Outperform,2025-06-13 11:04:19,corroborate
+ADBE-00556,2025-06-13 13:08:32,ADBE | Stifel,price_target_usd,,480.00,2025-06-13 13:08:32,new
+ADBE-00556,2025-06-13 13:08:32,ADBE | Stifel,rating,,Buy,2025-06-13 13:08:32,corroborate
+ADBE-00557,2025-06-13 13:16:47,ADBE | Mizuho,price_target_usd,,530.00,2025-06-13 13:16:47,new
+ADBE-00557,2025-06-13 13:16:47,ADBE | Mizuho,rating,,Outperform,2025-06-13 13:16:47,corroborate
+ADBE-00558,2025-06-13 13:31:35,ADBE | B of A Securities,price_target_usd,,475.00,2025-06-13 13:31:35,new
+ADBE-00558,2025-06-13 13:31:35,ADBE | B of A Securities,rating,,Buy,2025-06-13 13:31:35,corroborate
+ADBE-00559,2025-06-16 09:21:10,ADBE | Baird,price_target_usd,,425.00,2025-06-16 09:21:10,new
+ADBE-00559,2025-06-16 09:21:10,ADBE | Baird,rating,,Neutral,2025-06-16 09:21:10,corroborate
+ADBE-00560,2025-06-16 14:56:18,ADBE | Citigroup,price_target_usd,,450.00,2025-06-16 14:56:18,new
+ADBE-00560,2025-06-16 14:56:18,ADBE | Citigroup,rating,,Neutral,2025-06-16 14:56:18,corroborate
+ADBE-00561,2025-06-20 13:34:22,ADBE | DA Davidson,price_target_usd,,500.00,2025-06-20 13:34:22,new
+ADBE-00561,2025-06-20 13:34:22,ADBE | DA Davidson,rating,,Buy,2025-06-20 13:34:22,corroborate
+ADBE-00562,2025-06-23 09:05:39,ADBE | JMP Securities,price_target_usd,,,2025-06-23 09:05:39,corroborate
+ADBE-00562,2025-06-23 09:05:39,ADBE | JMP Securities,rating,,Market Perform,2025-06-23 09:05:39,corroborate
+ADBE-00563,2025-07-02 12:47:55,ADBE | Redburn Atlantic,price_target_usd,,280.00,2025-07-02 12:47:55,new
+ADBE-00563,2025-07-02 12:47:55,ADBE | Redburn Atlantic,rating,,Sell,2025-07-02 12:47:55,new
+ADBE-00564,2025-08-29 11:22:36,ADBE | UBS,price_target_usd,,400.0,2025-08-29 11:22:36,new
+ADBE-00564,2025-08-29 11:22:36,ADBE | UBS,rating,,Neutral,2025-08-29 11:22:36,corroborate
+ADBE-00565,2025-09-05 08:51:15,ADBE | Barclays,price_target_usd,,460.00,2025-09-05 08:51:15,new
+ADBE-00565,2025-09-05 08:51:15,ADBE | Barclays,rating,,Overweight,2025-09-05 08:51:15,corroborate
+ADBE-00566,2025-09-08 07:43:14,ADBE | Mizuho,price_target_usd,,460.0,2025-09-08 07:43:14,new
+ADBE-00566,2025-09-08 07:43:14,ADBE | Mizuho,rating,,Outperform,2025-09-08 07:43:14,corroborate
+ADBE-00567,2025-09-08 11:03:18,ADBE | RBC Capital,price_target_usd,,430.0,2025-09-08 11:03:18,new
+ADBE-00567,2025-09-08 11:03:18,ADBE | RBC Capital,rating,,Outperform,2025-09-08 11:03:18,corroborate
+ADBE-00568,2025-09-09 07:59:48,ADBE | Oppenheimer,price_target_usd,,460.0,2025-09-09 07:59:48,new
+ADBE-00568,2025-09-09 07:59:48,ADBE | Oppenheimer,rating,,Outperform,2025-09-09 07:59:48,corroborate
+ADBE-00569,2025-09-11 10:48:05,ADBE | Citigroup,price_target_usd,,400.00,2025-09-11 10:48:05,new
+ADBE-00569,2025-09-11 10:48:05,ADBE | Citigroup,rating,,Neutral,2025-09-11 10:48:05,corroborate
+ADBE-00570,2025-09-12 05:03:18,ADBE | Piper Sandler,price_target_usd,,470.0,2025-09-12 05:03:18,new
+ADBE-00570,2025-09-12 05:03:18,ADBE | Piper Sandler,rating,,Overweight,2025-09-12 05:03:18,corroborate
+ADBE-00571,2025-09-12 08:19:26,ADBE | Barclays,price_target_usd,,465.00,2025-09-12 08:19:26,new
+ADBE-00571,2025-09-12 08:19:26,ADBE | Barclays,rating,,Overweight,2025-09-12 08:19:26,corroborate
+ADBE-00572,2025-09-12 08:43:48,ADBE | UBS,price_target_usd,,375.00,2025-09-12 08:43:48,new
+ADBE-00572,2025-09-12 08:43:48,ADBE | UBS,rating,,Neutral,2025-09-12 08:43:48,corroborate
+ADBE-00573,2025-09-12 08:46:14,ADBE | Evercore ISI Group,price_target_usd,,450.00,2025-09-12 08:46:14,new
+ADBE-00573,2025-09-12 08:46:14,ADBE | Evercore ISI Group,rating,,Outperform,2025-09-12 08:46:14,corroborate
+ADBE-00574,2025-09-12 09:11:56,ADBE | JMP Securities,price_target_usd,,,2025-09-12 09:11:56,corroborate
+ADBE-00574,2025-09-12 09:11:56,ADBE | JMP Securities,rating,,Market Perform,2025-09-12 09:11:56,corroborate
+ADBE-00575,2025-09-12 09:25:43,ADBE | RBC Capital,price_target_usd,,430.0,2025-09-12 09:25:43,corroborate
+ADBE-00575,2025-09-12 09:25:43,ADBE | RBC Capital,rating,,Outperform,2025-09-12 09:25:43,corroborate
+ADBE-00576,2025-09-12 09:47:02,ADBE | DA Davidson,price_target_usd,,500.00,2025-09-12 09:47:02,corroborate
+ADBE-00576,2025-09-12 09:47:02,ADBE | DA Davidson,rating,,Buy,2025-09-12 09:47:02,corroborate
+ADBE-00577,2025-09-12 09:48:45,ADBE | TD Cowen,price_target_usd,,420.00,2025-09-12 09:48:45,new
+ADBE-00577,2025-09-12 09:48:45,ADBE | TD Cowen,rating,,Hold,2025-09-12 09:48:45,corroborate
+ADBE-00578,2025-09-12 11:19:00,ADBE | BMO Capital,price_target_usd,,405.0,2025-09-12 11:19:00,new
+ADBE-00578,2025-09-12 11:19:00,ADBE | BMO Capital,rating,,Outperform,2025-09-12 11:19:00,corroborate
+ADBE-00579,2025-09-24 09:11:30,ADBE | Morgan Stanley,price_target_usd,,450.00,2025-09-24 09:11:30,new
+ADBE-00579,2025-09-24 09:11:30,ADBE | Morgan Stanley,rating,,Equal-Weight,2025-09-24 09:11:30,new
+ADBE-00580,2025-11-20 10:45:39,ADBE | Wells Fargo,price_target_usd,,420.00,2025-11-20 10:45:39,new
+ADBE-00580,2025-11-20 10:45:39,ADBE | Wells Fargo,rating,,Overweight,2025-11-20 10:45:39,corroborate
+ADBE-00581,2025-11-20 11:35:52,ADBE | Mizuho,price_target_usd,,390.00,2025-11-20 11:35:52,new
+ADBE-00581,2025-11-20 11:35:52,ADBE | Mizuho,rating,,Outperform,2025-11-20 11:35:52,corroborate
+ADBE-00582,2025-11-20 12:50:51,ADBE | DA Davidson,price_target_usd,,500.00,2025-11-20 12:50:51,corroborate
+ADBE-00582,2025-11-20 12:50:51,ADBE | DA Davidson,rating,,Buy,2025-11-20 12:50:51,corroborate
+ADBE-00583,2025-12-04 13:21:50,ADBE | Citigroup,price_target_usd,,366.00,2025-12-04 13:21:50,new
+ADBE-00583,2025-12-04 13:21:50,ADBE | Citigroup,rating,,Neutral,2025-12-04 13:21:50,corroborate
+ADBE-00584,2025-12-09 09:01:47,ADBE | Stifel,price_target_usd,,450.00,2025-12-09 09:01:47,new
+ADBE-00584,2025-12-09 09:01:47,ADBE | Stifel,rating,,Buy,2025-12-09 09:01:47,corroborate
+ADBE-00585,2025-12-11 10:10:37,ADBE | RBC Capital,price_target_usd,,430.0,2025-12-11 10:10:37,corroborate
+ADBE-00585,2025-12-11 10:10:37,ADBE | RBC Capital,rating,,Outperform,2025-12-11 10:10:37,corroborate
+ADBE-00586,2025-12-11 11:21:43,ADBE | Wolfe Research,price_target_usd,,440.00,2025-12-11 11:21:43,new
+ADBE-00586,2025-12-11 11:21:43,ADBE | Wolfe Research,rating,,Outperform,2025-12-11 11:21:43,new
+ADBE-00587,2025-12-11 11:39:52,ADBE | Morgan Stanley,price_target_usd,,425.0,2025-12-11 11:39:52,new
+ADBE-00587,2025-12-11 11:39:52,ADBE | Morgan Stanley,rating,,Equal-Weight,2025-12-11 11:39:52,corroborate
+ADBE-00588,2025-12-11 11:49:32,ADBE | TD Cowen,price_target_usd,,400.0,2025-12-11 11:49:32,new
+ADBE-00588,2025-12-11 11:49:32,ADBE | TD Cowen,rating,,Hold,2025-12-11 11:49:32,corroborate
+ADBE-00589,2025-12-11 12:49:34,ADBE | Oppenheimer,price_target_usd,,430.00,2025-12-11 12:49:34,new
+ADBE-00589,2025-12-11 12:49:34,ADBE | Oppenheimer,rating,,Outperform,2025-12-11 12:49:34,corroborate
+ADBE-00590,2025-12-11 13:24:45,ADBE | DA Davidson,price_target_usd,,500.00,2025-12-11 13:24:45,corroborate
+ADBE-00590,2025-12-11 13:24:45,ADBE | DA Davidson,rating,,Buy,2025-12-11 13:24:45,corroborate
+ADBE-00591,2025-12-11 14:22:33,ADBE | Jefferies,price_target_usd,,500.00,2025-12-11 14:22:33,new
+ADBE-00591,2025-12-11 14:22:33,ADBE | Jefferies,rating,,Buy,2025-12-11 14:22:33,corroborate
+ADBE-00592,2025-12-15 06:24:18,ADBE | Keybanc,price_target_usd,,310.00,2025-12-15 06:24:18,new
+ADBE-00592,2025-12-15 06:24:18,ADBE | Keybanc,rating,,Underweight,2025-12-15 06:24:18,new
+ADBE-00593,2025-12-15 08:14:03,ADBE | BMO Capital,price_target_usd,,400.0,2025-12-15 08:14:03,new
+ADBE-00593,2025-12-15 08:14:03,ADBE | BMO Capital,rating,,Outperform,2025-12-15 08:14:03,corroborate
+ADBE-00594,2025-12-17 16:09:57,ADBE | Citigroup,price_target_usd,,387.00,2025-12-17 16:09:57,new
+ADBE-00594,2025-12-17 16:09:57,ADBE | Citigroup,rating,,Neutral,2025-12-17 16:09:57,corroborate
+ADBE-00595,2026-01-05 07:19:49,ADBE | Jefferies,price_target_usd,,400.00,2026-01-05 07:19:49,new
+ADBE-00595,2026-01-05 07:19:49,ADBE | Jefferies,rating,,Hold,2026-01-05 07:19:49,new
+ADBE-00596,2026-01-09 07:34:40,ADBE | BMO Capital,price_target_usd,,375.00,2026-01-09 07:34:40,new
+ADBE-00596,2026-01-09 07:34:40,ADBE | BMO Capital,rating,,Market Perform,2026-01-09 07:34:40,new
+ADBE-00597,2026-01-13 09:52:32,ADBE | Oppenheimer,rating,,Perform,2026-01-13 09:52:32,new
+ADBE-00597,2026-01-13 09:52:32,ADBE | Oppenheimer,price_target_usd,,,2026-01-13 09:52:32,new
+ADBE-00598,2026-01-26 13:13:22,ADBE | UBS,price_target_usd,,340.00,2026-01-26 13:13:22,new
+ADBE-00598,2026-01-26 13:13:22,ADBE | UBS,rating,,Neutral,2026-01-26 13:13:22,corroborate
+ADBE-00599,2026-02-03 12:54:43,ADBE | Piper Sandler,price_target_usd,,330.00,2026-02-03 12:54:43,new
+ADBE-00599,2026-02-03 12:54:43,ADBE | Piper Sandler,rating,,Neutral,2026-02-03 12:54:43,new
+ADBE-00600,2026-02-23 14:40:36,ADBE | Jefferies,price_target_usd,,290.00,2026-02-23 14:40:36,new
+ADBE-00600,2026-02-23 14:40:36,ADBE | Jefferies,rating,,Hold,2026-02-23 14:40:36,corroborate
+ADBE-00601,2026-03-04 09:27:34,ADBE | Barclays,price_target_usd,,335.0,2026-03-04 09:27:34,new
+ADBE-00601,2026-03-04 09:27:34,ADBE | Barclays,rating,,Overweight,2026-03-04 09:27:34,corroborate
+ADBE-00602,2026-03-06 11:37:04,ADBE | Citigroup,price_target_usd,,315.0,2026-03-06 11:37:04,new
+ADBE-00602,2026-03-06 11:37:04,ADBE | Citigroup,rating,,Neutral,2026-03-06 11:37:04,corroborate
+ADBE-00603,2026-03-09 09:27:35,ADBE | RBC Capital,price_target_usd,,430.00,2026-03-09 09:27:35,corroborate
+ADBE-00603,2026-03-09 09:27:35,ADBE | RBC Capital,rating,,Outperform,2026-03-09 09:27:35,corroborate
+ADBE-00604,2026-03-09 10:30:56,ADBE | Wells Fargo,price_target_usd,,405.00,2026-03-09 10:30:56,new
+ADBE-00604,2026-03-09 10:30:56,ADBE | Wells Fargo,rating,,Overweight,2026-03-09 10:30:56,corroborate
+ADBE-00605,2026-03-10 08:46:28,ADBE | TD Cowen,price_target_usd,,325.0,2026-03-10 08:46:28,new
+ADBE-00605,2026-03-10 08:46:28,ADBE | TD Cowen,rating,,Hold,2026-03-10 08:46:28,corroborate
+ADBE-00606,2026-03-13 05:51:44,ADBE | Piper Sandler,price_target_usd,,280.00,2026-03-13 05:51:44,new
+ADBE-00606,2026-03-13 05:51:44,ADBE | Piper Sandler,rating,,Neutral,2026-03-13 05:51:44,corroborate
+ADBE-00607,2026-03-13 08:03:17,ADBE | Keybanc,price_target_usd,,235.00,2026-03-13 08:03:17,new
+ADBE-00607,2026-03-13 08:03:17,ADBE | Keybanc,rating,,Underweight,2026-03-13 08:03:17,corroborate
+ADBE-00608,2026-03-13 08:40:30,ADBE | Mizuho,price_target_usd,,315.0,2026-03-13 08:40:30,new
+ADBE-00608,2026-03-13 08:40:30,ADBE | Mizuho,rating,,Outperform,2026-03-13 08:40:30,corroborate
+ADBE-00609,2026-03-13 09:28:04,ADBE | Barclays,price_target_usd,,275.00,2026-03-13 09:28:04,new
+ADBE-00609,2026-03-13 09:28:04,ADBE | Barclays,rating,,Equal-Weight,2026-03-13 09:28:04,new
+ADBE-00610,2026-03-13 09:29:57,ADBE | TD Cowen,price_target_usd,,310.0,2026-03-13 09:29:57,new
+ADBE-00610,2026-03-13 09:29:57,ADBE | TD Cowen,rating,,Hold,2026-03-13 09:29:57,corroborate
+ADBE-00611,2026-03-13 09:48:03,ADBE | RBC Capital,price_target_usd,,400.0,2026-03-13 09:48:03,new
+ADBE-00611,2026-03-13 09:48:03,ADBE | RBC Capital,rating,,Outperform,2026-03-13 09:48:03,corroborate
+ADBE-00612,2026-03-13 10:02:11,ADBE | Stifel,price_target_usd,,400.00,2026-03-13 10:02:11,new
+ADBE-00612,2026-03-13 10:02:11,ADBE | Stifel,rating,,Buy,2026-03-13 10:02:11,corroborate
+ADBE-00613,2026-03-13 10:34:57,ADBE | Morgan Stanley,price_target_usd,,365.0,2026-03-13 10:34:57,new
+ADBE-00613,2026-03-13 10:34:57,ADBE | Morgan Stanley,rating,,Equal-Weight,2026-03-13 10:34:57,corroborate
+ADBE-00614,2026-03-13 11:16:17,ADBE | Wells Fargo,price_target_usd,,330.0,2026-03-13 11:16:17,new
+ADBE-00614,2026-03-13 11:16:17,ADBE | Wells Fargo,rating,,Overweight,2026-03-13 11:16:17,corroborate
+ADBE-00615,2026-03-13 11:31:26,ADBE | JP Morgan,price_target_usd,,420.00,2026-03-13 11:31:26,new
+ADBE-00615,2026-03-13 11:31:26,ADBE | JP Morgan,rating,,Overweight,2026-03-13 11:31:26,corroborate
+ADBE-00616,2026-03-13 11:42:46,ADBE | BMO Capital,price_target_usd,,285.00,2026-03-13 11:42:46,new
+ADBE-00616,2026-03-13 11:42:46,ADBE | BMO Capital,rating,,Market Perform,2026-03-13 11:42:46,corroborate
+ADBE-00617,2026-03-13 16:10:29,ADBE | UBS,price_target_usd,,290.00,2026-03-13 16:10:29,new
+ADBE-00617,2026-03-13 16:10:29,ADBE | UBS,rating,,Neutral,2026-03-13 16:10:29,corroborate
+ADBE-00618,2026-03-13 16:28:07,ADBE | DA Davidson,price_target_usd,,300.00,2026-03-13 16:28:07,new
+ADBE-00618,2026-03-13 16:28:07,ADBE | DA Davidson,rating,,Buy,2026-03-13 16:28:07,corroborate
+ADBE-00619,2026-03-16 07:34:33,ADBE | Argus Research,price_target_usd,,,2026-03-16 07:34:33,new
+ADBE-00619,2026-03-16 07:34:33,ADBE | Argus Research,rating,,Hold,2026-03-16 07:34:33,new
+ADBE-00620,2026-03-16 08:37:25,ADBE | Goldman Sachs,price_target_usd,,220.00,2026-03-16 08:37:25,new
+ADBE-00620,2026-03-16 08:37:25,ADBE | Goldman Sachs,rating,,Sell,2026-03-16 08:37:25,corroborate
+ADBE-00621,2026-03-16 12:39:05,ADBE | Citigroup,price_target_usd,,278.00,2026-03-16 12:39:05,new
+ADBE-00621,2026-03-16 12:39:05,ADBE | Citigroup,rating,,Neutral,2026-03-16 12:39:05,corroborate
+ADBE-00622,2026-03-26 10:41:41,ADBE | William Blair,rating,,Market Perform,2026-03-26 10:41:41,new
+ADBE-00622,2026-03-26 10:41:41,ADBE | William Blair,price_target_usd,,-,2026-03-26 10:41:41,new
+ADBE-00623,2026-04-17 09:35:39,ADBE | RBC Capital,price_target_usd,,350.00,2026-04-17 09:35:39,new
+ADBE-00623,2026-04-17 09:35:39,ADBE | RBC Capital,rating,,Outperform,2026-04-17 09:35:39,corroborate
+ADBE-00624,2026-04-17 15:37:16,ADBE | UBS,price_target_usd,,260.00,2026-04-17 15:37:16,new
+ADBE-00624,2026-04-17 15:37:16,ADBE | UBS,rating,,Neutral,2026-04-17 15:37:16,corroborate
+ADBE-00625,2026-04-22 10:11:54,ADBE | RBC Capital,price_target_usd,,350.00,2026-04-22 10:11:54,new
+ADBE-00625,2026-04-22 10:11:54,ADBE | RBC Capital,rating,,Outperform,2026-04-22 10:11:54,corroborate
+ADBE-00626,2026-04-27 06:10:05,ADBE | Mizuho,price_target_usd,,270.00,2026-04-27 06:10:05,new
+ADBE-00626,2026-04-27 06:10:05,ADBE | Mizuho,rating,,Neutral,2026-04-27 06:10:05,new
+ADBE-00627,2026-06-05 09:44:39,ADBE | RBC Capital,price_target_usd,,350.00,2026-06-05 09:44:39,new
+ADBE-00627,2026-06-05 09:44:39,ADBE | RBC Capital,rating,,Outperform,2026-06-05 09:44:39,corroborate
+ADBE-00628,2026-06-05 14:16:48,ADBE | Citigroup,price_target_usd,,264.00,2026-06-05 14:16:48,new
+ADBE-00628,2026-06-05 14:16:48,ADBE | Citigroup,rating,,Neutral,2026-06-05 14:16:48,corroborate
+ADBE-00629,2026-06-08 11:20:00,ADBE | TD Cowen,price_target_usd,,285.00,2026-06-08 11:20:00,new
+ADBE-00629,2026-06-08 11:20:00,ADBE | TD Cowen,rating,,Hold,2026-06-08 11:20:00,corroborate
+ADBE-00630,2026-06-08 13:53:24,ADBE | Stifel,price_target_usd,,350.00,2026-06-08 13:53:24,new
+ADBE-00630,2026-06-08 13:53:24,ADBE | Stifel,rating,,Buy,2026-06-08 13:53:24,corroborate
+ADBE-00631,2026-06-11 10:22:57,ADBE | RBC Capital,price_target_usd,,285.00,2026-06-11 10:22:57,new
+ADBE-00631,2026-06-11 10:22:57,ADBE | RBC Capital,rating,,Outperform,2026-06-11 10:22:57,corroborate
+ADBE-00632,2026-06-11 11:15:34,ADBE | Bernstein,price_target_usd,,379.00,2026-06-11 11:15:34,new
+ADBE-00632,2026-06-11 11:15:34,ADBE | Bernstein,rating,,Outperform,2026-06-11 11:15:34,corroborate
+ADBE-00633,2026-06-11 11:18:09,ADBE | TD Cowen,price_target_usd,,245.00,2026-06-11 11:18:09,new
+ADBE-00633,2026-06-11 11:18:09,ADBE | TD Cowen,rating,,Hold,2026-06-11 11:18:09,corroborate
+ADBE-00634,2026-06-11 11:24:32,ADBE | Wolfe Research,rating,,Peer Perform,2026-06-11 11:24:32,new
+ADBE-00635,2026-06-12 05:05:02,ADBE | Piper Sandler,price_target_usd,,240.00,2026-06-12 05:05:02,new
+ADBE-00635,2026-06-12 05:05:02,ADBE | Piper Sandler,rating,,Neutral,2026-06-12 05:05:02,new
+ADBE-00636,2026-06-12 05:33:14,ADBE | Stifel,price_target_usd,,200.00,2026-06-12 05:33:14,new
+ADBE-00636,2026-06-12 05:33:14,ADBE | Stifel,rating,,Hold,2026-06-12 05:33:14,new
+ADBE-00637,2026-06-12 06:26:43,ADBE | Evercore ISI Group,price_target_usd,,225.00,2026-06-12 06:26:43,new
+ADBE-00637,2026-06-12 06:26:43,ADBE | Evercore ISI Group,rating,,In-Line,2026-06-12 06:26:43,new
+ADBE-00638,2026-06-12 07:35:35,ADBE | Baird,price_target_usd,,230.00,2026-06-12 07:35:35,new
+ADBE-00638,2026-06-12 07:35:35,ADBE | Baird,rating,,Neutral,2026-06-12 07:35:35,corroborate
+ADBE-00639,2026-06-12 08:21:35,ADBE | Mizuho,price_target_usd,,245.00,2026-06-12 08:21:35,new
+ADBE-00639,2026-06-12 08:21:35,ADBE | Mizuho,rating,,Neutral,2026-06-12 08:21:35,corroborate
+ADBE-00640,2026-06-12 08:58:59,ADBE | DA Davidson,price_target_usd,,250.00,2026-06-12 08:58:59,new
+ADBE-00640,2026-06-12 08:58:59,ADBE | DA Davidson,rating,,Buy,2026-06-12 08:58:59,corroborate
+ADBE-00641,2026-06-12 09:00:56,ADBE | Keybanc,price_target_usd,,195.00,2026-06-12 09:00:56,new
+ADBE-00641,2026-06-12 09:00:56,ADBE | Keybanc,rating,,Underweight,2026-06-12 09:00:56,corroborate
+ADBE-00642,2026-06-12 09:10:27,ADBE | Citizens Capital Markets,rating,,Market Perform,2026-06-12 09:10:27,corroborate
+ADBE-00643,2026-06-12 09:23:55,ADBE | Barclays,price_target_usd,,250.00,2026-06-12 09:23:55,new
+ADBE-00643,2026-06-12 09:23:55,ADBE | Barclays,rating,,Equal-Weight,2026-06-12 09:23:55,corroborate
+ADBE-00644,2026-06-12 09:24:11,ADBE | BMO Capital,price_target_usd,,230.00,2026-06-12 09:24:11,new
+ADBE-00644,2026-06-12 09:24:11,ADBE | BMO Capital,rating,,Market Perform,2026-06-12 09:24:11,corroborate
+ADBE-00645,2026-06-12 09:44:20,ADBE | Wells Fargo,price_target_usd,,250.00,2026-06-12 09:44:20,new
+ADBE-00645,2026-06-12 09:44:20,ADBE | Wells Fargo,rating,,Overweight,2026-06-12 09:44:20,corroborate
+ADBE-00646,2026-06-12 09:55:31,ADBE | UBS,price_target_usd,,225.00,2026-06-12 09:55:31,new
+ADBE-00646,2026-06-12 09:55:31,ADBE | UBS,rating,,Neutral,2026-06-12 09:55:31,corroborate
+ADBE-00647,2026-06-12 10:56:12,ADBE | JP Morgan,price_target_usd,,340.00,2026-06-12 10:56:12,new
+ADBE-00647,2026-06-12 10:56:12,ADBE | JP Morgan,rating,,Overweight,2026-06-12 10:56:12,corroborate
+ADBE-00648,2026-06-12 12:05:53,ADBE | Jefferies,price_target_usd,,230.00,2026-06-12 12:05:53,new
+ADBE-00648,2026-06-12 12:05:53,ADBE | Jefferies,rating,,Hold,2026-06-12 12:05:53,corroborate
+ADBE-00649,2026-06-12 12:59:44,ADBE | Goldman Sachs,price_target_usd,,190.00,2026-06-12 12:59:44,new
+ADBE-00649,2026-06-12 12:59:44,ADBE | Goldman Sachs,rating,,Sell,2026-06-12 12:59:44,corroborate
+ADBE-00650,2026-06-12 14:02:25,ADBE | Citigroup,price_target_usd,,228.00,2026-06-12 14:02:25,new
+ADBE-00650,2026-06-12 14:02:25,ADBE | Citigroup,rating,,Neutral,2026-06-12 14:02:25,corroborate
+ADBE-00651,2026-07-02 08:13:51,ADBE | HSBC,price_target_usd,,308.00,2026-07-02 08:13:51,new
+ADBE-00651,2026-07-02 08:13:51,ADBE | HSBC,rating,,Buy,2026-07-02 08:13:51,new
+ADBE-00652,2026-07-20 07:01:04,ADBE | CLSA,price_target_usd,,300.00,2026-07-20 07:01:04,new
+ADBE-00652,2026-07-20 07:01:04,ADBE | CLSA,rating,,Outperform,2026-07-20 07:01:04,new
+ADBE-00653,2026-07-21 06:32:41,ADBE | Morgan Stanley,price_target_usd,,240.00,2026-07-21 06:32:41,new
+ADBE-00653,2026-07-21 06:32:41,ADBE | Morgan Stanley,rating,,Underweight,2026-07-21 06:32:41,new
+ADBE-00654,2026-08-19 12:55:37,ADBE | B of A Securities,price_target_usd,,220.00,2026-08-19 12:55:37,new
+ADBE-00654,2026-08-19 12:55:37,ADBE | B of A Securities,rating,,Underperform,2026-08-19 12:55:37,new
+ADBE-00655,2026-08-31 10:15:46,ADBE | Jefferies,price_target_usd,,285.00,2026-08-31 10:15:46,new
+ADBE-00655,2026-08-31 10:15:46,ADBE | Jefferies,rating,,Hold,2026-08-31 10:15:46,corroborate
+ADBE-00656,2026-09-01 14:58:55,ADBE | Citigroup,price_target_usd,,301.00,2026-09-01 14:58:55,new
+ADBE-00656,2026-09-01 14:58:55,ADBE | Citigroup,rating,,Neutral,2026-09-01 14:58:55,corroborate
+ADBE-00657,2026-09-02 08:52:48,ADBE | RBC Capital,price_target_usd,,315.00,2026-09-02 08:52:48,new
+ADBE-00657,2026-09-02 08:52:48,ADBE | RBC Capital,rating,,Outperform,2026-09-02 08:52:48,corroborate
+ADBE-00658,2026-09-03 09:16:13,ADBE | Barclays,price_target_usd,,295.00,2026-09-03 09:16:13,new
+ADBE-00658,2026-09-03 09:16:13,ADBE | Barclays,rating,,Equal-Weight,2026-09-03 09:16:13,corroborate
+ADBE-00659,2026-09-09 10:58:22,ADBE | Stifel,price_target_usd,,225.00,2026-09-09 10:58:22,new
+ADBE-00659,2026-09-09 10:58:22,ADBE | Stifel,rating,,Hold,2026-09-09 10:58:22,corroborate
+ADBE-00660,2026-09-11 06:26:39,ADBE | BTIG,rating,,Neutral,2026-09-11 06:26:39,corroborate
+ADBE-00661,2026-09-11 07:28:17,ADBE | Baird,price_target_usd,,250.00,2026-09-11 07:28:17,new
+ADBE-00661,2026-09-11 07:28:17,ADBE | Baird,rating,,Neutral,2026-09-11 07:28:17,corroborate
+ADBE-00662,2026-09-11 08:51:29,ADBE | Piper Sandler,price_target_usd,,250.00,2026-09-11 08:51:29,new
+ADBE-00662,2026-09-11 08:51:29,ADBE | Piper Sandler,rating,,Neutral,2026-09-11 08:51:29,corroborate
+ADBE-00663,2026-09-11 09:17:26,ADBE | BMO Capital,price_target_usd,,270.00,2026-09-11 09:17:26,new
+ADBE-00663,2026-09-11 09:17:26,ADBE | BMO Capital,rating,,Market Perform,2026-09-11 09:17:26,corroborate
+ADBE-00664,2026-09-11 09:21:41,ADBE | Citizens Capital Markets,rating,,Market Perform,2026-09-11 09:21:41,corroborate
+ADBE-00665,2026-09-11 09:43:30,ADBE | RBC Capital,price_target_usd,,315.00,2026-09-11 09:43:30,new
+ADBE-00665,2026-09-11 09:43:30,ADBE | RBC Capital,rating,,Outperform,2026-09-11 09:43:30,corroborate
+ADBE-00666,2026-09-11 09:59:07,ADBE | UBS,price_target_usd,,255.00,2026-09-11 09:59:07,new
+ADBE-00666,2026-09-11 09:59:07,ADBE | UBS,rating,,Neutral,2026-09-11 09:59:07,corroborate
+ADBE-00667,2026-09-11 10:35:49,ADBE | Wells Fargo,price_target_usd,,270.00,2026-09-11 10:35:49,new
+ADBE-00667,2026-09-11 10:35:49,ADBE | Wells Fargo,rating,,Overweight,2026-09-11 10:35:49,corroborate
+ADBE-00668,2026-09-11 10:45:07,ADBE | Evercore ISI Group,price_target_usd,,250.00,2026-09-11 10:45:07,new
+ADBE-00668,2026-09-11 10:45:07,ADBE | Evercore ISI Group,rating,,In-Line,2026-09-11 10:45:07,corroborate
+ADBE-00669,2026-09-11 10:49:54,ADBE | TD Cowen,price_target_usd,,245.00,2026-09-11 10:49:54,corroborate
+ADBE-00669,2026-09-11 10:49:54,ADBE | TD Cowen,rating,,Hold,2026-09-11 10:49:54,corroborate
+ADBE-00670,2026-09-11 11:55:02,ADBE | Jefferies,price_target_usd,,275.00,2026-09-11 11:55:02,new
+ADBE-00670,2026-09-11 11:55:02,ADBE | Jefferies,rating,,Hold,2026-09-11 11:55:02,corroborate
+ADBE-00671,2026-09-11 12:04:38,ADBE | JP Morgan,price_target_usd,,315.00,2026-09-11 12:04:38,new
+ADBE-00671,2026-09-11 12:04:38,ADBE | JP Morgan,rating,,Overweight,2026-09-11 12:04:38,corroborate
+ADBE-00672,2026-09-11 12:29:09,ADBE | Citigroup,price_target_usd,,250.00,2026-09-11 12:29:09,new
+ADBE-00672,2026-09-11 12:29:09,ADBE | Citigroup,rating,,Neutral,2026-09-11 12:29:09,corroborate
+ADBE-00673,2026-09-14 14:16:50,ADBE | DA Davidson,price_target_usd,,290.00,2026-09-14 14:16:50,new
+ADBE-00673,2026-09-14 14:16:50,ADBE | DA Davidson,rating,,Buy,2026-09-14 14:16:50,corroborate
+ADBE-00674,2026-10-12 09:55:31,ADBE | Wells Fargo,price_target_usd,,225.0,2026-10-12 09:55:31,new
+ADBE-00674,2026-10-12 09:55:31,ADBE | Wells Fargo,rating,,Underweight,2026-10-12 09:55:31,new
+ADBE-00675,2026-10-13 09:08:05,ADBE | HSBC,price_target_usd,,267.00,2026-10-13 09:08:05,new
+ADBE-00675,2026-10-13 09:08:05,ADBE | HSBC,rating,,Hold,2026-10-13 09:08:05,new
+ADBE-00676,2026-11-04 15:55:31,ADBE | Citigroup,price_target_usd,,207.00,2026-11-04 15:55:31,new
+ADBE-00676,2026-11-04 15:55:31,ADBE | Citigroup,rating,,Sell,2026-11-04 15:55:31,new
+ADBE-00677,2026-11-11 09:50:22,ADBE | RBC Capital,price_target_usd,,315.00,2026-11-11 09:50:22,new
+ADBE-00677,2026-11-11 09:50:22,ADBE | RBC Capital,rating,,Outperform,2026-11-11 09:50:22,corroborate

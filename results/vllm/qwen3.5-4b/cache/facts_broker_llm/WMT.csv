@@ -1,0 +1,402 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+WMT-00515,2024-11-20 10:49:14,WMT | Jefferies,price_target_usd,,105.00,2024-11-20 10:49:14,new
+WMT-00515,2024-11-20 10:49:14,WMT | Jefferies,rating,,Buy,2024-11-20 10:49:14,new
+WMT-00516,2024-11-20 10:52:12,WMT | Guggenheim,price_target_usd,,100.00,2024-11-20 10:52:12,new
+WMT-00516,2024-11-20 10:52:12,WMT | Guggenheim,rating,,Buy,2024-11-20 10:52:12,corroborate
+WMT-00517,2024-11-20 11:08:01,WMT | RBC Capital,price_target_usd,,96.00,2024-11-20 11:08:01,new
+WMT-00517,2024-11-20 11:08:01,WMT | RBC Capital,rating,,Outperform,2024-11-20 11:08:01,new
+WMT-00518,2024-11-20 11:42:39,WMT | Bernstein,price_target_usd,,102.00,2024-11-20 11:42:39,new
+WMT-00518,2024-11-20 11:42:39,WMT | Bernstein,rating,,Outperform,2024-11-20 11:42:39,corroborate
+WMT-00519,2024-11-20 12:05:36,WMT | UBS,price_target_usd,,100.00,2024-11-20 12:05:36,new
+WMT-00519,2024-11-20 12:05:36,WMT | UBS,rating,,Buy,2024-11-20 12:05:36,corroborate
+WMT-00520,2024-11-20 12:07:56,WMT | Evercore ISI Group,price_target_usd,,94.00,2024-11-20 12:07:56,new
+WMT-00520,2024-11-20 12:07:56,WMT | Evercore ISI Group,rating,,Outperform,2024-11-20 12:07:56,new
+WMT-00521,2024-11-20 12:10:24,WMT | Wells Fargo,price_target_usd,,96.00,2024-11-20 12:10:24,new
+WMT-00521,2024-11-20 12:10:24,WMT | Wells Fargo,rating,,Overweight,2024-11-20 12:10:24,new
+WMT-00522,2024-11-20 12:24:06,WMT | Truist Securities,price_target_usd,,98.00,2024-11-20 12:24:06,new
+WMT-00522,2024-11-20 12:24:06,WMT | Truist Securities,rating,,Buy,2024-11-20 12:24:06,corroborate
+WMT-00523,2024-11-20 12:35:14,WMT | B of A Securities,price_target_usd,,105.00,2024-11-20 12:35:14,new
+WMT-00523,2024-11-20 12:35:14,WMT | B of A Securities,rating,,Buy,2024-11-20 12:35:14,new
+WMT-00524,2024-11-20 12:49:14,WMT | Morgan Stanley,price_target_usd,,100.00,2024-11-20 12:49:14,new
+WMT-00524,2024-11-20 12:49:14,WMT | Morgan Stanley,rating,,Overweight,2024-11-20 12:49:14,new
+WMT-00525,2024-11-20 13:09:49,WMT | Roth MKM,price_target_usd,,97.00,2024-11-20 13:09:49,new
+WMT-00525,2024-11-20 13:09:49,WMT | Roth MKM,rating,,Buy,2024-11-20 13:09:49,new
+WMT-00526,2024-11-20 13:12:01,WMT | Stifel,price_target_usd,,89.00,2024-11-20 13:12:01,new
+WMT-00526,2024-11-20 13:12:01,WMT | Stifel,rating,,Hold,2024-11-20 13:12:01,new
+WMT-00527,2024-11-22 09:18:25,WMT | Barclays,price_target_usd,,90.00,2024-11-22 09:18:25,new
+WMT-00527,2024-11-22 09:18:25,WMT | Barclays,rating,,Overweight,2024-11-22 09:18:25,corroborate
+WMT-00528,2024-12-03 10:38:59,WMT | Evercore ISI Group,price_target_usd,,96.00,2024-12-03 10:38:59,new
+WMT-00528,2024-12-03 10:38:59,WMT | Evercore ISI Group,rating,,Outperform,2024-12-03 10:38:59,corroborate
+WMT-00529,2024-12-10 11:35:31,WMT | Stifel,price_target_usd,,94.00,2024-12-10 11:35:31,new
+WMT-00529,2024-12-10 11:35:31,WMT | Stifel,rating,,Hold,2024-12-10 11:35:31,corroborate
+WMT-00530,2024-12-11 09:05:20,WMT | Keybanc,price_target_usd,,100.00,2024-12-11 09:05:20,new
+WMT-00530,2024-12-11 09:05:20,WMT | Keybanc,rating,,Overweight,2024-12-11 09:05:20,new
+WMT-00531,2024-12-13 09:18:20,WMT | Tigress Financial,price_target_usd,,115.00,2024-12-13 09:18:20,new
+WMT-00531,2024-12-13 09:18:20,WMT | Tigress Financial,rating,,Buy,2024-12-13 09:18:20,new
+WMT-00532,2024-12-17 11:32:51,WMT | Jefferies,price_target_usd,,111.00,2024-12-17 11:32:51,new
+WMT-00532,2024-12-17 11:32:51,WMT | Jefferies,rating,,Buy,2024-12-17 11:32:51,corroborate
+WMT-00533,2025-01-09 10:29:10,WMT | Barclays,price_target_usd,,98.00,2025-01-09 10:29:10,new
+WMT-00533,2025-01-09 10:29:10,WMT | Barclays,rating,,Overweight,2025-01-09 10:29:10,corroborate
+WMT-00534,2025-01-10 09:02:09,WMT | Wells Fargo,price_target_usd,,100.00,2025-01-10 09:02:09,new
+WMT-00534,2025-01-10 09:02:09,WMT | Wells Fargo,rating,,Overweight,2025-01-10 09:02:09,corroborate
+WMT-00535,2025-01-15 10:16:14,WMT | RBC Capital,price_target_usd,,105.00,2025-01-15 10:16:14,new
+WMT-00535,2025-01-15 10:16:14,WMT | RBC Capital,rating,,Outperform,2025-01-15 10:16:14,corroborate
+WMT-00536,2025-01-21 11:49:07,WMT | Morgan Stanley,price_target_usd,,106.00,2025-01-21 11:49:07,new
+WMT-00536,2025-01-21 11:49:07,WMT | Morgan Stanley,rating,,Overweight,2025-01-21 11:49:07,corroborate
+WMT-00537,2025-01-31 14:22:44,WMT | UBS,price_target_usd,,113.00,2025-01-31 14:22:44,new
+WMT-00537,2025-01-31 14:22:44,WMT | UBS,rating,,Buy,2025-01-31 14:22:44,corroborate
+WMT-00538,2025-02-03 10:15:17,WMT | Wells Fargo,price_target_usd,,108.00,2025-02-03 10:15:17,new
+WMT-00538,2025-02-03 10:15:17,WMT | Wells Fargo,rating,,Overweight,2025-02-03 10:15:17,corroborate
+WMT-00539,2025-02-05 11:28:22,WMT | Oppenheimer,price_target_usd,,110.00,2025-02-05 11:28:22,new
+WMT-00539,2025-02-05 11:28:22,WMT | Oppenheimer,rating,,Outperform,2025-02-05 11:28:22,corroborate
+WMT-00540,2025-02-10 06:58:38,WMT | JP Morgan,price_target_usd,,112.0,2025-02-10 06:58:38,new
+WMT-00540,2025-02-10 06:58:38,WMT | JP Morgan,rating,,Overweight,2025-02-10 06:58:38,new
+WMT-00541,2025-02-11 07:17:26,WMT | Citigroup,price_target_usd,,120.0,2025-02-11 07:17:26,new
+WMT-00541,2025-02-11 07:17:26,WMT | Citigroup,rating,,Buy,2025-02-11 07:17:26,corroborate
+WMT-00542,2025-02-11 12:33:13,WMT | Truist Securities,price_target_usd,,111.0,2025-02-11 12:33:13,new
+WMT-00542,2025-02-11 12:33:13,WMT | Truist Securities,rating,,Buy,2025-02-11 12:33:13,corroborate
+WMT-00543,2025-02-12 06:19:57,WMT | Telsey Advisory Group,price_target_usd,,115.00,2025-02-12 06:19:57,new
+WMT-00543,2025-02-12 06:19:57,WMT | Telsey Advisory Group,rating,,Outperform,2025-02-12 06:19:57,corroborate
+WMT-00544,2025-02-13 12:56:37,WMT | Morgan Stanley,price_target_usd,,115.0,2025-02-13 12:56:37,new
+WMT-00544,2025-02-13 12:56:37,WMT | Morgan Stanley,rating,,Overweight,2025-02-13 12:56:37,corroborate
+WMT-00545,2025-02-14 11:03:17,WMT | Barclays,price_target_usd,,108.00,2025-02-14 11:03:17,new
+WMT-00545,2025-02-14 11:03:17,WMT | Barclays,rating,,Overweight,2025-02-14 11:03:17,corroborate
+WMT-00546,2025-02-18 08:22:47,WMT | Baird,price_target_usd,,115.00,2025-02-18 08:22:47,new
+WMT-00546,2025-02-18 08:22:47,WMT | Baird,rating,,Outperform,2025-02-18 08:22:47,corroborate
+WMT-00547,2025-02-18 09:14:26,WMT | Piper Sandler,price_target_usd,,118.00,2025-02-18 09:14:26,new
+WMT-00547,2025-02-18 09:14:26,WMT | Piper Sandler,rating,,Overweight,2025-02-18 09:14:26,corroborate
+WMT-00548,2025-02-21 06:23:25,WMT | Telsey Advisory Group,price_target_usd,,115.00,2025-02-21 06:23:25,corroborate
+WMT-00548,2025-02-21 06:23:25,WMT | Telsey Advisory Group,rating,,Outperform,2025-02-21 06:23:25,corroborate
+WMT-00549,2025-02-21 09:18:58,WMT | Piper Sandler,price_target_usd,,114.00,2025-02-21 09:18:58,new
+WMT-00549,2025-02-21 09:18:58,WMT | Piper Sandler,rating,,Overweight,2025-02-21 09:18:58,corroborate
+WMT-00550,2025-02-21 09:41:26,WMT | Keybanc,price_target_usd,,105.00,2025-02-21 09:41:26,new
+WMT-00550,2025-02-21 09:41:26,WMT | Keybanc,rating,,Overweight,2025-02-21 09:41:26,corroborate
+WMT-00551,2025-02-21 11:15:45,WMT | Roth MKM,price_target_usd,,108.00,2025-02-21 11:15:45,new
+WMT-00551,2025-02-21 11:15:45,WMT | Roth MKM,rating,,Buy,2025-02-21 11:15:45,corroborate
+WMT-00552,2025-02-21 13:02:33,WMT | UBS,price_target_usd,,112.00,2025-02-21 13:02:33,new
+WMT-00552,2025-02-21 13:02:33,WMT | UBS,rating,,Buy,2025-02-21 13:02:33,corroborate
+WMT-00553,2025-02-21 13:16:02,WMT | RBC Capital,price_target_usd,,107.0,2025-02-21 13:16:02,new
+WMT-00553,2025-02-21 13:16:02,WMT | RBC Capital,rating,,Outperform,2025-02-21 13:16:02,corroborate
+WMT-00554,2025-02-24 10:10:10,WMT | Guggenheim,price_target_usd,,100.00,2025-02-24 10:10:10,corroborate
+WMT-00554,2025-02-24 10:10:10,WMT | Guggenheim,rating,,Buy,2025-02-24 10:10:10,corroborate
+WMT-00555,2025-03-11 11:45:23,WMT | Evercore ISI Group,price_target_usd,,100.0,2025-03-11 11:45:23,new
+WMT-00555,2025-03-11 11:45:23,WMT | Evercore ISI Group,rating,,Outperform,2025-03-11 11:45:23,new
+WMT-00556,2025-03-20 07:13:17,WMT | Stifel,price_target_usd,,93.0,2025-03-20 07:13:17,new
+WMT-00556,2025-03-20 07:13:17,WMT | Stifel,rating,,Hold,2025-03-20 07:13:17,corroborate
+WMT-00557,2025-04-07 12:24:12,WMT | Oppenheimer,price_target_usd,,95.0,2025-04-07 12:24:12,new
+WMT-00557,2025-04-07 12:24:12,WMT | Oppenheimer,rating,,Outperform,2025-04-07 12:24:12,corroborate
+WMT-00558,2025-04-09 06:19:00,WMT | Stifel,price_target_usd,,91.0,2025-04-09 06:19:00,new
+WMT-00558,2025-04-09 06:19:00,WMT | Stifel,rating,,Hold,2025-04-09 06:19:00,corroborate
+WMT-00559,2025-04-10 07:12:06,WMT | Telsey Advisory Group,price_target_usd,,115.00,2025-04-10 07:12:06,corroborate
+WMT-00559,2025-04-10 07:12:06,WMT | Telsey Advisory Group,rating,,Outperform,2025-04-10 07:12:06,corroborate
+WMT-00560,2025-04-10 10:05:00,WMT | RBC Capital,price_target_usd,,102.0,2025-04-10 10:05:00,new
+WMT-00560,2025-04-10 10:05:00,WMT | RBC Capital,rating,,Outperform,2025-04-10 10:05:00,corroborate
+WMT-00561,2025-04-10 13:16:38,WMT | Baird,price_target_usd,,100.00,2025-04-10 13:16:38,new
+WMT-00561,2025-04-10 13:16:38,WMT | Baird,rating,,Outperform,2025-04-10 13:16:38,corroborate
+WMT-00562,2025-04-10 14:27:49,WMT | UBS,price_target_usd,,110.0,2025-04-10 14:27:49,new
+WMT-00562,2025-04-10 14:27:49,WMT | UBS,rating,,Buy,2025-04-10 14:27:49,corroborate
+WMT-00563,2025-04-11 07:02:20,WMT | Mizuho,price_target_usd,,105.00,2025-04-11 07:02:20,new
+WMT-00563,2025-04-11 07:02:20,WMT | Mizuho,rating,,Outperform,2025-04-11 07:02:20,new
+WMT-00564,2025-04-11 08:52:23,WMT | Raymond James,price_target_usd,,105.00,2025-04-11 08:52:23,new
+WMT-00564,2025-04-11 08:52:23,WMT | Raymond James,rating,,Outperform,2025-04-11 08:52:23,new
+WMT-00565,2025-04-11 13:26:47,WMT | Oppenheimer,price_target_usd,,100.0,2025-04-11 13:26:47,new
+WMT-00565,2025-04-11 13:26:47,WMT | Oppenheimer,rating,,Outperform,2025-04-11 13:26:47,corroborate
+WMT-00566,2025-05-06 11:33:08,WMT | RBC Capital,price_target_usd,,102.00,2025-05-06 11:33:08,new
+WMT-00566,2025-05-06 11:33:08,WMT | RBC Capital,rating,,Outperform,2025-05-06 11:33:08,corroborate
+WMT-00567,2025-05-06 13:50:34,WMT | Truist Securities,price_target_usd,,107.00,2025-05-06 13:50:34,new
+WMT-00567,2025-05-06 13:50:34,WMT | Truist Securities,rating,,Buy,2025-05-06 13:50:34,corroborate
+WMT-00568,2025-05-07 10:03:21,WMT | Oppenheimer,price_target_usd,,110.0,2025-05-07 10:03:21,new
+WMT-00568,2025-05-07 10:03:21,WMT | Oppenheimer,rating,,Outperform,2025-05-07 10:03:21,corroborate
+WMT-00569,2025-05-12 06:46:10,WMT | Telsey Advisory Group,price_target_usd,,115.00,2025-05-12 06:46:10,corroborate
+WMT-00569,2025-05-12 06:46:10,WMT | Telsey Advisory Group,rating,,Outperform,2025-05-12 06:46:10,corroborate
+WMT-00570,2025-05-13 09:37:42,WMT | Evercore ISI Group,price_target_usd,,105.00,2025-05-13 09:37:42,new
+WMT-00570,2025-05-13 09:37:42,WMT | Evercore ISI Group,rating,,Outperform,2025-05-13 09:37:42,corroborate
+WMT-00571,2025-05-16 10:26:42,WMT | Baird,price_target_usd,,110.00,2025-05-16 10:26:42,new
+WMT-00571,2025-05-16 10:26:42,WMT | Baird,rating,,Outperform,2025-05-16 10:26:42,corroborate
+WMT-00572,2025-05-16 11:39:27,WMT | DA Davidson,price_target_usd,,117.00,2025-05-16 11:39:27,new
+WMT-00572,2025-05-16 11:39:27,WMT | DA Davidson,rating,,Buy,2025-05-16 11:39:27,new
+WMT-00573,2025-05-16 11:51:31,WMT | Telsey Advisory Group,price_target_usd,,115.00,2025-05-16 11:51:31,corroborate
+WMT-00573,2025-05-16 11:51:31,WMT | Telsey Advisory Group,rating,,Outperform,2025-05-16 11:51:31,corroborate
+WMT-00574,2025-05-16 12:44:42,WMT | RBC Capital,price_target_usd,,102.0,2025-05-16 12:44:42,new
+WMT-00574,2025-05-16 12:44:42,WMT | RBC Capital,rating,,Outperform,2025-05-16 12:44:42,corroborate
+WMT-00575,2025-05-16 13:46:07,WMT | Truist Securities,price_target_usd,,111.0,2025-05-16 13:46:07,new
+WMT-00575,2025-05-16 13:46:07,WMT | Truist Securities,rating,,Buy,2025-05-16 13:46:07,corroborate
+WMT-00576,2025-06-04 13:18:50,WMT | Evercore ISI Group,price_target_usd,,107.00,2025-06-04 13:18:50,new
+WMT-00576,2025-06-04 13:18:50,WMT | Evercore ISI Group,rating,,Outperform,2025-06-04 13:18:50,corroborate
+WMT-00577,2025-06-08 06:20:55,WMT | Guggenheim,price_target_usd,,112.00,2025-06-08 06:20:55,new
+WMT-00577,2025-06-08 06:20:55,WMT | Guggenheim,rating,,Buy,2025-06-08 06:20:55,corroborate
+WMT-00578,2025-06-09 08:00:22,WMT | Telsey Advisory Group,price_target_usd,,115.00,2025-06-09 08:00:22,corroborate
+WMT-00578,2025-06-09 08:00:22,WMT | Telsey Advisory Group,rating,,Outperform,2025-06-09 08:00:22,corroborate
+WMT-00579,2025-06-09 10:04:51,WMT | Keybanc,price_target_usd,,110.00,2025-06-09 10:04:51,new
+WMT-00579,2025-06-09 10:04:51,WMT | Keybanc,rating,,Overweight,2025-06-09 10:04:51,corroborate
+WMT-00580,2025-06-09 13:59:42,WMT | Mizuho,price_target_usd,,115.0,2025-06-09 13:59:42,new
+WMT-00580,2025-06-09 13:59:42,WMT | Mizuho,rating,,Outperform,2025-06-09 13:59:42,corroborate
+WMT-00581,2025-07-02 11:18:27,WMT | Tigress Financial,price_target_usd,,120.00,2025-07-02 11:18:27,new
+WMT-00581,2025-07-02 11:18:27,WMT | Tigress Financial,rating,,Buy,2025-07-02 11:18:27,corroborate
+WMT-00582,2025-08-03 17:00:11,WMT | RBC Capital,price_target_usd,,106.00,2025-08-03 17:00:11,new
+WMT-00582,2025-08-03 17:00:11,WMT | RBC Capital,rating,,Outperform,2025-08-03 17:00:11,new
+WMT-00583,2025-08-06 06:58:20,WMT | UBS,price_target_usd,,110.00,2025-08-06 06:58:20,corroborate
+WMT-00583,2025-08-06 06:58:20,WMT | UBS,rating,,Buy,2025-08-06 06:58:20,corroborate
+WMT-00584,2025-08-08 06:56:28,WMT | JP Morgan,price_target_usd,,130.0,2025-08-08 06:56:28,new
+WMT-00584,2025-08-08 06:56:28,WMT | JP Morgan,rating,,Overweight,2025-08-08 06:56:28,corroborate
+WMT-00585,2025-08-12 09:02:41,WMT | Evercore ISI Group,price_target_usd,,108.00,2025-08-12 09:02:41,new
+WMT-00585,2025-08-12 09:02:41,WMT | Evercore ISI Group,rating,,Outperform,2025-08-12 09:02:41,corroborate
+WMT-00586,2025-08-13 06:51:50,WMT | Mizuho,price_target_usd,,115.0,2025-08-13 06:51:50,corroborate
+WMT-00586,2025-08-13 06:51:50,WMT | Mizuho,rating,,Outperform,2025-08-13 06:51:50,corroborate
+WMT-00587,2025-08-13 12:41:58,WMT | Oppenheimer,price_target_usd,,115.0,2025-08-13 12:41:58,new
+WMT-00587,2025-08-13 12:41:58,WMT | Oppenheimer,rating,,Outperform,2025-08-13 12:41:58,corroborate
+WMT-00588,2025-08-14 07:47:45,WMT | Telsey Advisory Group,price_target_usd,,115.00,2025-08-14 07:47:45,corroborate
+WMT-00588,2025-08-14 07:47:45,WMT | Telsey Advisory Group,rating,,Outperform,2025-08-14 07:47:45,corroborate
+WMT-00589,2025-08-18 09:19:23,WMT | Guggenheim,price_target_usd,,115.00,2025-08-18 09:19:23,new
+WMT-00589,2025-08-18 09:19:23,WMT | Guggenheim,rating,,Buy,2025-08-18 09:19:23,corroborate
+WMT-00590,2025-08-18 12:33:42,WMT | Evercore ISI Group,price_target_usd,,110.00,2025-08-18 12:33:42,new
+WMT-00590,2025-08-18 12:33:42,WMT | Evercore ISI Group,rating,,Outperform,2025-08-18 12:33:42,corroborate
+WMT-00591,2025-08-22 06:55:56,WMT | Telsey Advisory Group,price_target_usd,,118.00,2025-08-22 06:55:56,new
+WMT-00591,2025-08-22 06:55:56,WMT | Telsey Advisory Group,rating,,Outperform,2025-08-22 06:55:56,corroborate
+WMT-00592,2025-08-22 08:36:59,WMT | Guggenheim,price_target_usd,,115.00,2025-08-22 08:36:59,new
+WMT-00592,2025-08-22 08:36:59,WMT | Guggenheim,rating,,Buy,2025-08-22 08:36:59,corroborate
+WMT-00593,2025-08-22 08:48:34,WMT | Truist Securities,price_target_usd,,109.0,2025-08-22 08:48:34,new
+WMT-00593,2025-08-22 08:48:34,WMT | Truist Securities,rating,,Buy,2025-08-22 08:48:34,new
+WMT-00594,2025-08-22 09:12:54,WMT | RBC Capital,price_target_usd,,106.00,2025-08-22 09:12:54,new
+WMT-00594,2025-08-22 09:12:54,WMT | RBC Capital,rating,,Outperform,2025-08-22 09:12:54,corroborate
+WMT-00595,2025-08-22 10:42:00,WMT | JP Morgan,price_target_usd,,127.0,2025-08-22 10:42:00,new
+WMT-00595,2025-08-22 10:42:00,WMT | JP Morgan,rating,,Overweight,2025-08-22 10:42:00,corroborate
+WMT-00596,2025-08-22 13:30:57,WMT | Goldman Sachs,price_target_usd,,114.00,2025-08-22 13:30:57,new
+WMT-00596,2025-08-22 13:30:57,WMT | Goldman Sachs,rating,,Buy,2025-08-22 13:30:57,new
+WMT-00597,2025-09-03 10:27:45,WMT | Tigress Financial,price_target_usd,,125.0,2025-09-03 10:27:45,new
+WMT-00597,2025-09-03 10:27:45,WMT | Tigress Financial,rating,,Buy,2025-09-03 10:27:45,corroborate
+WMT-00598,2025-09-17 09:07:19,WMT | B of A Securities,price_target_usd,,125.00,2025-09-17 09:07:19,new
+WMT-00598,2025-09-17 09:07:19,WMT | B of A Securities,rating,,Buy,2025-09-17 09:07:19,corroborate
+WMT-00599,2025-09-24 07:47:25,WMT | Telsey Advisory Group,price_target_usd,,118.00,2025-09-24 07:47:25,corroborate
+WMT-00599,2025-09-24 07:47:25,WMT | Telsey Advisory Group,rating,,Outperform,2025-09-24 07:47:25,corroborate
+WMT-00600,2025-09-24 12:22:09,WMT | Piper Sandler,price_target_usd,,111.00,2025-09-24 12:22:09,new
+WMT-00600,2025-09-24 12:22:09,WMT | Piper Sandler,rating,,Overweight,2025-09-24 12:22:09,corroborate
+WMT-00601,2025-10-15 08:26:10,WMT | BTIG,price_target_usd,,120.00,2025-10-15 08:26:10,new
+WMT-00601,2025-10-15 08:26:10,WMT | BTIG,rating,,Buy,2025-10-15 08:26:10,new
+WMT-00602,2025-10-21 11:00:44,WMT | Evercore ISI Group,price_target_usd,,111.00,2025-10-21 11:00:44,new
+WMT-00602,2025-10-21 11:00:44,WMT | Evercore ISI Group,rating,,Outperform,2025-10-21 11:00:44,corroborate
+WMT-00603,2025-10-23 17:32:25,WMT | UBS,price_target_usd,,122.00,2025-10-23 17:32:25,new
+WMT-00603,2025-10-23 17:32:25,WMT | UBS,rating,,Buy,2025-10-23 17:32:25,corroborate
+WMT-00604,2025-10-29 13:03:57,WMT | RBC Capital,price_target_usd,,116.00,2025-10-29 13:03:57,new
+WMT-00604,2025-10-29 13:03:57,WMT | RBC Capital,rating,,Outperform,2025-10-29 13:03:57,corroborate
+WMT-00605,2025-11-10 12:28:25,WMT | JP Morgan,price_target_usd,,128.0,2025-11-10 12:28:25,new
+WMT-00605,2025-11-10 12:28:25,WMT | JP Morgan,rating,,Overweight,2025-11-10 12:28:25,corroborate
+WMT-00606,2025-11-12 10:05:36,WMT | Wells Fargo,price_target_usd,,110.00,2025-11-12 10:05:36,new
+WMT-00606,2025-11-12 10:05:36,WMT | Wells Fargo,rating,,Overweight,2025-11-12 10:05:36,corroborate
+WMT-00607,2025-11-14 15:25:48,WMT | Telsey Advisory Group,price_target_usd,,118.00,2025-11-14 15:25:48,corroborate
+WMT-00607,2025-11-14 15:25:48,WMT | Telsey Advisory Group,rating,,Outperform,2025-11-14 15:25:48,corroborate
+WMT-00608,2025-11-20 13:22:48,WMT | Truist Securities,price_target_usd,,119.0,2025-11-20 13:22:48,new
+WMT-00608,2025-11-20 13:22:48,WMT | Truist Securities,rating,,Buy,2025-11-20 13:22:48,corroborate
+WMT-00609,2025-11-21 05:35:59,WMT | BTIG,price_target_usd,,125.00,2025-11-21 05:35:59,new
+WMT-00609,2025-11-21 05:35:59,WMT | BTIG,rating,,Buy,2025-11-21 05:35:59,corroborate
+WMT-00610,2025-11-21 07:59:11,WMT | BMO Capital,price_target_usd,,125.00,2025-11-21 07:59:11,new
+WMT-00610,2025-11-21 07:59:11,WMT | BMO Capital,rating,,Outperform,2025-11-21 07:59:11,new
+WMT-00611,2025-11-21 08:01:36,WMT | Telsey Advisory Group,price_target_usd,,130.0,2025-11-21 08:01:36,new
+WMT-00611,2025-11-21 08:01:36,WMT | Telsey Advisory Group,rating,,Outperform,2025-11-21 08:01:36,corroborate
+WMT-00612,2025-11-21 08:45:16,WMT | Keybanc,price_target_usd,,120.00,2025-11-21 08:45:16,new
+WMT-00612,2025-11-21 08:45:16,WMT | Keybanc,rating,,Overweight,2025-11-21 08:45:16,corroborate
+WMT-00613,2025-11-21 08:59:44,WMT | Morgan Stanley,price_target_usd,,125.0,2025-11-21 08:59:44,new
+WMT-00613,2025-11-21 08:59:44,WMT | Morgan Stanley,rating,,Overweight,2025-11-21 08:59:44,corroborate
+WMT-00614,2025-11-21 09:17:01,WMT | Baird,price_target_usd,,121.00,2025-11-21 09:17:01,new
+WMT-00614,2025-11-21 09:17:01,WMT | Baird,rating,,Outperform,2025-11-21 09:17:01,corroborate
+WMT-00615,2025-11-21 09:17:34,WMT | Guggenheim,price_target_usd,,120.00,2025-11-21 09:17:34,new
+WMT-00615,2025-11-21 09:17:34,WMT | Guggenheim,rating,,Buy,2025-11-21 09:17:34,corroborate
+WMT-00616,2025-11-21 09:45:47,WMT | RBC Capital,price_target_usd,,116.00,2025-11-21 09:45:47,new
+WMT-00616,2025-11-21 09:45:47,WMT | RBC Capital,rating,,Outperform,2025-11-21 09:45:47,corroborate
+WMT-00617,2025-11-21 09:48:00,WMT | Evercore ISI Group,price_target_usd,,115.00,2025-11-21 09:48:00,new
+WMT-00617,2025-11-21 09:48:00,WMT | Evercore ISI Group,rating,,Outperform,2025-11-21 09:48:00,corroborate
+WMT-00618,2025-11-21 10:34:22,WMT | Wells Fargo,price_target_usd,,120.00,2025-11-21 10:34:22,new
+WMT-00618,2025-11-21 10:34:22,WMT | Wells Fargo,rating,,Overweight,2025-11-21 10:34:22,new
+WMT-00619,2025-11-21 12:00:46,WMT | Piper Sandler,price_target_usd,,123.00,2025-11-21 12:00:46,new
+WMT-00619,2025-11-21 12:00:46,WMT | Piper Sandler,rating,,Overweight,2025-11-21 12:00:46,corroborate
+WMT-00620,2025-11-21 12:03:36,WMT | Bernstein,price_target_usd,,122.00,2025-11-21 12:03:36,new
+WMT-00620,2025-11-21 12:03:36,WMT | Bernstein,rating,,Outperform,2025-11-21 12:03:36,corroborate
+WMT-00621,2025-11-21 12:58:48,WMT | DA Davidson,price_target_usd,,130.00,2025-11-21 12:58:48,new
+WMT-00621,2025-11-21 12:58:48,WMT | DA Davidson,rating,,Buy,2025-11-21 12:58:48,corroborate
+WMT-00622,2025-11-21 14:24:01,WMT | JP Morgan,price_target_usd,,129.0,2025-11-21 14:24:01,new
+WMT-00622,2025-11-21 14:24:01,WMT | JP Morgan,rating,,Overweight,2025-11-21 14:24:01,corroborate
+WMT-00623,2025-12-03 15:07:24,WMT | Tigress Financial,price_target_usd,,130.0,2025-12-03 15:07:24,new
+WMT-00623,2025-12-03 15:07:24,WMT | Tigress Financial,rating,,Buy,2025-12-03 15:07:24,corroborate
+WMT-00624,2025-12-09 10:32:36,WMT | Evercore ISI Group,price_target_usd,,117.00,2025-12-09 10:32:36,new
+WMT-00624,2025-12-09 10:32:36,WMT | Evercore ISI Group,rating,,Outperform,2025-12-09 10:32:36,corroborate
+WMT-00625,2025-12-16 09:33:19,WMT | Evercore ISI Group,price_target_usd,,120.0,2025-12-16 09:33:19,new
+WMT-00625,2025-12-16 09:33:19,WMT | Evercore ISI Group,rating,,Outperform,2025-12-16 09:33:19,new
+WMT-00626,2025-12-19 08:58:07,WMT | Wells Fargo,price_target_usd,,130.00,2025-12-19 08:58:07,new
+WMT-00626,2025-12-19 08:58:07,WMT | Wells Fargo,rating,,Overweight,2025-12-19 08:58:07,corroborate
+WMT-00627,2025-12-26 06:32:57,WMT | CICC,price_target_usd,,125.00,2025-12-26 06:32:57,new
+WMT-00627,2025-12-26 06:32:57,WMT | CICC,rating,,Outperform,2025-12-26 06:32:57,new
+WMT-00628,2026-01-05 08:39:08,WMT | Bernstein,price_target_usd,,129.0,2026-01-05 08:39:08,new
+WMT-00628,2026-01-05 08:39:08,WMT | Bernstein,rating,,Outperform,2026-01-05 08:39:08,corroborate
+WMT-00629,2026-01-05 09:03:27,WMT | Mizuho,price_target_usd,,125.0,2026-01-05 09:03:27,new
+WMT-00629,2026-01-05 09:03:27,WMT | Mizuho,rating,,Outperform,2026-01-05 09:03:27,corroborate
+WMT-00630,2026-01-08 11:32:56,WMT | Oppenheimer,price_target_usd,,125.0,2026-01-08 11:32:56,new
+WMT-00630,2026-01-08 11:32:56,WMT | Oppenheimer,rating,,Outperform,2026-01-08 11:32:56,corroborate
+WMT-00631,2026-01-08 15:58:03,WMT | Barclays,price_target_usd,,125.00,2026-01-08 15:58:03,new
+WMT-00631,2026-01-08 15:58:03,WMT | Barclays,rating,,Overweight,2026-01-08 15:58:03,corroborate
+WMT-00632,2026-01-14 07:14:48,WMT | Telsey Advisory Group,price_target_usd,,135.00,2026-01-14 07:14:48,new
+WMT-00632,2026-01-14 07:14:48,WMT | Telsey Advisory Group,rating,,Outperform,2026-01-14 07:14:48,corroborate
+WMT-00633,2026-01-14 09:32:35,WMT | BTIG,price_target_usd,,125.00,2026-01-14 09:32:35,corroborate
+WMT-00633,2026-01-14 09:32:35,WMT | BTIG,rating,,Buy,2026-01-14 09:32:35,corroborate
+WMT-00634,2026-01-14 10:06:31,WMT | RBC Capital,price_target_usd,,126.00,2026-01-14 10:06:31,new
+WMT-00634,2026-01-14 10:06:31,WMT | RBC Capital,rating,,Outperform,2026-01-14 10:06:31,corroborate
+WMT-00635,2026-01-15 11:51:29,WMT | Morgan Stanley,price_target_usd,,135.0,2026-01-15 11:51:29,new
+WMT-00635,2026-01-15 11:51:29,WMT | Morgan Stanley,rating,,Overweight,2026-01-15 11:51:29,corroborate
+WMT-00636,2026-01-16 15:39:52,WMT | Telsey Advisory Group,price_target_usd,,135.00,2026-01-16 15:39:52,new
+WMT-00636,2026-01-16 15:39:52,WMT | Telsey Advisory Group,rating,,Outperform,2026-01-16 15:39:52,corroborate
+WMT-00637,2026-01-23 13:03:25,WMT | Tigress Financial,price_target_usd,,135.0,2026-01-23 13:03:25,new
+WMT-00637,2026-01-23 13:03:25,WMT | Tigress Financial,rating,,Buy,2026-01-23 13:03:25,corroborate
+WMT-00638,2026-02-03 09:22:01,WMT | Evercore ISI Group,price_target_usd,,130.00,2026-02-03 09:22:01,new
+WMT-00638,2026-02-03 09:22:01,WMT | Evercore ISI Group,rating,,Outperform,2026-02-03 09:22:01,corroborate
+WMT-00639,2026-02-03 12:27:11,WMT | Piper Sandler,price_target_usd,,130.00,2026-02-03 12:27:11,new
+WMT-00639,2026-02-03 12:27:11,WMT | Piper Sandler,rating,,Overweight,2026-02-03 12:27:11,corroborate
+WMT-00640,2026-02-06 14:13:13,WMT | Citigroup,price_target_usd,,147.0,2026-02-06 14:13:13,new
+WMT-00640,2026-02-06 14:13:13,WMT | Citigroup,rating,,Buy,2026-02-06 14:13:13,corroborate
+WMT-00641,2026-02-09 07:14:26,WMT | Mizuho,price_target_usd,,137.0,2026-02-09 07:14:26,new
+WMT-00641,2026-02-09 07:14:26,WMT | Mizuho,rating,,Outperform,2026-02-09 07:14:26,corroborate
+WMT-00642,2026-02-09 11:58:04,WMT | Oppenheimer,price_target_usd,,140.0,2026-02-09 11:58:04,new
+WMT-00642,2026-02-09 11:58:04,WMT | Oppenheimer,rating,,Outperform,2026-02-09 11:58:04,corroborate
+WMT-00643,2026-02-10 08:58:47,WMT | Wells Fargo,price_target_usd,,140.00,2026-02-10 08:58:47,new
+WMT-00643,2026-02-10 08:58:47,WMT | Wells Fargo,rating,,Overweight,2026-02-10 08:58:47,new
+WMT-00644,2026-02-11 06:16:25,WMT | BTIG,price_target_usd,,140.00,2026-02-11 06:16:25,new
+WMT-00644,2026-02-11 06:16:25,WMT | BTIG,rating,,Buy,2026-02-11 06:16:25,corroborate
+WMT-00645,2026-02-11 11:26:31,WMT | RBC Capital,price_target_usd,,140.00,2026-02-11 11:26:31,new
+WMT-00645,2026-02-11 11:26:31,WMT | RBC Capital,rating,,Outperform,2026-02-11 11:26:31,corroborate
+WMT-00646,2026-02-12 08:06:04,WMT | Telsey Advisory Group,price_target_usd,,135.00,2026-02-12 08:06:04,corroborate
+WMT-00646,2026-02-12 08:06:04,WMT | Telsey Advisory Group,rating,,Outperform,2026-02-12 08:06:04,corroborate
+WMT-00647,2026-02-13 08:51:10,WMT | Keybanc,price_target_usd,,145.0,2026-02-13 08:51:10,new
+WMT-00647,2026-02-13 08:51:10,WMT | Keybanc,rating,,Overweight,2026-02-13 08:51:10,corroborate
+WMT-00648,2026-02-18 11:43:22,WMT | DA Davidson,price_target_usd,,135.00,2026-02-18 11:43:22,new
+WMT-00648,2026-02-18 11:43:22,WMT | DA Davidson,rating,,Buy,2026-02-18 11:43:22,corroborate
+WMT-00649,2026-02-20 05:01:56,WMT | BTIG,price_target_usd,,140.00,2026-02-20 05:01:56,corroborate
+WMT-00649,2026-02-20 05:01:56,WMT | BTIG,rating,,Buy,2026-02-20 05:01:56,corroborate
+WMT-00650,2026-02-20 06:51:10,WMT | HSBC,price_target_usd,,131.00,2026-02-20 06:51:10,new
+WMT-00650,2026-02-20 06:51:10,WMT | HSBC,rating,,Hold,2026-02-20 06:51:10,new
+WMT-00651,2026-02-20 07:36:58,WMT | Telsey Advisory Group,price_target_usd,,140.0,2026-02-20 07:36:58,new
+WMT-00651,2026-02-20 07:36:58,WMT | Telsey Advisory Group,rating,,Outperform,2026-02-20 07:36:58,corroborate
+WMT-00652,2026-02-20 09:30:56,WMT | DA Davidson,price_target_usd,,150.00,2026-02-20 09:30:56,new
+WMT-00652,2026-02-20 09:30:56,WMT | DA Davidson,rating,,Buy,2026-02-20 09:30:56,corroborate
+WMT-00653,2026-02-20 10:31:41,WMT | Truist Securities,price_target_usd,,139.0,2026-02-20 10:31:41,new
+WMT-00653,2026-02-20 10:31:41,WMT | Truist Securities,rating,,Buy,2026-02-20 10:31:41,corroborate
+WMT-00654,2026-02-20 11:12:59,WMT | UBS,price_target_usd,,147.00,2026-02-20 11:12:59,new
+WMT-00654,2026-02-20 11:12:59,WMT | UBS,rating,,Buy,2026-02-20 11:12:59,corroborate
+WMT-00655,2026-02-20 12:20:53,WMT | Bernstein,price_target_usd,,134.00,2026-02-20 12:20:53,new
+WMT-00655,2026-02-20 12:20:53,WMT | Bernstein,rating,,Outperform,2026-02-20 12:20:53,new
+WMT-00656,2026-02-20 13:32:23,WMT | TD Cowen,price_target_usd,,145.00,2026-02-20 13:32:23,new
+WMT-00656,2026-02-20 13:32:23,WMT | TD Cowen,rating,,Buy,2026-02-20 13:32:23,corroborate
+WMT-00657,2026-02-23 10:02:34,WMT | Evercore ISI Group,price_target_usd,,135.0,2026-02-23 10:02:34,new
+WMT-00657,2026-02-23 10:02:34,WMT | Evercore ISI Group,rating,,Outperform,2026-02-23 10:02:34,corroborate
+WMT-00658,2026-02-25 16:25:15,WMT | Tigress Financial,price_target_usd,,150.0,2026-02-25 16:25:15,new
+WMT-00658,2026-02-25 16:25:15,WMT | Tigress Financial,rating,,Buy,2026-02-25 16:25:15,corroborate
+WMT-00659,2026-04-13 09:55:43,WMT | Guggenheim,price_target_usd,,137.0,2026-04-13 09:55:43,new
+WMT-00659,2026-04-13 09:55:43,WMT | Guggenheim,rating,,Buy,2026-04-13 09:55:43,corroborate
+WMT-00660,2026-04-22 11:39:23,WMT | Morgan Stanley,price_target_usd,,140.0,2026-04-22 11:39:23,new
+WMT-00660,2026-04-22 11:39:23,WMT | Morgan Stanley,rating,,Overweight,2026-04-22 11:39:23,new
+WMT-00661,2026-05-06 06:07:04,WMT | BTIG,price_target_usd,,145.0,2026-05-06 06:07:04,new
+WMT-00661,2026-05-06 06:07:04,WMT | BTIG,rating,,Buy,2026-05-06 06:07:04,corroborate
+WMT-00662,2026-05-07 15:35:57,WMT | TD Cowen,price_target_usd,,150.0,2026-05-07 15:35:57,new
+WMT-00662,2026-05-07 15:35:57,WMT | TD Cowen,rating,,Buy,2026-05-07 15:35:57,corroborate
+WMT-00663,2026-05-11 15:20:32,WMT | Wolfe Research,price_target_usd,,137.00,2026-05-11 15:20:32,new
+WMT-00663,2026-05-11 15:20:32,WMT | Wolfe Research,rating,,Outperform,2026-05-11 15:20:32,new
+WMT-00664,2026-05-15 11:00:09,WMT | Piper Sandler,price_target_usd,,137.00,2026-05-15 11:00:09,new
+WMT-00664,2026-05-15 11:00:09,WMT | Piper Sandler,rating,,Overweight,2026-05-15 11:00:09,corroborate
+WMT-00665,2026-05-21 15:33:17,WMT | Freedom Broker,price_target_usd,,133.0,2026-05-21 15:33:17,new
+WMT-00665,2026-05-21 15:33:17,WMT | Freedom Broker,rating,,Hold,2026-05-21 15:33:17,new
+WMT-00666,2026-05-22 08:08:40,WMT | BTIG,price_target_usd,,145.0,2026-05-22 08:08:40,corroborate
+WMT-00666,2026-05-22 08:08:40,WMT | BTIG,rating,,Buy,2026-05-22 08:08:40,corroborate
+WMT-00667,2026-05-22 10:34:20,WMT | BNP Paribas,price_target_usd,,146.0,2026-05-22 10:34:20,new
+WMT-00667,2026-05-22 10:34:20,WMT | BNP Paribas,rating,,Outperform,2026-05-22 10:34:20,corroborate
+WMT-00668,2026-05-22 11:45:29,WMT | RBC Capital,price_target_usd,,137.0,2026-05-22 11:45:29,new
+WMT-00668,2026-05-22 11:45:29,WMT | RBC Capital,rating,,Outperform,2026-05-22 11:45:29,new
+WMT-00669,2026-05-22 15:54:20,WMT | UBS,price_target_usd,,141.0,2026-05-22 15:54:20,new
+WMT-00669,2026-05-22 15:54:20,WMT | UBS,rating,,Buy,2026-05-22 15:54:20,corroborate
+WMT-00670,2026-05-29 17:42:09,WMT | Tigress Financial,price_target_usd,,155.0,2026-05-29 17:42:09,new
+WMT-00670,2026-05-29 17:42:09,WMT | Tigress Financial,rating,,Buy,2026-05-29 17:42:09,corroborate
+WMT-00671,2026-06-03 07:30:50,WMT | BTIG,price_target_usd,,145.0,2026-06-03 07:30:50,corroborate
+WMT-00671,2026-06-03 07:30:50,WMT | BTIG,rating,,Buy,2026-06-03 07:30:50,corroborate
+WMT-00672,2026-06-08 06:11:32,WMT | BTIG,price_target_usd,,145.0,2026-06-08 06:11:32,corroborate
+WMT-00672,2026-06-08 06:11:32,WMT | BTIG,rating,,Buy,2026-06-08 06:11:32,corroborate
+WMT-00673,2026-07-22 11:05:09,WMT | RBC Capital,price_target_usd,,137.00,2026-07-22 11:05:09,new
+WMT-00673,2026-07-22 11:05:09,WMT | RBC Capital,rating,,Outperform,2026-07-22 11:05:09,corroborate
+WMT-00674,2026-07-31 16:20:19,WMT | Bernstein,price_target_usd,,142.0,2026-07-31 16:20:19,new
+WMT-00674,2026-07-31 16:20:19,WMT | Bernstein,rating,,Outperform,2026-07-31 16:20:19,new
+WMT-00675,2026-08-04 06:19:46,WMT | Oppenheimer,rating,,Perform,2026-08-04 06:19:46,new
+WMT-00676,2026-08-12 09:59:59,WMT | RBC Capital,price_target_usd,,137.00,2026-08-12 09:59:59,new
+WMT-00676,2026-08-12 09:59:59,WMT | RBC Capital,rating,,Outperform,2026-08-12 09:59:59,corroborate
+WMT-00677,2026-08-17 09:12:29,WMT | Guggenheim,price_target_usd,,135.0,2026-08-17 09:12:29,new
+WMT-00677,2026-08-17 09:12:29,WMT | Guggenheim,rating,,Buy,2026-08-17 09:12:29,corroborate
+WMT-00678,2026-08-17 15:38:04,WMT | DA Davidson,price_target_usd,,150.00,2026-08-17 15:38:04,corroborate
+WMT-00678,2026-08-17 15:38:04,WMT | DA Davidson,rating,,Buy,2026-08-17 15:38:04,corroborate
+WMT-00679,2026-08-21 05:42:09,WMT | BTIG,price_target_usd,,140.0,2026-08-21 05:42:09,new
+WMT-00679,2026-08-21 05:42:09,WMT | BTIG,rating,,Buy,2026-08-21 05:42:09,corroborate
+WMT-00680,2026-08-21 08:14:37,WMT | Baird,price_target_usd,,120.0,2026-08-21 08:14:37,new
+WMT-00680,2026-08-21 08:14:37,WMT | Baird,rating,,Outperform,2026-08-21 08:14:37,corroborate
+WMT-00681,2026-08-21 08:21:32,WMT | RBC Capital,price_target_usd,,131.0,2026-08-21 08:21:32,new
+WMT-00681,2026-08-21 08:21:32,WMT | RBC Capital,rating,,Outperform,2026-08-21 08:21:32,new
+WMT-00682,2026-08-21 08:48:17,WMT | DA Davidson,price_target_usd,,132.0,2026-08-21 08:48:17,new
+WMT-00682,2026-08-21 08:48:17,WMT | DA Davidson,rating,,Buy,2026-08-21 08:48:17,corroborate
+WMT-00683,2026-08-21 08:53:51,WMT | Guggenheim,price_target_usd,,130.0,2026-08-21 08:53:51,new
+WMT-00683,2026-08-21 08:53:51,WMT | Guggenheim,rating,,Buy,2026-08-21 08:53:51,corroborate
+WMT-00684,2026-08-21 09:50:15,WMT | Morgan Stanley,price_target_usd,,125.00,2026-08-21 09:50:15,new
+WMT-00684,2026-08-21 09:50:15,WMT | Morgan Stanley,rating,,Overweight,2026-08-21 09:50:15,new
+WMT-00685,2026-08-21 10:49:57,WMT | Wells Fargo,price_target_usd,,120.00,2026-08-21 10:49:57,new
+WMT-00685,2026-08-21 10:49:57,WMT | Wells Fargo,rating,,Overweight,2026-08-21 10:49:57,new
+WMT-00686,2026-08-21 11:45:04,WMT | UBS,price_target_usd,,130.0,2026-08-21 11:45:04,new
+WMT-00686,2026-08-21 11:45:04,WMT | UBS,rating,,Buy,2026-08-21 11:45:04,corroborate
+WMT-00687,2026-08-21 12:19:59,WMT | JP Morgan,price_target_usd,,125.0,2026-08-21 12:19:59,new
+WMT-00687,2026-08-21 12:19:59,WMT | JP Morgan,rating,,Overweight,2026-08-21 12:19:59,corroborate
+WMT-00688,2026-08-21 13:01:04,WMT | Piper Sandler,price_target_usd,,128.00,2026-08-21 13:01:04,new
+WMT-00688,2026-08-21 13:01:04,WMT | Piper Sandler,rating,,Overweight,2026-08-21 13:01:04,corroborate
+WMT-00689,2026-08-21 13:31:27,WMT | Truist Securities,price_target_usd,,114.00,2026-08-21 13:31:27,new
+WMT-00689,2026-08-21 13:31:27,WMT | Truist Securities,rating,,Buy,2026-08-21 13:31:27,new
+WMT-00690,2026-08-21 13:54:09,WMT | BNP Paribas,price_target_usd,,137.0,2026-08-21 13:54:09,new
+WMT-00690,2026-08-21 13:54:09,WMT | BNP Paribas,rating,,Outperform,2026-08-21 13:54:09,corroborate
+WMT-00691,2026-08-21 15:50:06,WMT | Citigroup,price_target_usd,,132.0,2026-08-21 15:50:06,new
+WMT-00691,2026-08-21 15:50:06,WMT | Citigroup,rating,,Buy,2026-08-21 15:50:06,corroborate
+WMT-00692,2026-08-21 16:07:51,WMT | Telsey Advisory Group,price_target_usd,,130.0,2026-08-21 16:07:51,new
+WMT-00692,2026-08-21 16:07:51,WMT | Telsey Advisory Group,rating,,Outperform,2026-08-21 16:07:51,corroborate
+WMT-00693,2026-08-31 09:24:19,WMT | Tigress Financial,price_target_usd,,155.0,2026-08-31 09:24:19,corroborate
+WMT-00693,2026-08-31 09:24:19,WMT | Tigress Financial,rating,,Buy,2026-08-31 09:24:19,corroborate
+WMT-00694,2026-09-10 09:10:20,WMT | BTIG,price_target_usd,,140.00,2026-09-10 09:10:20,corroborate
+WMT-00694,2026-09-10 09:10:20,WMT | BTIG,rating,,Buy,2026-09-10 09:10:20,corroborate
+WMT-00695,2026-09-10 11:17:47,WMT | DA Davidson,price_target_usd,,132.00,2026-09-10 11:17:47,corroborate
+WMT-00695,2026-09-10 11:17:47,WMT | DA Davidson,rating,,Buy,2026-09-10 11:17:47,corroborate
+WMT-00696,2026-09-29 08:42:41,WMT | Mizuho,price_target_usd,,125.0,2026-09-29 08:42:41,new
+WMT-00696,2026-09-29 08:42:41,WMT | Mizuho,rating,,Outperform,2026-09-29 08:42:41,corroborate
+WMT-00697,2026-10-15 06:29:32,WMT | Deutsche Bank,price_target_usd,,136.00,2026-10-15 06:29:32,new
+WMT-00697,2026-10-15 06:29:32,WMT | Deutsche Bank,rating,,Buy,2026-10-15 06:29:32,new
+WMT-00698,2026-10-20 08:45:50,WMT | Evercore ISI Group,price_target_usd,,130.00,2026-10-20 08:45:50,new
+WMT-00698,2026-10-20 08:45:50,WMT | Evercore ISI Group,rating,,Outperform,2026-10-20 08:45:50,corroborate
+WMT-00699,2026-11-09 15:31:57,WMT | JP Morgan,price_target_usd,,145.0,2026-11-09 15:31:57,new
+WMT-00699,2026-11-09 15:31:57,WMT | JP Morgan,rating,,Overweight,2026-11-09 15:31:57,corroborate
+WMT-00700,2026-11-09 15:59:37,WMT | UBS,price_target_usd,,149.0,2026-11-09 15:59:37,new
+WMT-00700,2026-11-09 15:59:37,WMT | UBS,rating,,Buy,2026-11-09 15:59:37,corroborate
+WMT-00701,2026-11-10 12:42:19,WMT | Mizuho,price_target_usd,,135.0,2026-11-10 12:42:19,new
+WMT-00701,2026-11-10 12:42:19,WMT | Mizuho,rating,,Outperform,2026-11-10 12:42:19,corroborate
+WMT-00702,2026-11-12 06:45:19,WMT | BTIG,price_target_usd,,140.00,2026-11-12 06:45:19,corroborate
+WMT-00702,2026-11-12 06:45:19,WMT | BTIG,rating,,Buy,2026-11-12 06:45:19,corroborate
+WMT-00703,2026-11-13 11:12:18,WMT | Wells Fargo,price_target_usd,,135.00,2026-11-13 11:12:18,new
+WMT-00703,2026-11-13 11:12:18,WMT | Wells Fargo,rating,,Overweight,2026-11-13 11:12:18,new
+WMT-00704,2026-11-20 07:24:23,WMT | BTIG,price_target_usd,,140.00,2026-11-20 07:24:23,corroborate
+WMT-00704,2026-11-20 07:24:23,WMT | BTIG,rating,,Buy,2026-11-20 07:24:23,corroborate
+WMT-00705,2026-11-20 08:02:43,WMT | Morgan Stanley,price_target_usd,,135.0,2026-11-20 08:02:43,new
+WMT-00705,2026-11-20 08:02:43,WMT | Morgan Stanley,rating,,Overweight,2026-11-20 08:02:43,new
+WMT-00706,2026-11-20 08:23:06,WMT | Piper Sandler,price_target_usd,,138.00,2026-11-20 08:23:06,new
+WMT-00706,2026-11-20 08:23:06,WMT | Piper Sandler,rating,,Overweight,2026-11-20 08:23:06,corroborate
+WMT-00707,2026-11-20 09:09:16,WMT | Keybanc,price_target_usd,,145.00,2026-11-20 09:09:16,new
+WMT-00707,2026-11-20 09:09:16,WMT | Keybanc,rating,,Overweight,2026-11-20 09:09:16,new
+WMT-00708,2026-11-20 09:22:24,WMT | Evercore ISI Group,price_target_usd,,135.00,2026-11-20 09:22:24,new
+WMT-00708,2026-11-20 09:22:24,WMT | Evercore ISI Group,rating,,Outperform,2026-11-20 09:22:24,corroborate
+WMT-00709,2026-11-20 09:36:00,WMT | Truist Securities,price_target_usd,,134.00,2026-11-20 09:36:00,new
+WMT-00709,2026-11-20 09:36:00,WMT | Truist Securities,rating,,Buy,2026-11-20 09:36:00,new
+WMT-00710,2026-11-20 09:45:43,WMT | TD Cowen,price_target_usd,,147.0,2026-11-20 09:45:43,new
+WMT-00710,2026-11-20 09:45:43,WMT | TD Cowen,rating,,Buy,2026-11-20 09:45:43,corroborate
+WMT-00711,2026-11-20 10:19:57,WMT | RBC Capital,price_target_usd,,131.00,2026-11-20 10:19:57,new
+WMT-00711,2026-11-20 10:19:57,WMT | RBC Capital,rating,,Outperform,2026-11-20 10:19:57,new
+WMT-00712,2026-11-20 12:43:48,WMT | B of A Securities,price_target_usd,,141.00,2026-11-20 12:43:48,new
+WMT-00712,2026-11-20 12:43:48,WMT | B of A Securities,rating,,Buy,2026-11-20 12:43:48,new
+WMT-00713,2026-11-20 12:56:12,WMT | Raymond James,price_target_usd,,140.00,2026-11-20 12:56:12,new
+WMT-00713,2026-11-20 12:56:12,WMT | Raymond James,rating,,Outperform,2026-11-20 12:56:12,corroborate
+WMT-00714,2026-11-20 13:58:00,WMT | Jefferies,price_target_usd,,145.00,2026-11-20 13:58:00,new
+WMT-00714,2026-11-20 13:58:00,WMT | Jefferies,rating,,Buy,2026-11-20 13:58:00,corroborate
+WMT-00715,2026-11-20 14:36:34,WMT | Telsey Advisory Group,price_target_usd,,145.0,2026-11-20 14:36:34,new
+WMT-00715,2026-11-20 14:36:34,WMT | Telsey Advisory Group,rating,,Outperform,2026-11-20 14:36:34,corroborate

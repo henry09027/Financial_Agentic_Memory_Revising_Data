@@ -1,0 +1,79 @@
+{
+ "qid": "broker-QCOM-001-Q3-today",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "broker",
+ "entity": "QCOM",
+ "qtype": "change_since_initiation",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "By what percent has Cantor Fitzgerald's QCOM price target changed since it initiated coverage? (split-adjusted, in percent)",
+ "gold": "10",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "QCOM-00298|QCOM-00457",
+ "answer": "0",
+ "cited": "QCOM-00298",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.5,
+ "in_tokens": 16066,
+ "out_tokens": 258,
+ "seconds": 1.3734,
+ "n_dropped": 0,
+ "n_sql": 4,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 5,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at ASC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\", \"SELECT subject, attribute, period, value_num, effective_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY effective_at ASC\", \"SELECT subject, attribute, period, value_num, effective_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' AND effective_at <= '2024-01-23 05:14:54' ORDER BY effective_at ASC\"]",
+ "created": "2026-11-22T02:29:15",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: By what percent has Cantor Fitzgerald's QCOM price target changed since it initiated coverage? (split-adjusted, in percent)\n\nDatabase contents at the as-of time: 428 facts, 200 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'QCOM | Argus Research': price_target_usd (2), rating (2)\n  'QCOM | B of A Securities': price_target_usd (6), rating (5)\n  'QCOM | BNP Paribas': price_target_usd (1), rating (1)\n  'QCOM | Baird': price_target_usd (5), rating (4)\n  'QCOM | Barclays': price_target_usd (9), rating (7)\n  'QCOM | Benchmark': price_target_usd (8), rating (8)\n  'QCOM | Bernstein': price_target_usd (6), rating (5)\n  'QCOM | Canaccord Genuity': price_target_usd (3), rating (2)\n  'QCOM | Cantor Fitzgerald': price_target_usd (22), rating (20)\n  'QCOM | Citigroup': price_target_usd (12), rating (11)\n  'QCOM | DZ Bank': price_target_usd (1), rating (1)\n  'QCOM | Daiwa Capital': price_target_usd (3), rating (2)\n  'QCOM | Deutsche Bank': price_target_usd (1), rating (1)\n  'QCOM | Evercore ISI Group': price_target_usd (9), rating (8)\n  'QCOM | Freedom Broker': price_target_usd (1), rating (1)\n  'QCOM | HSBC': price_target_usd (2), rating (2)\n  'QCOM | JP Morgan': price_target_usd (18), rating (13)\n  'QCOM | Keybanc': price_target_usd (5), rating (6)\n  'QCOM | Loop Capital': price_target_usd (3), rating (3)\n  'QCOM | Melius Research': price_target_usd (1), rating (1)\n  'QCOM | Mizuho': price_target_usd (14), rating (10)\n  'QCOM | Morgan Stanley': price_target_usd (9), rating (6)\n  'QCOM | Piper Sandler': price_target_usd (7), rating (7)\n  'QCOM | RBC Capital': price_target_usd (6), rating (6)\n  'QCOM | Rosenblatt': price_target_usd (16), rating (15)\n  'QCOM | Seaport Global': price_target_usd (1), rating (2)\n  'QCOM | Susquehanna': price_target_usd (15), rating (13)\n  'QCOM | TD Cowen': price_target_usd (11), rating (9)\n  'QCOM | Tigress Financial': price_target_usd (2), rating (2)\n  'QCOM | UBS': price_target_usd (15), rating (11)\n  'QCOM | Wells Fargo': price_target_usd (13), rating (12)\n  'QCOM | WestPark Capital': rating (2)\n  'QCOM | Wolfe Research': price_target_usd (1), rating (2)\nkind values: 'corroborate', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at ASC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n,150.0,2024-01-23 05:14:54,2024-01-23 05:14:54,new,QCOM-00298\n,150.0,2024-02-01 12:02:11,2024-02-01 12:02:11,corroborate,QCOM-00303\n,150.0,2024-02-12 12:40:34,2024-02-12 12:40:34,corroborate,QCOM-00306\n,150.0,2024-03-04 14:14:57,2024-03-04 14:14:57,corroborate,QCOM-00307\n,150.0,2024-03-11 12:23:22,2024-03-11 12:23:22,corroborate,QCOM-00308\n,190.0,2024-04-08 13:59:30,2024-04-08 13:59:30,new,QCOM-00310\n,190.0,2024-05-02 12:06:43,2024-05-02 12:06:43,corroborate,QCOM-00323\n,215.0,2024-07-16 12:36:59,2024-07-16 12:36:59,new,QCOM-00336\n,215.0,2024-08-01 13:20:10,2024-08-01 13:20:10,corroborate,QCOM-00346\n,160.0,2024-10-08 15:11:23,2024-10-08 15:11:23,new,QCOM-00351\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n,200.0,2026-06-25 09:54:37,2026-07-30 09:06:55,inferred,QCOM-00457\n,165.0,2026-07-30 09:06:55,2026-07-30 09:06:55,new,QCOM-00457\n,220.0,2026-06-25 09:54:36,2026-06-25 09:54:36,new,QCOM-00443\n,200.0,2026-06-22 09:28:36,2026-06-22 09:28:36,new,QCOM-00439\n,150.0,2026-04-30 09:52:56,2026-04-30 09:52:56,new,QCOM-00425\n,135.0,2026-02-05 09:38:23,2026-02-05 09:38:23,new,QCOM-00411\n,185.0,2025-05-01 12:42:12,2026-02-02 10:47:42,inferred,QCOM-00407\n,160.0,2026-02-02 10:47:42,2026-02-02 10:47:42,new,QCOM-00407\n,150.0,2025-05-01 12:42:11,2025-05-01 12:42:11,corroborate,QCOM-00381\n,160.0,2025-02-06 08:56:34,2025-02-06 08:56:34,corroborate,QCOM-00371\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value_num, effective_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY effective_at ASC\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value_num,effective_at,kind,evidence_id\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2024-01-23 05:14:54,new,QCOM-00298\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2024-02-01 12:02:11,corroborate,QCOM-00303\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2024-02-12 12:40:34,corroborate,QCOM-00306\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2024-03-04 14:14:57,corroborate,QCOM-00307\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2024-03-11 12:23:22,corroborate,QCOM-00308\nQCOM | Cantor Fitzgerald,price_target_usd,,190.0,2024-04-08 13:59:30,new,QCOM-00310\nQCOM | Cantor Fitzgerald,price_target_usd,,190.0,2024-05-02 12:06:43,corroborate,QCOM-00323\nQCOM | Cantor Fitzgerald,price_target_usd,,215.0,2024-07-16 12:36:59,new,QCOM-00336\nQCOM | Cantor Fitzgerald,price_target_usd,,215.0,2024-08-01 13:20:10,corroborate,QCOM-00346\nQCOM | Cantor Fitzgerald,price_target_usd,,160.0,2024-10-08 15:11:23,new,QCOM-00351\nQCOM | Cantor Fitzgerald,price_target_usd,,160.0,2024-11-07 10:27:52,corroborate,QCOM-00357\nQCOM | Cantor Fitzgerald,price_target_usd,,160.0,2024-11-20 08:46:46,corroborate,QCOM-00364\nQCOM | Cantor Fitzgerald,price_target_usd,,160.0,2025-02-06 08:56:34,corroborate,QCOM-00371\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2025-05-01 12:42:11,corroborate,QCOM-00381\nQCOM | Cantor Fitzgerald,price_target_usd,,185.0,2025-05-01 12:42:12,inferred,QCOM-00407\nQCOM | Cantor Fitzgerald,price_target_usd,,160.0,2026-02-02 10:47:42,new,QCOM-00407\nQCOM | Cantor Fitzgerald,price_target_usd,,135.0,2026-02-05 09:38:23,new,QCOM-00411\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2026-04-30 09:52:56,new,QCOM-00425\nQCOM | Cantor Fitzgerald,price_target_usd,,200.0,2026-06-22 09:28:36,new,QCOM-00439\nQCOM | Cantor Fitzgerald,price_target_usd,,220.0,2026-06-25 09:54:36,new,QCOM-00443\nQCOM | Cantor Fitzgerald,price_target_usd,,200.0,2026-06-25 09:54:37,inferred,QCOM-00457\nQCOM | Cantor Fitzgerald,price_target_usd,,165.0,2026-07-30 09:06:55,new,QCOM-00457\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value_num, effective_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' AND effective_at <= '2024-01-23 05:14:54' ORDER BY effective_at ASC\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value_num,effective_at,kind,evidence_id\nQCOM | Cantor Fitzgerald,price_target_usd,,150.0,2024-01-23 05:14:54,new,QCOM-00298\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 0, \"evidence_ids\": [\"QCOM-00298\"]}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at ASC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT subject, attribute, period, value_num, effective_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' ORDER BY effective_at ASC\n```\n\n===== next turn =====\n\n```sql\nSELECT subject, attribute, period, value_num, effective_at, kind, evidence_id FROM facts WHERE subject = 'QCOM | Cantor Fitzgerald' AND attribute = 'price_target_usd' AND effective_at <= '2024-01-23 05:14:54' ORDER BY effective_at ASC\n```\n\n===== next turn =====\n\n```json\n{\"answer\": 0, \"evidence_ids\": [\"QCOM-00298\"]}\n```"
+}

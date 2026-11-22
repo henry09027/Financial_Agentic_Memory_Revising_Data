@@ -1,0 +1,71 @@
+{
+ "qid": "broker-IBM-001-Q7-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "IBM",
+ "qtype": "event_lookup",
+ "mode": "as_of",
+ "as_of": "2023-07-17 08:21:00",
+ "question": "In July 2023, what rating did Morgan Stanley move IBM to, and what was its new price target (USD)? Answer as 'Rating; target'.",
+ "gold": "Equal-Weight; 135",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "IBM-00139",
+ "answer": "Equal-Weight; 135",
+ "cited": "IBM-00139",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 9439,
+ "out_tokens": 239,
+ "seconds": 0.8255,
+ "n_dropped": 0,
+ "n_sql": 3,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 4,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Morgan Stanley' AND attribute = 'rating' ORDER BY learned_at DESC LIMIT 10\", \"SELECT evidence_id, text FROM evidence WHERE evidence_id IN ('IBM-00139', 'IBM-00131', 'IBM-00124', 'IBM-00121', 'IBM-00119', 'IBM-00116', 'IBM-00112', 'IBM-00103', 'IBM-00097', 'IBM-00096')\"]",
+ "created": "2026-11-22T01:35:10",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2023-07-17 08:21:00\nQuestion: In July 2023, what rating did Morgan Stanley move IBM to, and what was its new price target (USD)? Answer as 'Rating; target'.\n\nDatabase contents at the as-of time: 93 facts, 47 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'IBM': split_ratio (1)\n  'IBM | B of A Securities': price_target_usd (1), rating (1)\n  'IBM | BMO Capital': price_target_usd (10), rating (10)\n  'IBM | Citigroup': price_target_usd (2), rating (2)\n  'IBM | Credit Suisse': price_target_usd (9), rating (9)\n  'IBM | Edward Jones': price_target_usd (1), rating (1)\n  'IBM | Evercore ISI Group': price_target_usd (1), rating (1)\n  'IBM | Goldman Sachs': price_target_usd (1), rating (1)\n  'IBM | JP Morgan': price_target_usd (1), rating (1)\n  'IBM | Jefferies': price_target_usd (1), rating (1)\n  'IBM | MoffettNathanson': price_target_usd (1), rating (1)\n  'IBM | Morgan Stanley': price_target_usd (11), rating (11)\n  'IBM | Societe Generale': price_target_usd (1), rating (1)\n  'IBM | Stifel': price_target_usd (3), rating (3)\n  'IBM | Tigress Financial': price_target_usd (1), rating (1)\n  'IBM | UBS': price_target_usd (1), rating (1)\n  'IBM | Wedbush': price_target_usd (1), rating (1)\nkind values: 'corroborate', 'event', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n,135.0,2023-07-12 09:25:00,2023-07-12 09:25:00,corroborate,IBM-00139\n,135.0,2023-04-20 07:54:52,2023-04-20 07:54:52,new,IBM-00131\n,148.0,2023-01-18 05:14:11,2023-01-18 05:14:11,new,IBM-00124\n,152.0,2022-10-06 08:26:30,2022-10-06 08:26:30,new,IBM-00121\n,155.0,2022-07-19 07:35:35,2022-07-19 07:35:35,new,IBM-00119\n,157.0,2022-04-20 07:52:00,2022-04-20 07:52:00,new,IBM-00116\n,150.0,2022-04-14 08:11:24,2022-04-14 08:11:24,new,IBM-00112\n,164.0,2021-07-20 09:14:00,2021-07-20 09:14:00,new,IBM-00103\n,152.0,2021-04-20 09:32:55,2021-04-20 09:32:55,new,IBM-00097\n,150.0,2021-04-08 08:04:47,2021-04-08 08:04:47,new,IBM-00096\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Morgan Stanley' AND attribute = 'rating' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n,,2023-07-12 09:25:00,2023-07-12 09:25:00,corroborate,IBM-00139\n,,2023-04-20 07:54:52,2023-04-20 07:54:52,corroborate,IBM-00131\n,,2023-01-18 05:14:11,2023-01-18 05:14:11,new,IBM-00124\n,,2022-10-06 08:26:30,2022-10-06 08:26:30,corroborate,IBM-00121\n,,2022-07-19 07:35:35,2022-07-19 07:35:35,corroborate,IBM-00119\n,,2022-04-20 07:52:00,2022-04-20 07:52:00,corroborate,IBM-00116\n,,2022-04-14 08:11:24,2022-04-14 08:11:24,new,IBM-00112\n,,2021-07-20 09:14:00,2021-07-20 09:14:00,corroborate,IBM-00103\n,,2021-04-20 09:32:55,2021-04-20 09:32:55,corroborate,IBM-00097\n,,2021-04-08 08:04:47,2021-04-08 08:04:47,corroborate,IBM-00096\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text FROM evidence WHERE evidence_id IN ('IBM-00139', 'IBM-00131', 'IBM-00124', 'IBM-00121', 'IBM-00119', 'IBM-00116', 'IBM-00112', 'IBM-00103', 'IBM-00097', 'IBM-00096')\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,text\nIBM-00096,\"Morgan Stanley maintained Equal-Weight on IBM, and raised its price target from $140.00 to $150.00.\"\nIBM-00097,\"Morgan Stanley maintained Equal-Weight on IBM, and raised its price target from $150.00 to $152.00.\"\nIBM-00103,\"Morgan Stanley maintained Equal-Weight on IBM, and raised its price target from $152.00 to $164.00.\"\nIBM-00112,\"Morgan Stanley upgraded IBM from Equal-Weight to Overweight, and raised its price target from $147.00 to $150.00.\"\nIBM-00116,\"Morgan Stanley maintained Overweight on IBM, and raised its price target from $150.00 to $157.00.\"\nIBM-00119,\"Morgan Stanley maintained Overweight on IBM, and lowered its price target from $157.00 to $155.00.\"\nIBM-00121,\"Morgan Stanley maintained Overweight on IBM, and lowered its price target from $155.00 to $152.00.\"\nIBM-00124,\"Morgan Stanley downgraded IBM from Overweight to Equal-Weight, and lowered its price target from $152.00 to $148.00.\"\nIBM-00131,\"Morgan Stanley maintained Equal-Weight on IBM, and lowered its price target from $143.00 to $135.00.\"\nIBM-00139,\"Morgan Stanley reiterated Equal-Weight on IBM, with a $135.00 price target.\"\n"
+  }
+ ],
+ "final_text": "{\n\"answer\": \"Equal-Weight; 135\",\n\"evidence_ids\": [\"IBM-00139\"]\n}",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Morgan Stanley' AND attribute = 'rating' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text FROM evidence WHERE evidence_id IN ('IBM-00139', 'IBM-00131', 'IBM-00124', 'IBM-00121', 'IBM-00119', 'IBM-00116', 'IBM-00112', 'IBM-00103', 'IBM-00097', 'IBM-00096')\n```\n\n===== next turn =====\n\n{\n\"answer\": \"Equal-Weight; 135\",\n\"evidence_ids\": [\"IBM-00139\"]\n}"
+}

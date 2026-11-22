@@ -1,0 +1,43 @@
+{
+ "qid": "broker-CVX-004-Q1-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "broker",
+ "entity": "CVX",
+ "qtype": "consensus",
+ "mode": "as_of",
+ "as_of": "2026-11-12 01:07:00",
+ "question": "What is the consensus (median) price target for CVX across active brokers, in US dollars?",
+ "gold": "228.5",
+ "peek_answers": "230",
+ "trap_answers": "214",
+ "gold_evidence": "CVX-00382|CVX-00373|CVX-00375|CVX-00378|CVX-00075|CVX-00383|CVX-00362|CVX-00380|CVX-00355|CVX-00358|CVX-00351|CVX-00384|CVX-00368|CVX-00366|CVX-00341|CVX-00385|CVX-00339|CVX-00354|CVX-00364|CVX-00374|CVX-00381",
+ "answer": "235",
+ "cited": "CVX-00339|CVX-00341|CVX-00351|CVX-00354|CVX-00355|CVX-00358|CVX-00362|CVX-00364|CVX-00366|CVX-00368|CVX-00373|CVX-00374|CVX-00375|CVX-00378|CVX-00380|CVX-00381|CVX-00382|CVX-00383|CVX-00384",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.9047619047619048,
+ "in_tokens": 2014,
+ "out_tokens": 204,
+ "seconds": 0.1068,
+ "n_evidence": 21,
+ "n_dropped": 0,
+ "created": "2026-11-21T23:34:18",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-12 01:07:00\nQuestion: What is the consensus (median) price target for CVX across active brokers, in US dollars?\n\nEvidence:\n[CVX-00075] 2019-12-26 18:22 | Broker update: Cowen & Co. now publishes research under the name TD Cowen. Coverage continues unchanged.\n[CVX-00339] 2026-01-06 10:40 | Freedom Capital Markets downgraded CVX from Hold to Sell, with a $165.00 price target.\n[CVX-00341] 2026-01-14 15:30 | Jefferies maintained Buy on CVX, and raised its price target from $174.00 to $189.00.\n[CVX-00351] 2026-04-02 11:42 | Citigroup maintained Buy on CVX, and raised its price target from $210.00 to $235.00.\n[CVX-00354] 2026-04-17 14:01 | BNP Paribas upgraded CVX from Neutral to Outperform, with a $174.00 price target.\n[CVX-00355] 2026-04-22 11:43 | Scotiabank maintained Sector Perform on CVX, and raised its price target from $168.00 to $187.00.\n[CVX-00358] 2026-05-05 10:50 | RBC Capital reiterated Outperform on CVX, with a $220.00 price target.\n[CVX-00362] 2026-05-27 08:25 | Mizuho maintained Outperform on CVX, and raised its price target from $225.00 to $230.00.\n[CVX-00364] 2026-07-02 08:16 | Wolfe Research upgraded CVX from Peer Perform to Outperform, with a $210.00 price target.\n[CVX-00366] 2026-07-28 13:56 | B of A Securities maintained Buy on CVX, and raised its price target from $210.00 to $227.00.\n[CVX-00368] 2026-08-03 10:33 | Bernstein maintained Market Perform on CVX, and raised its price target from $204.00 to $209.00.\n[CVX-00373] 2026-09-03 13:12 | Piper Sandler maintained Overweight on CVX, and raised its price target from $207.00 to $243.00.\n[CVX-00374] 2026-09-03 14:03 | BMO Capital maintained Outperform on CVX, and raised its price target from $210.00 to $235.00.\n[CVX-00375] 2026-09-25 09:22 | HSBC maintained Buy on CVX, and raised its price target from $218.00 to $250.00.\n[CVX-00378] 2026-10-12 10:47 | TD Cowen maintained Hold on CVX, and raised its price target from $215.00 to $225.00.\n[CVX-00380] 2026-11-02 08:28 | Wells Fargo maintained Overweight on CVX, and raised its price target from $230.00 to $268.00.\n[CVX-00381] 2026-11-02 08:34 | Evercore ISI Group maintained Outperform on CVX, and raised its price target from $225.00 to $250.00.\n[CVX-00382] 2026-11-02 12:29 | Morgan Stanley maintained Overweight on CVX, and raised its price target from $226.00 to $230.00.\n[CVX-00383] 2026-11-02 15:31 | Barclays maintained Equal-Weight on CVX, and raised its price target from $208.00 to $244.00.\n[CVX-00384] 2026-11-02 16:40 | UBS maintained Buy on CVX, and raised its price target from $235.00 to $265.00.\n[CVX-00385] 2026-11-05 21:12 | Freedom Broker upgraded CVX from Sell to Hold, with a $218.00 price target."
+  }
+ ],
+ "final_text": "{\"answer\": 235, \"evidence_ids\": [\"CVX-00339\", \"CVX-00341\", \"CVX-00351\", \"CVX-00354\", \"CVX-00355\", \"CVX-00358\", \"CVX-00362\", \"CVX-00364\", \"CVX-00366\", \"CVX-00368\", \"CVX-00373\", \"CVX-00374\", \"CVX-00375\", \"CVX-00378\", \"CVX-00380\", \"CVX-00381\", \"CVX-00382\", \"CVX-00383\", \"CVX-00384\"]}",
+ "raw_output": "{\"answer\": 235, \"evidence_ids\": [\"CVX-00339\", \"CVX-00341\", \"CVX-00351\", \"CVX-00354\", \"CVX-00355\", \"CVX-00358\", \"CVX-00362\", \"CVX-00364\", \"CVX-00366\", \"CVX-00368\", \"CVX-00373\", \"CVX-00374\", \"CVX-00375\", \"CVX-00378\", \"CVX-00380\", \"CVX-00381\", \"CVX-00382\", \"CVX-00383\", \"CVX-00384\"]}"
+}

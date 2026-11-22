@@ -1,0 +1,43 @@
+{
+ "qid": "broker-NKE-003-Q1-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "broker",
+ "entity": "NKE",
+ "qtype": "consensus",
+ "mode": "as_of",
+ "as_of": "2026-09-24 11:04:00",
+ "question": "What is the consensus (median) price target for NKE across active brokers, in US dollars?",
+ "gold": "45.5",
+ "peek_answers": "45|44.5|35",
+ "trap_answers": "46",
+ "gold_evidence": "NKE-00720|NKE-00717|NKE-00659|NKE-00719|NKE-00744|NKE-00740|NKE-00735|NKE-00741|NKE-00738|NKE-00722|NKE-00736|NKE-00739|NKE-00737|NKE-00669|NKE-00725|NKE-00732|NKE-00733|NKE-00734|NKE-00712|NKE-00711|NKE-00682|NKE-00743|NKE-00727|NKE-00728|NKE-00706|NKE-00745",
+ "answer": "47",
+ "cited": "NKE-00659|NKE-00669|NKE-00682|NKE-00706|NKE-00711|NKE-00712|NKE-00717|NKE-00719|NKE-00720|NKE-00722|NKE-00725|NKE-00727|NKE-00728|NKE-00732|NKE-00733|NKE-00734|NKE-00735|NKE-00736|NKE-00737|NKE-00738|NKE-00739|NKE-00740|NKE-00741|NKE-00743|NKE-00744|NKE-00745",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 2267,
+ "out_tokens": 273,
+ "seconds": 0.1108,
+ "n_evidence": 26,
+ "n_dropped": 0,
+ "created": "2026-11-21T23:35:44",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-09-24 11:04:00\nQuestion: What is the consensus (median) price target for NKE across active brokers, in US dollars?\n\nEvidence:\n[NKE-00659] 2025-10-01 12:37 | Morgan Stanley maintained Equal-Weight on NKE, and raised its price target from $70.00 to $72.00.\n[NKE-00669] 2025-12-19 07:08 | Needham maintained Buy on NKE, and lowered its price target from $78.00 to $68.00.\n[NKE-00682] 2026-01-22 07:43 | Keybanc maintained Overweight on NKE, and lowered its price target from $90.00 to $75.00.\n[NKE-00706] 2026-04-13 10:20 | HSBC downgraded NKE from Buy to Hold, and lowered its price target from $90.00 to $48.00.\n[NKE-00711] 2026-06-23 09:42 | Evercore ISI Group downgraded NKE from Outperform to In-Line, and lowered its price target from $57.00 to $46.00.\n[NKE-00712] 2026-06-23 10:12 | Goldman Sachs maintained Neutral on NKE, and lowered its price target from $52.00 to $46.00.\n[NKE-00717] 2026-06-26 12:56 | Deutsche Bank maintained Hold on NKE, and lowered its price target from $51.00 to $43.00.\n[NKE-00719] 2026-07-01 06:56 | Wells Fargo maintained Equal-Weight on NKE, and lowered its price target from $45.00 to $40.00.\n[NKE-00720] 2026-07-01 07:05 | B of A Securities maintained Neutral on NKE, and lowered its price target from $55.00 to $47.00.\n[NKE-00722] 2026-07-01 07:50 | Piper Sandler maintained Neutral on NKE, and lowered its price target from $50.00 to $45.00.\n[NKE-00725] 2026-07-01 09:00 | Guggenheim maintained Buy on NKE, and lowered its price target from $74.00 to $60.00.\n[NKE-00727] 2026-07-01 11:27 | Bernstein maintained Outperform on NKE, and lowered its price target from $80.00 to $72.00.\n[NKE-00728] 2026-07-01 12:43 | BNP Paribas reiterated Underperform on NKE, with a $23.00 price target.\n[NKE-00732] 2026-07-01 15:11 | Jefferies maintained Buy on NKE, and lowered its price target from $90.00 to $75.00.\n[NKE-00733] 2026-08-04 06:08 | JP Morgan downgraded NKE from Neutral to Underweight, and lowered its price target from $47.00 to $40.00.\n[NKE-00734] 2026-08-25 09:32 | RBC Capital reiterated Sector Perform on NKE, with a $45.00 price target.\n[NKE-00735] 2026-08-26 09:59 | Truist Securities downgraded NKE from Buy to Hold, and lowered its price target from $47.00 to $42.00.\n[NKE-00736] 2026-09-09 08:54 | BMO Capital initiated coverage of NKE with a Underperform rating and a $30.00 price target.\n[NKE-00737] 2026-09-14 09:41 | Citigroup maintained Neutral on NKE, and lowered its price target from $45.00 to $39.00.\n[NKE-00738] 2026-09-14 13:31 | Baird downgraded NKE from Outperform to Neutral, and lowered its price target from $70.00 to $44.00.\n[NKE-00739] 2026-09-15 14:40 | Telsey Advisory Group maintained Market Perform on NKE, and lowered its price target from $47.00 to $44.00.\n[NKE-00740] 2026-09-17 09:54 | UBS maintained Neutral on NKE, and lowered its price target from $48.00 to $42.00.\n[NKE-00741] 2026-09-21 09:26 | Stifel maintained Hold on NKE, and lowered its price target from $45.00 to $40.00.\n[NKE-00743] 2026-09-23 06:20 | BTIG reiterated Buy on NKE, with a $55.00 price target.\n[NKE-00744] 2026-09-23 08:50 | Barclays maintained Overweight on NKE, and lowered its price target from $52.00 to $48.00.\n[NKE-00745] 2026-09-23 13:39 | Oppenheimer maintained Outperform on NKE, and lowered its price target from $60.00 to $52.00."
+  }
+ ],
+ "final_text": "{\"answer\": 47, \"evidence_ids\": [\"NKE-00659\", \"NKE-00669\", \"NKE-00682\", \"NKE-00706\", \"NKE-00711\", \"NKE-00712\", \"NKE-00717\", \"NKE-00719\", \"NKE-00720\", \"NKE-00722\", \"NKE-00725\", \"NKE-00727\", \"NKE-00728\", \"NKE-00732\", \"NKE-00733\", \"NKE-00734\", \"NKE-00735\", \"NKE-00736\", \"NKE-00737\", \"NKE-00738\", \"NKE-00739\", \"NKE-00740\", \"NKE-00741\", \"NKE-00743\", \"NKE-00744\", \"NKE-00745\"]}",
+ "raw_output": "{\"answer\": 47, \"evidence_ids\": [\"NKE-00659\", \"NKE-00669\", \"NKE-00682\", \"NKE-00706\", \"NKE-00711\", \"NKE-00712\", \"NKE-00717\", \"NKE-00719\", \"NKE-00720\", \"NKE-00722\", \"NKE-00725\", \"NKE-00727\", \"NKE-00728\", \"NKE-00732\", \"NKE-00733\", \"NKE-00734\", \"NKE-00735\", \"NKE-00736\", \"NKE-00737\", \"NKE-00738\", \"NKE-00739\", \"NKE-00740\", \"NKE-00741\", \"NKE-00743\", \"NKE-00744\", \"NKE-00745\"]}"
+}

@@ -1,0 +1,55 @@
+{
+ "qid": "broker-GOOGL-001-Q6-today",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "GOOGL",
+ "qtype": "count_buy",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many active brokers currently rate GOOGL Buy or an equivalent rating?",
+ "gold": "29",
+ "peek_answers": "",
+ "trap_answers": "14|35",
+ "gold_evidence": "GOOGL-00967|GOOGL-00969|GOOGL-00979|GOOGL-00974|GOOGL-00916|GOOGL-00955|GOOGL-00954|GOOGL-00982|GOOGL-00970|GOOGL-00972|GOOGL-00965|GOOGL-00921|GOOGL-00977|GOOGL-00929|GOOGL-00983|GOOGL-00963|GOOGL-00971|GOOGL-00856|GOOGL-00980|GOOGL-00918|GOOGL-00966|GOOGL-00863|GOOGL-00857|GOOGL-00978|GOOGL-00973|GOOGL-00976|GOOGL-00919|GOOGL-00841|GOOGL-00961|GOOGL-00975|GOOGL-00945|GOOGL-00938|GOOGL-00882|GOOGL-00968",
+ "answer": "29",
+ "cited": "",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 4276,
+ "out_tokens": 201,
+ "seconds": 0.2005,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT COUNT(DISTINCT T1.subject)\\nFROM facts AS T1\\nINNER JOIN (\\n  SELECT DISTINCT subject\\n  FROM facts\\n  WHERE attribute = 'rating' AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform')\\n  AND effective_at >= datetime('2026-11-20 23:59:59', '-1 year')\\n  AND effective_at <= '2026-11-20 23:59:59'\\n) AS T2\\n  ON T1.subject = T2.subject\\nWHERE T1.attribute = 'rating' AND T1.value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform');\"]",
+ "created": "2026-11-22T06:32:36",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many active brokers currently rate GOOGL Buy or an equivalent rating?\n\nDatabase contents at the as-of time: 355 facts, 192 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'GOOGL | Argus Research': price_target_usd (1), rating (1)\n  'GOOGL | B of A Securities': price_target_usd (3), rating (2)\n  'GOOGL | BMO Capital': price_target_usd (7), rating (6)\n  'GOOGL | BNP Paribas Exane': price_target_usd (1), rating (1)\n  'GOOGL | Baird': price_target_usd (1), rating (1)\n  'GOOGL | Barclays': price_target_usd (6), rating (6)\n  'GOOGL | Bernstein': price_target_usd (5), rating (4)\n  'GOOGL | Canaccord Genuity': price_target_usd (4), rating (4)\n  'GOOGL | Cantor Fitzgerald': price_target_usd (9), rating (9)\n  'GOOGL | Citigroup': price_target_usd (7), rating (6)\n  'GOOGL | Citizens': price_target_usd (7), rating (6)\n  'GOOGL | DA Davidson': price_target_usd (5), rating (3)\n  'GOOGL | Evercore ISI Group': price_target_usd (5), rating (4)\n  'GOOGL | Freedom Broker': price_target_usd (3), rating (3)\n  'GOOGL | Goldman Sachs': price_target_usd (2), rating (1)\n  'GOOGL | Guggenheim': price_target_usd (4), rating (2)\n  'GOOGL | HSBC': price_target_usd (2), rating (2)\n  'GOOGL | JMP Securities': price_target_usd (3), rating (3)\n  'GOOGL | JP Morgan': price_target_usd (4), rating (2)\n  'GOOGL | Jefferies': price_target_usd (3), rating (2)\n  'GOOGL | Keybanc': price_target_usd (11), rating (11)\n  'GOOGL | Loop Capital': price_target_usd (1), rating (1)\n  'GOOGL | Mizuho': price_target_usd (4), rating (4)\n  'GOOGL | MoffettNathanson': price_target_usd (1), rating (1)\n  'GOOGL | Morgan Stanley': price_target_usd (7), rating (5)\n  'GOOGL | Needham': price_target_usd (13), rating (13)\n  'GOOGL | Oppenheimer': price_target_usd (1), rating (1)\n  'GOOGL | Piper Sandler': price_target_usd (10), rating (9)\n  'GOOGL | Pivotal Research': price_target_usd (2), rating (1)\n  'GOOGL | RBC Capital': price_target_usd (5), rating (5)\n  'GOOGL | Rosenblatt': price_target_usd (8), rating (5)\n  'GOOGL | Roth Capital': price_target_usd (4), rating (2)\n  'GOOGL | Stifel': price_target_usd (5), rating (4)\n  'GOOGL | Susquehanna': price_target_usd (2), rating (1)\n  'GOOGL | Tigress Financial': price_target_usd (3), rating (3)\n  'GOOGL | Truist Securities': price_target_usd (7), rating (7)\n  'GOOGL | UBS': price_target_usd (9), rating (1)\n  'GOOGL | Wedbush': price_target_usd (5), rating (3)\n  'GOOGL | Wells Fargo': price_target_usd (15), rating (13)\n  'GOOGL | Wolfe Research': price_target_usd (1), rating (1)\nkind values: 'corroborate', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'GOOGL | Wells Fargo' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT COUNT(DISTINCT T1.subject)\nFROM facts AS T1\nINNER JOIN (\n  SELECT DISTINCT subject\n  FROM facts\n  WHERE attribute = 'rating' AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform')\n  AND effective_at >= datetime('2026-11-20 23:59:59', '-1 year')\n  AND effective_at <= '2026-11-20 23:59:59'\n) AS T2\n  ON T1.subject = T2.subject\nWHERE T1.attribute = 'rating' AND T1.value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform');\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nCOUNT(DISTINCT T1.subject)\n29\n"
+  }
+ ],
+ "final_text": "{\"answer\": 29, \"evidence_ids\": []}",
+ "raw_output": "```sql\nSELECT COUNT(DISTINCT T1.subject)\nFROM facts AS T1\nINNER JOIN (\n  SELECT DISTINCT subject\n  FROM facts\n  WHERE attribute = 'rating' AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform')\n  AND effective_at >= datetime('2026-11-20 23:59:59', '-1 year')\n  AND effective_at <= '2026-11-20 23:59:59'\n) AS T2\n  ON T1.subject = T2.subject\nWHERE T1.attribute = 'rating' AND T1.value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform');\n```\n\n===== next turn =====\n\n{\"answer\": 29, \"evidence_ids\": []}"
+}

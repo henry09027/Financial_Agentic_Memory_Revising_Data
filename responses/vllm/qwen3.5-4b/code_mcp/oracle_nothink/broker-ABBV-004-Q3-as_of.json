@@ -1,0 +1,55 @@
+{
+ "qid": "broker-ABBV-004-Q3-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "broker",
+ "entity": "ABBV",
+ "qtype": "change_since_initiation",
+ "mode": "as_of",
+ "as_of": "2026-08-09 05:42:00",
+ "question": "By what percent has Guggenheim's ABBV price target changed since it initiated coverage? (split-adjusted, in percent)",
+ "gold": "67.44",
+ "peek_answers": "87.21",
+ "trap_answers": "",
+ "gold_evidence": "ABBV-00205|ABBV-00358",
+ "answer": "67.45",
+ "cited": "ABBV-00205|ABBV-00358",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 4719,
+ "out_tokens": 119,
+ "seconds": 0.262,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT f.evidence_id, f.value_num, f.effective_at, f.kind, e.text\\nFROM facts f\\nJOIN evidence e ON f.evidence_id = e.evidence_id\\nWHERE f.subject = 'ABBV | Guggenheim' \\n  AND f.attribute = 'price_target_usd'\\nORDER BY f.effective_at ASC;\"]",
+ "created": "2026-11-22T02:07:51",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-08-09 05:42:00\nQuestion: By what percent has Guggenheim's ABBV price target changed since it initiated coverage? (split-adjusted, in percent)\n\nDatabase contents at the as-of time: 366 facts, 172 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'ABBV | Argus Research': rating (2)\n  'ABBV | Atlantic Equities': price_target_usd (1), rating (1)\n  'ABBV | B of A Securities': price_target_usd (11), rating (7)\n  'ABBV | BMO Capital': price_target_usd (12), rating (10)\n  'ABBV | Barclays': price_target_usd (9), rating (9)\n  'ABBV | Berenberg': price_target_usd (2), rating (2)\n  'ABBV | Bernstein': price_target_usd (1), rating (1)\n  'ABBV | CFRA': price_target_usd (1), rating (1)\n  'ABBV | Canaccord Genuity': price_target_usd (5), rating (5)\n  'ABBV | Cantor Fitzgerald': price_target_usd (13), rating (13)\n  'ABBV | Citigroup': price_target_usd (11), rating (10)\n  'ABBV | Deutsche Bank': price_target_usd (1), rating (1)\n  'ABBV | Erste Group': rating (1)\n  'ABBV | Evercore ISI Group': price_target_usd (12), rating (8)\n  'ABBV | Exane BNP Paribas': price_target_usd (1), rating (1)\n  'ABBV | Freedom Broker': price_target_usd (2), rating (2)\n  'ABBV | Goldman Sachs': price_target_usd (1), rating (1)\n  'ABBV | Guggenheim': price_target_usd (16), rating (14)\n  'ABBV | HSBC': price_target_usd (5), rating (5)\n  'ABBV | JP Morgan': price_target_usd (6), rating (5)\n  'ABBV | Leerink Partners': price_target_usd (1), rating (1)\n  'ABBV | Morgan Stanley': price_target_usd (22), rating (18)\n  'ABBV | Piper Sandler': price_target_usd (17), rating (13)\n  'ABBV | RBC Capital': price_target_usd (2), rating (2)\n  'ABBV | Raymond James': price_target_usd (10), rating (8)\n  'ABBV | SVB Leerink': price_target_usd (1), rating (1)\n  'ABBV | TD Cowen': price_target_usd (2), rating (2)\n  'ABBV | Truist Securities': price_target_usd (7), rating (7)\n  'ABBV | UBS': price_target_usd (13), rating (9)\n  'ABBV | Wells Fargo': price_target_usd (8), rating (6)\n  'ABBV | William Blair': rating (3)\n  'ABBV | Wolfe Research': price_target_usd (1), rating (3)\nkind values: 'corroborate', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'ABBV | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT f.evidence_id, f.value_num, f.effective_at, f.kind, e.text\nFROM facts f\nJOIN evidence e ON f.evidence_id = e.evidence_id\nWHERE f.subject = 'ABBV | Guggenheim' \n  AND f.attribute = 'price_target_usd'\nORDER BY f.effective_at ASC;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,value_num,effective_at,kind,text\nABBV-00205,172.0,2023-03-01 05:22:58,new,Guggenheim initiated coverage of ABBV with a Buy rating and a $172.00 price target.\nABBV-00210,171.0,2023-04-28 11:27:49,new,\"Guggenheim maintained Buy on ABBV, and lowered its price target from $172.00 to $171.00.\"\nABBV-00230,188.0,2023-04-28 11:27:50,inferred,\"Guggenheim maintained Buy on ABBV, and raised its price target from $188.00 to $190.00.\"\nABBV-00230,190.0,2024-03-22 14:01:10,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $188.00 to $190.00.\"\nABBV-00264,212.0,2024-03-22 14:01:11,inferred,\"Guggenheim maintained Buy on ABBV, and raised its price target from $212.00 to $221.00.\"\nABBV-00264,221.0,2024-11-06 13:05:47,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $212.00 to $221.00.\"\nABBV-00273,212.0,2025-01-17 16:32:34,new,\"Guggenheim maintained Buy on ABBV, and lowered its price target from $221.00 to $212.00.\"\nABBV-00276,214.0,2025-02-03 08:26:41,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $212.00 to $214.00.\"\nABBV-00287,214.0,2025-04-17 11:28:50,corroborate,\"Guggenheim reiterated Buy on ABBV, with a $214.00 price target.\"\nABBV-00294,216.0,2025-04-29 08:13:52,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $214.00 to $216.00.\"\nABBV-00298,227.0,2025-08-01 10:20:24,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $216.00 to $227.00.\"\nABBV-00312,242.0,2025-10-20 08:34:04,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $227.00 to $242.00.\"\nABBV-00330,249.0,2026-04-10 09:19:45,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $242.00 to $249.00.\"\nABBV-00336,249.0,2026-05-01 11:43:20,corroborate,\"Guggenheim reiterated Buy on ABBV, with a $249.00 price target.\"\nABBV-00344,261.0,2026-07-09 10:11:08,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $249.00 to $261.00.\"\nABBV-00358,288.0,2026-08-04 07:47:38,new,\"Guggenheim maintained Buy on ABBV, and raised its price target from $261.00 to $288.00.\"\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 67.45, \"evidence_ids\": [\"ABBV-00205\", \"ABBV-00358\"]}\n```",
+ "raw_output": "```sql\nSELECT f.evidence_id, f.value_num, f.effective_at, f.kind, e.text\nFROM facts f\nJOIN evidence e ON f.evidence_id = e.evidence_id\nWHERE f.subject = 'ABBV | Guggenheim' \n  AND f.attribute = 'price_target_usd'\nORDER BY f.effective_at ASC;\n```\n\n===== next turn =====\n\n```json\n{\"answer\": 67.45, \"evidence_ids\": [\"ABBV-00205\", \"ABBV-00358\"]}\n```"
+}

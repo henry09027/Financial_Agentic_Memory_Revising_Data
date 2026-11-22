@@ -1,0 +1,338 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+AVGO-00364,2024-09-06 07:11:57,AVGO | Benchmark,rating,,Buy,2024-09-06 07:11:57,new
+AVGO-00364,2024-09-06 07:11:57,AVGO | Benchmark,price_target_usd,,210.0,2024-09-06 07:11:57,new
+AVGO-00365,2024-09-06 07:46:51,AVGO | Goldman Sachs,rating,,Buy,2024-09-06 07:46:51,new
+AVGO-00365,2024-09-06 07:46:51,AVGO | Goldman Sachs,price_target_usd,,190.0,2024-09-06 07:46:51,new
+AVGO-00366,2024-09-06 09:53:40,AVGO | Morgan Stanley,rating,,Overweight,2024-09-06 09:53:40,new
+AVGO-00366,2024-09-06 09:53:40,AVGO | Morgan Stanley,price_target_usd,,180.0,2024-09-06 09:53:40,new
+AVGO-00367,2024-09-06 10:06:09,AVGO | Cantor Fitzgerald,rating,,Overweight,2024-09-06 10:06:09,new
+AVGO-00367,2024-09-06 10:06:09,AVGO | Cantor Fitzgerald,price_target_usd,,200.0,2024-09-06 10:06:09,new
+AVGO-00368,2024-09-06 11:59:51,AVGO | Rosenblatt,rating,,Buy,2024-09-06 11:59:51,new
+AVGO-00368,2024-09-06 11:59:51,AVGO | Rosenblatt,price_target_usd,,240.0,2024-09-06 11:59:51,new
+AVGO-00369,2024-09-06 12:39:15,AVGO | JP Morgan,rating,,Overweight,2024-09-06 12:39:15,new
+AVGO-00369,2024-09-06 12:39:15,AVGO | JP Morgan,price_target_usd,,210.0,2024-09-06 12:39:15,new
+AVGO-00370,2024-09-09 10:20:04,AVGO | UBS,rating,,Buy,2024-09-09 10:20:04,new
+AVGO-00370,2024-09-09 10:20:04,AVGO | UBS,price_target_usd,,170.00,2024-09-09 10:20:04,new
+AVGO-00371,2024-09-18 13:14:03,AVGO | William Blair,rating,,Outperform,2024-09-18 13:14:03,new
+AVGO-00372,2024-10-08 10:27:53,AVGO | Truist Securities,rating,,Buy,2024-10-08 10:27:53,new
+AVGO-00372,2024-10-08 10:27:53,AVGO | Truist Securities,price_target_usd,,205.00,2024-10-08 10:27:53,new
+AVGO-00373,2024-10-08 15:04:01,AVGO | Cantor Fitzgerald,rating,,Overweight,2024-10-08 15:04:01,corroborate
+AVGO-00373,2024-10-08 15:04:01,AVGO | Cantor Fitzgerald,price_target_usd,,225.0,2024-10-08 15:04:01,new
+AVGO-00374,2024-10-14 08:20:57,AVGO | Mizuho,rating,,Outperform,2024-10-14 08:20:57,new
+AVGO-00374,2024-10-14 08:20:57,AVGO | Mizuho,price_target_usd,,220.00,2024-10-14 08:20:57,new
+AVGO-00375,2024-11-04 10:37:30,AVGO | UBS,price_target_usd,,200.0,2024-11-04 10:37:30,new
+AVGO-00375,2024-11-04 10:37:30,AVGO | UBS,rating,,Buy,2024-11-04 10:37:30,corroborate
+AVGO-00376,2024-12-10 12:21:09,AVGO | Citigroup,rating,,Buy,2024-12-10 12:21:09,new
+AVGO-00376,2024-12-10 12:21:09,AVGO | Citigroup,price_target_usd,,205.00,2024-12-10 12:21:09,new
+AVGO-00377,2024-12-11 09:46:37,AVGO | Rosenblatt,rating,,Buy,2024-12-11 09:46:37,corroborate
+AVGO-00377,2024-12-11 09:46:37,AVGO | Rosenblatt,price_target_usd,,240.0,2024-12-11 09:46:37,corroborate
+AVGO-00378,2024-12-13 06:02:28,AVGO | Deutsche Bank,rating,,Buy,2024-12-13 06:02:28,new
+AVGO-00378,2024-12-13 06:02:28,AVGO | Deutsche Bank,price_target_usd,,240.00,2024-12-13 06:02:28,new
+AVGO-00379,2024-12-13 06:40:01,AVGO | UBS,price_target_usd,,220.0,2024-12-13 06:40:01,new
+AVGO-00379,2024-12-13 06:40:01,AVGO | UBS,rating,,Buy,2024-12-13 06:40:01,corroborate
+AVGO-00380,2024-12-13 06:50:57,AVGO | Keybanc,rating,,Overweight,2024-12-13 06:50:57,new
+AVGO-00380,2024-12-13 06:50:57,AVGO | Keybanc,price_target_usd,,260.0,2024-12-13 06:50:57,new
+AVGO-00381,2024-12-13 07:38:14,AVGO | Mizuho,price_target_usd,,245.0,2024-12-13 07:38:14,new
+AVGO-00382,2024-12-13 07:46:52,AVGO | Piper Sandler,rating,,Overweight,2024-12-13 07:46:52,new
+AVGO-00382,2024-12-13 07:46:52,AVGO | Piper Sandler,price_target_usd,,250.0,2024-12-13 07:46:52,new
+AVGO-00383,2024-12-13 07:58:16,AVGO | Baird,rating,,Outperform,2024-12-13 07:58:16,new
+AVGO-00383,2024-12-13 07:58:16,AVGO | Baird,price_target_usd,,210.0,2024-12-13 07:58:16,new
+AVGO-00384,2024-12-13 08:04:57,AVGO | Evercore ISI Group,rating,,Outperform,2024-12-13 08:04:57,new
+AVGO-00384,2024-12-13 08:04:57,AVGO | Evercore ISI Group,price_target_usd,,250.0,2024-12-13 08:04:57,new
+AVGO-00385,2024-12-13 08:21:25,AVGO | Susquehanna,rating,,Positive,2024-12-13 08:21:25,new
+AVGO-00385,2024-12-13 08:21:25,AVGO | Susquehanna,price_target_usd,,225.0,2024-12-13 08:21:25,new
+AVGO-00386,2024-12-13 09:18:29,AVGO | B of A Securities,rating,,Buy,2024-12-13 09:18:29,new
+AVGO-00386,2024-12-13 09:18:29,AVGO | B of A Securities,price_target_usd,,250.0,2024-12-13 09:18:29,new
+AVGO-00387,2024-12-13 09:46:43,AVGO | Rosenblatt,price_target_usd,,250.0,2024-12-13 09:46:43,new
+AVGO-00388,2024-12-13 10:07:19,AVGO | Morgan Stanley,price_target_usd,,233.0,2024-12-13 10:07:19,new
+AVGO-00389,2024-12-13 10:09:38,AVGO | Truist Securities,price_target_usd,,245.0,2024-12-13 10:09:38,new
+AVGO-00390,2024-12-13 10:59:30,AVGO | Citigroup,price_target_usd,,220.0,2024-12-13 10:59:30,new
+AVGO-00391,2024-12-13 12:04:47,AVGO | TD Cowen,rating,,Buy,2024-12-13 12:04:47,new
+AVGO-00391,2024-12-13 12:04:47,AVGO | TD Cowen,price_target_usd,,240.0,2024-12-13 12:04:47,new
+AVGO-00392,2024-12-13 12:42:45,AVGO | Benchmark,price_target_usd,,255.0,2024-12-13 12:42:45,new
+AVGO-00393,2024-12-13 14:06:36,AVGO | Jefferies,rating,,Buy,2024-12-13 14:06:36,new
+AVGO-00393,2024-12-13 14:06:36,AVGO | Jefferies,price_target_usd,,225.0,2024-12-13 14:06:36,new
+AVGO-00393,2024-12-13 14:06:36,AVGO | Jefferies,price_target_usd,,205.0,2024-12-13 14:06:36,inferred
+AVGO-00394,2024-12-13 14:27:20,AVGO | JP Morgan,price_target_usd,,250.0,2024-12-13 14:27:20,new
+AVGO-00395,2024-12-16 10:11:01,AVGO | Barclays,rating,,Overweight,2024-12-16 10:11:01,new
+AVGO-00395,2024-12-16 10:11:01,AVGO | Barclays,price_target_usd,,205.0,2024-12-16 10:11:01,new
+AVGO-00396,2024-12-20 12:47:51,AVGO | Morgan Stanley,rating,,Overweight,2024-12-20 12:47:51,corroborate
+AVGO-00396,2024-12-20 12:47:51,AVGO | Morgan Stanley,price_target_usd,,265.0,2024-12-20 12:47:51,new
+AVGO-00397,2025-01-10 12:38:49,AVGO | Mizuho,rating,,Outperform,2025-01-10 12:38:49,corroborate
+AVGO-00397,2025-01-10 12:38:49,AVGO | Mizuho,price_target_usd,,260.0,2025-01-10 12:38:49,new
+AVGO-00398,2025-01-17 07:48:13,AVGO | Barclays,price_target_usd,,260.0,2025-01-17 07:48:13,new
+AVGO-00399,2025-01-28 12:36:50,AVGO | Morgan Stanley,rating,,Overweight,2025-01-28 12:36:50,corroborate
+AVGO-00399,2025-01-28 12:36:50,AVGO | Morgan Stanley,price_target_usd,,246.0,2025-01-28 12:36:50,new
+AVGO-00400,2025-02-26 07:28:13,AVGO | Susquehanna,price_target_usd,,250.0,2025-02-26 07:28:13,new
+AVGO-00401,2025-03-07 05:17:17,AVGO | B of A Securities,price_target_usd,,260.0,2025-03-07 05:17:17,new
+AVGO-00402,2025-03-07 07:33:37,AVGO | Rosenblatt,rating,,Buy,2025-03-07 07:33:37,corroborate
+AVGO-00402,2025-03-07 07:33:37,AVGO | Rosenblatt,price_target_usd,,250.0,2025-03-07 07:33:37,corroborate
+AVGO-00403,2025-03-07 07:48:49,AVGO | Benchmark,rating,,Buy,2025-03-07 07:48:49,corroborate
+AVGO-00404,2025-03-07 10:01:41,AVGO | Keybanc,rating,,Overweight,2025-03-07 10:01:41,corroborate
+AVGO-00404,2025-03-07 10:01:41,AVGO | Keybanc,price_target_usd,,275.0,2025-03-07 10:01:41,new
+AVGO-00405,2025-03-07 11:08:48,AVGO | Mizuho,rating,,Outperform,2025-03-07 11:08:48,corroborate
+AVGO-00405,2025-03-07 11:08:48,AVGO | Mizuho,price_target_usd,,250.0,2025-03-07 11:08:48,new
+AVGO-00406,2025-03-07 11:08:58,AVGO | Cantor Fitzgerald,rating,,Overweight,2025-03-07 11:08:58,corroborate
+AVGO-00406,2025-03-07 11:08:58,AVGO | Cantor Fitzgerald,price_target_usd,,300.0,2025-03-07 11:08:58,new
+AVGO-00407,2025-03-07 11:21:26,AVGO | Truist Securities,price_target_usd,,267.0,2025-03-07 11:21:26,new
+AVGO-00408,2025-03-07 12:08:47,AVGO | Morgan Stanley,rating,,Overweight,2025-03-07 12:08:47,new
+AVGO-00408,2025-03-07 12:08:47,AVGO | Morgan Stanley,price_target_usd,,260.0,2025-03-07 12:08:47,new
+AVGO-00409,2025-04-11 16:54:44,AVGO | Citigroup,rating,,Buy,2025-04-11 16:54:44,corroborate
+AVGO-00409,2025-04-11 16:54:44,AVGO | Citigroup,price_target_usd,,210.0,2025-04-11 16:54:44,new
+AVGO-00410,2025-04-16 08:26:07,AVGO | B of A Securities,price_target_usd,,240.0,2025-04-16 08:26:07,new
+AVGO-00411,2025-04-22 11:09:43,AVGO | Barclays,rating,,Overweight,2025-04-22 11:09:43,corroborate
+AVGO-00411,2025-04-22 11:09:43,AVGO | Barclays,price_target_usd,,215.0,2025-04-22 11:09:43,new
+AVGO-00412,2025-04-23 07:40:39,AVGO | Rosenblatt,rating,,Buy,2025-04-23 07:40:39,corroborate
+AVGO-00412,2025-04-23 07:40:39,AVGO | Rosenblatt,price_target_usd,,223.0,2025-04-23 07:40:39,new
+AVGO-00413,2025-04-30 09:01:05,AVGO | Seaport Global,rating,,Buy,2025-04-30 09:01:05,new
+AVGO-00413,2025-04-30 09:01:05,AVGO | Seaport Global,price_target_usd,,230.0,2025-04-30 09:01:05,new
+AVGO-00414,2025-05-28 07:38:58,AVGO | Redburn Atlantic,rating,,Buy,2025-05-28 07:38:58,new
+AVGO-00414,2025-05-28 07:38:58,AVGO | Redburn Atlantic,price_target_usd,,301.0,2025-05-28 07:38:58,new
+AVGO-00415,2025-05-28 13:38:50,AVGO | Mizuho,rating,,Outperform,2025-05-28 13:38:50,corroborate
+AVGO-00415,2025-05-28 13:38:50,AVGO | Mizuho,price_target_usd,,300.0,2025-05-28 13:38:50,new
+AVGO-00416,2025-05-29 13:28:52,AVGO | Susquehanna,price_target_usd,,280.0,2025-05-29 13:28:52,new
+AVGO-00417,2025-05-30 13:51:54,AVGO | Oppenheimer,rating,,Outperform,2025-05-30 13:51:54,new
+AVGO-00417,2025-05-30 13:51:54,AVGO | Oppenheimer,price_target_usd,,265.0,2025-05-30 13:51:54,new
+AVGO-00417,2025-05-30 13:51:54,AVGO | Oppenheimer,price_target_usd,,225.0,2025-05-30 13:51:54,inferred
+AVGO-00418,2025-06-03 09:23:51,AVGO | Citigroup,price_target_usd,,276.0,2025-06-03 09:23:51,new
+AVGO-00419,2025-06-06 07:25:13,AVGO | Benchmark,price_target_usd,,315.0,2025-06-06 07:25:13,new
+AVGO-00419,2025-06-06 07:25:13,AVGO | Benchmark,rating,,Buy,2025-06-06 07:25:13,new
+AVGO-00420,2025-06-06 07:33:14,AVGO | Rosenblatt,price_target_usd,,340.0,2025-06-06 07:33:14,new
+AVGO-00420,2025-06-06 07:33:14,AVGO | Rosenblatt,rating,,Buy,2025-06-06 07:33:14,corroborate
+AVGO-00421,2025-06-06 09:52:32,AVGO | Cantor Fitzgerald,rating,,Overweight,2025-06-06 09:52:32,corroborate
+AVGO-00421,2025-06-06 09:52:32,AVGO | Cantor Fitzgerald,price_target_usd,,300.0,2025-06-06 09:52:32,corroborate
+AVGO-00422,2025-06-06 10:06:03,AVGO | UBS,price_target_usd,,290.0,2025-06-06 10:06:03,new
+AVGO-00422,2025-06-06 10:06:03,AVGO | UBS,rating,,Buy,2025-06-06 10:06:03,corroborate
+AVGO-00423,2025-06-06 10:50:49,AVGO | Wells Fargo,rating,,Equal-Weight,2025-06-06 10:50:49,new
+AVGO-00423,2025-06-06 10:50:49,AVGO | Wells Fargo,price_target_usd,,255.0,2025-06-06 10:50:49,new
+AVGO-00424,2025-06-06 11:03:42,AVGO | Truist Securities,price_target_usd,,295.0,2025-06-06 11:03:42,new
+AVGO-00425,2025-06-06 11:03:44,AVGO | JP Morgan,price_target_usd,,325.0,2025-06-06 11:03:44,new
+AVGO-00426,2025-06-06 11:18:37,AVGO | Evercore ISI Group,price_target_usd,,304.0,2025-06-06 11:18:37,new
+AVGO-00427,2025-06-06 12:22:18,AVGO | Morgan Stanley,rating,,Overweight,2025-06-06 12:22:18,new
+AVGO-00427,2025-06-06 12:22:18,AVGO | Morgan Stanley,price_target_usd,,270.0,2025-06-06 12:22:18,new
+AVGO-00428,2025-06-06 12:49:55,AVGO | B of A Securities,price_target_usd,,300.0,2025-06-06 12:49:55,new
+AVGO-00429,2025-06-06 13:03:13,AVGO | Mizuho,rating,,Outperform,2025-06-06 13:03:13,corroborate
+AVGO-00429,2025-06-06 13:03:13,AVGO | Mizuho,price_target_usd,,310.0,2025-06-06 13:03:13,new
+AVGO-00430,2025-06-06 13:44:36,AVGO | Susquehanna,price_target_usd,,300.0,2025-06-06 13:44:36,new
+AVGO-00431,2025-06-09 12:04:33,AVGO | Barclays,price_target_usd,,265.0,2025-06-09 12:04:33,new
+AVGO-00432,2025-06-09 14:28:43,AVGO | Citigroup,price_target_usd,,285.0,2025-06-09 14:28:43,new
+AVGO-00433,2025-07-03 08:53:04,AVGO | Mizuho,rating,,Outperform,2025-07-03 08:53:04,corroborate
+AVGO-00433,2025-07-03 08:53:04,AVGO | Mizuho,price_target_usd,,315.0,2025-07-03 08:53:04,new
+AVGO-00434,2025-07-07 15:04:38,AVGO | Citigroup,price_target_usd,,315.0,2025-07-07 15:04:38,new
+AVGO-00435,2025-07-08 12:15:30,AVGO | Keybanc,rating,,Overweight,2025-07-08 12:15:30,corroborate
+AVGO-00435,2025-07-08 12:15:30,AVGO | Keybanc,price_target_usd,,330.0,2025-07-08 12:15:30,new
+AVGO-00436,2025-07-10 08:33:28,AVGO | Goldman Sachs,rating,,Buy,2025-07-10 08:33:28,new
+AVGO-00436,2025-07-10 08:33:28,AVGO | Goldman Sachs,price_target_usd,,315.0,2025-07-10 08:33:28,new
+AVGO-00437,2025-07-15 13:38:42,AVGO | Oppenheimer,price_target_usd,,305.0,2025-07-15 13:38:42,new
+AVGO-00438,2025-07-16 08:13:53,AVGO | Mizuho,rating,,Outperform,2025-07-16 08:13:53,corroborate
+AVGO-00438,2025-07-16 08:13:53,AVGO | Mizuho,price_target_usd,,320.0,2025-07-16 08:13:53,new
+AVGO-00439,2025-07-30 07:36:34,AVGO | Morgan Stanley,rating,,Overweight,2025-07-30 07:36:34,new
+AVGO-00439,2025-07-30 07:36:34,AVGO | Morgan Stanley,price_target_usd,,338.0,2025-07-30 07:36:34,new
+AVGO-00440,2025-08-13 06:37:45,AVGO | Goldman Sachs,rating,,Buy,2025-08-13 06:37:45,corroborate
+AVGO-00440,2025-08-13 06:37:45,AVGO | Goldman Sachs,price_target_usd,,340.0,2025-08-13 06:37:45,corroborate
+AVGO-00441,2025-08-22 09:03:31,AVGO | Piper Sandler,rating,,Overweight,2025-08-22 09:03:31,corroborate
+AVGO-00441,2025-08-22 09:03:31,AVGO | Piper Sandler,price_target_usd,,315.0,2025-08-22 09:03:31,new
+AVGO-00442,2025-08-25 09:12:47,AVGO | UBS,price_target_usd,,345.0,2025-08-25 09:12:47,new
+AVGO-00443,2025-08-28 11:26:10,AVGO | Oppenheimer,price_target_usd,,325.0,2025-08-28 11:26:10,new
+AVGO-00444,2025-09-02 09:12:33,AVGO | Morgan Stanley,rating,,Overweight,2025-09-02 09:12:33,new
+AVGO-00444,2025-09-02 09:12:33,AVGO | Morgan Stanley,price_target_usd,,357.0,2025-09-02 09:12:33,new
+AVGO-00445,2025-09-04 10:36:16,AVGO | Evercore ISI Group,rating,,Outperform,2025-09-04 10:36:16,corroborate
+AVGO-00445,2025-09-04 10:36:16,AVGO | Evercore ISI Group,price_target_usd,,342.0,2025-09-04 10:36:16,new
+AVGO-00446,2025-09-05 06:32:14,AVGO | Deutsche Bank,price_target_usd,,350.0,2025-09-05 06:32:14,new
+AVGO-00447,2025-09-05 06:33:36,AVGO | JP Morgan,price_target_usd,,400.0,2025-09-05 06:33:36,new
+AVGO-00448,2025-09-05 06:34:56,AVGO | Morgan Stanley,rating,,Overweight,2025-09-05 06:34:56,new
+AVGO-00448,2025-09-05 06:34:56,AVGO | Morgan Stanley,price_target_usd,,382.0,2025-09-05 06:34:56,new
+AVGO-00449,2025-09-05 07:20:18,AVGO | B of A Securities,price_target_usd,,400.0,2025-09-05 07:20:18,new
+AVGO-00450,2025-09-05 07:20:23,AVGO | Rosenblatt,price_target_usd,,400.0,2025-09-05 07:20:23,new
+AVGO-00451,2025-09-05 07:36:14,AVGO | Benchmark,price_target_usd,,385.0,2025-09-05 07:36:14,new
+AVGO-00451,2025-09-05 07:36:14,AVGO | Benchmark,rating,,Buy,2025-09-05 07:36:14,new
+AVGO-00452,2025-09-05 07:47:30,AVGO | Piper Sandler,rating,,Overweight,2025-09-05 07:47:30,corroborate
+AVGO-00452,2025-09-05 07:47:30,AVGO | Piper Sandler,price_target_usd,,375.0,2025-09-05 07:47:30,new
+AVGO-00453,2025-09-05 08:26:04,AVGO | Keybanc,price_target_usd,,400.0,2025-09-05 08:26:04,new
+AVGO-00454,2025-09-05 08:38:02,AVGO | Evercore ISI Group,rating,,Outperform,2025-09-05 08:38:02,corroborate
+AVGO-00454,2025-09-05 08:38:02,AVGO | Evercore ISI Group,price_target_usd,,370.0,2025-09-05 08:38:02,new
+AVGO-00455,2025-09-05 08:55:04,AVGO | Barclays,price_target_usd,,400.0,2025-09-05 08:55:04,new
+AVGO-00456,2025-09-05 09:25:31,AVGO | Wells Fargo,price_target_usd,,345.0,2025-09-05 09:25:31,new
+AVGO-00457,2025-09-05 10:17:05,AVGO | Mizuho,price_target_usd,,355.0,2025-09-05 10:17:05,new
+AVGO-00458,2025-09-05 10:23:17,AVGO | Oppenheimer,rating,,Outperform,2025-09-05 10:23:17,corroborate
+AVGO-00458,2025-09-05 10:23:17,AVGO | Oppenheimer,price_target_usd,,360.0,2025-09-05 10:23:17,new
+AVGO-00459,2025-09-05 11:27:07,AVGO | Bernstein,rating,,Outperform,2025-09-05 11:27:07,new
+AVGO-00459,2025-09-05 11:27:07,AVGO | Bernstein,price_target_usd,,400.0,2025-09-05 11:27:07,new
+AVGO-00460,2025-09-05 11:53:00,AVGO | Truist Securities,price_target_usd,,365.0,2025-09-05 11:53:00,new
+AVGO-00461,2025-09-05 14:28:50,AVGO | Citigroup,price_target_usd,,350.0,2025-09-05 14:28:50,new
+AVGO-00462,2025-09-08 10:46:21,AVGO | Argus Research,rating,,Buy,2025-09-08 10:46:21,new
+AVGO-00462,2025-09-08 10:46:21,AVGO | Argus Research,price_target_usd,,375.0,2025-09-08 10:46:21,new
+AVGO-00463,2025-09-12 09:56:12,AVGO | Mizuho,rating,,Outperform,2025-09-12 09:56:12,corroborate
+AVGO-00463,2025-09-12 09:56:12,AVGO | Mizuho,price_target_usd,,410.0,2025-09-12 09:56:12,new
+AVGO-00464,2025-09-15 07:02:59,AVGO | Macquarie,rating,,Outperform,2025-09-15 07:02:59,new
+AVGO-00464,2025-09-15 07:02:59,AVGO | Macquarie,price_target_usd,,420.0,2025-09-15 07:02:59,new
+AVGO-00465,2025-09-30 10:44:22,AVGO | Keybanc,price_target_usd,,420.0,2025-09-30 10:44:22,new
+AVGO-00466,2025-10-14 08:00:49,AVGO | Deutsche Bank,price_target_usd,,400.0,2025-10-14 08:00:49,new
+AVGO-00467,2025-10-14 09:27:44,AVGO | Barclays,rating,,Overweight,2025-10-14 09:27:44,corroborate
+AVGO-00467,2025-10-14 09:27:44,AVGO | Barclays,price_target_usd,,450.0,2025-10-14 09:27:44,new
+AVGO-00468,2025-10-14 11:31:06,AVGO | Morgan Stanley,rating,,Overweight,2025-10-14 11:31:06,new
+AVGO-00468,2025-10-14 11:31:06,AVGO | Morgan Stanley,price_target_usd,,409.0,2025-10-14 11:31:06,new
+AVGO-00469,2025-10-14 11:33:56,AVGO | Citigroup,price_target_usd,,415.0,2025-10-14 11:33:56,new
+AVGO-00470,2025-10-14 11:53:48,AVGO | UBS,rating,,Buy,2025-10-14 11:53:48,new
+AVGO-00470,2025-10-14 11:53:48,AVGO | UBS,price_target_usd,,415.0,2025-10-14 11:53:48,new
+AVGO-00471,2025-10-21 09:02:43,AVGO | Mizuho,rating,,Outperform,2025-10-21 09:02:43,corroborate
+AVGO-00471,2025-10-21 09:02:43,AVGO | Mizuho,price_target_usd,,435.0,2025-10-21 09:02:43,new
+AVGO-00472,2025-11-26 07:53:02,AVGO | Goldman Sachs,rating,,Buy,2025-11-26 07:53:02,new
+AVGO-00472,2025-11-26 07:53:02,AVGO | Goldman Sachs,price_target_usd,,435.0,2025-11-26 07:53:02,new
+AVGO-00473,2025-12-01 10:17:44,AVGO | UBS,rating,,Buy,2025-12-01 10:17:44,new
+AVGO-00473,2025-12-01 10:17:44,AVGO | UBS,price_target_usd,,472.0,2025-12-01 10:17:44,new
+AVGO-00474,2025-12-01 11:30:53,AVGO | B of A Securities,price_target_usd,,460.0,2025-12-01 11:30:53,new
+AVGO-00475,2025-12-01 13:01:29,AVGO | Morgan Stanley,rating,,Overweight,2025-12-01 13:01:29,new
+AVGO-00475,2025-12-01 13:01:29,AVGO | Morgan Stanley,price_target_usd,,443.0,2025-12-01 13:01:29,new
+AVGO-00476,2025-12-04 11:39:20,AVGO | Susquehanna,price_target_usd,,450.0,2025-12-04 11:39:20,new
+AVGO-00477,2025-12-05 06:30:44,AVGO | Oppenheimer,price_target_usd,,435.0,2025-12-05 06:30:44,new
+AVGO-00477,2025-12-05 06:30:44,AVGO | Oppenheimer,rating,,Outperform,2025-12-05 06:30:44,corroborate
+AVGO-00478,2025-12-09 08:38:50,AVGO | Rosenblatt,rating,,Buy,2025-12-09 08:38:50,new
+AVGO-00478,2025-12-09 08:38:50,AVGO | Rosenblatt,price_target_usd,,440.0,2025-12-09 08:38:50,new
+AVGO-00479,2025-12-12 06:54:40,AVGO | Keybanc,price_target_usd,,500.0,2025-12-12 06:54:40,new
+AVGO-00480,2025-12-12 07:05:52,AVGO | B of A Securities,price_target_usd,,500.0,2025-12-12 07:05:52,new
+AVGO-00481,2025-12-12 07:25:43,AVGO | Rosenblatt,rating,,Buy,2025-12-12 07:25:43,new
+AVGO-00481,2025-12-12 07:25:43,AVGO | Rosenblatt,price_target_usd,,450.0,2025-12-12 07:25:43,new
+AVGO-00482,2025-12-12 07:57:34,AVGO | Benchmark,price_target_usd,,385.0,2025-12-12 07:57:34,new
+AVGO-00482,2025-12-12 07:57:34,AVGO | Benchmark,price_target_usd,,485.0,2025-12-12 07:57:34,new
+AVGO-00482,2025-12-12 07:57:34,AVGO | Benchmark,rating,,Buy,2025-12-12 07:57:34,new
+AVGO-00483,2025-12-12 09:02:38,AVGO | Bernstein,price_target_usd,,475.0,2025-12-12 09:02:38,new
+AVGO-00484,2025-12-12 09:21:35,AVGO | Mizuho,price_target_usd,,450.0,2025-12-12 09:21:35,new
+AVGO-00485,2025-12-12 09:25:00,AVGO | Oppenheimer,price_target_usd,,450.0,2025-12-12 09:25:00,new
+AVGO-00486,2025-12-12 09:35:34,AVGO | Piper Sandler,rating,,Overweight,2025-12-12 09:35:34,corroborate
+AVGO-00486,2025-12-12 09:35:34,AVGO | Piper Sandler,price_target_usd,,430.0,2025-12-12 09:35:34,new
+AVGO-00487,2025-12-12 11:35:26,AVGO | Morgan Stanley,rating,,Overweight,2025-12-12 11:35:26,new
+AVGO-00487,2025-12-12 11:35:26,AVGO | Morgan Stanley,price_target_usd,,462.0,2025-12-12 11:35:26,new
+AVGO-00488,2025-12-12 11:35:50,AVGO | TD Cowen,price_target_usd,,405.0,2025-12-12 11:35:50,inferred
+AVGO-00488,2025-12-12 11:35:50,AVGO | TD Cowen,price_target_usd,,450.0,2025-12-12 11:35:50,new
+AVGO-00488,2025-12-12 11:35:50,AVGO | TD Cowen,rating,,Buy,2025-12-12 11:35:50,corroborate
+AVGO-00489,2025-12-12 14:13:57,AVGO | JP Morgan,rating,,Overweight,2025-12-12 14:13:57,new
+AVGO-00489,2025-12-12 14:13:57,AVGO | JP Morgan,price_target_usd,,475.0,2025-12-12 14:13:57,new
+AVGO-00490,2025-12-12 15:37:28,AVGO | Barclays,price_target_usd,,500.0,2025-12-12 15:37:28,new
+AVGO-00491,2025-12-12 16:00:42,AVGO | Citigroup,price_target_usd,,480.0,2025-12-12 16:00:42,new
+AVGO-00492,2025-12-15 13:47:08,AVGO | UBS,rating,,Buy,2025-12-15 13:47:08,new
+AVGO-00492,2025-12-15 13:47:08,AVGO | UBS,price_target_usd,,475.0,2025-12-15 13:47:08,new
+AVGO-00493,2025-12-19 08:05:32,AVGO | Truist Securities,price_target_usd,,510.0,2025-12-19 08:05:32,new
+AVGO-00494,2026-01-09 12:58:31,AVGO | Mizuho,rating,,Outperform,2026-01-09 12:58:31,corroborate
+AVGO-00494,2026-01-09 12:58:31,AVGO | Mizuho,price_target_usd,,480.0,2026-01-09 12:58:31,new
+AVGO-00495,2026-01-15 05:19:07,AVGO | RBC Capital,rating,,Sector Perform,2026-01-15 05:19:07,new
+AVGO-00495,2026-01-15 05:19:07,AVGO | RBC Capital,price_target_usd,,370.0,2026-01-15 05:19:07,new
+AVGO-00496,2026-01-15 08:58:49,AVGO | Wells Fargo,rating,,Overweight,2026-01-15 08:58:49,new
+AVGO-00496,2026-01-15 08:58:49,AVGO | Wells Fargo,price_target_usd,,430.0,2026-01-15 08:58:49,new
+AVGO-00497,2026-02-13 08:31:46,AVGO | DA Davidson,rating,,Neutral,2026-02-13 08:31:46,new
+AVGO-00497,2026-02-13 08:31:46,AVGO | DA Davidson,price_target_usd,,335.0,2026-02-13 08:31:46,new
+AVGO-00498,2026-02-17 11:11:52,AVGO | Citigroup,price_target_usd,,458.0,2026-02-17 11:11:52,new
+AVGO-00499,2026-03-02 11:11:29,AVGO | RBC Capital,price_target_usd,,340.0,2026-03-02 11:11:29,new
+AVGO-00500,2026-03-05 06:51:05,AVGO | B of A Securities,price_target_usd,,450.0,2026-03-05 06:51:05,new
+AVGO-00500,2026-03-05 06:51:05,AVGO | B of A Securities,rating,,Buy,2026-03-05 06:51:05,corroborate
+AVGO-00501,2026-03-05 07:59:47,AVGO | Benchmark,rating,,Buy,2026-03-05 07:59:47,new
+AVGO-00501,2026-03-05 07:59:47,AVGO | Benchmark,price_target_usd,,485.0,2026-03-05 07:59:47,new
+AVGO-00502,2026-03-05 08:38:42,AVGO | Rosenblatt,rating,,Buy,2026-03-05 08:38:42,new
+AVGO-00502,2026-03-05 08:38:42,AVGO | Rosenblatt,price_target_usd,,500.0,2026-03-05 08:38:42,new
+AVGO-00503,2026-03-05 08:57:00,AVGO | Evercore ISI Group,rating,,Outperform,2026-03-05 08:57:00,new
+AVGO-00503,2026-03-05 08:57:00,AVGO | Evercore ISI Group,price_target_usd,,582.0,2026-03-05 08:57:00,new
+AVGO-00504,2026-03-05 10:21:38,AVGO | RBC Capital,price_target_usd,,360.0,2026-03-05 10:21:38,new
+AVGO-00505,2026-03-05 10:44:12,AVGO | Truist Securities,rating,,Buy,2026-03-05 10:44:12,new
+AVGO-00505,2026-03-05 10:44:12,AVGO | Truist Securities,price_target_usd,,545.0,2026-03-05 10:44:12,new
+AVGO-00506,2026-03-05 13:52:32,AVGO | Citigroup,price_target_usd,,475.0,2026-03-05 13:52:32,new
+AVGO-00507,2026-03-05 15:50:32,AVGO | JP Morgan,rating,,Overweight,2026-03-05 15:50:32,new
+AVGO-00507,2026-03-05 15:50:32,AVGO | JP Morgan,price_target_usd,,500.0,2026-03-05 15:50:32,new
+AVGO-00508,2026-03-06 10:18:40,AVGO | Morgan Stanley,rating,,Overweight,2026-03-06 10:18:40,new
+AVGO-00508,2026-03-06 10:18:40,AVGO | Morgan Stanley,price_target_usd,,470.0,2026-03-06 10:18:40,new
+AVGO-00509,2026-04-07 08:45:08,AVGO | Rosenblatt,rating,,Buy,2026-04-07 08:45:08,new
+AVGO-00509,2026-04-07 08:45:08,AVGO | Rosenblatt,price_target_usd,,500.0,2026-04-07 08:45:08,new
+AVGO-00510,2026-04-08 08:01:45,AVGO | Seaport Global,rating,,Neutral,2026-04-08 08:01:45,new
+AVGO-00511,2026-04-13 06:08:20,AVGO | UBS,rating,,Buy,2026-04-13 06:08:20,new
+AVGO-00511,2026-04-13 06:08:20,AVGO | UBS,price_target_usd,,475.0,2026-04-13 06:08:20,new
+AVGO-00512,2026-04-14 05:59:11,AVGO | Bernstein,rating,,Outperform,2026-04-14 05:59:11,corroborate
+AVGO-00512,2026-04-14 05:59:11,AVGO | Bernstein,price_target_usd,,525.0,2026-04-14 05:59:11,new
+AVGO-00513,2026-04-14 06:18:01,AVGO | Citigroup,rating,,Buy,2026-04-14 06:18:01,corroborate
+AVGO-00513,2026-04-14 06:18:01,AVGO | Citigroup,price_target_usd,,475.0,2026-04-14 06:18:01,corroborate
+AVGO-00514,2026-04-14 06:20:30,AVGO | Cantor Fitzgerald,rating,,Overweight,2026-04-14 06:20:30,new
+AVGO-00514,2026-04-14 06:20:30,AVGO | Cantor Fitzgerald,price_target_usd,,525.0,2026-04-14 06:20:30,new
+AVGO-00515,2026-04-15 05:43:40,AVGO | JP Morgan,rating,,Overweight,2026-04-15 05:43:40,new
+AVGO-00515,2026-04-15 05:43:40,AVGO | JP Morgan,price_target_usd,,500.0,2026-04-15 05:43:40,new
+AVGO-00516,2026-04-15 05:47:04,AVGO | Wells Fargo,rating,,Overweight,2026-04-15 05:47:04,corroborate
+AVGO-00516,2026-04-15 05:47:04,AVGO | Wells Fargo,price_target_usd,,430.0,2026-04-15 05:47:04,corroborate
+AVGO-00517,2026-04-16 05:40:43,AVGO | Mizuho,rating,,Outperform,2026-04-16 05:40:43,corroborate
+AVGO-00517,2026-04-16 05:40:43,AVGO | Mizuho,price_target_usd,,480.0,2026-04-16 05:40:43,new
+AVGO-00518,2026-05-12 14:14:43,AVGO | Citigroup,price_target_usd,,500.0,2026-05-12 14:14:43,new
+AVGO-00519,2026-05-14 10:41:53,AVGO | Wells Fargo,rating,,Overweight,2026-05-14 10:41:53,corroborate
+AVGO-00519,2026-05-14 10:41:53,AVGO | Wells Fargo,price_target_usd,,545.0,2026-05-14 10:41:53,new
+AVGO-00520,2026-05-15 12:45:49,AVGO | TD Cowen,price_target_usd,,500.0,2026-05-15 12:45:49,new
+AVGO-00521,2026-05-18 15:11:03,AVGO | UBS,rating,,Buy,2026-05-18 15:11:03,new
+AVGO-00521,2026-05-18 15:11:03,AVGO | UBS,price_target_usd,,490.0,2026-05-18 15:11:03,new
+AVGO-00522,2026-05-28 09:23:19,AVGO | Susquehanna,price_target_usd,,490.0,2026-05-28 09:23:19,new
+AVGO-00522,2026-05-28 09:23:19,AVGO | Susquehanna,rating,,Positive,2026-05-28 09:23:19,corroborate
+AVGO-00523,2026-06-01 08:46:00,AVGO | Morgan Stanley,rating,,Overweight,2026-06-01 08:46:00,new
+AVGO-00523,2026-06-01 08:46:00,AVGO | Morgan Stanley,price_target_usd,,485.0,2026-06-01 08:46:00,new
+AVGO-00523,2026-06-01 08:46:00,AVGO | Morgan Stanley,price_target_usd,,470.0,2026-06-01 08:46:00,inferred
+AVGO-00524,2026-06-04 05:33:15,AVGO | Deutsche Bank,price_target_usd,,515.0,2026-06-04 05:33:15,new
+AVGO-00525,2026-06-04 08:27:59,AVGO | Benchmark,price_target_usd,,545.0,2026-06-04 08:27:59,new
+AVGO-00525,2026-06-04 08:27:59,AVGO | Benchmark,rating,,Buy,2026-06-04 08:27:59,new
+AVGO-00526,2026-06-04 08:35:35,AVGO | Keybanc,price_target_usd,,575.0,2026-06-04 08:35:35,new
+AVGO-00527,2026-06-04 08:38:46,AVGO | Morgan Stanley,rating,,Overweight,2026-06-04 08:38:46,new
+AVGO-00527,2026-06-04 08:38:46,AVGO | Morgan Stanley,price_target_usd,,502.0,2026-06-04 08:38:46,new
+AVGO-00528,2026-06-04 08:57:12,AVGO | Cantor Fitzgerald,rating,,Overweight,2026-06-04 08:57:12,new
+AVGO-00528,2026-06-04 08:57:12,AVGO | Cantor Fitzgerald,price_target_usd,,525.0,2026-06-04 08:57:12,new
+AVGO-00529,2026-06-04 09:19:28,AVGO | RBC Capital,price_target_usd,,400.0,2026-06-04 09:19:28,new
+AVGO-00530,2026-06-04 09:21:01,AVGO | Rosenblatt,rating,,Buy,2026-06-04 09:21:01,new
+AVGO-00530,2026-06-04 09:21:01,AVGO | Rosenblatt,price_target_usd,,500.0,2026-06-04 09:21:01,new
+AVGO-00531,2026-06-04 09:26:13,AVGO | Truist Securities,rating,,Buy,2026-06-04 09:26:13,new
+AVGO-00531,2026-06-04 09:26:13,AVGO | Truist Securities,price_target_usd,,550.0,2026-06-04 09:26:13,new
+AVGO-00532,2026-06-04 09:33:23,AVGO | TD Cowen,rating,,Buy,2026-06-04 09:33:23,corroborate
+AVGO-00532,2026-06-04 09:33:23,AVGO | TD Cowen,price_target_usd,,500.0,2026-06-04 09:33:23,corroborate
+AVGO-00533,2026-06-04 09:46:32,AVGO | DA Davidson,price_target_usd,,400.0,2026-06-04 09:46:32,new
+AVGO-00534,2026-06-04 11:41:15,AVGO | Jefferies,rating,,Buy,2026-06-04 11:41:15,corroborate
+AVGO-00534,2026-06-04 11:41:15,AVGO | Jefferies,price_target_usd,,550.0,2026-06-04 11:41:15,new
+AVGO-00535,2026-06-04 12:10:49,AVGO | JP Morgan,rating,,Overweight,2026-06-04 12:10:49,new
+AVGO-00535,2026-06-04 12:10:49,AVGO | JP Morgan,price_target_usd,,580.0,2026-06-04 12:10:49,new
+AVGO-00536,2026-06-04 12:31:07,AVGO | Macquarie,rating,,Neutral,2026-06-04 12:31:07,new
+AVGO-00536,2026-06-04 12:31:07,AVGO | Macquarie,price_target_usd,,437.0,2026-06-04 12:31:07,new
+AVGO-00537,2026-06-04 12:35:17,AVGO | Oppenheimer,rating,,Outperform,2026-06-04 12:35:17,corroborate
+AVGO-00537,2026-06-04 12:35:17,AVGO | Oppenheimer,price_target_usd,,535.0,2026-06-04 12:35:17,new
+AVGO-00538,2026-06-04 13:46:52,AVGO | Mizuho,rating,,Outperform,2026-06-04 13:46:52,new
+AVGO-00538,2026-06-04 13:46:52,AVGO | Mizuho,price_target_usd,,530.0,2026-06-04 13:46:52,new
+AVGO-00539,2026-06-04 13:59:10,AVGO | B of A Securities,price_target_usd,,530.0,2026-06-04 13:59:10,new
+AVGO-00540,2026-06-04 14:38:56,AVGO | UBS,rating,,Buy,2026-06-04 14:38:56,new
+AVGO-00540,2026-06-04 14:38:56,AVGO | UBS,price_target_usd,,485.0,2026-06-04 14:38:56,new
+AVGO-00541,2026-07-07 12:07:52,AVGO | Erste Group,rating,,Hold,2026-07-07 12:07:52,new
+AVGO-00542,2026-08-21 05:45:37,AVGO | BMO Capital,rating,,Outperform,2026-08-21 05:45:37,new
+AVGO-00542,2026-08-21 05:45:37,AVGO | BMO Capital,price_target_usd,,455.0,2026-08-21 05:45:37,new
+AVGO-00543,2026-08-26 08:50:52,AVGO | RBC Capital,rating,,Sector Perform,2026-08-26 08:50:52,corroborate
+AVGO-00543,2026-08-26 08:50:52,AVGO | RBC Capital,price_target_usd,,400.0,2026-08-26 08:50:52,corroborate
+AVGO-00544,2026-09-03 07:26:15,AVGO | Cantor Fitzgerald,rating,,Overweight,2026-09-03 07:26:15,new
+AVGO-00544,2026-09-03 07:26:15,AVGO | Cantor Fitzgerald,price_target_usd,,600.0,2026-09-03 07:26:15,new
+AVGO-00545,2026-09-03 07:54:34,AVGO | BMO Capital,rating,,Outperform,2026-09-03 07:54:34,corroborate
+AVGO-00545,2026-09-03 07:54:34,AVGO | BMO Capital,price_target_usd,,575.0,2026-09-03 07:54:34,new
+AVGO-00546,2026-09-03 07:59:17,AVGO | Rosenblatt,rating,,Buy,2026-09-03 07:59:17,new
+AVGO-00546,2026-09-03 07:59:17,AVGO | Rosenblatt,price_target_usd,,600.0,2026-09-03 07:59:17,new
+AVGO-00547,2026-09-03 08:53:35,AVGO | Keybanc,rating,,corroborate,2026-09-03 08:53:35,corroborate
+AVGO-00547,2026-09-03 08:53:35,AVGO | Keybanc,price_target_usd,,corroborate,2026-09-03 08:53:35,corroborate
+AVGO-00548,2026-09-03 09:53:55,AVGO | RBC Capital,rating,,corroborate,2026-09-03 09:53:55,corroborate
+AVGO-00548,2026-09-03 09:53:55,AVGO | RBC Capital,price_target_usd,,corroborate,2026-09-03 09:53:55,corroborate
+AVGO-00549,2026-09-03 10:15:44,AVGO | Morgan Stanley,rating,,Overweight,2026-09-03 10:15:44,new
+AVGO-00549,2026-09-03 10:15:44,AVGO | Morgan Stanley,price_target_usd,,505.0,2026-09-03 10:15:44,new
+AVGO-00550,2026-09-03 10:43:18,AVGO | StoneX,rating,,Buy,2026-09-03 10:43:18,new
+AVGO-00550,2026-09-03 10:43:18,AVGO | StoneX,price_target_usd,,545.0,2026-09-03 10:43:18,new
+AVGO-00551,2026-09-03 11:09:05,AVGO | Truist Securities,rating,,Buy,2026-09-03 11:09:05,new
+AVGO-00551,2026-09-03 11:09:05,AVGO | Truist Securities,price_target_usd,,520.0,2026-09-03 11:09:05,new
+AVGO-00552,2026-09-03 11:27:24,AVGO | TD Cowen,price_target_usd,,475.0,2026-09-03 11:27:24,new
+AVGO-00553,2026-09-03 13:04:52,AVGO | Evercore ISI Group,price_target_usd,,578.0,2026-09-03 13:04:52,new
+AVGO-00554,2026-09-03 14:21:00,AVGO | Raymond James,rating,,Outperform,2026-09-03 14:21:00,new
+AVGO-00554,2026-09-03 14:21:00,AVGO | Raymond James,price_target_usd,,475.0,2026-09-03 14:21:00,new
+AVGO-00555,2026-09-03 17:22:20,AVGO | Macquarie,rating,,Outperform,2026-09-03 17:22:20,new
+AVGO-00555,2026-09-03 17:22:20,AVGO | Macquarie,price_target_usd,,490.0,2026-09-03 17:22:20,new
+AVGO-00556,2026-09-04 11:29:30,AVGO | DA Davidson,price_target_usd,,350.0,2026-09-04 11:29:30,new
+AVGO-00557,2026-09-04 12:14:42,AVGO | Citigroup,rating,,Buy,2026-09-04 12:14:42,new
+AVGO-00557,2026-09-04 12:14:42,AVGO | Citigroup,price_target_usd,,515.0,2026-09-04 12:14:42,new
+AVGO-00558,2026-09-10 11:15:47,AVGO | Piper Sandler,rating,,Overweight,2026-09-10 11:15:47,new
+AVGO-00558,2026-09-10 11:15:47,AVGO | Piper Sandler,price_target_usd,,460.0,2026-09-10 11:15:47,new
+AVGO-00559,2026-10-22 09:14:59,AVGO | Tigress Financial,rating,,Buy,2026-10-22 09:14:59,new
+AVGO-00559,2026-10-22 09:14:59,AVGO | Tigress Financial,price_target_usd,,600.0,2026-10-22 09:14:59,new
+AVGO-00560,2026-10-27 08:54:49,AVGO | DA Davidson,rating,,Buy,2026-10-27 08:54:49,new
+AVGO-00560,2026-10-27 08:54:49,AVGO | DA Davidson,price_target_usd,,400.0,2026-10-27 08:54:49,new
+AVGO-00561,2026-10-27 15:52:06,AVGO | Rosenblatt,rating,,Buy,2026-10-27 15:52:06,new
+AVGO-00561,2026-10-27 15:52:06,AVGO | Rosenblatt,price_target_usd,,600.0,2026-10-27 15:52:06,new
+AVGO-00562,2026-11-13 08:05:40,AVGO | Rothschild & Co,rating,,Neutral,2026-11-13 08:05:40,new
+AVGO-00562,2026-11-13 08:05:40,AVGO | Rothschild & Co,price_target_usd,,398.0,2026-11-13 08:05:40,new

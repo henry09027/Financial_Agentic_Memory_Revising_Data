@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-V-001-Q4-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "V",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2020-05-03 17:35:00",
+ "question": "What was the year-over-year revenue growth (percent) of VISA INC.'s most recently reported fiscal quarter (three-month figures)?",
+ "gold": "9.953",
+ "peek_answers": "6.553|-17.175|14.363",
+ "trap_answers": "",
+ "gold_evidence": "V-00067|V-00066",
+ "answer": "10.2",
+ "cited": "V | Revenues | value_usd_m | 2019-10-01..2019-12-31: latest 6054 | first 6054 | 1 reports: 6054 [V-00067 @2020-01-31 21:06]|V | Revenues | value_usd_m | 2018-10-01..2019-03-31: latest 11000 | first 11000 | 1 reports: 11000 [V-00057 @2019-04-26 20:06]|V | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 5494 | first 5494 | 1 reports: 5494 [V-00058 @2019-04-26 20:06]",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 2629,
+ "out_tokens": 278,
+ "seconds": 0.2811,
+ "n_facts": 18,
+ "n_dropped": 0,
+ "created": "2026-11-22T00:47:04",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2020-05-03 17:35:00\nQuestion: What was the year-over-year revenue growth (percent) of VISA INC.'s most recently reported fiscal quarter (three-month figures)?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nV | Revenues | value_usd_m | 2016-10-01..2017-03-31: latest 8938 | first 8938 | 2 reports: 8938 [V-00031 @2017-04-21 12:25]; 8938 [V-00042 @2018-04-27 20:06]\nV | Revenues | value_usd_m | 2017-01-01..2017-03-31: latest 4477 | first 4477 | 2 reports: 4477 [V-00032 @2017-04-21 12:25]; 4477 [V-00043 @2018-04-27 20:06]\nV | Revenues | value_usd_m | 2016-10-01..2017-06-30: latest 13503 | first 13503 | 2 reports: 13503 [V-00035 @2017-07-20 20:12]; 13503 [V-00046 @2018-07-27 20:06]\nV | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 4565 | first 4565 | 2 reports: 4565 [V-00036 @2017-07-20 20:12]; 4565 [V-00047 @2018-07-27 20:06]\nV | Revenues | value_usd_m | 2016-10-01..2017-09-30: latest 18358 | first 18358 | 3 reports: 18358 [V-00039 @2017-11-17 01:07]; 18358 [V-00051 @2018-11-16 21:10]; 18358 [V-00063 @2019-11-14 20:35]\nV | Revenues | value_usd_m | 2017-10-01..2017-12-31: latest 4862 | first 4862 | 2 reports: 4862 [V-00041 @2018-02-01 21:15]; 4862 [V-00053 @2019-01-31 21:16]\nV | Revenues | value_usd_m | 2017-10-01..2018-03-31: latest 9935 | first 9935 | 2 reports: 9935 [V-00044 @2018-04-27 20:06]; 9935 [V-00055 @2019-04-26 20:06]\nV | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 5073 | first 5073 | 2 reports: 5073 [V-00045 @2018-04-27 20:06]; 5073 [V-00056 @2019-04-26 20:06]\nV | Revenues | value_usd_m | 2017-10-01..2018-06-30: latest 15175 | first 15175 | 2 reports: 15175 [V-00048 @2018-07-27 20:06]; 15175 [V-00059 @2019-07-26 20:07]\nV | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 5240 | first 5240 | 2 reports: 5240 [V-00049 @2018-07-27 20:06]; 5240 [V-00060 @2019-07-26 20:07]\nV | Revenues | value_usd_m | 2017-10-01..2018-09-30: latest 20609 | first 20609 | 2 reports: 20609 [V-00052 @2018-11-16 21:10]; 20609 [V-00064 @2019-11-14 20:35]\nV | Revenues | value_usd_m | 2018-10-01..2018-12-31: latest 5506 | first 5506 | 2 reports: 5506 [V-00054 @2019-01-31 21:16]; 5506 [V-00066 @2020-01-31 21:06]\nV | Revenues | value_usd_m | 2018-10-01..2019-03-31: latest 11000 | first 11000 | 1 reports: 11000 [V-00057 @2019-04-26 20:06]\nV | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 5494 | first 5494 | 1 reports: 5494 [V-00058 @2019-04-26 20:06]\nV | Revenues | value_usd_m | 2018-10-01..2019-06-30: latest 16840 | first 16840 | 1 reports: 16840 [V-00061 @2019-07-26 20:07]\nV | Revenues | value_usd_m | 2019-04-01..2019-06-30: latest 5840 | first 5840 | 1 reports: 5840 [V-00062 @2019-07-26 20:07]\nV | Revenues | value_usd_m | 2018-10-01..2019-09-30: latest 22977 | first 22977 | 1 reports: 22977 [V-00065 @2019-11-14 20:35]\nV | Revenues | value_usd_m | 2019-10-01..2019-12-31: latest 6054 | first 6054 | 1 reports: 6054 [V-00067 @2020-01-31 21:06]"
+  }
+ ],
+ "final_text": "{\n\"answer\": 10.2,\n\"evidence_ids\": [\n\"V | Revenues | value_usd_m | 2019-10-01..2019-12-31: latest 6054 | first 6054 | 1 reports: 6054 [V-00067 @2020-01-31 21:06]\",\n\"V | Revenues | value_usd_m | 2018-10-01..2019-03-31: latest 11000 | first 11000 | 1 reports: 11000 [V-00057 @2019-04-26 20:06]\",\n\"V | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 5494 | first 5494 | 1 reports: 5494 [V-00058 @2019-04-26 20:06]\"\n]\n}",
+ "raw_output": "{\n\"answer\": 10.2,\n\"evidence_ids\": [\n\"V | Revenues | value_usd_m | 2019-10-01..2019-12-31: latest 6054 | first 6054 | 1 reports: 6054 [V-00067 @2020-01-31 21:06]\",\n\"V | Revenues | value_usd_m | 2018-10-01..2019-03-31: latest 11000 | first 11000 | 1 reports: 11000 [V-00057 @2019-04-26 20:06]\",\n\"V | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 5494 | first 5494 | 1 reports: 5494 [V-00058 @2019-04-26 20:06]\"\n]\n}"
+}

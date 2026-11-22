@@ -1,0 +1,43 @@
+{
+ "qid": "broker-CAT-001-Q5-today",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "CAT",
+ "qtype": "count_changes",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many times did brokers raise or lower their CAT price target between 1 February 2021 and the as-of time?",
+ "gold": "136",
+ "peek_answers": "",
+ "trap_answers": "151|184|199",
+ "gold_evidence": "CAT-00201|CAT-00222|CAT-00252|CAT-00254|CAT-00148|CAT-00151|CAT-00160|CAT-00163|CAT-00166|CAT-00168|CAT-00178|CAT-00182|CAT-00191|CAT-00195|CAT-00198|CAT-00211|CAT-00257|CAT-00261|CAT-00289|CAT-00143|CAT-00150|CAT-00156|CAT-00158|CAT-00161|CAT-00181|CAT-00190|CAT-00192|CAT-00209|CAT-00146|CAT-00175|CAT-00180|CAT-00189|CAT-00225|CAT-00227|CAT-00237|CAT-00242|CAT-00258|CAT-00264|CAT-00292|CAT-00187|CAT-00205|CAT-00217|CAT-00238|CAT-00256|CAT-00266|CAT-00272|CAT-00282|CAT-00291|CAT-00144|CAT-00159|CAT-00167|CAT-00171|CAT-00177|CAT-00185|CAT-00193|CAT-00203|CAT-00210|CAT-00221|CAT-00274|CAT-00287|CAT-00147|CAT-00197|CAT-00220|CAT-00228|CAT-00234|CAT-00241|CAT-00206|CAT-00208|CAT-00213|CAT-00218|CAT-00236|CAT-00273|CAT-00153|CAT-00199|CAT-00212|CAT-00226|CAT-00231|CAT-00244|CAT-00154|CAT-00165|CAT-00186|CAT-00196|CAT-00207|CAT-00250|CAT-00268|CAT-00276|CAT-00285|CAT-00145|CAT-00152|CAT-00176|CAT-00184|CAT-00194|CAT-00200|CAT-00204|CAT-00223|CAT-00235|CAT-00260|CAT-00262|CAT-00269|CAT-00284|CAT-00290|CAT-00172|CAT-00188|CAT-00215|CAT-00229|CAT-00179|CAT-00224|CAT-00245|CAT-00232|CAT-00170|CAT-00202|CAT-00219|CAT-00251|CAT-00263|CAT-00277|CAT-00173|CAT-00214|CAT-00265|CAT-00278|CAT-00293|CAT-00246|CAT-00239|CAT-00253|CAT-00279|CAT-00295|CAT-00249|CAT-00255|CAT-00259|CAT-00270|CAT-00275|CAT-00281|CAT-00288|CAT-00271|CAT-00283|CAT-00267|CAT-00294",
+ "answer": "2",
+ "cited": "CAT-00291|CAT-00292",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.014705882352941176,
+ "in_tokens": 985,
+ "out_tokens": 50,
+ "seconds": 0.0454,
+ "retrieved": "CAT-00291|CAT-00292|CAT-00296",
+ "n_dropped": 0,
+ "created": "2026-11-22T02:48:05",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many times did brokers raise or lower their CAT price target between 1 February 2021 and the as-of time?\n\nEvidence:\n[CAT-00291] 2026-10-30 17:22 | Citigroup maintained Buy on CAT, and lowered its price target from $950.00 to $800.00.\n[CAT-00292] 2026-10-30 19:41 | JP Morgan maintained Overweight on CAT, and lowered its price target from $1,100.00 to $1,000.00.\n[CAT-00296] 2026-11-18 15:35 | DA Davidson maintained Neutral on CAT, with a $685.00 price target."
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 2,\n  \"evidence_ids\": [\n    \"CAT-00291\",\n    \"CAT-00292\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 2,\n  \"evidence_ids\": [\n    \"CAT-00291\",\n    \"CAT-00292\"\n  ]\n}\n```"
+}

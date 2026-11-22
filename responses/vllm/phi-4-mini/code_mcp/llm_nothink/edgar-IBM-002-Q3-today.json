@@ -1,0 +1,55 @@
+{
+ "qid": "edgar-IBM-002-Q3-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "IBM",
+ "qtype": "derived_quarter",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "What was INTERNATIONAL BUSINESS MACHINES CORP's revenue for the three months ended 31 December 2023 (the fourth quarter of fiscal year 2023), in $ millions?",
+ "gold": "17381",
+ "peek_answers": "",
+ "trap_answers": "CANNOT_ANSWER|61860",
+ "gold_evidence": "IBM-00144|IBM-00127",
+ "answer": "14968.0",
+ "cited": "IBM-00141|IBM-00130",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 4783,
+ "out_tokens": 85,
+ "seconds": 0.1098,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' AND attribute = 'value_usd_m' \\nORDER BY learned_at DESC \\nLIMIT 50;\"]",
+ "created": "2026-11-21T21:42:00",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: What was INTERNATIONAL BUSINESS MACHINES CORP's revenue for the three months ended 31 December 2023 (the fourth quarter of fiscal year 2023), in $ millions?\n\nDatabase contents at the as-of time: 140 facts, 115 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'IBM | Revenues': value_usd_m (140)\nkind values: '', 'corroborate', 'new', 'revision'\nmost recently learned periods: '2026-07-01..2026-09-30', '2026-01-01..2026-09-30', '2025-07-01..2025-09-30', '2025-01-01..2025-09-30', '2026-04-01..2026-06-30', '2026-01-01..2026-06-30', '2025-04-01..2025-06-30', '2025-01-01..2025-06-30'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2025-01-01..2025-09-30,47849.0,2026-04-23 10:22:26,2026-10-21 22:15:58,corroborate,IBM-00153\n2025-07-01..2025-09-30,16331.0,2026-04-23 10:22:26,2026-10-21 22:15:58,corroborate,IBM-00154\n2026-01-01..2026-09-30,50182.0,2026-10-22 22:15:58,2026-10-21 22:15:58,new,IBM-00155\n2026-07-01..2026-09-30,17003.0,2026-10-21 22:15:58,2026-10-21 22:15:58,new,IBM-00156\n2025-01-01..2025-06-30,31519.0,2026-07-23 22:14:04,2026-07-22 22:14:04,new,IBM-00149\n2025-04-01..2025-06-30,16977.0,2026-07-23 22:14:04,2026-07-22 22:14:04,revision,IBM-00150\n2026-01-01..2026-06-30,33079.0,2026-07-23 22:14:04,2026-07-22 22:14:04,new,IBM-00151\n2026-04-01..2026-06-30,17162.0,2026-07-23 22:14:04,2026-07-22 22:14:04,revision,IBM-00152\n2025-01-01..2025-03-31,14541.0,2026-04-23 10:22:26,2026-04-23 10:22:26,corroborate,IBM-00147\n2026-01-01..2026-03-31,15917.0,2026-04-23 10:22:26,2026-04-23 10:22:26,new,IBM-00148\n2023-01-01..2023-12-31,61860.0,2023-02-24 21:07:07,2026-02-24 21:07:07,new,IBM-00144\n2024-01-01..2024-12-31,62753.0,2026-02-24 21:07:07,2026-02-24 21:07:07,new,IBM-00145\n2025-01-01..2025-12-31,67535.0,2026-02-24 21:07:07,2026-02-24 21:07:07,new,IBM-00146\n2024-01-01..2024-09-30,45199.0,,2025-10-23 20:21:14,corroborate,IBM-00140\n2024-07-01..2024-09-30,14968.0,2025-10-23 20:21:14,2025-10-23 20:21:14,new,IBM-00141\n2025-01-01..2025-09-30,47849.0,2025-10-23 20:21:14,2025-10-23 20:21:14,new,IBM-00142\n2025-07-01..2025-09-30,16331.0,2025-10-23 20:21:14,2025-10-23 20:21:14,new,IBM-00143\n2024-01-01..2024-06-30,30231.0,2023-07-30 10:38:17,2025-07-24 20:16:47,revision,IBM-00136\n2024-04-01..2024-06-30,15775.0,2025-07-24 20:16:47,2025-07-24 20:16:47,revision,IBM-00137\n2025-01-01..2025-06-30,31519.0,2025-07-24 20:16:47,2025-07-24 20:16:47,new,IBM-00138\n2025-04-01..2025-06-30,16977.0,2025-07-24 20:16:47,2025-07-24 20:16:47,new,IBM-00139\n2024-01-01..2024-03-31,14462.0,2025-04-24 20:16:05,2025-04-24 20:16:05,corroborate,IBM-00134\n2025-01-01..2025-03-31,14541.0,2025-04-24 20:16:05,2025-04-24 20:16:05,new,IBM-00135\n2022-01-01..2022-12-31,60530.0,2023-02-28 21:26:11,2025-02-25 21:12:45,corroborate,IBM-00131\n2023-01-01..2023-12-31,61860.0,2024-02-26 11:41:57,2025-02-25 21:12:45,new,IBM-00131\n2024-01-01..2024-12-31,61860.0,2024-02-26 11:41:57,2025-02-25 21:12:45,new,IBM-00131\n2024-01-01..2024-06-30,30231.0,2024-07-30 10:38:17,2025-02-25 21:12:45,new,IBM-00131\n2024-04-01..2024-06-30,15775.0,2024-07-30 10:38:17,2025-02-25 21:12:45,new,IBM-00131\n2024-01-01..2024-09-30,45199.0,2024-10-30 20:09:22,2025-02-25 21:12:45,new,IBM-00131\n2024-07-01..2024-09-30,14968.0,2024-10-30 20:09:22,2025-02-25 21:12:45,new,IBM-00131\n2024-01-01..2024-12-31,61860.0,2024-02-26 11:41:57,2025-02-25 21:12:45,new,IBM-00131\n2023-01-01..2023-12-31,61860.0,2024-02-26 11:41:57,2025-02-25 21:12:45,corroborate,IBM-00132\n2024-01-01..2024-12-31,61860.0,2024-02-26 11:41:57,2025-02-25 21:12:45,new,IBM-00132\n2024-01-01..2024-12-31,62753.0,2025-02-25 21:12:45,2025-02-25 21:12:45,new,IBM-00133\n2023-01-01..2023-09-30,44479.0,2023-10-31 10:38:48,2024-10-30 20:09:22,revision,IBM-00127\n2023-07-01..2023-09-30,14752.0,2024-10-30 20:09:22,2024-10-30 20:09:22,corroborate,IBM-00128\n2024-01-01..2024-09-30,45199.0,2024-10-30 20:09:22,2024-10-30 20:09:22,new,IBM-00129\n2024-07-01..2024-09-30,14968.0,2024-10-30 20:09:22,2024-10-30 20:09:22,new,IBM-00130\n2023-01-01..2023-06-30,29727.0,2023-07-30 10:38:17,2024-07-30 10:38:17,new,IBM-00123\n2023-04-01..2023-06-30,15475.0,2024-07-30 10:38:17,2024-07-30 10:38:17,revision,IBM-00124\n2024-01-01..2024-06-30,30231.0,2024-07-30 10:38:17,2024-07-30 10:38:17,new,IBM-00125\n2024-04-01..2024-06-30,15775.0,2024-07-30 10:38:17,2024-07-30 10:38:17,revision,IBM-00126\n2023-01-01..2023-03-31,14252.0,2024-04-30 15:00:50,2024-04-30 15:00:50,new,IBM-00121\n2024-01-01..2024-03-31,14462.0,2024-04-30 15:00:50,2024-04-30 15:00:50,new,IBM-00122\n2021-01-01..2021-12-31,57350.0,2022-02-25 21:54:20,2024-02-26 11:41:57,corroborate,IBM-00118\n2022-01-01..2022-12-31,60530.0,2023-02-28 21:26:11,2024-02-26 11:41:57,corroborate,IBM-00119\n2023-01-01..2023-06-30,29727.0,2023-07-25 10:33:21,2024-02-26 11:41:57,new,IBM-00119\n2023-04-01..2023-06-30,15475.0,2023-07-25 10:33:21,2024-02-26 11:41:57,new,IBM-00119\n2023-01-01..2023-09-30,44479.0,2023-10-31 10:38:48,2024-02-26 11:41:57,new,IBM-00119\n2023-07-01..2023-09-30,14752.0,2023-10-31 10:38:48,2024-02-26 11:41:57,new,IBM-00119\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": \"14968.0\", \"evidence_ids\": [\"IBM-00141\", \"IBM-00130\"]}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```\n\n===== next turn =====\n\n```json\n{\"answer\": \"14968.0\", \"evidence_ids\": [\"IBM-00141\", \"IBM-00130\"]}\n```"
+}

@@ -1,0 +1,71 @@
+{
+ "qid": "broker-CAT-003-Q6-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "CAT",
+ "qtype": "count_buy",
+ "mode": "as_of",
+ "as_of": "2022-01-22 04:34:00",
+ "question": "How many active brokers currently rate CAT Buy or an equivalent rating?",
+ "gold": "10",
+ "peek_answers": "8",
+ "trap_answers": "5|15",
+ "gold_evidence": "CAT-00168|CAT-00161|CAT-00146|CAT-00167|CAT-00155|CAT-00153|CAT-00165|CAT-00152|CAT-00149|CAT-00157|CAT-00162|CAT-00164|CAT-00169|CAT-00170",
+ "answer": "16",
+ "cited": "",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 10324,
+ "out_tokens": 516,
+ "seconds": 0.8891,
+ "n_dropped": 0,
+ "n_sql": 3,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 4,
+ "sql": "[\"SELECT COUNT(*) \\nFROM facts \\nWHERE subject LIKE 'CAT | %' \\n  AND attribute = 'rating' \\n  AND effective_at <= '2022-01-22 04:34:00'\\n  AND value_num IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)\\n  AND kind IN ('new', 'corroborate')\\n  AND value_num <= 20\", \"SELECT DISTINCT value, kind, effective_at \\nFROM facts \\nWHERE subject LIKE 'CAT | %' \\n  AND attribute = 'rating' \\n  AND effective_at <= '2022-01-22 04:34:00'\\n  AND kind IN ('new', 'corroborate')\\nORDER BY subject, effective_at\", \"SELECT COUNT(DISTINCT subject)\\nFROM facts\\nWHERE subject LIKE 'CAT | %'\\n  AND attribute = 'rating'\\n  AND effective_at <= '2022-01-22 04:34:00'\\n  AND kind IN ('new', 'corroborate')\\n  AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform')\"]",
+ "created": "2026-11-22T01:30:57",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2022-01-22 04:34:00\nQuestion: How many active brokers currently rate CAT Buy or an equivalent rating?\n\nDatabase contents at the as-of time: 157 facts, 79 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'CAT': split_ratio (1)\n  'CAT | B of A Securities': price_target_usd (5), rating (6)\n  'CAT | BMO Capital': price_target_usd (3), rating (3)\n  'CAT | Baird': price_target_usd (1), rating (1)\n  'CAT | Barclays': price_target_usd (1), rating (1)\n  'CAT | Bernstein': price_target_usd (1), rating (1)\n  'CAT | CFRA': price_target_usd (2), rating (2)\n  'CAT | Citigroup': price_target_usd (5), rating (5)\n  'CAT | Cowen & Co.': alias (1), price_target_usd (1), rating (1)\n  'CAT | Credit Suisse': price_target_usd (6), rating (6)\n  'CAT | Daiwa Capital': price_target_usd (1), rating (1)\n  'CAT | Deutsche Bank': price_target_usd (7), rating (7)\n  'CAT | Goldman Sachs': price_target_usd (4), rating (4)\n  'CAT | JP Morgan': price_target_usd (2), rating (2)\n  'CAT | Morgan Stanley': price_target_usd (20), rating (20)\n  'CAT | OTR Global': price_target_usd (1), rating (1)\n  'CAT | RBC Capital': price_target_usd (1), rating (1)\n  'CAT | Standpoint Research': price_target_usd (1), rating (1)\n  'CAT | Stephens & Co.': price_target_usd (1), rating (1)\n  'CAT | Stifel': price_target_usd (4), rating (4)\n  'CAT | Tigress Financial': price_target_usd (1), rating (1)\n  'CAT | UBS': price_target_usd (5), rating (5)\n  'CAT | Vertical Research': price_target_usd (1), rating (1)\n  'CAT | Wells Fargo': price_target_usd (2), rating (2)\n  'CAT | Wolfe Research': price_target_usd (1), rating (1)\nkind values: '', 'corroborate', 'event', 'inferred', 'new'\nmost recently learned periods: '-'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'CAT | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT COUNT(*) \nFROM facts \nWHERE subject LIKE 'CAT | %' \n  AND attribute = 'rating' \n  AND effective_at <= '2022-01-22 04:34:00'\n  AND value_num IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)\n  AND kind IN ('new', 'corroborate')\n  AND value_num <= 20\n```\n\nWait, the rating values in the database are likely strings like \"Buy\", \"Overweight\", etc., not numbers 1-20. The example query shows `value_num` but the actual values in the `facts` table for `rating` are text. I need to check the actual rating values.\n\nLet me first see what the rating values are for the active brokers.\n\n```sql\nSELECT DISTINCT value, kind, effective_at \nFROM facts \nWHERE subject LIKE 'CAT | %' \n  AND attribute = 'rating' \n  AND effective_at <= '2022-01-22 04:34:00'\n  AND kind IN ('new', 'corroborate')\nORDER BY subject, effective_at\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nCOUNT(*)\n0\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT DISTINCT value, kind, effective_at \nFROM facts \nWHERE subject LIKE 'CAT | %' \n  AND attribute = 'rating' \n  AND effective_at <= '2022-01-22 04:34:00'\n  AND kind IN ('new', 'corroborate')\nORDER BY subject, effective_at\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nvalue,kind,effective_at\nBuy,new,2019-10-24 12:12:43\nBuy,corroborate,2019-11-06 08:42:03\nBuy,corroborate,2020-03-11 10:05:42\nUnderperform,new,2020-04-13 07:31:19\nUnderperform,corroborate,2020-04-29 12:36:43\nNeutral,new,2020-07-08 08:11:24\nMarket Perform,new,2020-06-12 06:08:36\nMarket Perform,corroborate,2021-02-01 12:03:47\nMarket Perform,corroborate,2021-04-30 09:45:46\nOutperform,corroborate,2020-03-13 10:14:30\nEqual-Weight,new,2022-01-13 07:35:33\nOutperform,new,2021-12-22 06:06:07\nSell,new,2020-01-31 11:38:43\nSell,corroborate,2020-04-28 13:33:31\nBuy,corroborate,2020-01-17 07:14:42\nBuy,corroborate,2020-02-04 07:59:01\nBuy,corroborate,2020-03-13 08:17:16\nBuy,corroborate,2020-03-31 07:47:26\nBuy,corroborate,2020-06-18 06:53:47\nOutperform,new,2021-10-14 07:12:58\nOutperform,new,2020-01-17 08:08:16\nOutperform,corroborate,2020-02-03 07:56:58\nOutperform,corroborate,2020-04-09 09:01:32\nOutperform,corroborate,2021-02-01 11:30:31\nOutperform,corroborate,2021-08-02 08:11:59\nOutperform,corroborate,2021-10-29 08:47:05\nOutperform,new,2020-01-21 07:28:01\nHold,corroborate,2019-12-18 09:57:52\nBuy,new,2020-07-01 06:42:48\nBuy,corroborate,2021-02-01 10:42:54\nBuy,corroborate,2021-04-13 09:22:39\nBuy,corroborate,2021-06-04 09:28:20\nBuy,corroborate,2021-07-14 09:10:07\nBuy,corroborate,2021-08-02 09:51:45\nBuy,new,2020-02-13 06:41:00\nBuy,corroborate,2021-01-21 08:17:31\nBuy,corroborate,2021-03-03 08:19:54\nBuy,corroborate,2021-05-27 08:21:56\nOverweight,new,2019-12-20 09:22:30\nOverweight,corroborate,2021-02-25 11:25:44\nEqual-Weight,new,2019-12-16 08:23:13\nEqual-Weight,corroborate,2020-02-03 09:03:29\nEqual-Weight,corroborate,2020-03-17 09:27:41\nEqual-Weight,corroborate,2020-03-27 09:19:29\nEqual-Weight,corroborate,2020-04-13 09:20:12\nUnderweight,new,2020-04-27 06:21:50\nUnderweight,corroborate,2020-04-29 08:35:36\nUnderweight,corroborate,2020-08-03 09:07:15\nUnderweight,corroborate,2020-09-09 07:52:53\nUnderweight,corroborate,2020-10-12 07:56:10\n...(truncated)"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT COUNT(DISTINCT subject)\nFROM facts\nWHERE subject LIKE 'CAT | %'\n  AND attribute = 'rating'\n  AND effective_at <= '2022-01-22 04:34:00'\n  AND kind IN ('new', 'corroborate')\n  AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform')\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nCOUNT(DISTINCT subject)\n16\n"
+  }
+ ],
+ "final_text": "{\"answer\": 16, \"evidence_ids\": []}",
+ "raw_output": "```sql\nSELECT COUNT(*) \nFROM facts \nWHERE subject LIKE 'CAT | %' \n  AND attribute = 'rating' \n  AND effective_at <= '2022-01-22 04:34:00'\n  AND value_num IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)\n  AND kind IN ('new', 'corroborate')\n  AND value_num <= 20\n```\n\nWait, the rating values in the database are likely strings like \"Buy\", \"Overweight\", etc., not numbers 1-20. The example query shows `value_num` but the actual values in the `facts` table for `rating` are text. I need to check the actual rating values.\n\nLet me first see what the rating values are for the active brokers.\n\n```sql\nSELECT DISTINCT value, kind, effective_at \nFROM facts \nWHERE subject LIKE 'CAT | %' \n  AND attribute = 'rating' \n  AND effective_at <= '2022-01-22 04:34:00'\n  AND kind IN ('new', 'corroborate')\nORDER BY subject, effective_at\n```\n\n===== next turn =====\n\n```sql\nSELECT DISTINCT value, kind, effective_at \nFROM facts \nWHERE subject LIKE 'CAT | %' \n  AND attribute = 'rating' \n  AND effective_at <= '2022-01-22 04:34:00'\n  AND kind IN ('new', 'corroborate')\nORDER BY subject, effective_at\n```\n\n===== next turn =====\n\n```sql\nSELECT COUNT(DISTINCT subject)\nFROM facts\nWHERE subject LIKE 'CAT | %'\n  AND attribute = 'rating'\n  AND effective_at <= '2022-01-22 04:34:00'\n  AND kind IN ('new', 'corroborate')\n  AND value IN ('Buy', 'Strong Buy', 'Outperform', 'Overweight', 'Positive', 'Market Outperform')\n```\n\n===== next turn =====\n\n{\"answer\": 16, \"evidence_ids\": []}"
+}

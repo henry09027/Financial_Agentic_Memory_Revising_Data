@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-ADBE-002-Q4-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "ADBE",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2020-07-04 07:18:00",
+ "question": "What was the year-over-year revenue growth (percent) of ADOBE INC.'s most recently reported fiscal quarter (three-month figures)?",
+ "gold": "13.994",
+ "peek_answers": "13.797|12.892",
+ "trap_answers": "16.352",
+ "gold_evidence": "ADBE-00074|ADBE-00072",
+ "answer": "11.7",
+ "cited": "ADBE-00074",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.5,
+ "in_tokens": 3045,
+ "out_tokens": 43,
+ "seconds": 0.2925,
+ "n_facts": 19,
+ "n_dropped": 0,
+ "created": "2026-11-22T05:39:14",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2020-07-04 07:18:00\nQuestion: What was the year-over-year revenue growth (percent) of ADOBE INC.'s most recently reported fiscal quarter (three-month figures)?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nADBE | Revenues | value_usd_m | 2017-03-04..2017-06-02: latest 1772.19 | first 1772.19 | 2 reports: 1772.19 [ADBE-00035 @2017-06-28 20:04]; 1772.19 [ADBE-00046 @2018-06-27 20:12]\nADBE | Revenues | value_usd_m | 2016-12-03..2017-09-01: latest 5294.91 | first 5294.91 | 2 reports: 5294.91 [ADBE-00038 @2017-09-27 21:32]; 5294.91 [ADBE-00049 @2018-09-26 20:10]\nADBE | Revenues | value_usd_m | 2017-06-03..2017-09-01: latest 1841.074 | first 1841.074 | 2 reports: 1841.074 [ADBE-00039 @2017-09-27 21:32]; 1841.074 [ADBE-00050 @2018-09-26 20:10]\nADBE | Revenues | value_usd_m | 2016-12-03..2017-12-01: latest 7301.505 | first 7301.505 | 3 reports: 7301.505 [ADBE-00042 @2018-01-22 21:07]; 7301.505 [ADBE-00054 @2019-01-25 11:24]; 7301.505 [ADBE-00066 @2020-01-21 11:06]\nADBE | Revenues | value_usd_m | 2017-12-02..2018-03-02: latest 2078.947 | first 2078.947 | 2 reports: 2078.947 [ADBE-00044 @2018-03-28 20:03]; 2078.947 [ADBE-00056 @2019-03-27 20:07]\nADBE | Revenues | value_usd_m | 2017-12-02..2018-06-01: latest 4274.307 | first 4274.307 | 2 reports: 4274.307 [ADBE-00047 @2018-06-27 20:12]; 4274.307 [ADBE-00058 @2019-06-26 20:07]\nADBE | Revenues | value_usd_m | 2018-03-03..2018-06-01: latest 2195.36 | first 2195.36 | 2 reports: 2195.36 [ADBE-00048 @2018-06-27 20:12]; 2195.36 [ADBE-00059 @2019-06-26 20:07]\nADBE | Revenues | value_usd_m | 2017-12-02..2018-08-31: latest 6565.383 | first 6565.383 | 2 reports: 6565.383 [ADBE-00051 @2018-09-26 20:10]; 6565.383 [ADBE-00062 @2019-09-26 20:25]\nADBE | Revenues | value_usd_m | 2018-06-02..2018-08-31: latest 2291.076 | first 2291.076 | 2 reports: 2291.076 [ADBE-00052 @2018-09-26 20:10]; 2291.076 [ADBE-00063 @2019-09-26 20:25]\nADBE | Revenues | value_usd_m | 2017-12-02..2018-11-30: latest 9030.008 | first 9030.008 | 2 reports: 9030.008 [ADBE-00055 @2019-01-25 11:24]; 9030.008 [ADBE-00067 @2020-01-21 11:06]\nADBE | Revenues | value_usd_m | 2018-12-01..2019-03-01: latest 2601.0 | first 2600.946 | 2 reports: 2600.946 [ADBE-00057 @2019-03-27 20:07]; 2601.0 [ADBE-00069 @2020-03-25 20:07]\nADBE | Revenues | value_usd_m | 2018-12-01..2019-05-31: latest 5345.0 | first 5345.226 | 2 reports: 5345.226 [ADBE-00060 @2019-06-26 20:07]; 5345.0 [ADBE-00071 @2020-06-24 20:05]\nADBE | Revenues | value_usd_m | 2019-03-02..2019-05-31: latest 2744.0 | first 2744.28 | 2 reports: 2744.28 [ADBE-00061 @2019-06-26 20:07]; 2744.0 [ADBE-00072 @2020-06-24 20:05]\nADBE | Revenues | value_usd_m | 2018-12-01..2019-08-30: latest 8179.352 | first 8179.352 | 1 reports: 8179.352 [ADBE-00064 @2019-09-26 20:25]\nADBE | Revenues | value_usd_m | 2019-06-01..2019-08-30: latest 2834.126 | first 2834.126 | 1 reports: 2834.126 [ADBE-00065 @2019-09-26 20:25]\nADBE | Revenues | value_usd_m | 2018-12-01..2019-11-29: latest 11171.297 | first 11171.297 | 1 reports: 11171.297 [ADBE-00068 @2020-01-21 11:06]\nADBE | Revenues | value_usd_m | 2019-11-30..2020-02-28: latest 3091.0 | first 3091.0 | 1 reports: 3091.0 [ADBE-00070 @2020-03-25 20:07]\nADBE | Revenues | value_usd_m | 2019-11-30..2020-05-29: latest 6219.0 | first 6219.0 | 1 reports: 6219.0 [ADBE-00073 @2020-06-24 20:05]\nADBE | Revenues | value_usd_m | 2020-02-29..2020-05-29: latest 3128.0 | first 3128.0 | 1 reports: 3128.0 [ADBE-00074 @2020-06-24 20:05]"
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 11.7,\n  \"evidence_ids\": [\n    \"ADBE-00074\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 11.7,\n  \"evidence_ids\": [\n    \"ADBE-00074\"\n  ]\n}\n```"
+}

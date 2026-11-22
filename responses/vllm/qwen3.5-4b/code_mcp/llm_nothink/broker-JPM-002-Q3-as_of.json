@@ -1,0 +1,87 @@
+{
+ "qid": "broker-JPM-002-Q3-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "JPM",
+ "qtype": "change_since_initiation",
+ "mode": "as_of",
+ "as_of": "2024-07-14 18:32:00",
+ "question": "By what percent has Piper Sandler's JPM price target changed since it initiated coverage? (split-adjusted, in percent)",
+ "gold": "46.67",
+ "peek_answers": "53.33|130",
+ "trap_answers": "",
+ "gold_evidence": "JPM-00178|JPM-00258",
+ "answer": "46.67",
+ "cited": "JPM-00178|JPM-00258",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 19151,
+ "out_tokens": 351,
+ "seconds": 1.8452,
+ "n_dropped": 0,
+ "n_sql": 5,
+ "n_sql_error": 0,
+ "n_sql_empty": 3,
+ "n_turns": 6,
+ "sql": "[\"SELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \\nFROM facts \\nWHERE subject = 'JPM | Piper Sandler' \\nORDER BY effective_at ASC\", \"SELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \\nFROM facts \\nWHERE subject = 'JPM | Piper Sandler' \\nORDER BY effective_at ASC\", \"SELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \\nFROM facts \\nWHERE subject = 'JPM' AND attribute = 'split_ratio'\", \"SELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \\nFROM facts \\nWHERE subject LIKE '%JPM%' AND attribute = 'split_ratio'\", \"SELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \\nFROM facts \\nWHERE attribute = 'split_ratio'\"]",
+ "created": "2026-11-22T01:39:16",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2024-07-14 18:32:00\nQuestion: By what percent has Piper Sandler's JPM price target changed since it initiated coverage? (split-adjusted, in percent)\n\nDatabase contents at the as-of time: 185 facts, 93 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'JPM | Atlantic Equities': price_target_usd (1), rating (1)\n  'JPM | B of A Securities': price_target_usd (2), rating (2)\n  'JPM | BMO Capital': price_target_usd (5), rating (5)\n  'JPM | Baird': price_target_usd (1), rating (1)\n  'JPM | Barclays': price_target_usd (3), rating (3)\n  'JPM | Berenberg': price_target_usd (1), rating (1)\n  'JPM | Citigroup': price_target_usd (4), rating (4)\n  'JPM | Credit Suisse': price_target_usd (2), rating (2)\n  'JPM | Daiwa Capital': price_target_usd (1), rating (1)\n  'JPM | Deutsche Bank': price_target_usd (3), rating (3)\n  'JPM | Evercore ISI Group': price_target_usd (4), rating (4)\n  'JPM | Goldman Sachs': price_target_usd (2), rating (2)\n  'JPM | HSBC': price_target_usd (1), rating (1)\n  'JPM | Jefferies': price_target_usd (4), rating (4)\n  'JPM | Keefe, Bruyette & Woods': price_target_usd (5), rating (5)\n  'JPM | Morgan Stanley': price_target_usd (16), rating (16)\n  'JPM | Oppenheimer': price_target_usd (15), rating (15)\n  'JPM | Piper Sandler': price_target_usd (9), rating (9)\n  'JPM | RBC Capital': price_target_usd (7), rating (7)\n  'JPM | Societe Generale': price_target_usd (1), rating (1)\n  'JPM | UBS': price_target_usd (2), rating (2)\n  'JPM | Wells Fargo': price_target_usd (3), rating (3)\n  'JPM | Wolfe Research': rating (1)\nkind values: 'corroborate', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'JPM | Morgan Stanley' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM | Piper Sandler' \nORDER BY effective_at ASC\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value,effective_at,kind,evidence_id,value_num\nJPM | Piper Sandler,price_target_usd,,150.00,2022-12-08 05:07:47,new,JPM-00178,150.0\nJPM | Piper Sandler,rating,,Overweight,2022-12-08 05:07:47,new,JPM-00178,\nJPM | Piper Sandler,price_target_usd,,157.00,2023-01-17 06:50:04,new,JPM-00183,157.0\nJPM | Piper Sandler,rating,,Overweight,2023-01-17 06:50:04,corroborate,JPM-00183,\nJPM | Piper Sandler,price_target_usd,,151.00,2023-04-17 05:56:31,new,JPM-00194,151.0\nJPM | Piper Sandler,rating,,Overweight,2023-04-17 05:56:31,corroborate,JPM-00194,\nJPM | Piper Sandler,price_target_usd,,168.00,2023-07-17 11:36:57,new,JPM-00217,168.0\nJPM | Piper Sandler,rating,,Overweight,2023-07-17 11:36:57,corroborate,JPM-00217,\nJPM | Piper Sandler,price_target_usd,,170.0,2023-10-16 13:28:28,new,JPM-00230,170.0\nJPM | Piper Sandler,rating,,Overweight,2023-10-16 13:28:28,corroborate,JPM-00230,\nJPM | Piper Sandler,price_target_usd,,200.00,2024-01-16 10:02:20,new,JPM-00237,200.0\nJPM | Piper Sandler,rating,,Overweight,2024-01-16 10:02:20,corroborate,JPM-00237,\nJPM | Piper Sandler,price_target_usd,,210.0,2024-03-08 09:40:11,new,JPM-00242,210.0\nJPM | Piper Sandler,rating,,Overweight,2024-03-08 09:40:11,corroborate,JPM-00242,\nJPM | Piper Sandler,price_target_usd,,215.0,2024-04-15 09:41:32,new,JPM-00253,215.0\nJPM | Piper Sandler,rating,,Overweight,2024-04-15 09:41:32,corroborate,JPM-00253,\nJPM | Piper Sandler,price_target_usd,,220.0,2024-05-21 08:36:20,new,JPM-00258,220.0\nJPM | Piper Sandler,rating,,Overweight,2024-05-21 08:36:20,corroborate,JPM-00258,\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM | Piper Sandler' \nORDER BY effective_at ASC\n```\n\nWait, I need to check if there were any splits for JPM before the as-of time (2024-07-14) that would affect the calculation. The prompt mentions \"split-adjusted\". Let me check for split events.\n\n```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM' AND attribute = 'split_ratio'\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value,effective_at,kind,evidence_id,value_num\nJPM | Piper Sandler,price_target_usd,,150.00,2022-12-08 05:07:47,new,JPM-00178,150.0\nJPM | Piper Sandler,rating,,Overweight,2022-12-08 05:07:47,new,JPM-00178,\nJPM | Piper Sandler,price_target_usd,,157.00,2023-01-17 06:50:04,new,JPM-00183,157.0\nJPM | Piper Sandler,rating,,Overweight,2023-01-17 06:50:04,corroborate,JPM-00183,\nJPM | Piper Sandler,price_target_usd,,151.00,2023-04-17 05:56:31,new,JPM-00194,151.0\nJPM | Piper Sandler,rating,,Overweight,2023-04-17 05:56:31,corroborate,JPM-00194,\nJPM | Piper Sandler,price_target_usd,,168.00,2023-07-17 11:36:57,new,JPM-00217,168.0\nJPM | Piper Sandler,rating,,Overweight,2023-07-17 11:36:57,corroborate,JPM-00217,\nJPM | Piper Sandler,price_target_usd,,170.0,2023-10-16 13:28:28,new,JPM-00230,170.0\nJPM | Piper Sandler,rating,,Overweight,2023-10-16 13:28:28,corroborate,JPM-00230,\nJPM | Piper Sandler,price_target_usd,,200.00,2024-01-16 10:02:20,new,JPM-00237,200.0\nJPM | Piper Sandler,rating,,Overweight,2024-01-16 10:02:20,corroborate,JPM-00237,\nJPM | Piper Sandler,price_target_usd,,210.0,2024-03-08 09:40:11,new,JPM-00242,210.0\nJPM | Piper Sandler,rating,,Overweight,2024-03-08 09:40:11,corroborate,JPM-00242,\nJPM | Piper Sandler,price_target_usd,,215.0,2024-04-15 09:41:32,new,JPM-00253,215.0\nJPM | Piper Sandler,rating,,Overweight,2024-04-15 09:41:32,corroborate,JPM-00253,\nJPM | Piper Sandler,price_target_usd,,220.0,2024-05-21 08:36:20,new,JPM-00258,220.0\nJPM | Piper Sandler,rating,,Overweight,2024-05-21 08:36:20,corroborate,JPM-00258,\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM' AND attribute = 'split_ratio'\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value,effective_at,kind,evidence_id,value_num\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject LIKE '%JPM%' AND attribute = 'split_ratio'\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value,effective_at,kind,evidence_id,value_num\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE attribute = 'split_ratio'\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nsubject,attribute,period,value,effective_at,kind,evidence_id,value_num\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 46.67, \"evidence_ids\": [\"JPM-00178\", \"JPM-00258\"]}\n```",
+ "raw_output": "```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM | Piper Sandler' \nORDER BY effective_at ASC\n```\n\n===== next turn =====\n\n```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM | Piper Sandler' \nORDER BY effective_at ASC\n```\n\nWait, I need to check if there were any splits for JPM before the as-of time (2024-07-14) that would affect the calculation. The prompt mentions \"split-adjusted\". Let me check for split events.\n\n```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM' AND attribute = 'split_ratio'\n```\n\n===== next turn =====\n\n```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject = 'JPM' AND attribute = 'split_ratio'\n```\n\n===== next turn =====\n\n```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE subject LIKE '%JPM%' AND attribute = 'split_ratio'\n```\n\n===== next turn =====\n\n```sql\nSELECT subject, attribute, period, value, effective_at, kind, evidence_id, value_num \nFROM facts \nWHERE attribute = 'split_ratio'\n```\n\n===== next turn =====\n\n```json\n{\"answer\": 46.67, \"evidence_ids\": [\"JPM-00178\", \"JPM-00258\"]}\n```"
+}

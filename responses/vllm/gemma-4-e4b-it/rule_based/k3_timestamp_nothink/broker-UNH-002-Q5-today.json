@@ -1,0 +1,43 @@
+{
+ "qid": "broker-UNH-002-Q5-today",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "UNH",
+ "qtype": "count_changes",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many times did brokers raise or lower their UNH price target between 1 July 2025 and the as-of time?",
+ "gold": "96",
+ "peek_answers": "",
+ "trap_answers": "101|115|120",
+ "gold_evidence": "UNH-00406|UNH-00428|UNH-00436|UNH-00452|UNH-00471|UNH-00478|UNH-00493|UNH-00397|UNH-00414|UNH-00422|UNH-00432|UNH-00440|UNH-00448|UNH-00460|UNH-00483|UNH-00488|UNH-00401|UNH-00402|UNH-00411|UNH-00421|UNH-00463|UNH-00468|UNH-00470|UNH-00398|UNH-00412|UNH-00417|UNH-00433|UNH-00455|UNH-00464|UNH-00469|UNH-00482|UNH-00495|UNH-00400|UNH-00408|UNH-00418|UNH-00439|UNH-00453|UNH-00472|UNH-00496|UNH-00431|UNH-00456|UNH-00475|UNH-00486|UNH-00497|UNH-00403|UNH-00427|UNH-00489|UNH-00399|UNH-00416|UNH-00442|UNH-00447|UNH-00462|UNH-00474|UNH-00479|UNH-00407|UNH-00449|UNH-00476|UNH-00487|UNH-00409|UNH-00424|UNH-00441|UNH-00457|UNH-00465|UNH-00485|UNH-00491|UNH-00426|UNH-00438|UNH-00446|UNH-00429|UNH-00434|UNH-00459|UNH-00477|UNH-00404|UNH-00419|UNH-00473|UNH-00481|UNH-00405|UNH-00435|UNH-00450|UNH-00480|UNH-00410|UNH-00423|UNH-00443|UNH-00458|UNH-00466|UNH-00484|UNH-00494|UNH-00415|UNH-00420|UNH-00430|UNH-00445|UNH-00461|UNH-00492|UNH-00437|UNH-00451|UNH-00467",
+ "answer": "3",
+ "cited": "UNH-00494|UNH-00495|UNH-00497",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.03125,
+ "in_tokens": 1003,
+ "out_tokens": 64,
+ "seconds": 0.0475,
+ "retrieved": "UNH-00494|UNH-00495|UNH-00497",
+ "n_dropped": 0,
+ "created": "2026-11-22T02:49:04",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many times did brokers raise or lower their UNH price target between 1 July 2025 and the as-of time?\n\nEvidence:\n[UNH-00494] 2026-10-22 08:11 | Mizuho maintained Outperform on UNH, and raised its price target from $493.00 to $500.00.\n[UNH-00495] 2026-10-27 07:29 | Morgan Stanley maintained Overweight on UNH, and raised its price target from $529.00 to $531.00.\n[UNH-00497] 2026-11-20 09:17 | TD Cowen upgraded UNH from Hold to Buy, and raised its price target from $402.00 to $455.00."
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 3,\n  \"evidence_ids\": [\n    \"UNH-00494\",\n    \"UNH-00495\",\n    \"UNH-00497\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 3,\n  \"evidence_ids\": [\n    \"UNH-00494\",\n    \"UNH-00495\",\n    \"UNH-00497\"\n  ]\n}\n```"
+}

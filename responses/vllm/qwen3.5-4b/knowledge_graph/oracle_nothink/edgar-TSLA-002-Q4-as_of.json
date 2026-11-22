@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-TSLA-002-Q4-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "TSLA",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2019-10-22 01:58:00",
+ "question": "What was the year-over-year revenue growth (percent) of Tesla, Inc.'s most recently reported fiscal quarter (three-month figures)?",
+ "gold": "58.653",
+ "peek_answers": "-7.635|-0.174",
+ "trap_answers": "46.959",
+ "gold_evidence": "TSLA-00061|TSLA-00059",
+ "answer": "10.5",
+ "cited": "TSLA | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 2789.56 | first 2789.56 | 2 reports: 2789.56 [TSLA-00035 @2017-08-04 21:15]; 2789.56 [TSLA-00046 @2018-08-04 01:56]|TSLA | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 4002.23 | first 4002.23 | 2 reports: 4002.23 [TSLA-00048 @2018-08-04 01:56]; 4002.23 [TSLA-00059 @2019-07-29 10:21]",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 2202,
+ "out_tokens": 280,
+ "seconds": 0.2786,
+ "n_facts": 13,
+ "n_dropped": 0,
+ "created": "2026-11-22T01:20:53",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-10-22 01:58:00\nQuestion: What was the year-over-year revenue growth (percent) of Tesla, Inc.'s most recently reported fiscal quarter (three-month figures)?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nTSLA | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 2789.56 | first 2789.56 | 2 reports: 2789.56 [TSLA-00035 @2017-08-04 21:15]; 2789.56 [TSLA-00046 @2018-08-04 01:56]\nTSLA | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 8470.5 | first 8470.5 | 2 reports: 8470.5 [TSLA-00038 @2017-11-02 23:56]; 8470.5 [TSLA-00049 @2018-11-02 00:38]\nTSLA | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 2984.68 | first 2984.68 | 2 reports: 2984.68 [TSLA-00039 @2017-11-02 23:56]; 2984.68 [TSLA-00050 @2018-11-02 00:38]\nTSLA | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 11758.8 | first 11758.8 | 2 reports: 11758.8 [TSLA-00042 @2018-02-23 11:07]; 11758.8 [TSLA-00054 @2019-02-19 11:10]\nTSLA | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 3408.75 | first 3408.75 | 2 reports: 3408.75 [TSLA-00044 @2018-05-05 01:46]; 3408.75 [TSLA-00056 @2019-04-29 10:09]\nTSLA | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 7410.98 | first 7410.98 | 2 reports: 7410.98 [TSLA-00047 @2018-08-04 01:56]; 7410.98 [TSLA-00058 @2019-07-29 10:21]\nTSLA | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 4002.23 | first 4002.23 | 2 reports: 4002.23 [TSLA-00048 @2018-08-04 01:56]; 4002.23 [TSLA-00059 @2019-07-29 10:21]\nTSLA | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 14235.4 | first 14235.4 | 1 reports: 14235.4 [TSLA-00051 @2018-11-02 00:38]\nTSLA | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 6824.41 | first 6824.41 | 1 reports: 6824.41 [TSLA-00052 @2018-11-02 00:38]\nTSLA | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 21461.3 | first 21461.3 | 1 reports: 21461.3 [TSLA-00055 @2019-02-19 11:10]\nTSLA | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 4541.46 | first 4541.46 | 1 reports: 4541.46 [TSLA-00057 @2019-04-29 10:09]\nTSLA | Revenues | value_usd_m | 2019-01-01..2019-06-30: latest 10891.1 | first 10891.1 | 1 reports: 10891.1 [TSLA-00060 @2019-07-29 10:21]\nTSLA | Revenues | value_usd_m | 2019-04-01..2019-06-30: latest 6349.68 | first 6349.68 | 1 reports: 6349.68 [TSLA-00061 @2019-07-29 10:21]"
+  }
+ ],
+ "final_text": "{\"answer\": 10.5, \"evidence_ids\": [\"TSLA | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 2789.56 | first 2789.56 | 2 reports: 2789.56 [TSLA-00035 @2017-08-04 21:15]; 2789.56 [TSLA-00046 @2018-08-04 01:56]\", \"TSLA | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 4002.23 | first 4002.23 | 2 reports: 4002.23 [TSLA-00048 @2018-08-04 01:56]; 4002.23 [TSLA-00059 @2019-07-29 10:21]\"]}",
+ "raw_output": "{\"answer\": 10.5, \"evidence_ids\": [\"TSLA | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 2789.56 | first 2789.56 | 2 reports: 2789.56 [TSLA-00035 @2017-08-04 21:15]; 2789.56 [TSLA-00046 @2018-08-04 01:56]\", \"TSLA | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 4002.23 | first 4002.23 | 2 reports: 4002.23 [TSLA-00048 @2018-08-04 01:56]; 4002.23 [TSLA-00059 @2019-07-29 10:21]\"]}"
+}

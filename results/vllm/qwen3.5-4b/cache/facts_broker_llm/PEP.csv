@@ -1,0 +1,398 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+PEP-00105,2022-02-11 08:02:57,PEP | Credit Suisse,price_target_usd,,166.00,2022-02-11 08:02:57,new
+PEP-00105,2022-02-11 08:02:57,PEP | Credit Suisse,rating,,Neutral,2022-02-11 08:02:57,new
+PEP-00105,2022-02-11 08:02:57,PEP | Credit Suisse,price_target_usd,,164.00,2022-02-11 08:02:57,inferred
+PEP-00106,2022-02-11 08:57:40,PEP | Morgan Stanley,price_target_usd,,198.00,2022-02-11 08:57:40,new
+PEP-00106,2022-02-11 08:57:40,PEP | Morgan Stanley,rating,,Overweight,2022-02-11 08:57:40,new
+PEP-00107,2022-02-14 07:31:21,PEP | Barclays,price_target_usd,,180.00,2022-02-14 07:31:21,new
+PEP-00107,2022-02-14 07:31:21,PEP | Barclays,rating,,Overweight,2022-02-14 07:31:21,corroborate
+PEP-00108,2022-02-15 05:49:19,PEP | DZ Bank,price_target_usd,,180.00,2022-02-15 05:49:19,new
+PEP-00108,2022-02-15 05:49:19,PEP | DZ Bank,rating,,Hold,2022-02-15 05:49:19,new
+PEP-00109,2022-03-09 07:30:42,PEP | Wells Fargo,price_target_usd,,170.0,2022-03-09 07:30:42,new
+PEP-00109,2022-03-09 07:30:42,PEP | Wells Fargo,rating,,Equal-Weight,2022-03-09 07:30:42,new
+PEP-00110,2022-03-30 08:20:59,PEP | JP Morgan,price_target_usd,,180.0,2022-03-30 08:20:59,new
+PEP-00110,2022-03-30 08:20:59,PEP | JP Morgan,rating,,Overweight,2022-03-30 08:20:59,new
+PEP-00111,2022-04-12 07:37:21,PEP | Deutsche Bank,price_target_usd,,173.0,2022-04-12 07:37:21,new
+PEP-00111,2022-04-12 07:37:21,PEP | Deutsche Bank,rating,,Hold,2022-04-12 07:37:21,corroborate
+PEP-00112,2022-04-27 07:25:15,PEP | Credit Suisse,price_target_usd,,168.0,2022-04-27 07:25:15,new
+PEP-00112,2022-04-27 07:25:15,PEP | Credit Suisse,rating,,Neutral,2022-04-27 07:25:15,corroborate
+PEP-00113,2022-04-27 10:36:23,PEP | Deutsche Bank,price_target_usd,,175.0,2022-04-27 10:36:23,new
+PEP-00113,2022-04-27 10:36:23,PEP | Deutsche Bank,rating,,Hold,2022-04-27 10:36:23,corroborate
+PEP-00114,2022-06-21 07:28:48,PEP | Wells Fargo,price_target_usd,,172.0,2022-06-21 07:28:48,new
+PEP-00114,2022-06-21 07:28:48,PEP | Wells Fargo,rating,,Equal-Weight,2022-06-21 07:28:48,corroborate
+PEP-00115,2022-06-21 10:06:58,PEP | UBS,price_target_usd,,182.00,2022-06-21 10:06:58,new
+PEP-00115,2022-06-21 10:06:58,PEP | UBS,rating,,Buy,2022-06-21 10:06:58,new
+PEP-00116,2022-07-06 07:31:56,PEP | JP Morgan,price_target_usd,,185.0,2022-07-06 07:31:56,new
+PEP-00116,2022-07-06 07:31:56,PEP | JP Morgan,rating,,Overweight,2022-07-06 07:31:56,corroborate
+PEP-00117,2022-07-06 07:50:33,PEP | Barclays,price_target_usd,,183.00,2022-07-06 07:50:33,new
+PEP-00117,2022-07-06 07:50:33,PEP | Barclays,rating,,Overweight,2022-07-06 07:50:33,corroborate
+PEP-00118,2022-07-07 08:59:42,PEP | Deutsche Bank,price_target_usd,,178.0,2022-07-07 08:59:42,new
+PEP-00118,2022-07-07 08:59:42,PEP | Deutsche Bank,rating,,Hold,2022-07-07 08:59:42,corroborate
+PEP-00119,2022-07-13 07:15:17,PEP | Credit Suisse,price_target_usd,,170.0,2022-07-13 07:15:17,new
+PEP-00119,2022-07-13 07:15:17,PEP | Credit Suisse,rating,,Neutral,2022-07-13 07:15:17,corroborate
+PEP-00120,2022-09-27 08:28:35,PEP | Deutsche Bank,price_target_usd,,181.0,2022-09-27 08:28:35,new
+PEP-00120,2022-09-27 08:28:35,PEP | Deutsche Bank,rating,,Hold,2022-09-27 08:28:35,corroborate
+PEP-00121,2022-09-30 08:31:26,PEP | JP Morgan,price_target_usd,,186.00,2022-09-30 08:31:26,new
+PEP-00121,2022-09-30 08:31:26,PEP | JP Morgan,rating,,Overweight,2022-09-30 08:31:26,corroborate
+PEP-00122,2022-10-03 08:17:21,PEP | Credit Suisse,price_target_usd,,172.0,2022-10-03 08:17:21,new
+PEP-00122,2022-10-03 08:17:21,PEP | Credit Suisse,rating,,Neutral,2022-10-03 08:17:21,corroborate
+PEP-00123,2022-10-11 05:19:59,PEP | Wedbush,price_target_usd,,185.00,2022-10-11 05:19:59,new
+PEP-00123,2022-10-11 05:19:59,PEP | Wedbush,rating,,Outperform,2022-10-11 05:19:59,new
+PEP-00124,2022-10-13 08:07:05,PEP | Wedbush,price_target_usd,,190.0,2022-10-13 08:07:05,new
+PEP-00124,2022-10-13 08:07:05,PEP | Wedbush,rating,,Outperform,2022-10-13 08:07:05,corroborate
+PEP-00125,2022-10-13 08:18:20,PEP | RBC Capital,price_target_usd,,170.00,2022-10-13 08:18:20,new
+PEP-00125,2022-10-13 08:18:20,PEP | RBC Capital,rating,,Sector Perform,2022-10-13 08:18:20,new
+PEP-00126,2022-10-13 09:10:52,PEP | Wells Fargo,price_target_usd,,174.00,2022-10-13 09:10:52,new
+PEP-00126,2022-10-13 09:10:52,PEP | Wells Fargo,rating,,Equal-Weight,2022-10-13 09:10:52,corroborate
+PEP-00127,2022-10-14 07:06:58,PEP | Barclays,price_target_usd,,185.00,2022-10-14 07:06:58,new
+PEP-00127,2022-10-14 07:06:58,PEP | Barclays,rating,,Overweight,2022-10-14 07:06:58,corroborate
+PEP-00128,2022-11-04 06:29:13,PEP | Redburn Partners,price_target_usd,,,2022-11-04 06:29:13,new
+PEP-00128,2022-11-04 06:29:13,PEP | Redburn Partners,rating,,Sell,2022-11-04 06:29:13,new
+PEP-00129,2022-12-06 09:51:43,PEP | Deutsche Bank,price_target_usd,,186.00,2022-12-06 09:51:43,new
+PEP-00129,2022-12-06 09:51:43,PEP | Deutsche Bank,rating,,Hold,2022-12-06 09:51:43,corroborate
+PEP-00130,2023-01-03 08:34:53,PEP | Wells Fargo,price_target_usd,,190.00,2023-01-03 08:34:53,new
+PEP-00130,2023-01-03 08:34:53,PEP | Wells Fargo,rating,,Equal-Weight,2023-01-03 08:34:53,corroborate
+PEP-00131,2023-02-08 09:16:44,PEP | Wells Fargo,price_target_usd,,190.00,2023-02-08 09:16:44,new
+PEP-00131,2023-02-08 09:16:44,PEP | Wells Fargo,rating,,Equal-Weight,2023-02-08 09:16:44,corroborate
+PEP-00132,2023-02-10 07:39:19,PEP | Morgan Stanley,price_target_usd,,200.0,2023-02-10 07:39:19,new
+PEP-00132,2023-02-10 07:39:19,PEP | Morgan Stanley,rating,,Overweight,2023-02-10 07:39:19,corroborate
+PEP-00133,2023-02-10 08:38:28,PEP | Credit Suisse,price_target_usd,,182.0,2023-02-10 08:38:28,new
+PEP-00133,2023-02-10 08:38:28,PEP | Credit Suisse,rating,,Neutral,2023-02-10 08:38:28,corroborate
+PEP-00134,2023-02-13 06:49:05,PEP | Barclays,price_target_usd,,187.00,2023-02-13 06:49:05,new
+PEP-00134,2023-02-13 06:49:05,PEP | Barclays,rating,,Overweight,2023-02-13 06:49:05,corroborate
+PEP-00135,2023-02-17 05:14:58,PEP | Citigroup,price_target_usd,,180.00,2023-02-17 05:14:58,new
+PEP-00135,2023-02-17 05:14:58,PEP | Citigroup,rating,,Neutral,2023-02-17 05:14:58,new
+PEP-00136,2023-03-20 07:55:21,PEP | Bernstein,price_target_usd,,,2023-03-20 07:55:21,new
+PEP-00136,2023-03-20 07:55:21,PEP | Bernstein,rating,,Market Perform,2023-03-20 07:55:21,new
+PEP-00137,2023-03-20 13:08:28,PEP | Deutsche Bank,price_target_usd,,188.00,2023-03-20 13:08:28,new
+PEP-00137,2023-03-20 13:08:28,PEP | Deutsche Bank,rating,,Hold,2023-03-20 13:08:28,corroborate
+PEP-00138,2023-04-06 09:19:41,PEP | UBS,price_target_usd,,205.00,2023-04-06 09:19:41,new
+PEP-00138,2023-04-06 09:19:41,PEP | UBS,rating,,Buy,2023-04-06 09:19:41,corroborate
+PEP-00139,2023-04-14 06:04:32,PEP | Barclays,price_target_usd,,201.00,2023-04-14 06:04:32,new
+PEP-00139,2023-04-14 06:04:32,PEP | Barclays,rating,,Overweight,2023-04-14 06:04:32,corroborate
+PEP-00140,2023-04-17 07:23:40,PEP | JP Morgan,price_target_usd,,196.00,2023-04-17 07:23:40,new
+PEP-00140,2023-04-17 07:23:40,PEP | JP Morgan,rating,,Overweight,2023-04-17 07:23:40,corroborate
+PEP-00141,2023-04-25 07:45:36,PEP | Wedbush,price_target_usd,,190.0,2023-04-25 07:45:36,corroborate
+PEP-00141,2023-04-25 07:45:36,PEP | Wedbush,rating,,Outperform,2023-04-25 07:45:36,corroborate
+PEP-00142,2023-04-26 05:35:42,PEP | Morgan Stanley,price_target_usd,,210.00,2023-04-26 05:35:42,new
+PEP-00142,2023-04-26 05:35:42,PEP | Morgan Stanley,rating,,Overweight,2023-04-26 05:35:42,corroborate
+PEP-00143,2023-04-26 10:09:43,PEP | RBC Capital,price_target_usd,,178.00,2023-04-26 10:09:43,new
+PEP-00143,2023-04-26 10:09:43,PEP | RBC Capital,rating,,Sector Perform,2023-04-26 10:09:43,corroborate
+PEP-00144,2023-04-27 05:54:50,PEP | Barclays,price_target_usd,,206.00,2023-04-27 05:54:50,new
+PEP-00144,2023-04-27 05:54:50,PEP | Barclays,rating,,Overweight,2023-04-27 05:54:50,corroborate
+PEP-00145,2023-07-10 10:41:30,PEP | Barclays,price_target_usd,,198.00,2023-07-10 10:41:30,new
+PEP-00145,2023-07-10 10:41:30,PEP | Barclays,rating,,Overweight,2023-07-10 10:41:30,corroborate
+PEP-00146,2023-07-11 10:39:23,PEP | Citigroup,price_target_usd,,200.00,2023-07-11 10:39:23,corroborate
+PEP-00146,2023-07-11 10:39:23,PEP | Citigroup,rating,,Neutral,2023-07-11 10:39:23,corroborate
+PEP-00147,2023-07-14 08:20:10,PEP | Wedbush,price_target_usd,,206.00,2023-07-14 08:20:10,new
+PEP-00147,2023-07-14 08:20:10,PEP | Wedbush,rating,,Outperform,2023-07-14 08:20:10,corroborate
+PEP-00148,2023-07-14 12:32:47,PEP | Argus Research,price_target_usd,,212.00,2023-07-14 12:32:47,new
+PEP-00148,2023-07-14 12:32:47,PEP | Argus Research,rating,,Buy,2023-07-14 12:32:47,corroborate
+PEP-00149,2023-07-14 12:44:18,PEP | Deutsche Bank,price_target_usd,,195.00,2023-07-14 12:44:18,new
+PEP-00149,2023-07-14 12:44:18,PEP | Deutsche Bank,rating,,Hold,2023-07-14 12:44:18,corroborate
+PEP-00150,2023-07-14 12:50:20,PEP | Evercore ISI Group,price_target_usd,,195.00,2023-07-14 12:50:20,new
+PEP-00150,2023-07-14 12:50:20,PEP | Evercore ISI Group,rating,,In-Line,2023-07-14 12:50:20,new
+PEP-00151,2023-07-17 06:00:57,PEP | Morgan Stanley,price_target_usd,,210.00,2023-07-17 06:00:57,new
+PEP-00151,2023-07-17 06:00:57,PEP | Morgan Stanley,rating,,Equal-Weight,2023-07-17 06:00:57,new
+PEP-00152,2023-10-04 06:08:08,PEP | Barclays,price_target_usd,,179.00,2023-10-04 06:08:08,new
+PEP-00152,2023-10-04 06:08:08,PEP | Barclays,rating,,Overweight,2023-10-04 06:08:08,corroborate
+PEP-00153,2023-10-09 07:36:45,PEP | Wells Fargo,price_target_usd,,170.0,2023-10-09 07:36:45,new
+PEP-00153,2023-10-09 07:36:45,PEP | Wells Fargo,rating,,Equal-Weight,2023-10-09 07:36:45,corroborate
+PEP-00154,2023-10-09 08:27:28,PEP | Wedbush,price_target_usd,,195.0,2023-10-09 08:27:28,new
+PEP-00154,2023-10-09 08:27:28,PEP | Wedbush,rating,,Outperform,2023-10-09 08:27:28,corroborate
+PEP-00155,2023-10-10 09:03:03,PEP | Wedbush,price_target_usd,,195.0,2023-10-10 09:03:03,corroborate
+PEP-00155,2023-10-10 09:03:03,PEP | Wedbush,rating,,Outperform,2023-10-10 09:03:03,corroborate
+PEP-00156,2023-10-11 08:53:57,PEP | RBC Capital,price_target_usd,,180.00,2023-10-11 08:53:57,corroborate
+PEP-00156,2023-10-11 08:53:57,PEP | RBC Capital,rating,,Sector Perform,2023-10-11 08:53:57,corroborate
+PEP-00157,2023-10-11 10:42:14,PEP | Morgan Stanley,price_target_usd,,190.0,2023-10-11 10:42:14,new
+PEP-00157,2023-10-11 10:42:14,PEP | Morgan Stanley,rating,,Equal-Weight,2023-10-11 10:42:14,corroborate
+PEP-00158,2023-10-11 11:47:21,PEP | Citigroup,price_target_usd,,180.00,2023-10-11 11:47:21,new
+PEP-00158,2023-10-11 11:47:21,PEP | Citigroup,rating,,Neutral,2023-10-11 11:47:21,corroborate
+PEP-00159,2023-10-11 15:37:51,PEP | JP Morgan,price_target_usd,,185.00,2023-10-11 15:37:51,new
+PEP-00159,2023-10-11 15:37:51,PEP | JP Morgan,rating,,Overweight,2023-10-11 15:37:51,corroborate
+PEP-00160,2023-10-12 15:09:37,PEP | Barclays,price_target_usd,,181.0,2023-10-12 15:09:37,new
+PEP-00160,2023-10-12 15:09:37,PEP | Barclays,rating,,Overweight,2023-10-12 15:09:37,corroborate
+PEP-00161,2023-10-19 09:05:48,PEP | DZ Bank,price_target_usd,,187.00,2023-10-19 09:05:48,new
+PEP-00161,2023-10-19 09:05:48,PEP | DZ Bank,rating,,Buy,2023-10-19 09:05:48,new
+PEP-00162,2023-11-13 06:48:12,PEP | Jefferies,price_target_usd,,203.00,2023-11-13 06:48:12,new
+PEP-00162,2023-11-13 06:48:12,PEP | Jefferies,rating,,Buy,2023-11-13 06:48:12,new
+PEP-00163,2023-12-19 05:39:52,PEP | JP Morgan,price_target_usd,,176.00,2023-12-19 05:39:52,new
+PEP-00163,2023-12-19 05:39:52,PEP | JP Morgan,rating,,Neutral,2023-12-19 05:39:52,new
+PEP-00164,2024-01-16 12:48:27,PEP | Barclays,price_target_usd,,179.0,2024-01-16 12:48:27,new
+PEP-00164,2024-01-16 12:48:27,PEP | Barclays,rating,,Overweight,2024-01-16 12:48:27,corroborate
+PEP-00165,2024-02-09 09:02:04,PEP | Wedbush,price_target_usd,,195.0,2024-02-09 09:02:04,corroborate
+PEP-00165,2024-02-09 09:02:04,PEP | Wedbush,rating,,Outperform,2024-02-09 09:02:04,corroborate
+PEP-00166,2024-02-12 06:47:17,PEP | Citigroup,price_target_usd,,195.00,2024-02-12 06:47:17,new
+PEP-00166,2024-02-12 06:47:17,PEP | Citigroup,rating,,Buy,2024-02-12 06:47:17,new
+PEP-00167,2024-02-12 11:23:47,PEP | RBC Capital,price_target_usd,,180.00,2024-02-12 11:23:47,corroborate
+PEP-00167,2024-02-12 11:23:47,PEP | RBC Capital,rating,,Sector Perform,2024-02-12 11:23:47,corroborate
+PEP-00168,2024-02-13 09:14:31,PEP | Barclays,price_target_usd,,183.00,2024-02-13 09:14:31,new
+PEP-00168,2024-02-13 09:14:31,PEP | Barclays,rating,,Overweight,2024-02-13 09:14:31,corroborate
+PEP-00169,2024-03-18 05:03:42,PEP | Morgan Stanley,price_target_usd,,190.00,2024-03-18 05:03:42,new
+PEP-00169,2024-03-18 05:03:42,PEP | Morgan Stanley,rating,,Overweight,2024-03-18 05:03:42,new
+PEP-00170,2024-04-03 07:40:17,PEP | Argus Research,rating,,Hold,2024-04-03 07:40:17,new
+PEP-00170,2024-04-03 07:40:17,PEP | Argus Research,price_target_usd,,212.00,2024-04-03 07:40:17,corroborate
+PEP-00171,2024-04-05 10:05:20,PEP | Jefferies,price_target_usd,,209.00,2024-04-05 10:05:20,new
+PEP-00171,2024-04-05 10:05:20,PEP | Jefferies,rating,,Buy,2024-04-05 10:05:20,corroborate
+PEP-00172,2024-04-12 10:28:20,PEP | Barclays,price_target_usd,,184.00,2024-04-12 10:28:20,new
+PEP-00172,2024-04-12 10:28:20,PEP | Barclays,rating,,Overweight,2024-04-12 10:28:20,corroborate
+PEP-00173,2024-04-23 08:19:48,PEP | Wedbush,price_target_usd,,195.0,2024-04-23 08:19:48,corroborate
+PEP-00173,2024-04-23 08:19:48,PEP | Wedbush,rating,,Outperform,2024-04-23 08:19:48,corroborate
+PEP-00174,2024-04-24 11:04:30,PEP | JP Morgan,price_target_usd,,181.00,2024-04-24 11:04:30,new
+PEP-00174,2024-04-24 11:04:30,PEP | JP Morgan,rating,,Neutral,2024-04-24 11:04:30,corroborate
+PEP-00175,2024-04-25 14:31:15,PEP | Barclays,price_target_usd,,185.0,2024-04-25 14:31:15,new
+PEP-00175,2024-04-25 14:31:15,PEP | Barclays,rating,,Overweight,2024-04-25 14:31:15,corroborate
+PEP-00176,2024-05-16 12:24:21,PEP | Jefferies,price_target_usd,,211.0,2024-05-16 12:24:21,new
+PEP-00176,2024-05-16 12:24:21,PEP | Jefferies,rating,,Buy,2024-05-16 12:24:21,corroborate
+PEP-00177,2024-06-12 06:11:57,PEP | Barclays,price_target_usd,,180.0,2024-06-12 06:11:57,new
+PEP-00177,2024-06-12 06:11:57,PEP | Barclays,rating,,Overweight,2024-06-12 06:11:57,corroborate
+PEP-00178,2024-06-24 06:14:43,PEP | Exane BNP Paribas,price_target_usd,,174.00,2024-06-24 06:14:43,new
+PEP-00178,2024-06-24 06:14:43,PEP | Exane BNP Paribas,rating,,Neutral,2024-06-24 06:14:43,new
+PEP-00179,2024-06-26 09:57:14,PEP | JP Morgan,price_target_usd,,184.00,2024-06-26 09:57:14,new
+PEP-00179,2024-06-26 09:57:14,PEP | JP Morgan,rating,,Neutral,2024-06-26 09:57:14,corroborate
+PEP-00180,2024-07-03 11:36:10,PEP | TD Cowen,price_target_usd,,190.0,2024-07-03 11:36:10,new
+PEP-00180,2024-07-03 11:36:10,PEP | TD Cowen,rating,,Buy,2024-07-03 11:36:10,new
+PEP-00181,2024-07-08 13:02:15,PEP | B of A Securities,price_target_usd,,190.0,2024-07-08 13:02:15,new
+PEP-00181,2024-07-08 13:02:15,PEP | B of A Securities,rating,,Buy,2024-07-08 13:02:15,new
+PEP-00182,2024-07-09 12:08:02,PEP | Jefferies,price_target_usd,,200.0,2024-07-09 12:08:02,new
+PEP-00182,2024-07-09 12:08:02,PEP | Jefferies,rating,,Buy,2024-07-09 12:08:02,corroborate
+PEP-00183,2024-07-10 11:05:39,PEP | Wells Fargo,price_target_usd,,170.0,2024-07-10 11:05:39,new
+PEP-00183,2024-07-10 11:05:39,PEP | Wells Fargo,rating,,Equal-Weight,2024-07-10 11:05:39,corroborate
+PEP-00184,2024-07-12 10:59:01,PEP | RBC Capital,price_target_usd,,177.0,2024-07-12 10:59:01,new
+PEP-00184,2024-07-12 10:59:01,PEP | RBC Capital,rating,,Sector Perform,2024-07-12 10:59:01,corroborate
+PEP-00185,2024-07-12 11:26:21,PEP | JP Morgan,price_target_usd,,182.0,2024-07-12 11:26:21,new
+PEP-00185,2024-07-12 11:26:21,PEP | JP Morgan,rating,,Neutral,2024-07-12 11:26:21,corroborate
+PEP-00186,2024-07-12 12:18:19,PEP | Barclays,price_target_usd,,179.0,2024-07-12 12:18:19,new
+PEP-00186,2024-07-12 12:18:19,PEP | Barclays,rating,,Overweight,2024-07-12 12:18:19,corroborate
+PEP-00187,2024-07-12 13:37:35,PEP | Morgan Stanley,price_target_usd,,185.0,2024-07-12 13:37:35,new
+PEP-00187,2024-07-12 13:37:35,PEP | Morgan Stanley,rating,,Overweight,2024-07-12 13:37:35,corroborate
+PEP-00188,2024-07-19 14:13:04,PEP | Barclays,price_target_usd,,187.00,2024-07-19 14:13:04,new
+PEP-00188,2024-07-19 14:13:04,PEP | Barclays,rating,,Overweight,2024-07-19 14:13:04,corroborate
+PEP-00189,2024-09-20 08:06:26,PEP | Morgan Stanley,price_target_usd,,185.0,2024-09-20 08:06:26,new
+PEP-00189,2024-09-20 08:06:26,PEP | Morgan Stanley,rating,,Equal-Weight,2024-09-20 08:06:26,new
+PEP-00190,2024-09-30 07:31:25,PEP | B of A Securities,price_target_usd,,185.0,2024-09-30 07:31:25,new
+PEP-00190,2024-09-30 07:31:25,PEP | B of A Securities,rating,,Buy,2024-09-30 07:31:25,corroborate
+PEP-00191,2024-10-01 05:16:46,PEP | Jefferies,price_target_usd,,198.00,2024-10-01 05:16:46,new
+PEP-00191,2024-10-01 05:16:46,PEP | Jefferies,rating,,Buy,2024-10-01 05:16:46,corroborate
+PEP-00192,2024-10-01 14:18:27,PEP | JP Morgan,price_target_usd,,185.0,2024-10-01 14:18:27,new
+PEP-00192,2024-10-01 14:18:27,PEP | JP Morgan,rating,,Neutral,2024-10-01 14:18:27,corroborate
+PEP-00193,2024-10-04 10:12:51,PEP | Barclays,price_target_usd,,186.00,2024-10-04 10:12:51,new
+PEP-00193,2024-10-04 10:12:51,PEP | Barclays,rating,,Overweight,2024-10-04 10:12:51,corroborate
+PEP-00194,2024-10-04 13:19:39,PEP | RBC Capital,price_target_usd,,176.0,2024-10-04 13:19:39,new
+PEP-00194,2024-10-04 13:19:39,PEP | RBC Capital,rating,,Sector Perform,2024-10-04 13:19:39,corroborate
+PEP-00195,2024-10-09 10:51:51,PEP | RBC Capital,price_target_usd,,176.00,2024-10-09 10:51:51,corroborate
+PEP-00195,2024-10-09 10:51:51,PEP | RBC Capital,rating,,Sector Perform,2024-10-09 10:51:51,corroborate
+PEP-00196,2024-10-09 13:36:27,PEP | Deutsche Bank,price_target_usd,,179.00,2024-10-09 13:36:27,new
+PEP-00196,2024-10-09 13:36:27,PEP | Deutsche Bank,rating,,Hold,2024-10-09 13:36:27,corroborate
+PEP-00197,2024-10-09 15:58:39,PEP | JP Morgan,price_target_usd,,183.0,2024-10-09 15:58:39,new
+PEP-00197,2024-10-09 15:58:39,PEP | JP Morgan,rating,,Neutral,2024-10-09 15:58:39,corroborate
+PEP-00198,2024-10-10 06:06:14,PEP | Jefferies,price_target_usd,,198.00,2024-10-10 06:06:14,corroborate
+PEP-00198,2024-10-10 06:06:14,PEP | Jefferies,rating,,Buy,2024-10-10 06:06:14,corroborate
+PEP-00199,2024-10-10 10:31:29,PEP | Barclays,price_target_usd,,183.00,2024-10-10 10:31:29,new
+PEP-00199,2024-10-10 10:31:29,PEP | Barclays,rating,,Overweight,2024-10-10 10:31:29,corroborate
+PEP-00200,2024-10-10 11:31:26,PEP | TD Cowen,price_target_usd,,183.00,2024-10-10 11:31:26,new
+PEP-00200,2024-10-10 11:31:26,PEP | TD Cowen,rating,,Hold,2024-10-10 11:31:26,new
+PEP-00201,2024-12-12 06:46:51,PEP | Deutsche Bank,price_target_usd,,184.00,2024-12-12 06:46:51,new
+PEP-00201,2024-12-12 06:46:51,PEP | Deutsche Bank,rating,,Buy,2024-12-12 06:46:51,new
+PEP-00202,2025-01-07 06:51:51,PEP | Piper Sandler,price_target_usd,,171.00,2025-01-07 06:51:51,new
+PEP-00202,2025-01-07 06:51:51,PEP | Piper Sandler,rating,,Overweight,2025-01-07 06:51:51,new
+PEP-00203,2025-01-07 09:42:15,PEP | Wells Fargo,price_target_usd,,155.0,2025-01-07 09:42:15,new
+PEP-00203,2025-01-07 09:42:15,PEP | Wells Fargo,rating,,Equal-Weight,2025-01-07 09:42:15,corroborate
+PEP-00204,2025-01-08 13:24:51,PEP | TD Cowen,price_target_usd,,160.0,2025-01-08 13:24:51,new
+PEP-00204,2025-01-08 13:24:51,PEP | TD Cowen,rating,,Hold,2025-01-08 13:24:51,corroborate
+PEP-00205,2025-01-16 15:55:51,PEP | UBS,price_target_usd,,175.00,2025-01-16 15:55:51,new
+PEP-00205,2025-01-16 15:55:51,PEP | UBS,rating,,Buy,2025-01-16 15:55:51,corroborate
+PEP-00206,2025-01-17 11:03:12,PEP | Barclays,price_target_usd,,158.00,2025-01-17 11:03:12,new
+PEP-00206,2025-01-17 11:03:12,PEP | Barclays,rating,,Overweight,2025-01-17 11:03:12,corroborate
+PEP-00207,2025-01-22 07:46:09,PEP | Deutsche Bank,price_target_usd,,178.00,2025-01-22 07:46:09,new
+PEP-00207,2025-01-22 07:46:09,PEP | Deutsche Bank,rating,,Buy,2025-01-22 07:46:09,corroborate
+PEP-00208,2025-01-24 10:08:29,PEP | JP Morgan,price_target_usd,,165.0,2025-01-24 10:08:29,new
+PEP-00208,2025-01-24 10:08:29,PEP | JP Morgan,rating,,Neutral,2025-01-24 10:08:29,corroborate
+PEP-00209,2025-01-29 12:05:57,PEP | RBC Capital,price_target_usd,,172.00,2025-01-29 12:05:57,new
+PEP-00209,2025-01-29 12:05:57,PEP | RBC Capital,rating,,Sector Perform,2025-01-29 12:05:57,corroborate
+PEP-00210,2025-02-05 05:39:20,PEP | JP Morgan,price_target_usd,,158.00,2025-02-05 05:39:20,new
+PEP-00210,2025-02-05 05:39:20,PEP | JP Morgan,rating,,Neutral,2025-02-05 05:39:20,corroborate
+PEP-00211,2025-02-05 06:04:21,PEP | Jefferies,price_target_usd,,171.00,2025-02-05 06:04:21,new
+PEP-00211,2025-02-05 06:04:21,PEP | Jefferies,rating,,Buy,2025-02-05 06:04:21,corroborate
+PEP-00212,2025-02-05 07:56:05,PEP | Morgan Stanley,price_target_usd,,168.0,2025-02-05 07:56:05,new
+PEP-00212,2025-02-05 07:56:05,PEP | Morgan Stanley,rating,,Equal-Weight,2025-02-05 07:56:05,corroborate
+PEP-00213,2025-02-05 09:05:41,PEP | Citigroup,price_target_usd,,170.0,2025-02-05 09:05:41,new
+PEP-00213,2025-02-05 09:05:41,PEP | Citigroup,rating,,Buy,2025-02-05 09:05:41,corroborate
+PEP-00214,2025-02-05 10:05:19,PEP | Wells Fargo,price_target_usd,,150.0,2025-02-05 10:05:19,new
+PEP-00214,2025-02-05 10:05:19,PEP | Wells Fargo,rating,,Equal-Weight,2025-02-05 10:05:19,corroborate
+PEP-00215,2025-02-06 07:14:49,PEP | Barclays,price_target_usd,,153.0,2025-02-06 07:14:49,new
+PEP-00215,2025-02-06 07:14:49,PEP | Barclays,rating,,Overweight,2025-02-06 07:14:49,corroborate
+PEP-00216,2025-02-07 05:46:10,PEP | CICC,rating,,Market Perform,2025-02-07 05:46:10,new
+PEP-00216,2025-02-07 05:46:10,PEP | CICC,price_target_usd,,,2025-02-07 05:46:10,new
+PEP-00217,2025-03-06 08:35:49,PEP | Barclays,price_target_usd,,168.00,2025-03-06 08:35:49,new
+PEP-00217,2025-03-06 08:35:49,PEP | Barclays,rating,,Overweight,2025-03-06 08:35:49,corroborate
+PEP-00218,2025-03-12 08:43:20,PEP | Jefferies,price_target_usd,,170.00,2025-03-12 08:43:20,new
+PEP-00218,2025-03-12 08:43:20,PEP | Jefferies,rating,,Hold,2025-03-12 08:43:20,new
+PEP-00219,2025-03-18 07:23:07,PEP | Barclays,price_target_usd,,156.0,2025-03-18 07:23:07,new
+PEP-00219,2025-03-18 07:23:07,PEP | Barclays,rating,,Equal-Weight,2025-03-18 07:23:07,new
+PEP-00220,2025-04-14 01:33:15,PEP | Barclays,price_target_usd,,143.00,2025-04-14 01:33:15,new
+PEP-00220,2025-04-14 01:33:15,PEP | Barclays,rating,,Equal-Weight,2025-04-14 01:33:15,corroborate
+PEP-00221,2025-04-15 11:47:36,PEP | B of A Securities,price_target_usd,,155.0,2025-04-15 11:47:36,new
+PEP-00221,2025-04-15 11:47:36,PEP | B of A Securities,rating,,Neutral,2025-04-15 11:47:36,new
+PEP-00222,2025-04-21 08:59:36,PEP | JP Morgan,price_target_usd,,159.00,2025-04-21 08:59:36,new
+PEP-00222,2025-04-21 08:59:36,PEP | JP Morgan,rating,,Neutral,2025-04-21 08:59:36,corroborate
+PEP-00223,2025-04-22 10:05:21,PEP | RBC Capital,price_target_usd,,163.00,2025-04-22 10:05:21,new
+PEP-00223,2025-04-22 10:05:21,PEP | RBC Capital,rating,,Sector Perform,2025-04-22 10:05:21,corroborate
+PEP-00224,2025-04-24 01:08:05,PEP | Evercore ISI Group,price_target_usd,,140.00,2025-04-24 01:08:05,new
+PEP-00224,2025-04-24 01:08:05,PEP | Evercore ISI Group,rating,,In-Line,2025-04-24 01:08:05,corroborate
+PEP-00225,2025-04-25 01:11:00,PEP | Piper Sandler,price_target_usd,,160.00,2025-04-25 01:11:00,new
+PEP-00225,2025-04-25 01:11:00,PEP | Piper Sandler,rating,,Overweight,2025-04-25 01:11:00,corroborate
+PEP-00226,2025-04-25 01:38:11,PEP | Wells Fargo,price_target_usd,,140.0,2025-04-25 01:38:11,new
+PEP-00226,2025-04-25 01:38:11,PEP | Wells Fargo,rating,,Equal-Weight,2025-04-25 01:38:11,corroborate
+PEP-00227,2025-04-25 08:54:41,PEP | B of A Securities,price_target_usd,,150.0,2025-04-25 08:54:41,new
+PEP-00227,2025-04-25 08:54:41,PEP | B of A Securities,rating,,Neutral,2025-04-25 08:54:41,corroborate
+PEP-00228,2025-04-25 10:10:44,PEP | Citigroup,price_target_usd,,160.0,2025-04-25 10:10:44,new
+PEP-00228,2025-04-25 10:10:44,PEP | Citigroup,rating,,Buy,2025-04-25 10:10:44,corroborate
+PEP-00229,2025-04-25 11:32:22,PEP | UBS,price_target_usd,,169.00,2025-04-25 11:32:22,new
+PEP-00229,2025-04-25 11:32:22,PEP | UBS,rating,,Buy,2025-04-25 11:32:22,corroborate
+PEP-00230,2025-04-25 12:00:10,PEP | Morgan Stanley,price_target_usd,,153.00,2025-04-25 12:00:10,new
+PEP-00230,2025-04-25 12:00:10,PEP | Morgan Stanley,rating,,Equal-Weight,2025-04-25 12:00:10,corroborate
+PEP-00231,2025-04-28 09:26:46,PEP | Barclays,price_target_usd,,135.0,2025-04-28 09:26:46,new
+PEP-00231,2025-04-28 09:26:46,PEP | Barclays,rating,,Equal-Weight,2025-04-28 09:26:46,corroborate
+PEP-00232,2025-06-24 10:28:36,PEP | RBC Capital,price_target_usd,,148.00,2025-06-24 10:28:36,new
+PEP-00232,2025-06-24 10:28:36,PEP | RBC Capital,rating,,Sector Perform,2025-06-24 10:28:36,corroborate
+PEP-00233,2025-07-10 15:51:17,PEP | JP Morgan,price_target_usd,,139.0,2025-07-10 15:51:17,new
+PEP-00233,2025-07-10 15:51:17,PEP | JP Morgan,rating,,Neutral,2025-07-10 15:51:17,corroborate
+PEP-00234,2025-07-11 08:24:21,PEP | B of A Securities,price_target_usd,,145.0,2025-07-11 08:24:21,new
+PEP-00234,2025-07-11 08:24:21,PEP | B of A Securities,rating,,Neutral,2025-07-11 08:24:21,corroborate
+PEP-00235,2025-07-15 15:42:56,PEP | Barclays,price_target_usd,,132.0,2025-07-15 15:42:56,new
+PEP-00235,2025-07-15 15:42:56,PEP | Barclays,rating,,Equal-Weight,2025-07-15 15:42:56,corroborate
+PEP-00236,2025-07-18 07:30:24,PEP | Morgan Stanley,price_target_usd,,165.00,2025-07-18 07:30:24,new
+PEP-00236,2025-07-18 07:30:24,PEP | Morgan Stanley,rating,,Equal-Weight,2025-07-18 07:30:24,corroborate
+PEP-00237,2025-07-18 12:39:22,PEP | Citigroup,price_target_usd,,168.00,2025-07-18 12:39:22,new
+PEP-00237,2025-07-18 12:39:22,PEP | Citigroup,rating,,Buy,2025-07-18 12:39:22,corroborate
+PEP-00238,2025-07-18 15:15:38,PEP | Wells Fargo,price_target_usd,,154.0,2025-07-18 15:15:38,new
+PEP-00238,2025-07-18 15:15:38,PEP | Wells Fargo,rating,,Equal-Weight,2025-07-18 15:15:38,corroborate
+PEP-00239,2025-07-21 09:13:37,PEP | Barclays,price_target_usd,,144.00,2025-07-21 09:13:37,new
+PEP-00239,2025-07-21 09:13:37,PEP | Barclays,rating,,Equal-Weight,2025-07-21 09:13:37,corroborate
+PEP-00240,2025-09-03 10:08:30,PEP | RBC Capital,price_target_usd,,146.00,2025-09-03 10:08:30,new
+PEP-00240,2025-09-03 10:08:30,PEP | RBC Capital,rating,,Sector Perform,2025-09-03 10:08:30,corroborate
+PEP-00241,2025-09-11 11:17:50,PEP | UBS,price_target_usd,,170.00,2025-09-11 11:17:50,new
+PEP-00241,2025-09-11 11:17:50,PEP | UBS,rating,,Buy,2025-09-11 11:17:50,corroborate
+PEP-00242,2025-09-25 09:11:22,PEP | Wells Fargo,price_target_usd,,150.0,2025-09-25 09:11:22,new
+PEP-00242,2025-09-25 09:11:22,PEP | Wells Fargo,rating,,Equal-Weight,2025-09-25 09:11:22,corroborate
+PEP-00243,2025-09-25 11:09:36,PEP | Citigroup,price_target_usd,,165.00,2025-09-25 11:09:36,new
+PEP-00243,2025-09-25 11:09:36,PEP | Citigroup,rating,,Buy,2025-09-25 11:09:36,corroborate
+PEP-00244,2025-10-03 10:46:04,PEP | Barclays,price_target_usd,,140.0,2025-10-03 10:46:04,new
+PEP-00244,2025-10-03 10:46:04,PEP | Barclays,rating,,Equal-Weight,2025-10-03 10:46:04,corroborate
+PEP-00245,2025-10-06 08:47:06,PEP | JP Morgan,price_target_usd,,151.0,2025-10-06 08:47:06,new
+PEP-00245,2025-10-06 08:47:06,PEP | JP Morgan,rating,,Neutral,2025-10-06 08:47:06,corroborate
+PEP-00246,2025-10-10 11:21:39,PEP | Wells Fargo,price_target_usd,,154.0,2025-10-10 11:21:39,new
+PEP-00246,2025-10-10 11:21:39,PEP | Wells Fargo,rating,,Equal-Weight,2025-10-10 11:21:39,corroborate
+PEP-00247,2025-10-23 12:36:57,PEP | Freedom Broker,price_target_usd,,164.00,2025-10-23 12:36:57,new
+PEP-00247,2025-10-23 12:36:57,PEP | Freedom Broker,rating,,Hold,2025-10-23 12:36:57,new
+PEP-00248,2025-11-21 12:07:45,PEP | Piper Sandler,price_target_usd,,161.0,2025-11-21 12:07:45,new
+PEP-00248,2025-11-21 12:07:45,PEP | Piper Sandler,rating,,Overweight,2025-11-21 12:07:45,corroborate
+PEP-00249,2025-12-09 10:41:04,PEP | Piper Sandler,price_target_usd,,172.00,2025-12-09 10:41:04,new
+PEP-00249,2025-12-09 10:41:04,PEP | Piper Sandler,rating,,Overweight,2025-12-09 10:41:04,corroborate
+PEP-00250,2025-12-10 09:05:12,PEP | JP Morgan,price_target_usd,,164.0,2025-12-10 09:05:12,new
+PEP-00250,2025-12-10 09:05:12,PEP | JP Morgan,rating,,Overweight,2025-12-10 09:05:12,new
+PEP-00251,2025-12-11 12:28:09,PEP | Barclays,price_target_usd,,144.00,2025-12-11 12:28:09,new
+PEP-00251,2025-12-11 12:28:09,PEP | Barclays,rating,,Equal-Weight,2025-12-11 12:28:09,corroborate
+PEP-00252,2025-12-17 16:04:41,PEP | Citigroup,price_target_usd,,170.00,2025-12-17 16:04:41,new
+PEP-00252,2025-12-17 16:04:41,PEP | Citigroup,rating,,Buy,2025-12-17 16:04:41,corroborate
+PEP-00253,2026-01-14 13:42:05,PEP | UBS,price_target_usd,,170.00,2026-01-14 13:42:05,new
+PEP-00253,2026-01-14 13:42:05,PEP | UBS,rating,,Buy,2026-01-14 13:42:05,corroborate
+PEP-00254,2026-02-04 09:44:45,PEP | Wells Fargo,price_target_usd,,165.0,2026-02-04 09:44:45,new
+PEP-00254,2026-02-04 09:44:45,PEP | Wells Fargo,rating,,Equal-Weight,2026-02-04 09:44:45,corroborate
+PEP-00255,2026-02-04 10:50:18,PEP | JP Morgan,price_target_usd,,176.00,2026-02-04 10:50:18,new
+PEP-00255,2026-02-04 10:50:18,PEP | JP Morgan,rating,,Overweight,2026-02-04 10:50:18,corroborate
+PEP-00256,2026-02-04 12:41:22,PEP | Citigroup,price_target_usd,,182.00,2026-02-04 12:41:22,new
+PEP-00256,2026-02-04 12:41:22,PEP | Citigroup,rating,,Buy,2026-02-04 12:41:22,corroborate
+PEP-00257,2026-02-20 13:52:05,PEP | TD Cowen,price_target_usd,,165.00,2026-02-20 13:52:05,new
+PEP-00257,2026-02-20 13:52:05,PEP | TD Cowen,rating,,Hold,2026-02-20 13:52:05,corroborate
+PEP-00258,2026-03-12 12:30:26,PEP | Piper Sandler,price_target_usd,,181.00,2026-03-12 12:30:26,new
+PEP-00258,2026-03-12 12:30:26,PEP | Piper Sandler,rating,,Overweight,2026-03-12 12:30:26,corroborate
+PEP-00259,2026-03-30 13:30:14,PEP | Deutsche Bank,price_target_usd,,169.00,2026-03-30 13:30:14,new
+PEP-00259,2026-03-30 13:30:14,PEP | Deutsche Bank,rating,,Buy,2026-03-30 13:30:14,corroborate
+PEP-00260,2026-04-07 15:19:04,PEP | UBS,price_target_usd,,186.00,2026-04-07 15:19:04,new
+PEP-00260,2026-04-07 15:19:04,PEP | UBS,rating,,Buy,2026-04-07 15:19:04,corroborate
+PEP-00261,2026-04-14 16:00:44,PEP | Barclays,price_target_usd,,154.00,2026-04-14 16:00:44,new
+PEP-00261,2026-04-14 16:00:44,PEP | Barclays,rating,,Equal-Weight,2026-04-14 16:00:44,corroborate
+PEP-00262,2026-04-17 08:32:13,PEP | Evercore ISI Group,price_target_usd,,170.00,2026-04-17 08:32:13,new
+PEP-00262,2026-04-17 08:32:13,PEP | Evercore ISI Group,rating,,In-Line,2026-04-17 08:32:13,corroborate
+PEP-00263,2026-04-17 11:48:48,PEP | JP Morgan,price_target_usd,,178.00,2026-04-17 11:48:48,new
+PEP-00263,2026-04-17 11:48:48,PEP | JP Morgan,rating,,Overweight,2026-04-17 11:48:48,corroborate
+PEP-00264,2026-04-20 09:52:46,PEP | Barclays,price_target_usd,,158.00,2026-04-20 09:52:46,new
+PEP-00264,2026-04-20 09:52:46,PEP | Barclays,rating,,Equal-Weight,2026-04-20 09:52:46,corroborate
+PEP-00265,2026-05-18 09:45:57,PEP | Wells Fargo,price_target_usd,,160.0,2026-05-18 09:45:57,new
+PEP-00265,2026-05-18 09:45:57,PEP | Wells Fargo,rating,,Equal-Weight,2026-05-18 09:45:57,corroborate
+PEP-00266,2026-06-05 09:31:02,PEP | Wells Fargo,price_target_usd,,150.0,2026-06-05 09:31:02,new
+PEP-00266,2026-06-05 09:31:02,PEP | Wells Fargo,rating,,Equal-Weight,2026-06-05 09:31:02,corroborate
+PEP-00267,2026-06-11 11:06:11,PEP | Bernstein,price_target_usd,,143.00,2026-06-11 11:06:11,new
+PEP-00267,2026-06-11 11:06:11,PEP | Bernstein,rating,,Market Perform,2026-06-11 11:06:11,new
+PEP-00268,2026-06-11 11:20:22,PEP | TD Cowen,price_target_usd,,150.00,2026-06-11 11:20:22,new
+PEP-00268,2026-06-11 11:20:22,PEP | TD Cowen,rating,,Hold,2026-06-11 11:20:22,corroborate
+PEP-00269,2026-06-12 06:07:10,PEP | Bernstein,price_target_usd,,143.00,2026-06-12 06:07:10,new
+PEP-00269,2026-06-12 06:07:10,PEP | Bernstein,rating,,Market Perform,2026-06-12 06:07:10,new
+PEP-00270,2026-06-12 12:18:12,PEP | Piper Sandler,price_target_usd,,178.00,2026-06-12 12:18:12,new
+PEP-00270,2026-06-12 12:18:12,PEP | Piper Sandler,rating,,Overweight,2026-06-12 12:18:12,corroborate
+PEP-00271,2026-06-18 13:23:40,PEP | Deutsche Bank,price_target_usd,,168.00,2026-06-18 13:23:40,new
+PEP-00271,2026-06-18 13:23:40,PEP | Deutsche Bank,rating,,Buy,2026-06-18 13:23:40,corroborate
+PEP-00272,2026-06-25 08:05:37,PEP | B of A Securities,price_target_usd,,164.0,2026-06-25 08:05:37,new
+PEP-00272,2026-06-25 08:05:37,PEP | B of A Securities,rating,,Neutral,2026-06-25 08:05:37,corroborate
+PEP-00273,2026-06-25 15:16:50,PEP | Citigroup,price_target_usd,,170.00,2026-06-25 15:16:50,new
+PEP-00273,2026-06-25 15:16:50,PEP | Citigroup,rating,,Buy,2026-06-25 15:16:50,corroborate
+PEP-00274,2026-07-01 09:40:52,PEP | JP Morgan,price_target_usd,,170.00,2026-07-01 09:40:52,new
+PEP-00274,2026-07-01 09:40:52,PEP | JP Morgan,rating,,Overweight,2026-07-01 09:40:52,corroborate
+PEP-00275,2026-07-02 06:37:09,PEP | Barclays,price_target_usd,,144.00,2026-07-02 06:37:09,new
+PEP-00275,2026-07-02 06:37:09,PEP | Barclays,rating,,Equal-Weight,2026-07-02 06:37:09,corroborate
+PEP-00276,2026-07-02 09:07:32,PEP | UBS,price_target_usd,,172.00,2026-07-02 09:07:32,new
+PEP-00276,2026-07-02 09:07:32,PEP | UBS,rating,,Buy,2026-07-02 09:07:32,corroborate
+PEP-00277,2026-07-08 11:17:59,PEP | Exane BNP Paribas,price_target_usd,,183.00,2026-07-08 11:17:59,inferred
+PEP-00277,2026-07-08 11:17:59,PEP | Exane BNP Paribas,rating,,Outperform,2026-07-08 11:17:59,inferred
+PEP-00278,2026-07-10 06:15:44,PEP | Citigroup,price_target_usd,,145.00,2026-07-10 06:15:44,new
+PEP-00278,2026-07-10 06:15:44,PEP | Citigroup,rating,,Neutral,2026-07-10 06:15:44,new
+PEP-00279,2026-07-10 08:24:14,PEP | Wells Fargo,price_target_usd,,140.0,2026-07-10 08:24:14,new
+PEP-00279,2026-07-10 08:24:14,PEP | Wells Fargo,rating,,Equal-Weight,2026-07-10 08:24:14,corroborate
+PEP-00280,2026-07-10 09:36:16,PEP | RBC Capital,price_target_usd,,161.00,2026-07-10 09:36:16,new
+PEP-00280,2026-07-10 09:36:16,PEP | RBC Capital,rating,,Sector Perform,2026-07-10 09:36:16,corroborate
+PEP-00281,2026-07-10 09:56:11,PEP | Morgan Stanley,price_target_usd,,160.00,2026-07-10 09:56:11,new
+PEP-00281,2026-07-10 09:56:11,PEP | Morgan Stanley,rating,,Equal-Weight,2026-07-10 09:56:11,corroborate
+PEP-00282,2026-07-10 09:56:25,PEP | TD Cowen,price_target_usd,,145.00,2026-07-10 09:56:25,new
+PEP-00282,2026-07-10 09:56:25,PEP | TD Cowen,rating,,Hold,2026-07-10 09:56:25,corroborate
+PEP-00283,2026-07-10 10:16:40,PEP | Jefferies,price_target_usd,,152.00,2026-07-10 10:16:40,new
+PEP-00283,2026-07-10 10:16:40,PEP | Jefferies,rating,,Hold,2026-07-10 10:16:40,corroborate
+PEP-00284,2026-07-10 11:35:22,PEP | Barclays,price_target_usd,,138.0,2026-07-10 11:35:22,new
+PEP-00284,2026-07-10 11:35:22,PEP | Barclays,rating,,Equal-Weight,2026-07-10 11:35:22,corroborate
+PEP-00285,2026-07-21 09:47:59,PEP | Barclays,price_target_usd,,142.00,2026-07-21 09:47:59,new
+PEP-00285,2026-07-21 09:47:59,PEP | Barclays,rating,,Equal-Weight,2026-07-21 09:47:59,corroborate
+PEP-00286,2026-09-23 13:07:46,PEP | Exane BNP Paribas,price_target_usd,,161.00,2026-09-23 13:07:46,new
+PEP-00286,2026-09-23 13:07:46,PEP | Exane BNP Paribas,rating,,Outperform,2026-09-23 13:07:46,corroborate
+PEP-00287,2026-09-28 05:48:34,PEP | Deutsche Bank,price_target_usd,,138.00,2026-09-28 05:48:34,new
+PEP-00287,2026-09-28 05:48:34,PEP | Deutsche Bank,rating,,Hold,2026-09-28 05:48:34,new
+PEP-00288,2026-09-28 10:02:07,PEP | TD Cowen,price_target_usd,,133.00,2026-09-28 10:02:07,new
+PEP-00288,2026-09-28 10:02:07,PEP | TD Cowen,rating,,Hold,2026-09-28 10:02:07,corroborate
+PEP-00289,2026-09-29 09:20:58,PEP | JP Morgan,price_target_usd,,138.00,2026-09-29 09:20:58,new
+PEP-00289,2026-09-29 09:20:58,PEP | JP Morgan,rating,,Neutral,2026-09-29 09:20:58,new
+PEP-00290,2026-09-30 09:57:54,PEP | Evercore ISI Group,price_target_usd,,135.0,2026-09-30 09:57:54,new
+PEP-00290,2026-09-30 09:57:54,PEP | Evercore ISI Group,rating,,In-Line,2026-09-30 09:57:54,corroborate
+PEP-00291,2026-10-01 08:50:29,PEP | Barclays,price_target_usd,,133.0,2026-10-01 08:50:29,new
+PEP-00291,2026-10-01 08:50:29,PEP | Barclays,rating,,Equal-Weight,2026-10-01 08:50:29,corroborate
+PEP-00292,2026-10-02 15:18:38,PEP | UBS,price_target_usd,,145.00,2026-10-02 15:18:38,new
+PEP-00292,2026-10-02 15:18:38,PEP | UBS,rating,,Buy,2026-10-02 15:18:38,corroborate
+PEP-00293,2026-10-05 09:34:33,PEP | Wells Fargo,price_target_usd,,135.0,2026-10-05 09:34:33,new
+PEP-00293,2026-10-05 09:34:33,PEP | Wells Fargo,rating,,Equal-Weight,2026-10-05 09:34:33,corroborate
+PEP-00294,2026-10-06 09:10:25,PEP | RBC Capital,price_target_usd,,150.00,2026-10-06 09:10:25,new
+PEP-00294,2026-10-06 09:10:25,PEP | RBC Capital,rating,,Sector Perform,2026-10-06 09:10:25,corroborate
+PEP-00295,2026-10-09 10:46:08,PEP | RBC Capital,price_target_usd,,150.00,2026-10-09 10:46:08,corroborate
+PEP-00295,2026-10-09 10:46:08,PEP | RBC Capital,rating,,Sector Perform,2026-10-09 10:46:08,corroborate
+PEP-00296,2026-10-09 13:13:25,PEP | Piper Sandler,price_target_usd,,140.00,2026-10-09 13:13:25,new
+PEP-00296,2026-10-09 13:13:25,PEP | Piper Sandler,rating,,Overweight,2026-10-09 13:13:25,corroborate
+PEP-00297,2026-10-09 13:57:13,PEP | Exane BNP Paribas,price_target_usd,,157.00,2026-10-09 13:57:13,inferred
+PEP-00297,2026-10-09 13:57:13,PEP | Exane BNP Paribas,rating,,Outperform,2026-10-09 13:57:13,inferred
+PEP-00298,2026-10-09 16:08:01,PEP | JP Morgan,price_target_usd,,137.00,2026-10-09 16:08:01,new
+PEP-00298,2026-10-09 16:08:01,PEP | JP Morgan,rating,,Neutral,2026-10-09 16:08:01,corroborate
+PEP-00299,2026-10-09 16:23:37,PEP | Citigroup,price_target_usd,,135.00,2026-10-09 16:23:37,new
+PEP-00299,2026-10-09 16:23:37,PEP | Citigroup,rating,,Neutral,2026-10-09 16:23:37,corroborate
+PEP-00300,2026-10-12 15:41:51,PEP | Barclays,price_target_usd,,126.0,2026-10-12 15:41:51,new
+PEP-00300,2026-10-12 15:41:51,PEP | Barclays,rating,,Equal-Weight,2026-10-12 15:41:51,corroborate
+PEP-00301,2026-11-17 11:29:22,PEP | Bernstein,price_target_usd,,128.00,2026-11-17 11:29:22,new
+PEP-00301,2026-11-17 11:29:22,PEP | Bernstein,rating,,Underperform,2026-11-17 11:29:22,new
+PEP-00302,2026-11-18 05:15:31,PEP | Wolfe Research,price_target_usd,,,2026-11-18 05:15:31,new
+PEP-00302,2026-11-18 05:15:31,PEP | Wolfe Research,rating,,Peer Perform,2026-11-18 05:15:31,new

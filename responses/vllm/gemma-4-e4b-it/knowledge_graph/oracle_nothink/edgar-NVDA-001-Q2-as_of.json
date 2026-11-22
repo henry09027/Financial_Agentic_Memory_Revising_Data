@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-NVDA-001-Q2-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "NVDA",
+ "qtype": "first_print",
+ "mode": "as_of",
+ "as_of": "2018-05-22 14:26:00",
+ "question": "What fiscal year 2018 (ended 28 January 2018) total revenue did NVIDIA CORP originally report, in $ millions?",
+ "gold": "9714",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "NVDA-00042",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "false_abstain",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1367,
+ "out_tokens": 17,
+ "seconds": 0.2565,
+ "n_facts": 7,
+ "n_dropped": 0,
+ "created": "2026-11-22T06:22:58",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2018-05-22 14:26:00\nQuestion: What fiscal year 2018 (ended 28 January 2018) total revenue did NVIDIA CORP originally report, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nNVDA | Revenues | value_usd_m | 2016-02-01..2017-01-29: latest 6910 | first 6910 | 2 reports: 6910 [NVDA-00029 @2017-03-01 22:30]; 6910 [NVDA-00041 @2018-02-28 21:31]\nNVDA | Revenues | value_usd_m | 2017-01-30..2017-04-30: latest 1937 | first 1937 | 1 reports: 1937 [NVDA-00031 @2017-05-23 20:34]\nNVDA | Revenues | value_usd_m | 2017-01-30..2017-07-30: latest 4167 | first 4167 | 1 reports: 4167 [NVDA-00034 @2017-08-23 20:24]\nNVDA | Revenues | value_usd_m | 2017-05-01..2017-07-30: latest 2230 | first 2230 | 1 reports: 2230 [NVDA-00035 @2017-08-23 20:24]\nNVDA | Revenues | value_usd_m | 2017-01-30..2017-10-29: latest 6803 | first 6803 | 1 reports: 6803 [NVDA-00038 @2017-11-21 21:25]\nNVDA | Revenues | value_usd_m | 2017-07-31..2017-10-29: latest 2636 | first 2636 | 1 reports: 2636 [NVDA-00039 @2017-11-21 21:25]\nNVDA | Revenues | value_usd_m | 2017-01-30..2018-01-28: latest 9714 | first 9714 | 1 reports: 9714 [NVDA-00042 @2018-02-28 21:31]"
+  }
+ ],
+ "final_text": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}",
+ "raw_output": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}"
+}

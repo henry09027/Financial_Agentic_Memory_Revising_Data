@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-HD-003-Q6-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "HD",
+ "qtype": "ttm",
+ "mode": "as_of",
+ "as_of": "2019-11-25 12:44:00",
+ "question": "What is HOME DEPOT,\u00a0INC.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "110013",
+ "peek_answers": "110934|171222",
+ "trap_answers": "108203",
+ "gold_evidence": "HD-00052|HD-00055|HD-00051|HD-00057|HD-00061",
+ "answer": "108203",
+ "cited": "HD-00055 @2019-03-28 20:42",
+ "json_ok": true,
+ "category": "trap",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1483,
+ "out_tokens": 31,
+ "seconds": 0.2244,
+ "n_facts": 12,
+ "n_dropped": 0,
+ "created": "2026-11-21T21:14:28",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-11-25 12:44:00\nQuestion: What is HOME DEPOT,\u00a0INC.'s trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nHD | Revenues | value_usd_m | 2017-01-30..2017-10-29: latest 77021 | first 77021 | 2 reports: 77021 [HD-00038 @2017-11-20 23:13]; 77021 [HD-00049 @2018-11-19 22:59]\nHD | Revenues | value_usd_m | 2017-07-31..2017-10-29: latest 25026 | first 25026 | 2 reports: 25026 [HD-00039 @2017-11-20 23:13]; 25026 [HD-00050 @2018-11-19 22:59]\nHD | Revenues | value_usd_m | 2017-01-30..2018-01-28: latest 100904 | first 100904 | 2 reports: 100904 [HD-00042 @2018-03-22 20:56]; 100904 [HD-00054 @2019-03-28 20:42]\nHD | Revenues | value_usd_m | 2018-01-29..2018-04-29: latest 24947 | first 24947 | 2 reports: 24947 [HD-00044 @2018-05-21 22:12]; 24947 [HD-00056 @2019-05-28 22:14]\nHD | Revenues | value_usd_m | 2018-01-29..2018-07-29: latest 55410 | first 55410 | 2 reports: 55410 [HD-00047 @2018-08-20 22:39]; 55410 [HD-00058 @2019-08-26 22:07]\nHD | Revenues | value_usd_m | 2018-04-30..2018-07-29: latest 30463 | first 30463 | 2 reports: 30463 [HD-00048 @2018-08-20 22:39]; 30463 [HD-00059 @2019-08-26 22:07]\nHD | Revenues | value_usd_m | 2018-01-29..2018-10-28: latest 81712 | first 81712 | 1 reports: 81712 [HD-00051 @2018-11-19 22:59]\nHD | Revenues | value_usd_m | 2018-07-30..2018-10-28: latest 26302 | first 26302 | 1 reports: 26302 [HD-00052 @2018-11-19 22:59]\nHD | Revenues | value_usd_m | 2018-01-29..2019-02-03: latest 108203 | first 108203 | 1 reports: 108203 [HD-00055 @2019-03-28 20:42]\nHD | Revenues | value_usd_m | 2019-02-04..2019-05-05: latest 26381 | first 26381 | 1 reports: 26381 [HD-00057 @2019-05-28 22:14]\nHD | Revenues | value_usd_m | 2019-02-04..2019-08-04: latest 57220 | first 57220 | 1 reports: 57220 [HD-00060 @2019-08-26 22:07]\nHD | Revenues | value_usd_m | 2019-05-06..2019-08-04: latest 30839 | first 30839 | 1 reports: 30839 [HD-00061 @2019-08-26 22:07]"
+  }
+ ],
+ "final_text": "{\"answer\": 108203, \"evidence_ids\": [\"HD-00055 @2019-03-28 20:42\"]}",
+ "raw_output": "{\"answer\": 108203, \"evidence_ids\": [\"HD-00055 @2019-03-28 20:42\"]}"
+}

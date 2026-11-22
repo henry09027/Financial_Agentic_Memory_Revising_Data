@@ -1,0 +1,103 @@
+{
+ "qid": "edgar-PEP-003-Q6-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "PEP",
+ "qtype": "ttm",
+ "mode": "as_of",
+ "as_of": "2023-07-12 04:57:00",
+ "question": "What is PEPSICO INC's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?",
+ "gold": "88038",
+ "peek_answers": "90135|91617|98241",
+ "trap_answers": "86392",
+ "gold_evidence": "PEP-00084|PEP-00088|PEP-00091|PEP-00087|PEP-00093",
+ "answer": "58396",
+ "cited": "PEP-00087",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.2,
+ "in_tokens": 22624,
+ "out_tokens": 560,
+ "seconds": 1.6119,
+ "n_dropped": 0,
+ "n_sql": 7,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 8,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' AND period NOT LIKE '%2022-03%' AND period NOT LIKE '%2022-06%' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' AND period NOT LIKE '%2022-03%' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' AND period NOT LIKE '%2022-03%' AND period NOT LIKE '%2022-01%' ORDER BY learned_at DESC LIMIT 10\"]",
+ "created": "2026-11-22T02:01:02",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2023-07-12 04:57:00\nQuestion: What is PEPSICO INC's trailing-twelve-month revenue through its most recently reported quarter, in $ millions?\n\nDatabase contents at the as-of time: 78 facts, 78 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'PEP | Revenues': value_usd_m (78)\nkind values: 'corroborate', 'new', 'revision'\nmost recently learned periods: '2023-01-01..2023-03-25', '2021-12-26..2022-03-19', '2021-12-26..2022-12-31', '2020-12-27..2021-12-25', '2019-12-29..2020-12-26', '2022-06-12..2022-09-03', '2021-12-26..2022-09-03', '2021-06-13..2021-09-04'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-12-26..2022-03-19,16200.0,2023-04-24 21:57:25,2023-04-24 21:57:25,corroborate,PEP-00092\n2023-01-01..2023-03-25,17846.0,2023-04-24 21:57:25,2023-04-24 21:57:25,new,PEP-00093\n2019-12-29..2020-12-26,70372.0,2023-02-08 23:06:37,2023-02-08 23:06:37,corroborate,PEP-00089\n2020-12-27..2021-12-25,79474.0,2023-02-08 23:06:37,2023-02-08 23:06:37,corroborate,PEP-00090\n2021-12-26..2022-12-31,86392.0,2023-02-08 23:06:37,2023-02-08 23:06:37,revision,PEP-00091\n2020-12-27..2021-09-04,54226.0,2022-10-11 21:56:11,2022-10-11 21:56:11,corroborate,PEP-00085\n2021-06-13..2021-09-04,20189.0,2022-10-11 21:56:11,2022-10-11 21:56:11,corroborate,PEP-00086\n2021-12-26..2022-09-03,58396.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00087\n2022-06-12..2022-09-03,21971.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00088\n2021-03-21..2021-06-12,19217.0,2022-07-11 21:56:41,2022-07-11 21:56:41,corroborate,PEP-00083\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-12-26..2022-03-19,16200.0,2023-04-24 21:57:25,2023-04-24 21:57:25,corroborate,PEP-00092\n2021-12-26..2022-12-31,86392.0,2023-02-08 23:06:37,2023-02-08 23:06:37,revision,PEP-00091\n2021-12-26..2022-09-03,58396.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00087\n2022-06-12..2022-09-03,21971.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00088\n2022-03-20..2022-06-11,20225.0,2022-07-11 21:56:41,2022-07-11 21:56:41,new,PEP-00084\n2021-12-26..2022-03-19,16200.0,2022-04-25 21:51:15,2022-04-25 21:51:15,new,PEP-00082\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' AND period NOT LIKE '%2022-03%' AND period NOT LIKE '%2022-06%' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-12-26..2022-12-31,86392.0,2023-02-08 23:06:37,2023-02-08 23:06:37,revision,PEP-00091\n2021-12-26..2022-09-03,58396.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00087\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-12-26..2022-09-03,58396.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00087\n2022-06-12..2022-09-03,21971.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00088\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-12-26..2022-09-03,58396.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00087\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' AND period NOT LIKE '%2022-03%' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-12-26..2022-09-03,58396.0,2022-10-11 21:56:11,2022-10-11 21:56:11,new,PEP-00087\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' AND period NOT LIKE '%2022-03%' AND period NOT LIKE '%2022-01%' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nBudget used up. Answer now with the JSON."
+  }
+ ],
+ "final_text": "{\"answer\": 58396, \"evidence_ids\": [\"PEP-00087\"]}",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022%' AND period NOT LIKE '%2022-03%' AND period NOT LIKE '%2022-06%' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' AND period NOT LIKE '%2022-03%' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PEP | Revenues' AND attribute = 'value_usd_m' AND period LIKE '%2022-09%' AND period NOT LIKE '%2022-06%' AND period NOT LIKE '%2022-03%' AND period NOT LIKE '%2022-01%' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n{\"answer\": 58396, \"evidence_ids\": [\"PEP-00087\"]}"
+}

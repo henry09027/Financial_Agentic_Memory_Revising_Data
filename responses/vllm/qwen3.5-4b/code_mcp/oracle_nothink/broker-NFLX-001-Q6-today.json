@@ -1,0 +1,55 @@
+{
+ "qid": "broker-NFLX-001-Q6-today",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "broker",
+ "entity": "NFLX",
+ "qtype": "count_buy",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many active brokers currently rate NFLX Buy or an equivalent rating?",
+ "gold": "22",
+ "peek_answers": "",
+ "trap_answers": "12|27",
+ "gold_evidence": "NFLX-00882|NFLX-00866|NFLX-00878|NFLX-00877|NFLX-00852|NFLX-00868|NFLX-00865|NFLX-00874|NFLX-00879|NFLX-00862|NFLX-00875|NFLX-00851|NFLX-00881|NFLX-00884|NFLX-00880|NFLX-00872|NFLX-00870|NFLX-00867|NFLX-00873|NFLX-00794|NFLX-00855|NFLX-00869|NFLX-00876|NFLX-00847|NFLX-00780|NFLX-00809|NFLX-00856|NFLX-00857|NFLX-00883|NFLX-00804|NFLX-00871",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "false_abstain",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 3882,
+ "out_tokens": 139,
+ "seconds": 0.2691,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT COUNT(*) \\nFROM facts \\nWHERE subject LIKE 'NFLX | %' \\n  AND attribute = 'rating' \\n  AND value_num IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)\\n  AND effective_at <= '2026-11-20 23:59:59'\\n  AND kind = 'new'\"]",
+ "created": "2026-11-22T02:25:20",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many active brokers currently rate NFLX Buy or an equivalent rating?\n\nDatabase contents at the as-of time: 411 facts, 198 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'NFLX': split_ratio (1)\n  'NFLX | Argus Research': price_target_usd (3), rating (2)\n  'NFLX | B of A Securities': price_target_usd (6), rating (4)\n  'NFLX | BMO Capital': price_target_usd (5), rating (5)\n  'NFLX | Baird': price_target_usd (5), rating (4)\n  'NFLX | Barclays': price_target_usd (10), rating (8)\n  'NFLX | Benchmark': rating (2)\n  'NFLX | Bernstein': price_target_usd (5), rating (4)\n  'NFLX | CFRA': price_target_usd (2), rating (2)\n  'NFLX | Canaccord Genuity': price_target_usd (6), rating (6)\n  'NFLX | Citigroup': price_target_usd (7), rating (5)\n  'NFLX | Citizens': rating (4)\n  'NFLX | Deutsche Bank': price_target_usd (3), rating (2)\n  'NFLX | Evercore ISI Group': price_target_usd (5), rating (5)\n  'NFLX | Freedom Broker': price_target_usd (1), rating (1)\n  'NFLX | Goldman Sachs': price_target_usd (8), rating (5)\n  'NFLX | Guggenheim': price_target_usd (10), rating (10)\n  'NFLX | HSBC': price_target_usd (3), rating (2)\n  'NFLX | Itau BBA': price_target_usd (1), rating (1)\n  'NFLX | JP Morgan': price_target_usd (12), rating (11)\n  'NFLX | Jefferies': price_target_usd (1), rating (1)\n  'NFLX | KGI Securities': price_target_usd (2), rating (2)\n  'NFLX | Keybanc': price_target_usd (10), rating (10)\n  'NFLX | Loop Capital': price_target_usd (3), rating (3)\n  'NFLX | Macquarie': price_target_usd (2), rating (2)\n  'NFLX | MoffettNathanson': price_target_usd (1), rating (1)\n  'NFLX | Morgan Stanley': price_target_usd (11), rating (8)\n  'NFLX | Needham': price_target_usd (8), rating (9)\n  'NFLX | Oppenheimer': price_target_usd (10), rating (9)\n  'NFLX | Piper Sandler': price_target_usd (9), rating (9)\n  'NFLX | Pivotal Research': price_target_usd (8), rating (7)\n  'NFLX | Rosenblatt': price_target_usd (15), rating (15)\n  'NFLX | Seaport Global': price_target_usd (1), rating (2)\n  'NFLX | TD Cowen': price_target_usd (7), rating (6)\n  'NFLX | UBS': price_target_usd (8), rating (8)\n  'NFLX | Wedbush': price_target_usd (13), rating (12)\n  'NFLX | Wells Fargo': price_target_usd (7), rating (6)\n  'NFLX | Wolfe Research': price_target_usd (5), rating (4)\nkind values: 'corroborate', 'event', 'inferred', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'NFLX | Rosenblatt' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT COUNT(*) \nFROM facts \nWHERE subject LIKE 'NFLX | %' \n  AND attribute = 'rating' \n  AND value_num IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)\n  AND effective_at <= '2026-11-20 23:59:59'\n  AND kind = 'new'\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nCOUNT(*)\n0\n"
+  }
+ ],
+ "final_text": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}",
+ "raw_output": "```sql\nSELECT COUNT(*) \nFROM facts \nWHERE subject LIKE 'NFLX | %' \n  AND attribute = 'rating' \n  AND value_num IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)\n  AND effective_at <= '2026-11-20 23:59:59'\n  AND kind = 'new'\n```\n\n===== next turn =====\n\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}"
+}

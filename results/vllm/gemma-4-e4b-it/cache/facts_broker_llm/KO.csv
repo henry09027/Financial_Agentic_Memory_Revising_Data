@@ -1,0 +1,393 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+KO-00061,2019-04-24 11:18:53,KO | UBS,price_target_usd,,52.00,2019-04-24 11:18:53,new
+KO-00061,2019-04-24 11:18:53,KO | UBS,rating,,Neutral,2019-04-24 11:18:53,new
+KO-00062,2019-05-14 06:32:47,KO | Morgan Stanley,price_target_usd,,55.00,2019-05-14 06:32:47,new
+KO-00062,2019-05-14 06:32:47,KO | Morgan Stanley,rating,,Overweight,2019-05-14 06:32:47,new
+KO-00063,2019-07-01 11:49:54,KO | Morgan Stanley,price_target_usd,,57.00,2019-07-01 11:49:54,new
+KO-00063,2019-07-01 11:49:54,KO | Morgan Stanley,rating,,Overweight,2019-07-01 11:49:54,corroborate
+KO-00064,2019-07-24 07:29:20,KO | Deutsche Bank,price_target_usd,,60.0,2019-07-24 07:29:20,new
+KO-00064,2019-07-24 07:29:20,KO | Deutsche Bank,rating,,Buy,2019-07-24 07:29:20,new
+KO-00065,2019-07-24 07:54:53,KO | Credit Suisse,rating,,Neutral,2019-07-24 07:54:53,new
+KO-00065,2019-07-24 07:54:53,KO | Credit Suisse,price_target_usd,,54.00,2019-07-24 07:54:53,new
+KO-00066,2019-07-24 08:02:57,KO | Morgan Stanley,price_target_usd,,60.00,2019-07-24 08:02:57,new
+KO-00067,2019-07-24 08:43:54,KO | JP Morgan,price_target_usd,,59.00,2019-07-24 08:43:54,new
+KO-00067,2019-07-24 08:43:54,KO | JP Morgan,rating,,Neutral,2019-07-24 08:43:54,new
+KO-00067,2019-07-24 08:43:54,KO | JP Morgan,price_target_usd,,50.00,2019-07-24 08:43:54,inferred
+KO-00068,2019-07-24 09:04:12,KO | BMO Capital,price_target_usd,,52.0,2019-07-24 09:04:12,new
+KO-00068,2019-07-24 09:04:12,KO | BMO Capital,rating,,Market Outperform,2019-07-24 09:04:12,new
+KO-00069,2019-07-29 07:32:46,KO | Atlantic Equities,rating,,Overweight,2019-07-29 07:32:46,new
+KO-00070,2019-10-21 08:55:22,KO | BMO Capital,price_target_usd,,55.00,2019-10-21 08:55:22,new
+KO-00070,2019-10-21 08:55:22,KO | BMO Capital,rating,,Market Perform,2019-10-21 08:55:22,new
+KO-00071,2019-10-23 06:32:11,KO | UBS,rating,,Buy,2019-10-23 06:32:11,new
+KO-00071,2019-10-23 06:32:11,KO | UBS,price_target_usd,,63.00,2019-10-23 06:32:11,new
+KO-00072,2019-12-12 08:44:44,KO | Deutsche Bank,price_target_usd,,61.0,2019-12-12 08:44:44,new
+KO-00072,2019-12-12 08:44:44,KO | Deutsche Bank,rating,,Buy,2019-12-12 08:44:44,corroborate
+KO-00073,2019-12-26 18:22:00,KO | Cowen & Co.,alias,,TD Cowen,2019-12-26 18:22:00,event
+KO-00074,2020-01-09 07:04:29,KO | Credit Suisse,rating,,Outperform,2020-01-09 07:04:29,new
+KO-00074,2020-01-09 07:04:29,KO | Credit Suisse,price_target_usd,,64.00,2020-01-09 07:04:29,new
+KO-00075,2020-01-21 08:56:47,KO | Morgan Stanley,price_target_usd,,61.0,2020-01-21 08:56:47,new
+KO-00075,2020-01-21 08:56:47,KO | Morgan Stanley,rating,,Overweight,2020-01-21 08:56:47,corroborate
+KO-00076,2020-01-31 07:37:20,KO | Citigroup,price_target_usd,,63.0,2020-01-31 07:37:20,new
+KO-00076,2020-01-31 07:37:20,KO | Citigroup,rating,,Neutral,2020-01-31 07:37:20,new
+KO-00077,2020-01-31 07:53:10,KO | UBS,price_target_usd,,65.0,2020-01-31 07:53:10,new
+KO-00077,2020-01-31 07:53:10,KO | UBS,rating,,Buy,2020-01-31 07:53:10,corroborate
+KO-00078,2020-01-31 08:51:03,KO | Deutsche Bank,price_target_usd,,64.0,2020-01-31 08:51:03,new
+KO-00078,2020-01-31 08:51:03,KO | Deutsche Bank,rating,,Buy,2020-01-31 08:51:03,corroborate
+KO-00079,2020-01-31 10:27:39,KO | RBC Capital,price_target_usd,,66.0,2020-01-31 10:27:39,new
+KO-00079,2020-01-31 10:27:39,KO | RBC Capital,rating,,Outperform,2020-01-31 10:27:39,new
+KO-00080,2020-01-31 11:30:19,KO | B of A Securities,price_target_usd,,65.0,2020-01-31 11:30:19,new
+KO-00080,2020-01-31 11:30:19,KO | B of A Securities,rating,,Buy,2020-01-31 11:30:19,new
+KO-00081,2020-01-31 13:34:09,KO | Morgan Stanley,price_target_usd,,65.0,2020-01-31 13:34:09,new
+KO-00081,2020-01-31 13:34:09,KO | Morgan Stanley,rating,,Overweight,2020-01-31 13:34:09,corroborate
+KO-00082,2020-03-20 08:56:25,KO | Deutsche Bank,price_target_usd,,53.0,2020-03-20 08:56:25,new
+KO-00082,2020-03-20 08:56:25,KO | Deutsche Bank,rating,,Buy,2020-03-20 08:56:25,corroborate
+KO-00083,2020-03-23 05:09:28,KO | JP Morgan,rating,,Overweight,2020-03-23 05:09:28,new
+KO-00083,2020-03-23 05:09:28,KO | JP Morgan,price_target_usd,,44.0,2020-03-23 05:09:28,new
+KO-00084,2020-03-24 06:03:42,KO | HSBC,rating,,Buy,2020-03-24 06:03:42,new
+KO-00084,2020-03-24 06:03:42,KO | HSBC,price_target_usd,,45.0,2020-03-24 06:03:42,new
+KO-00085,2020-03-25 05:55:09,KO | DZ Bank,rating,,Buy,2020-03-25 05:55:09,new
+KO-00085,2020-03-25 05:55:09,KO | DZ Bank,price_target_usd,,51.0,2020-03-25 05:55:09,new
+KO-00086,2020-03-27 09:04:51,KO | Argus Research,rating,,Buy,2020-03-27 09:04:51,new
+KO-00086,2020-03-27 09:04:51,KO | Argus Research,price_target_usd,,54.0,2020-03-27 09:04:51,new
+KO-00087,2020-03-31 08:28:16,KO | Morgan Stanley,price_target_usd,,46.0,2020-03-31 08:28:16,new
+KO-00087,2020-03-31 08:28:16,KO | Morgan Stanley,rating,,Equal-Weight,2020-03-31 08:28:16,new
+KO-00088,2020-04-21 11:35:13,KO | CFRA,rating,,Strong Buy,2020-04-21 11:35:13,new
+KO-00088,2020-04-21 11:35:13,KO | CFRA,price_target_usd,,55.0,2020-04-21 11:35:13,new
+KO-00089,2020-04-22 08:05:34,KO | RBC Capital,price_target_usd,,55.0,2020-04-22 08:05:34,new
+KO-00089,2020-04-22 08:05:34,KO | RBC Capital,rating,,Outperform,2020-04-22 08:05:34,corroborate
+KO-00090,2020-04-22 10:00:15,KO | UBS,price_target_usd,,154.0,2020-04-22 10:00:15,new
+KO-00090,2020-04-22 10:00:15,KO | UBS,rating,,Buy,2020-04-22 10:00:15,corroborate
+KO-00091,2020-04-22 10:50:06,KO | Jefferies,price_target_usd,,47.0,2020-04-22 10:50:06,new
+KO-00091,2020-04-22 10:50:06,KO | Jefferies,rating,,Hold,2020-04-22 10:50:06,new
+KO-00092,2020-04-22 12:31:57,KO | Citigroup,price_target_usd,,51.0,2020-04-22 12:31:57,new
+KO-00093,2020-06-08 08:11:46,KO | Morgan Stanley,price_target_usd,,52.0,2020-06-08 08:11:46,new
+KO-00093,2020-06-08 08:11:46,KO | Morgan Stanley,rating,,Equal-Weight,2020-06-08 08:11:46,corroborate
+KO-00094,2020-07-22 07:42:28,KO | Morgan Stanley,rating,,Overweight,2020-07-22 07:42:28,new
+KO-00094,2020-07-22 07:42:28,KO | Morgan Stanley,price_target_usd,,54.0,2020-07-22 07:42:28,new
+KO-00095,2020-07-22 14:30:43,KO | HSBC,price_target_usd,,54.0,2020-07-22 14:30:43,new
+KO-00095,2020-07-22 14:30:43,KO | HSBC,rating,,Buy,2020-07-22 14:30:43,corroborate
+KO-00096,2020-08-12 07:43:43,KO | SunTrust Robinson Humphrey,alias,,Truist Securities,2020-08-12 07:43:43,event
+KO-00097,2020-10-23 08:18:32,KO | Morgan Stanley,price_target_usd,,57.0,2020-10-23 08:18:32,new
+KO-00097,2020-10-23 08:18:32,KO | Morgan Stanley,rating,,Overweight,2020-10-23 08:18:32,corroborate
+KO-00098,2020-10-23 08:46:46,KO | UBS,price_target_usd,,57.0,2020-10-23 08:46:46,new
+KO-00098,2020-10-23 08:46:46,KO | UBS,rating,,Buy,2020-10-23 08:46:46,corroborate
+KO-00099,2020-12-08 07:16:41,KO | Wells Fargo,rating,,Overweight,2020-12-08 07:16:41,new
+KO-00099,2020-12-08 07:16:41,KO | Wells Fargo,price_target_usd,,62.0,2020-12-08 07:16:41,new
+KO-00100,2021-01-04 05:55:00,KO | RBC Capital,rating,,Sector Perform,2021-01-04 05:55:00,new
+KO-00101,2021-01-06 06:56:06,KO | Deutsche Bank,rating,,Hold,2021-01-06 06:56:06,new
+KO-00101,2021-01-06 06:56:06,KO | Deutsche Bank,price_target_usd,,55.0,2021-01-06 06:56:06,new
+KO-00102,2021-01-07 07:03:21,KO | JP Morgan,rating,,Neutral,2021-01-07 07:03:21,new
+KO-00102,2021-01-07 07:03:21,KO | JP Morgan,price_target_usd,,55.0,2021-01-07 07:03:21,new
+KO-00103,2021-01-13 14:28:44,KO | HSBC,price_target_usd,,58.0,2021-01-13 14:28:44,new
+KO-00103,2021-01-13 14:28:44,KO | HSBC,rating,,Buy,2021-01-13 14:28:44,corroborate
+KO-00104,2021-01-14 09:37:52,KO | Morgan Stanley,rating,,Overweight,2021-01-14 09:37:52,corroborate
+KO-00104,2021-01-14 09:37:52,KO | Morgan Stanley,price_target_usd,,55.0,2021-01-14 09:37:52,new
+KO-00105,2021-01-20 05:51:07,KO | Bernstein,rating,,Outperform,2021-01-20 05:51:07,new
+KO-00105,2021-01-20 05:51:07,KO | Bernstein,price_target_usd,,58.0,2021-01-20 05:51:07,new
+KO-00106,2021-03-08 05:45:42,KO | RBC Capital,rating,,Outperform,2021-03-08 05:45:42,new
+KO-00106,2021-03-08 05:45:42,KO | RBC Capital,price_target_usd,,60.0,2021-03-08 05:45:42,new
+KO-00107,2021-04-13 07:19:01,KO | DA Davidson,rating,,Peer Perform,2021-04-13 07:19:01,new
+KO-00108,2021-04-19 10:41:34,KO | Morgan Stanley,price_target_usd,,60.0,2021-04-19 10:41:34,new
+KO-00108,2021-04-19 10:41:34,KO | Morgan Stanley,rating,,Overweight,2021-04-19 10:41:34,corroborate
+KO-00109,2021-06-04 08:38:08,KO | Morgan Stanley,price_target_usd,,64.0,2021-06-04 08:38:08,new
+KO-00109,2021-06-04 08:38:08,KO | Morgan Stanley,rating,,Overweight,2021-06-04 08:38:08,corroborate
+KO-00110,2021-07-22 08:13:40,KO | Morgan Stanley,price_target_usd,,65.0,2021-07-22 08:13:40,new
+KO-00110,2021-07-22 08:13:40,KO | Morgan Stanley,rating,,Overweight,2021-07-22 08:13:40,corroborate
+KO-00111,2021-10-28 08:18:01,KO | RBC Capital,price_target_usd,,64.0,2021-10-28 08:18:01,new
+KO-00111,2021-10-28 08:18:01,KO | RBC Capital,rating,,Outperform,2021-10-28 08:18:01,corroborate
+KO-00112,2021-12-13 05:10:42,KO | JP Morgan,rating,,Overweight,2021-12-13 05:10:42,new
+KO-00112,2021-12-13 05:10:42,KO | JP Morgan,price_target_usd,,63.0,2021-12-13 05:10:42,new
+KO-00113,2022-01-04 07:17:15,KO | Guggenheim,rating,,Buy,2022-01-04 07:17:15,new
+KO-00113,2022-01-04 07:17:15,KO | Guggenheim,price_target_usd,,66.0,2022-01-04 07:17:15,new
+KO-00114,2022-02-08 11:50:01,KO | Morgan Stanley,rating,,Overweight,2022-02-08 11:50:01,corroborate
+KO-00114,2022-02-08 11:50:01,KO | Morgan Stanley,price_target_usd,,71.0,2022-02-08 11:50:01,new
+KO-00115,2022-02-11 08:05:01,KO | Morgan Stanley,rating,,Overweight,2022-02-11 08:05:01,corroborate
+KO-00115,2022-02-11 08:05:01,KO | Morgan Stanley,price_target_usd,,76.0,2022-02-11 08:05:01,new
+KO-00116,2022-02-11 10:30:26,KO | Deutsche Bank,price_target_usd,,62.0,2022-02-11 10:30:26,new
+KO-00117,2022-03-30 08:05:01,KO | JP Morgan,rating,,Overweight,2022-03-30 08:05:01,corroborate
+KO-00117,2022-03-30 08:05:01,KO | JP Morgan,price_target_usd,,68.0,2022-03-30 08:05:01,new
+KO-00118,2022-04-26 06:29:54,KO | Citigroup,price_target_usd,,68.0,2022-04-26 06:29:54,new
+KO-00119,2022-04-26 06:32:23,KO | RBC Capital,price_target_usd,,69.0,2022-04-26 06:32:23,new
+KO-00119,2022-04-26 06:32:23,KO | RBC Capital,rating,,Outperform,2022-04-26 06:32:23,corroborate
+KO-00120,2022-04-26 07:33:34,KO | HSBC,price_target_usd,,72.0,2022-04-26 07:33:34,new
+KO-00120,2022-04-26 07:33:34,KO | HSBC,rating,,Buy,2022-04-26 07:33:34,corroborate
+KO-00121,2022-04-26 08:05:03,KO | Cowen & Co.,rating,,Market Perform,2022-04-26 08:05:03,new
+KO-00121,2022-04-26 08:05:03,KO | Cowen & Co.,price_target_usd,,68.0,2022-04-26 08:05:03,new
+KO-00122,2022-04-26 08:23:09,KO | Credit Suisse,rating,,Outperform,2022-04-26 08:23:09,corroborate
+KO-00122,2022-04-26 08:23:09,KO | Credit Suisse,price_target_usd,,68.0,2022-04-26 08:23:09,new
+KO-00123,2022-04-26 08:25:45,KO | Deutsche Bank,price_target_usd,,64.0,2022-04-26 08:25:45,new
+KO-00124,2022-04-26 09:25:07,KO | Guggenheim,price_target_usd,,71.0,2022-04-26 09:25:07,new
+KO-00124,2022-04-26 09:25:07,KO | Guggenheim,rating,,Buy,2022-04-26 09:25:07,corroborate
+KO-00125,2022-04-28 06:08:41,KO | DZ Bank,rating,,Hold,2022-04-28 06:08:41,new
+KO-00125,2022-04-28 06:08:41,KO | DZ Bank,price_target_usd,,69.0,2022-04-28 06:08:41,new
+KO-00126,2022-07-20 07:36:02,KO | JP Morgan,rating,,Overweight,2022-07-20 07:36:02,corroborate
+KO-00126,2022-07-20 07:36:02,KO | JP Morgan,price_target_usd,,70.0,2022-07-20 07:36:02,new
+KO-00127,2022-07-27 08:28:05,KO | UBS,price_target_usd,,72.0,2022-07-27 08:28:05,new
+KO-00127,2022-07-27 08:28:05,KO | UBS,rating,,Buy,2022-07-27 08:28:05,corroborate
+KO-00128,2022-07-27 08:33:41,KO | Morgan Stanley,rating,,Overweight,2022-07-27 08:33:41,corroborate
+KO-00128,2022-07-27 08:33:41,KO | Morgan Stanley,price_target_usd,,74.0,2022-07-27 08:33:41,new
+KO-00129,2022-07-27 08:42:50,KO | Deutsche Bank,price_target_usd,,65.0,2022-07-27 08:42:50,new
+KO-00130,2022-09-06 06:45:38,KO | HSBC,price_target_usd,,76.0,2022-09-06 06:45:38,new
+KO-00130,2022-09-06 06:45:38,KO | HSBC,rating,,Buy,2022-09-06 06:45:38,corroborate
+KO-00131,2022-10-03 07:14:31,KO | Wells Fargo,rating,,Overweight,2022-10-03 07:14:31,corroborate
+KO-00131,2022-10-03 07:14:31,KO | Wells Fargo,price_target_usd,,66.0,2022-10-03 07:14:31,new
+KO-00132,2022-10-03 08:18:56,KO | Credit Suisse,rating,,Outperform,2022-10-03 08:18:56,corroborate
+KO-00132,2022-10-03 08:18:56,KO | Credit Suisse,price_target_usd,,64.0,2022-10-03 08:18:56,new
+KO-00133,2022-10-04 09:37:35,KO | Morgan Stanley,rating,,Overweight,2022-10-04 09:37:35,corroborate
+KO-00133,2022-10-04 09:37:35,KO | Morgan Stanley,price_target_usd,,68.0,2022-10-04 09:37:35,new
+KO-00134,2022-10-11 05:22:23,KO | Wedbush,rating,,Outperform,2022-10-11 05:22:23,new
+KO-00134,2022-10-11 05:22:23,KO | Wedbush,price_target_usd,,63.0,2022-10-11 05:22:23,new
+KO-00135,2022-10-14 08:15:52,KO | Deutsche Bank,price_target_usd,,59.0,2022-10-14 08:15:52,new
+KO-00136,2022-12-06 09:40:42,KO | Deutsche Bank,price_target_usd,,62.0,2022-12-06 09:40:42,new
+KO-00137,2022-12-08 08:15:55,KO | Wells Fargo,price_target_usd,,70.0,2022-12-08 08:15:55,new
+KO-00138,2023-02-15 09:09:12,KO | Morgan Stanley,price_target_usd,,70.0,2023-02-15 09:09:12,new
+KO-00138,2023-02-15 09:09:12,KO | Morgan Stanley,rating,,Overweight,2023-02-15 09:09:12,corroborate
+KO-00139,2023-02-16 09:16:34,KO | UBS,price_target_usd,,72.0,2023-02-16 09:16:34,new
+KO-00139,2023-02-16 09:16:34,KO | UBS,rating,,Buy,2023-02-16 09:16:34,new
+KO-00140,2023-02-17 05:27:11,KO | Citigroup,rating,,Buy,2023-02-17 05:27:11,new
+KO-00140,2023-02-17 05:27:11,KO | Citigroup,price_target_usd,,68.0,2023-02-17 05:27:11,new
+KO-00141,2023-03-20 13:03:03,KO | Deutsche Bank,price_target_usd,,60.0,2023-03-20 13:03:03,new
+KO-00141,2023-03-20 13:03:03,KO | Deutsche Bank,rating,,Hold,2023-03-20 13:03:03,corroborate
+KO-00142,2023-04-14 06:07:40,KO | Barclays,rating,,Overweight,2023-04-14 06:07:40,new
+KO-00142,2023-04-14 06:07:40,KO | Barclays,price_target_usd,,72.0,2023-04-14 06:07:40,new
+KO-00143,2023-04-25 05:36:33,KO | Citigroup,price_target_usd,,74.0,2023-04-25 05:36:33,new
+KO-00143,2023-04-25 05:36:33,KO | Citigroup,rating,,Buy,2023-04-25 05:36:33,corroborate
+KO-00144,2023-04-25 08:06:27,KO | RBC Capital,rating,,corroborate,2023-04-25 08:06:27,corroborate
+KO-00144,2023-04-25 08:06:27,KO | RBC Capital,price_target_usd,,corroborate,2023-04-25 08:06:27,corroborate
+KO-00145,2023-04-25 08:26:17,KO | Evercore ISI Group,rating,,Outperform,2023-04-25 08:26:17,new
+KO-00145,2023-04-25 08:26:17,KO | Evercore ISI Group,price_target_usd,,70.0,2023-04-25 08:26:17,new
+KO-00146,2023-04-25 09:06:06,KO | Deutsche Bank,rating,,Hold,2023-04-25 09:06:06,new
+KO-00146,2023-04-25 09:06:06,KO | Deutsche Bank,price_target_usd,,63.0,2023-04-25 09:06:06,new
+KO-00147,2023-04-26 06:21:51,KO | Barclays,price_target_usd,,73.0,2023-04-26 06:21:51,new
+KO-00148,2023-06-07 05:25:22,KO | HSBC,price_target_usd,,74.0,2023-06-07 05:25:22,new
+KO-00148,2023-06-07 05:25:22,KO | HSBC,rating,,Buy,2023-06-07 05:25:22,corroborate
+KO-00149,2023-07-11 10:28:16,KO | Citigroup,rating,,corroborate,2023-07-11 10:28:16,corroborate
+KO-00149,2023-07-11 10:28:16,KO | Citigroup,price_target_usd,,corroborate,2023-07-11 10:28:16,corroborate
+KO-00150,2023-07-20 07:32:15,KO | Barclays,rating,,Overweight,2023-07-20 07:32:15,corroborate
+KO-00150,2023-07-20 07:32:15,KO | Barclays,price_target_usd,,69.0,2023-07-20 07:32:15,new
+KO-00151,2023-07-27 08:22:32,KO | Wedbush,price_target_usd,,71.0,2023-07-27 08:22:32,new
+KO-00151,2023-07-27 08:22:32,KO | Wedbush,rating,,Outperform,2023-07-27 08:22:32,corroborate
+KO-00152,2023-07-27 09:51:43,KO | JP Morgan,price_target_usd,,71.0,2023-07-27 09:51:43,new
+KO-00152,2023-07-27 09:51:43,KO | JP Morgan,rating,,Overweight,2023-07-27 09:51:43,corroborate
+KO-00153,2023-07-27 12:03:17,KO | RBC Capital,rating,,Outperform,2023-07-27 12:03:17,new
+KO-00153,2023-07-27 12:03:17,KO | RBC Capital,price_target_usd,,70.0,2023-07-27 12:03:17,new
+KO-00154,2023-07-27 12:04:24,KO | Morgan Stanley,rating,,Overweight,2023-07-27 12:04:24,corroborate
+KO-00154,2023-07-27 12:04:24,KO | Morgan Stanley,price_target_usd,,70.0,2023-07-27 12:04:24,corroborate
+KO-00155,2023-07-28 06:38:52,KO | Barclays,price_target_usd,,70.0,2023-07-28 06:38:52,new
+KO-00156,2023-10-11 11:56:38,KO | Citigroup,rating,,Buy,2023-10-11 11:56:38,corroborate
+KO-00156,2023-10-11 11:56:38,KO | Citigroup,price_target_usd,,65.0,2023-10-11 11:56:38,new
+KO-00157,2023-10-12 14:58:18,KO | Barclays,rating,,Overweight,2023-10-12 14:58:18,corroborate
+KO-00157,2023-10-12 14:58:18,KO | Barclays,price_target_usd,,59.0,2023-10-12 14:58:18,new
+KO-00158,2023-10-16 10:42:43,KO | JP Morgan,price_target_usd,,59.0,2023-10-16 10:42:43,new
+KO-00158,2023-10-16 10:42:43,KO | JP Morgan,rating,,Overweight,2023-10-16 10:42:43,corroborate
+KO-00159,2023-10-17 14:27:14,KO | B of A Securities,price_target_usd,,60.0,2023-10-17 14:27:14,new
+KO-00159,2023-10-17 14:27:14,KO | B of A Securities,rating,,Buy,2023-10-17 14:27:14,corroborate
+KO-00160,2023-10-25 08:16:07,KO | Morgan Stanley,rating,,Overweight,2023-10-25 08:16:07,new
+KO-00160,2023-10-25 08:16:07,KO | Morgan Stanley,price_target_usd,,65.0,2023-10-25 08:16:07,new
+KO-00161,2023-10-25 12:22:44,KO | JP Morgan,price_target_usd,,62.0,2023-10-25 12:22:44,new
+KO-00162,2023-11-13 06:17:59,KO | Jefferies,rating,,Hold,2023-11-13 06:17:59,new
+KO-00162,2023-11-13 06:17:59,KO | Jefferies,price_target_usd,,64.0,2023-11-13 06:17:59,new
+KO-00163,2024-01-16 13:08:29,KO | Barclays,price_target_usd,,66.0,2024-01-16 13:08:29,new
+KO-00164,2024-02-14 12:43:14,KO | JP Morgan,price_target_usd,,66.0,2024-02-14 12:43:14,new
+KO-00164,2024-02-14 12:43:14,KO | JP Morgan,rating,,Overweight,2024-02-14 12:43:14,corroborate
+KO-00165,2024-03-07 11:36:41,KO | Argus Research,price_target_usd,,70.0,2024-03-07 11:36:41,new
+KO-00166,2024-04-12 10:34:35,KO | Barclays,price_target_usd,,68.0,2024-04-12 10:34:35,new
+KO-00166,2024-04-12 10:34:35,KO | Barclays,rating,,Overweight,2024-04-12 10:34:35,corroborate
+KO-00167,2024-04-19 08:55:24,KO | JP Morgan,price_target_usd,,65.0,2024-04-19 08:55:24,new
+KO-00168,2024-05-01 10:34:56,KO | JP Morgan,price_target_usd,,68.0,2024-05-01 10:34:56,new
+KO-00168,2024-05-01 10:34:56,KO | JP Morgan,rating,,Overweight,2024-05-01 10:34:56,corroborate
+KO-00169,2024-05-01 11:01:15,KO | Evercore ISI Group,rating,,Outperform,2024-05-01 11:01:15,corroborate
+KO-00169,2024-05-01 11:01:15,KO | Evercore ISI Group,price_target_usd,,70.0,2024-05-01 11:01:15,new
+KO-00170,2024-05-01 11:51:13,KO | UBS,price_target_usd,,72.0,2024-05-01 11:51:13,new
+KO-00170,2024-05-01 11:51:13,KO | UBS,rating,,Buy,2024-05-01 11:51:13,new
+KO-00171,2024-05-02 14:13:27,KO | Barclays,price_target_usd,,69.0,2024-05-02 14:13:27,new
+KO-00171,2024-05-02 14:13:27,KO | Barclays,rating,,Overweight,2024-05-02 14:13:27,corroborate
+KO-00172,2024-05-22 11:25:58,KO | Argus Research,price_target_usd,,72.0,2024-05-22 11:25:58,new
+KO-00173,2024-06-10 08:47:48,KO | Morgan Stanley,rating,,Overweight,2024-06-10 08:47:48,new
+KO-00173,2024-06-10 08:47:48,KO | Morgan Stanley,price_target_usd,,70.0,2024-06-10 08:47:48,new
+KO-00174,2024-06-24 06:09:56,KO | Exane BNP Paribas,rating,,Outperform,2024-06-24 06:09:56,new
+KO-00174,2024-06-24 06:09:56,KO | Exane BNP Paribas,price_target_usd,,72.0,2024-06-24 06:09:56,new
+KO-00175,2024-07-10 12:24:07,KO | JP Morgan,price_target_usd,,72.0,2024-07-10 12:24:07,new
+KO-00175,2024-07-10 12:24:07,KO | JP Morgan,rating,,Overweight,2024-07-10 12:24:07,corroborate
+KO-00176,2024-07-10 12:39:25,KO | B of A Securities,price_target_usd,,70.0,2024-07-10 12:39:25,new
+KO-00176,2024-07-10 12:39:25,KO | B of A Securities,rating,,Buy,2024-07-10 12:39:25,corroborate
+KO-00177,2024-07-24 11:49:31,KO | Wells Fargo,rating,,Overweight,2024-07-24 11:49:31,corroborate
+KO-00177,2024-07-24 11:49:31,KO | Wells Fargo,price_target_usd,,73.0,2024-07-24 11:49:31,new
+KO-00178,2024-07-24 12:49:18,KO | Deutsche Bank,rating,,Hold,2024-07-24 12:49:18,new
+KO-00178,2024-07-24 12:49:18,KO | Deutsche Bank,price_target_usd,,65.0,2024-07-24 12:49:18,new
+KO-00179,2024-07-24 13:31:30,KO | RBC Capital,rating,,Outperform,2024-07-24 13:31:30,corroborate
+KO-00179,2024-07-24 13:31:30,KO | RBC Capital,price_target_usd,,68.0,2024-07-24 13:31:30,new
+KO-00180,2024-07-24 14:32:34,KO | Citigroup,price_target_usd,,75.0,2024-07-24 14:32:34,new
+KO-00180,2024-07-24 14:32:34,KO | Citigroup,rating,,Buy,2024-07-24 14:32:34,corroborate
+KO-00181,2024-07-25 10:50:07,KO | Truist Securities,price_target_usd,,70.0,2024-07-25 10:50:07,new
+KO-00181,2024-07-25 10:50:07,KO | Truist Securities,rating,,Buy,2024-07-25 10:50:07,new
+KO-00182,2024-07-25 12:40:53,KO | Barclays,rating,,Overweight,2024-07-25 12:40:53,corroborate
+KO-00182,2024-07-25 12:40:53,KO | Barclays,price_target_usd,,70.0,2024-07-25 12:40:53,new
+KO-00183,2024-07-25 15:22:47,KO | TD Cowen,rating,,Hold,2024-07-25 15:22:47,new
+KO-00183,2024-07-25 15:22:47,KO | TD Cowen,price_target_usd,,70.00,2024-07-25 15:22:47,new
+KO-00183,2024-07-25 15:22:47,KO | TD Cowen,price_target_usd,,65.00,2024-07-25 15:22:47,inferred
+KO-00184,2024-08-27 08:17:27,KO | Morgan Stanley,rating,,Overweight,2024-08-27 08:17:27,new
+KO-00184,2024-08-27 08:17:27,KO | Morgan Stanley,price_target_usd,,78.0,2024-08-27 08:17:27,new
+KO-00185,2024-09-05 13:56:10,KO | CFRA,rating,,Hold,2024-09-05 13:56:10,new
+KO-00186,2024-09-16 10:04:27,KO | Wells Fargo,rating,,Overweight,2024-09-16 10:04:27,corroborate
+KO-00186,2024-09-16 10:04:27,KO | Wells Fargo,price_target_usd,,78.0,2024-09-16 10:04:27,new
+KO-00187,2024-10-11 11:08:26,KO | Barclays,price_target_usd,,74.0,2024-10-11 11:08:26,new
+KO-00187,2024-10-11 11:08:26,KO | Barclays,rating,,Overweight,2024-10-11 11:08:26,corroborate
+KO-00188,2024-10-16 10:45:26,KO | Truist Securities,rating,,Buy,2024-10-16 10:45:26,corroborate
+KO-00188,2024-10-16 10:45:26,KO | Truist Securities,price_target_usd,,80.0,2024-10-16 10:45:26,new
+KO-00189,2024-10-24 08:32:23,KO | Morgan Stanley,rating,,Overweight,2024-10-24 08:32:23,new
+KO-00189,2024-10-24 08:32:23,KO | Morgan Stanley,price_target_usd,,76.0,2024-10-24 08:32:23,new
+KO-00190,2024-10-25 14:01:41,KO | Barclays,price_target_usd,,73.0,2024-10-25 14:01:41,new
+KO-00191,2024-12-02 11:00:02,KO | Wells Fargo,price_target_usd,,75.0,2024-12-02 11:00:02,new
+KO-00192,2024-12-12 06:41:28,KO | Deutsche Bank,rating,,Buy,2024-12-12 06:41:28,new
+KO-00192,2024-12-12 06:41:28,KO | Deutsche Bank,price_target_usd,,70.0,2024-12-12 06:41:28,new
+KO-00193,2025-01-07 06:47:43,KO | Piper Sandler,rating,,Overweight,2025-01-07 06:47:43,new
+KO-00193,2025-01-07 06:47:43,KO | Piper Sandler,price_target_usd,,74.0,2025-01-07 06:47:43,new
+KO-00194,2025-01-07 09:43:16,KO | Wells Fargo,rating,,corroborate,2025-01-07 09:43:16,corroborate
+KO-00194,2025-01-07 09:43:16,KO | Wells Fargo,price_target_usd,,70.0,2025-01-07 09:43:16,new
+KO-00195,2025-01-08 12:31:53,KO | TD Cowen,rating,,Buy,2025-01-08 12:31:53,new
+KO-00195,2025-01-08 12:31:53,KO | TD Cowen,price_target_usd,,75.0,2025-01-08 12:31:53,new
+KO-00196,2025-01-16 15:49:22,KO | UBS,price_target_usd,,72.0,2025-01-16 15:49:22,new
+KO-00196,2025-01-16 15:49:22,KO | UBS,rating,,Buy,2025-01-16 15:49:22,new
+KO-00197,2025-01-17 12:33:46,KO | Barclays,rating,,Overweight,2025-01-17 12:33:46,corroborate
+KO-00197,2025-01-17 12:33:46,KO | Barclays,price_target_usd,,66.0,2025-01-17 12:33:46,new
+KO-00198,2025-01-23 10:50:16,KO | Piper Sandler,rating,,Overweight,2025-01-23 10:50:16,corroborate
+KO-00198,2025-01-23 10:50:16,KO | Piper Sandler,price_target_usd,,73.0,2025-01-23 10:50:16,new
+KO-00199,2025-01-28 10:02:04,KO | JP Morgan,rating,,Overweight,2025-01-28 10:02:04,new
+KO-00199,2025-01-28 10:02:04,KO | JP Morgan,price_target_usd,,70.0,2025-01-28 10:02:04,new
+KO-00200,2025-01-30 05:20:55,KO | Jefferies,rating,,Buy,2025-01-30 05:20:55,new
+KO-00200,2025-01-30 05:20:55,KO | Jefferies,price_target_usd,,75.0,2025-01-30 05:20:55,new
+KO-00201,2025-02-06 11:22:56,KO | RBC Capital,rating,,corroborate,2025-02-06 11:22:56,corroborate
+KO-00201,2025-02-06 11:22:56,KO | RBC Capital,price_target_usd,,69.0,2025-02-06 11:22:56,corroborate
+KO-00202,2025-02-12 07:59:42,KO | Morgan Stanley,rating,,Overweight,2025-02-12 07:59:42,new
+KO-00202,2025-02-12 07:59:42,KO | Morgan Stanley,price_target_usd,,78.0,2025-02-12 07:59:42,new
+KO-00203,2025-02-12 09:12:01,KO | Evercore ISI Group,price_target_usd,,75.0,2025-02-12 09:12:01,new
+KO-00204,2025-02-12 10:23:38,KO | Wells Fargo,price_target_usd,,75.0,2025-02-12 10:23:38,new
+KO-00204,2025-02-12 10:23:38,KO | Wells Fargo,rating,,Overweight,2025-02-12 10:23:38,new
+KO-00205,2025-02-12 12:22:22,KO | UBS,price_target_usd,,78.0,2025-02-12 12:22:22,new
+KO-00205,2025-02-12 12:22:22,KO | UBS,rating,,Buy,2025-02-12 12:22:22,new
+KO-00206,2025-02-13 08:30:37,KO | Barclays,price_target_usd,,73.0,2025-02-13 08:30:37,new
+KO-00206,2025-02-13 08:30:37,KO | Barclays,rating,,Overweight,2025-02-13 08:30:37,corroborate
+KO-00207,2025-02-28 08:43:43,KO | Piper Sandler,rating,,corroborate,2025-02-28 08:43:43,corroborate
+KO-00207,2025-02-28 08:43:43,KO | Piper Sandler,price_target_usd,,80.0,2025-02-28 08:43:43,new
+KO-00208,2025-04-17 13:22:46,KO | UBS,price_target_usd,,84.0,2025-04-17 13:22:46,new
+KO-00208,2025-04-17 13:22:46,KO | UBS,rating,,Buy,2025-04-17 13:22:46,new
+KO-00209,2025-04-21 08:57:22,KO | JP Morgan,rating,,Overweight,2025-04-21 08:57:22,new
+KO-00209,2025-04-21 08:57:22,KO | JP Morgan,price_target_usd,,78.0,2025-04-21 08:57:22,new
+KO-00210,2025-04-30 07:05:05,KO | Morgan Stanley,rating,,Overweight,2025-04-30 07:05:05,new
+KO-00210,2025-04-30 07:05:05,KO | Morgan Stanley,price_target_usd,,81.0,2025-04-30 07:05:05,new
+KO-00211,2025-04-30 09:59:03,KO | UBS,price_target_usd,,86.0,2025-04-30 09:59:03,new
+KO-00211,2025-04-30 09:59:03,KO | UBS,rating,,Buy,2025-04-30 09:59:03,new
+KO-00212,2025-04-30 15:00:12,KO | RBC Capital,rating,,Outperform,2025-04-30 15:00:12,new
+KO-00212,2025-04-30 15:00:12,KO | RBC Capital,price_target_usd,,76.0,2025-04-30 15:00:12,new
+KO-00213,2025-06-09 12:30:08,KO | Morgan Stanley,rating,,Overweight,2025-06-09 12:30:08,new
+KO-00213,2025-06-09 12:30:08,KO | Morgan Stanley,price_target_usd,,81.0,2025-06-09 12:30:08,new
+KO-00214,2025-07-21 11:24:22,KO | BNP Paribas,rating,,Outperform,2025-07-21 11:24:22,new
+KO-00214,2025-07-21 11:24:22,KO | BNP Paribas,price_target_usd,,83.0,2025-07-21 11:24:22,new
+KO-00215,2025-07-23 10:58:43,KO | JP Morgan,rating,,Overweight,2025-07-23 10:58:43,new
+KO-00215,2025-07-23 10:58:43,KO | JP Morgan,price_target_usd,,79.0,2025-07-23 10:58:43,new
+KO-00215,2025-07-23 10:58:43,KO | JP Morgan,price_target_usd,,77.0,2025-07-23 10:58:43,inferred
+KO-00216,2025-07-23 15:27:25,KO | UBS,rating,,Buy,2025-07-23 15:27:25,new
+KO-00216,2025-07-23 15:27:25,KO | UBS,price_target_usd,,84.0,2025-07-23 15:27:25,new
+KO-00217,2025-09-11 11:20:21,KO | UBS,rating,,Buy,2025-09-11 11:20:21,new
+KO-00217,2025-09-11 11:20:21,KO | UBS,price_target_usd,,80.0,2025-09-11 11:20:21,new
+KO-00218,2025-09-25 09:12:36,KO | Wells Fargo,rating,,Overweight,2025-09-25 09:12:36,corroborate
+KO-00218,2025-09-25 09:12:36,KO | Wells Fargo,price_target_usd,,75.0,2025-09-25 09:12:36,new
+KO-00219,2025-10-22 09:19:49,KO | Wells Fargo,price_target_usd,,79.0,2025-10-22 09:19:49,new
+KO-00220,2025-10-22 11:11:00,KO | Piper Sandler,rating,,Overweight,2025-10-22 11:11:00,new
+KO-00220,2025-10-22 11:11:00,KO | Piper Sandler,price_target_usd,,81.0,2025-10-22 11:11:00,new
+KO-00221,2025-10-22 11:16:14,KO | TD Cowen,price_target_usd,,80.0,2025-10-22 11:16:14,new
+KO-00222,2025-10-23 08:30:08,KO | Barclays,rating,,Overweight,2025-10-23 08:30:08,corroborate
+KO-00222,2025-10-23 08:30:08,KO | Barclays,price_target_usd,,77.0,2025-10-23 08:30:08,new
+KO-00223,2025-10-31 14:56:13,KO | Freedom Broker,rating,,Hold,2025-10-31 14:56:13,new
+KO-00223,2025-10-31 14:56:13,KO | Freedom Broker,price_target_usd,,78.0,2025-10-31 14:56:13,new
+KO-00224,2025-11-07 08:16:54,KO | B of A Securities,price_target_usd,,80.0,2025-11-07 08:16:54,new
+KO-00224,2025-11-07 08:16:54,KO | B of A Securities,rating,,Buy,2025-11-07 08:16:54,corroborate
+KO-00225,2026-02-04 08:06:41,KO | Jefferies,price_target_usd,,88.0,2026-02-04 08:06:41,new
+KO-00225,2026-02-04 08:06:41,KO | Jefferies,rating,,Buy,2026-02-04 08:06:41,corroborate
+KO-00226,2026-02-09 08:57:34,KO | Wells Fargo,rating,,Overweight,2026-02-09 08:57:34,corroborate
+KO-00226,2026-02-09 08:57:34,KO | Wells Fargo,price_target_usd,,87.0,2026-02-09 08:57:34,new
+KO-00227,2026-02-11 05:11:07,KO | Evercore ISI Group,rating,,Outperform,2026-02-11 05:11:07,corroborate
+KO-00227,2026-02-11 05:11:07,KO | Evercore ISI Group,price_target_usd,,85.0,2026-02-11 05:11:07,new
+KO-00228,2026-02-11 08:11:09,KO | Jefferies,price_target_usd,,87.0,2026-02-11 08:11:09,new
+KO-00229,2026-02-11 08:12:22,KO | UBS,price_target_usd,,87.0,2026-02-11 08:12:22,new
+KO-00229,2026-02-11 08:12:22,KO | UBS,rating,,Buy,2026-02-11 08:12:22,new
+KO-00230,2026-02-11 10:53:18,KO | Citigroup,rating,,Buy,2026-02-11 10:53:18,new
+KO-00230,2026-02-11 10:53:18,KO | Citigroup,price_target_usd,,87.0,2026-02-11 10:53:18,new
+KO-00231,2026-02-11 12:40:35,KO | RBC Capital,rating,,Outperform,2026-02-11 12:40:35,new
+KO-00231,2026-02-11 12:40:35,KO | RBC Capital,price_target_usd,,87.0,2026-02-11 12:40:35,new
+KO-00231,2026-02-11 12:40:35,KO | RBC Capital,price_target_usd,,78.0,2026-02-11 12:40:35,inferred
+KO-00232,2026-02-11 14:25:57,KO | JP Morgan,rating,,Overweight,2026-02-11 14:25:57,new
+KO-00232,2026-02-11 14:25:57,KO | JP Morgan,price_target_usd,,83.0,2026-02-11 14:25:57,new
+KO-00233,2026-02-12 10:12:52,KO | Barclays,price_target_usd,,83.0,2026-02-12 10:12:52,new
+KO-00234,2026-03-16 14:06:18,KO | Jefferies,price_target_usd,,90.0,2026-03-16 14:06:18,new
+KO-00234,2026-03-16 14:06:18,KO | Jefferies,rating,,Buy,2026-03-16 14:06:18,corroborate
+KO-00235,2026-03-30 13:14:46,KO | Deutsche Bank,rating,,Buy,2026-03-30 13:14:46,new
+KO-00235,2026-03-30 13:14:46,KO | Deutsche Bank,price_target_usd,,86.0,2026-03-30 13:14:46,new
+KO-00236,2026-04-07 15:12:40,KO | UBS,price_target_usd,,90.0,2026-04-07 15:12:40,new
+KO-00236,2026-04-07 15:12:40,KO | UBS,rating,,Buy,2026-04-07 15:12:40,new
+KO-00237,2026-04-29 10:54:00,KO | Evercore ISI Group,rating,,Outperform,2026-04-29 10:54:00,corroborate
+KO-00237,2026-04-29 10:54:00,KO | Evercore ISI Group,price_target_usd,,88.0,2026-04-29 10:54:00,new
+KO-00238,2026-04-29 12:13:56,KO | Citigroup,price_target_usd,,90.0,2026-04-29 12:13:56,new
+KO-00238,2026-04-29 12:13:56,KO | Citigroup,rating,,Buy,2026-04-29 12:13:56,new
+KO-00239,2026-04-29 13:46:27,KO | TD Cowen,price_target_usd,,90.0,2026-04-29 13:46:27,new
+KO-00239,2026-04-29 13:46:27,KO | TD Cowen,rating,,Buy,2026-04-29 13:46:27,corroborate
+KO-00240,2026-04-29 15:59:26,KO | JP Morgan,rating,,Overweight,2026-04-29 15:59:26,new
+KO-00240,2026-04-29 15:59:26,KO | JP Morgan,price_target_usd,,85.0,2026-04-29 15:59:26,new
+KO-00241,2026-04-30 11:55:48,KO | Barclays,price_target_usd,,85.0,2026-04-30 11:55:48,new
+KO-00242,2026-05-18 09:47:01,KO | Wells Fargo,price_target_usd,,90.0,2026-05-18 09:47:01,new
+KO-00243,2026-05-18 11:32:50,KO | Citigroup,price_target_usd,,91.0,2026-05-18 11:32:50,new
+KO-00243,2026-05-18 11:32:50,KO | Citigroup,rating,,Buy,2026-05-18 11:32:50,new
+KO-00244,2026-05-21 11:19:29,KO | Barclays,price_target_usd,,89.0,2026-05-21 11:19:29,new
+KO-00245,2026-06-11 11:03:59,KO | Bernstein,rating,,Market Perform,2026-06-11 11:03:59,new
+KO-00245,2026-06-11 11:03:59,KO | Bernstein,price_target_usd,,84.0,2026-06-11 11:03:59,new
+KO-00246,2026-06-12 06:05:15,KO | Bernstein,rating,,Market Perform,2026-06-12 06:05:15,new
+KO-00246,2026-06-12 06:05:15,KO | Bernstein,price_target_usd,,84.0,2026-06-12 06:05:15,new
+KO-00247,2026-07-10 14:12:12,KO | B of A Securities,price_target_usd,,95.0,2026-07-10 14:12:12,new
+KO-00247,2026-07-10 14:12:12,KO | B of A Securities,rating,,Buy,2026-07-10 14:12:12,corroborate
+KO-00248,2026-07-14 10:34:48,KO | Citigroup,rating,,Buy,2026-07-14 10:34:48,new
+KO-00248,2026-07-14 10:34:48,KO | Citigroup,price_target_usd,,97.0,2026-07-14 10:34:48,new
+KO-00249,2026-07-16 13:56:06,KO | UBS,price_target_usd,,98.0,2026-07-16 13:56:06,new
+KO-00249,2026-07-16 13:56:06,KO | UBS,rating,,Buy,2026-07-16 13:56:06,new
+KO-00250,2026-07-21 10:03:51,KO | Barclays,rating,,Overweight,2026-07-21 10:03:51,corroborate
+KO-00250,2026-07-21 10:03:51,KO | Barclays,price_target_usd,,91.0,2026-07-21 10:03:51,new
+KO-00251,2026-07-29 07:05:38,KO | Jefferies,price_target_usd,,104.0,2026-07-29 07:05:38,new
+KO-00251,2026-07-29 07:05:38,KO | Jefferies,rating,,Buy,2026-07-29 07:05:38,corroborate
+KO-00252,2026-07-29 09:50:27,KO | RBC Capital,rating,,Outperform,2026-07-29 09:50:27,new
+KO-00252,2026-07-29 09:50:27,KO | RBC Capital,price_target_usd,,96.0,2026-07-29 09:50:27,new
+KO-00253,2026-07-29 11:58:54,KO | Wells Fargo,price_target_usd,,95.0,2026-07-29 11:58:54,new
+KO-00254,2026-07-29 13:27:43,KO | Piper Sandler,price_target_usd,,95.0,2026-07-29 13:27:43,new
+KO-00255,2026-07-29 13:44:55,KO | TD Cowen,price_target_usd,,100.0,2026-07-29 13:44:55,new
+KO-00255,2026-07-29 13:44:55,KO | TD Cowen,rating,,Buy,2026-07-29 13:44:55,corroborate
+KO-00256,2026-07-29 14:25:22,KO | JP Morgan,rating,,Overweight,2026-07-29 14:25:22,new
+KO-00256,2026-07-29 14:25:22,KO | JP Morgan,price_target_usd,,96.0,2026-07-29 14:25:22,new
+KO-00257,2026-07-30 07:46:00,KO | Barclays,price_target_usd,,93.0,2026-07-30 07:46:00,new
+KO-00258,2026-07-30 11:19:34,KO | Argus Research,price_target_usd,,97.0,2026-07-30 11:19:34,new
+KO-00259,2026-09-28 13:31:16,KO | JP Morgan,rating,,Overweight,2026-09-28 13:31:16,new
+KO-00259,2026-09-28 13:31:16,KO | JP Morgan,price_target_usd,,95.0,2026-09-28 13:31:16,new
+KO-00260,2026-10-05 09:43:02,KO | Wells Fargo,rating,,Overweight,2026-10-05 09:43:02,corroborate
+KO-00260,2026-10-05 09:43:02,KO | Wells Fargo,price_target_usd,,90.0,2026-10-05 09:43:02,new
+KO-00261,2026-10-14 14:39:59,KO | Citigroup,rating,,Buy,2026-10-14 14:39:59,new
+KO-00261,2026-10-14 14:39:59,KO | Citigroup,price_target_usd,,102.0,2026-10-14 14:39:59,new
+KO-00262,2026-10-16 15:17:52,KO | Barclays,rating,,Overweight,2026-10-16 15:17:52,corroborate
+KO-00262,2026-10-16 15:17:52,KO | Barclays,price_target_usd,,98.0,2026-10-16 15:17:52,new
+KO-00263,2026-10-26 08:19:40,KO | Piper Sandler,rating,,Overweight,2026-10-26 08:19:40,corroborate
+KO-00263,2026-10-26 08:19:40,KO | Piper Sandler,price_target_usd,,102.0,2026-10-26 08:19:40,new
+KO-00264,2026-10-28 06:57:14,KO | Morgan Stanley,rating,,Overweight,2026-10-28 06:57:14,new
+KO-00264,2026-10-28 06:57:14,KO | Morgan Stanley,price_target_usd,,103.0,2026-10-28 06:57:14,new
+KO-00265,2026-10-28 08:48:43,KO | RBC Capital,rating,,Outperform,2026-10-28 08:48:43,new
+KO-00265,2026-10-28 08:48:43,KO | RBC Capital,price_target_usd,,96.0,2026-10-28 08:48:43,new
+KO-00266,2026-10-28 09:00:04,KO | Wells Fargo,price_target_usd,,100.0,2026-10-28 09:00:04,new
+KO-00267,2026-10-28 11:39:50,KO | Piper Sandler,price_target_usd,,103.0,2026-10-28 11:39:50,new
+KO-00268,2026-10-28 12:29:26,KO | TD Cowen,price_target_usd,,104.0,2026-10-28 12:29:26,new
+KO-00268,2026-10-28 12:29:26,KO | TD Cowen,rating,,Buy,2026-10-28 12:29:26,corroborate
+KO-00269,2026-10-28 15:03:25,KO | JP Morgan,rating,,Overweight,2026-10-28 15:03:25,new
+KO-00269,2026-10-28 15:03:25,KO | JP Morgan,price_target_usd,,98.0,2026-10-28 15:03:25,new
+KO-00270,2026-10-28 16:31:44,KO | Citigroup,price_target_usd,,103.0,2026-10-28 16:31:44,new
+KO-00270,2026-10-28 16:31:44,KO | Citigroup,rating,,Buy,2026-10-28 16:31:44,new
+KO-00271,2026-10-28 17:26:42,KO | UBS,price_target_usd,,106.0,2026-10-28 17:26:42,new
+KO-00271,2026-10-28 17:26:42,KO | UBS,rating,,Buy,2026-10-28 17:26:42,new
+KO-00272,2026-10-28 18:59:51,KO | Freedom Broker,price_target_usd,,89.0,2026-10-28 18:59:51,new
+KO-00273,2026-11-17 09:42:15,KO | TD Cowen,price_target_usd,,112.0,2026-11-17 09:42:15,new
+KO-00273,2026-11-17 09:42:15,KO | TD Cowen,rating,,Buy,2026-11-17 09:42:15,corroborate
+KO-00274,2026-11-18 05:17:28,KO | Wolfe Research,rating,,Outperform,2026-11-18 05:17:28,new

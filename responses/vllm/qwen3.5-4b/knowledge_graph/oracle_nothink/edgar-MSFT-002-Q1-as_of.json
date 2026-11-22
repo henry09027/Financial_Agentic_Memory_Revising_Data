@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-MSFT-002-Q1-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "MSFT",
+ "qtype": "latest_value",
+ "mode": "as_of",
+ "as_of": "2021-09-03 21:53:00",
+ "question": "What is MICROSOFT CORP's latest reported total revenue for fiscal year 2021 (ended 30 June 2021), in $ millions?",
+ "gold": "168088",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "MSFT-00089",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "false_abstain",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 3786,
+ "out_tokens": 17,
+ "seconds": 0.2771,
+ "n_facts": 26,
+ "n_dropped": 0,
+ "created": "2026-11-22T01:18:22",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2021-09-03 21:53:00\nQuestion: What is MICROSOFT CORP's latest reported total revenue for fiscal year 2021 (ended 30 June 2021), in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nMSFT | Revenues | value_usd_m | 2017-01-01..2017-03-31: latest 23212 | first 22090 | 2 reports: 22090 [MSFT-00034 @2017-04-27 20:16]; 23212 [MSFT-00045 @2018-04-26 20:10]\nMSFT | Revenues | value_usd_m | 2016-07-01..2017-06-30: latest 96571 | first 89950 | 3 reports: 89950 [MSFT-00037 @2017-08-02 20:15]; 96571 [MSFT-00049 @2018-08-03 15:03]; 96571 [MSFT-00061 @2019-08-01 20:09]\nMSFT | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 24538 | first 24538 | 2 reports: 24538 [MSFT-00039 @2017-10-26 20:08]; 24538 [MSFT-00051 @2018-10-24 20:13]\nMSFT | Revenues | value_usd_m | 2017-07-01..2017-12-31: latest 53456 | first 53456 | 2 reports: 53456 [MSFT-00042 @2018-01-31 21:10]; 53456 [MSFT-00053 @2019-01-30 21:09]\nMSFT | Revenues | value_usd_m | 2017-10-01..2017-12-31: latest 28918 | first 28918 | 2 reports: 28918 [MSFT-00043 @2018-01-31 21:10]; 28918 [MSFT-00054 @2019-01-30 21:09]\nMSFT | Revenues | value_usd_m | 2017-07-01..2018-03-31: latest 80275 | first 80275 | 2 reports: 80275 [MSFT-00046 @2018-04-26 20:10]; 80275 [MSFT-00057 @2019-04-24 20:10]\nMSFT | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 26819 | first 26819 | 2 reports: 26819 [MSFT-00047 @2018-04-26 20:10]; 26819 [MSFT-00058 @2019-04-24 20:10]\nMSFT | Revenues | value_usd_m | 2017-07-01..2018-06-30: latest 110360 | first 110360 | 3 reports: 110360 [MSFT-00050 @2018-08-03 15:03]; 110360 [MSFT-00062 @2019-08-01 20:09]; 110360 [MSFT-00074 @2020-07-31 00:44]\nMSFT | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 29084 | first 29084 | 2 reports: 29084 [MSFT-00052 @2018-10-24 20:13]; 29084 [MSFT-00064 @2019-10-23 20:09]\nMSFT | Revenues | value_usd_m | 2018-07-01..2018-12-31: latest 61555 | first 61555 | 2 reports: 61555 [MSFT-00055 @2019-01-30 21:09]; 61555 [MSFT-00066 @2020-01-29 21:08]\nMSFT | Revenues | value_usd_m | 2018-10-01..2018-12-31: latest 32471 | first 32471 | 2 reports: 32471 [MSFT-00056 @2019-01-30 21:09]; 32471 [MSFT-00067 @2020-01-29 21:08]\nMSFT | Revenues | value_usd_m | 2018-07-01..2019-03-31: latest 92126 | first 92126 | 2 reports: 92126 [MSFT-00059 @2019-04-24 20:10]; 92126 [MSFT-00070 @2020-04-29 20:11]\nMSFT | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 30571 | first 30571 | 2 reports: 30571 [MSFT-00060 @2019-04-24 20:10]; 30571 [MSFT-00071 @2020-04-29 20:11]\nMSFT | Revenues | value_usd_m | 2018-07-01..2019-06-30: latest 125843 | first 125843 | 3 reports: 125843 [MSFT-00063 @2019-08-01 20:09]; 125843 [MSFT-00075 @2020-07-31 00:44]; 125843 [MSFT-00087 @2021-07-29 20:21]\nMSFT | Revenues | value_usd_m | 2019-07-01..2019-09-30: latest 33055 | first 33055 | 2 reports: 33055 [MSFT-00065 @2019-10-23 20:09]; 33055 [MSFT-00077 @2020-10-27 20:21]\nMSFT | Revenues | value_usd_m | 2019-07-01..2019-12-31: latest 69961 | first 69961 | 2 reports: 69961 [MSFT-00068 @2020-01-29 21:08]; 69961 [MSFT-00079 @2021-01-26 21:09]\nMSFT | Revenues | value_usd_m | 2019-10-01..2019-12-31: latest 36906 | first 36906 | 2 reports: 36906 [MSFT-00069 @2020-01-29 21:08]; 36906 [MSFT-00080 @2021-01-26 21:09]\nMSFT | Revenues | value_usd_m | 2019-07-01..2020-03-31: latest 104982 | first 104982 | 2 reports: 104982 [MSFT-00072 @2020-04-29 20:11]; 104982 [MSFT-00083 @2021-04-27 20:09]\nMSFT | Revenues | value_usd_m | 2020-01-01..2020-03-31: latest 35021 | first 35021 | 2 reports: 35021 [MSFT-00073 @2020-04-29 20:11]; 35021 [MSFT-00084 @2021-04-27 20:09]\nMSFT | Revenues | value_usd_m | 2019-07-01..2020-06-30: latest 143015 | first 143015 | 2 reports: 143015 [MSFT-00076 @2020-07-31 00:44]; 143015 [MSFT-00088 @2021-07-29 20:21]\nMSFT | Revenues | value_usd_m | 2020-07-01..2020-09-30: latest 37154 | first 37154 | 1 reports: 37154 [MSFT-00078 @2020-10-27 20:21]\nMSFT | Revenues | value_usd_m | 2020-07-01..2020-12-31: latest 80230 | first 80230 | 1 reports: 80230 [MSFT-00081 @2021-01-26 21:09]\nMSFT | Revenues | value_usd_m | 2020-10-01..2020-12-31: latest 43076 | first 43076 | 1 reports: 43076 [MSFT-00082 @2021-01-26 21:09]\nMSFT | Revenues | value_usd_m | 2020-07-01..2021-03-31: latest 121936 | first 121936 | 1 reports: 121936 [MSFT-00085 @2021-04-27 20:09]\nMSFT | Revenues | value_usd_m | 2021-01-01..2021-03-31: latest 41706 | first 41706 | 1 reports: 41706 [MSFT-00086 @2021-04-27 20:09]\nMSFT | Revenues | value_usd_m | 2020-07-01..2021-06-30: latest 168088 | first 168088 | 1 reports: 168088 [MSFT-00089 @2021-07-29 20:21]"
+  }
+ ],
+ "final_text": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}",
+ "raw_output": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}"
+}

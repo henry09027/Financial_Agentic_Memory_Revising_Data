@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-GE-001-Q4-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "GE",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2018-10-30 07:56:00",
+ "question": "What was the year-over-year revenue growth (percent) of GENERAL ELECTRIC COMPANY's most recently reported fiscal quarter (three-month figures)?",
+ "gold": "3.461",
+ "peek_answers": "-3.552|15.902",
+ "trap_answers": "4.977|1.847",
+ "gold_evidence": "GE-00058|GE-00056",
+ "answer": "2.5",
+ "cited": "GE | Revenues | value_usd_m | 2017-01-01..2017-03-31|GE | Revenues | value_usd_m | 2018-01-01..2018-03-31",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1579,
+ "out_tokens": 92,
+ "seconds": 0.2736,
+ "n_facts": 9,
+ "n_dropped": 0,
+ "created": "2026-11-22T01:15:43",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2018-10-30 07:56:00\nQuestion: What was the year-over-year revenue growth (percent) of GENERAL ELECTRIC COMPANY's most recently reported fiscal quarter (three-month figures)?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nGE | Revenues | value_usd_m | 2017-01-01..2017-03-31: latest 26881 | first 27660 | 2 reports: 27660 [GE-00041 @2017-05-05 21:29]; 26881 [GE-00053 @2018-05-01 20:18]\nGE | Revenues | value_usd_m | 2017-01-01..2017-06-30: latest 55978 | first 57219 | 2 reports: 57219 [GE-00044 @2017-07-28 20:58]; 55978 [GE-00055 @2018-07-27 21:02]\nGE | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 29097 | first 29558 | 2 reports: 29558 [GE-00045 @2017-07-28 20:58]; 29097 [GE-00056 @2018-07-27 21:02]\nGE | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 90691 | first 90691 | 1 reports: 90691 [GE-00048 @2017-10-30 20:28]\nGE | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 33472 | first 33472 | 1 reports: 33472 [GE-00049 @2017-10-30 20:28]\nGE | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 122092 | first 122092 | 1 reports: 122092 [GE-00052 @2018-02-23 21:52]\nGE | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 28660 | first 28660 | 1 reports: 28660 [GE-00054 @2018-05-01 20:18]\nGE | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 58764 | first 58764 | 1 reports: 58764 [GE-00057 @2018-07-27 21:02]\nGE | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 30104 | first 30104 | 1 reports: 30104 [GE-00058 @2018-07-27 21:02]"
+  }
+ ],
+ "final_text": "{\n\"answer\": 2.5,\n\"evidence_ids\": [\n\"GE | Revenues | value_usd_m | 2017-01-01..2017-03-31\",\n\"GE | Revenues | value_usd_m | 2018-01-01..2018-03-31\"\n]\n}",
+ "raw_output": "{\n\"answer\": 2.5,\n\"evidence_ids\": [\n\"GE | Revenues | value_usd_m | 2017-01-01..2017-03-31\",\n\"GE | Revenues | value_usd_m | 2018-01-01..2018-03-31\"\n]\n}"
+}

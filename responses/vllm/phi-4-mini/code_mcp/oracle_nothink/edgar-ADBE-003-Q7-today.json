@@ -1,0 +1,55 @@
+{
+ "qid": "edgar-ADBE-003-Q7-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "ADBE",
+ "qtype": "not_yet_published",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "What was ADOBE INC.'s revenue for the three months ended 2 September 2022, in $ millions?",
+ "gold": "4433",
+ "peek_answers": "",
+ "trap_answers": "13081",
+ "gold_evidence": "ADBE-00115",
+ "answer": "6760.0",
+ "cited": "ADBE-00156",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 4238,
+ "out_tokens": 81,
+ "seconds": 0.1312,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'ADBE | Revenues' AND attribute = 'value_usd_m' \\nORDER BY learned_at DESC \\nLIMIT 50;\"]",
+ "created": "2026-11-21T22:01:59",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: What was ADOBE INC.'s revenue for the three months ended 2 September 2022, in $ millions?\n\nDatabase contents at the as-of time: 115 facts, 115 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'ADBE | Revenues': value_usd_m (115)\nkind values: 'corroborate', 'new', 'revision'\nmost recently learned periods: '2026-05-30..2026-08-28', '2025-11-29..2026-08-28', '2025-05-31..2025-08-29', '2024-11-30..2025-08-29', '2026-02-28..2026-05-29', '2025-11-29..2026-05-29', '2025-03-01..2025-05-30', '2024-11-30..2025-05-30'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'ADBE | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'ADBE | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2024-11-30..2025-08-29,17575.0,,2026-09-22 20:04:02,corroborate,ADBE-00153\n2025-05-31..2025-08-29,5988.0,,2026-09-22 20:04:02,corroborate,ADBE-00154\n2025-11-29..2026-08-28,19776.0,,2026-09-22 20:04:02,new,ADBE-00155\n2026-05-30..2026-08-28,6760.0,,2026-09-22 20:04:02,new,ADBE-00156\n2024-11-30..2025-05-30,11587.0,,2026-06-15 10:04:47,corroborate,ADBE-00149\n2025-03-01..2025-05-30,5873.0,,2026-06-15 10:04:47,corroborate,ADBE-00150\n2025-11-29..2026-05-29,13016.0,,2026-06-15 10:04:47,new,ADBE-00151\n2026-02-28..2026-05-29,6618.0,,2026-06-15 10:04:47,new,ADBE-00152\n2024-11-30..2025-02-28,5714.0,,2026-03-25 20:05:43,corroborate,ADBE-00147\n2025-11-29..2026-02-27,6398.0,,2026-03-25 20:05:43,new,ADBE-00148\n2022-12-03..2023-12-01,19409.0,,2026-01-15 22:01:55,corroborate,ADBE-00144\n2023-12-02..2024-11-29,21505.0,,2026-01-15 22:01:55,corroborate,ADBE-00145\n2024-11-30..2025-11-28,23769.0,,2026-01-15 22:01:55,new,ADBE-00146\n2023-12-02..2024-08-30,15899.0,,2025-09-24 20:03:30,corroborate,ADBE-00140\n2024-06-01..2024-08-30,5408.0,,2025-09-24 20:03:30,corroborate,ADBE-00141\n2024-11-30..2025-08-29,17575.0,,2025-09-24 20:03:30,new,ADBE-00142\n2025-05-31..2025-08-29,5988.0,,2025-09-24 20:03:30,new,ADBE-00143\n2023-12-02..2024-05-31,10491.0,,2025-06-25 20:02:29,corroborate,ADBE-00136\n2024-03-02..2024-05-31,5309.0,,2025-06-25 20:02:29,corroborate,ADBE-00137\n2024-11-30..2025-05-30,11587.0,,2025-06-25 20:02:29,new,ADBE-00138\n2025-03-01..2025-05-30,5873.0,,2025-06-25 20:02:29,new,ADBE-00139\n2023-12-02..2024-03-01,5182.0,,2025-03-26 20:03:42,corroborate,ADBE-00134\n2024-11-30..2025-02-28,5714.0,,2025-03-26 20:03:42,new,ADBE-00135\n2021-12-04..2022-12-02,17606.0,,2025-01-13 21:02:17,corroborate,ADBE-00131\n2022-12-03..2023-12-01,19409.0,,2025-01-13 21:02:17,corroborate,ADBE-00132\n2023-12-02..2024-11-29,21505.0,,2025-01-13 21:02:17,new,ADBE-00133\n2022-12-03..2023-09-01,14361.0,,2024-09-25 20:01:59,corroborate,ADBE-00127\n2023-06-03..2023-09-01,4890.0,,2024-09-25 20:01:59,corroborate,ADBE-00128\n2023-12-02..2024-08-30,15899.0,,2024-09-25 20:01:59,new,ADBE-00129\n2024-06-01..2024-08-30,5408.0,,2024-09-25 20:01:59,new,ADBE-00130\n2022-12-03..2023-06-02,9471.0,,2024-06-26 20:03:14,corroborate,ADBE-00123\n2023-03-04..2023-06-02,4816.0,,2024-06-26 20:03:14,corroborate,ADBE-00124\n2023-12-02..2024-05-31,10491.0,,2024-06-26 20:03:14,new,ADBE-00125\n2024-03-02..2024-05-31,5309.0,,2024-06-26 20:03:14,new,ADBE-00126\n2022-12-03..2023-03-03,4655.0,,2024-03-27 12:05:50,corroborate,ADBE-00121\n2023-12-02..2024-03-01,5182.0,,2024-03-27 12:05:50,new,ADBE-00122\n2020-11-28..2021-12-03,15785.0,,2024-01-17 01:01:55,corroborate,ADBE-00118\n2021-12-04..2022-12-02,17606.0,,2024-01-17 01:01:55,corroborate,ADBE-00119\n2022-12-03..2023-12-01,19409.0,,2024-01-17 01:01:55,new,ADBE-00120\n2021-12-04..2022-09-02,13081.0,,2023-09-27 20:05:22,corroborate,ADBE-00114\n2022-06-04..2022-09-02,4433.0,,2023-09-27 20:05:22,corroborate,ADBE-00115\n2022-12-03..2023-09-01,14361.0,,2023-09-27 20:05:22,new,ADBE-00116\n2023-06-03..2023-09-01,4890.0,,2023-09-27 20:05:22,new,ADBE-00117\n2021-12-04..2022-06-03,8648.0,,2023-06-28 20:25:23,corroborate,ADBE-00110\n2022-03-05..2022-06-03,4386.0,,2023-06-28 20:25:23,corroborate,ADBE-00111\n2022-12-03..2023-06-02,9471.0,,2023-06-28 20:25:23,new,ADBE-00112\n2023-03-04..2023-06-02,4816.0,,2023-06-28 20:25:23,new,ADBE-00113\n2021-12-04..2022-03-04,4262.0,,2023-03-29 21:15:50,corroborate,ADBE-00108\n2022-12-03..2023-03-03,4655.0,,2023-03-29 21:15:50,new,ADBE-00109\n2019-11-30..2020-11-27,12868.0,,2023-01-17 21:34:00,corroborate,ADBE-00105\n"
+  }
+ ],
+ "final_text": "```json\n{\"answer\": \"6760.0\", \"evidence_ids\": [\"ADBE-00156\"]}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'ADBE | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```\n\n===== next turn =====\n\n```json\n{\"answer\": \"6760.0\", \"evidence_ids\": [\"ADBE-00156\"]}\n```"
+}

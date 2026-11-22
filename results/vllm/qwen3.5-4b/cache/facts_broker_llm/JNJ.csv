@@ -1,0 +1,411 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+JNJ-00130,2022-11-18 04:58:50,JNJ | Credit Suisse,price_target_usd,,170.00,2022-11-18 04:58:50,new
+JNJ-00130,2022-11-18 04:58:50,JNJ | Credit Suisse,rating,,Neutral,2022-11-18 04:58:50,new
+JNJ-00131,2022-12-01 08:53:07,JNJ | Morgan Stanley,price_target_usd,,178.00,2022-12-01 08:53:07,new
+JNJ-00131,2022-12-01 08:53:07,JNJ | Morgan Stanley,rating,,Equal-Weight,2022-12-01 08:53:07,new
+JNJ-00132,2022-12-06 08:25:29,JNJ | Morgan Stanley,price_target_usd,,176.00,2022-12-06 08:25:29,new
+JNJ-00132,2022-12-06 08:25:29,JNJ | Morgan Stanley,rating,,Equal-Weight,2022-12-06 08:25:29,corroborate
+JNJ-00133,2022-12-12 08:57:02,JNJ | Citigroup,price_target_usd,,205.00,2022-12-12 08:57:02,new
+JNJ-00133,2022-12-12 08:57:02,JNJ | Citigroup,rating,,Buy,2022-12-12 08:57:02,new
+JNJ-00134,2023-01-20 06:02:35,JNJ | SVB Leerink,price_target_usd,,186.00,2023-01-20 06:02:35,new
+JNJ-00134,2023-01-20 06:02:35,JNJ | SVB Leerink,rating,,Outperform,2023-01-20 06:02:35,new
+JNJ-00135,2023-01-25 06:11:42,JNJ | Atlantic Equities,price_target_usd,,168.00,2023-01-25 06:11:42,new
+JNJ-00135,2023-01-25 06:11:42,JNJ | Atlantic Equities,rating,,Neutral,2023-01-25 06:11:42,new
+JNJ-00136,2023-01-25 08:27:48,JNJ | Morgan Stanley,price_target_usd,,180.00,2023-01-25 08:27:48,new
+JNJ-00136,2023-01-25 08:27:48,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-01-25 08:27:48,corroborate
+JNJ-00137,2023-02-01 08:35:29,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-02-01 08:35:29,new
+JNJ-00137,2023-02-01 08:35:29,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-02-01 08:35:29,new
+JNJ-00138,2023-03-01 05:23:59,JNJ | Guggenheim,price_target_usd,,161.00,2023-03-01 05:23:59,new
+JNJ-00138,2023-03-01 05:23:59,JNJ | Guggenheim,rating,,Neutral,2023-03-01 05:23:59,new
+JNJ-00139,2023-03-29 05:12:56,JNJ | UBS,price_target_usd,,164.00,2023-03-29 05:12:56,new
+JNJ-00139,2023-03-29 05:12:56,JNJ | UBS,rating,,Neutral,2023-03-29 05:12:56,new
+JNJ-00140,2023-04-10 10:22:41,JNJ | Morgan Stanley,price_target_usd,,179.00,2023-04-10 10:22:41,new
+JNJ-00140,2023-04-10 10:22:41,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-04-10 10:22:41,corroborate
+JNJ-00141,2023-04-19 06:31:11,JNJ | Raymond James,price_target_usd,,181.00,2023-04-19 06:31:11,new
+JNJ-00141,2023-04-19 06:31:11,JNJ | Raymond James,rating,,Outperform,2023-04-19 06:31:11,corroborate
+JNJ-00142,2023-04-19 09:28:28,JNJ | Morgan Stanley,price_target_usd,,183.00,2023-04-19 09:28:28,new
+JNJ-00142,2023-04-19 09:28:28,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-04-19 09:28:28,corroborate
+JNJ-00143,2023-04-19 11:44:59,JNJ | Atlantic Equities,price_target_usd,,167.00,2023-04-19 11:44:59,new
+JNJ-00143,2023-04-19 11:44:59,JNJ | Atlantic Equities,rating,,Neutral,2023-04-19 11:44:59,corroborate
+JNJ-00144,2023-06-07 06:55:22,JNJ | Mizuho,price_target_usd,,40.00,2023-06-07 06:55:22,new
+JNJ-00144,2023-06-07 06:55:22,JNJ | Mizuho,rating,,Buy,2023-06-07 06:55:22,corroborate
+JNJ-00145,2023-07-11 09:25:16,JNJ | Morgan Stanley,price_target_usd,,187.00,2023-07-11 09:25:16,new
+JNJ-00145,2023-07-11 09:25:16,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-07-11 09:25:16,corroborate
+JNJ-00146,2023-07-13 08:57:35,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-07-13 08:57:35,corroborate
+JNJ-00146,2023-07-13 08:57:35,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-07-13 08:57:35,corroborate
+JNJ-00147,2023-07-21 07:40:01,JNJ | Credit Suisse,price_target_usd,,175.00,2023-07-21 07:40:01,new
+JNJ-00147,2023-07-21 07:40:01,JNJ | Credit Suisse,rating,,Neutral,2023-07-21 07:40:01,corroborate
+JNJ-00148,2023-07-21 10:30:05,JNJ | Morgan Stanley,price_target_usd,,187.00,2023-07-21 10:30:05,corroborate
+JNJ-00148,2023-07-21 10:30:05,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-07-21 10:30:05,corroborate
+JNJ-00149,2023-07-21 10:42:17,JNJ | JP Morgan,price_target_usd,,180.00,2023-07-21 10:42:17,new
+JNJ-00149,2023-07-21 10:42:17,JNJ | JP Morgan,rating,,Neutral,2023-07-21 10:42:17,new
+JNJ-00150,2023-07-24 04:36:51,JNJ | Raymond James,price_target_usd,,184.00,2023-07-24 04:36:51,new
+JNJ-00150,2023-07-24 04:36:51,JNJ | Raymond James,rating,,Outperform,2023-07-24 04:36:51,corroborate
+JNJ-00151,2023-07-25 06:02:42,JNJ | Barclays,price_target_usd,,175.00,2023-07-25 06:02:42,new
+JNJ-00151,2023-07-25 06:02:42,JNJ | Barclays,rating,,Equal-Weight,2023-07-25 06:02:42,corroborate
+JNJ-00152,2023-07-31 10:44:25,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-07-31 10:44:25,corroborate
+JNJ-00152,2023-07-31 10:44:25,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-07-31 10:44:25,corroborate
+JNJ-00153,2023-08-04 05:36:20,JNJ | Atlantic Equities,price_target_usd,,170.00,2023-08-04 05:36:20,new
+JNJ-00153,2023-08-04 05:36:20,JNJ | Atlantic Equities,rating,,Neutral,2023-08-04 05:36:20,corroborate
+JNJ-00154,2023-08-22 10:10:43,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-08-22 10:10:43,corroborate
+JNJ-00154,2023-08-22 10:10:43,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-08-22 10:10:43,corroborate
+JNJ-00155,2023-08-30 10:46:19,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-08-30 10:46:19,corroborate
+JNJ-00155,2023-08-30 10:46:19,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-08-30 10:46:19,corroborate
+JNJ-00156,2023-08-31 08:50:37,JNJ | Morgan Stanley,price_target_usd,,172.00,2023-08-31 08:50:37,new
+JNJ-00156,2023-08-31 08:50:37,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-08-31 08:50:37,corroborate
+JNJ-00157,2023-08-31 09:25:59,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-08-31 09:25:59,corroborate
+JNJ-00157,2023-08-31 09:25:59,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-08-31 09:25:59,corroborate
+JNJ-00158,2023-08-31 11:01:22,JNJ | Wells Fargo,price_target_usd,,186.00,2023-08-31 11:01:22,new
+JNJ-00158,2023-08-31 11:01:22,JNJ | Wells Fargo,rating,,Overweight,2023-08-31 11:01:22,corroborate
+JNJ-00159,2023-09-05 04:12:27,JNJ | Raymond James,price_target_usd,,179.00,2023-09-05 04:12:27,new
+JNJ-00159,2023-09-05 04:12:27,JNJ | Raymond James,rating,,Outperform,2023-09-05 04:12:27,corroborate
+JNJ-00160,2023-09-05 08:39:54,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-09-05 08:39:54,corroborate
+JNJ-00160,2023-09-05 08:39:54,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-09-05 08:39:54,corroborate
+JNJ-00161,2023-09-06 05:30:24,JNJ | HSBC,price_target_usd,,175.00,2023-09-06 05:30:24,new
+JNJ-00161,2023-09-06 05:30:24,JNJ | HSBC,rating,,Hold,2023-09-06 05:30:24,new
+JNJ-00162,2023-09-08 15:02:02,JNJ | Barclays,price_target_usd,,158.00,2023-09-08 15:02:02,new
+JNJ-00162,2023-09-08 15:02:02,JNJ | Barclays,rating,,Equal-Weight,2023-09-08 15:02:02,corroborate
+JNJ-00163,2023-09-18 11:56:32,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-09-18 11:56:32,corroborate
+JNJ-00163,2023-09-18 11:56:32,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-09-18 11:56:32,corroborate
+JNJ-00164,2023-10-02 12:52:28,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-10-02 12:52:28,corroborate
+JNJ-00164,2023-10-02 12:52:28,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-10-02 12:52:28,corroborate
+JNJ-00165,2023-10-05 05:56:55,JNJ | RBC Capital,price_target_usd,,178.00,2023-10-05 05:56:55,new
+JNJ-00165,2023-10-05 05:56:55,JNJ | RBC Capital,rating,,Outperform,2023-10-05 05:56:55,new
+JNJ-00166,2023-10-09 11:55:47,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-10-09 11:55:47,corroborate
+JNJ-00166,2023-10-09 11:55:47,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-10-09 11:55:47,corroborate
+JNJ-00167,2023-10-11 10:05:57,JNJ | Morgan Stanley,price_target_usd,,174.00,2023-10-11 10:05:57,new
+JNJ-00167,2023-10-11 10:05:57,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-10-11 10:05:57,corroborate
+JNJ-00168,2023-10-11 11:13:00,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-10-11 11:13:00,corroborate
+JNJ-00168,2023-10-11 11:13:00,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-10-11 11:13:00,corroborate
+JNJ-00169,2023-10-12 14:26:29,JNJ | Barclays,price_target_usd,,162.00,2023-10-12 14:26:29,new
+JNJ-00169,2023-10-12 14:26:29,JNJ | Barclays,rating,,Equal-Weight,2023-10-12 14:26:29,corroborate
+JNJ-00170,2023-10-18 09:25:42,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-10-18 09:25:42,corroborate
+JNJ-00170,2023-10-18 09:25:42,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-10-18 09:25:42,corroborate
+JNJ-00171,2023-10-18 09:30:28,JNJ | Raymond James,price_target_usd,,172.00,2023-10-18 09:30:28,new
+JNJ-00171,2023-10-18 09:30:28,JNJ | Raymond James,rating,,Outperform,2023-10-18 09:30:28,corroborate
+JNJ-00172,2023-10-18 11:09:13,JNJ | Morgan Stanley,price_target_usd,,171.0,2023-10-18 11:09:13,new
+JNJ-00172,2023-10-18 11:09:13,JNJ | Morgan Stanley,rating,,Equal-Weight,2023-10-18 11:09:13,corroborate
+JNJ-00173,2023-10-23 10:15:58,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-10-23 10:15:58,corroborate
+JNJ-00173,2023-10-23 10:15:58,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-10-23 10:15:58,corroborate
+JNJ-00174,2023-11-17 14:37:46,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-11-17 14:37:46,corroborate
+JNJ-00174,2023-11-17 14:37:46,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-11-17 14:37:46,corroborate
+JNJ-00175,2023-11-20 12:13:41,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2023-11-20 12:13:41,corroborate
+JNJ-00175,2023-11-20 12:13:41,JNJ | Cantor Fitzgerald,rating,,Overweight,2023-11-20 12:13:41,corroborate
+JNJ-00176,2023-12-01 06:10:48,JNJ | UBS,price_target_usd,,180.00,2023-12-01 06:10:48,new
+JNJ-00176,2023-12-01 06:10:48,JNJ | UBS,rating,,Buy,2023-12-01 06:10:48,new
+JNJ-00177,2023-12-01 11:49:47,JNJ | RBC Capital,price_target_usd,,178.00,2023-12-01 11:49:47,corroborate
+JNJ-00177,2023-12-01 11:49:47,JNJ | RBC Capital,rating,,Outperform,2023-12-01 11:49:47,corroborate
+JNJ-00178,2023-12-06 10:51:40,JNJ | RBC Capital,price_target_usd,,181.00,2023-12-06 10:51:40,new
+JNJ-00178,2023-12-06 10:51:40,JNJ | RBC Capital,rating,,Outperform,2023-12-06 10:51:40,corroborate
+JNJ-00179,2023-12-13 06:51:35,JNJ | Wells Fargo,price_target_usd,,163.00,2023-12-13 06:51:35,new
+JNJ-00179,2023-12-13 06:51:35,JNJ | Wells Fargo,rating,,Equal-Weight,2023-12-13 06:51:35,new
+JNJ-00180,2024-01-03 11:38:40,JNJ | Raymond James,price_target_usd,,175.00,2024-01-03 11:38:40,new
+JNJ-00180,2024-01-03 11:38:40,JNJ | Raymond James,rating,,Outperform,2024-01-03 11:38:40,corroborate
+JNJ-00181,2024-01-09 08:58:32,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-01-09 08:58:32,corroborate
+JNJ-00181,2024-01-09 08:58:32,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-01-09 08:58:32,corroborate
+JNJ-00182,2024-01-23 11:40:01,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-01-23 11:40:01,corroborate
+JNJ-00182,2024-01-23 11:40:01,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-01-23 11:40:01,corroborate
+JNJ-00183,2024-01-24 11:20:15,JNJ | RBC Capital,price_target_usd,,181.00,2024-01-24 11:20:15,corroborate
+JNJ-00183,2024-01-24 11:20:15,JNJ | RBC Capital,rating,,Outperform,2024-01-24 11:20:15,corroborate
+JNJ-00184,2024-01-24 11:46:45,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-01-24 11:46:45,corroborate
+JNJ-00184,2024-01-24 11:46:45,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-01-24 11:46:45,corroborate
+JNJ-00185,2024-01-24 15:01:05,JNJ | Morgan Stanley,price_target_usd,,169.00,2024-01-24 15:01:05,new
+JNJ-00185,2024-01-24 15:01:05,JNJ | Morgan Stanley,rating,,Equal-Weight,2024-01-24 15:01:05,corroborate
+JNJ-00186,2024-02-06 09:51:32,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-02-06 09:51:32,corroborate
+JNJ-00186,2024-02-06 09:51:32,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-02-06 09:51:32,corroborate
+JNJ-00187,2024-02-20 12:34:09,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-02-20 12:34:09,corroborate
+JNJ-00187,2024-02-20 12:34:09,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-02-20 12:34:09,corroborate
+JNJ-00188,2024-02-28 10:20:57,JNJ | RBC Capital,price_target_usd,,181.00,2024-02-28 10:20:57,corroborate
+JNJ-00188,2024-02-28 10:20:57,JNJ | RBC Capital,rating,,Outperform,2024-02-28 10:20:57,corroborate
+JNJ-00189,2024-03-13 12:14:55,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-03-13 12:14:55,corroborate
+JNJ-00189,2024-03-13 12:14:55,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-03-13 12:14:55,corroborate
+JNJ-00190,2024-04-15 10:28:17,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-04-15 10:28:17,corroborate
+JNJ-00190,2024-04-15 10:28:17,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-04-15 10:28:17,corroborate
+JNJ-00191,2024-04-17 06:32:09,JNJ | B of A Securities,price_target_usd,,170.00,2024-04-17 06:32:09,new
+JNJ-00191,2024-04-17 06:32:09,JNJ | B of A Securities,rating,,Neutral,2024-04-17 06:32:09,new
+JNJ-00192,2024-04-17 07:00:33,JNJ | Morgan Stanley,price_target_usd,,167.0,2024-04-17 07:00:33,new
+JNJ-00192,2024-04-17 07:00:33,JNJ | Morgan Stanley,rating,,Equal-Weight,2024-04-17 07:00:33,corroborate
+JNJ-00193,2024-04-17 09:27:05,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-04-17 09:27:05,corroborate
+JNJ-00193,2024-04-17 09:27:05,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-04-17 09:27:05,corroborate
+JNJ-00194,2024-04-17 13:10:33,JNJ | RBC Capital,price_target_usd,,175.0,2024-04-17 13:10:33,new
+JNJ-00194,2024-04-17 13:10:33,JNJ | RBC Capital,rating,,Outperform,2024-04-17 13:10:33,corroborate
+JNJ-00195,2024-04-18 11:34:28,JNJ | HSBC,price_target_usd,,170.0,2024-04-18 11:34:28,new
+JNJ-00195,2024-04-18 11:34:28,JNJ | HSBC,rating,,Buy,2024-04-18 11:34:28,new
+JNJ-00196,2024-05-06 09:57:57,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-05-06 09:57:57,corroborate
+JNJ-00196,2024-05-06 09:57:57,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-05-06 09:57:57,corroborate
+JNJ-00197,2024-05-16 12:43:55,JNJ | RBC Capital,price_target_usd,,175.0,2024-05-16 12:43:55,corroborate
+JNJ-00197,2024-05-16 12:43:55,JNJ | RBC Capital,rating,,Outperform,2024-05-16 12:43:55,corroborate
+JNJ-00198,2024-05-22 10:07:28,JNJ | RBC Capital,price_target_usd,,175.0,2024-05-22 10:07:28,corroborate
+JNJ-00198,2024-05-22 10:07:28,JNJ | RBC Capital,rating,,Outperform,2024-05-22 10:07:28,corroborate
+JNJ-00199,2024-06-04 09:54:18,JNJ | RBC Capital,price_target_usd,,175.0,2024-06-04 09:54:18,corroborate
+JNJ-00199,2024-06-04 09:54:18,JNJ | RBC Capital,rating,,Outperform,2024-06-04 09:54:18,corroborate
+JNJ-00200,2024-06-17 08:58:51,JNJ | RBC Capital,price_target_usd,,175.0,2024-06-17 08:58:51,corroborate
+JNJ-00200,2024-06-17 08:58:51,JNJ | RBC Capital,rating,,Outperform,2024-06-17 08:58:51,corroborate
+JNJ-00201,2024-06-20 12:55:33,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-06-20 12:55:33,corroborate
+JNJ-00201,2024-06-20 12:55:33,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-06-20 12:55:33,corroborate
+JNJ-00202,2024-06-25 10:51:21,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-06-25 10:51:21,corroborate
+JNJ-00202,2024-06-25 10:51:21,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-06-25 10:51:21,corroborate
+JNJ-00203,2024-07-01 09:31:00,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-07-01 09:31:00,corroborate
+JNJ-00203,2024-07-01 09:31:00,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-07-01 09:31:00,corroborate
+JNJ-00204,2024-07-18 05:25:40,JNJ | Morgan Stanley,price_target_usd,,169.00,2024-07-18 05:25:40,new
+JNJ-00204,2024-07-18 05:25:40,JNJ | Morgan Stanley,rating,,Equal-Weight,2024-07-18 05:25:40,corroborate
+JNJ-00205,2024-07-18 10:39:32,JNJ | RBC Capital,price_target_usd,,175.00,2024-07-18 10:39:32,corroborate
+JNJ-00205,2024-07-18 10:39:32,JNJ | RBC Capital,rating,,Outperform,2024-07-18 10:39:32,corroborate
+JNJ-00206,2024-07-18 11:32:11,JNJ | TD Cowen,price_target_usd,,185.0,2024-07-18 11:32:11,new
+JNJ-00206,2024-07-18 11:32:11,JNJ | TD Cowen,rating,,Buy,2024-07-18 11:32:11,new
+JNJ-00207,2024-07-19 13:02:27,JNJ | Goldman Sachs,price_target_usd,,155.0,2024-07-19 13:02:27,new
+JNJ-00207,2024-07-19 13:02:27,JNJ | Goldman Sachs,rating,,Neutral,2024-07-19 13:02:27,corroborate
+JNJ-00208,2024-07-23 05:33:23,JNJ | Daiwa Capital,price_target_usd,,150.0,2024-07-23 05:33:23,new
+JNJ-00208,2024-07-23 05:33:23,JNJ | Daiwa Capital,rating,,Neutral,2024-07-23 05:33:23,new
+JNJ-00209,2024-07-30 08:35:27,JNJ | RBC Capital,price_target_usd,,175.00,2024-07-30 08:35:27,corroborate
+JNJ-00209,2024-07-30 08:35:27,JNJ | RBC Capital,rating,,Outperform,2024-07-30 08:35:27,corroborate
+JNJ-00210,2024-07-30 10:06:06,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-07-30 10:06:06,corroborate
+JNJ-00210,2024-07-30 10:06:06,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-07-30 10:06:06,corroborate
+JNJ-00211,2024-08-05 14:06:03,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-08-05 14:06:03,corroborate
+JNJ-00211,2024-08-05 14:06:03,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-08-05 14:06:03,corroborate
+JNJ-00212,2024-09-03 09:59:06,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-09-03 09:59:06,corroborate
+JNJ-00212,2024-09-03 09:59:06,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-09-03 09:59:06,corroborate
+JNJ-00213,2024-09-09 08:51:44,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-09-09 08:51:44,corroborate
+JNJ-00213,2024-09-09 08:51:44,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-09-09 08:51:44,corroborate
+JNJ-00214,2024-09-16 08:18:42,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-09-16 08:18:42,corroborate
+JNJ-00214,2024-09-16 08:18:42,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-09-16 08:18:42,corroborate
+JNJ-00215,2024-09-19 10:36:12,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-09-19 10:36:12,corroborate
+JNJ-00215,2024-09-19 10:36:12,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-09-19 10:36:12,corroborate
+JNJ-00216,2024-09-20 09:30:58,JNJ | RBC Capital,price_target_usd,,175.00,2024-09-20 09:30:58,corroborate
+JNJ-00216,2024-09-20 09:30:58,JNJ | RBC Capital,rating,,Outperform,2024-09-20 09:30:58,corroborate
+JNJ-00217,2024-09-23 08:48:05,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-09-23 08:48:05,corroborate
+JNJ-00217,2024-09-23 08:48:05,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-09-23 08:48:05,corroborate
+JNJ-00218,2024-09-30 08:20:38,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-09-30 08:20:38,corroborate
+JNJ-00218,2024-09-30 08:20:38,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-09-30 08:20:38,corroborate
+JNJ-00219,2024-10-08 14:45:43,JNJ | RBC Capital,price_target_usd,,178.00,2024-10-08 14:45:43,new
+JNJ-00219,2024-10-08 14:45:43,JNJ | RBC Capital,rating,,Outperform,2024-10-08 14:45:43,corroborate
+JNJ-00220,2024-10-10 11:01:28,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-10-10 11:01:28,corroborate
+JNJ-00220,2024-10-10 11:01:28,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-10-10 11:01:28,corroborate
+JNJ-00221,2024-10-16 08:02:23,JNJ | Morgan Stanley,price_target_usd,,175.0,2024-10-16 08:02:23,new
+JNJ-00221,2024-10-16 08:02:23,JNJ | Morgan Stanley,rating,,Equal-Weight,2024-10-16 08:02:23,corroborate
+JNJ-00222,2024-10-16 08:35:29,JNJ | RBC Capital,price_target_usd,,181.0,2024-10-16 08:35:29,new
+JNJ-00222,2024-10-16 08:35:29,JNJ | RBC Capital,rating,,Outperform,2024-10-16 08:35:29,corroborate
+JNJ-00223,2024-10-16 10:51:18,JNJ | Cantor Fitzgerald,price_target_usd,,215.00,2024-10-16 10:51:18,corroborate
+JNJ-00223,2024-10-16 10:51:18,JNJ | Cantor Fitzgerald,rating,,Overweight,2024-10-16 10:51:18,corroborate
+JNJ-00224,2024-10-16 11:42:23,JNJ | Wells Fargo,price_target_usd,,166.0,2024-10-16 11:42:23,new
+JNJ-00224,2024-10-16 11:42:23,JNJ | Wells Fargo,rating,,Equal-Weight,2024-10-16 11:42:23,corroborate
+JNJ-00225,2024-10-16 15:09:43,JNJ | Citigroup,price_target_usd,,185.00,2024-10-16 15:09:43,new
+JNJ-00225,2024-10-16 15:09:43,JNJ | Citigroup,rating,,Buy,2024-10-16 15:09:43,corroborate
+JNJ-00226,2024-11-06 13:10:06,JNJ | Guggenheim,price_target_usd,,162.00,2024-11-06 13:10:06,new
+JNJ-00226,2024-11-06 13:10:06,JNJ | Guggenheim,rating,,Neutral,2024-11-06 13:10:06,corroborate
+JNJ-00227,2024-11-15 05:27:37,JNJ | Wolfe Research,price_target_usd,,190.00,2024-11-15 05:27:37,new
+JNJ-00227,2024-11-15 05:27:37,JNJ | Wolfe Research,rating,,Outperform,2024-11-15 05:27:37,new
+JNJ-00228,2024-12-11 14:14:10,JNJ | Citigroup,price_target_usd,,175.00,2024-12-11 14:14:10,new
+JNJ-00228,2024-12-11 14:14:10,JNJ | Citigroup,rating,,Buy,2024-12-11 14:14:10,corroborate
+JNJ-00229,2025-01-17 12:42:58,JNJ | B of A Securities,price_target_usd,,160.0,2025-01-17 12:42:58,new
+JNJ-00229,2025-01-17 12:42:58,JNJ | B of A Securities,rating,,Neutral,2025-01-17 12:42:58,corroborate
+JNJ-00230,2025-01-23 08:23:35,JNJ | B of A Securities,price_target_usd,,159.0,2025-01-23 08:23:35,new
+JNJ-00230,2025-01-23 08:23:35,JNJ | B of A Securities,rating,,Neutral,2025-01-23 08:23:35,corroborate
+JNJ-00231,2025-01-23 09:02:38,JNJ | Raymond James,price_target_usd,,165.0,2025-01-23 09:02:38,new
+JNJ-00231,2025-01-23 09:02:38,JNJ | Raymond James,rating,,Outperform,2025-01-23 09:02:38,corroborate
+JNJ-00232,2025-01-23 09:22:08,JNJ | Wells Fargo,price_target_usd,,152.00,2025-01-23 09:22:08,new
+JNJ-00232,2025-01-23 09:22:08,JNJ | Wells Fargo,rating,,Equal-Weight,2025-01-23 09:22:08,corroborate
+JNJ-00233,2025-01-23 10:01:44,JNJ | SVB Leerink,price_target_usd,,169.00,2025-01-23 10:01:44,new
+JNJ-00233,2025-01-23 10:01:44,JNJ | SVB Leerink,rating,,Outperform,2025-01-23 10:01:44,corroborate
+JNJ-00234,2025-01-23 10:17:28,JNJ | Stifel,price_target_usd,,155.00,2025-01-23 10:17:28,new
+JNJ-00234,2025-01-23 10:17:28,JNJ | Stifel,rating,,Hold,2025-01-23 10:17:28,new
+JNJ-00235,2025-01-23 11:48:56,JNJ | Morgan Stanley,price_target_usd,,163.0,2025-01-23 11:48:56,new
+JNJ-00235,2025-01-23 11:48:56,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-01-23 11:48:56,corroborate
+JNJ-00236,2025-01-23 12:06:39,JNJ | RBC Capital,price_target_usd,,181.00,2025-01-23 12:06:39,corroborate
+JNJ-00236,2025-01-23 12:06:39,JNJ | RBC Capital,rating,,Outperform,2025-01-23 12:06:39,corroborate
+JNJ-00237,2025-01-28 06:14:59,JNJ | Barclays,price_target_usd,,166.0,2025-01-28 06:14:59,new
+JNJ-00237,2025-01-28 06:14:59,JNJ | Barclays,rating,,Equal-Weight,2025-01-28 06:14:59,corroborate
+JNJ-00238,2025-02-03 08:25:45,JNJ | Guggenheim,price_target_usd,,166.00,2025-02-03 08:25:45,new
+JNJ-00238,2025-02-03 08:25:45,JNJ | Guggenheim,rating,,Neutral,2025-02-03 08:25:45,corroborate
+JNJ-00239,2025-02-19 10:36:31,JNJ | RBC Capital,price_target_usd,,181.00,2025-02-19 10:36:31,corroborate
+JNJ-00239,2025-02-19 10:36:31,JNJ | RBC Capital,rating,,Outperform,2025-02-19 10:36:31,corroborate
+JNJ-00240,2025-03-05 13:06:54,JNJ | B of A Securities,price_target_usd,,171.0,2025-03-05 13:06:54,new
+JNJ-00240,2025-03-05 13:06:54,JNJ | B of A Securities,rating,,Neutral,2025-03-05 13:06:54,corroborate
+JNJ-00241,2025-03-10 12:05:25,JNJ | Guggenheim,price_target_usd,,166.00,2025-03-10 12:05:25,corroborate
+JNJ-00241,2025-03-10 12:05:25,JNJ | Guggenheim,rating,,Neutral,2025-03-10 12:05:25,corroborate
+JNJ-00242,2025-03-12 09:59:13,JNJ | Guggenheim,price_target_usd,,166.00,2025-03-12 09:59:13,corroborate
+JNJ-00242,2025-03-12 09:59:13,JNJ | Guggenheim,rating,,Neutral,2025-03-12 09:59:13,corroborate
+JNJ-00243,2025-04-02 11:48:41,JNJ | Guggenheim,price_target_usd,,166.00,2025-03-12 09:59:13,corroborate
+JNJ-00243,2025-04-02 11:48:41,JNJ | Guggenheim,rating,,Neutral,2025-03-12 09:59:13,corroborate
+JNJ-00244,2025-04-02 12:04:52,JNJ | RBC Capital,price_target_usd,,181.00,2025-04-02 12:04:52,corroborate
+JNJ-00244,2025-04-02 12:04:52,JNJ | RBC Capital,rating,,Outperform,2025-04-02 12:04:52,corroborate
+JNJ-00245,2025-04-03 11:33:43,JNJ | RBC Capital,price_target_usd,,181.00,2025-04-03 11:33:43,corroborate
+JNJ-00245,2025-04-03 11:33:43,JNJ | RBC Capital,rating,,Outperform,2025-04-03 11:33:43,corroborate
+JNJ-00246,2025-04-09 07:19:53,JNJ | Goldman Sachs,price_target_usd,,172.0,2025-04-09 07:19:53,new
+JNJ-00246,2025-04-09 07:19:53,JNJ | Goldman Sachs,rating,,Buy,2025-04-09 07:19:53,new
+JNJ-00247,2025-04-09 09:56:28,JNJ | Morgan Stanley,price_target_usd,,164.0,2025-04-09 09:56:28,new
+JNJ-00247,2025-04-09 09:56:28,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-04-09 09:56:28,corroborate
+JNJ-00248,2025-04-10 08:30:04,JNJ | B of A Securities,price_target_usd,,159.00,2025-04-10 08:30:04,new
+JNJ-00248,2025-04-10 08:30:04,JNJ | B of A Securities,rating,,Neutral,2025-04-10 08:30:04,corroborate
+JNJ-00249,2025-04-14 11:49:21,JNJ | Raymond James,price_target_usd,,162.0,2025-04-14 11:49:21,new
+JNJ-00249,2025-04-14 11:49:21,JNJ | Raymond James,rating,,Outperform,2025-04-14 11:49:21,corroborate
+JNJ-00250,2025-04-16 11:31:41,JNJ | RBC Capital,price_target_usd,,181.00,2025-04-16 11:31:41,corroborate
+JNJ-00250,2025-04-16 11:31:41,JNJ | RBC Capital,rating,,Outperform,2025-04-16 11:31:41,corroborate
+JNJ-00251,2025-04-16 11:55:17,JNJ | Morgan Stanley,price_target_usd,,169.00,2025-04-16 11:55:17,new
+JNJ-00251,2025-04-16 11:55:17,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-04-16 11:55:17,corroborate
+JNJ-00252,2025-04-16 13:40:30,JNJ | Raymond James,price_target_usd,,164.00,2025-04-16 13:40:30,new
+JNJ-00252,2025-04-16 13:40:30,JNJ | Raymond James,rating,,Outperform,2025-04-16 13:40:30,corroborate
+JNJ-00253,2025-04-17 11:09:39,JNJ | Barclays,price_target_usd,,165.00,2025-04-17 11:09:39,new
+JNJ-00253,2025-04-17 11:09:39,JNJ | Barclays,rating,,Equal-Weight,2025-04-17 11:09:39,corroborate
+JNJ-00254,2025-05-13 10:08:50,JNJ | SVB Leerink,price_target_usd,,153.00,2025-05-13 10:08:50,new
+JNJ-00254,2025-05-13 10:08:50,JNJ | SVB Leerink,rating,,Market Perform,2025-05-13 10:08:50,new
+JNJ-00255,2025-06-05 10:31:29,JNJ | RBC Capital,price_target_usd,,181.00,2025-06-05 10:31:29,corroborate
+JNJ-00255,2025-06-05 10:31:29,JNJ | RBC Capital,rating,,Outperform,2025-06-05 10:31:29,corroborate
+JNJ-00256,2025-07-10 12:14:22,JNJ | Morgan Stanley,price_target_usd,,171.00,2025-07-10 12:14:22,new
+JNJ-00256,2025-07-10 12:14:22,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-07-10 12:14:22,corroborate
+JNJ-00257,2025-07-17 07:10:08,JNJ | B of A Securities,price_target_usd,,175.00,2025-07-17 07:10:08,new
+JNJ-00257,2025-07-17 07:10:08,JNJ | B of A Securities,rating,,Neutral,2025-07-17 07:10:08,corroborate
+JNJ-00258,2025-07-17 07:35:41,JNJ | Morgan Stanley,price_target_usd,,176.00,2025-07-17 07:35:41,new
+JNJ-00258,2025-07-17 07:35:41,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-07-17 07:35:41,corroborate
+JNJ-00259,2025-07-17 09:17:17,JNJ | UBS,price_target_usd,,190.00,2025-07-17 09:17:17,new
+JNJ-00259,2025-07-17 09:17:17,JNJ | UBS,rating,,Buy,2025-07-17 09:17:17,corroborate
+JNJ-00260,2025-07-17 09:24:04,JNJ | Guggenheim,price_target_usd,,167.00,2025-07-17 09:24:04,new
+JNJ-00260,2025-07-17 09:24:04,JNJ | Guggenheim,rating,,Neutral,2025-07-17 09:24:04,corroborate
+JNJ-00261,2025-07-17 10:09:22,JNJ | RBC Capital,price_target_usd,,185.00,2025-07-17 10:09:22,new
+JNJ-00261,2025-07-17 10:09:22,JNJ | RBC Capital,rating,,Outperform,2025-07-17 10:09:22,corroborate
+JNJ-00262,2025-07-17 10:58:54,JNJ | Barclays,price_target_usd,,176.00,2025-07-17 10:58:54,new
+JNJ-00262,2025-07-17 10:58:54,JNJ | Barclays,rating,,Equal-Weight,2025-07-17 10:58:54,corroborate
+JNJ-00263,2025-08-21 14:08:33,JNJ | Citigroup,price_target_usd,,200.00,2025-08-21 14:08:33,new
+JNJ-00263,2025-08-21 14:08:33,JNJ | Citigroup,rating,,Buy,2025-08-21 14:08:33,corroborate
+JNJ-00264,2025-09-16 07:44:45,JNJ | JP Morgan,price_target_usd,,200.00,2025-09-16 07:44:45,new
+JNJ-00264,2025-09-16 07:44:45,JNJ | JP Morgan,rating,,Neutral,2025-09-16 07:44:45,corroborate
+JNJ-00265,2025-09-23 08:36:18,JNJ | Guggenheim,price_target_usd,,206.00,2025-09-23 08:36:18,new
+JNJ-00265,2025-09-23 08:36:18,JNJ | Guggenheim,rating,,Buy,2025-09-23 08:36:18,new
+JNJ-00266,2025-10-03 07:36:01,JNJ | Wells Fargo,price_target_usd,,212.00,2025-10-03 07:36:01,new
+JNJ-00266,2025-10-03 07:36:01,JNJ | Wells Fargo,rating,,Overweight,2025-10-03 07:36:01,new
+JNJ-00267,2025-10-03 09:21:44,JNJ | B of A Securities,price_target_usd,,198.0,2025-10-03 09:21:44,new
+JNJ-00267,2025-10-03 09:21:44,JNJ | B of A Securities,rating,,Neutral,2025-10-03 09:21:44,corroborate
+JNJ-00268,2025-10-06 07:59:59,JNJ | Bernstein,price_target_usd,,193.00,2025-10-06 07:59:59,new
+JNJ-00268,2025-10-06 07:59:59,JNJ | Bernstein,rating,,Market Perform,2025-10-06 07:59:59,corroborate
+JNJ-00269,2025-10-07 13:44:05,JNJ | Citigroup,price_target_usd,,213.00,2025-10-07 13:44:05,new
+JNJ-00269,2025-10-07 13:44:05,JNJ | Citigroup,rating,,Buy,2025-10-07 13:44:05,corroborate
+JNJ-00270,2025-10-09 13:44:14,JNJ | Goldman Sachs,price_target_usd,,212.00,2025-10-09 13:44:14,new
+JNJ-00270,2025-10-09 13:44:14,JNJ | Goldman Sachs,rating,,Buy,2025-10-09 13:44:14,corroborate
+JNJ-00271,2025-10-10 13:37:20,JNJ | Morgan Stanley,price_target_usd,,178.00,2025-10-10 13:37:20,new
+JNJ-00271,2025-10-10 13:37:20,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-10-10 13:37:20,corroborate
+JNJ-00272,2025-10-14 12:06:02,JNJ | UBS,price_target_usd,,214.00,2025-10-14 12:06:02,new
+JNJ-00272,2025-10-14 12:06:02,JNJ | UBS,rating,,Buy,2025-10-14 12:06:02,corroborate
+JNJ-00273,2025-10-15 08:25:03,JNJ | B of A Securities,price_target_usd,,204.00,2025-10-15 08:25:03,new
+JNJ-00273,2025-10-15 08:25:03,JNJ | B of A Securities,rating,,Neutral,2025-10-15 08:25:03,corroborate
+JNJ-00274,2025-10-15 09:07:45,JNJ | Morgan Stanley,price_target_usd,,190.00,2025-10-15 09:07:45,new
+JNJ-00274,2025-10-15 09:07:45,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-10-15 09:07:45,new
+JNJ-00275,2025-10-15 10:18:34,JNJ | Raymond James,price_target_usd,,209.00,2025-10-15 10:18:34,new
+JNJ-00275,2025-10-15 10:18:34,JNJ | Raymond James,rating,,Outperform,2025-10-15 10:18:34,corroborate
+JNJ-00276,2025-10-15 10:39:20,JNJ | Stifel,price_target_usd,,190.00,2025-10-15 10:39:20,new
+JNJ-00276,2025-10-15 10:39:20,JNJ | Stifel,rating,,Hold,2025-10-15 10:39:20,corroborate
+JNJ-00277,2025-10-15 10:56:11,JNJ | Citigroup,price_target_usd,,215.0,2025-10-15 10:56:11,new
+JNJ-00277,2025-10-15 10:56:11,JNJ | Citigroup,rating,,Buy,2025-10-15 10:56:11,corroborate
+JNJ-00278,2025-10-22 10:55:43,JNJ | Freedom Broker,price_target_usd,,190.00,2025-10-22 10:55:43,new
+JNJ-00278,2025-10-22 10:55:43,JNJ | Freedom Broker,rating,,Hold,2025-10-22 10:55:43,new
+JNJ-00279,2025-12-02 08:26:55,JNJ | Barclays,price_target_usd,,197.00,2025-12-02 08:26:55,new
+JNJ-00279,2025-12-02 08:26:55,JNJ | Barclays,rating,,Equal-Weight,2025-12-02 08:26:55,corroborate
+JNJ-00280,2025-12-05 08:54:07,JNJ | Guggenheim,price_target_usd,,227.00,2025-12-05 08:54:07,new
+JNJ-00280,2025-12-05 08:54:07,JNJ | Guggenheim,rating,,Buy,2025-12-05 08:54:07,corroborate
+JNJ-00281,2025-12-11 10:23:59,JNJ | RBC Capital,price_target_usd,,230.00,2025-12-11 10:23:59,new
+JNJ-00281,2025-12-11 10:23:59,JNJ | RBC Capital,rating,,Outperform,2025-12-11 10:23:59,corroborate
+JNJ-00282,2025-12-11 16:03:39,JNJ | Citigroup,price_target_usd,,232.00,2025-12-11 16:03:39,new
+JNJ-00282,2025-12-11 16:03:39,JNJ | Citigroup,rating,,Buy,2025-12-11 16:03:39,corroborate
+JNJ-00283,2025-12-12 12:24:24,JNJ | Morgan Stanley,price_target_usd,,197.00,2025-12-12 12:24:24,new
+JNJ-00283,2025-12-12 12:24:24,JNJ | Morgan Stanley,rating,,Equal-Weight,2025-12-12 12:24:24,new
+JNJ-00284,2025-12-15 08:23:10,JNJ | B of A Securities,price_target_usd,,220.00,2025-12-15 08:23:10,new
+JNJ-00284,2025-12-15 08:23:10,JNJ | B of A Securities,rating,,Neutral,2025-12-15 08:23:10,corroborate
+JNJ-00285,2025-12-19 12:00:02,JNJ | Goldman Sachs,price_target_usd,,240.00,2025-12-19 12:00:02,new
+JNJ-00285,2025-12-19 12:00:02,JNJ | Goldman Sachs,rating,,Buy,2025-12-19 12:00:02,corroborate
+JNJ-00286,2025-12-30 07:47:49,JNJ | Barclays,price_target_usd,,217.00,2025-12-30 07:47:49,new
+JNJ-00286,2025-12-30 07:47:49,JNJ | Barclays,rating,,Equal-Weight,2025-12-30 07:47:49,corroborate
+JNJ-00287,2026-01-09 14:14:05,JNJ | Bernstein,price_target_usd,,208.00,2026-01-09 14:14:05,new
+JNJ-00287,2026-01-09 14:14:05,JNJ | Bernstein,rating,,Market Perform,2026-01-09 14:14:05,corroborate
+JNJ-00288,2026-01-22 07:59:38,JNJ | Stifel,price_target_usd,,220.00,2026-01-22 07:59:38,new
+JNJ-00288,2026-01-22 07:59:38,JNJ | Stifel,rating,,Hold,2026-01-22 07:59:38,corroborate
+JNJ-00289,2026-01-22 10:03:29,JNJ | Scotiabank,price_target_usd,,265.00,2026-01-22 10:03:29,new
+JNJ-00289,2026-01-22 10:03:29,JNJ | Scotiabank,rating,,Sector Outperform,2026-01-22 10:03:29,new
+JNJ-00290,2026-01-22 10:23:44,JNJ | Wells Fargo,price_target_usd,,240.00,2026-01-22 10:23:44,new
+JNJ-00290,2026-01-22 10:23:44,JNJ | Wells Fargo,rating,,Overweight,2026-01-22 10:23:44,corroborate
+JNJ-00291,2026-01-22 11:23:04,JNJ | Morgan Stanley,price_target_usd,,200.00,2026-01-22 11:23:04,new
+JNJ-00291,2026-01-22 11:23:04,JNJ | Morgan Stanley,rating,,Equal-Weight,2026-01-22 11:23:04,corroborate
+JNJ-00292,2026-01-22 12:27:16,JNJ | TD Cowen,price_target_usd,,250.00,2026-01-22 12:27:16,new
+JNJ-00292,2026-01-22 12:27:16,JNJ | TD Cowen,rating,,Buy,2026-01-22 12:27:16,corroborate
+JNJ-00293,2026-01-22 12:56:55,JNJ | B of A Securities,price_target_usd,,221.0,2026-01-22 12:56:55,new
+JNJ-00293,2026-01-22 12:56:55,JNJ | B of A Securities,rating,,Neutral,2026-01-22 12:56:55,corroborate
+JNJ-00294,2026-01-22 14:09:25,JNJ | Citigroup,price_target_usd,,250.00,2026-01-22 14:09:25,new
+JNJ-00294,2026-01-22 14:09:25,JNJ | Citigroup,rating,,Buy,2026-01-22 14:09:25,corroborate
+JNJ-00295,2026-01-23 09:15:35,JNJ | Guggenheim,price_target_usd,,240.00,2026-01-23 09:15:35,new
+JNJ-00295,2026-01-23 09:15:35,JNJ | Guggenheim,rating,,Buy,2026-01-23 09:15:35,corroborate
+JNJ-00296,2026-01-27 07:17:46,JNJ | Freedom Broker,price_target_usd,,220.00,2026-01-27 07:17:46,new
+JNJ-00296,2026-01-27 07:17:46,JNJ | Freedom Broker,rating,,Hold,2026-01-27 07:17:46,corroborate
+JNJ-00297,2026-01-27 13:12:50,JNJ | Freedom Broker,price_target_usd,,220.00,2026-01-27 13:12:50,new
+JNJ-00297,2026-01-27 13:12:50,JNJ | Freedom Broker,rating,,Hold,2026-01-27 13:12:50,corroborate
+JNJ-00298,2026-01-28 06:26:28,JNJ | Morgan Stanley,price_target_usd,,262.0,2026-01-28 06:26:28,new
+JNJ-00298,2026-01-28 06:26:28,JNJ | Morgan Stanley,rating,,Overweight,2026-01-28 06:26:28,new
+JNJ-00299,2026-02-03 11:09:25,JNJ | RBC Capital,price_target_usd,,255.00,2026-02-03 11:09:25,new
+JNJ-00299,2026-02-03 11:09:25,JNJ | RBC Capital,rating,,Outperform,2026-02-03 11:09:25,corroborate
+JNJ-00300,2026-03-05 15:56:57,JNJ | JP Morgan,price_target_usd,,250.0,2026-03-05 15:56:57,new
+JNJ-00300,2026-03-05 15:56:57,JNJ | JP Morgan,rating,,Neutral,2026-03-05 15:56:57,corroborate
+JNJ-00301,2026-03-11 11:46:29,JNJ | Citigroup,price_target_usd,,274.0,2026-03-11 11:46:29,new
+JNJ-00301,2026-03-11 11:46:29,JNJ | Citigroup,rating,,Buy,2026-03-11 11:46:29,corroborate
+JNJ-00302,2026-03-17 12:00:08,JNJ | HSBC,price_target_usd,,280.0,2026-03-17 12:00:08,new
+JNJ-00302,2026-03-17 12:00:08,JNJ | HSBC,rating,,Buy,2026-03-17 12:00:08,corroborate
+JNJ-00303,2026-03-19 10:25:47,JNJ | Barclays,price_target_usd,,234.0,2026-03-19 10:25:47,new
+JNJ-00303,2026-03-19 10:25:47,JNJ | Barclays,rating,,Equal-Weight,2026-03-19 10:25:47,corroborate
+JNJ-00304,2026-03-30 12:54:43,JNJ | RBC Capital,price_target_usd,,255.00,2026-03-30 12:54:43,corroborate
+JNJ-00304,2026-03-30 12:54:43,JNJ | RBC Capital,rating,,Outperform,2026-03-30 12:54:43,corroborate
+JNJ-00305,2026-04-10 11:27:06,JNJ | Morgan Stanley,price_target_usd,,267.0,2026-04-10 11:27:06,new
+JNJ-00305,2026-04-10 11:27:06,JNJ | Morgan Stanley,rating,,Overweight,2026-04-10 11:27:06,corroborate
+JNJ-00306,2026-04-15 11:46:30,JNJ | Wells Fargo,price_target_usd,,263.0,2026-04-15 11:46:30,new
+JNJ-00306,2026-04-15 11:46:30,JNJ | Wells Fargo,rating,,Overweight,2026-04-15 11:46:30,corroborate
+JNJ-00307,2026-04-15 12:26:57,JNJ | Stifel,price_target_usd,,250.00,2026-04-15 12:26:57,new
+JNJ-00307,2026-04-15 12:26:57,JNJ | Stifel,rating,,Hold,2026-04-15 12:26:57,corroborate
+JNJ-00308,2026-04-15 15:00:16,JNJ | Barclays,price_target_usd,,255.00,2026-04-15 15:00:16,new
+JNJ-00308,2026-04-15 15:00:16,JNJ | Barclays,rating,,Equal-Weight,2026-04-15 15:00:16,corroborate
+JNJ-00309,2026-05-13 16:11:51,JNJ | Leerink Partners,price_target_usd,,265.00,2026-05-13 16:11:51,new
+JNJ-00309,2026-05-13 16:11:51,JNJ | Leerink Partners,rating,,Outperform,2026-05-13 16:11:51,new
+JNJ-00310,2026-06-26 10:40:02,JNJ | Guggenheim,price_target_usd,,270.00,2026-06-26 10:40:02,new
+JNJ-00310,2026-06-26 10:40:02,JNJ | Guggenheim,rating,,Buy,2026-06-26 10:40:02,corroborate
+JNJ-00311,2026-07-08 11:40:18,JNJ | Citigroup,price_target_usd,,298.00,2026-07-08 11:40:18,new
+JNJ-00311,2026-07-08 11:40:18,JNJ | Citigroup,rating,,Buy,2026-07-08 11:40:18,corroborate
+JNJ-00312,2026-07-08 12:57:55,JNJ | Morgan Stanley,price_target_usd,,284.00,2026-07-08 12:57:55,new
+JNJ-00312,2026-07-08 12:57:55,JNJ | Morgan Stanley,rating,,Overweight,2026-07-08 12:57:55,corroborate
+JNJ-00313,2026-07-10 14:03:09,JNJ | B of A Securities,price_target_usd,,263.00,2026-07-10 14:03:09,new
+JNJ-00313,2026-07-10 14:03:09,JNJ | B of A Securities,rating,,Neutral,2026-07-10 14:03:09,corroborate
+JNJ-00314,2026-07-13 10:21:08,JNJ | RBC Capital,price_target_usd,,287.00,2026-07-13 10:21:08,new
+JNJ-00314,2026-07-13 10:21:08,JNJ | RBC Capital,rating,,Outperform,2026-07-13 10:21:08,corroborate
+JNJ-00315,2026-07-13 14:07:14,JNJ | TD Cowen,price_target_usd,,300.00,2026-07-13 14:07:14,new
+JNJ-00315,2026-07-13 14:07:14,JNJ | TD Cowen,rating,,Buy,2026-07-13 14:07:14,corroborate
+JNJ-00316,2026-07-16 09:23:34,JNJ | Morgan Stanley,price_target_usd,,294.00,2026-07-16 09:23:34,new
+JNJ-00316,2026-07-16 09:23:34,JNJ | Morgan Stanley,rating,,Overweight,2026-07-16 09:23:34,corroborate
+JNJ-00317,2026-07-16 10:52:50,JNJ | Wells Fargo,price_target_usd,,272.00,2026-07-16 10:52:50,new
+JNJ-00317,2026-07-16 10:52:50,JNJ | Wells Fargo,rating,,Overweight,2026-07-16 10:52:50,corroborate
+JNJ-00318,2026-07-16 11:03:22,JNJ | RBC Capital,price_target_usd,,287.00,2026-07-16 11:03:22,corroborate
+JNJ-00318,2026-07-16 11:03:22,JNJ | RBC Capital,rating,,Outperform,2026-07-16 11:03:22,corroborate
+JNJ-00319,2026-07-16 14:10:23,JNJ | Raymond James,price_target_usd,,265.00,2026-07-16 14:10:23,new
+JNJ-00319,2026-07-16 14:10:23,JNJ | Raymond James,rating,,Outperform,2026-07-16 14:10:23,corroborate
+JNJ-00320,2026-07-17 08:33:46,JNJ | Guggenheim,price_target_usd,,270.00,2026-07-17 08:33:46,corroborate
+JNJ-00320,2026-07-17 08:33:46,JNJ | Guggenheim,rating,,Buy,2026-07-17 08:33:46,corroborate
+JNJ-00321,2026-08-03 09:52:27,JNJ | Wells Fargo,price_target_usd,,282.00,2026-08-03 09:52:27,new
+JNJ-00321,2026-08-03 09:52:27,JNJ | Wells Fargo,rating,,Overweight,2026-08-03 09:52:27,corroborate
+JNJ-00322,2026-08-06 09:22:08,JNJ | Guggenheim,price_target_usd,,287.0,2026-08-06 09:22:08,new
+JNJ-00322,2026-08-06 09:22:08,JNJ | Guggenheim,rating,,Buy,2026-08-06 09:22:08,corroborate
+JNJ-00323,2026-09-02 09:39:55,JNJ | UBS,price_target_usd,,320.00,2026-09-02 09:39:55,new
+JNJ-00323,2026-09-02 09:39:55,JNJ | UBS,rating,,Buy,2026-09-02 09:39:55,corroborate
+JNJ-00324,2026-09-10 09:42:43,JNJ | HSBC,price_target_usd,,320.0,2026-09-10 09:42:43,new
+JNJ-00324,2026-09-10 09:42:43,JNJ | HSBC,rating,,Buy,2026-09-10 09:42:43,corroborate
+JNJ-00325,2026-09-29 09:29:11,JNJ | JP Morgan,price_target_usd,,285.00,2026-09-29 09:29:11,new
+JNJ-00325,2026-09-29 09:29:11,JNJ | JP Morgan,rating,,Neutral,2026-09-29 09:29:11,corroborate
+JNJ-00326,2026-10-05 15:43:52,JNJ | Citigroup,price_target_usd,,303.00,2026-10-05 15:43:52,new
+JNJ-00326,2026-10-05 15:43:52,JNJ | Citigroup,rating,,Buy,2026-10-05 15:43:52,corroborate
+JNJ-00327,2026-10-06 09:14:06,JNJ | RBC Capital,price_target_usd,,290.00,2026-10-06 09:14:06,new
+JNJ-00327,2026-10-06 09:14:06,JNJ | RBC Capital,rating,,Outperform,2026-10-06 09:14:06,corroborate
+JNJ-00328,2026-10-07 09:02:33,JNJ | Guggenheim,price_target_usd,,287.0,2026-10-07 09:02:33,corroborate
+JNJ-00328,2026-10-07 09:02:33,JNJ | Guggenheim,rating,,Buy,2026-10-07 09:02:33,corroborate
+JNJ-00329,2026-10-14 09:34:22,JNJ | RBC Capital,price_target_usd,,280.00,2026-10-14 09:34:22,new
+JNJ-00329,2026-10-14 09:34:22,JNJ | RBC Capital,rating,,Outperform,2026-10-14 09:34:22,corroborate
+JNJ-00330,2026-10-14 10:57:02,JNJ | Wells Fargo,price_target_usd,,275.0,2026-10-14 10:57:02,new
+JNJ-00330,2026-10-14 10:57:02,JNJ | Wells Fargo,rating,,Overweight,2026-10-14 10:57:02,corroborate
+JNJ-00331,2026-10-14 16:43:05,JNJ | Leerink Partners,price_target_usd,,272.0,2026-10-14 16:43:05,new
+JNJ-00331,2026-10-14 16:43:05,JNJ | Leerink Partners,rating,,Outperform,2026-10-14 16:43:05,corroborate
+JNJ-00332,2026-10-15 12:51:59,JNJ | Morgan Stanley,price_target_usd,,292.00,2026-10-15 12:51:59,new
+JNJ-00332,2026-10-15 12:51:59,JNJ | Morgan Stanley,rating,,Overweight,2026-10-15 12:51:59,new
+JNJ-00333,2026-10-16 12:06:59,JNJ | Wells Fargo,price_target_usd,,287.00,2026-10-16 12:06:59,new
+JNJ-00333,2026-10-16 12:06:59,JNJ | Wells Fargo,rating,,Overweight,2026-10-16 12:06:59,corroborate
+JNJ-00334,2026-11-20 12:36:16,JNJ | JP Morgan,price_target_usd,,300.00,2026-11-20 12:36:16,new
+JNJ-00334,2026-11-20 12:36:16,JNJ | JP Morgan,rating,,Neutral,2026-11-20 12:36:16,corroborate

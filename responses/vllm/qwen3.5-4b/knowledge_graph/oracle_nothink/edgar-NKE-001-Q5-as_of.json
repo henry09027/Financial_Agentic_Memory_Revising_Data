@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-NKE-001-Q5-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "NKE",
+ "qtype": "count_reports",
+ "mode": "as_of",
+ "as_of": "2018-06-24 22:12:00",
+ "question": "How many filings have reported a fiscal year 2017 (ended 31 May 2017) total revenue figure for NIKE, Inc.?",
+ "gold": "1",
+ "peek_answers": "2|3",
+ "trap_answers": "",
+ "gold_evidence": "NKE-00037",
+ "answer": "1",
+ "cited": "NKE | Revenues | value_usd_m | 2016-06-01..2017-05-31: latest 34350 | first 34350 | 1 reports: 34350 [NKE-00037 @2017-07-20 20:18]",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1587,
+ "out_tokens": 101,
+ "seconds": 0.2465,
+ "n_facts": 9,
+ "n_dropped": 0,
+ "created": "2026-11-22T01:19:33",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2018-06-24 22:12:00\nQuestion: How many filings have reported a fiscal year 2017 (ended 31 May 2017) total revenue figure for NIKE, Inc.?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nNKE | Revenues | value_usd_m | 2016-09-01..2016-11-30: latest 8180 | first 8180 | 2 reports: 8180 [NKE-00030 @2017-01-05 21:21]; 8180 [NKE-00041 @2018-01-05 21:11]\nNKE | Revenues | value_usd_m | 2016-06-01..2017-02-28: latest 25673 | first 25673 | 2 reports: 25673 [NKE-00033 @2017-04-04 20:20]; 25673 [NKE-00044 @2018-04-05 20:10]\nNKE | Revenues | value_usd_m | 2016-12-01..2017-02-28: latest 8432 | first 8432 | 2 reports: 8432 [NKE-00034 @2017-04-04 20:20]; 8432 [NKE-00045 @2018-04-05 20:10]\nNKE | Revenues | value_usd_m | 2016-06-01..2017-05-31: latest 34350 | first 34350 | 1 reports: 34350 [NKE-00037 @2017-07-20 20:18]\nNKE | Revenues | value_usd_m | 2017-06-01..2017-08-31: latest 9070 | first 9070 | 1 reports: 9070 [NKE-00039 @2017-10-06 20:17]\nNKE | Revenues | value_usd_m | 2017-06-01..2017-11-30: latest 17624 | first 17624 | 1 reports: 17624 [NKE-00042 @2018-01-05 21:11]\nNKE | Revenues | value_usd_m | 2017-09-01..2017-11-30: latest 8554 | first 8554 | 1 reports: 8554 [NKE-00043 @2018-01-05 21:11]\nNKE | Revenues | value_usd_m | 2017-06-01..2018-02-28: latest 26608 | first 26608 | 1 reports: 26608 [NKE-00046 @2018-04-05 20:10]\nNKE | Revenues | value_usd_m | 2017-12-01..2018-02-28: latest 8984 | first 8984 | 1 reports: 8984 [NKE-00047 @2018-04-05 20:10]"
+  }
+ ],
+ "final_text": "{\"answer\": 1, \"evidence_ids\": [\"NKE | Revenues | value_usd_m | 2016-06-01..2017-05-31: latest 34350 | first 34350 | 1 reports: 34350 [NKE-00037 @2017-07-20 20:18]\"]}",
+ "raw_output": "{\"answer\": 1, \"evidence_ids\": [\"NKE | Revenues | value_usd_m | 2016-06-01..2017-05-31: latest 34350 | first 34350 | 1 reports: 34350 [NKE-00037 @2017-07-20 20:18]\"]}"
+}

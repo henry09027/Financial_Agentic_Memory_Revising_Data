@@ -1,0 +1,43 @@
+{
+ "qid": "broker-BA-004-Q6-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "llm_baseline",
+ "variant": "cheat_sheet_nothink",
+ "source": "broker",
+ "entity": "BA",
+ "qtype": "count_buy",
+ "mode": "as_of",
+ "as_of": "2025-08-14 02:24:00",
+ "question": "How many active brokers currently rate BA Buy or an equivalent rating?",
+ "gold": "16",
+ "peek_answers": "17",
+ "trap_answers": "10|19",
+ "gold_evidence": "BA-00341|BA-00339|BA-00342|BA-00317|BA-00336|BA-00329|BA-00344|BA-00331|BA-00327|BA-00345|BA-00285|BA-00303|BA-00343|BA-00340|BA-00316|BA-00290|BA-00318|BA-00333",
+ "answer": "13",
+ "cited": "BA-00285|BA-00290|BA-00303|BA-00316|BA-00327|BA-00329|BA-00331|BA-00333|BA-00336|BA-00340|BA-00342|BA-00343|BA-00344|BA-00345",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.7777777777777778,
+ "in_tokens": 1802,
+ "out_tokens": 139,
+ "seconds": 0.1068,
+ "n_evidence": 18,
+ "n_dropped": 0,
+ "created": "2026-11-21T23:34:17",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2025-08-14 02:24:00\nQuestion: How many active brokers currently rate BA Buy or an equivalent rating?\n\nEvidence:\n[BA-00285] 2024-10-14 13:12 | TD Cowen maintained Buy on BA, and lowered its price target from $200.00 to $190.00.\n[BA-00290] 2024-10-24 07:40 | Baird maintained Outperform on BA, and lowered its price target from $240.00 to $200.00.\n[BA-00303] 2025-01-02 09:10 | Deutsche Bank maintained Buy on BA, and raised its price target from $184.00 to $215.00.\n[BA-00316] 2025-04-21 09:58 | Benchmark maintained Buy on BA, and lowered its price target from $250.00 to $215.00.\n[BA-00317] 2025-04-24 09:05 | Wells Fargo maintained Underweight on BA, and raised its price target from $111.00 to $140.00.\n[BA-00318] 2025-04-24 11:07 | TD Securities reiterated Buy on BA, with a $180.00 price target.\n[BA-00327] 2025-05-20 11:51 | Bernstein maintained Outperform on BA, and raised its price target from $218.00 to $249.00.\n[BA-00329] 2025-06-04 11:55 | Jefferies maintained Buy on BA, and raised its price target from $230.00 to $250.00.\n[BA-00331] 2025-06-12 13:35 | Goldman Sachs reiterated Buy on BA, with a $212.00 price target.\n[BA-00333] 2025-06-27 10:30 | Redburn Atlantic upgraded BA from Neutral to Buy, and raised its price target from $180.00 to $275.00.\n[BA-00336] 2025-07-14 13:10 | Citigroup maintained Buy on BA, and raised its price target from $220.00 to $270.00.\n[BA-00339] 2025-07-17 08:23 | Morgan Stanley maintained Equal-Weight on BA, and raised its price target from $200.00 to $235.00.\n[BA-00340] 2025-07-29 17:41 | Barclays maintained Overweight on BA, and raised its price target from $210.00 to $255.00.\n[BA-00341] 2025-07-30 08:04 | Susquehanna maintained Positive on BA, and raised its price target from $265.00 to $270.00.\n[BA-00342] 2025-07-30 08:56 | JP Morgan maintained Overweight on BA, and raised its price target from $230.00 to $251.00.\n[BA-00343] 2025-07-30 10:40 | UBS maintained Buy on BA, and raised its price target from $255.00 to $280.00.\n[BA-00344] 2025-07-30 10:42 | RBC Capital reiterated Outperform on BA, with a $250.00 price target.\n[BA-00345] 2025-08-01 06:43 | B of A Securities maintained Buy on BA, and raised its price target from $260.00 to $270.00."
+  }
+ ],
+ "final_text": "{\"answer\": 13, \"evidence_ids\": [\"BA-00285\", \"BA-00290\", \"BA-00303\", \"BA-00316\", \"BA-00327\", \"BA-00329\", \"BA-00331\", \"BA-00333\", \"BA-00336\", \"BA-00340\", \"BA-00342\", \"BA-00343\", \"BA-00344\", \"BA-00345\"]}",
+ "raw_output": "{\"answer\": 13, \"evidence_ids\": [\"BA-00285\", \"BA-00290\", \"BA-00303\", \"BA-00316\", \"BA-00327\", \"BA-00329\", \"BA-00331\", \"BA-00333\", \"BA-00336\", \"BA-00340\", \"BA-00342\", \"BA-00343\", \"BA-00344\", \"BA-00345\"]}"
+}

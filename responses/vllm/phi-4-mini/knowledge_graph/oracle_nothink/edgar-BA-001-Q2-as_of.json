@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-BA-001-Q2-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "BA",
+ "qtype": "first_print",
+ "mode": "as_of",
+ "as_of": "2019-06-04 04:31:00",
+ "question": "What fiscal year 2018 (ended 31 December 2018) total revenue did THE BOEING COMPANY originally report, in $ millions?",
+ "gold": "101127",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "BA-00055",
+ "answer": "101127",
+ "cited": "BA-00055 @2019-02-08 18:10",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 1487,
+ "out_tokens": 30,
+ "seconds": 0.2258,
+ "n_facts": 12,
+ "n_dropped": 0,
+ "created": "2026-11-21T21:13:22",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2019-06-04 04:31:00\nQuestion: What fiscal year 2018 (ended 31 December 2018) total revenue did THE BOEING COMPANY originally report, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nBA | Revenues | value_usd_m | 2017-01-01..2017-06-30: latest 45012 | first 43715 | 2 reports: 43715 [BA-00034 @2017-07-26 16:36]; 45012 [BA-00045 @2018-07-25 16:55]\nBA | Revenues | value_usd_m | 2017-04-01..2017-06-30: latest 23051 | first 22739 | 2 reports: 22739 [BA-00035 @2017-07-26 16:36]; 23051 [BA-00046 @2018-07-25 16:55]\nBA | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 69235 | first 68024 | 2 reports: 68024 [BA-00038 @2017-10-25 16:34]; 69235 [BA-00049 @2018-10-24 17:38]\nBA | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 24223 | first 24309 | 2 reports: 24309 [BA-00039 @2017-10-25 16:34]; 24223 [BA-00050 @2018-10-24 17:38]\nBA | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 94005 | first 93392 | 2 reports: 93392 [BA-00042 @2018-02-12 19:31]; 94005 [BA-00054 @2019-02-08 18:10]\nBA | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 23382 | first 23382 | 2 reports: 23382 [BA-00044 @2018-04-25 16:42]; 23382 [BA-00056 @2019-04-24 16:56]\nBA | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 47640 | first 47640 | 1 reports: 47640 [BA-00047 @2018-07-25 16:55]\nBA | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 24258 | first 24258 | 1 reports: 24258 [BA-00048 @2018-07-25 16:55]\nBA | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 72786 | first 72786 | 1 reports: 72786 [BA-00051 @2018-10-24 17:38]\nBA | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 25146 | first 25146 | 1 reports: 25146 [BA-00052 @2018-10-24 17:38]\nBA | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 101127 | first 101127 | 1 reports: 101127 [BA-00055 @2019-02-08 18:10]\nBA | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 22917 | first 22917 | 1 reports: 22917 [BA-00057 @2019-04-24 16:56]"
+  }
+ ],
+ "final_text": "{\"answer\":101127, \"evidence_ids\": [\"BA-00055 @2019-02-08 18:10\"]}",
+ "raw_output": "{\"answer\":101127, \"evidence_ids\": [\"BA-00055 @2019-02-08 18:10\"]}"
+}

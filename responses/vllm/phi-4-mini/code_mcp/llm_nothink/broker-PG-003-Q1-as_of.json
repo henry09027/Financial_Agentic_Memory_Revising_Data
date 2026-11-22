@@ -1,0 +1,71 @@
+{
+ "qid": "broker-PG-003-Q1-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "PG",
+ "qtype": "consensus",
+ "mode": "as_of",
+ "as_of": "2024-10-18 06:38:00",
+ "question": "What is the consensus (median) price target for PG across active brokers, in US dollars?",
+ "gold": "175.5",
+ "peek_answers": "179.5",
+ "trap_answers": "175",
+ "gold_evidence": "PG-00195|PG-00204|PG-00211|PG-00215|PG-00217|PG-00188|PG-00189|PG-00207|PG-00203|PG-00190|PG-00210|PG-00205|PG-00214|PG-00201|PG-00202|PG-00209|PG-00216|PG-00219",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "false_abstain",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 6812,
+ "out_tokens": 469,
+ "seconds": 0.9059,
+ "n_dropped": 0,
+ "n_sql": 3,
+ "n_sql_error": 2,
+ "n_sql_empty": 1,
+ "n_turns": 4,
+ "sql": "[\"SELECT value_num AS consensus\\nFROM (\\n  SELECT value_num / split_ratio AS adjusted_value\\n  FROM facts\\n  WHERE subject LIKE 'PG | %'\\n    AND attribute = 'price_target_usd'\\n    AND effective_at IS NULL\\n  ORDER BY effective_at DESC\\n  LIMIT 1\\n) AS adjusted_targets\\nJOIN evidence ON adjusted_targets.evidence_id = evidence.evidence_id\\nWHERE evidence.entity = 'split'\\n  AND effective_at <= '2024-10-18 06:38:00'\\nORDER BY adjusted_value\\nLIMIT 1;\", \"SELECT value_num / split_ratio AS adjusted_value\\nFROM facts\\nWHERE subject LIKE 'PG | %'\\n  AND attribute = 'price_target_usd'\\n  AND effective_at IS NULL\\nORDER BY effective_at DESC\\nLIMIT 1;\", \"SELECT value_num AS consensus\\nFROM (\\n  SELECT value_num\\n  FROM facts\\n  WHERE subject LIKE 'PG | %'\\n    AND attribute = 'price_target_usd'\\n    AND effective_at IS NULL\\n  ORDER BY effective_at DESC\\n  LIMIT 1\\n) AS adjusted_targets;\"]",
+ "created": "2026-11-21T21:36:47",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2024-10-18 06:38:00\nQuestion: What is the consensus (median) price target for PG across active brokers, in US dollars?\n\nDatabase contents at the as-of time: 123 facts, 111 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'PG | Argus Research': price_target_usd (1)\n  'PG | B of A Securities': price_target_usd (1)\n  'PG | Barclays': price_target_usd (18), rating (2)\n  'PG | Bernstein': price_target_usd (1)\n  'PG | Citigroup': price_target_usd (4), rating (1)\n  'PG | Credit Suisse': price_target_usd (3)\n  'PG | DA Davidson': price_target_usd (2), rating (1)\n  'PG | DZ Bank': price_target_usd (2), rating (1)\n  'PG | Deutsche Bank': price_target_usd (9)\n  'PG | Evercore ISI Group': price_target_usd (2)\n  'PG | Exane BNP Paribas': price_target_usd (1), rating (1)\n  'PG | Goldman Sachs': rating (1)\n  'PG | HSBC': price_target_usd (1), rating (1)\n  'PG | JP Morgan': price_target_usd (10), rating (2)\n  'PG | Jefferies': price_target_usd (4), rating (2)\n  'PG | Morgan Stanley': price_target_usd (5), rating (1)\n  'PG | Piper Sandler': price_target_usd (1), rating (1)\n  'PG | RBC Capital': price_target_usd (4)\n  'PG | Raymond James': price_target_usd (8), rating (1)\n  'PG | Stifel': price_target_usd (5)\n  'PG | TD Cowen': price_target_usd (1), rating (1)\n  'PG | Truist Securities': price_target_usd (6), rating (2)\n  'PG | UBS': price_target_usd (4), rating (1)\n  'PG | Wells Fargo': price_target_usd (8)\n  'PG | William Blair': rating (1)\n  'PG | Wolfe Research': price_target_usd (1), rating (1)\nkind values: 'corroborate', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'PG | Barclays' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT value_num AS consensus\nFROM (\n  SELECT value_num / split_ratio AS adjusted_value\n  FROM facts\n  WHERE subject LIKE 'PG | %'\n    AND attribute = 'price_target_usd'\n    AND effective_at IS NULL\n  ORDER BY effective_at DESC\n  LIMIT 1\n) AS adjusted_targets\nJOIN evidence ON adjusted_targets.evidence_id = evidence.evidence_id\nWHERE evidence.entity = 'split'\n  AND effective_at <= '2024-10-18 06:38:00'\nORDER BY adjusted_value\nLIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nSQL error: no such column: split_ratio. Tables and columns: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text)"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT value_num / split_ratio AS adjusted_value\nFROM facts\nWHERE subject LIKE 'PG | %'\n  AND attribute = 'price_target_usd'\n  AND effective_at IS NULL\nORDER BY effective_at DESC\nLIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nSQL error: no such column: split_ratio. Tables and columns: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text)"
+  },
+  {
+   "role": "assistant",
+   "content": "The error indicates that the `split_ratio` column does not exist in the `facts` table. Since we are looking for price targets and not splits, we should not be dividing by a split ratio. We need to find the price targets for PG from active brokers and then calculate the median of those targets.\n\nLet's correct the query to select the price targets without considering the split ratio:\n\n```sql\nSELECT value_num AS consensus\nFROM (\n  SELECT value_num\n  FROM facts\n  WHERE subject LIKE 'PG | %'\n    AND attribute = 'price_target_usd'\n    AND effective_at IS NULL\n  ORDER BY effective_at DESC\n  LIMIT 1\n) AS adjusted_targets;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nconsensus\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  }
+ ],
+ "final_text": "It seems that there are no rows returned for the subject 'PG | %', which means there are no price target entries in the `facts` table for PG from active brokers at the as-of time. This could be because there are no active brokers with published notes on PG within the 12-month period before the as-of time, or it could be an error in the query or the database contents.\n\nSince there are no price target values to calculate a median from, the consensus price target for PG across active brokers, in US dollars, cannot be determined from the given data. Here is the JSON response reflecting that we cannot answer the question with the current data:\n\n```json\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}\n```",
+ "raw_output": "```sql\nSELECT value_num AS consensus\nFROM (\n  SELECT value_num / split_ratio AS adjusted_value\n  FROM facts\n  WHERE subject LIKE 'PG | %'\n    AND attribute = 'price_target_usd'\n    AND effective_at IS NULL\n  ORDER BY effective_at DESC\n  LIMIT 1\n) AS adjusted_targets\nJOIN evidence ON adjusted_targets.evidence_id = evidence.evidence_id\nWHERE evidence.entity = 'split'\n  AND effective_at <= '2024-10-18 06:38:00'\nORDER BY adjusted_value\nLIMIT 1;\n```\n\n===== next turn =====\n\n```sql\nSELECT value_num / split_ratio AS adjusted_value\nFROM facts\nWHERE subject LIKE 'PG | %'\n  AND attribute = 'price_target_usd'\n  AND effective_at IS NULL\nORDER BY effective_at DESC\nLIMIT 1;\n```\n\n===== next turn =====\n\nThe error indicates that the `split_ratio` column does not exist in the `facts` table. Since we are looking for price targets and not splits, we should not be dividing by a split ratio. We need to find the price targets for PG from active brokers and then calculate the median of those targets.\n\nLet's correct the query to select the price targets without considering the split ratio:\n\n```sql\nSELECT value_num AS consensus\nFROM (\n  SELECT value_num\n  FROM facts\n  WHERE subject LIKE 'PG | %'\n    AND attribute = 'price_target_usd'\n    AND effective_at IS NULL\n  ORDER BY effective_at DESC\n  LIMIT 1\n) AS adjusted_targets;\n```\n\n===== next turn =====\n\nIt seems that there are no rows returned for the subject 'PG | %', which means there are no price target entries in the `facts` table for PG from active brokers at the as-of time. This could be because there are no active brokers with published notes on PG within the 12-month period before the as-of time, or it could be an error in the query or the database contents.\n\nSince there are no price target values to calculate a median from, the consensus price target for PG across active brokers, in US dollars, cannot be determined from the given data. Here is the JSON response reflecting that we cannot answer the question with the current data:\n\n```json\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}\n```"
+}

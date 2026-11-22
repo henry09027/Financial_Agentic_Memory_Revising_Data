@@ -1,0 +1,43 @@
+{
+ "qid": "broker-CVX-001-Q5-today",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "rule_based",
+ "variant": "k3_timestamp_nothink",
+ "source": "broker",
+ "entity": "CVX",
+ "qtype": "count_changes",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "How many times did brokers raise or lower their CVX price target between 1 February 2024 and the as-of time?",
+ "gold": "122",
+ "peek_answers": "",
+ "trap_answers": "134|152|164",
+ "gold_evidence": "CVX-00327|CVX-00329|CVX-00343|CVX-00350|CVX-00360|CVX-00363|CVX-00371|CVX-00379|CVX-00382|CVX-00255|CVX-00264|CVX-00292|CVX-00310|CVX-00312|CVX-00318|CVX-00328|CVX-00331|CVX-00340|CVX-00347|CVX-00373|CVX-00263|CVX-00294|CVX-00295|CVX-00326|CVX-00267|CVX-00309|CVX-00333|CVX-00375|CVX-00265|CVX-00365|CVX-00369|CVX-00376|CVX-00378|CVX-00275|CVX-00280|CVX-00284|CVX-00300|CVX-00305|CVX-00313|CVX-00323|CVX-00342|CVX-00348|CVX-00356|CVX-00361|CVX-00367|CVX-00370|CVX-00383|CVX-00387|CVX-00256|CVX-00269|CVX-00276|CVX-00303|CVX-00308|CVX-00317|CVX-00322|CVX-00330|CVX-00335|CVX-00349|CVX-00362|CVX-00258|CVX-00266|CVX-00278|CVX-00291|CVX-00296|CVX-00304|CVX-00307|CVX-00311|CVX-00315|CVX-00332|CVX-00344|CVX-00352|CVX-00372|CVX-00380|CVX-00259|CVX-00268|CVX-00272|CVX-00273|CVX-00279|CVX-00285|CVX-00290|CVX-00293|CVX-00299|CVX-00262|CVX-00270|CVX-00283|CVX-00302|CVX-00314|CVX-00324|CVX-00355|CVX-00253|CVX-00274|CVX-00286|CVX-00353|CVX-00288|CVX-00337|CVX-00346|CVX-00351|CVX-00260|CVX-00277|CVX-00282|CVX-00287|CVX-00289|CVX-00298|CVX-00301|CVX-00316|CVX-00320|CVX-00357|CVX-00377|CVX-00384|CVX-00271|CVX-00336|CVX-00359|CVX-00368|CVX-00386|CVX-00321|CVX-00334|CVX-00345|CVX-00366|CVX-00341|CVX-00306|CVX-00374|CVX-00381",
+ "answer": "2",
+ "cited": "CVX-00381|CVX-00384",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.01639344262295082,
+ "in_tokens": 991,
+ "out_tokens": 52,
+ "seconds": 0.0454,
+ "retrieved": "CVX-00381|CVX-00384|CVX-00385",
+ "n_dropped": 0,
+ "created": "2026-11-22T02:48:05",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: How many times did brokers raise or lower their CVX price target between 1 February 2024 and the as-of time?\n\nEvidence:\n[CVX-00381] 2026-11-02 08:34 | Evercore ISI Group maintained Outperform on CVX, and raised its price target from $225.00 to $250.00.\n[CVX-00384] 2026-11-02 16:40 | UBS maintained Buy on CVX, and raised its price target from $235.00 to $265.00.\n[CVX-00385] 2026-11-05 21:12 | Freedom Broker upgraded CVX from Sell to Hold, with a $218.00 price target."
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 2,\n  \"evidence_ids\": [\n    \"CVX-00381\",\n    \"CVX-00384\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 2,\n  \"evidence_ids\": [\n    \"CVX-00381\",\n    \"CVX-00384\"\n  ]\n}\n```"
+}

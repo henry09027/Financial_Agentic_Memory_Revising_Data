@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-ORCL-003-Q2-as_of",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "knowledge_graph",
+ "variant": "oracle_nothink",
+ "source": "edgar",
+ "entity": "ORCL",
+ "qtype": "first_print",
+ "mode": "as_of",
+ "as_of": "2021-06-19 21:54:00",
+ "question": "What fiscal year 2020 (ended 31 May 2020) total revenue did ORACLE CORP originally report, in $ millions?",
+ "gold": "39068",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "ORCL-00072",
+ "answer": "28629",
+ "cited": "ORCL-00068 @2020-03-13 20:21|ORCL-00079 @2021-03-11 21:26",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 2706,
+ "out_tokens": 50,
+ "seconds": 0.2111,
+ "n_facts": 26,
+ "n_dropped": 0,
+ "created": "2026-11-21T21:17:40",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2021-06-19 21:54:00\nQuestion: What fiscal year 2020 (ended 31 May 2020) total revenue did ORACLE CORP originally report, in $ millions?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nORCL | Revenues | value_usd_m | 2016-06-01..2017-02-28: latest 26835 | first 26835 | 2 reports: 26835 [ORCL-00029 @2017-03-17 20:07]; 26835 [ORCL-00040 @2018-03-21 20:12]\nORCL | Revenues | value_usd_m | 2016-12-01..2017-02-28: latest 9205 | first 9205 | 2 reports: 9205 [ORCL-00030 @2017-03-17 20:07]; 9205 [ORCL-00041 @2018-03-21 20:12]\nORCL | Revenues | value_usd_m | 2016-06-01..2017-05-31: latest 37792 | first 37728 | 3 reports: 37728 [ORCL-00033 @2017-06-27 20:05]; 37728 [ORCL-00045 @2018-06-22 20:09]; 37792 [ORCL-00057 @2019-06-21 20:29]\nORCL | Revenues | value_usd_m | 2017-06-01..2017-08-31: latest 9104 | first 9187 | 2 reports: 9187 [ORCL-00035 @2017-09-18 21:20]; 9104 [ORCL-00047 @2018-09-19 20:53]\nORCL | Revenues | value_usd_m | 2017-06-01..2017-11-30: latest 18693 | first 18809 | 2 reports: 18809 [ORCL-00038 @2017-12-18 22:03]; 18693 [ORCL-00049 @2018-12-19 21:15]\nORCL | Revenues | value_usd_m | 2017-09-01..2017-11-30: latest 9589 | first 9621 | 2 reports: 9621 [ORCL-00039 @2017-12-18 22:03]; 9589 [ORCL-00050 @2018-12-19 21:15]\nORCL | Revenues | value_usd_m | 2017-06-01..2018-02-28: latest 28369 | first 28579 | 2 reports: 28579 [ORCL-00042 @2018-03-21 20:12]; 28369 [ORCL-00053 @2019-03-18 20:12]\nORCL | Revenues | value_usd_m | 2017-12-01..2018-02-28: latest 9676 | first 9771 | 2 reports: 9771 [ORCL-00043 @2018-03-21 20:12]; 9676 [ORCL-00054 @2019-03-18 20:12]\nORCL | Revenues | value_usd_m | 2017-06-01..2018-05-31: latest 39383 | first 39831 | 3 reports: 39831 [ORCL-00046 @2018-06-22 20:09]; 39383 [ORCL-00058 @2019-06-21 20:29]; 39383 [ORCL-00070 @2020-06-22 20:25]\nORCL | Revenues | value_usd_m | 2018-06-01..2018-08-31: latest 9193 | first 9193 | 2 reports: 9193 [ORCL-00048 @2018-09-19 20:53]; 9193 [ORCL-00060 @2019-09-13 20:22]\nORCL | Revenues | value_usd_m | 2018-06-01..2018-11-30: latest 18755 | first 18755 | 2 reports: 18755 [ORCL-00051 @2018-12-19 21:15]; 18755 [ORCL-00062 @2019-12-13 21:22]\nORCL | Revenues | value_usd_m | 2018-09-01..2018-11-30: latest 9562 | first 9562 | 2 reports: 9562 [ORCL-00052 @2018-12-19 21:15]; 9562 [ORCL-00063 @2019-12-13 21:22]\nORCL | Revenues | value_usd_m | 2018-06-01..2019-02-28: latest 28369 | first 28369 | 2 reports: 28369 [ORCL-00055 @2019-03-18 20:12]; 28369 [ORCL-00066 @2020-03-13 20:21]\nORCL | Revenues | value_usd_m | 2018-12-01..2019-02-28: latest 9614 | first 9614 | 2 reports: 9614 [ORCL-00056 @2019-03-18 20:12]; 9614 [ORCL-00067 @2020-03-13 20:21]\nORCL | Revenues | value_usd_m | 2018-06-01..2019-05-31: latest 39506 | first 39506 | 2 reports: 39506 [ORCL-00059 @2019-06-21 20:29]; 39506 [ORCL-00071 @2020-06-22 20:25]\nORCL | Revenues | value_usd_m | 2019-06-01..2019-08-31: latest 9218 | first 9218 | 2 reports: 9218 [ORCL-00061 @2019-09-13 20:22]; 9218 [ORCL-00073 @2020-09-14 21:34]\nORCL | Revenues | value_usd_m | 2019-06-01..2019-11-30: latest 18832 | first 18832 | 2 reports: 18832 [ORCL-00064 @2019-12-13 21:22]; 18832 [ORCL-00075 @2020-12-11 21:11]\nORCL | Revenues | value_usd_m | 2019-09-01..2019-11-30: latest 9614 | first 9614 | 2 reports: 9614 [ORCL-00065 @2019-12-13 21:22]; 9614 [ORCL-00076 @2020-12-11 21:11]\nORCL | Revenues | value_usd_m | 2019-06-01..2020-02-29: latest 28629 | first 28629 | 2 reports: 28629 [ORCL-00068 @2020-03-13 20:21]; 28629 [ORCL-00079 @2021-03-11 21:26]\nORCL | Revenues | value_usd_m | 2019-12-01..2020-02-29: latest 9796 | first 9796 | 2 reports: 9796 [ORCL-00069 @2020-03-13 20:21]; 9796 [ORCL-00080 @2021-03-11 21:26]\nORCL | Revenues | value_usd_m | 2019-06-01..2020-05-31: latest 39068 | first 39068 | 1 reports: 39068 [ORCL-00072 @2020-06-22 20:25]\nORCL | Revenues | value_usd_m | 2020-06-01..2020-08-31: latest 9367 | first 9367 | 1 reports: 9367 [ORCL-00074 @2020-09-14 21:34]\nORCL | Revenues | value_usd_m | 2020-06-01..2020-11-30: latest 19167 | first 19167 | 1 reports: 19167 [ORCL-00077 @2020-12-11 21:11]\nORCL | Revenues | value_usd_m | 2020-09-01..2020-11-30: latest 9800 | first 9800 | 1 reports: 9800 [ORCL-00078 @2020-12-11 21:11]\nORCL | Revenues | value_usd_m | 2020-06-01..2021-02-28: latest 29252 | first 29252 | 1 reports: 29252 [ORCL-00081 @2021-03-11 21:26]\nORCL | Revenues | value_usd_m | 2020-12-01..2021-02-28: latest 10085 | first 10085 | 1 reports: 10085 [ORCL-00082 @2021-03-11 21:26]"
+  }
+ ],
+ "final_text": "{\"answer\": 28629, \"evidence_ids\": [\"ORCL-00068 @2020-03-13 20:21\", \"ORCL-00079 @2021-03-11 21:26\"]}",
+ "raw_output": "{\"answer\": 28629, \"evidence_ids\": [\"ORCL-00068 @2020-03-13 20:21\", \"ORCL-00079 @2021-03-11 21:26\"]}"
+}

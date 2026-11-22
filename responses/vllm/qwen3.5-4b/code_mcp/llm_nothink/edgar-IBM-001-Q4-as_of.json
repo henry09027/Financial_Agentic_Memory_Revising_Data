@@ -1,0 +1,103 @@
+{
+ "qid": "edgar-IBM-001-Q4-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "IBM",
+ "qtype": "yoy_growth",
+ "mode": "as_of",
+ "as_of": "2023-05-13 20:17:00",
+ "question": "What was the year-over-year revenue growth (percent) of INTERNATIONAL BUSINESS MACHINES CORP's most recently reported fiscal quarter (three-month figures)?",
+ "gold": "0.387",
+ "peek_answers": "-0.386|4.572|4.727",
+ "trap_answers": "",
+ "gold_evidence": "IBM-00109|IBM-00108",
+ "answer": "12.5",
+ "cited": "IBM-00109|IBM-00095",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.5,
+ "in_tokens": 29928,
+ "out_tokens": 563,
+ "seconds": 2.0313,
+ "n_dropped": 0,
+ "n_sql": 7,
+ "n_sql_error": 0,
+ "n_sql_empty": 1,
+ "n_turns": 8,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%-01-01..%-03-31' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%-01-01..%-09-30' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%-01-01..%-07-01' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%-01-01..%-06-30' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%-01-01..%-03-31' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%-01-01..%-09-30' \\nORDER BY learned_at DESC \\nLIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'IBM | Revenues' \\nAND attribute = 'value_usd_m' \\nAND period LIKE '%-01-01..%-06-30' \\nORDER BY learned_at DESC \\nLIMIT 10\"]",
+ "created": "2026-11-22T01:58:00",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2023-05-13 20:17:00\nQuestion: What was the year-over-year revenue growth (percent) of INTERNATIONAL BUSINESS MACHINES CORP's most recently reported fiscal quarter (three-month figures)?\n\nDatabase contents at the as-of time: 68 facts, 68 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'IBM | Revenues': value_usd_m (68)\nkind values: 'corroborate', 'new', 'revision'\nmost recently learned periods: '2023-01-01..2023-03-31', '2022-01-01..2022-03-31', '2022-01-01..2022-12-31', '2021-01-01..2021-12-31', '2020-01-01..2020-12-31', '2022-07-01..2022-09-30', '2022-01-01..2022-09-30', '2021-07-01..2021-09-30'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'IBM | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-03-31' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2022-01-01..2022-03-31,14197.0,2023-04-25 20:18:35,2023-04-25 20:18:35,corroborate,IBM-00108\n2023-01-01..2023-03-31,14252.0,2023-04-25 20:18:35,2023-04-25 20:18:35,new,IBM-00109\n2021-01-01..2021-03-31,13187.0,2022-04-26 20:19:53,2022-04-26 20:19:53,revision,IBM-00095\n2022-01-01..2022-03-31,14197.0,2022-04-26 20:19:53,2022-04-26 20:19:53,new,IBM-00096\n2020-01-01..2020-03-31,17571.0,2021-04-27 20:19:53,2021-04-27 20:19:53,corroborate,IBM-00082\n2021-01-01..2021-03-31,17730.0,2021-04-27 20:19:53,2021-04-27 20:19:53,new,IBM-00083\n2019-01-01..2019-03-31,18182.0,2020-04-28 20:24:43,2020-04-28 20:24:43,corroborate,IBM-00069\n2020-01-01..2020-03-31,17571.0,2020-04-28 20:24:43,2020-04-28 20:24:43,new,IBM-00070\n2018-01-01..2018-03-31,19072.0,2019-04-30 20:21:56,2019-04-30 20:21:56,corroborate,IBM-00056\n2019-01-01..2019-03-31,18182.0,2019-04-30 20:21:56,2019-04-30 20:21:56,new,IBM-00057\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-09-30' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-01-01..2021-09-30,40656.0,2022-10-25 20:16:44,2022-10-25 20:16:44,revision,IBM-00101\n2022-01-01..2022-09-30,43840.0,2022-10-25 20:16:44,2022-10-25 20:16:44,revision,IBM-00103\n2020-01-01..2020-09-30,53253.0,2021-11-05 11:23:16,2021-11-05 11:23:16,corroborate,IBM-00088\n2021-01-01..2021-09-30,54093.0,2021-11-05 11:23:16,2021-11-05 11:23:16,revision,IBM-00090\n2019-01-01..2019-09-30,55370.0,2020-10-27 20:20:30,2020-10-27 20:20:30,corroborate,IBM-00075\n2020-01-01..2020-09-30,53253.0,2020-10-27 20:20:30,2020-10-27 20:20:30,revision,IBM-00077\n2018-01-01..2018-09-30,57830.0,2019-10-29 23:37:08,2019-10-29 23:37:08,corroborate,IBM-00062\n2019-01-01..2019-09-30,55370.0,2019-10-29 23:37:08,2019-10-29 23:37:08,revision,IBM-00064\n2017-01-01..2017-09-30,56597.0,2018-10-30 20:43:46,2018-10-30 20:43:46,corroborate,IBM-00049\n2018-01-01..2018-09-30,57830.0,2018-10-30 20:43:46,2018-10-30 20:43:46,revision,IBM-00051\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-07-01' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n(no rows) Check that subject, attribute and period strings are copied exactly (or use LIKE '%...%'), and that numeric comparisons use value_num."
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-06-30' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-01-01..2021-06-30,27405.0,2022-07-25 20:43:18,2022-07-25 20:43:18,revision,IBM-00097\n2022-01-01..2022-06-30,29732.0,2022-07-25 20:43:18,2022-07-25 20:43:18,revision,IBM-00099\n2020-01-01..2020-06-30,35694.0,2021-07-27 20:41:04,2021-07-27 20:41:04,corroborate,IBM-00084\n2021-01-01..2021-06-30,36474.0,2021-07-27 20:41:04,2021-07-27 20:41:04,revision,IBM-00086\n2019-01-01..2019-06-30,37342.0,2020-07-28 20:29:01,2020-07-28 20:29:01,corroborate,IBM-00071\n2020-01-01..2020-06-30,35694.0,2020-07-28 20:29:01,2020-07-28 20:29:01,revision,IBM-00073\n2018-01-01..2018-06-30,39075.0,2019-07-30 20:26:01,2019-07-30 20:26:01,corroborate,IBM-00058\n2019-01-01..2019-06-30,37342.0,2019-07-30 20:26:01,2019-07-30 20:26:01,new,IBM-00060\n2018-01-01..2018-06-30,39075.0,2018-07-31 20:10:57,2018-07-31 20:10:57,new,IBM-00047\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-03-31' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2022-01-01..2022-03-31,14197.0,2023-04-25 20:18:35,2023-04-25 20:18:35,corroborate,IBM-00108\n2023-01-01..2023-03-31,14252.0,2023-04-25 20:18:35,2023-04-25 20:18:35,new,IBM-00109\n2021-01-01..2021-03-31,13187.0,2022-04-26 20:19:53,2022-04-26 20:19:53,revision,IBM-00095\n2022-01-01..2022-03-31,14197.0,2022-04-26 20:19:53,2022-04-26 20:19:53,new,IBM-00096\n2020-01-01..2020-03-31,17571.0,2021-04-27 20:19:53,2021-04-27 20:19:53,corroborate,IBM-00082\n2021-01-01..2021-03-31,17730.0,2021-04-27 20:19:53,2021-04-27 20:19:53,new,IBM-00083\n2019-01-01..2019-03-31,18182.0,2020-04-28 20:24:43,2020-04-28 20:24:43,corroborate,IBM-00069\n2020-01-01..2020-03-31,17571.0,2020-04-28 20:24:43,2020-04-28 20:24:43,new,IBM-00070\n2018-01-01..2018-03-31,19072.0,2019-04-30 20:21:56,2019-04-30 20:21:56,corroborate,IBM-00056\n2019-01-01..2019-03-31,18182.0,2019-04-30 20:21:56,2019-04-30 20:21:56,new,IBM-00057\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-09-30' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2021-01-01..2021-09-30,40656.0,2022-10-25 20:16:44,2022-10-25 20:16:44,revision,IBM-00101\n2022-01-01..2022-09-30,43840.0,2022-10-25 20:16:44,2022-10-25 20:16:44,revision,IBM-00103\n2020-01-01..2020-09-30,53253.0,2021-11-05 11:23:16,2021-11-05 11:23:16,corroborate,IBM-00088\n2021-01-01..2021-09-30,54093.0,2021-11-05 11:23:16,2021-11-05 11:23:16,revision,IBM-00090\n2019-01-01..2019-09-30,55370.0,2020-10-27 20:20:30,2020-10-27 20:20:30,corroborate,IBM-00075\n2020-01-01..2020-09-30,53253.0,2020-10-27 20:20:30,2020-10-27 20:20:30,revision,IBM-00077\n2018-01-01..2018-09-30,57830.0,2019-10-29 23:37:08,2019-10-29 23:37:08,corroborate,IBM-00062\n2019-01-01..2019-09-30,55370.0,2019-10-29 23:37:08,2019-10-29 23:37:08,revision,IBM-00064\n2017-01-01..2017-09-30,56597.0,2018-10-30 20:43:46,2018-10-30 20:43:46,corroborate,IBM-00049\n2018-01-01..2018-09-30,57830.0,2018-10-30 20:43:46,2018-10-30 20:43:46,revision,IBM-00051\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-06-30' \nORDER BY learned_at DESC \nLIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nBudget used up. Answer now with the JSON."
+  }
+ ],
+ "final_text": "```json\n{\"answer\": 12.5, \"evidence_ids\": [\"IBM-00109\", \"IBM-00095\"]}\n```",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-03-31' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-09-30' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-07-01' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-06-30' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-03-31' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-09-30' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'IBM | Revenues' \nAND attribute = 'value_usd_m' \nAND period LIKE '%-01-01..%-06-30' \nORDER BY learned_at DESC \nLIMIT 10\n```\n\n===== next turn =====\n\n```json\n{\"answer\": 12.5, \"evidence_ids\": [\"IBM-00109\", \"IBM-00095\"]}\n```"
+}

@@ -1,0 +1,43 @@
+{
+ "qid": "edgar-JPM-003-Q5-as_of",
+ "backend": "vllm",
+ "model": "gemma-4-e4b-it",
+ "hf_id": "google/gemma-4-E4B-it",
+ "method": "knowledge_graph",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "JPM",
+ "qtype": "count_reports",
+ "mode": "as_of",
+ "as_of": "2021-12-22 23:03:00",
+ "question": "How many filings have reported a fiscal year 2020 (ended 31 December 2020) total revenue figure for JPMORGAN CHASE & CO?",
+ "gold": "1",
+ "peek_answers": "2|3",
+ "trap_answers": "",
+ "gold_evidence": "JPM-00081",
+ "answer": "1",
+ "cited": "JPM-00081",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": 1.0,
+ "in_tokens": 3774,
+ "out_tokens": 40,
+ "seconds": 0.2952,
+ "n_facts": 26,
+ "n_dropped": 0,
+ "created": "2026-11-22T05:43:25",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas)."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2021-12-22 23:03:00\nQuestion: How many filings have reported a fiscal year 2020 (ended 31 December 2020) total revenue figure for JPMORGAN CHASE & CO?\n\nKnowledge graph facts known at the as-of time. Each line: subject | attribute (| period): values with [evidence id, when learned if different, kind if not new]:\nJPM | Revenues | value_usd_m | 2017-01-01..2017-09-30: latest 76248 | first 75471 | 2 reports: 75471 [JPM-00038 @2017-11-01 20:36]; 76248 [JPM-00049 @2018-10-31 20:35]\nJPM | Revenues | value_usd_m | 2017-07-01..2017-09-30: latest 25578 | first 25326 | 2 reports: 25326 [JPM-00039 @2017-11-01 20:36]; 25578 [JPM-00050 @2018-10-31 20:35]\nJPM | Revenues | value_usd_m | 2017-01-01..2017-12-31: latest 100705 | first 99624 | 3 reports: 99624 [JPM-00042 @2018-02-27 21:23]; 100705 [JPM-00054 @2019-02-26 21:57]; 100705 [JPM-00066 @2020-02-25 21:31]\nJPM | Revenues | value_usd_m | 2018-01-01..2018-03-31: latest 27907 | first 27907 | 2 reports: 27907 [JPM-00044 @2018-05-02 20:20]; 27907 [JPM-00056 @2019-05-02 20:35]\nJPM | Revenues | value_usd_m | 2018-01-01..2018-06-30: latest 55660 | first 55660 | 2 reports: 55660 [JPM-00047 @2018-08-01 20:49]; 55660 [JPM-00058 @2019-08-05 22:19]\nJPM | Revenues | value_usd_m | 2018-04-01..2018-06-30: latest 27753 | first 27753 | 2 reports: 27753 [JPM-00048 @2018-08-01 20:49]; 27753 [JPM-00059 @2019-08-05 22:19]\nJPM | Revenues | value_usd_m | 2018-01-01..2018-09-30: latest 82920 | first 82920 | 2 reports: 82920 [JPM-00051 @2018-10-31 20:35]; 82920 [JPM-00062 @2019-11-04 21:24]\nJPM | Revenues | value_usd_m | 2018-07-01..2018-09-30: latest 27260 | first 27260 | 2 reports: 27260 [JPM-00052 @2018-10-31 20:35]; 27260 [JPM-00063 @2019-11-04 21:24]\nJPM | Revenues | value_usd_m | 2018-01-01..2018-12-31: latest 108783 | first 109029 | 3 reports: 109029 [JPM-00055 @2019-02-26 21:57]; 109029 [JPM-00067 @2020-02-25 21:31]; 108783 [JPM-00079 @2021-02-23 21:17]\nJPM | Revenues | value_usd_m | 2019-01-01..2019-03-31: latest 29123 | first 29123 | 2 reports: 29123 [JPM-00057 @2019-05-02 20:35]; 29123 [JPM-00069 @2020-05-07 20:37]\nJPM | Revenues | value_usd_m | 2019-01-01..2019-06-30: latest 57823 | first 57955 | 2 reports: 57955 [JPM-00060 @2019-08-05 22:19]; 57823 [JPM-00071 @2020-08-03 20:13]\nJPM | Revenues | value_usd_m | 2019-04-01..2019-06-30: latest 28747 | first 28832 | 2 reports: 28832 [JPM-00061 @2019-08-05 22:19]; 28747 [JPM-00072 @2020-08-03 20:13]\nJPM | Revenues | value_usd_m | 2019-01-01..2019-09-30: latest 87114 | first 87296 | 2 reports: 87296 [JPM-00064 @2019-11-04 21:24]; 87114 [JPM-00075 @2020-11-02 21:23]\nJPM | Revenues | value_usd_m | 2019-07-01..2019-09-30: latest 29291 | first 29341 | 2 reports: 29341 [JPM-00065 @2019-11-04 21:24]; 29291 [JPM-00076 @2020-11-02 21:23]\nJPM | Revenues | value_usd_m | 2019-01-01..2019-12-31: latest 115399 | first 115627 | 2 reports: 115627 [JPM-00068 @2020-02-25 21:31]; 115399 [JPM-00080 @2021-02-23 21:17]\nJPM | Revenues | value_usd_m | 2020-01-01..2020-03-31: latest 28286 | first 28251 | 2 reports: 28251 [JPM-00070 @2020-05-07 20:37]; 28286 [JPM-00082 @2021-05-04 20:17]\nJPM | Revenues | value_usd_m | 2020-01-01..2020-06-30: latest 61361 | first 61172 | 2 reports: 61172 [JPM-00073 @2020-08-03 20:13]; 61361 [JPM-00084 @2021-08-02 20:12]\nJPM | Revenues | value_usd_m | 2020-04-01..2020-06-30: latest 33075 | first 32980 | 2 reports: 32980 [JPM-00074 @2020-08-03 20:13]; 33075 [JPM-00085 @2021-08-02 20:12]\nJPM | Revenues | value_usd_m | 2020-01-01..2020-09-30: latest 90616 | first 90319 | 2 reports: 90319 [JPM-00077 @2020-11-02 21:23]; 90616 [JPM-00088 @2021-11-02 20:10]\nJPM | Revenues | value_usd_m | 2020-07-01..2020-09-30: latest 29255 | first 29147 | 2 reports: 29147 [JPM-00078 @2020-11-02 21:23]; 29255 [JPM-00089 @2021-11-02 20:10]\nJPM | Revenues | value_usd_m | 2020-01-01..2020-12-31: latest 119543 | first 119543 | 1 reports: 119543 [JPM-00081 @2021-02-23 21:17]\nJPM | Revenues | value_usd_m | 2021-01-01..2021-03-31: latest 32266 | first 32266 | 1 reports: 32266 [JPM-00083 @2021-05-04 20:17]\nJPM | Revenues | value_usd_m | 2021-01-01..2021-06-30: latest 62745 | first 62745 | 1 reports: 62745 [JPM-00086 @2021-08-02 20:12]\nJPM | Revenues | value_usd_m | 2021-04-01..2021-06-30: latest 30479 | first 30479 | 1 reports: 30479 [JPM-00087 @2021-08-02 20:12]\nJPM | Revenues | value_usd_m | 2021-01-01..2021-09-30: latest 92392 | first 92392 | 1 reports: 92392 [JPM-00090 @2021-11-02 20:10]\nJPM | Revenues | value_usd_m | 2021-07-01..2021-09-30: latest 29647 | first 29647 | 1 reports: 29647 [JPM-00091 @2021-11-02 20:10]"
+  }
+ ],
+ "final_text": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"JPM-00081\"\n  ]\n}\n```",
+ "raw_output": "```json\n{\n  \"answer\": 1,\n  \"evidence_ids\": [\n    \"JPM-00081\"\n  ]\n}\n```"
+}

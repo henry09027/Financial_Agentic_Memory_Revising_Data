@@ -1,0 +1,410 @@
+evidence_id,learned_at,subject,attribute,period,value,effective_at,kind
+CAT-00092,2019-10-24 12:12:43,CAT | B of A Securities,price_target_usd,,154.00,2019-10-24 12:12:43,new
+CAT-00092,2019-10-24 12:12:43,CAT | B of A Securities,rating,,Buy,2019-10-24 12:12:43,new
+CAT-00092,2019-10-24 12:12:43,CAT,split_ratio,,,,
+CAT-00093,2019-11-06 08:42:03,CAT | B of A Securities,price_target_usd,,165.00,2019-11-06 08:42:03,new
+CAT-00093,2019-11-06 08:42:03,CAT | B of A Securities,rating,,Buy,2019-11-06 08:42:03,corroborate
+CAT-00094,2019-12-12 11:13:40,CAT | Standpoint Research,price_target_usd,,-,2019-12-12 11:13:40,new
+CAT-00094,2019-12-12 11:13:40,CAT | Standpoint Research,rating,,Hold,2019-12-12 11:13:40,new
+CAT-00095,2019-12-16 08:23:13,CAT | Morgan Stanley,price_target_usd,,137.00,2019-12-16 08:23:13,new
+CAT-00095,2019-12-16 08:23:13,CAT | Morgan Stanley,rating,,Equal-Weight,2019-12-16 08:23:13,new
+CAT-00096,2019-12-18 09:57:52,CAT | Deutsche Bank,price_target_usd,,147.00,2019-12-18 09:57:52,new
+CAT-00096,2019-12-18 09:57:52,CAT | Deutsche Bank,rating,,Hold,2019-12-18 09:57:52,corroborate
+CAT-00097,2019-12-20 09:22:30,CAT | JP Morgan,price_target_usd,,178.00,2019-12-20 09:22:30,new
+CAT-00097,2019-12-20 09:22:30,CAT | JP Morgan,rating,,Overweight,2019-12-20 09:22:30,new
+CAT-00098,2019-12-26 18:22:00,CAT | Cowen & Co.,alias,,TD Cowen,2019-12-26 18:22:00,event
+CAT-00099,2020-01-17 07:14:42,CAT | Citigroup,price_target_usd,,170.00,2020-01-17 07:14:42,new
+CAT-00099,2020-01-17 07:14:42,CAT | Citigroup,rating,,Buy,2020-01-17 07:14:42,corroborate
+CAT-00100,2020-01-17 08:08:16,CAT | Credit Suisse,price_target_usd,,173.00,2020-01-17 08:08:16,new
+CAT-00100,2020-01-17 08:08:16,CAT | Credit Suisse,rating,,Outperform,2020-01-17 08:08:16,new
+CAT-00101,2020-01-21 07:28:01,CAT | Daiwa Capital,price_target_usd,,165.00,2020-01-21 07:28:01,new
+CAT-00101,2020-01-21 07:28:01,CAT | Daiwa Capital,rating,,Outperform,2020-01-21 07:28:01,new
+CAT-00102,2020-01-31 11:38:43,CAT | CFRA,price_target_usd,,120.0,2020-01-31 11:38:43,new
+CAT-00102,2020-01-31 11:38:43,CAT | CFRA,rating,,Sell,2020-01-31 11:38:43,new
+CAT-00103,2020-02-03 07:56:58,CAT | Credit Suisse,price_target_usd,,162.0,2020-02-03 07:56:58,new
+CAT-00103,2020-02-03 07:56:58,CAT | Credit Suisse,rating,,Outperform,2020-02-03 07:56:58,corroborate
+CAT-00104,2020-02-03 09:03:29,CAT | Morgan Stanley,price_target_usd,,126.0,2020-02-03 09:03:29,new
+CAT-00104,2020-02-03 09:03:29,CAT | Morgan Stanley,rating,,Equal-Weight,2020-02-03 09:03:29,corroborate
+CAT-00105,2020-02-03 11:35:08,CAT | RBC Capital,price_target_usd,-,145.00,2020-02-03 11:35:08,new
+CAT-00105,2020-02-03 11:35:08,CAT | RBC Capital,rating,-,Sector Perform,2020-02-03 11:35:08,new
+CAT-00106,2020-02-04 07:59:01,CAT | Citigroup,price_target_usd,,160.0,2020-02-04 07:59:01,new
+CAT-00106,2020-02-04 07:59:01,CAT | Citigroup,rating,,Buy,2020-02-04 07:59:01,corroborate
+CAT-00107,2020-02-13 06:41:00,CAT | Goldman Sachs,price_target_usd,,-,2020-02-13 06:41:00,new
+CAT-00107,2020-02-13 06:41:00,CAT | Goldman Sachs,rating,,Buy,2020-02-13 06:41:00,new
+CAT-00108,2020-03-11 10:05:42,CAT | B of A Securities,price_target_usd,,123.0,2020-03-11 10:05:42,new
+CAT-00108,2020-03-11 10:05:42,CAT | B of A Securities,rating,,Buy,2020-03-11 10:05:42,corroborate
+CAT-00109,2020-03-13 08:17:16,CAT | Citigroup,price_target_usd,,130.0,2020-03-13 08:17:16,new
+CAT-00109,2020-03-13 08:17:16,CAT | Citigroup,rating,,Buy,2020-03-13 08:17:16,corroborate
+CAT-00110,2020-03-13 10:14:30,CAT | Baird,price_target_usd,,157.00,2020-03-13 10:14:30,new
+CAT-00110,2020-03-13 10:14:30,CAT | Baird,rating,,Outperform,2020-03-13 10:14:30,corroborate
+CAT-00111,2020-03-16 05:16:23,CAT | Stifel,price_target_usd,,137.00,2020-03-16 05:16:23,new
+CAT-00111,2020-03-16 05:16:23,CAT | Stifel,rating,,Buy,2020-03-16 05:16:23,new
+CAT-00112,2020-03-17 09:27:41,CAT | Morgan Stanley,price_target_usd,,115.00,2020-03-17 09:27:41,new
+CAT-00112,2020-03-17 09:27:41,CAT | Morgan Stanley,rating,,Equal-Weight,2020-03-17 09:27:41,corroborate
+CAT-00113,2020-03-18 07:53:20,CAT | UBS,price_target_usd,,100.00,2020-03-18 07:53:20,new
+CAT-00113,2020-03-18 07:53:20,CAT | UBS,rating,,Neutral,2020-03-18 07:53:20,new
+CAT-00114,2020-03-27 09:19:29,CAT | Morgan Stanley,price_target_usd,,109.00,2020-03-27 09:19:29,new
+CAT-00114,2020-03-27 09:19:29,CAT | Morgan Stanley,rating,,Equal-Weight,2020-03-27 09:19:29,corroborate
+CAT-00115,2020-03-31 07:47:26,CAT | Citigroup,price_target_usd,,125.00,2020-03-31 07:47:26,new
+CAT-00115,2020-03-31 07:47:26,CAT | Citigroup,rating,,Buy,2020-03-31 07:47:26,corroborate
+CAT-00116,2020-04-09 07:08:43,CAT | Stephens & Co.,price_target_usd,,80.00,2020-04-09 07:08:43,new
+CAT-00116,2020-04-09 07:08:43,CAT | Stephens & Co.,rating,,Underweight,2020-04-09 07:08:43,new
+CAT-00117,2020-04-09 09:01:32,CAT | Credit Suisse,price_target_usd,,148.00,2020-04-09 09:01:32,new
+CAT-00117,2020-04-09 09:01:32,CAT | Credit Suisse,rating,,Outperform,2020-04-09 09:01:32,corroborate
+CAT-00118,2020-04-13 07:31:19,CAT | B of A Securities,rating,,Underperform,2020-04-13 07:31:19,new
+CAT-00119,2020-04-13 09:20:12,CAT | Morgan Stanley,price_target_usd,,107.00,2020-04-13 09:20:12,new
+CAT-00119,2020-04-13 09:20:12,CAT | Morgan Stanley,rating,,Equal-Weight,2020-04-13 09:20:12,corroborate
+CAT-00120,2020-04-27 06:21:50,CAT | Morgan Stanley,price_target_usd,,107.00,2020-04-27 06:21:50,new
+CAT-00120,2020-04-27 06:21:50,CAT | Morgan Stanley,rating,,Underweight,2020-04-27 06:21:50,new
+CAT-00121,2020-04-28 13:33:31,CAT | CFRA,price_target_usd,,101.00,2020-04-28 13:33:31,new
+CAT-00121,2020-04-28 13:33:31,CAT | CFRA,rating,,Sell,2020-04-28 13:33:31,corroborate
+CAT-00122,2020-04-29 08:35:36,CAT | Morgan Stanley,price_target_usd,,95.00,2020-04-29 08:35:36,new
+CAT-00122,2020-04-29 08:35:36,CAT | Morgan Stanley,rating,,Underweight,2020-04-29 08:35:36,corroborate
+CAT-00123,2020-04-29 09:46:39,CAT | UBS,price_target_usd,,112.00,2020-04-29 09:46:39,new
+CAT-00123,2020-04-29 09:46:39,CAT | UBS,rating,,Neutral,2020-04-29 09:46:39,corroborate
+CAT-00124,2020-04-29 12:36:43,CAT | B of A Securities,price_target_usd,,100.00,2020-04-29 12:36:43,new
+CAT-00124,2020-04-29 12:36:43,CAT | B of A Securities,rating,,Underperform,2020-04-29 12:36:43,corroborate
+CAT-00125,2020-06-11 07:19:12,CAT | UBS,price_target_usd,,130.00,2020-06-11 07:19:12,new
+CAT-00125,2020-06-11 07:19:12,CAT | UBS,rating,,Neutral,2020-06-11 07:19:12,corroborate
+CAT-00126,2020-06-12 06:08:36,CAT | BMO Capital,price_target_usd,,130.00,2020-06-12 06:08:36,new
+CAT-00126,2020-06-12 06:08:36,CAT | BMO Capital,rating,,Market Perform,2020-06-12 06:08:36,new
+CAT-00127,2020-06-18 06:53:47,CAT | Citigroup,price_target_usd,,150.00,2020-06-18 06:53:47,new
+CAT-00127,2020-06-18 06:53:47,CAT | Citigroup,rating,,Buy,2020-06-18 06:53:47,corroborate
+CAT-00128,2020-07-01 06:42:48,CAT | Deutsche Bank,price_target_usd,,166.00,2020-07-01 06:42:48,new
+CAT-00128,2020-07-01 06:42:48,CAT | Deutsche Bank,rating,,Buy,2020-07-01 06:42:48,new
+CAT-00129,2020-07-08 08:11:24,CAT | B of A Securities,price_target_usd,,135.00,2020-07-08 08:11:24,new
+CAT-00129,2020-07-08 08:11:24,CAT | B of A Securities,rating,,Neutral,2020-07-08 08:11:24,new
+CAT-00130,2020-07-24 10:51:06,CAT | Stifel,price_target_usd,,150.00,2020-07-24 10:51:06,new
+CAT-00130,2020-07-24 10:51:06,CAT | Stifel,rating,,Buy,2020-07-24 10:51:06,corroborate
+CAT-00131,2020-08-03 09:07:15,CAT | Morgan Stanley,price_target_usd,,101.00,2020-08-03 09:07:15,new
+CAT-00131,2020-08-03 09:07:15,CAT | Morgan Stanley,rating,,Underweight,2020-08-03 09:07:15,corroborate
+CAT-00132,2020-09-09 07:52:53,CAT | Morgan Stanley,price_target_usd,,111.00,2020-09-09 07:52:53,new
+CAT-00132,2020-09-09 07:52:53,CAT | Morgan Stanley,rating,,Underweight,2020-09-09 07:52:53,corroborate
+CAT-00133,2020-09-15 12:01:17,CAT | Wells Fargo,price_target_usd,,160.00,2020-09-15 12:01:17,new
+CAT-00133,2020-09-15 12:01:17,CAT | Wells Fargo,rating,,Equal-Weight,2020-09-15 12:01:17,new
+CAT-00134,2020-10-12 07:56:10,CAT | Morgan Stanley,price_target_usd,,120.0,2020-10-12 07:56:10,new
+CAT-00134,2020-10-12 07:56:10,CAT | Morgan Stanley,rating,,Underweight,2020-10-12 07:56:10,corroborate
+CAT-00135,2020-10-16 06:31:08,CAT | Wells Fargo,price_target_usd,,220.00,2020-10-16 06:31:08,new
+CAT-00135,2020-10-16 06:31:08,CAT | Wells Fargo,rating,,Overweight,2020-10-16 06:31:08,new
+CAT-00136,2020-10-28 07:36:16,CAT | Morgan Stanley,price_target_usd,,122.00,2020-10-28 07:36:16,new
+CAT-00136,2020-10-28 07:36:16,CAT | Morgan Stanley,rating,,Underweight,2020-10-28 07:36:16,corroborate
+CAT-00137,2020-10-28 10:42:13,CAT | Stifel,price_target_usd,,175.00,2020-10-28 10:42:13,new
+CAT-00137,2020-10-28 10:42:13,CAT | Stifel,rating,,Buy,2020-10-28 10:42:13,corroborate
+CAT-00138,2020-12-15 11:27:44,CAT | Morgan Stanley,price_target_usd,,132.00,2020-12-15 11:27:44,new
+CAT-00138,2020-12-15 11:27:44,CAT | Morgan Stanley,rating,,Underweight,2020-12-15 11:27:44,corroborate
+CAT-00139,2021-01-20 12:51:03,CAT | Vertical Research,price_target_usd,,230.00,2021-01-20 12:51:03,new
+CAT-00139,2021-01-20 12:51:03,CAT | Vertical Research,rating,,Buy,2021-01-20 12:51:03,new
+CAT-00140,2021-01-21 08:17:31,CAT | Goldman Sachs,price_target_usd,,216.00,2021-01-21 08:17:31,new
+CAT-00140,2021-01-21 08:17:31,CAT | Goldman Sachs,rating,,Buy,2021-01-21 08:17:31,corroborate
+CAT-00141,2021-01-22 09:26:32,CAT | Morgan Stanley,price_target_usd,,154.00,2021-01-22 09:26:32,new
+CAT-00141,2021-01-22 09:26:32,CAT | Morgan Stanley,rating,,Underweight,2021-01-22 09:26:32,corroborate
+CAT-00142,2021-02-01 08:17:29,CAT | Morgan Stanley,price_target_usd,,158.00,2021-02-01 08:17:29,new
+CAT-00142,2021-02-01 08:17:29,CAT | Morgan Stanley,rating,,Underweight,2021-02-01 08:17:29,corroborate
+CAT-00143,2021-02-01 10:42:54,CAT | Deutsche Bank,price_target_usd,,233.00,2021-02-01 10:42:54,new
+CAT-00143,2021-02-01 10:42:54,CAT | Deutsche Bank,rating,,Buy,2021-02-01 10:42:54,corroborate
+CAT-00144,2021-02-01 11:30:31,CAT | Credit Suisse,price_target_usd,,235.00,2021-02-01 11:30:31,new
+CAT-00144,2021-02-01 11:30:31,CAT | Credit Suisse,rating,,Outperform,2021-02-01 11:30:31,corroborate
+CAT-00145,2021-02-01 12:03:47,CAT | BMO Capital,price_target_usd,,190.00,2021-02-01 12:03:47,new
+CAT-00145,2021-02-01 12:03:47,CAT | BMO Capital,rating,,Market Perform,2021-02-01 12:03:47,corroborate
+CAT-00146,2021-02-25 11:25:44,CAT | JP Morgan,price_target_usd,,237.00,2021-02-25 11:25:44,new
+CAT-00146,2021-02-25 11:25:44,CAT | JP Morgan,rating,,Overweight,2021-02-25 11:25:44,corroborate
+CAT-00147,2021-03-03 08:19:54,CAT | Goldman Sachs,price_target_usd,,240.00,2021-03-03 08:19:54,new
+CAT-00147,2021-03-03 08:19:54,CAT | Goldman Sachs,rating,,Buy,2021-03-03 08:19:54,corroborate
+CAT-00148,2021-04-12 08:37:52,CAT | Morgan Stanley,price_target_usd,,168.00,2021-04-12 08:37:52,new
+CAT-00148,2021-04-12 08:37:52,CAT | Morgan Stanley,rating,,Underweight,2021-04-12 08:37:52,corroborate
+CAT-00149,2021-04-13 07:13:27,CAT | Wolfe Research,price_target_usd,,265.00,2021-04-13 07:13:27,new
+CAT-00149,2021-04-13 07:13:27,CAT | Wolfe Research,rating,,Outperform,2021-04-13 07:13:27,new
+CAT-00150,2021-04-13 09:22:39,CAT | Deutsche Bank,price_target_usd,,259.00,2021-04-13 09:22:39,new
+CAT-00150,2021-04-13 09:22:39,CAT | Deutsche Bank,rating,,Buy,2021-04-13 09:22:39,corroborate
+CAT-00151,2021-04-30 07:56:19,CAT | Morgan Stanley,price_target_usd,,181.00,2021-04-30 07:56:19,new
+CAT-00151,2021-04-30 07:56:19,CAT | Morgan Stanley,rating,,Underweight,2021-04-30 07:56:19,corroborate
+CAT-00152,2021-04-30 09:45:46,CAT | BMO Capital,price_target_usd,,230.00,2021-04-30 09:45:46,new
+CAT-00152,2021-04-30 09:45:46,CAT | BMO Capital,rating,,Market Perform,2021-04-30 09:45:46,corroborate
+CAT-00153,2021-05-03 08:40:22,CAT | Stifel,price_target_usd,,245.00,2021-05-03 08:40:22,new
+CAT-00153,2021-05-03 08:40:22,CAT | Stifel,rating,,Buy,2021-05-03 08:40:22,corroborate
+CAT-00154,2021-05-12 08:58:53,CAT | UBS,price_target_usd,,252.00,2021-05-12 08:58:53,new
+CAT-00154,2021-05-12 08:58:53,CAT | UBS,rating,,Neutral,2021-05-12 08:58:53,corroborate
+CAT-00155,2021-05-27 08:21:56,CAT | Goldman Sachs,price_target_usd,,264.00,2021-05-27 08:21:56,new
+CAT-00155,2021-05-27 08:21:56,CAT | Goldman Sachs,rating,,Buy,2021-05-27 08:21:56,corroborate
+CAT-00156,2021-06-04 09:28:20,CAT | Deutsche Bank,price_target_usd,,273.00,2021-06-04 09:28:20,new
+CAT-00156,2021-06-04 09:28:20,CAT | Deutsche Bank,rating,,Buy,2021-06-04 09:28:20,corroborate
+CAT-00157,2021-07-14 08:19:55,CAT | OTR Global,price_target_usd,,,2021-07-14 08:19:55,inferred
+CAT-00157,2021-07-14 08:19:55,CAT | OTR Global,rating,,Mixed,2021-07-14 08:19:55,inferred
+CAT-00158,2021-07-14 09:10:07,CAT | Deutsche Bank,price_target_usd,,258.00,2021-07-14 09:10:07,new
+CAT-00158,2021-07-14 09:10:07,CAT | Deutsche Bank,rating,,Buy,2021-07-14 09:10:07,corroborate
+CAT-00159,2021-08-02 08:11:59,CAT | Credit Suisse,price_target_usd,,256.00,2021-08-02 08:11:59,new
+CAT-00159,2021-08-02 08:11:59,CAT | Credit Suisse,rating,,Outperform,2021-08-02 08:11:59,corroborate
+CAT-00160,2021-08-02 08:48:41,CAT | Morgan Stanley,price_target_usd,,172.0,2021-08-02 08:48:41,new
+CAT-00160,2021-08-02 08:48:41,CAT | Morgan Stanley,rating,,Underweight,2021-08-02 08:48:41,corroborate
+CAT-00161,2021-08-02 09:51:45,CAT | Deutsche Bank,price_target_usd,,241.0,2021-08-02 09:51:45,new
+CAT-00161,2021-08-02 09:51:45,CAT | Deutsche Bank,rating,,Buy,2021-08-02 09:51:45,corroborate
+CAT-00162,2021-08-06 12:02:16,CAT | Tigress Financial,price_target_usd,,270.00,2021-08-06 12:02:16,new
+CAT-00162,2021-08-06 12:02:16,CAT | Tigress Financial,rating,,Buy,2021-08-06 12:02:16,corroborate
+CAT-00163,2021-10-13 10:02:12,CAT | Morgan Stanley,price_target_usd,,165.00,2021-10-13 10:02:12,new
+CAT-00163,2021-10-13 10:02:12,CAT | Morgan Stanley,rating,,Underweight,2021-10-13 10:02:12,corroborate
+CAT-00164,2021-10-14 07:12:58,CAT | Cowen & Co.,price_target_usd,,241.00,2021-10-14 07:12:58,new
+CAT-00164,2021-10-14 07:12:58,CAT | Cowen & Co.,rating,,Outperform,2021-10-14 07:12:58,new
+CAT-00165,2021-10-29 05:38:17,CAT | UBS,price_target_usd,,235.00,2021-10-29 05:38:17,new
+CAT-00165,2021-10-29 05:38:17,CAT | UBS,rating,,Buy,2021-10-29 05:38:17,new
+CAT-00166,2021-10-29 07:43:37,CAT | Morgan Stanley,price_target_usd,,166.00,2021-10-29 07:43:37,new
+CAT-00166,2021-10-29 07:43:37,CAT | Morgan Stanley,rating,,Underweight,2021-10-29 07:43:37,corroborate
+CAT-00167,2021-10-29 08:47:05,CAT | Credit Suisse,price_target_usd,,240.00,2021-10-29 08:47:05,new
+CAT-00167,2021-10-29 08:47:05,CAT | Credit Suisse,rating,,Outperform,2021-10-29 08:47:05,corroborate
+CAT-00168,2021-12-09 08:27:20,CAT | Morgan Stanley,price_target_usd,,164.00,2021-12-09 08:27:20,new
+CAT-00168,2021-12-09 08:27:20,CAT | Morgan Stanley,rating,,Underweight,2021-12-09 08:27:20,corroborate
+CAT-00169,2021-12-22 06:06:07,CAT | Bernstein,price_target_usd,,240.00,2021-12-22 06:06:07,new
+CAT-00169,2021-12-22 06:06:07,CAT | Bernstein,rating,,Outperform,2021-12-22 06:06:07,new
+CAT-00170,2022-01-13 07:35:33,CAT | Barclays,price_target_usd,,225.00,2022-01-13 07:35:33,new
+CAT-00170,2022-01-13 07:35:33,CAT | Barclays,rating,,Equal-Weight,2022-01-13 07:35:33,new
+CAT-00171,2022-01-31 10:35:03,CAT | Credit Suisse,price_target_usd,,255.00,2022-01-31 10:35:03,new
+CAT-00171,2022-01-31 10:35:03,CAT | Credit Suisse,rating,,Outperform,2022-01-31 10:35:03,corroborate
+CAT-00172,2022-02-03 09:17:35,CAT | Tigress Financial,price_target_usd,,278.00,2022-02-03 09:17:35,new
+CAT-00172,2022-02-03 09:17:35,CAT | Tigress Financial,rating,,Buy,2022-02-03 09:17:35,corroborate
+CAT-00173,2022-03-08 07:47:31,CAT | Jefferies,price_target_usd,,260.00,2022-03-08 07:47:31,new
+CAT-00173,2022-03-08 07:47:31,CAT | Jefferies,rating,,Buy,2022-03-08 07:47:31,new
+CAT-00174,2022-03-11 06:15:45,CAT | Wells Fargo,price_target_usd,,231.00,2022-03-11 06:15:45,new
+CAT-00174,2022-03-11 06:15:45,CAT | Wells Fargo,rating,,Equal-Weight,2022-03-11 06:15:45,new
+CAT-00175,2022-03-28 08:12:58,CAT | JP Morgan,price_target_usd,,257.00,2022-03-28 08:12:58,new
+CAT-00175,2022-03-28 08:12:58,CAT | JP Morgan,rating,,Overweight,2022-03-28 08:12:58,new
+CAT-00176,2022-04-29 08:23:45,CAT | Wells Fargo,price_target_usd,,230.0,2022-04-29 08:23:45,new
+CAT-00176,2022-04-29 08:23:45,CAT | Wells Fargo,rating,,Equal-Weight,2022-04-29 08:23:45,corroborate
+CAT-00177,2022-04-29 08:48:59,CAT | Credit Suisse,price_target_usd,,262.00,2022-04-29 08:48:59,new
+CAT-00177,2022-04-29 08:48:59,CAT | Credit Suisse,rating,,Outperform,2022-04-29 08:48:59,corroborate
+CAT-00178,2022-06-23 08:55:47,CAT | Morgan Stanley,price_target_usd,,161.00,2022-06-23 08:55:47,new
+CAT-00178,2022-06-23 08:55:47,CAT | Morgan Stanley,rating,,Underweight,2022-06-23 08:55:47,new
+CAT-00179,2022-07-07 10:02:46,CAT | Cowen & Co.,price_target_usd,,225.00,2022-07-07 10:02:46,new
+CAT-00179,2022-07-07 10:02:46,CAT | Cowen & Co.,rating,,Outperform,2022-07-07 10:02:46,corroborate
+CAT-00180,2022-07-12 10:50:44,CAT | JP Morgan,price_target_usd,,205.00,2022-07-12 10:50:44,new
+CAT-00180,2022-07-12 10:50:44,CAT | JP Morgan,rating,,Overweight,2022-07-12 10:50:44,new
+CAT-00181,2022-07-13 10:49:01,CAT | Deutsche Bank,price_target_usd,,227.00,2022-07-13 10:49:01,new
+CAT-00181,2022-07-13 10:49:01,CAT | Deutsche Bank,rating,,Buy,2022-07-13 10:49:01,corroborate
+CAT-00182,2022-07-18 08:45:56,CAT | Morgan Stanley,price_target_usd,,142.00,2022-07-18 08:45:56,new
+CAT-00182,2022-07-18 08:45:56,CAT | Morgan Stanley,rating,,Underweight,2022-07-18 08:45:56,new
+CAT-00183,2022-08-03 07:05:48,CAT | Bernstein,price_target_usd,,195.00,2022-08-03 07:05:48,new
+CAT-00183,2022-08-03 07:05:48,CAT | Bernstein,rating,,Market Perform,2022-08-03 07:05:48,new
+CAT-00184,2022-08-03 08:07:36,CAT | Wells Fargo,price_target_usd,,205.00,2022-08-03 08:07:36,new
+CAT-00184,2022-08-03 08:07:36,CAT | Wells Fargo,rating,,Equal-Weight,2022-08-03 08:07:36,corroborate
+CAT-00185,2022-08-03 08:26:54,CAT | Credit Suisse,price_target_usd,,236.00,2022-08-03 08:26:54,new
+CAT-00185,2022-08-03 08:26:54,CAT | Credit Suisse,rating,,Outperform,2022-08-03 08:26:54,corroborate
+CAT-00186,2022-08-03 09:53:17,CAT | UBS,price_target_usd,,225.00,2022-08-03 09:53:17,new
+CAT-00186,2022-08-03 09:53:17,CAT | UBS,rating,,Buy,2022-08-03 09:53:17,corroborate
+CAT-00187,2022-09-28 07:11:11,CAT | Citigroup,price_target_usd,,180.00,2022-09-28 07:11:11,new
+CAT-00187,2022-09-28 07:11:11,CAT | Citigroup,rating,,Neutral,2022-09-28 07:11:11,new
+CAT-00188,2022-09-30 09:22:18,CAT | Tigress Financial,price_target_usd,,266.00,2022-09-30 09:22:18,new
+CAT-00188,2022-09-30 09:22:18,CAT | Tigress Financial,rating,,Buy,2022-09-30 09:22:18,corroborate
+CAT-00189,2022-10-06 08:17:10,CAT | JP Morgan,price_target_usd,,220.00,2022-10-06 08:17:10,new
+CAT-00189,2022-10-06 08:17:10,CAT | JP Morgan,rating,,Overweight,2022-10-06 08:17:10,new
+CAT-00190,2022-10-13 07:50:30,CAT | Deutsche Bank,price_target_usd,,196.00,2022-10-13 07:50:30,new
+CAT-00190,2022-10-13 07:50:30,CAT | Deutsche Bank,rating,,Buy,2022-10-13 07:50:30,corroborate
+CAT-00191,2022-10-13 08:07:56,CAT | Morgan Stanley,price_target_usd,,143.00,2022-10-13 08:07:56,new
+CAT-00191,2022-10-13 08:07:56,CAT | Morgan Stanley,rating,,Underweight,2022-10-13 08:07:56,new
+CAT-00192,2022-10-28 05:33:24,CAT | Deutsche Bank,price_target_usd,,221.00,2022-10-28 05:33:24,new
+CAT-00192,2022-10-28 05:33:24,CAT | Deutsche Bank,rating,,Hold,2022-10-28 05:33:24,new
+CAT-00193,2022-10-28 07:56:21,CAT | Credit Suisse,price_target_usd,,255.00,2022-10-28 07:56:21,new
+CAT-00193,2022-10-28 07:56:21,CAT | Credit Suisse,rating,,Outperform,2022-10-28 07:56:21,corroborate
+CAT-00194,2022-10-28 09:07:30,CAT | Wells Fargo,price_target_usd,,218.00,2022-10-28 09:07:30,new
+CAT-00194,2022-10-28 09:07:30,CAT | Wells Fargo,rating,,Equal-Weight,2022-10-28 09:07:30,corroborate
+CAT-00195,2022-10-28 10:48:00,CAT | Morgan Stanley,price_target_usd,,174.00,2022-10-28 10:48:00,new
+CAT-00195,2022-10-28 10:48:00,CAT | Morgan Stanley,rating,,Underweight,2022-10-28 10:48:00,new
+CAT-00196,2022-10-31 06:31:30,CAT | UBS,price_target_usd,,230.00,2022-10-31 06:31:30,new
+CAT-00196,2022-10-31 06:31:30,CAT | UBS,rating,,Neutral,2022-10-31 06:31:30,new
+CAT-00197,2022-11-09 08:07:50,CAT | Goldman Sachs,price_target_usd,,273.00,2022-11-09 08:07:50,new
+CAT-00197,2022-11-09 08:07:50,CAT | Goldman Sachs,rating,,Buy,2022-11-09 08:07:50,corroborate
+CAT-00198,2022-12-14 09:11:03,CAT | Morgan Stanley,price_target_usd,,190.00,2022-12-14 09:11:03,new
+CAT-00198,2022-12-14 09:11:03,CAT | Morgan Stanley,rating,,Underweight,2022-12-14 09:11:03,new
+CAT-00199,2022-12-19 09:55:15,CAT | Stifel,price_target_usd,,271.00,2022-12-19 09:55:15,new
+CAT-00199,2022-12-19 09:55:15,CAT | Stifel,rating,,Buy,2022-12-19 09:55:15,corroborate
+CAT-00200,2023-01-10 08:56:03,CAT | Wells Fargo,price_target_usd,,228.00,2023-01-10 08:56:03,new
+CAT-00200,2023-01-10 08:56:03,CAT | Wells Fargo,rating,,Equal-Weight,2023-01-10 08:56:03,corroborate
+CAT-00201,2023-01-13 08:23:09,CAT | B of A Securities,price_target_usd,,295.00,2023-01-13 08:23:09,new
+CAT-00201,2023-01-13 08:23:09,CAT | B of A Securities,rating,,Buy,2023-01-13 08:23:09,new
+CAT-00202,2023-02-01 07:48:16,CAT | Barclays,price_target_usd,,225.00,2023-02-01 07:48:16,new
+CAT-00202,2023-02-01 07:48:16,CAT | Barclays,rating,,Equal-Weight,2023-02-01 07:48:16,corroborate
+CAT-00203,2023-02-01 08:27:32,CAT | Credit Suisse,price_target_usd,,306.00,2023-02-01 08:27:32,new
+CAT-00203,2023-02-01 08:27:32,CAT | Credit Suisse,rating,,Outperform,2023-02-01 08:27:32,corroborate
+CAT-00204,2023-02-01 09:28:10,CAT | Wells Fargo,price_target_usd,,240.00,2023-02-01 09:28:10,new
+CAT-00204,2023-02-01 09:28:10,CAT | Wells Fargo,rating,,Equal-Weight,2023-02-01 09:28:10,corroborate
+CAT-00205,2023-02-06 08:07:15,CAT | Citigroup,price_target_usd,,260.00,2023-02-06 08:07:15,new
+CAT-00205,2023-02-06 08:07:15,CAT | Citigroup,rating,,Neutral,2023-02-06 08:07:15,corroborate
+CAT-00206,2023-02-13 04:39:43,CAT | Baird,price_target_usd,,230.00,2023-02-13 04:39:43,new
+CAT-00206,2023-02-13 04:39:43,CAT | Baird,rating,,Neutral,2023-02-13 04:39:43,new
+CAT-00207,2023-03-10 06:36:59,CAT | UBS,price_target_usd,,225.00,2023-03-10 06:36:59,new
+CAT-00207,2023-03-10 06:36:59,CAT | UBS,rating,,Sell,2023-03-10 06:36:59,new
+CAT-00208,2023-03-27 05:29:34,CAT | Baird,price_target_usd,,185.00,2023-03-27 05:29:34,new
+CAT-00208,2023-03-27 05:29:34,CAT | Baird,rating,,Underperform,2023-03-27 05:29:34,new
+CAT-00209,2023-04-12 10:06:49,CAT | Deutsche Bank,price_target_usd,,225.00,2023-04-12 10:06:49,new
+CAT-00209,2023-04-12 10:06:49,CAT | Deutsche Bank,rating,,Hold,2023-04-12 10:06:49,new
+CAT-00210,2023-04-28 08:45:46,CAT | Credit Suisse,price_target_usd,,279.0,2023-04-28 08:45:46,new
+CAT-00210,2023-04-28 08:45:46,CAT | Credit Suisse,rating,,Outperform,2023-04-28 08:45:46,corroborate
+CAT-00211,2023-04-28 09:10:04,CAT | Morgan Stanley,price_target_usd,,191.00,2023-04-28 09:10:04,new
+CAT-00211,2023-04-28 09:10:04,CAT | Morgan Stanley,rating,,Underweight,2023-04-28 09:10:04,corroborate
+CAT-00212,2023-05-01 07:14:25,CAT | Stifel,price_target_usd,,275.00,2023-05-01 07:14:25,new
+CAT-00212,2023-05-01 07:14:25,CAT | Stifel,rating,,Buy,2023-05-01 07:14:25,corroborate
+CAT-00213,2023-05-08 05:44:08,CAT | Baird,price_target_usd,,180.0,2023-05-08 05:44:08,new
+CAT-00213,2023-05-08 05:44:08,CAT | Baird,rating,,Underperform,2023-05-08 05:44:08,corroborate
+CAT-00214,2023-05-09 09:20:54,CAT | DA Davidson,price_target_usd,,263.00,2023-05-09 09:20:54,new
+CAT-00214,2023-05-09 09:20:54,CAT | DA Davidson,rating,,Outperform,2023-05-09 09:20:54,new
+CAT-00215,2023-06-01 05:04:49,CAT | Tigress Financial,price_target_usd,,282.00,2023-06-01 05:04:49,new
+CAT-00215,2023-06-01 05:04:49,CAT | Tigress Financial,rating,,Buy,2023-06-01 05:04:49,corroborate
+CAT-00216,2023-06-22 04:36:03,CAT | DA Davidson,price_target_usd,,263.00,2023-06-22 04:36:03,new
+CAT-00216,2023-06-22 04:36:03,CAT | DA Davidson,rating,,Neutral,2023-06-22 04:36:03,new
+CAT-00217,2023-07-18 12:33:49,CAT | Citigroup,price_target_usd,,270.00,2023-07-18 12:33:49,new
+CAT-00217,2023-07-18 12:33:49,CAT | Citigroup,rating,,Neutral,2023-07-18 12:33:49,new
+CAT-00218,2023-08-02 06:06:10,CAT | Baird,price_target_usd,,234.00,2023-08-02 06:06:10,new
+CAT-00218,2023-08-02 06:06:10,CAT | Baird,rating,,Underperform,2023-08-02 06:06:10,corroborate
+CAT-00219,2023-08-02 06:24:22,CAT | Barclays,price_target_usd,,250.00,2023-08-02 06:24:22,new
+CAT-00219,2023-08-02 06:24:22,CAT | Barclays,rating,,Equal-Weight,2023-08-02 06:24:22,corroborate
+CAT-00220,2023-08-02 08:09:38,CAT | Goldman Sachs,price_target_usd,,315.00,2023-08-02 08:09:38,new
+CAT-00220,2023-08-02 08:09:38,CAT | Goldman Sachs,rating,,Buy,2023-08-02 08:09:38,corroborate
+CAT-00221,2023-08-02 08:26:09,CAT | Credit Suisse,price_target_usd,,334.00,2023-08-02 08:26:09,new
+CAT-00221,2023-08-02 08:26:09,CAT | Credit Suisse,rating,,Outperform,2023-08-02 08:26:09,corroborate
+CAT-00222,2023-08-02 08:34:53,CAT | B of A Securities,price_target_usd,,323.00,2023-08-02 08:34:53,new
+CAT-00222,2023-08-02 08:34:53,CAT | B of A Securities,rating,,Buy,2023-08-02 08:34:53,corroborate
+CAT-00223,2023-08-02 09:05:31,CAT | Wells Fargo,price_target_usd,,285.00,2023-08-02 09:05:31,new
+CAT-00223,2023-08-02 09:05:31,CAT | Wells Fargo,rating,,Equal-Weight,2023-08-02 09:05:31,corroborate
+CAT-00224,2023-08-02 10:19:30,CAT | TD Cowen,price_target_usd,,320.00,2023-08-02 10:19:30,new
+CAT-00224,2023-08-02 10:19:30,CAT | TD Cowen,rating,,Outperform,2023-08-02 10:19:30,corroborate
+CAT-00225,2023-08-02 13:05:13,CAT | JP Morgan,price_target_usd,,315.00,2023-08-02 13:05:13,new
+CAT-00225,2023-08-02 13:05:13,CAT | JP Morgan,rating,,Overweight,2023-08-02 13:05:13,new
+CAT-00226,2023-08-02 15:37:59,CAT | Stifel,price_target_usd,,300.00,2023-08-02 15:37:59,new
+CAT-00226,2023-08-02 15:37:59,CAT | Stifel,rating,,Buy,2023-08-02 15:37:59,corroborate
+CAT-00227,2023-10-16 10:15:30,CAT | JP Morgan,price_target_usd,,320.00,2023-10-16 10:15:30,new
+CAT-00227,2023-10-16 10:15:30,CAT | JP Morgan,rating,,Overweight,2023-10-16 10:15:30,new
+CAT-00228,2023-11-01 09:21:46,CAT | Goldman Sachs,price_target_usd,,274.0,2023-11-01 09:21:46,new
+CAT-00228,2023-11-01 09:21:46,CAT | Goldman Sachs,rating,,Buy,2023-11-01 09:21:46,corroborate
+CAT-00229,2023-11-08 10:58:33,CAT | Tigress Financial,price_target_usd,,295.00,2023-11-08 10:58:33,new
+CAT-00229,2023-11-08 10:58:33,CAT | Tigress Financial,rating,,Buy,2023-11-08 10:58:33,corroborate
+CAT-00230,2023-11-20 05:12:13,CAT | HSBC,price_target_usd,,250.00,2023-11-20 05:12:13,new
+CAT-00230,2023-11-20 05:12:13,CAT | HSBC,rating,,Hold,2023-11-20 05:12:13,new
+CAT-00231,2023-12-19 10:31:07,CAT | Stifel,price_target_usd,,293.00,2023-12-19 10:31:07,new
+CAT-00231,2023-12-19 10:31:07,CAT | Stifel,rating,,Buy,2023-12-19 10:31:07,corroborate
+CAT-00232,2023-12-21 14:15:09,CAT | Bernstein,price_target_usd,,245.0,2023-12-21 14:15:09,new
+CAT-00232,2023-12-21 14:15:09,CAT | Bernstein,rating,,Market Perform,2023-12-21 14:15:09,corroborate
+CAT-00233,2024-01-08 12:26:09,CAT | Morgan Stanley,price_target_usd,,270.00,2024-01-08 12:26:09,new
+CAT-00233,2024-01-08 12:26:09,CAT | Morgan Stanley,rating,,Equal-Weight,2024-01-08 12:26:09,new
+CAT-00234,2024-02-06 09:27:31,CAT | Goldman Sachs,price_target_usd,,357.00,2024-02-06 09:27:31,new
+CAT-00234,2024-02-06 09:27:31,CAT | Goldman Sachs,rating,,Buy,2024-02-06 09:27:31,corroborate
+CAT-00235,2024-02-06 11:18:22,CAT | Wells Fargo,price_target_usd,,325.00,2024-02-06 11:18:22,new
+CAT-00235,2024-02-06 11:18:22,CAT | Wells Fargo,rating,,Equal-Weight,2024-02-06 11:18:22,corroborate
+CAT-00236,2024-02-06 13:39:41,CAT | Baird,price_target_usd,,257.00,2024-02-06 13:39:41,new
+CAT-00236,2024-02-06 13:39:41,CAT | Baird,rating,,Underperform,2024-02-06 13:39:41,corroborate
+CAT-00237,2024-02-06 13:53:52,CAT | JP Morgan,price_target_usd,,385.00,2024-02-06 13:53:52,new
+CAT-00237,2024-02-06 13:53:52,CAT | JP Morgan,rating,,Overweight,2024-02-06 13:53:52,new
+CAT-00238,2024-02-12 14:38:19,CAT | Citigroup,price_target_usd,,340.00,2024-02-12 14:38:19,new
+CAT-00238,2024-02-12 14:38:19,CAT | Citigroup,rating,,Neutral,2024-02-12 14:38:19,corroborate
+CAT-00239,2024-02-20 05:37:36,CAT | Evercore ISI Group,price_target_usd,,338.00,2024-02-20 05:37:36,new
+CAT-00239,2024-02-20 05:37:36,CAT | Evercore ISI Group,rating,,In-Line,2024-02-20 05:37:36,new
+CAT-00240,2024-03-14 05:34:04,CAT | Truist Securities,price_target_usd,,390.00,2024-03-14 05:34:04,new
+CAT-00240,2024-03-14 05:34:04,CAT | Truist Securities,rating,,Buy,2024-03-14 05:34:04,new
+CAT-00241,2024-04-16 09:26:33,CAT | Goldman Sachs,price_target_usd,,408.00,2024-04-16 09:26:33,new
+CAT-00241,2024-04-16 09:26:33,CAT | Goldman Sachs,rating,,Buy,2024-04-16 09:26:33,corroborate
+CAT-00242,2024-04-16 09:31:08,CAT | JP Morgan,price_target_usd,,435.00,2024-04-16 09:31:08,new
+CAT-00242,2024-04-16 09:31:08,CAT | JP Morgan,rating,,Overweight,2024-04-16 09:31:08,new
+CAT-00243,2024-04-18 08:53:42,CAT | Oppenheimer,price_target_usd,,,2024-04-18 08:53:42,new
+CAT-00243,2024-04-18 08:53:42,CAT | Oppenheimer,rating,,Perform,2024-04-18 08:53:42,new
+CAT-00244,2024-04-26 06:06:54,CAT | Stifel,price_target_usd,,350.00,2024-04-26 06:06:54,new
+CAT-00244,2024-04-26 06:06:54,CAT | Stifel,rating,,Hold,2024-04-26 06:06:54,new
+CAT-00245,2024-04-26 13:49:49,CAT | TD Cowen,price_target_usd,,340.00,2024-04-26 13:49:49,new
+CAT-00245,2024-04-26 13:49:49,CAT | TD Cowen,rating,,Buy,2024-04-26 13:49:49,corroborate
+CAT-00246,2024-04-30 11:50:04,CAT | HSBC,price_target_usd,,360.00,2024-04-30 11:50:04,new
+CAT-00246,2024-04-30 11:50:04,CAT | HSBC,rating,,Hold,2024-04-30 11:50:04,corroborate
+CAT-00247,2024-06-26 10:39:48,CAT | Citigroup,price_target_usd,,380.00,2024-06-26 10:39:48,new
+CAT-00247,2024-06-26 10:39:48,CAT | Citigroup,rating,,Buy,2024-06-26 10:39:48,new
+CAT-00248,2024-06-28 08:20:25,CAT | Raymond James,price_target_usd,,,2024-06-28 08:20:25,new
+CAT-00248,2024-06-28 08:20:25,CAT | Raymond James,rating,,Market Perform,2024-06-28 08:20:25,new
+CAT-00249,2024-08-07 09:01:03,CAT | Truist Securities,price_target_usd,,399.00,2024-08-07 09:01:03,new
+CAT-00249,2024-08-07 09:01:03,CAT | Truist Securities,rating,,Buy,2024-08-07 09:01:03,corroborate
+CAT-00250,2024-08-07 10:29:07,CAT | UBS,price_target_usd,,285.00,2024-08-07 10:29:07,new
+CAT-00250,2024-08-07 10:29:07,CAT | UBS,rating,,Sell,2024-08-07 10:29:07,corroborate
+CAT-00251,2024-08-07 12:40:53,CAT | Barclays,price_target_usd,,335.0,2024-08-07 12:40:53,new
+CAT-00251,2024-08-07 12:40:53,CAT | Barclays,rating,,Equal-Weight,2024-08-07 12:40:53,corroborate
+CAT-00252,2024-08-07 13:04:58,CAT | B of A Securities,price_target_usd,,376.0,2024-08-07 13:04:58,new
+CAT-00252,2024-08-07 13:04:58,CAT | B of A Securities,rating,,Buy,2024-08-07 13:04:58,corroborate
+CAT-00253,2024-08-19 09:59:05,CAT | Evercore ISI Group,price_target_usd,,321.0,2024-08-19 09:59:05,new
+CAT-00253,2024-08-19 09:59:05,CAT | Evercore ISI Group,rating,,In-Line,2024-08-19 09:59:05,corroborate
+CAT-00254,2024-09-30 11:49:38,CAT | B of A Securities,price_target_usd,,434.00,2024-09-30 11:49:38,new
+CAT-00254,2024-09-30 11:49:38,CAT | B of A Securities,rating,,Buy,2024-09-30 11:49:38,corroborate
+CAT-00255,2024-10-09 11:36:38,CAT | Truist Securities,price_target_usd,,456.00,2024-10-09 11:36:38,new
+CAT-00255,2024-10-09 11:36:38,CAT | Truist Securities,rating,,Buy,2024-10-09 11:36:38,corroborate
+CAT-00256,2024-10-09 17:25:40,CAT | Citigroup,price_target_usd,,445.00,2024-10-09 17:25:40,new
+CAT-00256,2024-10-09 17:25:40,CAT | Citigroup,rating,,Buy,2024-10-09 17:25:40,corroborate
+CAT-00257,2024-10-14 07:11:56,CAT | Morgan Stanley,price_target_usd,,332.0,2024-10-14 07:11:56,new
+CAT-00257,2024-10-14 07:11:56,CAT | Morgan Stanley,rating,,Underweight,2024-10-14 07:11:56,new
+CAT-00258,2024-10-14 10:38:16,CAT | JP Morgan,price_target_usd,,500.00,2024-10-14 10:38:16,new
+CAT-00258,2024-10-14 10:38:16,CAT | JP Morgan,rating,,Overweight,2024-10-14 10:38:16,new
+CAT-00259,2026-04-20 08:00:23,CAT | Truist Securities,price_target_usd,,920.00,2026-04-20 08:00:23,new
+CAT-00259,2026-04-20 08:00:23,CAT | Truist Securities,rating,,Buy,2026-04-20 08:00:23,corroborate
+CAT-00260,2026-04-21 08:36:40,CAT | Wells Fargo,price_target_usd,,960.00,2026-04-21 08:36:40,new
+CAT-00260,2026-04-21 08:36:40,CAT | Wells Fargo,rating,,Overweight,2026-04-21 08:36:40,new
+CAT-00261,2026-05-01 06:25:25,CAT | Morgan Stanley,price_target_usd,,915.00,2026-05-01 06:25:25,new
+CAT-00261,2026-05-01 06:25:25,CAT | Morgan Stanley,rating,,Equal-Weight,2026-05-01 06:25:25,new
+CAT-00262,2026-05-01 10:26:46,CAT | Wells Fargo,price_target_usd,,1050.0,2026-05-01 10:26:46,new
+CAT-00262,2026-05-01 10:26:46,CAT | Wells Fargo,rating,,Overweight,2026-05-01 10:26:46,corroborate
+CAT-00263,2026-05-01 11:06:51,CAT | Barclays,price_target_usd,,800.00,2026-05-01 11:06:51,new
+CAT-00263,2026-05-01 11:06:51,CAT | Barclays,rating,,Equal-Weight,2026-05-01 11:06:51,corroborate
+CAT-00264,2026-05-01 11:52:08,CAT | JP Morgan,price_target_usd,,1125.00,2026-05-01 11:52:08,new
+CAT-00264,2026-05-01 11:52:08,CAT | JP Morgan,rating,,Overweight,2026-05-01 11:52:08,corroborate
+CAT-00265,2026-05-04 11:36:56,CAT | DA Davidson,price_target_usd,,845.00,2026-05-04 11:36:56,new
+CAT-00265,2026-05-04 11:36:56,CAT | DA Davidson,rating,,Neutral,2026-05-04 11:36:56,corroborate
+CAT-00266,2026-05-04 14:05:45,CAT | Citigroup,price_target_usd,,1020.00,2026-05-04 14:05:45,new
+CAT-00266,2026-05-04 14:05:45,CAT | Citigroup,rating,,Buy,2026-05-04 14:05:45,corroborate
+CAT-00267,2026-05-05 13:10:33,CAT | Argus Research,price_target_usd,,990.00,2026-05-05 13:10:33,new
+CAT-00267,2026-05-05 13:10:33,CAT | Argus Research,rating,,Buy,2026-05-05 13:10:33,corroborate
+CAT-00268,2026-06-02 16:24:11,CAT | UBS,price_target_usd,,900.00,2026-06-02 16:24:11,new
+CAT-00268,2026-06-02 16:24:11,CAT | UBS,rating,,Neutral,2026-06-02 16:24:11,corroborate
+CAT-00269,2026-06-23 09:53:59,CAT | Wells Fargo,price_target_usd,,1155.00,2026-06-23 09:53:59,new
+CAT-00269,2026-06-23 09:53:59,CAT | Wells Fargo,rating,,Overweight,2026-06-23 09:53:59,corroborate
+CAT-00270,2026-07-02 08:07:14,CAT | Truist Securities,price_target_usd,,1218.00,2026-07-02 08:07:14,new
+CAT-00270,2026-07-02 08:07:14,CAT | Truist Securities,rating,,Buy,2026-07-02 08:07:14,corroborate
+CAT-00271,2026-07-13 10:47:52,CAT | Oppenheimer,price_target_usd,,1105.00,2026-07-13 10:47:52,new
+CAT-00271,2026-07-13 10:47:52,CAT | Oppenheimer,rating,,Outperform,2026-07-13 10:47:52,corroborate
+CAT-00272,2026-07-14 11:41:07,CAT | Citigroup,price_target_usd,,1100.00,2026-07-14 11:41:07,new
+CAT-00272,2026-07-14 11:41:07,CAT | Citigroup,rating,,Buy,2026-07-14 11:41:07,corroborate
+CAT-00273,2026-07-29 06:08:54,CAT | Baird,price_target_usd,,900.00,2026-07-29 06:08:54,new
+CAT-00273,2026-07-29 06:08:54,CAT | Baird,rating,,Neutral,2026-07-29 06:08:54,new
+CAT-00274,2026-08-05 11:54:41,CAT | RBC Capital,price_target_usd,,897.00,2026-08-05 11:54:41,new
+CAT-00274,2026-08-05 11:54:41,CAT | RBC Capital,rating,,Sector Perform,2026-08-05 11:54:41,new
+CAT-00275,2026-08-05 13:59:30,CAT | Truist Securities,price_target_usd,,1225.00,2026-08-05 13:59:30,new
+CAT-00275,2026-08-05 13:59:30,CAT | Truist Securities,rating,,Buy,2026-08-05 13:59:30,corroborate
+CAT-00276,2026-08-05 16:45:12,CAT | UBS,price_target_usd,,925.00,2026-08-05 16:45:12,new
+CAT-00276,2026-08-05 16:45:12,CAT | UBS,rating,,Neutral,2026-08-05 16:45:12,corroborate
+CAT-00277,2026-08-06 09:11:44,CAT | Barclays,price_target_usd,,900.00,2026-08-06 09:11:44,new
+CAT-00277,2026-08-06 09:11:44,CAT | Barclays,rating,,Equal-Weight,2026-08-06 09:11:44,corroborate
+CAT-00278,2026-08-06 17:38:11,CAT | DA Davidson,price_target_usd,,882.00,2026-08-06 17:38:11,new
+CAT-00278,2026-08-06 17:38:11,CAT | DA Davidson,rating,,Neutral,2026-08-06 17:38:11,corroborate
+CAT-00279,2026-08-11 08:39:23,CAT | Evercore ISI Group,price_target_usd,,1045.0,2026-08-11 08:39:23,new
+CAT-00279,2026-08-11 08:39:23,CAT | Evercore ISI Group,rating,,Outperform,2026-08-11 08:39:23,corroborate
+CAT-00280,2026-09-10 08:14:34,CAT | Freedom Broker,price_target_usd,,980.00,2026-09-10 08:14:34,new
+CAT-00280,2026-09-10 08:14:34,CAT | Freedom Broker,rating,,Buy,2026-09-10 08:14:34,new
+CAT-00281,2026-10-05 12:34:07,CAT | Truist Securities,price_target_usd,,1100.00,2026-10-05 12:34:07,new
+CAT-00281,2026-10-05 12:34:07,CAT | Truist Securities,rating,,Buy,2026-10-05 12:34:07,corroborate
+CAT-00282,2026-10-12 16:40:00,CAT | Citigroup,price_target_usd,,950.00,2026-10-12 16:40:00,new
+CAT-00282,2026-10-12 16:40:00,CAT | Citigroup,rating,,Buy,2026-10-12 16:40:00,corroborate
+CAT-00283,2026-10-14 12:59:21,CAT | Oppenheimer,price_target_usd,,1009.00,2026-10-14 12:59:21,new
+CAT-00283,2026-10-14 12:59:21,CAT | Oppenheimer,rating,,Outperform,2026-10-14 12:59:21,corroborate
+CAT-00284,2026-10-26 09:47:08,CAT | Wells Fargo,price_target_usd,,840.00,2026-10-26 09:47:08,new
+CAT-00284,2026-10-26 09:47:08,CAT | Wells Fargo,rating,,Overweight,2026-10-26 09:47:08,corroborate
+CAT-00285,2026-10-26 14:44:03,CAT | UBS,price_target_usd,,750.00,2026-10-26 14:44:03,new
+CAT-00285,2026-10-26 14:44:03,CAT | UBS,rating,,Neutral,2026-10-26 14:44:03,new
+CAT-00286,2026-10-29 09:35:02,CAT | Oppenheimer,price_target_usd,,1009.00,2026-10-29 09:35:02,corroborate
+CAT-00286,2026-10-29 09:35:02,CAT | Oppenheimer,rating,,Outperform,2026-10-29 09:35:02,corroborate
+CAT-00287,2026-10-30 11:33:08,CAT | RBC Capital,price_target_usd,,722.00,2026-10-30 11:33:08,new
+CAT-00287,2026-10-30 11:33:08,CAT | RBC Capital,rating,,Sector Perform,2026-10-30 11:33:08,corroborate
+CAT-00288,2026-10-30 11:37:14,CAT | Truist Securities,price_target_usd,,1027.00,2026-10-30 11:37:14,new
+CAT-00288,2026-10-30 11:37:14,CAT | Truist Securities,rating,,Buy,2026-10-30 11:37:14,corroborate
+CAT-00289,2026-10-30 13:52:59,CAT | Morgan Stanley,price_target_usd,,675.00,2026-10-30 13:52:59,new
+CAT-00289,2026-10-30 13:52:59,CAT | Morgan Stanley,rating,,Equal-Weight,2026-10-30 13:52:59,corroborate
+CAT-00290,2026-10-30 14:08:02,CAT | Wells Fargo,price_target_usd,,805.00,2026-10-30 14:08:02,new
+CAT-00290,2026-10-30 14:08:02,CAT | Wells Fargo,rating,,Overweight,2026-10-30 14:08:02,corroborate
+CAT-00291,2026-10-30 17:22:14,CAT | Citigroup,price_target_usd,,800.00,2026-10-30 17:22:14,new
+CAT-00291,2026-10-30 17:22:14,CAT | Citigroup,rating,,Buy,2026-10-30 17:22:14,corroborate
+CAT-00292,2026-10-30 19:41:12,CAT | JP Morgan,price_target_usd,,1000.00,2026-10-30 19:41:12,new
+CAT-00292,2026-10-30 19:41:12,CAT | JP Morgan,rating,,Overweight,2026-10-30 19:41:12,corroborate
+CAT-00293,2026-11-02 07:51:45,CAT | DA Davidson,price_target_usd,,685.00,2026-11-02 07:51:45,new
+CAT-00293,2026-11-02 07:51:45,CAT | DA Davidson,rating,,Neutral,2026-11-02 07:51:45,corroborate
+CAT-00294,2026-11-02 08:09:53,CAT | Freedom Broker,price_target_usd,,800.00,2026-11-02 08:09:53,new
+CAT-00294,2026-11-02 08:09:53,CAT | Freedom Broker,rating,,Buy,2026-11-02 08:09:53,corroborate
+CAT-00295,2026-11-10 08:57:04,CAT | Evercore ISI Group,price_target_usd,,833.00,2026-11-10 08:57:04,new
+CAT-00295,2026-11-10 08:57:04,CAT | Evercore ISI Group,rating,,Outperform,2026-11-10 08:57:04,corroborate
+CAT-00296,2026-11-18 15:35:47,CAT | DA Davidson,price_target_usd,,685.00,2026-11-18 15:35:47,corroborate
+CAT-00296,2026-11-18 15:35:47,CAT | DA Davidson,rating,,Neutral,2026-11-18 15:35:47,corroborate

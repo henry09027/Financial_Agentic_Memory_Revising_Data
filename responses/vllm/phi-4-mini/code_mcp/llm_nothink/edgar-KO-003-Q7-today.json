@@ -1,0 +1,55 @@
+{
+ "qid": "edgar-KO-003-Q7-today",
+ "backend": "vllm",
+ "model": "phi-4-mini",
+ "hf_id": "microsoft/Phi-4-mini-instruct",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "edgar",
+ "entity": "KO",
+ "qtype": "not_yet_published",
+ "mode": "today",
+ "as_of": "2026-11-20 23:59:59",
+ "question": "What was COCA COLA CO's revenue for the three months ended 31 March 2023, in $ millions?",
+ "gold": "10980",
+ "peek_answers": "",
+ "trap_answers": "",
+ "gold_evidence": "KO-00121",
+ "answer": "13380000000.0",
+ "cited": "KO-00156",
+ "json_ok": true,
+ "category": "wrong",
+ "correct": false,
+ "cited_future": false,
+ "evidence_recall": 0.0,
+ "in_tokens": 4654,
+ "out_tokens": 78,
+ "seconds": 0.1098,
+ "n_dropped": 0,
+ "n_sql": 1,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 2,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id \\nFROM facts \\nWHERE subject = 'KO | Revenues' AND attribute = 'value_usd_m' \\nORDER BY learned_at DESC \\nLIMIT 50;\"]",
+ "created": "2026-11-21T21:42:00",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: company financials from SEC filings (EDGAR XBRL style)\n\nEvidence: one line per reported value: form, fiscal period, the date range the value covers, and the filing time. A filing can report several ranges (three-month, year-to-date, prior-year comparatives). Amended filings (10-K/A, 10-Q/A) restate earlier values.\n\n1. Latest value for a date range = the value in the most recent filing (at the as-of time) that reports exactly that range.\n2. Originally reported value = the value in the earliest filing that reported that range.\n3. Three-month vs year-to-date: a 10-Q reports a three-month figure and a year-to-date figure. Do not mix them.\n4. Q4 is never filed directly: Q4 = fiscal-year total minus nine-month year-to-date, each using its latest value.\n5. Most recently reported quarter = the latest quarter with a directly reported three-month figure (Q1-Q3 in a 10-Q). Year-over-year growth compares it with the same quarter one year earlier (latest values).\n6. Trailing twelve months (TTM) = sum of the latest four quarters ending with the most recently reported quarter, using latest values (Q4 derived by rule 4).\n7. Count rule for \"filings reporting the fiscal-year total\": count each filing (10-K, 10-K/A) that reports the full-year value.\n8. As-of rule: the cutoff is a timestamp. A filing accepted later does not exist yet.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the concept. Never escape it.\n\n- subject = ticker | Revenues, e.g. MA | Revenues\n- attribute = value_usd_m\n- period = start..end of the date range, e.g. 2026-07-01..2026-09-30\n- value = the number in $ millions\n- effective_at = empty\n- kind = new the first time a range is reported, revision if a later filing reports a different value, corroborate if it repeats the same value\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2026-11-20 23:59:59\nQuestion: What was COCA COLA CO's revenue for the three months ended 31 March 2023, in $ millions?\n\nDatabase contents at the as-of time: 139 facts, 117 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'KO | Revenues': value_usd_m (139)\nkind values: 'corroborate', 'new', 'revision'\nmost recently learned periods: '2026-07-04..2026-10-02', '2026-01-01..2026-10-02', '2025-06-28..2025-09-26', '2025-01-01..2025-09-26', '2026-04-04..2026-07-03', '2026-01-01..2026-07-03', '2025-03-29..2025-06-27', '2025-01-01..2025-06-27'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'KO | Revenues' AND attribute = 'value_usd_m' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'KO | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n2025-01-01..2025-09-26,36119.0,2025-10-28 18:22:38,2026-10-28 18:22:38,corroborate,KO-00153\n2025-06-28..2025-09-26,12455.0,2026-10-28 18:22:38,2026-10-28 18:22:38,revision,KO-00154\n2026-01-01..2026-10-02,39322.0,2026-10-28 18:22:38,2026-10-28 18:22:38,new,KO-00155\n2026-07-04..2026-10-02,13380000000.0,2026-10-28 18:22:38,2026-10-28 18:22:38,new,KO-00156\n2025-01-01..2025-06-27,23663.0,2025-07-24T18:07:20,2026-07-29 18:04:37,revision,KO-00149\n2025-03-29..2025-06-27,12535.0,2026-07-29 18:04:37,2026-07-29 18:04:37,corroborate,KO-00150\n2026-01-01..2026-07-03,25852.0,2026-07-29 18:04:37,2026-07-29 18:04:37,new,KO-00151\n2026-04-04..2026-07-03,13380.0,2026-07-29 18:04:37,2026-07-29 18:04:37,new,KO-00152\n2025-01-01..2025-03-28,11129.0,2026-04-30 19:17:45,2026-04-30 19:17:45,corroborate,KO-00147\n2026-01-01..2026-04-03,12472.0,2026-04-30T19:17:45,2026-04-30 19:17:45,new,KO-00148\n2023-01-01..2023-12-31,45754.0,2025-02-20T20:17:12,2026-02-20 14:46:32,corroborate,KO-00144\n2024-01-01..2024-12-31,47061.0,2026-02-20T14:46:32,2026-02-20 14:46:32,new,KO-00145\n2025-01-01..2025-12-31,49401.0,2026-02-20T14:46:32,2026-02-20 14:46:32,new,KO-00146\n2024-01-01..2024-09-27,35517.0,2024-10-24T15:55:23,2025-10-23 18:39:30,revision,KO-00140\n2024-06-29..2024-09-27,11854.0,2025-10-23 18:39:30,2025-10-23 18:39:30,revision,KO-00141\n2025-01-01..2025-09-26,36119.0,2025-10-23 18:39:30,2025-10-23 18:39:30,new,KO-00142\n2025-06-28..2025-09-26,12455.0,2025-10-23 18:39:30,2025-10-23 18:39:30,new,KO-00143\n2024-01-01..2024-06-28,23663.0,2025-07-24 18:07:20,2025-07-24 18:07:20,new,KO-00136\n2024-03-30..2024-06-28,12363.0,2025-07-24 18:07:20,2025-07-24 18:07:20,revision,KO-00137\n2025-01-01..2025-06-27,23663.0,2025-07-24T18:07:20,2025-07-24 18:07:20,new,KO-00138\n2025-03-29..2025-06-27,12535.0,2025-07-24T18:07:20,2025-07-24 18:07:20,new,KO-00139\n2024-01-01..2024-03-29,11300.0,2025-05-01 19:38:52,2025-05-01 19:38:52,revision,KO-00134\n2025-01-01..2025-03-28,11129.0,2025-05-01 19:38:52,2025-05-01 19:38:52,new,KO-00135\n2022-01-01..2022-12-31,43004.0,,2025-02-20 20:17:12,corroborate,KO-00131\n2024-01-01..2024-03-29,10491.0,,2025-02-20 20:17:12,new,KO-00131\n2024-01-01..2024-06-28,23663.0,,2025-02-20 20:17:12,new,KO-00131\n2024-03-30..2024-06-28,12363.0,,2025-02-20 20:17:12,new,KO-00131\n2024-01-01..2024-09-29,34905.0,,2025-02-20 20:17:12,new,KO-00131\n2024-06-29..2024-09-27,11854.0,,2025-02-20 20:17:12,new,KO-00131\n2023-01-01..2023-12-31,45754.0,2025-02-20 20:17:12,2025-02-20 20:17:12,new,KO-00132\n2024-01-01..2024-12-31,47061.0,2025-02-20 20:17:12,2025-02-20 20:17:12,new,KO-00133\n2023-01-01..2023-09-29,34905.0,2024-10-24 15:55:23,2024-10-24 15:55:23,corroborate,KO-00127\n2023-07-01..2023-09-29,11953.0,2024-10-24T15:55:23,2024-10-24 15:55:23,revision,KO-00128\n2024-01-01..2024-09-27,35517.0,2024-10-24T15:55:23,2024-10-24 15:55:23,new,KO-00129\n2024-06-29..2024-09-27,11854.0,2024-10-24T15:55:23,2024-10-24 15:55:23,new,KO-00130\n2023-01-01..2023-06-30,22952.0,2024-07-29 19:54:36,2024-07-29 19:54:36,revision,KO-00123\n2023-04-01..2023-06-30,11972.0,2024-07-29 19:54:36,2024-07-29 19:54:36,revision,KO-00124\n2024-01-01..2024-06-28,23663.0,2024-07-29 19:54:36,2024-07-29 19:54:36,new,KO-00125\n2024-03-30..2024-06-28,12363.0,2024-07-29 19:54:36,2024-07-29 19:54:36,new,KO-00126\n2023-01-01..2023-03-31,10980.0,2023-04-26T19:21:27,2024-05-02 17:52:06,revision,KO-00121\n2023-01-01..2023-03-31,10980.0,2024-05-02 17:52:06,2024-05-02 17:52:06,new,KO-00121\n2024-01-01..2024-03-29,11300.0,2024-05-02T17:52:06,2024-05-02 17:52:06,new,KO-00122\n2021-01-01..2021-12-31,38655.0,,2024-02-20 18:21:24,corroborate,KO-00118\n2024-01-01..2024-03-31,10491.0,2024-02-20 18:21:24,2024-02-20 18:21:24,new,KO-00118\n2023-01-01..2023-06-30,22952.0,,2024-02-20 18:21:24,revision,KO-00118\n2023-04-01..2023-06-30,11972.0,,2024-02-20 18:21:24,revision,KO-00118\n2022-01-01..2022-12-31,43004.0,2023-02-20 18:21:24,2024-02-20 18:21:24,new,KO-00119\n2023-01-01..2023-12-31,45754.0,2024-02-20 18:21:24,2024-02-20 18:21:24,new,KO-00120\n2022-07-02..2022-09-30,11063.0,2023-10-24 18:46:01,2023-10-24 18:46:01,corroborate,KO-00115\n2023-01-01..2023-09-29,34905.0,2023-10-24 18:46:01,2023-10-24 18:46:01,new,KO-00116\n"
+  }
+ ],
+ "final_text": "{\"answer\": \"13380000000.0\", \"evidence_ids\": [\"KO-00156\"]}",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id \nFROM facts \nWHERE subject = 'KO | Revenues' AND attribute = 'value_usd_m' \nORDER BY learned_at DESC \nLIMIT 50;\n```\n\n===== next turn =====\n\n{\"answer\": \"13380000000.0\", \"evidence_ids\": [\"KO-00156\"]}"
+}

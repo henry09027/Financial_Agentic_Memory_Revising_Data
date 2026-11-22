@@ -1,0 +1,71 @@
+{
+ "qid": "broker-DIS-001-Q7-as_of",
+ "backend": "vllm",
+ "model": "qwen3.5-4b",
+ "hf_id": "Qwen/Qwen3.5-4B",
+ "method": "code_mcp",
+ "variant": "llm_nothink",
+ "source": "broker",
+ "entity": "DIS",
+ "qtype": "event_lookup",
+ "mode": "as_of",
+ "as_of": "2024-02-02 18:20:00",
+ "question": "In April 2024, what rating did Rosenblatt move DIS to, and what was its new price target (USD)? Answer as 'Rating; target'.",
+ "gold": "CANNOT_ANSWER",
+ "peek_answers": "Buy; 137",
+ "trap_answers": "",
+ "gold_evidence": "",
+ "answer": "CANNOT_ANSWER",
+ "cited": "",
+ "json_ok": true,
+ "category": "correct",
+ "correct": true,
+ "cited_future": false,
+ "evidence_recall": null,
+ "in_tokens": 9527,
+ "out_tokens": 214,
+ "seconds": 0.8255,
+ "n_dropped": 0,
+ "n_sql": 3,
+ "n_sql_error": 0,
+ "n_sql_empty": 0,
+ "n_turns": 4,
+ "sql": "[\"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'DIS | Rosenblatt' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\", \"SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'DIS | Rosenblatt' AND attribute = 'rating' ORDER BY learned_at DESC LIMIT 10\", \"SELECT evidence_id, text FROM evidence WHERE evidence_id IN ('DIS-00299', 'DIS-00293', 'DIS-00288', 'DIS-00287', 'DIS-00285', 'DIS-00280', 'DIS-00276', 'DIS-00252', 'DIS-00241')\"]",
+ "created": "2026-11-22T01:35:09",
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You answer questions about financial data that keeps being revised and corrected.\nAnswer as of the given as-of time: anything published after it does not exist.\nRules for this dataset:\n# Rules: broker actions (price targets and ratings)\n\nEvidence: one line per broker note, stock split or broker rename, each with the time it became public.\n\n1. Active broker: has published a note on the stock within 12 months (365 days) before the as-of time. Ignore stale brokers.\n2. Split adjustment: express every price target in post-split dollars. A target published before a split is divided by the split ratio, but only if the split is known by the as-of time.\n3. Renamed broker: a broker that changes its name is the same broker (for example, Cowen & Co. = TD Cowen once the rename is announced).\n4. Buy-equivalent ratings: Buy, Strong Buy, Outperform, Overweight, Positive, Market Outperform. Everything else is not Buy-equivalent.\n5. Count rule: a target change is a note that raises or lowers the price target. Reiterations, unchanged targets, splits, renames and inferred revisions (rule 6) do not count.\n6. Missed-revision rule: if a note says the broker moved its target \"from $X\" and $X differs from the broker's last recorded target (after split adjustment), the broker changed its target to $X immediately after its previous note; we never received that note. This is only known from the moment the revealing note is published.\n7. As-of rule: the cutoff is a timestamp. A note published later on the same day does not exist yet.\n8. Consensus = median of the latest split-adjusted target of each active broker.\n\n## Fact schema (used by the knowledge graph and code-writing methods)\n\nEvery fact has six fields: subject, attribute, period, value, effective_at, kind.\nInside a subject, \" | \" (space, vertical bar, space) is an ordinary character separating the ticker from the broker name. Never escape it.\n\n- Broker note: up to two facts, both with subject = ticker | broker name (canonical name = the first name the broker used), e.g. KO | Morgan Stanley\n  - attribute = price_target_usd, value = the target as stated in the note (NOT split-adjusted)\n  - attribute = rating, value = the rating label\n  - period = empty; effective_at = the note time; kind = new, or corroborate for an unchanged reiteration, or inferred for a missed revision (rule 6; its effective_at = the broker's previous note time + 1 second)\n- Split: subject = the ticker alone, e.g. KO; attribute = split_ratio; value = the ratio (e.g. 2); effective_at = split time; kind = event\n- Rename: subject = ticker | old broker name; attribute = alias; value = the new name; effective_at = rename time; kind = event\n\nNote for this dataset: a stated \"from $X\" within 0.5% of the broker's last recorded target (rounding after a split) is not a missed revision.\n\nReply with JSON only: {\"answer\": <number, short text, or \"CANNOT_ANSWER\">, \"evidence_ids\": [<ids you relied on>]}\nNumbers: a plain number in the unit asked (no $, %, or commas).\nYou can query a read-only SQLite database. Tables: facts(fact_id, evidence_id, learned_at, subject, attribute, period, value, effective_at, kind, value_num), evidence(evidence_id, entity, known_at, text). Both contain only what was known at the as-of time, and only for the entity this question is about. value is text; value_num is the same value as a number (use it for arithmetic and comparisons). Timestamps are 'YYYY-MM-DD HH:MM:SS' text; effective_at may be empty. The evidence table holds the original text, searchable with LIKE. A median(x) aggregate exists. Queries return up to 50 rows as CSV.\nTo run a query, reply with exactly one ```sql ... ``` block and nothing else; you will get the result. You have up to 6 queries. When you know the answer, reply with the JSON only."
+  },
+  {
+   "role": "user",
+   "content": "As-of time: 2024-02-02 18:20:00\nQuestion: In April 2024, what rating did Rosenblatt move DIS to, and what was its new price target (USD)? Answer as 'Rating; target'.\n\nDatabase contents at the as-of time: 118 facts, 60 evidence rows.\nExact subject strings (copy them literally; ' | ' is part of the string, never escape it), with their attributes and row counts:\n  'DIS | Atlantic Equities': price_target_usd (1), rating (1)\n  'DIS | B of A Securities': price_target_usd (2), rating (2)\n  'DIS | Barclays': price_target_usd (1), rating (1)\n  'DIS | Bernstein': price_target_usd (1), rating (1)\n  'DIS | Citigroup': price_target_usd (3), rating (3)\n  'DIS | Credit Suisse': price_target_usd (4), rating (4)\n  'DIS | Deutsche Bank': price_target_usd (2), rating (2)\n  'DIS | Evercore ISI Group': price_target_usd (1), rating (1)\n  'DIS | Goldman Sachs': price_target_usd (2), rating (2)\n  'DIS | Guggenheim': price_target_usd (1), rating (1)\n  'DIS | JP Morgan': price_target_usd (2), rating (2)\n  'DIS | Keybanc': price_target_usd (2), rating (3)\n  'DIS | Loop Capital': price_target_usd (4), rating (4)\n  'DIS | Macquarie': price_target_usd (3), rating (3)\n  'DIS | MoffettNathanson': price_target_usd (1), rating (1)\n  'DIS | Morgan Stanley': price_target_usd (4), rating (4)\n  'DIS | Needham': price_target_usd (1), rating (1)\n  'DIS | Raymond James': price_target_usd (2), rating (2)\n  'DIS | Rosenblatt': price_target_usd (9), rating (9)\n  'DIS | Seaport Global': price_target_usd (1), rating (1)\n  'DIS | Truist Securities': price_target_usd (5), rating (5)\n  'DIS | Wells Fargo': price_target_usd (6), rating (6)\n  'DIS | Wolfe Research': rating (1)\nkind values: 'corroborate', 'new'\nExample query: SELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'DIS | Rosenblatt' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'DIS | Rosenblatt' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n,112.0,2023-12-22 12:25:02,2023-12-22 12:25:02,new,DIS-00299\n,103.0,2023-09-20 07:06:37,2023-09-20 07:06:37,new,DIS-00293\n,104.0,2023-09-15 07:43:04,2023-09-15 07:43:04,corroborate,DIS-00288\n,104.0,2023-09-12 07:25:19,2023-09-12 07:25:19,new,DIS-00287\n,102.0,2023-09-05 07:23:18,2023-09-05 07:23:18,corroborate,DIS-00285\n,102.0,2023-08-10 07:59:18,2023-08-10 07:59:18,new,DIS-00280\n,111.0,2023-07-11 10:29:40,2023-07-11 10:29:40,new,DIS-00276\n,129.0,2023-02-09 07:54:09,2023-02-09 07:54:09,new,DIS-00252\n,120.0,2022-11-09 07:57:43,2022-11-09 07:57:43,new,DIS-00241\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'DIS | Rosenblatt' AND attribute = 'rating' ORDER BY learned_at DESC LIMIT 10\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nperiod,value_num,effective_at,learned_at,kind,evidence_id\n,,2023-12-22 12:25:02,2023-12-22 12:25:02,corroborate,DIS-00299\n,,2023-09-20 07:06:37,2023-09-20 07:06:37,corroborate,DIS-00293\n,,2023-09-15 07:43:04,2023-09-15 07:43:04,corroborate,DIS-00288\n,,2023-09-12 07:25:19,2023-09-12 07:25:19,corroborate,DIS-00287\n,,2023-09-05 07:23:18,2023-09-05 07:23:18,corroborate,DIS-00285\n,,2023-08-10 07:59:18,2023-08-10 07:59:18,corroborate,DIS-00280\n,,2023-07-11 10:29:40,2023-07-11 10:29:40,new,DIS-00276\n,,2023-02-09 07:54:09,2023-02-09 07:54:09,corroborate,DIS-00252\n,,2022-11-09 07:57:43,2022-11-09 07:57:43,new,DIS-00241\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```sql\nSELECT evidence_id, text FROM evidence WHERE evidence_id IN ('DIS-00299', 'DIS-00293', 'DIS-00288', 'DIS-00287', 'DIS-00285', 'DIS-00280', 'DIS-00276', 'DIS-00252', 'DIS-00241')\n```"
+  },
+  {
+   "role": "user",
+   "content": "Result:\nevidence_id,text\nDIS-00241,\"Rosenblatt maintained Buy on DIS, and lowered its price target from $134.00 to $120.00.\"\nDIS-00252,\"Rosenblatt maintained Buy on DIS, and raised its price target from $120.00 to $129.00.\"\nDIS-00276,\"Rosenblatt maintained Buy on DIS, and lowered its price target from $118.00 to $111.00.\"\nDIS-00280,\"Rosenblatt maintained Buy on DIS, and lowered its price target from $111.00 to $102.00.\"\nDIS-00285,\"Rosenblatt reiterated Buy on DIS, with a $102.00 price target.\"\nDIS-00287,\"Rosenblatt reiterated Buy on DIS, with a $104.00 price target.\"\nDIS-00288,\"Rosenblatt reiterated Buy on DIS, with a $104.00 price target.\"\nDIS-00293,\"Rosenblatt maintained Buy on DIS, and lowered its price target from $104.00 to $103.00.\"\nDIS-00299,\"Rosenblatt maintained Buy on DIS, and lowered its price target from $114.00 to $112.00.\"\n"
+  }
+ ],
+ "final_text": "{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}",
+ "raw_output": "```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'DIS | Rosenblatt' AND attribute = 'price_target_usd' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT period, value_num, effective_at, learned_at, kind, evidence_id FROM facts WHERE subject = 'DIS | Rosenblatt' AND attribute = 'rating' ORDER BY learned_at DESC LIMIT 10\n```\n\n===== next turn =====\n\n```sql\nSELECT evidence_id, text FROM evidence WHERE evidence_id IN ('DIS-00299', 'DIS-00293', 'DIS-00288', 'DIS-00287', 'DIS-00285', 'DIS-00280', 'DIS-00276', 'DIS-00252', 'DIS-00241')\n```\n\n===== next turn =====\n\n{\"answer\": \"CANNOT_ANSWER\", \"evidence_ids\": []}"
+}
